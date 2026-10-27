@@ -1,0 +1,1274 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Electrical Foundations Family Study Guide</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+/* Layout concept: one long study sheet. Each module section runs the same five parts
+   (read, review points, trade-term tags, ticket out the door, talk it over). */
+:root {
+  --bg: #EEF1F3;
+  --surface: #FFFFFF;
+  --ink: #14202B;
+  --ink-soft: #46576A;
+  --line: #C9D2DA;
+  --band: #14202B;
+  --band-ink: #F4F7F9;
+  --accent: #C42B17;
+  --accent-ink: #FFFFFF;
+  --caution: #F2B705;
+  --caution-soft: #FFF3C4;
+  --good: #1E7A3C;
+  --good-soft: #DDF3E4;
+  --bad: #A8321F;
+  --bad-soft: #FBE3DE;
+  --tag-hole: #EEF1F3;
+  --focus: #0B5FFF;
+  --font-display: "Barlow Condensed", "Arial Narrow", Impact, sans-serif;
+  --font-body: "Barlow", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0F171E; --surface: #18232D; --ink: #EAF0F4; --ink-soft: #A5B4C2; --line: #2E3E4C;
+    --band: #0A1016; --band-ink: #F4F7F9; --accent: #FF5A44; --accent-ink: #14202B;
+    --caution: #F2B705; --caution-soft: #3A3210; --good: #6FD08C; --good-soft: #17301F;
+    --bad: #FF8E7C; --bad-soft: #3A1B16; --tag-hole: #0F171E; --focus: #6AA2FF;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0F171E; --surface: #18232D; --ink: #EAF0F4; --ink-soft: #A5B4C2; --line: #2E3E4C;
+  --band: #0A1016; --band-ink: #F4F7F9; --accent: #FF5A44; --accent-ink: #14202B;
+  --caution: #F2B705; --caution-soft: #3A3210; --good: #6FD08C; --good-soft: #17301F;
+  --bad: #FF8E7C; --bad-soft: #3A1B16; --tag-hole: #0F171E; --focus: #6AA2FF;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--ink); font-family: var(--font-body); font-size: 17px; line-height: 1.6; }
+:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
+.wrap { max-width: 920px; margin-inline: auto; padding-inline: max(16px, env(safe-area-inset-left, 0px)) max(16px, env(safe-area-inset-right, 0px)); }
+h1, h2, h3, h4 { font-family: var(--font-display); text-transform: uppercase; letter-spacing: 0.03em; line-height: 1.05; margin: 0; text-wrap: balance; }
+.eyebrow { font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-soft); }
+
+.band { background: var(--band); color: var(--band-ink); padding-block: 34px 26px; border-bottom: 8px solid var(--caution); }
+.band .eyebrow { color: var(--caution); }
+.band h1 { font-size: clamp(2.5rem, 9vw, 4.4rem); font-weight: 700; margin-top: 10px; }
+.band .sub { margin: 14px 0 0; font-size: 1.1rem; color: #D5DEE5; max-width: 46ch; }
+.band .byline { margin: 14px 0 0; font-size: 0.95rem; color: #AEBBC7; }
+nav.jump { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 22px; }
+nav.jump a { text-decoration: none; font-weight: 600; font-size: 0.95rem; padding: 8px 14px; border: 2px solid #3B4B5A; border-radius: 3px; color: var(--band-ink); }
+nav.jump a:hover { border-color: var(--caution); }
+
+.intro { margin-top: 28px; display: grid; gap: 22px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 380px), 1fr)); }
+.panel { background: var(--surface); border: 1px solid var(--line); padding: 20px 22px 22px; min-width: 0; }
+.panel h2 { font-size: 1.5rem; font-weight: 700; margin-bottom: 10px; }
+.panel p { margin: 0 0 10px; }
+.panel ol { margin: 8px 0 0; padding-left: 1.3em; display: grid; gap: 6px; }
+.notice { background: var(--caution-soft); border: 2px solid var(--caution); padding: 16px 20px; margin-top: 22px; }
+.notice p { margin: 4px 0 0; }
+.notice h2 { font-size: 1.25rem; }
+
+/* section */
+.sec { margin-top: 56px; }
+.sec-head { border-top: 8px solid var(--ink); padding-top: 18px; }
+.sec-head h2 { font-size: clamp(2rem, 6vw, 3rem); font-weight: 700; margin-top: 6px; }
+.sec-head .obj { margin: 10px 0 0; color: var(--ink-soft); max-width: 62ch; }
+.part { margin-top: 34px; }
+.part-title { display: flex; align-items: baseline; gap: 12px; margin-bottom: 14px; }
+.part-title .letter { font-family: var(--font-mono); font-size: 13px; background: var(--ink); color: var(--bg); padding: 2px 8px; flex: none; }
+.part-title h3 { font-size: 1.7rem; font-weight: 700; }
+.part-title .time { margin-left: auto; font-family: var(--font-mono); font-size: 12px; color: var(--ink-soft); white-space: nowrap; }
+
+.prose { background: var(--surface); border: 1px solid var(--line); padding: 22px 24px; }
+.prose h4 { font-size: 1.25rem; font-weight: 700; margin: 20px 0 6px; color: var(--accent); }
+.prose h4:first-child { margin-top: 0; }
+.prose p { margin: 0 0 10px; max-width: 64ch; }
+.prose ul { margin: 0 0 10px; padding-left: 1.2em; max-width: 64ch; }
+.prose li { margin-bottom: 4px; }
+.prose .big { font-size: 1.12rem; font-weight: 500; border-left: 6px solid var(--caution); padding: 4px 0 4px 14px; margin: 0 0 16px; }
+.prose table { border-collapse: collapse; margin: 8px 0 14px; font-size: 0.95rem; width: 100%; max-width: 520px; }
+.prose th, .prose td { text-align: left; padding: 6px 10px; border-bottom: 1px solid var(--line); }
+.prose th { font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-soft); }
+.scroll { overflow-x: auto; }
+.case { background: var(--bg); border-left: 6px solid var(--accent); padding: 12px 16px; margin: 14px 0 0; max-width: 64ch; }
+.case b { font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.08em; text-transform: uppercase; display: block; color: var(--ink-soft); }
+
+/* review points */
+.points { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; counter-reset: pt; }
+.points li { background: var(--surface); border: 1px solid var(--line); }
+.points label { display: grid; grid-template-columns: 28px minmax(0, 1fr); gap: 12px; padding: 12px 16px; cursor: pointer; align-items: start; }
+.points input { width: 22px; height: 22px; margin: 2px 0 0; accent-color: var(--good); }
+.points li:has(input:checked) { background: var(--good-soft); border-color: var(--good); }
+.points b { font-weight: 600; }
+
+/* cards */
+.deck { display: grid; gap: 22px; grid-template-columns: repeat(auto-fill, minmax(min(100%, 270px), 1fr)); }
+.card { all: unset; box-sizing: border-box; display: block; cursor: pointer; perspective: 1100px; min-width: 0; }
+.card:focus-visible { outline: 3px solid var(--focus); outline-offset: 4px; }
+.card-inner { display: grid; transition: transform 0.5s cubic-bezier(.3,.7,.2,1); transform-style: preserve-3d; position: relative; }
+.card[aria-pressed="true"] .card-inner { transform: rotateY(180deg); }
+.face { grid-area: 1 / 1; backface-visibility: hidden; -webkit-backface-visibility: hidden; display: flex; flex-direction: column; min-height: 250px; border: 2px solid var(--ink); background: var(--surface); position: relative; overflow: hidden; }
+.face::before { content: ""; position: absolute; top: 12px; left: 50%; width: 16px; height: 16px; margin-left: -8px; border-radius: 50%; background: var(--tag-hole); border: 2px solid var(--ink); }
+.front .strip { background: var(--accent); color: var(--accent-ink); padding: 38px 16px 8px; font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.08em; text-transform: uppercase; }
+.front.key .strip { background: var(--ink); color: var(--bg); }
+.front .term { flex: 1; display: flex; align-items: center; padding: 16px 18px; font-family: var(--font-display); text-transform: uppercase; font-weight: 700; font-size: clamp(1.8rem, 7vw, 2.2rem); line-height: 1.02; letter-spacing: 0.02em; overflow-wrap: anywhere; }
+.front .hint { padding: 10px 18px 14px; font-size: 0.8rem; color: var(--ink-soft); border-top: 1px dashed var(--line); font-family: var(--font-mono); letter-spacing: 0.04em; }
+.back { transform: rotateY(180deg); background: var(--caution-soft); }
+.back .strip { background: var(--ink); color: var(--bg); padding: 38px 16px 8px; font-family: var(--font-display); text-transform: uppercase; font-weight: 700; letter-spacing: 0.04em; font-size: 1.1rem; line-height: 1.05; }
+.back .body { padding: 14px 18px 16px; display: grid; gap: 10px; align-content: start; font-size: 0.95rem; line-height: 1.45; }
+.back .label { font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-soft); display: block; margin-bottom: 1px; }
+.back .ask { border-top: 1px dashed var(--ink-soft); padding-top: 10px; font-weight: 500; }
+.deck-note { margin: 12px 0 0; font-size: 0.9rem; color: var(--ink-soft); }
+@media (prefers-reduced-motion: reduce) {
+  .card-inner { transition: none; transform-style: flat; }
+  .card[aria-pressed="true"] .card-inner { transform: none; }
+  .back { transform: none; }
+  .face { backface-visibility: visible; }
+  .card .back { visibility: hidden; }
+  .card[aria-pressed="true"] .back { visibility: visible; }
+  .card[aria-pressed="true"] .front { visibility: hidden; }
+}
+
+/* ticket */
+.ticket { background: var(--surface); border: 2px dashed var(--ink); padding: 8px 20px 18px; position: relative; }
+.ticket-intro { margin: 14px 0 4px; color: var(--ink-soft); font-size: 0.95rem; }
+.q { border: 0; border-top: 1px solid var(--line); margin: 0; padding: 16px 0 14px; min-width: 0; }
+.q:first-of-type { border-top: 0; }
+.q legend { font-weight: 600; padding: 0; margin-bottom: 8px; float: left; width: 100%; }
+.q .opts { clear: both; display: grid; gap: 8px; }
+.opt { font: inherit; text-align: left; padding: 10px 14px; background: var(--bg); color: var(--ink); border: 2px solid var(--line); border-radius: 3px; cursor: pointer; }
+.opt:hover:not(:disabled) { border-color: var(--ink); }
+.opt:disabled { cursor: default; }
+.opt.right { background: var(--good-soft); border-color: var(--good); }
+.opt.wrong { background: var(--bad-soft); border-color: var(--bad); }
+.fb { margin: 8px 0 0; font-size: 0.93rem; color: var(--ink-soft); }
+.fb b { color: var(--ink); }
+.ticket-foot { margin-top: 10px; display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+.ticket-foot p { margin: 0; font-weight: 500; }
+.btn { font: inherit; font-weight: 600; font-size: 0.92rem; padding: 8px 14px; background: var(--surface); color: var(--ink); border: 2px solid var(--ink); border-radius: 3px; cursor: pointer; }
+.btn:hover { background: var(--ink); color: var(--bg); }
+
+/* talk it over */
+.talk { display: grid; gap: 14px; }
+.talk .qs { background: var(--surface); border: 1px solid var(--line); padding: 16px 22px 16px 40px; margin: 0; display: grid; gap: 8px; }
+details.scn { background: var(--surface); border: 1px solid var(--line); border-left: 6px solid var(--caution); padding: 14px 18px; }
+details.scn summary { cursor: pointer; font-family: var(--font-display); text-transform: uppercase; letter-spacing: 0.03em; font-size: 1.3rem; font-weight: 700; }
+details.scn .setup { margin: 10px 0 8px; }
+details.scn .good { margin: 12px 0 0; padding: 10px 14px; background: var(--good-soft); border-left: 6px solid var(--good); }
+details.scn .good b { font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.08em; text-transform: uppercase; display: block; }
+details.scn .good ul { margin: 6px 0 0; padding-left: 1.1em; }
+.parent { background: var(--caution-soft); border: 2px solid var(--caution); padding: 12px 16px; }
+.parent b { font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.08em; text-transform: uppercase; display: block; }
+.parent p { margin: 4px 0 0; }
+
+/* practice questions */
+.pr-intro { margin: 0 0 14px; color: var(--ink-soft); max-width: 66ch; }
+.pr { background: var(--surface); border: 1px solid var(--line); margin-bottom: 18px; }
+.pr-head { display: flex; flex-wrap: wrap; gap: 6px 14px; justify-content: space-between; align-items: baseline; padding: 10px 18px; background: var(--ink); color: var(--bg); font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.06em; text-transform: uppercase; }
+.ask-block { padding: 14px 18px 16px; }
+.ask-block + .ask-block { border-top: 2px dashed var(--line); }
+.ask-block.formal { background: var(--bg); }
+.step-label { margin: 0 0 6px; font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); }
+.pr-q { margin: 0 0 10px; font-weight: 600; font-size: 1.05rem; max-width: 62ch; }
+.bridge { padding: 14px 18px 16px; border-top: 2px dashed var(--line); background: var(--caution-soft); }
+.bridge .step-label { color: var(--ink); }
+.bridge ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+.bridge li { display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); gap: 10px; align-items: baseline; }
+.bridge .you { font-style: italic; }
+.bridge .arrow { font-family: var(--font-mono); color: var(--ink-soft); }
+.bridge .pub { font-weight: 600; }
+@media (max-width: 520px) { .bridge li { grid-template-columns: minmax(0, 1fr); gap: 0; } .bridge .arrow { display: none; } .bridge .pub::before { content: "Textbook: "; font-weight: 400; font-family: var(--font-mono); font-size: 11px; color: var(--ink-soft); } .bridge .you::before { content: "You say: "; font-style: normal; font-family: var(--font-mono); font-size: 11px; color: var(--ink-soft); } }
+
+/* final checklist */
+.final { margin-top: 56px; border-top: 8px solid var(--ink); padding-top: 18px; }
+.final h2 { font-size: clamp(1.9rem, 5vw, 2.6rem); font-weight: 700; }
+.final .lead { color: var(--ink-soft); max-width: 62ch; margin: 10px 0 16px; }
+.note { margin: 28px 0 0; font-size: 0.9rem; color: var(--ink-soft); max-width: 70ch; }
+footer { margin-top: 48px; background: var(--band); color: #AEBBC7; padding-block: 26px 30px; font-size: 0.92rem; }
+footer strong { color: var(--band-ink); }
+footer p { margin: 0 0 6px; }
+</style>
+
+<header class="band">
+  <div class="wrap">
+    <span class="eyebrow">EVIT Electrical · Loved Ones Study Guide</span>
+    <h1>Electrical<br>Foundations</h1>
+    <p class="sub">A Family Study Guide for NCCER Electrical Level 1, Module 26102-20: Safety for Electricians</p>
+    <p class="byline">Mr. Ellis CTE — General Construction &amp; Electrical Teacher · High School &amp; Adult Pre-Apprentice Programs</p>
+    <nav class="jump" aria-label="Sections">
+      <a href="#s1">1 · Hazards</a>
+      <a href="#s2">2 · PPE</a>
+      <a href="#s3">3 · Standards</a>
+      <a href="#s4">4 · Job-site hazards</a>
+      <a href="#review">Family review</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<div class="wrap">
+
+  <div class="intro">
+    <div class="panel">
+      <h2>Why this guide exists</h2>
+      <p>You do not need to be an electrician to support an electrical student. Your job is to help your student explain what they are learning, put it in their own words, and know when safety means stop and ask a qualified person.</p>
+      <p>If your student can read it and explain it, they are learning it. That is the whole idea.</p>
+    </div>
+    <div class="panel">
+      <h2>How to use each section</h2>
+      <p>Plan about 15 to 25 minutes per section. The student does most of the talking. You do not need the answers ahead of time.</p>
+      <ol>
+        <li><b>Read it together.</b> Plain-English version of the module section.</li>
+        <li><b>Study review points.</b> The must-know facts. Tick each one when your student can say it back.</li>
+        <li><b>Trade-term cards.</b> Tap a card to flip it.</li>
+        <li><b>Ticket out the door.</b> A quick recall check, just for practice.</li>
+        <li><b>Talk it over.</b> Questions and a real-world scenario.</li>
+        <li><b>Practice questions.</b> Each one comes twice: first in plain English, then in the textbook's words, so your student learns to recognize both.</li>
+      </ol>
+    </div>
+  </div>
+
+  <aside class="notice" aria-labelledby="safe-h">
+    <h2 id="safe-h">Important safety note</h2>
+    <p>This guide is for learning and talking. It is not permission to do electrical work. Never use it in place of instructor supervision, employer procedures, required training, or properly rated equipment. No student names or grades appear here, and nothing you tick or tap on this page is saved or sent anywhere.</p>
+  </aside>
+
+  <!-- SECTION 1 -->
+  <section class="sec" id="s1" aria-labelledby="s1-h">
+    <div class="sec-head">
+      <span class="eyebrow">Module Section 1 of 4</span>
+      <h2 id="s1-h">Electrical Hazards</h2>
+      <p class="obj">By the end of this section your student can describe what electricity does to the body, how to prove a circuit is off, what causes incidents, and how to rank ways of reducing a hazard.</p>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">A</span><h3>Read it together</h3><span class="time">about 8 min</span></div>
+      <div class="prose">
+        <p class="big">You cannot see electricity, and it gives no warning. Electrical safety starts with assuming the danger is there, then choosing protection before the work begins.</p>
+
+        <h4>What hurts people on construction sites</h4>
+        <p>OSHA, the government agency for workplace safety, names four hazards that cause most deaths on construction sites. They call them the Focus Four: falls from high places, electric shock and burns from electric arcs, being crushed by falling materials or equipment, and being struck by flying objects or moving equipment like trucks and forklifts. Together they account for about 90 percent of construction deaths. Most injuries, from small to deadly, can be prevented.</p>
+
+        <h4>How a shock happens</h4>
+        <p>Electricity flows through a conductor. Metals like copper and steel are great conductors, and so is the human body, especially when the skin is wet or sweaty. A shock happens when your body becomes part of the circuit. That can happen three ways: touching both wires of a circuit, touching one wire and the ground, or touching a metal part that has become live while you are also touching the ground.</p>
+
+        <h4>Small numbers, big effects</h4>
+        <p>Current is measured in amps. A milliamp (mA) is one-thousandth of an amp. Here is what the module says different amounts can do:</p>
+        <div class="scroll"><table>
+          <thead><tr><th>Current</th><th>What can happen</th></tr></thead>
+          <tbody>
+            <tr><td>1 mA</td><td>A slight tingle</td></tr>
+            <tr><td>5 mA</td><td>A slight shock, but you may jerk away and fall</td></tr>
+            <tr><td>6 to 30 mA</td><td>Painful shock and loss of muscle control</td></tr>
+            <tr><td>50 to 150 mA</td><td>Extreme pain, breathing can stop, death possible</td></tr>
+            <tr><td>1,000 to 4,300 mA</td><td>The heart fibrillates, usually fatal</td></tr>
+          </tbody>
+        </table></div>
+        <p>For a sense of scale, a 60-watt light bulb uses about 500 mA. How badly someone is hurt depends on three things: how much current flows through the body, what path it takes, and how long it lasts. Often the shock is only the start of a chain, and the real injury comes from a fall.</p>
+        <p>Because shock can injure tissue deep inside, anyone who gets a shock, even a minor one, should see a medical professional.</p>
+
+        <h4>Three kinds of burns</h4>
+        <ul>
+          <li><b>Electrical burns</b> happen when current heats the tissue it passes through. A small mark on the skin can hide severe damage inside.</li>
+          <li><b>Arc burns</b> come from an arc, a bright electrical blast between metal parts. An arc can reach about 35,000°F, roughly four times hotter than the surface of the sun, and can burn people several feet away.</li>
+          <li><b>Thermal contact burns</b> come from touching hot or molten metal thrown out by the blast. The blast can also throw people, cause deafness, and send shrapnel flying.</li>
+        </ul>
+
+        <h4>Habits that keep you safe</h4>
+        <ul>
+          <li>Take off rings, watches, bracelets and necklaces before working on electrical equipment. Jewelry conducts electricity.</li>
+          <li>Plan the job before you start. If the work changes, stop and ask your supervisor.</li>
+          <li>When you come back from a break, look over your surroundings again.</li>
+          <li>Know where the nearest phone is and what number to call.</li>
+        </ul>
+
+        <h4>Prove it is off</h4>
+        <p>Always assume a circuit is live until you have proved it is not. The proof is called a live-dead-live test:</p>
+        <ul>
+          <li>Make sure the circuit is locked and tagged out.</li>
+          <li>Test your meter on a known live source, to prove the meter works.</li>
+          <li>Test the circuit, wearing the right PPE. The reading should be zero.</li>
+          <li>Test your meter on the known source again, to prove it still works.</li>
+        </ul>
+        <p>Even after all that, test before touching any conductor.</p>
+
+        <h4>Why incidents happen</h4>
+        <p>There are three basic causes: unsafe conditions, unsafe equipment, and unsafe acts. Common examples are cords with damaged insulation, missing ground prongs, no ground-fault protection, contact with overhead power lines, and equipment used in a way it was never designed for.</p>
+
+        <h4>Ranking ways to reduce a hazard</h4>
+        <p>The module lists six controls, from strongest to weakest. The first three work at the source of the hazard and do not rely on people being perfect.</p>
+        <ul>
+          <li><b>Elimination:</b> remove the hazard, for example by locking out the power.</li>
+          <li><b>Substitution:</b> replace it with something less hazardous, for example 24-volt instead of 120-volt circuits.</li>
+          <li><b>Engineering controls:</b> isolate the hazard with barricades, guards or interlocks.</li>
+          <li><b>Awareness:</b> warn people with signs and labels.</li>
+          <li><b>Administrative controls:</b> change how people work, with procedures, training and schedules.</li>
+          <li><b>PPE:</b> protective gear, the last line of defense.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">B</span><h3>Study review points</h3></div>
+      <ul class="points" data-points="1"></ul>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">C</span><h3>Trade-term cards</h3></div>
+      <div class="deck" data-cards="1"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">D</span><h3>Ticket out the door</h3></div>
+      <div class="ticket" data-quiz="1"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">E</span><h3>Talk it over</h3></div>
+      <div class="talk" data-talk="1"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">F</span><h3>Practice questions</h3><span class="time">about 12 min</span></div>
+      <div data-practice="1"></div>
+    </div>
+  </section>
+
+  <!-- SECTION 2 -->
+  <section class="sec" id="s2" aria-labelledby="s2-h">
+    <div class="sec-head">
+      <span class="eyebrow">Module Section 2 of 4</span>
+      <h2 id="s2-h">Using PPE to Reduce the Risk of Injury</h2>
+      <p class="obj">By the end of this section your student can explain why gear must match the hazard and be checked every time, and can name the main pieces of electrical protective equipment.</p>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">A</span><h3>Read it together</h3><span class="time">about 8 min</span></div>
+      <div class="prose">
+        <p class="big">PPE stands for personal protective equipment. It is the last line of defense. It protects you, but it does not make a job safe on its own.</p>
+
+        <h4>Why last?</h4>
+        <p>When a hazard cannot be removed or blocked off, PPE is the only thing left between the worker and the hazard. Gear can fail, be damaged, be the wrong type, or not be worn. That is why the safest plan removes the hazard first and uses PPE as the backup.</p>
+        <p>OSHA rules say employers must provide protective equipment that fits the body part and the work, and that equipment must be kept in safe, reliable condition and checked or tested on a schedule. Workers must also use insulated tools near live parts, and fuses may only be handled with insulated equipment.</p>
+
+        <h4>Head, eyes and face</h4>
+        <p>Electrical workers wear hard hats rated for electrical hazards. A Class E hard hat is tested to withstand 20,000 volts for three minutes. A Class G hard hat is tested to 2,200 volts for one minute. Safety glasses are worn at all times near energized equipment, and a face shield goes over them when there is danger from an arc or flash.</p>
+
+        <h4>Rubber gloves</h4>
+        <p>Rubber insulating gloves must match the voltage of the work. The tag color tells you the class and the highest voltage:</p>
+        <div class="scroll"><table>
+          <thead><tr><th>Class</th><th>Tag color</th><th>Maximum voltage</th></tr></thead>
+          <tbody>
+            <tr><td>00</td><td>Beige</td><td>500 V</td></tr>
+            <tr><td>0</td><td>Red</td><td>1,000 V</td></tr>
+            <tr><td>1</td><td>White</td><td>7,500 V</td></tr>
+            <tr><td>2</td><td>Yellow</td><td>17,000 V</td></tr>
+            <tr><td>3</td><td>Green</td><td>26,500 V</td></tr>
+            <tr><td>4</td><td>Orange</td><td>36,000 V</td></tr>
+          </tbody>
+        </table></div>
+        <p>Gloves only protect if they are in good shape, so there is a routine:</p>
+        <ul>
+          <li>The worker inspects the gloves every day before use. Look for cuts, pinholes, deep scratches, snags, and anything stuck in the rubber.</li>
+          <li>Do an air test: stretch the glove, roll it to trap air, squeeze, and listen for leaks. Never use compressed gas to inflate gloves.</li>
+          <li>A testing lab must test rubber gloves every six months. The test date is stamped on them, so check it.</li>
+          <li>Wear leather protectors over the rubber gloves to guard against cuts, punctures and some arc flash.</li>
+          <li>Never wear a watch or ring under rubber gloves.</li>
+          <li>Keep gloves away from oil and petroleum products. Store them cool, dry, dark, and right side out.</li>
+          <li>If gloves fail an inspection, turn them in. Never leave a damaged glove lying around.</li>
+        </ul>
+        <p>Rubber blankets are used to cover energized equipment. They are tested every year and inspected before each use. Blankets are not for floors. Floors use switchboard matting.</p>
+
+        <h4>Clothing</h4>
+        <p>Around live equipment, workers wear arc-rated clothing. Underneath, wear natural fibers or flame-resistant fabric. Never wear polyester, nylon or acrylic, because those melt onto skin in a flash and make burns worse.</p>
+
+        <h4>Special tools</h4>
+        <ul>
+          <li>A <b>hot stick</b> is an insulated pole used to operate disconnect switches, put in or pull fuses, and place or remove temporary grounds from a distance. Wipe it clean and inspect it before every use. Hang it up vertically when stored.</li>
+          <li>A <b>fuse puller</b> is an insulated plastic or fiberglass tool. Fuses are installed or removed only when the circuit is safely de-energized.</li>
+          <li>A <b>shorting probe</b> is a special tool qualified people use to safely discharge stored electricity from capacitors on circuits that are already de-energized.</li>
+        </ul>
+
+        <div class="case"><b>Case history</b>An electrician was cleaning a high-voltage switch cabinet. He did not test every part inside it for voltage, and he was not wearing rubber gloves or arc-rated clothing. A cobweb falling across the open switch set off an arc blast that lasted about one-sixth of a second. He suffered third-degree burns and needed skin grafts. The lesson: test everything, and wear the right PPE.</div>
+      </div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">B</span><h3>Study review points</h3></div>
+      <ul class="points" data-points="2"></ul>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">C</span><h3>Trade-term cards</h3></div>
+      <div class="deck" data-cards="2"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">D</span><h3>Ticket out the door</h3></div>
+      <div class="ticket" data-quiz="2"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">E</span><h3>Talk it over</h3></div>
+      <div class="talk" data-talk="2"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">F</span><h3>Practice questions</h3><span class="time">about 5 min</span></div>
+      <div data-practice="2"></div>
+    </div>
+  </section>
+
+  <!-- SECTION 3 -->
+  <section class="sec" id="s3" aria-labelledby="s3-h">
+    <div class="sec-head">
+      <span class="eyebrow">Module Section 3 of 4</span>
+      <h2 id="s3-h">Electrical Safety Standards</h2>
+      <p class="obj">By the end of this section your student can explain who is responsible for safety, how lockout/tagout works, what the safe-distance boundaries are, and how workers prevent mistakes.</p>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">A</span><h3>Read it together</h3><span class="time">about 10 min</span></div>
+      <div class="prose">
+        <p class="big">Safety rules exist because people got hurt. This section covers the main rules electricians follow and the habits that keep human mistakes from turning into injuries.</p>
+
+        <h4>OSHA and who is responsible</h4>
+        <p>OSHA is the federal agency that sets and enforces workplace safety law. Two sets of OSHA rules matter most to electricians: Part 1910 covers general industry, and Part 1926 covers construction.</p>
+        <ul>
+          <li><b>Employers</b> must train workers, provide PPE, tell workers about hazards, give clear written instructions, and make sure safe procedures are followed.</li>
+          <li><b>Employees</b> must read and follow the safety rules, inspect and use PPE, look out for themselves and others, and stay within the job plan.</li>
+        </ul>
+        <p>Staying inside the job plan matters. Many incidents trace back to what the module calls task creep. For example, you are taking a reading at a motor starter and notice a loose connection. Do not grab a screwdriver and tighten it. That puts you in contact with a live part. Stop, and plan it properly.</p>
+
+        <h4>Basic job-site rules</h4>
+        <ul>
+          <li>Wear hard hats and safety shoes, and safety glasses with side shields.</li>
+          <li>Skip loose or torn clothing and anything with exposed metal zippers or buttons.</li>
+          <li>Use tools that are either grounded (three-prong plug) or double-insulated.</li>
+          <li>Use three-wire extension cords, protected from damage.</li>
+          <li>Cover any hole bigger than 2 inches and mark it "HOLE" or "COVER."</li>
+          <li>All temporary 125-volt outlets rated 15, 20 or 30 amps must have GFCI protection. A GFCI compares the current going out with the current coming back. If the difference reaches about 5 mA, it shuts the circuit off.</li>
+        </ul>
+
+        <h4>Lockout/tagout</h4>
+        <p>Lockout/tagout, often shortened to LOTO, keeps equipment from being switched on while someone is working on it. A lock physically holds the switch or breaker off. A tag warns everyone and says who put the lock there. The module's example procedure goes like this:</p>
+        <ul>
+          <li>Tell everyone affected that lockout/tagout is happening, and why.</li>
+          <li>Shut the equipment down the normal way, then open and lock the energy sources.</li>
+          <li>Each worker puts on their own lock and tag.</li>
+          <li>Release or drain any stored energy.</li>
+          <li>Test with a meter to prove the equipment is de-energized.</li>
+          <li>If you leave and come back, test again.</li>
+        </ul>
+        <p>To restore power: make sure all people and tools are accounted for, put everything back together, put safety controls back, remove locks and tags (each worker removes only their own), tell everyone affected, then turn the power on. Only if a worker is gone or a key is lost may an authorized supervisor remove the device.</p>
+
+        <h4>NFPA 70E and who may do what</h4>
+        <p>OSHA writes the law. NFPA 70E is the national standard that spells out practical safe work practices for electrical hazards. It requires safety training, and retraining at least every three years.</p>
+        <p>The standard uses two labels. A <b>qualified person</b> has shown the skills and knowledge for that equipment and has had safety training to spot and avoid its hazards. An <b>unqualified person</b> is anyone who is not. These labels have nothing to do with having a license or how long someone has been in the trade. An unqualified person must be told about the hazards and escorted by a qualified person if they go inside certain boundaries.</p>
+
+        <h4>The invisible boundaries</h4>
+        <p>Picture invisible lines around exposed live parts. The higher the voltage, the farther out they sit.</p>
+        <ul>
+          <li><b>Limited approach boundary:</b> there is a shock hazard inside it. Only qualified people may cross. Unqualified people must be escorted.</li>
+          <li><b>Restricted approach boundary:</b> closer in, where the chance of shock is higher. Only qualified people with the required PPE, insulated tools, and permission may enter.</li>
+          <li><b>Arc flash boundary:</b> how far back you must stay to avoid a second-degree burn if an arc flash happens. How far depends on the electrical fault and how long it lasts, so it can be bigger or smaller than the shock boundaries.</li>
+        </ul>
+        <p>Before work, an <b>arc flash risk assessment</b> studies the hazard. Warning labels on equipment then show the voltage, the arc flash boundary, the shock boundaries, and the level of protection needed.</p>
+
+        <h4>People make mistakes, so plan for them</h4>
+        <p>The module's idea is simple: all people make mistakes, and situations that cause mistakes can be predicted and prevented. Situations that raise the odds of a mistake are called <b>error precursors</b>. Four groups:</p>
+        <ul>
+          <li><b>Task demands:</b> heavy workload, rushing, boring or repeated work.</li>
+          <li><b>Work environment:</b> distractions, interruptions, surprises.</li>
+          <li><b>Individual capabilities:</b> a new task, poor communication, a poor attitude.</li>
+          <li><b>Human nature:</b> stress, habits, assumptions, overconfidence, shortcuts.</li>
+        </ul>
+        <p>Tools that prevent mistakes:</p>
+        <ul>
+          <li><b>Pre-job briefing:</b> everyone learns their role before the task starts.</li>
+          <li><b>Job-site review:</b> find hazards and barriers early. <b>Post-job review:</b> learn what to do better next time.</li>
+          <li><b>STAR</b> self-check: Stop, Think, Act, Review. Pause and say out loud what you are about to do before you do something you cannot undo.</li>
+          <li><b>Three-way communication:</b> the sender gives a message, the receiver repeats it back, and the sender confirms it.</li>
+          <li><b>Stop when unsure.</b> Phrases like "I think" and "I'm pretty sure" are warning signs.</li>
+          <li><b>Flagging and blocking:</b> mark the right equipment and physically block access to the wrong ones.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">B</span><h3>Study review points</h3></div>
+      <ul class="points" data-points="3"></ul>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">C</span><h3>Trade-term cards</h3></div>
+      <div class="deck" data-cards="3"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">D</span><h3>Ticket out the door</h3></div>
+      <div class="ticket" data-quiz="3"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">E</span><h3>Talk it over</h3></div>
+      <div class="talk" data-talk="3"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">F</span><h3>Practice questions</h3><span class="time">about 5 min</span></div>
+      <div data-practice="3"></div>
+    </div>
+  </section>
+
+  <!-- SECTION 4 -->
+  <section class="sec" id="s4" aria-labelledby="s4-h">
+    <div class="sec-head">
+      <span class="eyebrow">Module Section 4 of 4</span>
+      <h2 id="s4-h">Hazards and Safety Requirements</h2>
+      <p class="obj">By the end of this section your student can name the safety rules for ladders, scaffolds, lifting, tools, confined spaces, dangerous materials and fall protection.</p>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">A</span><h3>Read it together</h3><span class="time">about 12 min</span></div>
+      <div class="prose">
+        <p class="big">Electricians get hurt by more than electricity. This section covers the other hazards on a job site, and the best protection is knowing about them before the day starts.</p>
+
+        <h4>Ladders</h4>
+        <p>About half of the injuries from contact with energized equipment involve ladders or scaffolds, because a shock can make a worker fall. Many contractors have a "Ladders Last" policy: they would rather use a lift, build a scaffold, or move the work to ground level.</p>
+        <ul>
+          <li>Pick the right ladder for the job and inspect it first. Look for loose or missing rungs, cracks, and bent parts. If it is damaged, do not use it. Report it.</li>
+          <li>For electrical work, always use a ladder made of nonconductive material, like fiberglass.</li>
+          <li>Face the ladder and keep three-point contact: both feet and one hand, or both hands and one foot.</li>
+          <li>Never lean out. Keep your belt buckle between the rails. If something is out of reach, climb down and move the ladder.</li>
+          <li><b>Straight ladders:</b> set the base about one-fourth of the working height out from the wall (the 4-to-1 rule), secure the ladder, and let the side rails extend 36 inches above the top support. It takes two people to raise an extension ladder.</li>
+          <li><b>Stepladders:</b> open them all the way and lock the spreaders. Never stand on the top two rungs, never use one as a straight ladder, and never leave tools on top.</li>
+        </ul>
+        <p>The module also offers the Fireman's Rule for angle: stand with your toes against the ladder's feet, stand straight, and hold your arms out in front of you. If your palms reach the rails, the angle is right.</p>
+
+        <h4>Scaffolds</h4>
+        <ul>
+          <li>Build them on firm footing, straight and plumb.</li>
+          <li>Guardrails and toe boards are needed on platforms more than 10 feet up (many companies require them lower).</li>
+          <li>Planks must extend 6 to 12 inches past their support for platforms 10 feet or less.</li>
+          <li>Everyone who builds or uses a scaffold must be trained.</li>
+          <li>Scaffolds conduct electricity. In one case, a crew moving a scaffold touched a 12,000-volt power line, and four of five people were killed.</li>
+        </ul>
+
+        <h4>Lifting, lifts and tools</h4>
+        <ul>
+          <li>Never walk or stand under a load, and heed warning signals around cranes and hoists.</li>
+          <li>Lift with your legs, not your back. Bending at the waist puts about ten times the load on your lower back. Remember B.A.C.K.: Balance, Alignment, Contract and close, Knees. Ask for help with heavy loads.</li>
+          <li>Use a tool only for its designed purpose. Inspect it first and take damaged tools out of service.</li>
+          <li>Power tools: read the manual, wear eye protection, never carry a tool by its cord, never remove guards, and use a grounded tool on a GFCI.</li>
+          <li>Treat nail guns and stud guns like loaded firearms.</li>
+        </ul>
+
+        <h4>Confined spaces</h4>
+        <p>A confined space is hard to enter and exit, not meant for people to stay in, and may hold hazards such as bad air, electrical hazards, or the chance of being trapped. Manholes, tanks, vaults, pits and sewers are examples. Entry takes training and a permit signed by a qualified person. Air quality must be watched, a rescue plan must exist, and the permits are kept in the job journal for one year.</p>
+
+        <h4>Dangerous materials</h4>
+        <ul>
+          <li><b>Safety Data Sheets (SDS)</b> tell you what a product contains, its hazards, and first aid. They must be easy to reach on the job.</li>
+          <li><b>Solvents</b> give off fumes. Ventilate, and wear the right PPE. A paper mask does not stop vapors. Respirators need a medical evaluation and a proper fit.</li>
+          <li><b>Asbestos</b> was used in insulation, floor tiles, and more. Breathing the fibers causes lung disease and cancer. Assume any building built before 1980 may have it. Electricians do not drill or disturb it.</li>
+          <li><b>Batteries</b> can give off hydrogen gas, which is explosive. No smoking, no flames. Battery acid burns skin, so know where the wash station is.</li>
+          <li><b>PCBs</b> are toxic chemicals found in some older transformers and capacitors and in the ballasts of older fluorescent lights. Do not come in contact with them. Mercury lamps must be recycled.</li>
+          <li><b>Lead paint</b> (homes built before 1978) and <b>silica dust</b> (from cutting or drilling concrete and stone) have their own rules, covered in the module.</li>
+        </ul>
+
+        <h4>Fall protection</h4>
+        <p>OSHA requires fall protection when working 6 feet or more above a lower level. The best choice is always to remove the hazard. If that cannot be done, protection is chosen in this order:</p>
+        <ul>
+          <li>Guardrail system (top rail at 42 inches, mid-rail at 21 inches, and a 4-inch toe board).</li>
+          <li>Controlled access zone: barricades or other controls that keep people back from the edge.</li>
+          <li>Fall restraint: a short lanyard that cannot reach the edge.</li>
+          <li>Personal fall arrest system (PFAS): catches a worker after a fall.</li>
+        </ul>
+        <p>A PFAS has three parts: a full-body harness (the only acceptable type), a lanyard no longer than 6 feet, and an anchor point that can hold 5,000 pounds. Inspect all of it before every use. If someone falls, never pull them up by the lanyard. Call for rescue right away, because hanging in a harness is dangerous. Anyone who falls needs medical attention even if they feel fine.</p>
+      </div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">B</span><h3>Study review points</h3></div>
+      <ul class="points" data-points="4"></ul>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">C</span><h3>Trade-term cards</h3></div>
+      <div class="deck" data-cards="4"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">D</span><h3>Ticket out the door</h3></div>
+      <div class="ticket" data-quiz="4"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">E</span><h3>Talk it over</h3></div>
+      <div class="talk" data-talk="4"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">F</span><h3>Practice questions</h3><span class="time">about 12 min</span></div>
+      <div data-practice="4"></div>
+    </div>
+  </section>
+
+  <section class="final" id="review" aria-labelledby="fin-h">
+    <span class="eyebrow">After all four sections</span>
+    <h2 id="fin-h">Can your student explain it?</h2>
+    <p class="lead">The goal is not perfect wording. The goal is accurate understanding and good judgment. Tick each one when your student can explain it without looking at the page.</p>
+    <ul class="points" id="final-points"></ul>
+    <p class="note">Trade terms are placed with the section where each is taught, so a few official terms sit in a different section than they are listed in the textbook. Cards marked "Key term" are important words from the module that are not on its official trade-term list. The practice questions cover the same topics as the handbook's Section Review and Module Review, and the answers follow the handbook's answer key. The textbook-style versions are written in the book's style and vocabulary, not copied word for word, so check the handbook itself for the exact wording. This guide is a plain-language companion, not a copy of the textbook. The module refers to NFPA 70E-2018. For real work, use the current standards, your employer's procedures and your instructor's directions. Draft for instructor review.</p>
+  </section>
+
+</div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><strong>Mr. Ellis CTE</strong> · East Valley Institute of Technology (EVIT), Mesa, Arizona · Your Future, Your Way</p>
+    <p>Based on NCCER Electrical Level 1 (10th edition), Module 26102-20, Safety for Electricians.</p>
+    <p>Aim for perfection, take what you get.</p>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var SEC = { 1: "Electrical Hazards", 2: "Protective Equipment", 3: "Safety Standards", 4: "Job-Site Hazards" };
+
+  var POINTS = {
+    1: [
+      "<b>The Focus Four:</b> falls, electric shock and arc burns, being crushed by falling materials or equipment, and being struck by flying objects or moving equipment.",
+      "<b>A shock</b> happens when your body becomes part of the circuit. Wet skin conducts better.",
+      "<b>Current numbers:</b> 5 mA can make you jerk and fall. 6 to 30 mA can lock your muscles. 50 mA or more can stop breathing. About 1 amp or more can cause fibrillation. Severity depends on the amount of current, the path, and the time.",
+      "<b>Three burns:</b> electrical, arc (up to about 35,000°F), and thermal contact.",
+      "<b>Live-dead-live:</b> prove the meter on a known live source, test the circuit, prove the meter again. Assume everything is live until proven off.",
+      "<b>Three causes of incidents:</b> unsafe conditions, unsafe equipment, unsafe acts.",
+      "<b>Risk controls, strongest to weakest:</b> elimination, substitution, engineering controls, awareness, administrative controls, PPE."
+    ],
+    2: [
+      "<b>PPE is the last line of defense.</b> It protects the worker but does not make the job safe.",
+      "<b>Gear must match the hazard</b> and be inspected before use.",
+      "<b>Glove classes by tag color:</b> beige 500 V, red 1,000 V, white 7,500 V, yellow 17,000 V, green 26,500 V, orange 36,000 V.",
+      "<b>Rubber gloves:</b> inspect daily, air test, lab test every six months, and wear leather protectors over them.",
+      "<b>Hard hats:</b> Class E is tested to 20,000 V for three minutes. Class G is tested to 2,200 V for one minute.",
+      "<b>Clothing:</b> arc-rated, natural fiber or flame-resistant. Never polyester, nylon or acrylic.",
+      "<b>Hot sticks</b> operate switches and fuses from a distance. <b>Fuse pullers</b> are used only on de-energized circuits."
+    ],
+    3: [
+      "<b>OSHA</b> is the law. Part 1910 is general industry. Part 1926 is construction. Employers train and provide PPE. Employees follow the rules and stay in the job plan.",
+      "<b>Tools</b> must be grounded (three-prong) or double-insulated. Temporary 125-volt outlets of 15, 20 and 30 amps need GFCI protection.",
+      "<b>Lockout/tagout:</b> every worker uses their own lock and tag and removes only their own. Retest if you leave and come back.",
+      "<b>NFPA 70E</b> sets practical safe work practices. A qualified person has demonstrated skills and had training. It has nothing to do with a license or years on the job.",
+      "<b>Boundaries:</b> limited approach (shock hazard, qualified people only, escorts for others), restricted approach (closer, more risk, PPE and permission needed), arc flash boundary (second-degree burn distance).",
+      "<b>Arc flash risk assessment</b> studies the hazard before work. Warning labels list voltage, boundaries and protection needed.",
+      "<b>Human performance:</b> everyone makes mistakes. Error precursors raise the odds. Tools: pre-job briefing, STAR (Stop, Think, Act, Review), three-way communication, and stop when unsure."
+    ],
+    4: [
+      "<b>Ladders:</b> 4-to-1 rule, extend 36 inches above the top, three-point contact, never lean out, and use nonconductive ladders for electrical work.",
+      "<b>Scaffolds:</b> firm footing, guardrails and toe boards above 10 feet, planks extend 6 to 12 inches, trained workers, and stay away from power lines.",
+      "<b>Lifting:</b> use your legs, not your back. B.A.C.K. means Balance, Alignment, Contract and close, Knees.",
+      "<b>Tools:</b> inspect first, use for the intended purpose, keep guards on, never remove the ground pin, use a GFCI.",
+      "<b>Confined spaces</b> have restricted entry, are not made to be occupied, and may hold hazards. They need training, a permit, air monitoring and a rescue plan.",
+      "<b>Dangerous materials:</b> an SDS gives the details. Assume asbestos in buildings built before 1980 and do not disturb it. PCBs are in some older transformers and capacitors. Batteries give off hydrogen.",
+      "<b>Fall protection</b> is required at 6 feet or more. Order: eliminate, guardrail, controlled access zone, fall restraint, then PFAS.",
+      "<b>PFAS:</b> full-body harness, lanyard no longer than 6 feet, anchor point rated 5,000 pounds. Inspect before every use. Never lift a fallen worker by the lanyard."
+    ]
+  };
+
+  // k = "o" for an official NCCER trade term, "k" for a key term from the module that is not on the official list.
+  var CARDS = {
+    1: [
+      { k: "o", t: "Fibrillation", plain: "The heart muscle quivers in a fast, uneven way instead of beating, so it cannot pump blood. A strong enough shock can cause it, and it is fatal unless a defibrillator restores the rhythm.", book: "Very rapid, irregular contractions of the heart muscle fibers, leaving the heart unable to pump blood properly.", ask: "How little current does it take to cause trouble, and how does that compare to a light bulb?" },
+      { k: "o", t: "Ground Fault Circuit Interrupter (GFCI)", plain: "The outlet with TEST and RESET buttons. It notices when even a small amount of electricity is leaking somewhere it should not, such as through a person, and shuts the power off in a fraction of a second.", book: "A device that de-energizes a circuit when current to ground goes above a set value, a value lower than what a normal breaker needs to trip.", ask: "Where in our home would a GFCI matter most?" },
+      { k: "o", t: "Double-Insulated / Ungrounded Tools", plain: "Power tools with a plastic case that cannot become live, even if something fails inside. They usually have a two-prong plug and no ground wire.", book: "Electrical tools built so the case is insulated from electrical energy, with the case made of nonconductive material.", ask: "How can you tell a double-insulated tool from a grounded one?" },
+      { k: "o", t: "Grounded Tool", plain: "A power tool with a three-prong plug. If something goes wrong inside, the extra prong gives stray electricity a safe path to ground, away from the person holding the tool.", book: "An electrical tool with a three-prong plug or other means to carry stray current to ground without passing through the user.", ask: "Why must you never break off the ground pin?" },
+      { k: "k", t: "Live-Dead-Live Test", plain: "A check before touching a circuit: prove your meter works on a known live source, test the circuit (it should read zero), then prove the meter works again. Checking the meter twice makes sure it did not fail in between.", book: "Verify the instrument on a known source, check that the circuit is de-energized while wearing the right PPE, then verify the instrument again.", ask: "Why do you test the meter both before and after?" },
+      { k: "k", t: "Hierarchy of Risk Controls", plain: "A ranking of ways to reduce danger, strongest to weakest: eliminate, substitute, engineering controls, awareness, administrative controls, PPE. The strongest ones remove the danger. The weakest depend on people.", book: "The first three, elimination, substitution and engineering controls, are the most effective because they act at the source of the hazard.", ask: "Where does PPE land on the list, and why?" }
+    ],
+    2: [
+      { k: "o", t: "Hot Stick", plain: "A long insulated pole that lets a trained electrician work a switch, pull a fuse or place a temporary ground from a safe distance.", book: "An insulated tool for manually operating disconnect switches, inserting and removing fuses, and applying and removing temporary grounds.", ask: "Why does distance make the work safer?" },
+      { k: "o", t: "Arc Rating", plain: "A number on protective clothing that says how much heat energy the fabric can take before it breaks down. Higher is stronger.", book: "The maximum incident energy a material or layered system can withstand before breaking down, in joules or calories per square centimeter.", ask: "Why can't electricians wear polyester or nylon under their gear?" },
+      { k: "o", t: "Incident Energy", plain: "How much heat energy from an arc would land on a surface at a given distance. More incident energy means worse burns and stronger protective clothing.", book: "The thermal energy impressed on a surface at a certain distance from an electrical arc, usually expressed in calories per square centimeter.", ask: "How does incident energy connect to the arc rating of clothing?" },
+      { k: "k", t: "PPE", plain: "Personal protective equipment: gear worn to protect against a hazard, like hard hats, gloves, glasses and arc-rated clothing. It is the last line of defense.", book: "PPE protects the worker but does not create a safe work environment, so it is the least effective control.", ask: "Why isn't gear alone enough to make a job safe?" },
+      { k: "k", t: "Glove Class and Tag Color", plain: "Rubber gloves come in classes 00 through 4. The tag color shows the highest voltage the glove is rated for, and the glove must match the job.", book: "Beige 500 V, red 1,000 V, white 7,500 V, yellow 17,000 V, green 26,500 V, orange 36,000 V.", ask: "What color is a glove rated for 1,000 volts?" },
+      { k: "k", t: "Fuse Puller", plain: "An insulated plastic or fiberglass tool for removing and installing fuses so hands stay clear. Fuses are only handled when the circuit is de-energized.", book: "All fuse pulling and replacement is done using fuse pullers. Fuses are never installed or removed when energized.", ask: "Why must the power be off first?" }
+    ],
+    3: [
+      { k: "o", t: "Qualified Person", plain: "Someone who has shown the skills and knowledge for a specific piece of electrical equipment and has had safety training to spot and avoid its hazards. It says nothing about a license or years on the job.", book: "A person who has demonstrated skills and knowledge related to the construction and operation of electrical equipment and has received safety training.", ask: "Why can someone be qualified for one task and not another?" },
+      { k: "o", t: "Unqualified Person", plain: "Anyone who does not meet the definition of a qualified person for that equipment. An unqualified person must be warned of the hazards and escorted if they enter the danger zone.", book: "A person who is not a qualified person.", ask: "Who is allowed to cross the limited approach boundary, and who has to be escorted?" },
+      { k: "o", t: "Limited Approach Boundary", plain: "An invisible line around exposed live parts. Inside it, a shock hazard exists, so only qualified people may cross it.", book: "An approach limit at a distance from an exposed energized conductor or circuit part within which a shock hazard exists.", ask: "How does the distance change as the voltage goes up?" },
+      { k: "o", t: "Restricted Approach Boundary", plain: "A second, closer line around live parts. Crossing it takes a qualified person, the right protective gear, and permission.", book: "An approach limit within which there is an increased likelihood of electric shock.", ask: "What extra protection is needed inside this line?" },
+      { k: "o", t: "Arc Flash Boundary (AFB)", plain: "The distance from a possible arc flash within which a person could suffer a second-degree burn. Anyone inside it needs arc-rated protection.", book: "An approach limit within which a person could receive a second-degree burn if an arc flash occurred.", ask: "What is an arc flash, and why can it hurt people standing several feet away?" },
+      { k: "o", t: "Arc Flash Risk Assessment", plain: "A study done before the work starts that figures out how dangerous a possible arc flash is, so the crew knows safe work practices and what protective gear to wear.", book: "A study of a worker's potential exposure to arc flash energy, used to decide safe work practices and appropriate PPE.", ask: "What would the assessment tell a crew before they open a panel?" },
+      { k: "o", t: "Error Precursors", plain: "Situations that make mistakes more likely, such as rushing, distractions, stress, a new task or too much confidence. Spotting them early helps prevent accidents.", book: "Situations that put a worker at risk because of the demands of the task, conditions, worker attitude, or the environment.", ask: "What is one thing that makes you more likely to make a mistake on a job?" },
+      { k: "k", t: "Lockout/Tagout (LOTO)", plain: "A lock and a tag on a switch or breaker so nobody can turn the power on while someone is working. Each worker puts on their own lock and tag and removes only their own.", book: "An OSHA rule for servicing equipment. Locks hold the energy-isolating device off, and tags warn others and identify who applied the lock.", ask: "Who is allowed to remove your lock?" }
+    ],
+    4: [
+      { k: "o", t: "Polychlorinated Biphenyls (PCBs)", plain: "Toxic chemicals that can be found in the cooling liquid of some older large transformers and capacitors, and in the ballasts of older fluorescent lights. Workers must not come in contact with them.", book: "Toxic chemicals that may be contained in liquids used to cool certain large transformers and capacitors.", ask: "Where could a worker find PCBs, and who handles them?" },
+      { k: "k", t: "Three-Point Contact", plain: "Keep three of your four hands and feet on the ladder at all times: both feet and one hand, or both hands and one foot.", book: "Face the ladder and maintain three-point contact while climbing.", ask: "Why can't you carry a big load up while climbing?" },
+      { k: "k", t: "Confined Space", plain: "A space that is hard to get in or out of, is not made for people to stay in, and may hold hazards like bad air or the chance of being trapped. Examples are manholes, tanks and vaults. Entry takes training, a permit, air checks and a rescue plan.", book: "A space with restricted entry and exit, not intended for continuous occupancy, with potential for hazards, entrapment or a dangerous atmosphere.", ask: "Name two places that count as a confined space." },
+      { k: "k", t: "Safety Data Sheet (SDS)", plain: "A sheet with the facts on a chemical: what is in it, how dangerous it is, first aid, and how to handle and store it. Job sites keep them where workers can get to them.", book: "An SDS is required for all materials that could be hazardous and must be kept in an accessible location.", ask: "Where would you find the SDS for a product at work?" },
+      { k: "k", t: "Asbestos", plain: "A heat-resistant mineral fiber once used in insulation, floor tiles and more. Breathing the fibers causes serious lung disease and cancer. Assume a building built before 1980 might have it, and do not disturb it.", book: "Assume any facility built before 1980 has asbestos. An electrician must not drill or otherwise work with it unless trained.", ask: "What should a worker do if they think a material contains asbestos?" },
+      { k: "k", t: "Personal Fall Arrest System (PFAS)", plain: "Gear that catches a worker after a fall: a full-body harness, a lanyard no longer than 6 feet, and an anchor point that can hold 5,000 pounds. It is inspected before every use.", book: "The complete system usually consists of a full-body harness, lanyard, and anchorage device.", ask: "Why should you never pull a fallen worker up by the lanyard?" }
+    ]
+  };
+
+  // a = index of the right option
+  var QUIZ = {
+    1: [
+      { q: "How much current can make a person jerk away and possibly fall?", o: ["1 mA", "5 mA", "50 mA", "500 mA"], a: 1, why: "At 5 mA the shock is slight, but the jerking reaction can cause a fall." },
+      { q: "True or false: wet or sweaty skin carries electricity better than dry skin.", o: ["True", "False"], a: 0, why: "Moisture lowers the skin's resistance a lot." },
+      { q: "An electric arc can reach about how hot?", o: ["350°F", "3,500°F", "35,000°F"], a: 2, why: "About 35,000°F, roughly four times hotter than the surface of the sun." },
+      { q: "In a live-dead-live test, what do you test your meter on first?", o: ["A known live source", "The circuit you plan to work on", "Nothing, you just start"], a: 0, why: "You prove the meter works before you trust what it says about the circuit." },
+      { q: "Which control is the strongest way to reduce a hazard?", o: ["Wear PPE", "Post a warning sign", "Eliminate the hazard"], a: 2, why: "Elimination removes the hazard. PPE is the last line of defense." }
+    ],
+    2: [
+      { q: "PPE is the ___ line of defense.", o: ["first", "last", "only"], a: 1, why: "It protects you but does not remove the hazard." },
+      { q: "A red-tag (Class 0) rubber glove is rated for up to:", o: ["500 V", "1,000 V", "7,500 V", "17,000 V"], a: 1, why: "Red tag means Class 0, which is 1,000 V." },
+      { q: "True or false: it is fine to wear polyester or nylon under arc-rated gear.", o: ["True", "False"], a: 1, why: "Those fabrics melt onto skin and make burns worse. Use natural fiber or flame-resistant clothing." },
+      { q: "When must the worker inspect rubber gloves?", o: ["Every day, before use", "Once a year", "Only if they look damaged"], a: 0, why: "Gloves are inspected before use every day, and are also lab tested every six months." },
+      { q: "A hot stick is used to:", o: ["Cut wire", "Operate switches and fuses from a distance", "Measure current"], a: 1, why: "It is an insulated pole that keeps the worker back from the live part." }
+    ],
+    3: [
+      { q: "OSHA's 29 CFR Part 1926 covers which industry?", o: ["General industry", "Construction", "Farming"], a: 1, why: "Part 1910 is general industry. Part 1926 is construction." },
+      { q: "STAR stands for:", o: ["Start, Try, Assume, Run", "Stop, Think, Act, Review", "Stop, Talk, Avoid, Repeat"], a: 1, why: "It is a quick self-check before doing something you cannot undo." },
+      { q: "Who removes a worker's lock and tag?", o: ["Anyone nearby", "The worker who put them on", "The newest worker"], a: 1, why: "Each authorized worker removes their own. A supervisor may only do it in an emergency." },
+      { q: "A qualified person is someone who:", o: ["Has an electrician's license", "Has worked 10 years", "Has shown the skills and had safety training for that equipment"], a: 2, why: "The label has nothing to do with a license or time in the trade." },
+      { q: "Which boundary is closer to the live part?", o: ["Limited approach", "Restricted approach"], a: 1, why: "The restricted approach boundary is the closer, riskier line." },
+      { q: "True or false: if you are not sure about a procedure, it is safer to guess than to stop.", o: ["True", "False"], a: 1, why: "Stop when unsure. Get direction before going on." }
+    ],
+    4: [
+      { q: "Fall protection is required at heights of:", o: ["3 feet or more", "6 feet or more", "15 feet or more"], a: 1, why: "OSHA requires it at 6 feet or more above a lower level." },
+      { q: "A straight ladder's base should sit this far from the wall:", o: ["One-fourth of the working height", "Half of the height", "Right against the wall"], a: 0, why: "That is the 4-to-1 rule." },
+      { q: "True or false: asbestos may be in buildings built before 1980.", o: ["True", "False"], a: 0, why: "Assume yes, and do not disturb it." },
+      { q: "When lifting, you should lift by straightening your:", o: ["Back", "Legs", "Arms"], a: 1, why: "Legs lift, back stays straight." },
+      { q: "SDS stands for:", o: ["Standard Duty Switch", "Safety Data Sheet", "Service Distance Scale"], a: 1, why: "It tells you what is in a product and how to handle it safely." },
+      { q: "A fall arrest anchor point must hold how much?", o: ["250 pounds", "1,000 pounds", "5,000 pounds"], a: 2, why: "5,000 pounds per person." }
+    ]
+  };
+
+  var TALK = {
+    1: {
+      qs: ["Why can a circuit be dangerous even if it looks harmless?", "Why is removing a hazard stronger than just warning people about it?"],
+      scn: [{
+        t: "\"It still works\"",
+        s: "A student sees a portable tool with a nicked cord. A classmate says, \"It still turns on, so it's fine. We only need it for a minute.\" What unsafe choices do you notice? What should the student do?",
+        g: ["A damaged cord is unsafe equipment. Cut or nicked insulation can expose wires, and the tool's case could become live.", "Working does not mean safe. The student should stop using it and keep others from using it.", "Report it to the instructor or supervisor and tag it out of service."]
+      }],
+      parent: "Ask your student to explain a live-dead-live test without looking at the page. If they can name the steps but cannot say why the meter is tested before and after, they may need more review."
+    },
+    2: {
+      qs: ["Why isn't \"I'm wearing gloves\" enough to prove a worker is protected?", "What could happen if protective gear is damaged or used above its rating?"],
+      scn: [{
+        t: "\"These gloves look okay\"",
+        s: "Before a task, a worker grabs a pair of insulating gloves without checking them. Another worker sees something that might be damage but says they are probably fine. What is the safer response?",
+        g: ["Do not go by looks or someone's opinion. Stop before the task.", "Inspect the gloves: look for cuts and pinholes, do the air test, and check the class and the test date stamp (tested within six months).", "If there is any doubt, turn them in and use a good pair. Tell the instructor or supervisor."]
+      }]
+    },
+    3: {
+      qs: ["Why is switching equipment off not enough by itself?", "What should a worker do when the written steps do not match the equipment?"],
+      scn: [{
+        t: "\"We shut it off already\"",
+        s: "A coworker says a circuit is safe because the switch is off and someone checked it earlier. The coworker wants to start touching conductors right away. Why is that not enough?",
+        g: ["Off is not the same as proven safe. The equipment must be locked and tagged out first.", "Then the circuit must be tested with a live-dead-live test using the right meter and PPE.", "If anyone left and came back, test again. An earlier check does not count."]
+      }, {
+        t: "\"I'm pretty sure\"",
+        s: "A student is asked to help with a task. The written steps do not seem to match the equipment in front of them. A coworker says, \"Just do what we usually do. We're behind schedule.\" What should the student do?",
+        g: ["Stop. \"I'm pretty sure\" is a warning phrase, and schedule pressure is not a reason to skip the procedure.", "Say clearly what does not match, use STAR (Stop, Think, Act, Review), and ask the supervisor or instructor for direction before going on."]
+      }]
+    },
+    4: {
+      qs: ["Why do many contractors have a \"Ladders Last\" policy?", "Why must electrical workers use ladders made of nonconductive material?"],
+      scn: [{
+        t: "\"Just be quick\"",
+        s: "A student needs to change a light fixture. The only ladder nearby is aluminum, with one cracked step. A coworker says, \"It'll hold. Just be quick.\" What is wrong with this picture?",
+        g: ["A cracked step means the ladder is damaged. Do not use it. Report it and tag it out of service.", "Aluminum conducts electricity. Electrical work calls for a nonconductive (fiberglass) ladder.", "When the right ladder is found, set it at the 4-to-1 angle, keep three-point contact, and never lean out."]
+      }]
+    }
+  };
+
+  var FINAL = [
+    "I can explain what the Focus Four are and why shock is more dangerous than it looks.",
+    "I can describe what 5 mA, 50 mA and 1 amp can do to the body.",
+    "I can explain the live-dead-live test and why the meter is checked twice.",
+    "I can explain why PPE is the last line of defense, and how gloves are inspected.",
+    "I can describe how lockout/tagout works and who removes a lock.",
+    "I can explain the limited approach, restricted approach and arc flash boundaries.",
+    "I can explain why a worker should stop when unsure instead of guessing.",
+    "I can name the rules for ladders, lifting, and fall protection at 6 feet."
+  ];
+
+  function el(tag, cls, text) { var n = document.createElement(tag); if (cls) n.className = cls; if (text != null) n.textContent = text; return n; }
+
+  function buildPoints(ul, list, prefix) {
+    list.forEach(function (html, i) {
+      var li = el("li");
+      var label = el("label");
+      var input = document.createElement("input");
+      input.type = "checkbox";
+      input.id = prefix + "-" + i;
+      var span = el("span");
+      span.innerHTML = html; // static text written in this file
+      label.appendChild(input); label.appendChild(span);
+      li.appendChild(label); ul.appendChild(li);
+    });
+  }
+
+  function field(label, text) {
+    var d = el("span");
+    d.appendChild(el("span", "label", label));
+    d.appendChild(document.createTextNode(text));
+    return d;
+  }
+  function buildCards(host, n) {
+    CARDS[n].forEach(function (item) {
+      var b = el("button", "card");
+      b.type = "button";
+      b.setAttribute("aria-pressed", "false");
+      b.setAttribute("aria-label", item.t + ". Press to flip the card.");
+      var inner = el("span", "card-inner");
+      var f = el("span", "face front" + (item.k === "k" ? " key" : ""));
+      f.appendChild(el("span", "strip", (item.k === "o" ? "NCCER trade term" : "Key term") + " · Section " + n));
+      f.appendChild(el("span", "term", item.t));
+      f.appendChild(el("span", "hint", "TAP TO FLIP"));
+      var k = el("span", "face back");
+      k.appendChild(el("span", "strip", item.t));
+      var body = el("span", "body");
+      body.appendChild(field("In everyday words", item.plain));
+      body.appendChild(field("From the module", item.book));
+      var ask = field("Ask your student", item.ask);
+      ask.className = "ask";
+      body.appendChild(ask);
+      k.appendChild(body);
+      inner.appendChild(f); inner.appendChild(k);
+      b.appendChild(inner);
+      b.addEventListener("click", function () { b.setAttribute("aria-pressed", b.getAttribute("aria-pressed") === "true" ? "false" : "true"); });
+      host.appendChild(b);
+    });
+  }
+
+  function buildQuiz(host, n) {
+    var list = QUIZ[n];
+    var answered = 0;
+    host.appendChild(el("p", "ticket-intro", "Pick the answer. You will see right away if it is correct. Nothing is saved or sent."));
+    var foot = el("div", "ticket-foot");
+    var done = el("p", null, "");
+    done.setAttribute("aria-live", "polite");
+    var retry = el("button", "btn", "Try again");
+    retry.type = "button";
+    retry.hidden = true;
+    foot.appendChild(done); foot.appendChild(retry);
+
+    list.forEach(function (item, qi) {
+      var fs = el("fieldset", "q");
+      fs.appendChild(el("legend", null, (qi + 1) + ". " + item.q));
+      var opts = el("div", "opts");
+      var fb = el("p", "fb");
+      fb.setAttribute("aria-live", "polite");
+      var btns = [];
+      item.o.forEach(function (text, oi) {
+        var b = el("button", "opt", text);
+        b.type = "button";
+        b.addEventListener("click", function () {
+          btns.forEach(function (x) { x.disabled = true; });
+          answered++;
+          if (oi === item.a) {
+            b.classList.add("right");
+            fb.innerHTML = "";
+            var good = el("b", null, "Correct. "); fb.appendChild(good); fb.appendChild(document.createTextNode(item.why));
+          } else {
+            b.classList.add("wrong");
+            btns[item.a].classList.add("right");
+            fb.innerHTML = "";
+            var no = el("b", null, "Not quite. "); fb.appendChild(no);
+            fb.appendChild(document.createTextNode("The answer is \"" + item.o[item.a] + "\". " + item.why));
+          }
+          if (answered === list.length) {
+            done.textContent = "Ticket finished. Reread any part of the section that felt shaky, then try again.";
+            retry.hidden = false;
+          }
+        });
+        btns.push(b); opts.appendChild(b);
+      });
+      fs.appendChild(opts); fs.appendChild(fb);
+      host.insertBefore(fs, null);
+      fs._reset = function () { btns.forEach(function (x) { x.disabled = false; x.className = "opt"; }); fb.textContent = ""; };
+    });
+    host.appendChild(foot);
+    retry.addEventListener("click", function () {
+      host.querySelectorAll("fieldset").forEach(function (f) { f._reset(); });
+      answered = 0; done.textContent = ""; retry.hidden = true;
+    });
+  }
+
+  function buildTalk(host, n) {
+    var t = TALK[n];
+    var ol = el("ol", "qs");
+    t.qs.forEach(function (q) { ol.appendChild(el("li", null, q)); });
+    host.appendChild(ol);
+    t.scn.forEach(function (s) {
+      var d = el("details", "scn");
+      d.appendChild(el("summary", null, "Scenario: " + s.t));
+      d.appendChild(el("p", "setup", s.s));
+      var g = el("div", "good");
+      g.appendChild(el("b", null, "A good answer includes"));
+      var ul = el("ul");
+      s.g.forEach(function (x) { ul.appendChild(el("li", null, x)); });
+      g.appendChild(ul); d.appendChild(g);
+      host.appendChild(d);
+    });
+    if (t.parent) {
+      var p = el("div", "parent");
+      p.appendChild(el("b", null, "Parent prompt"));
+      p.appendChild(el("p", null, t.parent));
+      host.appendChild(p);
+    }
+  }
+
+  // Practice pairs. pq/po = plain English. tq/to = textbook style. a = index of the right answer (matches the handbook key).
+  // Both versions keep the same option order. br = [what you might say, what the textbook says].
+  var PRACTICE = {
+    1: [
+      { src: "Section Review 1 · Q1", a: 1,
+        pq: "Let's check what you know about shock. Which of these is true?",
+        po: ["Most electrical accidents happen when someone touches a really high-voltage line.", "Most accidents with plug-in power tools happen when the tool's metal frame or case ends up carrying electricity.", "Construction workers are no more likely to be electrocuted than people in other jobs.", "CPR can fix a heart that is quivering after a shock."],
+        tq: "Which statement regarding electrical shock is accurate?",
+        to: ["The majority of electrical incidents involve contact with high-voltage conductors, those over 1,000V.", "Most incidents involving electrically operated tools occur when the frame or case of the tool becomes energized.", "Electrocution is no more likely in the construction industry than in other industries.", "CPR can be used to correct heart fibrillation resulting from a shock."],
+        why: "Most tool shocks happen when the tool's case becomes energized. Most injuries come from low-voltage contact, construction workers are about four times more likely to be electrocuted, and a quivering heart needs a defibrillator, not CPR.",
+        br: [["a tool's case is carrying electricity", "the frame or case becomes energized"], ["a quivering heart", "fibrillation"]] },
+      { src: "Section Review 1 · Q2", a: 2,
+        pq: "The live-dead-live test is how you prove one thing. What is it?",
+        po: ["That a circuit is working the way it should.", "That a motor is running right.", "That the circuit is turned off and has no voltage on it.", "How much voltage a known power source has."],
+        tq: "The purpose of a live-dead-live test is to confirm:",
+        to: ["proper circuit operation", "motor performance", "a de-energized circuit", "the voltage rating of a known source"],
+        why: "You prove the meter, test the circuit, and prove the meter again. The point is to confirm the circuit is dead.",
+        br: [["turned off and proven to have no voltage", "de-energized"]] },
+      { src: "Section Review 1 · Q3", a: 3,
+        pq: "Why do most electrical injuries happen? Mostly because people didn't...",
+        po: ["wear the right gear.", "write down the steps.", "coordinate with each other.", "follow safe work habits."],
+        tq: "Most electrical injuries result from failure to:",
+        to: ["use appropriate PPE.", "document procedures.", "coordinate work activities.", "observe safe work practices."],
+        why: "Most electrical injuries come from not following safe work practices and not being aware of a hazard.",
+        br: [["safe work habits", "safe work practices"], ["the right gear", "PPE"]] },
+      { src: "Section Review 1 · Q4", a: 1,
+        pq: "A barricade blocks people away from a hazard. What kind of control is that?",
+        po: ["Changing how people work, with rules and training.", "Isolating the hazard behind a physical barrier.", "Warning people with a sign.", "Removing the hazard completely."],
+        tq: "A barricade is classified as:",
+        to: ["an administrative control.", "an engineering control.", "a form of worker awareness.", "hazard elimination."],
+        why: "Barricades isolate the hazard from the worker. That is an engineering control.",
+        br: [["physically blocking or isolating the hazard", "engineering control"], ["rules and training", "administrative control"]] },
+      { src: "Module Review · Q1", a: 3,
+        pq: "Which of these is NOT one of the big killers on a construction site?",
+        po: ["Falls", "Electric shock", "Being crushed or hit by falling or flying objects", "Chemical burns"],
+        tq: "All of the following are typical life-threatening construction hazards EXCEPT:",
+        to: ["falls.", "electrocution.", "being struck by or caught under falling or flying objects.", "chemical burns."],
+        why: "The Focus Four are falls, electric shock and arc burns, being crushed by falling materials or equipment, and being struck by flying objects or moving equipment.",
+        br: [["the big killers", "the OSHA Focus Four"]] },
+      { src: "Module Review · Q2", a: 3,
+        pq: "A person's heart is quivering after a shock. What actually fixes it?",
+        po: ["Wait for it to stop on its own.", "Put them in ice water.", "Do the Heimlich maneuver.", "Have someone trained use a defibrillator."],
+        tq: "When a shock causes the heart to fibrillate, the corrective action is to:",
+        to: ["allow the fibrillation to pass.", "immerse the victim in ice water.", "perform the Heimlich maneuver.", "have a qualified person use a defibrillator."],
+        why: "Fibrillation is fatal unless the heart's rhythm is restored with a defibrillator. Call for emergency help right away.",
+        br: [["quivering heart", "fibrillation"], ["trained person", "qualified person"]] },
+      { src: "Module Review · Q3", a: 2,
+        pq: "About low-voltage wires (1,000 volts or less): which is true?",
+        po: ["They can't carry enough power to kill anyone.", "They have to be over 480 volts to kill.", "They cause most electrocution deaths, because workers touch them so often.", "They're unlikely to hurt you if you wear rubber-soled shoes."],
+        tq: "Low-voltage conductors:",
+        to: ["lack sufficient power to cause electrocution.", "must exceed 480V to be fatal.", "account for most electrocution deaths because of how frequently workers contact them.", "pose little injury risk when rubber-soled footwear is worn."],
+        why: "Workers spend most of their time near lower voltages, so contact is frequent, and that is why they cause most electrocution deaths.",
+        br: [["wires with lower voltage", "low-voltage conductors"]] },
+      { src: "Module Review · Q4", a: 2,
+        pq: "A 5 mA shock can hurt you in what way?",
+        po: ["By stopping your breathing.", "By suffocating you.", "By making you jerk without meaning to, so you fall or hit something.", "By causing electrical burns."],
+        tq: "A shock of 5mA can cause injury through:",
+        to: ["respiratory arrest.", "suffocation.", "involuntary movement.", "electrical burns."],
+        why: "At 5 mA the shock is slight, but the jerk reaction can cause a fall or a cut.",
+        br: [["jerking without meaning to", "involuntary movement"], ["stopping your breathing", "respiratory arrest"]] },
+      { src: "Module Review · Q5", a: 0,
+        pq: "Scheduling maintenance for the night shift, when no one is near the equipment, takes the hazard out of the picture. What kind of control is that?",
+        po: ["Eliminating the hazard", "Isolating the hazard with a barrier", "Replacing it with something less dangerous", "Changing how people work"],
+        tq: "Scheduling maintenance work for off-shift hours is an example of:",
+        to: ["hazard elimination.", "an engineering control.", "hazard substitution.", "an administrative control."],
+        why: "The module's example of elimination is scheduling maintenance off shift so no one is exposed to the operating equipment.",
+        br: [["taking the hazard away", "elimination"], ["swapping in something safer", "substitution"]] },
+      { src: "Module Review · Q6", a: 1,
+        pq: "A guard on a machine keeps your hands away from the danger. What kind of control is it?",
+        po: ["Eliminating the hazard", "Isolating the hazard with a barrier", "Replacing it with something less dangerous", "Changing how people work"],
+        tq: "A machine guard is an example of:",
+        to: ["hazard elimination.", "an engineering control.", "hazard substitution.", "an administrative control."],
+        why: "Guards, barricades, safety nets and interlocks isolate the hazard from the worker. Those are engineering controls.",
+        br: [["a guard that blocks the hazard", "engineering control"]] },
+      { src: "Module Review · Q7", a: 3,
+        pq: "A work permit is a paper system that says who may do what, and when. What kind of control is it?",
+        po: ["Eliminating the hazard", "Isolating the hazard with a barrier", "Replacing it with something less dangerous", "Changing how people work"],
+        tq: "A work permit is a type of:",
+        to: ["hazard elimination.", "an engineering control.", "hazard substitution.", "an administrative control."],
+        why: "Permits and written procedures change how people work. They are administrative controls.",
+        br: [["rules, permits and procedures", "administrative controls"]] },
+      { src: "Module Review · Q8", a: 3,
+        pq: "Which way of preventing harm is the weakest of all?",
+        po: ["Eliminating the hazard", "Replacing it with something less dangerous", "Isolating it with a barrier", "Protective gear"],
+        tq: "The least effective method of preventing risk is the use of:",
+        to: ["elimination.", "substitution.", "engineering controls.", "PPE."],
+        why: "PPE is the last line of defense, because it depends on people using it correctly every time.",
+        br: [["protective gear", "PPE (personal protective equipment)"]] }
+    ],
+    2: [
+      { src: "Section Review 2 · Q1", a: 1,
+        pq: "Who requires that safety gear be inspected and tested on a regular schedule?",
+        po: ["ANSI", "OSHA", "NFPA", "NEMA"],
+        tq: "Periodic inspection and testing of protective equipment is required by:",
+        to: ["ANSI.", "OSHA.", "NFPA.", "NEMA."],
+        why: "OSHA requires protective equipment to be kept in safe, reliable condition and periodically inspected or tested.",
+        br: [["checked on a regular schedule", "periodic inspection and testing"]] },
+      { src: "Section Review 2 · Q2", a: 0,
+        pq: "A rubber glove with a beige tag is rated for up to what voltage?",
+        po: ["500 V", "1,000 V", "7,500 V", "17,000 V"],
+        tq: "Rubber protective equipment bearing a beige tag is rated for:",
+        to: ["500V.", "1,000V.", "7,500V.", "17,000V."],
+        why: "Beige is Class 00, rated 500 V. Red is 1,000 V, white 7,500 V, yellow 17,000 V, green 26,500 V, orange 36,000 V.",
+        br: [["beige-tag glove", "Class 00 rubber protective equipment"]] },
+      { src: "Module Review · Q9", a: 2,
+        pq: "Which hard hat is tested to take 20,000 volts for three minutes?",
+        po: ["Class A", "Class C", "Class E", "Class G"],
+        tq: "The hard hat classification able to withstand 20,000VAC for three minutes is:",
+        to: ["Class A.", "Class C.", "Class E.", "Class G."],
+        why: "Class E has the highest rating. Class G is tested to 2,200 volts for one minute.",
+        br: [["20,000 volts for three minutes", "20,000VAC for three minutes"]] },
+      { src: "Module Review · Q10", a: 1,
+        pq: "Class 0 (red tag) rubber gloves are for work below what voltage?",
+        po: ["500 V", "1,000 V", "5,000 V", "7,500 V"],
+        tq: "Class 0 rubber gloves are intended for use below:",
+        to: ["500 volts.", "1,000 volts.", "5,000 volts.", "7,500 volts."],
+        why: "Class 0 is rated for a maximum of 1,000 volts.",
+        br: [["red-tag glove", "Class 0 glove"]] },
+      { src: "Module Review · Q11", a: 2,
+        pq: "What is a hot stick good for?",
+        po: ["Swapping out busbars", "Testing for voltage", "Replacing fuses from a safe distance", "Checking continuity"],
+        tq: "An important use of a hot stick is to:",
+        to: ["replace busbars.", "test for voltage.", "replace fuses.", "test for continuity."],
+        why: "A hot stick is an insulated pole used to operate disconnects, install and remove fuses, and place or remove temporary grounds.",
+        br: [["pole you use from a distance", "hot stick"]] }
+    ],
+    3: [
+      { src: "Section Review 3 · Q1", a: 1,
+        pq: "Who and what does OSHA's lockout/tagout rule cover?",
+        po: ["Only people doing electrical work.", "Any stored energy that could hurt someone: electrical, mechanical, hydraulic, chemical, thermal, kinetic or other.", "It is the strictest rule there is and replaces the site's own procedures.", "Only government job sites."],
+        tq: "The OSHA lockout/tagout standard:",
+        to: ["is limited to employees performing electrical work.", "applies to any hazardous stored energy (electrical, mechanical, hydraulic, chemical, thermal, kinetic or other).", "sets the most stringent requirements and supersedes site procedures.", "applies only to government work sites."],
+        why: "It covers any energy that could cause injury if it started up or released unexpectedly. It is a minimum, so your employer's and the site's procedures also apply.",
+        br: [["stored energy", "hazardous energy"], ["turn off, lock and tag", "lockout/tagout"]] },
+      { src: "Section Review 3 · Q2", a: 2,
+        pq: "What is the NFPA 70E standard about?",
+        po: ["The minimum rules for installing electrical equipment.", "How electrical equipment must be built.", "The practical safe ways to work around electrical hazards.", "How to operate electrical equipment."],
+        tq: "NFPA 70E® addresses:",
+        to: ["minimum installation requirements.", "manufacturer specifications.", "practical safe work practices relative to electrical hazards.", "equipment operating instructions."],
+        why: "NFPA 70E is about working safely around electrical hazards. It is easy to mix up with the NEC, which is about installation.",
+        br: [["safe ways to work", "safe work practices"]] },
+      { src: "Module Review · Q12", a: 1,
+        pq: "What is true of a double-insulated power tool?",
+        po: ["It has two layers of insulation on the cord.", "It can safely be used instead of a grounded tool.", "It is made entirely of plastic or other non-conducting material.", "The whole tool is wrapped in rubber."],
+        tq: "Which statement correctly describes a double-insulated power tool?",
+        to: ["It has twice the insulation on its power cord.", "It may be used safely in place of a grounded tool.", "It is constructed entirely of plastic or other nonconductive material.", "It is completely covered in rubber."],
+        why: "The module says to choose either a grounded tool or a double-insulated tool. Double-insulated means the case is nonconductive, so the case cannot become a shock path.",
+        br: [["a tool with a plastic case and no ground pin", "double-insulated tool"]] },
+      { src: "Module Review · Q13", a: 3,
+        pq: "Who puts a lock and tag on during lockout/tagout?",
+        po: ["Only the supervisor.", "Just the first person to arrive, for the whole crew.", "Anyone can take off someone else's lock if they know that person went home.", "Every worker involved puts on their own."],
+        tq: "In a lockout/tagout procedure:",
+        to: ["only the supervisor installs the devices.", "only the first employee at the disconnect applies devices when several are involved.", "one employee's devices may be removed by another once the first employee has left for the day.", "every employee involved in the work installs a device."],
+        why: "Each authorized employee applies their own lock and tag and removes only their own. Only an authorized supervisor may remove one in an emergency.",
+        br: [["your own lock and tag", "lockout/tagout devices applied by each authorized employee"]] },
+      { src: "Module Review · Q14", a: 0,
+        pq: "What does the NEC (National Electrical Code) cover?",
+        po: ["The minimum rules for installing electrical systems.", "How equipment is manufactured.", "Workplace hazards around electrical equipment.", "How to operate electrical equipment."],
+        tq: "The NEC® provides:",
+        to: ["minimum requirements for the installation of electrical systems.", "manufacturing specifications for electrical equipment.", "coverage of workplace hazards associated with electrical equipment.", "operating instructions for electrical equipment."],
+        why: "The NEC covers how to install electrical systems. NFPA 70E covers how to work around them safely.",
+        br: [["how to wire it", "installation requirements"]] }
+    ],
+    4: [
+      { src: "Section Review 4 · Q1", a: 0,
+        pq: "What does three-point contact on a ladder mean?",
+        po: ["Two feet and one hand, or two hands and one foot, on the ladder as you climb.", "At least three of the four rail ends rest on solid ground.", "You can reach sideways as far as you like if one hand and both feet are on the ladder.", "All splices are attached at three points."],
+        tq: "Three-point contact on a ladder means:",
+        to: ["both feet and one hand, or both hands and one foot, are in contact while climbing.", "at least three of the four rail contact points rest on a firm surface.", "reaching to either side is acceptable when one hand and both feet remain on the ladder.", "all splices are secured at three points."],
+        why: "Keep three of your four hands and feet on the ladder at all times, and never lean out.",
+        br: [["three of your four hands and feet on the ladder", "three-point contact"]] },
+      { src: "Section Review 4 · Q2", a: 3,
+        pq: "What is true about lifting?",
+        po: ["Step over things in your way.", "Stand as far from the load as you can.", "Lift using your back muscles.", "Lift by straightening your legs."],
+        tq: "Which is correct with regard to lifting?",
+        to: ["Step over obstructions rather than going around them.", "Stand as far as possible from the load to prevent foot injury.", "Lift with the back muscles.", "Lift by straightening the legs."],
+        why: "Keep the load close, bend your knees, and let your legs do the lift. Remember B.A.C.K.",
+        br: [["let your legs do the work", "lift by straightening the legs"]] },
+      { src: "Section Review 4 · Q3", a: 0,
+        pq: "What is true about hand tools?",
+        po: ["Point the blade away from yourself so a slip does not hurt you.", "A dull tool is safer than a sharp one.", "You can use the side of a wedge as a hammer if you have to.", "A mushroomed head on a chisel is good because it has more area to strike."],
+        tq: "Which statement about hand tools is correct?",
+        to: ["Direct the blade of a sharp tool away from the body in case it slips.", "A dull tool is safer than a sharp tool.", "The side of a wedge may be used as a hammer when necessary.", "Mushroomed heads on impact tools are preferred for their larger striking surface."],
+        why: "Dull blades are harder to control, tools must only be used for their designed purpose, and mushroomed heads can shatter and send pieces flying.",
+        br: [["a chisel head that has flared out", "mushroomed head on an impact tool"]] },
+      { src: "Section Review 4 · Q4", a: 2,
+        pq: "Which of these counts as a confined space?",
+        po: ["A narrow alley between buildings", "A shallow trench", "A grain hopper", "A horse pen"],
+        tq: "Which of the following is considered a confined space?",
+        to: ["A narrow alleyway between buildings", "A shallow trench", "A grain hopper", "A horse pen"],
+        why: "A confined space has restricted entry or exit, is not made for people to stay in, and may hold hazards. Hoppers, tanks, vaults and manholes qualify.",
+        br: [["a tight space you would not stay in", "confined space"]] },
+      { src: "Section Review 4 · Q5", a: 3,
+        pq: "Older fluorescent light fixtures can contain which hazardous material?",
+        po: ["Acid", "Lead", "CFCs", "PCBs"],
+        tq: "Fluorescent light fixtures may contain:",
+        to: ["acid.", "lead.", "CFCs.", "PCBs."],
+        why: "PCBs can be found in the small ballast transformers of older fluorescent fixtures. Do not come in contact with them.",
+        br: [["toxic cooling chemicals", "polychlorinated biphenyls (PCBs)"]] },
+      { src: "Section Review 4 · Q6", a: 0,
+        pq: "At what height is fall protection required?",
+        po: ["6 feet or more", "7 feet or more", "8 feet or more", "10 feet or more"],
+        tq: "Fall protection is required when working at elevations of:",
+        to: ["6' (1.8 m) or more.", "7' (2.1 m) or more.", "8' (2.4 m) or more.", "10' (3 m) or more."],
+        why: "OSHA requires fall protection at 6 feet or more above a lower level.",
+        br: [["6 feet up", "6' (1.8 m)"]] },
+      { src: "Module Review · Q15", a: 0,
+        pq: "How far from the wall do the feet of a straight ladder go?",
+        po: ["One-fourth of how high the ladder reaches", "Half the ladder's height", "As far as the first three rungs are tall", "One-fourth of the square root of the height"],
+        tq: "The proper distance from the feet of a straight ladder to the wall is:",
+        to: ["one-fourth the working height of the ladder.", "one-half the height of the ladder.", "a distance equal to the height of the first three rungs.", "one-fourth of the square root of the height."],
+        why: "That is the 4-to-1 rule: for every 4 feet of height, the base is 1 foot out.",
+        br: [["how high you will climb", "working height"]] },
+      { src: "Module Review · Q16", a: 2,
+        pq: "A scaffold plank has to stick out past its support. How little and how much?",
+        po: ["4 to 8 inches", "6 to 10 inches", "6 to 12 inches", "8 to 12 inches"],
+        tq: "What are the minimum and maximum distances, in inches, that a scaffold plank may extend beyond its end support?",
+        to: ["4; 8", "6; 10", "6; 12", "8; 12"],
+        why: "For platforms 10 feet or less, planks extend at least 6 and no more than 12 inches over the support.",
+        br: [["stick out past the support", "extend beyond its end support"]] },
+      { src: "Module Review · Q17", a: 1,
+        pq: "What happens to confined-space entry permits at the end of the shift?",
+        po: ["They are reviewed, then thrown away when the job is done.", "They are written into the job journal and kept for a year.", "They are written into the job journal and sent to OSHA.", "They are reviewed and kept for three months."],
+        tq: "What becomes of the permits used to enter a confined space?",
+        to: ["They are reviewed each shift and discarded when the job is complete.", "They are recorded in the job journal each shift and retained for one year.", "They are recorded in the job journal each shift and submitted to OSHA.", "They are reviewed each shift and retained for three months."],
+        why: "Entry permits become part of the job journal and are kept for one year.",
+        br: [["kept for a year", "retained for one year"]] },
+      { src: "Module Review · Q18", a: 3,
+        pq: "What is the best way to protect yourself from a solvent?",
+        po: ["Always wear vinyl gloves and a paper mask.", "Ask a coworker how.", "Ask the supplier.", "Read and follow the product's Safety Data Sheet."],
+        tq: "The best way to protect yourself from solvent hazards is to:",
+        to: ["always wear vinyl gloves and a paper filter mask.", "ask a co-worker for instructions.", "ask the supplier.", "read and follow all instructions on the product's SDS."],
+        why: "The SDS tells you the hazards and how to handle the product. A paper mask does not stop vapors.",
+        br: [["the information sheet for the product", "SDS (Safety Data Sheet)"]] },
+      { src: "Module Review · Q19", a: 0,
+        pq: "You should assume a building might contain asbestos if it was built before which year?",
+        po: ["1980", "1985", "1990", "1995"],
+        tq: "It is safe to assume that asbestos may be found in any facility constructed before:",
+        to: ["1980.", "1985.", "1990.", "1995."],
+        why: "Assume any facility built before 1980 may contain asbestos. Do not drill or disturb it.",
+        br: [["a building from before 1980", "a facility constructed before 1980"]] },
+      { src: "Module Review · Q20", a: 3,
+        pq: "The anchor point for a fall-arrest lanyard has to hold how much?",
+        po: ["250 pounds", "500 pounds", "1,000 pounds", "5,000 pounds"],
+        tq: "A PFAS anchorage point for a 6' (1.8 m) lanyard must be able to support:",
+        to: ["250 pounds (113.4 kg).", "500 pounds (226.8 kg).", "1,000 pounds (453.6 kg).", "5,000 pounds (2,268 kg)."],
+        why: "The anchorage must hold 5,000 pounds, about the weight of a full-size pickup truck.",
+        br: [["anchor point", "anchorage"], ["fall-arrest gear", "PFAS (personal fall arrest system)"]] }
+    ]
+  };
+
+  function ask(label, cls, q, opts, correct, onAnswer) {
+    var box = el("div", "ask-block" + (cls ? " " + cls : ""));
+    box.appendChild(el("p", "step-label", label));
+    box.appendChild(el("p", "pr-q", q));
+    var wrap = el("div", "opts");
+    wrap.setAttribute("role", "group");
+    wrap.setAttribute("aria-label", q);
+    var fb = el("p", "fb");
+    fb.setAttribute("aria-live", "polite");
+    var btns = [];
+    opts.forEach(function (text, oi) {
+      var b = el("button", "opt", String.fromCharCode(65 + oi) + ".  " + text);
+      b.type = "button";
+      b.addEventListener("click", function () {
+        btns.forEach(function (x) { x.disabled = true; });
+        var ok = oi === correct;
+        b.classList.add(ok ? "right" : "wrong");
+        if (!ok) btns[correct].classList.add("right");
+        onAnswer(ok, fb, String.fromCharCode(65 + correct));
+      });
+      btns.push(b); wrap.appendChild(b);
+    });
+    box.appendChild(wrap); box.appendChild(fb);
+    box.reset = function () { btns.forEach(function (x) { x.disabled = false; x.className = "opt"; }); fb.textContent = ""; };
+    return box;
+  }
+  function say(fb, lead, text) {
+    fb.textContent = "";
+    fb.appendChild(el("b", null, lead + " "));
+    fb.appendChild(document.createTextNode(text));
+  }
+
+  function buildPractice(host, n) {
+    var list = PRACTICE[n];
+    host.appendChild(el("p", "pr-intro", "Test questions use the textbook's formal words. Answer each question in plain English first, then see the same question the way the book asks it. The \"Words to notice\" box shows how the two fit together. Nothing is saved or sent."));
+    var items = [];
+    list.forEach(function (item, i) {
+      var art = el("article", "pr");
+      var head = el("div", "pr-head");
+      head.appendChild(el("span", null, "Question " + (i + 1) + " of " + list.length));
+      head.appendChild(el("span", null, "Handbook: " + item.src));
+      art.appendChild(head);
+
+      var bridge = el("div", "bridge");
+      bridge.hidden = true;
+      bridge.appendChild(el("p", "step-label", "Words to notice"));
+      var ul = el("ul");
+      item.br.forEach(function (p) {
+        var li = el("li");
+        li.appendChild(el("span", "you", p[0]));
+        li.appendChild(el("span", "arrow", "→"));
+        li.appendChild(el("span", "pub", p[1]));
+        ul.appendChild(li);
+      });
+      bridge.appendChild(ul);
+
+      var b2 = ask("Step 2 · The same question in the textbook's words", "formal", item.tq, item.to, item.a, function (ok, fb, letter) {
+        if (ok) say(fb, "Correct.", "You just answered it in the textbook's voice.");
+        else say(fb, "Not quite.", "The answer is " + letter + ". Compare it with your plain-English answer above.");
+        bridge.hidden = false;
+      });
+      b2.hidden = true;
+      var b1 = ask("Step 1 · In plain English", "", item.pq, item.po, item.a, function (ok, fb, letter) {
+        if (ok) say(fb, "Correct.", item.why);
+        else say(fb, "Not quite.", "The answer is " + letter + ". " + item.why);
+        b2.hidden = false;
+      });
+      art.appendChild(b1); art.appendChild(b2); art.appendChild(bridge);
+      host.appendChild(art);
+      items.push({ b1: b1, b2: b2, bridge: bridge });
+    });
+    var foot = el("div", "ticket-foot");
+    var retry = el("button", "btn", "Start this set over");
+    retry.type = "button";
+    retry.addEventListener("click", function () {
+      items.forEach(function (x) { x.b1.reset(); x.b2.reset(); x.b2.hidden = true; x.bridge.hidden = true; });
+    });
+    foot.appendChild(retry);
+    host.appendChild(foot);
+  }
+
+  [1, 2, 3, 4].forEach(function (n) {
+    buildPractice(document.querySelector('[data-practice="' + n + '"]'), n);
+    buildPoints(document.querySelector('[data-points="' + n + '"]'), POINTS[n], "s" + n);
+    buildCards(document.querySelector('[data-cards="' + n + '"]'), n);
+    buildQuiz(document.querySelector('[data-quiz="' + n + '"]'), n);
+    buildTalk(document.querySelector('[data-talk="' + n + '"]'), n);
+  });
+  buildPoints(document.getElementById("final-points"), FINAL, "fin");
+})();
+</script>
+
+</body></html>

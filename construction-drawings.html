@@ -1,0 +1,1126 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Construction Drawings Family Study Guide</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+/* Layout concept: one long study sheet. Each module section runs the same six parts
+   (read, review points, trade-term tags, ticket out the door, talk it over). */
+:root {
+  --bg: #EEF1F3;
+  --surface: #FFFFFF;
+  --ink: #14202B;
+  --ink-soft: #46576A;
+  --line: #C9D2DA;
+  --band: #14202B;
+  --band-ink: #F4F7F9;
+  --accent: #C42B17;
+  --accent-ink: #FFFFFF;
+  --caution: #F2B705;
+  --caution-soft: #FFF3C4;
+  --good: #1E7A3C;
+  --good-soft: #DDF3E4;
+  --bad: #A8321F;
+  --bad-soft: #FBE3DE;
+  --tag-hole: #EEF1F3;
+  --focus: #0B5FFF;
+  --font-display: "Barlow Condensed", "Arial Narrow", Impact, sans-serif;
+  --font-body: "Barlow", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0F171E; --surface: #18232D; --ink: #EAF0F4; --ink-soft: #A5B4C2; --line: #2E3E4C;
+    --band: #0A1016; --band-ink: #F4F7F9; --accent: #FF5A44; --accent-ink: #14202B;
+    --caution: #F2B705; --caution-soft: #3A3210; --good: #6FD08C; --good-soft: #17301F;
+    --bad: #FF8E7C; --bad-soft: #3A1B16; --tag-hole: #0F171E; --focus: #6AA2FF;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0F171E; --surface: #18232D; --ink: #EAF0F4; --ink-soft: #A5B4C2; --line: #2E3E4C;
+  --band: #0A1016; --band-ink: #F4F7F9; --accent: #FF5A44; --accent-ink: #14202B;
+  --caution: #F2B705; --caution-soft: #3A3210; --good: #6FD08C; --good-soft: #17301F;
+  --bad: #FF8E7C; --bad-soft: #3A1B16; --tag-hole: #0F171E; --focus: #6AA2FF;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--ink); font-family: var(--font-body); font-size: 17px; line-height: 1.6; }
+:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
+.wrap { max-width: 920px; margin-inline: auto; padding-inline: max(16px, env(safe-area-inset-left, 0px)) max(16px, env(safe-area-inset-right, 0px)); }
+h1, h2, h3, h4 { font-family: var(--font-display); text-transform: uppercase; letter-spacing: 0.03em; line-height: 1.05; margin: 0; text-wrap: balance; }
+.eyebrow { font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-soft); }
+
+.band { background: var(--band); color: var(--band-ink); padding-block: 34px 26px; border-bottom: 8px solid var(--caution); }
+.band .eyebrow { color: var(--caution); }
+.band h1 { font-size: clamp(2.5rem, 9vw, 4.4rem); font-weight: 700; margin-top: 10px; }
+.band .sub { margin: 14px 0 0; font-size: 1.1rem; color: #D5DEE5; max-width: 46ch; }
+.band .byline { margin: 14px 0 0; font-size: 0.95rem; color: #AEBBC7; }
+nav.jump { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 22px; }
+nav.jump a { text-decoration: none; font-weight: 600; font-size: 0.95rem; padding: 8px 14px; border: 2px solid #3B4B5A; border-radius: 3px; color: var(--band-ink); }
+nav.jump a:hover { border-color: var(--caution); }
+
+.intro { margin-top: 28px; display: grid; gap: 22px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 380px), 1fr)); }
+.panel { background: var(--surface); border: 1px solid var(--line); padding: 20px 22px 22px; min-width: 0; }
+.panel h2 { font-size: 1.5rem; font-weight: 700; margin-bottom: 10px; }
+.panel p { margin: 0 0 10px; }
+.panel ol { margin: 8px 0 0; padding-left: 1.3em; display: grid; gap: 6px; }
+.notice { background: var(--caution-soft); border: 2px solid var(--caution); padding: 16px 20px; margin-top: 22px; }
+.notice p { margin: 4px 0 0; }
+.notice h2 { font-size: 1.25rem; }
+
+/* section */
+.sec { margin-top: 56px; }
+.sec-head { border-top: 8px solid var(--ink); padding-top: 18px; }
+.sec-head h2 { font-size: clamp(2rem, 6vw, 3rem); font-weight: 700; margin-top: 6px; }
+.sec-head .obj { margin: 10px 0 0; color: var(--ink-soft); max-width: 62ch; }
+.part { margin-top: 34px; }
+.part-title { display: flex; align-items: baseline; gap: 12px; margin-bottom: 14px; }
+.part-title .letter { font-family: var(--font-mono); font-size: 13px; background: var(--ink); color: var(--bg); padding: 2px 8px; flex: none; }
+.part-title h3 { font-size: 1.7rem; font-weight: 700; }
+.part-title .time { margin-left: auto; font-family: var(--font-mono); font-size: 12px; color: var(--ink-soft); white-space: nowrap; }
+
+.prose { background: var(--surface); border: 1px solid var(--line); padding: 22px 24px; }
+.prose h4 { font-size: 1.25rem; font-weight: 700; margin: 20px 0 6px; color: var(--accent); }
+.prose h4:first-child { margin-top: 0; }
+.prose p { margin: 0 0 10px; max-width: 64ch; }
+.prose ul { margin: 0 0 10px; padding-left: 1.2em; max-width: 64ch; }
+.prose li { margin-bottom: 4px; }
+.prose .big { font-size: 1.12rem; font-weight: 500; border-left: 6px solid var(--caution); padding: 4px 0 4px 14px; margin: 0 0 16px; }
+.prose table { border-collapse: collapse; margin: 8px 0 14px; font-size: 0.95rem; width: 100%; max-width: 520px; }
+.prose th, .prose td { text-align: left; padding: 6px 10px; border-bottom: 1px solid var(--line); }
+.prose th { font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-soft); }
+.scroll { overflow-x: auto; }
+.case { background: var(--bg); border-left: 6px solid var(--accent); padding: 12px 16px; margin: 14px 0 0; max-width: 64ch; }
+.case b { font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.08em; text-transform: uppercase; display: block; color: var(--ink-soft); }
+
+/* review points */
+.points { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; counter-reset: pt; }
+.points li { background: var(--surface); border: 1px solid var(--line); }
+.points label { display: grid; grid-template-columns: 28px minmax(0, 1fr); gap: 12px; padding: 12px 16px; cursor: pointer; align-items: start; }
+.points input { width: 22px; height: 22px; margin: 2px 0 0; accent-color: var(--good); }
+.points li:has(input:checked) { background: var(--good-soft); border-color: var(--good); }
+.points b { font-weight: 600; }
+
+/* cards */
+.deck { display: grid; gap: 22px; grid-template-columns: repeat(auto-fill, minmax(min(100%, 270px), 1fr)); }
+.card { all: unset; box-sizing: border-box; display: block; cursor: pointer; perspective: 1100px; min-width: 0; }
+.card:focus-visible { outline: 3px solid var(--focus); outline-offset: 4px; }
+.card-inner { display: grid; transition: transform 0.5s cubic-bezier(.3,.7,.2,1); transform-style: preserve-3d; position: relative; }
+.card[aria-pressed="true"] .card-inner { transform: rotateY(180deg); }
+.face { grid-area: 1 / 1; backface-visibility: hidden; -webkit-backface-visibility: hidden; display: flex; flex-direction: column; min-height: 250px; border: 2px solid var(--ink); background: var(--surface); position: relative; overflow: hidden; }
+.face::before { content: ""; position: absolute; top: 12px; left: 50%; width: 16px; height: 16px; margin-left: -8px; border-radius: 50%; background: var(--tag-hole); border: 2px solid var(--ink); }
+.front .strip { background: var(--accent); color: var(--accent-ink); padding: 38px 16px 8px; font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.08em; text-transform: uppercase; }
+.front.key .strip { background: var(--ink); color: var(--bg); }
+.front .term { flex: 1; display: flex; align-items: center; padding: 16px 18px; font-family: var(--font-display); text-transform: uppercase; font-weight: 700; font-size: clamp(1.8rem, 7vw, 2.2rem); line-height: 1.02; letter-spacing: 0.02em; overflow-wrap: anywhere; }
+.front .hint { padding: 10px 18px 14px; font-size: 0.8rem; color: var(--ink-soft); border-top: 1px dashed var(--line); font-family: var(--font-mono); letter-spacing: 0.04em; }
+.back { transform: rotateY(180deg); background: var(--caution-soft); }
+.back .strip { background: var(--ink); color: var(--bg); padding: 38px 16px 8px; font-family: var(--font-display); text-transform: uppercase; font-weight: 700; letter-spacing: 0.04em; font-size: 1.1rem; line-height: 1.05; }
+.back .body { padding: 14px 18px 16px; display: grid; gap: 10px; align-content: start; font-size: 0.95rem; line-height: 1.45; }
+.back .label { font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-soft); display: block; margin-bottom: 1px; }
+.back .ask { border-top: 1px dashed var(--ink-soft); padding-top: 10px; font-weight: 500; }
+.deck-note { margin: 12px 0 0; font-size: 0.9rem; color: var(--ink-soft); }
+@media (prefers-reduced-motion: reduce) {
+  .card-inner { transition: none; transform-style: flat; }
+  .card[aria-pressed="true"] .card-inner { transform: none; }
+  .back { transform: none; }
+  .face { backface-visibility: visible; }
+  .card .back { visibility: hidden; }
+  .card[aria-pressed="true"] .back { visibility: visible; }
+  .card[aria-pressed="true"] .front { visibility: hidden; }
+}
+
+/* ticket */
+.ticket { background: var(--surface); border: 2px dashed var(--ink); padding: 8px 20px 18px; position: relative; }
+.ticket-intro { margin: 14px 0 4px; color: var(--ink-soft); font-size: 0.95rem; }
+.q { border: 0; border-top: 1px solid var(--line); margin: 0; padding: 16px 0 14px; min-width: 0; }
+.q:first-of-type { border-top: 0; }
+.q legend { font-weight: 600; padding: 0; margin-bottom: 8px; float: left; width: 100%; }
+.q .opts { clear: both; display: grid; gap: 8px; }
+.opt { font: inherit; text-align: left; padding: 10px 14px; background: var(--bg); color: var(--ink); border: 2px solid var(--line); border-radius: 3px; cursor: pointer; }
+.opt:hover:not(:disabled) { border-color: var(--ink); }
+.opt:disabled { cursor: default; }
+.opt.right { background: var(--good-soft); border-color: var(--good); }
+.opt.wrong { background: var(--bad-soft); border-color: var(--bad); }
+.fb { margin: 8px 0 0; font-size: 0.93rem; color: var(--ink-soft); }
+.fb b { color: var(--ink); }
+.ticket-foot { margin-top: 10px; display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+.ticket-foot p { margin: 0; font-weight: 500; }
+.btn { font: inherit; font-weight: 600; font-size: 0.92rem; padding: 8px 14px; background: var(--surface); color: var(--ink); border: 2px solid var(--ink); border-radius: 3px; cursor: pointer; }
+.btn:hover { background: var(--ink); color: var(--bg); }
+
+/* talk it over */
+.talk { display: grid; gap: 14px; }
+.talk .qs { background: var(--surface); border: 1px solid var(--line); padding: 16px 22px 16px 40px; margin: 0; display: grid; gap: 8px; }
+details.scn { background: var(--surface); border: 1px solid var(--line); border-left: 6px solid var(--caution); padding: 14px 18px; }
+details.scn summary { cursor: pointer; font-family: var(--font-display); text-transform: uppercase; letter-spacing: 0.03em; font-size: 1.3rem; font-weight: 700; }
+details.scn .setup { margin: 10px 0 8px; }
+details.scn .good { margin: 12px 0 0; padding: 10px 14px; background: var(--good-soft); border-left: 6px solid var(--good); }
+details.scn .good b { font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.08em; text-transform: uppercase; display: block; }
+details.scn .good ul { margin: 6px 0 0; padding-left: 1.1em; }
+.parent { background: var(--caution-soft); border: 2px solid var(--caution); padding: 12px 16px; }
+.parent b { font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.08em; text-transform: uppercase; display: block; }
+.parent p { margin: 4px 0 0; }
+
+/* practice questions */
+.pr-intro { margin: 0 0 14px; color: var(--ink-soft); max-width: 66ch; }
+.pr { background: var(--surface); border: 1px solid var(--line); margin-bottom: 18px; }
+.pr-head { display: flex; flex-wrap: wrap; gap: 6px 14px; justify-content: space-between; align-items: baseline; padding: 10px 18px; background: var(--ink); color: var(--bg); font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.06em; text-transform: uppercase; }
+.ask-block { padding: 14px 18px 16px; }
+.ask-block + .ask-block { border-top: 2px dashed var(--line); }
+.ask-block.formal { background: var(--bg); }
+.step-label { margin: 0 0 6px; font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); }
+.pr-q { margin: 0 0 10px; font-weight: 600; font-size: 1.05rem; max-width: 62ch; }
+.bridge { padding: 14px 18px 16px; border-top: 2px dashed var(--line); background: var(--caution-soft); }
+.bridge .step-label { color: var(--ink); }
+.bridge ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+.bridge li { display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); gap: 10px; align-items: baseline; }
+.bridge .you { font-style: italic; }
+.bridge .arrow { font-family: var(--font-mono); color: var(--ink-soft); }
+.bridge .pub { font-weight: 600; }
+@media (max-width: 520px) { .bridge li { grid-template-columns: minmax(0, 1fr); gap: 0; } .bridge .arrow { display: none; } .bridge .pub::before { content: "Textbook: "; font-weight: 400; font-family: var(--font-mono); font-size: 11px; color: var(--ink-soft); } .bridge .you::before { content: "You say: "; font-style: normal; font-family: var(--font-mono); font-size: 11px; color: var(--ink-soft); } }
+
+/* final checklist */
+.final { margin-top: 56px; border-top: 8px solid var(--ink); padding-top: 18px; }
+.final h2 { font-size: clamp(1.9rem, 5vw, 2.6rem); font-weight: 700; }
+.final .lead { color: var(--ink-soft); max-width: 62ch; margin: 10px 0 16px; }
+.note { margin: 28px 0 0; font-size: 0.9rem; color: var(--ink-soft); max-width: 70ch; }
+footer { margin-top: 48px; background: var(--band); color: #AEBBC7; padding-block: 26px 30px; font-size: 0.92rem; }
+footer strong { color: var(--band-ink); }
+footer p { margin: 0 0 6px; }
+</style>
+
+
+<header class="band">
+  <div class="wrap">
+    <span class="eyebrow">EVIT Electrical · Loved Ones Study Guide</span>
+    <h1>Construction<br>Drawings</h1>
+    <p class="sub">A Family Study Guide for NCCER Core, Module 00105: Introduction to Construction Drawings</p>
+    <p class="byline">Mr. Ellis CTE — General Construction &amp; Electrical Teacher · High School &amp; Adult Pre-Apprentice Programs</p>
+    <nav class="jump" aria-label="Sections">
+      <a href="#s1">1 · Title block &amp; legend</a>
+      <a href="#s2">2 · Lines &amp; symbols</a>
+      <a href="#s3">3 · Dimensions &amp; scale</a>
+      <a href="#s4">4 · Measuring scales</a>
+      <a href="#s5">5 · Types of plans</a>
+      <a href="#review">Family review</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<div class="wrap">
+
+  <div class="intro">
+    <div class="panel">
+      <h2>Why this guide exists</h2>
+      <p>You do not need to be an electrician or a builder to support a construction student. Your job is to help your student explain what they are learning, put it in their own words, and know when to check the drawing, the legend or the written dimensions before acting.</p>
+      <p>If your student can read it and explain it, they are learning it. That is the whole idea.</p>
+    </div>
+    <div class="panel">
+      <h2>How to use each section</h2>
+      <p>Plan about 15 to 25 minutes per section. The student does most of the talking. You do not need the answers ahead of time.</p>
+      <ol>
+        <li><b>Read it together.</b> Plain-English version of the module section.</li>
+        <li><b>Study review points.</b> The must-know facts. Tick each one when your student can say it back.</li>
+        <li><b>Trade-term cards.</b> Tap a card to flip it.</li>
+        <li><b>Ticket out the door.</b> A quick recall check, just for practice.</li>
+        <li><b>Talk it over.</b> Questions and a real-world scenario.</li>
+        <li><b>Practice questions.</b> Each one comes twice: first in plain English, then in the textbook's words, so your student learns to recognize both.</li>
+      </ol>
+    </div>
+  </div>
+
+  <aside class="notice" aria-labelledby="safe-h">
+    <h2 id="safe-h">Important note</h2>
+    <p>This guide is for learning and talking. It is not a substitute for the drawings, specifications and directions for a real job. When something on a drawing is unclear, check the legend, follow the written dimensions, and ask the instructor or supervisor. No student names or grades appear here, and nothing you tick or tap on this page is saved or sent anywhere.</p>
+  </aside>
+
+  <!-- SECTION 1 -->
+  <section class="sec" id="s1" aria-labelledby="s1-h">
+    <div class="sec-head">
+      <span class="eyebrow">Module Section 1 of 5</span>
+      <h2 id="s1-h">Title Block and Legend</h2>
+      <p class="obj">By the end of this section your student can say what the title sheet, title block, revision block and legend are for, and where to look when a mark on a drawing is unclear.</p>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">A</span><h3>Read it together</h3><span class="time">about 8 min</span></div>
+      <div class="prose">
+        <p class="big">A set of drawings only works if you can tell what you are looking at, who made it, and what its marks mean. Two places on every sheet answer those questions: the title block and the legend.</p>
+
+        <h4>Who makes drawings, and what goes with them</h4>
+        <p>Construction drawings, traditionally called blueprints, are created by architects and engineers. An architect is a qualified, licensed person who designs the project. An engineer applies scientific principles in design and construction. Today the drawings are usually made on a computer, which is called computer-aided design, or CAD.</p>
+        <p>Drawings do not carry every detail. The specifications are the written details about the materials, the methods and the quality standards for the project.</p>
+
+        <h4>The title sheet and the title block</h4>
+        <p>The title sheet is the front cover of a drawing set. It lists project data, a sheet index and the project directory.</p>
+        <p>Every drawing sheet also has a title block, a boxed area with the key facts about the project. Looking at a title block, a student should be able to find the project name, the drawing scale, the architect or engineer, the revision date and the sheet number.</p>
+        <p>When a drawing is changed, the change is entered in the revision block. The entry includes the date of the change and the initials of the person who made it. The latest revision date on a set of drawings is found in the title block.</p>
+
+        <h4>The legend</h4>
+        <p>The legend explains the symbols, abbreviations and lines used on the drawing. It can be in a lower corner of the sheet, in or near the title block, or in a block of its own.</p>
+        <div class="case"><b>Key idea</b>Always check the legend for each set of drawings. Many symbols are standard, but some designers use variations or company-specific notations. Never assume a symbol means the same thing on every project.</div>
+
+        <h4>Where to look</h4>
+        <div class="scroll"><table>
+          <thead><tr><th>You want to know</th><th>Look at</th></tr></thead>
+          <tbody>
+            <tr><td>What the project and sheet are</td><td>The title block</td></tr>
+            <tr><td>The latest revision date</td><td>The title block</td></tr>
+            <tr><td>What a symbol, abbreviation or line means</td><td>The legend</td></tr>
+            <tr><td>What materials and methods are required in writing</td><td>The specifications</td></tr>
+            <tr><td>Which sheets are in the set</td><td>The title sheet</td></tr>
+          </tbody>
+        </table></div>
+      </div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">B</span><h3>Study review points</h3></div>
+      <ul class="points" data-points="1"></ul>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">C</span><h3>Trade-term cards</h3></div>
+      <div class="deck" data-cards="1"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">D</span><h3>Ticket out the door</h3></div>
+      <div class="ticket" data-quiz="1"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">E</span><h3>Talk it over</h3></div>
+      <div class="talk" data-talk="1"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">F</span><h3>Practice questions</h3><span class="time">about 5 min</span></div>
+      <div data-practice="1"></div>
+    </div>
+  </section>
+
+  <!-- SECTION 2 -->
+  <section class="sec" id="s2" aria-labelledby="s2-h">
+    <div class="sec-head">
+      <span class="eyebrow">Module Section 2 of 5</span>
+      <h2 id="s2-h">Lines, Symbols and Gridlines</h2>
+      <p class="obj">By the end of this section your student can name the main line types, explain abbreviations, symbols and keynotes, and use gridlines and bays to name a location on a plan.</p>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">A</span><h3>Read it together</h3><span class="time">about 10 min</span></div>
+      <div class="prose">
+        <p class="big">Drawings save space by using a shared language of lines, symbols and short forms. Learn the alphabet and the sheet starts to make sense.</p>
+
+        <h4>The Alphabet of Lines</h4>
+        <p>The line types used on construction drawings make up a system called the Alphabet of Lines. Each kind of line has its own meaning.</p>
+        <div class="scroll"><table>
+          <thead><tr><th>Line</th><th>What it looks like</th><th>What it shows</th></tr></thead>
+          <tbody>
+            <tr><td>Object line</td><td>Heavy, solid</td><td>Visible edges and outlines</td></tr>
+            <tr><td>Hidden line</td><td>Short, evenly spaced dashes</td><td>Edges you cannot see in this view</td></tr>
+            <tr><td>Centerline</td><td>Alternating long and short dashes</td><td>Centers of holes, arcs and symmetrical shapes</td></tr>
+            <tr><td>Cutting-plane line</td><td>Heavy, with arrowheads</td><td>Where a cross-section is cut</td></tr>
+            <tr><td>Section lines</td><td>Thin, evenly spaced diagonals</td><td>The cut surface and its material</td></tr>
+            <tr><td>Break line</td><td>Thin zigzag line, or thick wavy freehand line</td><td>Only part of an object is drawn</td></tr>
+            <tr><td>Dimension line</td><td>Thin, ends in arrows, slashes or dots</td><td>A measurement, with the number in the break</td></tr>
+            <tr><td>Extension line</td><td>Thin, perpendicular to the dimension line</td><td>Where the measurement starts and stops</td></tr>
+            <tr><td>Leader line</td><td>Thin, ends in an arrowhead or dot</td><td>The feature or note it points to</td></tr>
+          </tbody>
+        </table></div>
+        <p>Break lines save drawing space. They show that only a portion of an object is drawn, and they mark areas not included in the cutting-line view.</p>
+
+        <h4>Abbreviations, symbols and keynotes</h4>
+        <ul>
+          <li><b>Abbreviations</b> are always capitalized. Examples are HVAC (Heating, Ventilation, and Air Conditioning), NTS (Not to Scale), ELEV (Elevation) and CL (Centerline).</li>
+          <li><b>Symbols</b> are small drawings of materials, doors, windows, and electrical and plumbing devices. Symbols are not the same on every plan in the world, and code books and specifications often include their meanings. Symbols are to be noted on the title or introductory sheet.</li>
+          <li><b>Keynotes</b> are numbered or lettered callouts in a circle, square or hexagon. Each one points to a numbered note listed in the margin or in a schedule.</li>
+        </ul>
+
+        <h4>Gridlines</h4>
+        <p>Large buildings use a grid of horizontal and vertical reference lines. Gridlines are labeled with letters in one direction (A, B, C) and numbers in the other (1, 2, 3). The purpose is to make it easy to refer to a specific location on a plan.</p>
+        <ul>
+          <li>The space between neighboring gridlines is called a <b>bay</b>.</li>
+          <li>Where column gridlines cross, they locate the main structural columns and the footings that carry the load.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">B</span><h3>Study review points</h3></div>
+      <ul class="points" data-points="2"></ul>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">C</span><h3>Trade-term cards</h3></div>
+      <div class="deck" data-cards="2"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">D</span><h3>Ticket out the door</h3></div>
+      <div class="ticket" data-quiz="2"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">E</span><h3>Talk it over</h3></div>
+      <div class="talk" data-talk="2"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">F</span><h3>Practice questions</h3><span class="time">about 5 min</span></div>
+      <div data-practice="2"></div>
+    </div>
+  </section>
+
+  <!-- SECTION 3 -->
+  <section class="sec" id="s3" aria-labelledby="s3-h">
+    <div class="sec-head">
+      <span class="eyebrow">Module Section 3 of 5</span>
+      <h2 id="s3-h">Dimensions and Drawing Scale</h2>
+      <p class="obj">By the end of this section your student can read a dimension, explain what a drawing scale means, work a simple scale problem, and say why an NTS drawing cannot be measured.</p>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">A</span><h3>Read it together</h3><span class="time">about 8 min</span></div>
+      <div class="prose">
+        <p class="big">A building will not fit on a sheet of paper at full size. Dimensions give the real measurements, and scale explains how the drawing relates to the real thing.</p>
+
+        <h4>Dimensions</h4>
+        <p>A dimension is a measurement written as a number. In the English (imperial) system, dimensions are stated in feet and inches, such as 14'-6". In the metric system, dimensions are stated in millimeters, centimeters or meters.</p>
+        <p>Dimensions sit between extension lines. They give exact lengths, center-to-center distances and heights. On site and civil drawings, a height can be given as an elevation (EL), which is a height above sea level or above another reference point.</p>
+
+        <h4>Drawing scale</h4>
+        <p>Drawings are produced at a reduced size so full-size buildings fit on standard sheets. The scale is the ratio between the drawing and the real object, and it is written like an equation.</p>
+        <div class="scroll"><table>
+          <thead><tr><th>Scale on the sheet</th><th>What it means</th></tr></thead>
+          <tbody>
+            <tr><td>SCALE: 1/4" = 1'-0"</td><td>Every 1/4 inch on the drawing stands for 1 foot</td></tr>
+            <tr><td>SCALE: 1" = 20'-0"</td><td>Every inch on the drawing stands for 20 feet</td></tr>
+          </tbody>
+        </table></div>
+        <div class="case"><b>Example</b>On a site plan with SCALE: 1" = 20'-0", a driveway that measures 3 inches on the sheet is 3 x 20 = 60 feet long in real life.</div>
+
+        <h4>Not to scale (NTS)</h4>
+        <p>When a drawing or detail is marked NTS, it is drawn out of proportion for clarity. It cannot be scaled with a ruler. When a plan is marked NTS, the dimensions measured on the drawing cannot be used to build the project. Workers follow the written dimensions only.</p>
+      </div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">B</span><h3>Study review points</h3></div>
+      <ul class="points" data-points="3"></ul>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">C</span><h3>Trade-term cards</h3></div>
+      <div class="deck" data-cards="3"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">D</span><h3>Ticket out the door</h3></div>
+      <div class="ticket" data-quiz="3"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">E</span><h3>Talk it over</h3></div>
+      <div class="talk" data-talk="3"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">F</span><h3>Practice questions</h3><span class="time">about 5 min</span></div>
+      <div data-practice="3"></div>
+    </div>
+  </section>
+
+  <!-- SECTION 4 -->
+  <section class="sec" id="s4" aria-labelledby="s4-h">
+    <div class="sec-head">
+      <span class="eyebrow">Module Section 4 of 5</span>
+      <h2 id="s4-h">Measuring Scales</h2>
+      <p class="obj">By the end of this section your student can describe the architect's, engineer's and metric scales, say when each one is used, and explain how an architect's scale is read.</p>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">A</span><h3>Read it together</h3><span class="time">about 8 min</span></div>
+      <div class="prose">
+        <p class="big">A scale is a ruler made for drawings. The right one depends on the kind of drawing you are reading.</p>
+
+        <h4>The architect's scale</h4>
+        <p>The triangular architect's scale is the main scaling tool in residential and commercial construction. It combines up to 10 fractional scales on its three edges. The scales are grouped in pairs on each face, for example 1/4" and 1/8", 1/2" and 1/4", 3/4" and 3/8", and 3" and 1-1/2".</p>
+        <p>To read a measurement, line up the whole-foot mark on the main scale, then read the leftover inches in the small divided block at the end. It is the most commonly used scale because it can combine multiple scales, turning large real measurements into small drawing measurements.</p>
+
+        <h4>The engineer's scale</h4>
+        <p>The engineer's scale is used mainly on civil site plans, highway drawings and utility layouts. It is based entirely on the decimal system, in multiples of 10. Its scales run from 10 to 60 parts per inch, for example 1" = 10', 1" = 20' and 1" = 100'. It is used to measure large site distances, contours and property lines.</p>
+
+        <h4>The metric scale</h4>
+        <p>The metric scale is a straightedge used for metric measurements, in millimeters, centimeters or meters.</p>
+
+        <h4>Comparing the three</h4>
+        <div class="scroll"><table>
+          <thead><tr><th>Scale</th><th>Built on</th><th>Common use</th></tr></thead>
+          <tbody>
+            <tr><td>Architect's</td><td>Fractions of an inch to the foot</td><td>Residential and commercial building plans</td></tr>
+            <tr><td>Engineer's</td><td>Decimals, multiples of 10</td><td>Civil site, highway and utility plans</td></tr>
+            <tr><td>Metric</td><td>Metric units</td><td>Metric measurements</td></tr>
+          </tbody>
+        </table></div>
+        <div class="case"><b>Remember</b>A scale tool only works on a drawing that is drawn to scale. On a drawing marked NTS, follow the written dimensions.</div>
+      </div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">B</span><h3>Study review points</h3></div>
+      <ul class="points" data-points="4"></ul>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">C</span><h3>Trade-term cards</h3></div>
+      <div class="deck" data-cards="4"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">D</span><h3>Ticket out the door</h3></div>
+      <div class="ticket" data-quiz="4"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">E</span><h3>Talk it over</h3></div>
+      <div class="talk" data-talk="4"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">F</span><h3>Practice questions</h3><span class="time">about 5 min</span></div>
+      <div data-practice="4"></div>
+    </div>
+  </section>
+
+  <!-- SECTION 5 -->
+  <section class="sec" id="s5" aria-labelledby="s5-h">
+    <div class="sec-head">
+      <span class="eyebrow">Module Section 5 of 5</span>
+      <h2 id="s5-h">Types of Plans</h2>
+      <p class="obj">By the end of this section your student can match each type of plan to the question it answers: site, floor plan, elevation, section, structural, mechanical, plumbing and electrical.</p>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">A</span><h3>Read it together</h3><span class="time">about 12 min</span></div>
+      <div class="prose">
+        <p class="big">A full set of plans is really several kinds of drawings. Each one answers a different question, so part of reading plans is knowing which sheet to open.</p>
+
+        <h4>Civil (site) plans</h4>
+        <p>Civil plans give an aerial view of the building's location on the site. They include contours, trees, construction features and dimensions. Contour lines show the elevation of the ground. Cadastral plans are drawings that show property boundaries.</p>
+
+        <h4>Architectural plans</h4>
+        <p>Architectural plans show the design, the physical layout and the space planning of the structure.</p>
+        <ul>
+          <li><b>Floor plans</b> are overhead views, cut about 4 to 5 feet above the floor, that show rooms, walls, doors and built-in fixtures.</li>
+          <li><b>Elevations</b> are flat views of exterior or interior wall surfaces, showing finish materials, door and window heights and rooflines.</li>
+          <li><b>Sections</b> are cut-through views that reveal how the inside is built: wall framing, insulation and flashing.</li>
+          <li><b>Details</b> are enlargements of intricate connections.</li>
+          <li><b>Roof plans</b> show the shape of the roof and the materials that finish it.</li>
+        </ul>
+
+        <h4>Structural plans</h4>
+        <p>Structural plans are prepared by licensed structural engineers to show the skeleton of the building and how it carries load. Foundation plans show concrete footings, grade beams, piers and slab thickness. Framing plans give sizes, spacing and grades of steel beams, rebar, wood joists or trusses. The materials to be used for the walls are found in the structural plan.</p>
+
+        <h4>Mechanical, plumbing and electrical plans</h4>
+        <ul>
+          <li><b>Mechanical plans</b> are engineered drawings of motors, pumps, piping systems and the layout of the HVAC system.</li>
+          <li><b>Plumbing plans</b> show the complete plumbing system. Plumbing isometrics show the layout in a three-dimensional view.</li>
+          <li><b>Electrical plans</b> show all of the electrical supply and distribution, and can include lighting plans.</li>
+          <li><b>Schematics and P&amp;IDs</b> are one-line or schematic diagrams of the paths a circuit or piping system follows.</li>
+        </ul>
+
+        <h4>Which plan answers which question</h4>
+        <div class="scroll"><table>
+          <thead><tr><th>Question</th><th>Open the</th></tr></thead>
+          <tbody>
+            <tr><td>Where does the building sit on the property?</td><td>Civil (site) plan</td></tr>
+            <tr><td>What is the layout of each room?</td><td>Floor plan</td></tr>
+            <tr><td>How tall are the doors and windows?</td><td>Elevation</td></tr>
+            <tr><td>What is inside the wall?</td><td>Section drawing</td></tr>
+            <tr><td>What are the walls made of?</td><td>Structural plan</td></tr>
+            <tr><td>Where is the HVAC system?</td><td>Mechanical plan</td></tr>
+            <tr><td>Where do the lights go?</td><td>Electrical plan</td></tr>
+          </tbody>
+        </table></div>
+      </div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">B</span><h3>Study review points</h3></div>
+      <ul class="points" data-points="5"></ul>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">C</span><h3>Trade-term cards</h3></div>
+      <div class="deck" data-cards="5"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">D</span><h3>Ticket out the door</h3></div>
+      <div class="ticket" data-quiz="5"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">E</span><h3>Talk it over</h3></div>
+      <div class="talk" data-talk="5"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">F</span><h3>Practice questions</h3><span class="time">about 5 min</span></div>
+      <div data-practice="5"></div>
+    </div>
+  </section>
+
+  <section class="final" id="review" aria-labelledby="fin-h">
+    <span class="eyebrow">After all five sections</span>
+    <h2 id="fin-h">Can your student explain it?</h2>
+    <p class="lead">The goal is not perfect wording. The goal is accurate understanding and good judgment. Tick each one when your student can explain it without looking at the page.</p>
+    <ul class="points" id="final-points"></ul>
+    <p class="note">Trade terms are placed with the section where each is taught, so a few official terms sit in a different section than they are listed in the textbook. Cards marked "Key term" are important words from the module that are not on its official trade-term list. The practice questions come from the handbook's Section Review and Module Review, the module practice exam and a review game, and the answers follow the answer keys. The textbook-style versions are written in the book's style and vocabulary, not copied word for word, so check the handbook itself for the exact wording. Questions that depend on a figure in the handbook are not included. This guide is a plain-language companion, not a copy of the textbook. Draft for instructor review.</p>
+  </section>
+
+</div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><strong>Mr. Ellis CTE</strong> · East Valley Institute of Technology (EVIT), Mesa, Arizona · Your Future, Your Way</p>
+    <p>Based on NCCER Core Curriculum (6th edition), Module 00105, Introduction to Construction Drawings.</p>
+    <p>Aim for perfection, take what you get.</p>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var SEC = { 1: `Title Block and Legend`, 2: `Lines, Symbols and Gridlines`, 3: `Dimensions and Drawing Scale`, 4: `Measuring Scales`, 5: `Types of Plans` };
+
+  var POINTS = {
+    1: [
+      `<b>Architects and engineers</b> create construction drawings, now usually on a computer (CAD). The old name for them is blueprints.`,
+      `<b>Specifications</b> are the written details about materials, methods and quality standards. The drawings show the job; the specifications write down how it must be done.`,
+      `<b>The title sheet</b> is the front cover of a drawing set. It lists project data, a sheet index and the project directory.`,
+      `<b>The title block</b> is the boxed area on a drawing sheet with the key project facts: project name, drawing scale, architect or engineer, revision date and sheet number.`,
+      `<b>Revisions</b> are recorded in the revision block with the date of the change and the initials of the person who made it. The latest revision date is found in the title block.`,
+      `<b>The legend</b> explains the symbols, abbreviations and lines used on the drawing. Look in a lower corner, in or near the title block, or in a block of its own.`,
+      `<b>Check the legend on every set of drawings.</b> Some designers use variations or company-specific marks, so never assume a symbol means the same thing on every project.`
+    ],
+    2: [
+      `<b>The Alphabet of Lines</b> is the system of line types used on construction drawings. Each type of line has its own meaning.`,
+      `<b>Object lines</b> are heavy and solid and show visible edges. <b>Hidden lines</b> are short, evenly spaced dashes that show edges you cannot see in that view. <b>Centerlines</b> are alternating long and short dashes.`,
+      `<b>Cutting-plane lines</b> are heavy lines with arrowheads that show where a section is cut. <b>Section lines</b> are thin diagonal lines on the cut surface that show the material.`,
+      `<b>Break lines</b> show that only part of an object is drawn, to save space. They also mark areas that are not included in the cutting-line view.`,
+      `<b>Dimension, extension and leader lines</b> are thin lines. Dimension lines carry the number, extension lines mark the edges being measured, and leader lines point to a feature or note.`,
+      `<b>Abbreviations</b> are capitalized (HVAC, NTS, ELEV, CL). <b>Symbols</b> stand for materials, doors, windows and devices. <b>Keynotes</b> are numbered callouts that point to a numbered note.`,
+      `<b>Gridlines</b> use letters one way and numbers the other so people can name a location. The space between gridlines is a <b>bay</b>, and the intersections locate columns and footings.`
+    ],
+    3: [
+      `<b>A dimension</b> is a measurement written as a number, such as length, width or height.`,
+      `<b>Imperial</b> dimensions use feet and inches (14'-6"). <b>Metric</b> dimensions use millimeters, centimeters or meters.`,
+      `Dimensions sit between extension lines and give exact lengths, center-to-center distances and heights.`,
+      `<b>Scale</b> is the ratio between the drawing and the real object. It is written like an equation: SCALE: 1/4" = 1'-0" or SCALE: 1" = 20'-0".`,
+      `<b>SCALE: 1" = 20'-0"</b> means every inch on the drawing stands for 20 feet in real life.`,
+      `<b>NTS (Not to Scale)</b> means the drawing is out of proportion on purpose. Do not measure it with a ruler. The dimensions you measure on it cannot be used to build the project. Follow the written dimensions only.`,
+      `<b>Elevation (EL)</b> is a height above sea level or above another reference point shown on the drawing.`
+    ],
+    4: [
+      `<b>The architect's scale</b> is triangular. It combines up to 10 fractional scales on its three edges, grouped in pairs on each face, such as 1/4" and 1/8", 1/2" and 1/4", 3/4" and 3/8", and 3" and 1-1/2".`,
+      `<b>Reading an architect's scale:</b> line up the whole-foot mark on the main scale, then read the leftover inches in the small divided block at the end.`,
+      `<b>Why it is so common:</b> one triangular tool can combine multiple scales, turning large real measurements into small drawing measurements.`,
+      `<b>The engineer's scale</b> is based on the decimal system, in multiples of 10. Its scales run from 10 to 60 parts per inch, for example 1" = 10', 1" = 20' and 1" = 100'.`,
+      `<b>The engineer's scale</b> is used on civil site plans, highway drawings and utility layouts to measure large site distances, contours and property lines.`,
+      `<b>The metric scale</b> is a straightedge for metric measurements. Only use any scale tool on a drawing that is drawn to scale. On an NTS drawing, follow the written dimensions.`
+    ],
+    5: [
+      `<b>Civil (site) plans</b> give an aerial view of where the building sits on the site, with contours, trees, construction features and dimensions. <b>Cadastral plans</b> show property boundaries.`,
+      `<b>A floor plan</b> is an aerial view of the layout of each room. It is cut about 4 to 5 feet above the floor and shows walls, doors and built-in fixtures.`,
+      `<b>Elevation drawings</b> are flat side views showing height, width, finishes, door and window heights and rooflines. <b>Section drawings</b> are cut-through views of the inside. <b>Detail drawings</b> are enlarged views.`,
+      `<b>A roof plan</b> shows the shape of the roof and the materials that finish it.`,
+      `<b>Structural plans</b> come from structural engineers. Foundation plans show footings, grade beams, piers and slab thickness. Framing plans show beams, rebar, joists and trusses. <b>The materials for the walls are found in the structural plan.</b>`,
+      `<b>Mechanical plans</b> show motors, pumps, piping systems and the layout of the HVAC system.`,
+      `<b>Plumbing plans</b> show the complete plumbing system. <b>Plumbing isometrics</b> show it in a three-dimensional view. <b>P&amp;IDs</b> are schematic diagrams of piping, equipment and instrumentation.`,
+      `<b>Electrical plans</b> show all of the electrical supply and distribution, and can include lighting plans.`,
+      `<b>A schematic</b> is a one-line drawing that shows the flow of paths for electrical or piping circuits.`
+    ]
+  };
+
+  // k = "o" for an official NCCER trade term, "k" for a key term from the module that is not on the official list.
+  var CARDS = {
+    1: [
+      { k: "o", t: `Blueprints`, plain: `The old-fashioned name for construction drawings. People still use it for the set of plans a crew builds from.`, book: `The traditional name used to describe construction drawings.`, ask: `Where have you seen a set of plans or blueprints?` },
+      { k: "o", t: `Architect`, plain: `The licensed professional who designs the project and creates the drawings.`, book: `A qualified, licensed person who creates and designs drawings for a construction project.`, ask: `Where on a drawing sheet would you look to find who made it?` },
+      { k: "o", t: `Engineer`, plain: `A person who uses scientific principles to design and build things.`, book: `A person who applies scientific principles in design and construction.`, ask: `How do you think an engineer's job is different from an architect's?` },
+      { k: "o", t: `Computer-Aided Design (CAD)`, plain: `Making a set of drawings on a computer instead of by hand.`, book: `The making of a set of construction drawings using a computer.`, ask: `Why might a computer make it easier to change a drawing?` },
+      { k: "o", t: `Specifications`, plain: `The written rules for the job: which materials to use, how to do the work and how good it has to be.`, book: `Precise written details about the materials, methods and quality standards for a project.`, ask: `If a drawing does not say what material to use, where else could you look?` },
+      { k: "o", t: `Title Sheet`, plain: `The cover page of a drawing set. It lists the project information, an index of the sheets and the project directory.`, book: `The front cover sheet of a drawing set that lists project data, the sheet index and the project directory.`, ask: `How is a title sheet like the cover and contents page of a book?` },
+      { k: "o", t: `Title Block`, plain: `The boxed area on a drawing sheet that gives the key facts: the project, the scale, who drew it, the revision date and which sheet you are holding.`, book: `A bounded area on a drawing sheet that provides critical information about the project.`, ask: `Find a title block on any plan. What can you read in it?` },
+      { k: "o", t: `Legend`, plain: `The key to the drawing. It tells you what the symbols, abbreviations and lines mean.`, book: `A description of the symbols and abbreviations used in a set of drawings.`, ask: `Why should you not assume a symbol means the same thing on every project?` }
+    ],
+    2: [
+      { k: "o", t: `Symbol`, plain: `A small drawing that stands for a material or a device, like a door, a window or an outlet.`, book: `A drawing that represents a material or component on a plan.`, ask: `Where do you look to find out what a symbol means?` },
+      { k: "o", t: `Hidden Line`, plain: `A dashed line that shows an edge behind something else, one you cannot see from where you are looking.`, book: `A dashed line on a drawing showing the outline of an object hidden behind another object.`, ask: `Why would a drawing show something you cannot see?` },
+      { k: "o", t: `HVAC`, plain: `The heating, ventilating and air conditioning system of a building.`, book: `Heating, ventilating, and air conditioning.`, ask: `Which plan would show how the HVAC system is laid out?` },
+      { k: "o", t: `Schematic`, plain: `A simple one-line drawing that shows the paths an electrical or piping circuit follows.`, book: `A one-line drawing showing the flow of paths for electrical or piping circuits.`, ask: `Why might a one-line drawing be easier to follow than a full picture?` },
+      { k: "o", t: `Universal Product Code (UPC)`, plain: `The barcode of numbers and lines printed on products you buy in a store.`, book: `A barcode consisting of numbers and lines used on retail products.`, ask: `Where have you seen a UPC at home?` },
+      { k: "k", t: `Alphabet of Lines`, plain: `The standard set of line types used on construction drawings. Each kind of line has its own meaning.`, book: `The system of line communication used on construction drawings.`, ask: `Pick one line type. How does it look and what does it mean?` },
+      { k: "k", t: `Break Line`, plain: `A line that says the rest of the object is not drawn here. It saves space on the sheet.`, book: `A line that shows only a portion of an object is represented.`, ask: `Why not just draw the whole thing?` },
+      { k: "k", t: `Keynote`, plain: `A numbered tag on the drawing that points to a numbered note listed elsewhere.`, book: `A numbered or lettered callout in a circle, square or hexagon that refers to a numbered construction note.`, ask: `Why use a keynote instead of writing the whole note on the drawing?` },
+      { k: "k", t: `Gridline`, plain: `A reference line labeled with a letter or a number, used to name places on a plan.`, book: `Horizontal and vertical reference lines that give exact locations, with letters one way and numbers the other.`, ask: `How does a label like B-3 help two people talk about the same spot?` },
+      { k: "k", t: `Bay`, plain: `The space between neighboring gridlines.`, book: `The space enclosed between adjacent gridlines.`, ask: `What gets located where the column gridlines cross?` }
+    ],
+    3: [
+      { k: "o", t: `Dimensions`, plain: `The measurements on a drawing, such as length, width and height.`, book: `Measurements such as length, width and height that appear on a drawing.`, ask: `Why is a number on the drawing better than guessing from the picture?` },
+      { k: "o", t: `Dimension Line`, plain: `A thin line with a number on it that tells you a distance.`, book: `A line on a drawing with a measurement indicating distance.`, ask: `What do the ends of a dimension line look like?` },
+      { k: "o", t: `Scale`, plain: `The ratio between the size of the drawing and the size of the real thing. It lets a whole building fit on a sheet of paper.`, book: `The ratio between the size of a drawing of an object and the size of the actual object.`, ask: `If 1 inch on the drawing equals 20 feet, how long is a 3-inch line?` },
+      { k: "o", t: `Not to Scale (NTS)`, plain: `A warning that the drawing is out of proportion. Do not measure it with a ruler. Use the written numbers.`, book: `Describes drawings made without a scale, which means the measurements cannot be scaled.`, ask: `Why is it risky to measure a drawing marked NTS?` },
+      { k: "o", t: `Elevation (EL)`, plain: `A height, measured from sea level or from another chosen starting point.`, book: `Height above sea level, or another designated reference point, on a construction drawing.`, ask: `Why does a drawing need a starting point to talk about height?` },
+      { k: "k", t: `Extension Line`, plain: `A thin line that sticks out from an object so you can see exactly where a measurement starts and stops.`, book: `A thin line, perpendicular to the dimension line, that marks the boundaries of the measurement.`, ask: `Find the extension lines next to a dimension on a plan.` }
+    ],
+    4: [
+      { k: "o", t: `Architect's Scale`, plain: `A triangular ruler made for reading building drawings. Several scales share its edges, so one tool does many jobs.`, book: `A specialized ruler with various scales used to measure architectural drawings.`, ask: `Why is it handy for one ruler to carry several scales?` },
+      { k: "o", t: `Engineer's Scale`, plain: `A ruler built on tens instead of fractions. It is used for big outdoor distances like site plans.`, book: `A straightedge measuring device divided into tenths, twentieths, fiftieths or sixtieths of an inch.`, ask: `How is it different from an architect's scale?` },
+      { k: "o", t: `Metric Scale`, plain: `A ruler for measuring in metric units.`, book: `A straightedge measuring device used for metric measurements.`, ask: `What units does a metric drawing use?` }
+    ],
+    5: [
+      { k: "o", t: `Architectural Plans`, plain: `The drawings that show how the project is designed. Another name for them is architectural drawings.`, book: `Drawings that show the design of the project, also called architectural drawings.`, ask: `What kinds of drawings do you think are in this group?` },
+      { k: "o", t: `Floor Plan`, plain: `A view from above that shows the layout of each room: walls, doors and built-in fixtures.`, book: `A drawing that provides an aerial view of the layout of each room.`, ask: `Sketch a floor plan of one room in your home.` },
+      { k: "o", t: `Elevation Drawing`, plain: `A flat side view of a building or object that shows its height and width.`, book: `A side view of a building or object, showing height and width.`, ask: `What would an elevation show that a floor plan cannot?` },
+      { k: "o", t: `Section Drawing`, plain: `A view as if the building were sliced open at one spot, so you can see the inside.`, book: `A cross-sectional view of a specific location, showing the inside of an object or building.`, ask: `What could you see in a slice that you cannot see from outside?` },
+      { k: "o", t: `Detail Drawings`, plain: `Enlarged pieces of a drawing so a tricky area is easier to see.`, book: `Enlarged views of part of a drawing used to show an area more clearly.`, ask: `Why would a drawing need an enlarged view of one spot?` },
+      { k: "o", t: `Roof Plan`, plain: `A drawing of the shape of the roof and the materials that finish it.`, book: `A drawing that shows the shape of the roof and the materials that will be used to finish it.`, ask: `Which view would show the roof shape best?` },
+      { k: "o", t: `Trim`, plain: `The finishing pieces in a building, such as moldings, baseboards and window casings.`, book: `The finishing materials in a building, such as moldings, baseboards and window casings.`, ask: `Can you point out trim in the room you are in?` },
+      { k: "o", t: `Structural Plans`, plain: `Engineered drawings that support the architect's design. They show what holds the building up.`, book: `A set of engineered drawings used to support the architectural design.`, ask: `Which plan tells you what the walls are made of?` },
+      { k: "o", t: `Foundation Plan`, plain: `A drawing of the building's foundation: its layout and height.`, book: `A drawing that shows the layout and elevation of the building foundation.`, ask: `What do you think a foundation plan shows about the footings?` },
+      { k: "o", t: `Beam`, plain: `A large horizontal piece of concrete, steel, wood or other material that holds up what is above it.`, book: `A large, horizontal structural member made of concrete, steel, wood or other structural material used to provide support above.`, ask: `Where in a building do you think beams sit?` },
+      { k: "o", t: `Civil Plans`, plain: `A bird's-eye view of where the building sits on the site, with contours, trees, construction features and dimensions.`, book: `Drawings that show the location of the building on the site from an aerial view, including contours, trees, construction features and dimensions.`, ask: `Which plan shows where the driveway and trees are?` },
+      { k: "o", t: `Cadastral Plans`, plain: `Drawings that show where the property lines are.`, book: `Drawings that show the boundaries of property lines.`, ask: `Why would a builder need to know the property boundary?` },
+      { k: "o", t: `Contour Lines`, plain: `Lines on a civil drawing that show how high or low the ground is.`, book: `Solid or dashed lines showing the elevation of the earth on a civil drawing.`, ask: `What would the lines tell you about a hill?` },
+      { k: "o", t: `Electrical Plans`, plain: `Engineered drawings that show all of the electrical supply and distribution. They can include lighting plans.`, book: `Engineered drawings that show all of the electrical supply and distribution.`, ask: `What do you expect to find on an electrical plan?` },
+      { k: "o", t: `Mechanical Plans`, plain: `Engineered drawings for the mechanical systems: motors, pumps, piping and HVAC.`, book: `Engineered drawings that show the mechanical systems, such as motors, pumps, piping and HVAC.`, ask: `Which plan shows how the HVAC system is laid out?` },
+      { k: "o", t: `Plumbing Plans`, plain: `Engineered drawings that show the complete plumbing system.`, book: `Engineered drawings that show the complete plumbing system.`, ask: `How is a plumbing plan different from an electrical plan?` },
+      { k: "o", t: `Plumbing Isometrics`, plain: `A drawing that shows the plumbing layout in a three-dimensional view.`, book: `A drawing showing the plumbing layout in a three-dimensional view.`, ask: `Why might a 3-D view help with piping?` },
+      { k: "o", t: `Piping and Instrumentation Drawings (P&IDs)`, plain: `Schematic diagrams of piping, equipment and instrumentation.`, book: `Schematic diagrams showing piping, equipment and instrumentation.`, ask: `How is a schematic different from a floor plan?` }
+    ]
+  };
+
+  // a = index of the right option
+  var QUIZ = {
+    1: [
+      { q: `Where do you look to find out what a symbol or line on a drawing means?`, o: [`The title sheet cover`, `The legend`, `The scale`], a: 1, why: `The legend explains the symbols, abbreviations and lines used on the drawing.` },
+      { q: `True or false: a symbol always means the same thing on every project.`, o: [`True`, `False`], a: 1, why: `Some designers use variations or company-specific marks. Check the legend for each set of drawings.` },
+      { q: `The latest revision date on a set of drawings is found:`, o: [`Inside a detail`, `In the legend`, `Inside the title block`], a: 2, why: `The title block holds the revision information.` },
+      { q: `A revision block entry includes the date and:`, o: [`The customer's signature`, `The initials of the person who made the revision`, `The project tag only`], a: 1, why: `It records when the change was made and who made it.` },
+      { q: `Specifications are:`, o: [`A kind of ruler`, `A drawing symbol`, `Written details about materials, methods and quality`], a: 2, why: `Specifications put the materials, methods and quality standards in writing.` },
+      { q: `The front cover sheet of a drawing set, with a sheet index, is the:`, o: [`Title sheet`, `Legend`, `Detail drawing`], a: 0, why: `The title sheet lists project data, the sheet index and the project directory.` }
+    ],
+    2: [
+      { q: `The Alphabet of Lines is:`, o: [`The line types used on construction drawings`, `Lines labeled with letters`, `Lines that mark land boundaries`], a: 0, why: `It is the system of line types used on drawings, and each type means something different.` },
+      { q: `Break lines show that:`, o: [`An object is hidden`, `Only part of an object is drawn, to save space`, `A measurement is taken here`], a: 1, why: `Only a portion of the object is represented.` },
+      { q: `A line made of short, evenly spaced dashes is a:`, o: [`Centerline`, `Object line`, `Hidden line`], a: 2, why: `Hidden lines show edges you cannot see in the current view.` },
+      { q: `The space between neighboring gridlines is called a:`, o: [`Pod`, `Bay`, `Segment`], a: 1, why: `The space enclosed between adjacent gridlines is a bay.` },
+      { q: `True or false: abbreviations such as HVAC and NTS are written in capital letters.`, o: [`True`, `False`], a: 0, why: `Abbreviations are always capitalized.` }
+    ],
+    3: [
+      { q: `A dimension is written as a:`, o: [`Letter`, `Number`, `Symbol`], a: 1, why: `A dimension is a measurement shown as a number.` },
+      { q: `In the metric system, dimensions are written in:`, o: [`Inches, feet and yards`, `Meters, centimeters and millimeters`, `Degrees and radians`], a: 1, why: `Metric dimensions use millimeters, centimeters or meters.` },
+      { q: `SCALE: 1" = 20'-0" means every inch on the drawing stands for:`, o: [`20 inches`, `1/20 of a foot`, `20 feet`], a: 2, why: `One inch on the drawing equals 20 feet in real life.` },
+      { q: `True or false: you can measure a drawing marked NTS with a ruler and build from the result.`, o: [`True`, `False`], a: 1, why: `NTS drawings cannot be scaled. The measurements taken from them cannot be used to build.` },
+      { q: `On a drawing marked NTS, what do you follow?`, o: [`Whatever a ruler says`, `The written dimensions`, `Your best guess`], a: 1, why: `Workers follow written dimensions only.` },
+      { q: `Why are drawings made at a reduced scale?`, o: [`So a full-size building fits on a standard sheet`, `To hide mistakes`, `So dimensions can be left off`], a: 0, why: `Reduced proportions let large buildings fit on standard sheets.` }
+    ],
+    4: [
+      { q: `An architect's scale is what shape?`, o: [`Round`, `Triangular`, `Flat and square`], a: 1, why: `The triangular scale puts several scales on three edges.` },
+      { q: `An engineer's scale is set up in multiples of:`, o: [`5`, `12`, `10`], a: 2, why: `It is based on the decimal system, in multiples of 10.` },
+      { q: `Which scale is used for large site plans and utility layouts?`, o: [`Engineer's scale`, `Architect's scale`, `Neither one`], a: 0, why: `The engineer's scale is used on civil site, highway and utility drawings.` },
+      { q: `Why is the triangular architect's scale used so often?`, o: [`It never needs reading`, `It can combine multiple scales on one tool`, `It is the only ruler allowed`], a: 1, why: `One tool can carry up to 10 fractional scales.` },
+      { q: `A metric scale is used for measuring in:`, o: [`Fractions of an inch only`, `Degrees`, `Metric units`], a: 2, why: `It is a straightedge made for metric measurements.` }
+    ],
+    5: [
+      { q: `Which plan is an aerial view of the layout of each room?`, o: [`Roof plan`, `Floor plan`, `Section drawing`], a: 1, why: `A floor plan is the overhead view of each room's layout.` },
+      { q: `Which plan shows the location of the building on the site from above?`, o: [`Civil (site) plan`, `Plumbing plan`, `Detail drawing`], a: 0, why: `Civil plans show the building's location on the site from an aerial view.` },
+      { q: `Where would you find the materials for the walls?`, o: [`Civil plan`, `Plumbing plan`, `Structural plan`], a: 2, why: `The structural plan carries the materials information.` },
+      { q: `Which plans show the layout of the HVAC system?`, o: [`Foundation plans`, `Mechanical plans`, `Structural plans`], a: 1, why: `Mechanical plans cover motors, pumps, piping and HVAC.` },
+      { q: `Electrical plans can include:`, o: [`Exterior elevations`, `Plumbing isometrics`, `Lighting plans`], a: 2, why: `Lighting plans are part of the electrical plans.` },
+      { q: `A section drawing shows:`, o: [`A cut-through view of the inside`, `Property lines`, `A list of symbols`], a: 0, why: `It is a cross-sectional view that reveals the inside of an object or building.` }
+    ]
+  };
+
+  var TALK = {
+    1: {
+      qs: [`Why does a drawing need a legend, even though many symbols are standard?`, `Where would you check to see whether you are looking at the latest version of a drawing?`],
+      scn: [{
+        t: `"It's the same everywhere"`,
+        s: `A student sees a symbol on a new job's drawings that looks just like one from a different job. A coworker says, "It's the same everywhere. Just go with it." What should the student do?`,
+        g: [`Not every symbol means the same thing on every project. Some designers use variations or company-specific marks.`, `Check the legend for this set of drawings. It is usually in a lower corner, or in or near the title block.`, `If the legend does not explain the mark, ask the supervisor or instructor before going on.`]
+      }, {
+        t: `"This is the one we've got"`,
+        s: `A worker is about to build from a printed sheet. Someone asks, "Is this the newest version?" How can the worker find out?`,
+        g: [`Changes to a drawing are recorded in the revision block, with the date and the initials of the person who made them.`, `The latest revision date is in the title block. Compare it with the sheet in hand.`, `If the dates do not match, stop and get the current sheet before building.`]
+      }],
+      parent: `Ask your student to point to the title block and the legend on any plan and explain what each is for. If they mix them up, look at the "where to look" table together.`
+    },
+    2: {
+      qs: [`Why do drawings use different kinds of lines instead of just one?`, `How do gridlines help two people talk about the same spot on a plan?`],
+      scn: [{
+        t: `"Over by the column"`,
+        s: `A coworker says, "Put it over by that column on the east side." You are looking at a plan with gridlines. How could the two of you be more exact?`,
+        g: [`Gridlines use letters one way and numbers the other, so every spot can be named.`, `The intersections of column gridlines locate the columns, so you can say where line B crosses line 3.`, `The space between neighboring gridlines is a bay, which gives a second way to describe an area.`]
+      }],
+      parent: `Ask your student to draw an object line, a hidden line and a centerline on scrap paper and say what each one shows.`
+    },
+    3: {
+      qs: [`Why can't you trust a ruler on a drawing marked NTS?`, `What is the difference between a dimension and a scale?`],
+      scn: [{
+        t: `"Just measure it"`,
+        s: `A drawing is marked NTS. A coworker holds a ruler up to the sheet and says, "It's about 6 inches, so call it 6 feet." What is wrong with that?`,
+        g: [`NTS means the drawing is out of proportion on purpose and cannot be scaled with a ruler.`, `Workers must follow the written dimensions only.`, `If a dimension is missing, ask. Do not measure or guess.`]
+      }, {
+        t: `"How long is the driveway?"`,
+        s: `A site plan says SCALE: 1" = 20'-0". The driveway measures 3 inches on the sheet. How long is it in real life?`,
+        g: [`Every inch on the drawing stands for 20 feet.`, `3 inches times 20 feet is 60 feet.`, `Always read the scale printed on the sheet before measuring.`]
+      }],
+      parent: `Ask your student to explain a dimension and a scale in one sentence each, without looking at the page.`
+    },
+    4: {
+      qs: [`Why would a site plan use an engineer's scale instead of an architect's scale?`, `Why is a triangular scale handy?`],
+      scn: [{
+        t: `"A ruler is a ruler"`,
+        s: `A student has a site plan marked SCALE: 1" = 20'-0" and picks up an architect's scale to measure a long site distance. A coworker says, "A ruler is a ruler." What is the better choice?`,
+        g: [`The engineer's scale is based on multiples of 10 and is used for large site distances.`, `The architect's scale uses fractions, like the 1/4" and 1/8" scales on building plans.`, `Match the tool to the scale printed on the drawing.`]
+      }],
+      parent: `Ask your student to name one difference between an architect's scale and an engineer's scale.`
+    },
+    5: {
+      qs: [`Which plan would you open to find out where the building sits on the property?`, `Why does a full set need so many different plans?`],
+      scn: [{
+        t: `"Wrong sheet"`,
+        s: `A worker needs to know what the walls are made of but keeps looking at the floor plan. Where should the worker look?`,
+        g: [`The materials for the walls are found in the structural plan.`, `The floor plan shows the layout of each room: walls, doors and built-in fixtures.`, `Match the question to the plan.`]
+      }, {
+        t: `"Which sheet?"`,
+        s: `Someone asks where the HVAC is laid out. Someone else asks where the lights go. Which plans answer each question?`,
+        g: [`The HVAC layout is shown on the mechanical plans.`, `Lighting plans are part of the electrical plans.`, `Each type of plan answers a different question.`]
+      }],
+      parent: `Point to any room in your home. Ask your student which plan would show its layout, which would show what the walls are made of, and which would show the lights.`
+    }
+  };
+
+  var FINAL = [
+    `I can find the title block and the legend on a drawing and say what each one tells me.`,
+    `I can explain why I should check the legend on every set of drawings.`,
+    `I can name at least five line types in the Alphabet of Lines and say what each shows.`,
+    `I can use gridlines and bays to describe a location on a plan.`,
+    `I can read a dimension in feet and inches or in metric units.`,
+    `I can explain what SCALE: 1" = 20'-0" means, and why an NTS drawing cannot be measured.`,
+    `I can explain how an architect's scale and an engineer's scale are different.`,
+    `I can tell which plan to open for room layout, wall materials, HVAC and lighting.`
+  ];
+
+  // Practice pairs. pq/po = plain English. tq/to = textbook style. a = index of the right answer (matches the pack's answer key).
+  // Both versions keep the same option order. br = [what you might say, what the textbook says].
+  var PRACTICE = {
+    1: [
+      { src: `Section Review · Q1 (1.1.4)`, a: 2,
+        pq: `A drawing gets changed. What has to go in the revision block when someone updates it?`,
+        po: [`The project tag and the date the drawing was first approved.`, `The engineering approvals and the date the job should be finished.`, `The date of the change and the initials of the person who made it.`, `Dates and signatures showing the customer approved.`],
+        tq: `Revisions to the drawing are entered in the revision block and must include:`,
+        to: [`the project tag and the date the drawing was approved.`, `engineering approvals and the intended date of completion.`, `the date and the initials of the person who made the revision.`, `dates and signatures for customer approval documentation.`],
+        why: `A revision entry records when the change was made and who made it.`,
+        br: [[`the date of the change and who made it`, `the date and the initials of the person who made the revision`]] },
+      { src: `Practice Exam · Q2 (1.1.5)`, a: 2,
+        pq: `You find a mark on a plan and have no idea what it means. Where do you look?`,
+        po: [`In the index.`, `In the title block.`, `In the legend.`, `In the scale.`],
+        tq: `The information needed to identify lines and other symbols on a construction drawing can be found in the _____.`,
+        to: [`index`, `title block`, `legend`, `scale`],
+        why: `The legend explains the symbols, abbreviations and lines used on the drawing.`,
+        br: [[`the key to the marks on the drawing`, `legend`]] }
+    ],
+    2: [
+      { src: `Practice Exam · Q3 (1.2.1)`, a: 2,
+        pq: `A wavy or zigzag line cuts off part of an object on a drawing. What is that line telling you?`,
+        po: [`The rest of the object will be drawn on a different sheet.`, `The object is hidden behind another one.`, `Only part of the object is drawn, to save space.`, `The object is not included in the cutting-line view.`],
+        tq: `Break lines are used to show that _____.`,
+        to: [`an object will appear in a separate drawing`, `an object is hidden`, `only part of an object is represented to save space`, `an object is not included on the cutting line view`],
+        why: `Break lines show that only a portion of the object is drawn, so the drawing takes less room.`,
+        br: [[`only part of it is drawn to save space`, `only part of an object is represented to save space`]] },
+      { src: `Module Review · Q4 (1.2.3)`, a: 1,
+        pq: `A plan has gridlines. The grid divides the area into smaller parts. What are those parts called?`,
+        po: [`Segments`, `Bays`, `Sections`, `Pods`],
+        tq: `On a gridline system, a grid divides the area into small parts called:`,
+        to: [`segments`, `bays`, `sections`, `PODS`],
+        why: `The space enclosed between adjacent gridlines is a bay.`,
+        br: [[`the space between neighboring gridlines`, `bay`]] }
+    ],
+    3: [
+      { src: `Section Review · Q3 (1.3.2)`, a: 0,
+        pq: `True or false: if a plan is marked NTS, you cannot build from the measurements you take off it with a ruler.`,
+        po: [`True`, `False`],
+        tq: `When a plan is marked NTS, the dimensions as measured on the drawing cannot be used to build the project.`,
+        to: [`True`, `False`],
+        why: `NTS means the drawing is not to scale. Workers follow the written dimensions only.`,
+        br: [[`you cannot build from what you measure`, `dimensions as measured on the drawing cannot be used to build the project`], [`NTS`, `not to scale`]] },
+      { src: `Module Review · Q6 (1.3.2)`, a: 2,
+        pq: `A site plan says SCALE: 1" = 20'-0". What does that mean?`,
+        po: [`Every 1/20 of an inch on the drawing stands for 20 feet.`, `20 inches on the drawing stand for 1 foot.`, `Every inch on the drawing stands for 20 feet.`, `20 inches on the drawing stand for 20 feet.`],
+        tq: `If the scale on a site plan reads SCALE: 1" = 20' 0", then every:`,
+        to: [`1/20 of an inch on the drawing represents 20 feet, 0 inches`, `20 inches on the drawing represents 1 foot, 0 inches`, `inch on the drawing represents 20 feet, 0 inches`, `20 inches on the drawing represents 20 feet, 0 inches`],
+        why: `The scale is an equation. Each inch on the drawing stands for 20 feet in real life.`,
+        br: [[`each inch stands for 20 feet`, `inch on the drawing represents 20 feet, 0 inches`]] }
+    ],
+    4: [
+      { src: `Module Review · Q10 (1.4.3)`, a: 1,
+        pq: `An engineer's scale is built around a counting pattern. Which one?`,
+        po: [`Multiples of 5`, `Multiples of 10`, `Multiples of 12`, `Multiples of 39.37`],
+        tq: `An engineer's scale is set up in multiples of:`,
+        to: [`5`, `10`, `12`, `39.37`],
+        why: `It is based on the decimal system, in multiples of 10.`,
+        br: [[`built on tens`, `set up in multiples of 10`]] },
+      { src: `Practice Exam · Q7 (1.4.1)`, a: 0,
+        pq: `Why is the triangular architect's scale the one used most often?`,
+        po: [`One tool can hold several scales.`, `Its shape makes it more accurate.`, `It is tougher on a job site than other scales.`, `It is more accurate than every other kind of scale.`],
+        tq: `The triangular architect's scale is the most commonly used because it _____.`,
+        to: [`can combine multiple scales`, `provides greater accuracy due to its shape`, `is more rugged on job sites than other scales`, `is more accurate than other types of scales`],
+        why: `Its three edges can hold up to 10 fractional scales, so one tool covers many drawing scales.`,
+        br: [[`one tool holds several scales`, `can combine multiple scales`]] }
+    ],
+    5: [
+      { src: `Blooket Review · 1.5.2`, a: 3,
+        pq: `Which plan gives you an aerial view of the layout of each room?`,
+        po: [`Roof plan`, `Section drawing`, `Detail drawing`, `Floor plan`],
+        tq: `Which architectural plan is an aerial view of the layout of each room?`,
+        to: [`Roof plan`, `Section drawings`, `Detail drawings`, `Floor plan`],
+        why: `A floor plan is an overhead view of the layout of each room, with walls, doors and built-in fixtures.`,
+        br: [[`a view from above of each room`, `aerial view of the layout of each room`]] },
+      { src: `Practice Exam · Q9 (1.5.3)`, a: 1,
+        pq: `Where would you look to find out what the walls are made of?`,
+        po: [`The plumbing plan`, `The structural plan`, `The civil plan`, `The mechanical plan`],
+        tq: `The materials to be used for the walls would be found in the _____.`,
+        to: [`plumbing plan`, `structural plan`, `civil plan`, `mechanical plan`],
+        why: `The structural plan carries the materials information, such as concrete strength and steel shapes.`,
+        br: [[`what the walls are made of`, `the materials to be used for the walls`]] }
+    ]
+  };
+
+  function el(tag, cls, text) { var n = document.createElement(tag); if (cls) n.className = cls; if (text != null) n.textContent = text; return n; }
+
+  function buildPoints(ul, list, prefix) {
+    list.forEach(function (html, i) {
+      var li = el("li");
+      var label = el("label");
+      var input = document.createElement("input");
+      input.type = "checkbox";
+      input.id = prefix + "-" + i;
+      var span = el("span");
+      span.innerHTML = html; // static text written in this file
+      label.appendChild(input); label.appendChild(span);
+      li.appendChild(label); ul.appendChild(li);
+    });
+  }
+
+  function field(label, text) {
+    var d = el("span");
+    d.appendChild(el("span", "label", label));
+    d.appendChild(document.createTextNode(text));
+    return d;
+  }
+  function buildCards(host, n) {
+    CARDS[n].forEach(function (item) {
+      var b = el("button", "card");
+      b.type = "button";
+      b.setAttribute("aria-pressed", "false");
+      b.setAttribute("aria-label", item.t + ". Press to flip the card.");
+      var inner = el("span", "card-inner");
+      var f = el("span", "face front" + (item.k === "k" ? " key" : ""));
+      f.appendChild(el("span", "strip", (item.k === "o" ? "NCCER trade term" : "Key term") + " · Section " + n));
+      f.appendChild(el("span", "term", item.t));
+      f.appendChild(el("span", "hint", "TAP TO FLIP"));
+      var k = el("span", "face back");
+      k.appendChild(el("span", "strip", item.t));
+      var body = el("span", "body");
+      body.appendChild(field("In everyday words", item.plain));
+      body.appendChild(field("From the module", item.book));
+      var ask = field("Ask your student", item.ask);
+      ask.className = "ask";
+      body.appendChild(ask);
+      k.appendChild(body);
+      inner.appendChild(f); inner.appendChild(k);
+      b.appendChild(inner);
+      b.addEventListener("click", function () { b.setAttribute("aria-pressed", b.getAttribute("aria-pressed") === "true" ? "false" : "true"); });
+      host.appendChild(b);
+    });
+  }
+
+  function buildQuiz(host, n) {
+    var list = QUIZ[n];
+    var answered = 0;
+    host.appendChild(el("p", "ticket-intro", "Pick the answer. You will see right away if it is correct. Nothing is saved or sent."));
+    var foot = el("div", "ticket-foot");
+    var done = el("p", null, "");
+    done.setAttribute("aria-live", "polite");
+    var retry = el("button", "btn", "Try again");
+    retry.type = "button";
+    retry.hidden = true;
+    foot.appendChild(done); foot.appendChild(retry);
+
+    list.forEach(function (item, qi) {
+      var fs = el("fieldset", "q");
+      fs.appendChild(el("legend", null, (qi + 1) + ". " + item.q));
+      var opts = el("div", "opts");
+      var fb = el("p", "fb");
+      fb.setAttribute("aria-live", "polite");
+      var btns = [];
+      item.o.forEach(function (text, oi) {
+        var b = el("button", "opt", text);
+        b.type = "button";
+        b.addEventListener("click", function () {
+          btns.forEach(function (x) { x.disabled = true; });
+          answered++;
+          if (oi === item.a) {
+            b.classList.add("right");
+            fb.innerHTML = "";
+            var good = el("b", null, "Correct. "); fb.appendChild(good); fb.appendChild(document.createTextNode(item.why));
+          } else {
+            b.classList.add("wrong");
+            btns[item.a].classList.add("right");
+            fb.innerHTML = "";
+            var no = el("b", null, "Not quite. "); fb.appendChild(no);
+            fb.appendChild(document.createTextNode("The answer is \"" + item.o[item.a] + "\". " + item.why));
+          }
+          if (answered === list.length) {
+            done.textContent = "Ticket finished. Reread any part of the section that felt shaky, then try again.";
+            retry.hidden = false;
+          }
+        });
+        btns.push(b); opts.appendChild(b);
+      });
+      fs.appendChild(opts); fs.appendChild(fb);
+      host.insertBefore(fs, null);
+      fs._reset = function () { btns.forEach(function (x) { x.disabled = false; x.className = "opt"; }); fb.textContent = ""; };
+    });
+    host.appendChild(foot);
+    retry.addEventListener("click", function () {
+      host.querySelectorAll("fieldset").forEach(function (f) { f._reset(); });
+      answered = 0; done.textContent = ""; retry.hidden = true;
+    });
+  }
+
+  function buildTalk(host, n) {
+    var t = TALK[n];
+    var ol = el("ol", "qs");
+    t.qs.forEach(function (q) { ol.appendChild(el("li", null, q)); });
+    host.appendChild(ol);
+    t.scn.forEach(function (s) {
+      var d = el("details", "scn");
+      d.appendChild(el("summary", null, "Scenario: " + s.t));
+      d.appendChild(el("p", "setup", s.s));
+      var g = el("div", "good");
+      g.appendChild(el("b", null, "A good answer includes"));
+      var ul = el("ul");
+      s.g.forEach(function (x) { ul.appendChild(el("li", null, x)); });
+      g.appendChild(ul); d.appendChild(g);
+      host.appendChild(d);
+    });
+    if (t.parent) {
+      var p = el("div", "parent");
+      p.appendChild(el("b", null, "Parent prompt"));
+      p.appendChild(el("p", null, t.parent));
+      host.appendChild(p);
+    }
+  }
+
+
+  function ask(label, cls, q, opts, correct, onAnswer) {
+    var box = el("div", "ask-block" + (cls ? " " + cls : ""));
+    box.appendChild(el("p", "step-label", label));
+    box.appendChild(el("p", "pr-q", q));
+    var wrap = el("div", "opts");
+    wrap.setAttribute("role", "group");
+    wrap.setAttribute("aria-label", q);
+    var fb = el("p", "fb");
+    fb.setAttribute("aria-live", "polite");
+    var btns = [];
+    opts.forEach(function (text, oi) {
+      var b = el("button", "opt", String.fromCharCode(65 + oi) + ".  " + text);
+      b.type = "button";
+      b.addEventListener("click", function () {
+        btns.forEach(function (x) { x.disabled = true; });
+        var ok = oi === correct;
+        b.classList.add(ok ? "right" : "wrong");
+        if (!ok) btns[correct].classList.add("right");
+        onAnswer(ok, fb, String.fromCharCode(65 + correct));
+      });
+      btns.push(b); wrap.appendChild(b);
+    });
+    box.appendChild(wrap); box.appendChild(fb);
+    box.reset = function () { btns.forEach(function (x) { x.disabled = false; x.className = "opt"; }); fb.textContent = ""; };
+    return box;
+  }
+  function say(fb, lead, text) {
+    fb.textContent = "";
+    fb.appendChild(el("b", null, lead + " "));
+    fb.appendChild(document.createTextNode(text));
+  }
+
+  function buildPractice(host, n) {
+    var list = PRACTICE[n];
+    host.appendChild(el("p", "pr-intro", "Test questions use the textbook's formal words. Answer each question in plain English first, then see the same question the way the book asks it. The \"Words to notice\" box shows how the two fit together. Nothing is saved or sent."));
+    var items = [];
+    list.forEach(function (item, i) {
+      var art = el("article", "pr");
+      var head = el("div", "pr-head");
+      head.appendChild(el("span", null, "Question " + (i + 1) + " of " + list.length));
+      head.appendChild(el("span", null, "Source: " + item.src));
+      art.appendChild(head);
+
+      var bridge = el("div", "bridge");
+      bridge.hidden = true;
+      bridge.appendChild(el("p", "step-label", "Words to notice"));
+      var ul = el("ul");
+      item.br.forEach(function (p) {
+        var li = el("li");
+        li.appendChild(el("span", "you", p[0]));
+        li.appendChild(el("span", "arrow", "→"));
+        li.appendChild(el("span", "pub", p[1]));
+        ul.appendChild(li);
+      });
+      bridge.appendChild(ul);
+
+      var b2 = ask("Step 2 · The same question in the textbook's words", "formal", item.tq, item.to, item.a, function (ok, fb, letter) {
+        if (ok) say(fb, "Correct.", "You just answered it in the textbook's voice.");
+        else say(fb, "Not quite.", "The answer is " + letter + ". Compare it with your plain-English answer above.");
+        bridge.hidden = false;
+      });
+      b2.hidden = true;
+      var b1 = ask("Step 1 · In plain English", "", item.pq, item.po, item.a, function (ok, fb, letter) {
+        if (ok) say(fb, "Correct.", item.why);
+        else say(fb, "Not quite.", "The answer is " + letter + ". " + item.why);
+        b2.hidden = false;
+      });
+      art.appendChild(b1); art.appendChild(b2); art.appendChild(bridge);
+      host.appendChild(art);
+      items.push({ b1: b1, b2: b2, bridge: bridge });
+    });
+    var foot = el("div", "ticket-foot");
+    var retry = el("button", "btn", "Start this set over");
+    retry.type = "button";
+    retry.addEventListener("click", function () {
+      items.forEach(function (x) { x.b1.reset(); x.b2.reset(); x.b2.hidden = true; x.bridge.hidden = true; });
+    });
+    foot.appendChild(retry);
+    host.appendChild(foot);
+  }
+
+  [1, 2, 3, 4, 5].forEach(function (n) {
+    buildPractice(document.querySelector('[data-practice="' + n + '"]'), n);
+    buildPoints(document.querySelector('[data-points="' + n + '"]'), POINTS[n], "s" + n);
+    buildCards(document.querySelector('[data-cards="' + n + '"]'), n);
+    buildQuiz(document.querySelector('[data-quiz="' + n + '"]'), n);
+    buildTalk(document.querySelector('[data-talk="' + n + '"]'), n);
+  });
+  buildPoints(document.getElementById("final-points"), FINAL, "fin");
+})();
+</script>
+
+</body></html>

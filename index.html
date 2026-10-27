@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>EVIT Electrical Family Study Guides</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+:root{--bg:#EEF1F3;--surface:#fff;--ink:#14202B;--ink-soft:#46576A;--line:#C9D2DA;--band:#14202B;--band-ink:#F4F7F9;--accent:#C42B17;--caution:#F2B705;--caution-soft:#FFF3C4;--focus:#0B5FFF;
+--font-display:"Barlow Condensed","Arial Narrow",Impact,sans-serif;--font-body:"Barlow",system-ui,-apple-system,"Segoe UI",sans-serif;--font-mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace}
+@media (prefers-color-scheme:dark){:root{--bg:#0F171E;--surface:#18232D;--ink:#EAF0F4;--ink-soft:#A5B4C2;--line:#2E3E4C;--band:#0A1016;--accent:#FF5A44;--caution-soft:#3A3210;--focus:#6AA2FF}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font-body);font-size:17px;line-height:1.6}
+:focus-visible{outline:3px solid var(--focus);outline-offset:2px}
+.wrap{max-width:920px;margin-inline:auto;padding-inline:16px}
+h1,h2,h3{font-family:var(--font-display);text-transform:uppercase;letter-spacing:.03em;line-height:1.05;margin:0}
+.eyebrow{font-family:var(--font-mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase}
+.band{background:var(--band);color:var(--band-ink);padding-block:34px 28px;border-bottom:8px solid var(--caution)}
+.band .eyebrow{color:var(--caution)}
+.band h1{font-size:clamp(2.5rem,9vw,4.2rem);font-weight:700;margin-top:10px}
+.band p{margin:14px 0 0;max-width:52ch;color:#D5DEE5;font-size:1.08rem}
+.notice{background:var(--caution-soft);border:2px solid var(--caution);padding:16px 20px;margin-top:26px}
+.notice h2{font-size:1.25rem}.notice p{margin:4px 0 0}
+.how{margin-top:26px;background:var(--surface);border:1px solid var(--line);padding:18px 22px}
+.how h2{font-size:1.4rem;margin-bottom:6px}.how p{margin:0 0 8px;max-width:64ch}
+h2.list{font-size:clamp(1.8rem,5vw,2.4rem);margin:40px 0 14px;border-top:8px solid var(--ink);padding-top:16px}
+.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fill,minmax(min(100%,270px),1fr));list-style:none;margin:0;padding:0}
+.mod{background:var(--surface);border:2px solid var(--ink);display:flex;flex-direction:column;min-height:190px}
+.mod .tag{background:var(--accent);color:#fff;font-family:var(--font-mono);font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;padding:8px 14px}
+.mod.soon .tag{background:var(--ink-soft)}
+.mod .body{padding:14px 16px;flex:1;display:flex;flex-direction:column;gap:8px}
+.mod h3{font-size:1.5rem;font-weight:700}
+.mod p{margin:0;font-size:.95rem;color:var(--ink-soft)}
+.mod a.go{margin-top:auto;font-weight:600;color:var(--ink);text-decoration:none;border:2px solid var(--ink);padding:8px 14px;border-radius:3px;text-align:center}
+.mod a.go:hover{background:var(--ink);color:var(--bg)}
+.mod .later{margin-top:auto;font-family:var(--font-mono);font-size:12px;color:var(--ink-soft)}
+footer{margin-top:48px;background:var(--band);color:#AEBBC7;padding-block:26px 30px;font-size:.92rem}
+footer strong{color:var(--band-ink)}footer p{margin:0 0 6px}
+</style>
+</head>
+<body>
+<header class="band">
+  <div class="wrap">
+    <span class="eyebrow">EVIT Electrical · For Families and Students</span>
+    <h1>Family Study<br>Guides</h1>
+    <p>One plain-English study guide for each module your student studies. Read it together, talk it over, and help your student explain what they are learning.</p>
+  </div>
+</header>
+
+<main class="wrap">
+  <aside class="notice" aria-labelledby="n-h">
+    <h2 id="n-h">Draft for instructor review</h2>
+    <p>These guides are companions to the NCCER textbook, not copies of it. They are for learning and talking, and they are not permission to do electrical work. No student names or grades appear here, and nothing you tick or tap on these pages is saved or sent anywhere.</p>
+  </aside>
+
+  <section class="how" aria-labelledby="h-h">
+    <h2 id="h-h">How to use a guide</h2>
+    <p>Plan about 15 to 25 minutes per section. Your student does most of the talking, and you do not need to know the answers ahead of time. If your student can read it and explain it, they are learning it.</p>
+  </section>
+
+  <h2 class="list">Modules</h2>
+  <ul class="grid">
+    <li class="mod">
+      <span class="tag">Ready</span>
+      <div class="body">
+        <h3>Electrical Foundations</h3>
+        <p>NCCER Electrical Level 1, Module 26102-20: Safety for Electricians.</p>
+        <a class="go" href="electrical-foundations.html">Open the guide</a>
+      </div>
+    </li>
+    <li class="mod">
+      <span class="tag">Ready</span>
+      <div class="body">
+        <h3>Construction Drawings</h3>
+        <p>NCCER Core, Module 00105: Introduction to Construction Drawings.</p>
+        <a class="go" href="construction-drawings.html">Open the guide</a>
+      </div>
+    </li>
+    <!-- TO ADD A MODULE: copy one of the blocks above, change the title, the description and the href
+         to the new file name. For a guide that is not finished yet, copy this block instead:
+    <li class="mod soon">
+      <span class="tag">Coming soon</span>
+      <div class="body">
+        <h3>MODULE TITLE</h3>
+        <p>NCCER module number and name.</p>
+        <span class="later">Guide in progress</span>
+      </div>
+    </li>
+    -->
+  </ul>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><strong>Mr. Ellis CTE</strong> · East Valley Institute of Technology (EVIT), Mesa, Arizona · Your Future, Your Way</p>
+    <p>Aim for perfection, take what you get.</p>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,954 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>National Electrical Code Loved Ones Study Guide</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+/* Layout concept: one long study sheet. Each module section runs the same six parts
+   (read, review points, trade-term tags, ticket out the door, talk it over). */
+:root {
+  --bg: #EEF1F3;
+  --surface: #FFFFFF;
+  --ink: #14202B;
+  --ink-soft: #46576A;
+  --line: #C9D2DA;
+  --band: #14202B;
+  --band-ink: #F4F7F9;
+  --accent: #C42B17;
+  --accent-ink: #FFFFFF;
+  --caution: #F2B705;
+  --caution-soft: #FFF3C4;
+  --good: #1E7A3C;
+  --good-soft: #DDF3E4;
+  --bad: #A8321F;
+  --bad-soft: #FBE3DE;
+  --tag-hole: #EEF1F3;
+  --focus: #0B5FFF;
+  --font-display: "Barlow Condensed", "Arial Narrow", Impact, sans-serif;
+  --font-body: "Barlow", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0F171E; --surface: #18232D; --ink: #EAF0F4; --ink-soft: #A5B4C2; --line: #2E3E4C;
+    --band: #0A1016; --band-ink: #F4F7F9; --accent: #FF5A44; --accent-ink: #14202B;
+    --caution: #F2B705; --caution-soft: #3A3210; --good: #6FD08C; --good-soft: #17301F;
+    --bad: #FF8E7C; --bad-soft: #3A1B16; --tag-hole: #0F171E; --focus: #6AA2FF;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0F171E; --surface: #18232D; --ink: #EAF0F4; --ink-soft: #A5B4C2; --line: #2E3E4C;
+  --band: #0A1016; --band-ink: #F4F7F9; --accent: #FF5A44; --accent-ink: #14202B;
+  --caution: #F2B705; --caution-soft: #3A3210; --good: #6FD08C; --good-soft: #17301F;
+  --bad: #FF8E7C; --bad-soft: #3A1B16; --tag-hole: #0F171E; --focus: #6AA2FF;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--ink); font-family: var(--font-body); font-size: 17px; line-height: 1.6; }
+:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
+.wrap { max-width: 920px; margin-inline: auto; padding-inline: max(16px, env(safe-area-inset-left, 0px)) max(16px, env(safe-area-inset-right, 0px)); }
+h1, h2, h3, h4 { font-family: var(--font-display); text-transform: uppercase; letter-spacing: 0.03em; line-height: 1.05; margin: 0; text-wrap: balance; }
+.eyebrow { font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-soft); }
+
+.band { background: var(--band); color: var(--band-ink); padding-block: 34px 26px; border-bottom: 8px solid var(--caution); }
+.band .eyebrow { color: var(--caution); }
+.band h1 { font-size: clamp(2.5rem, 9vw, 4.4rem); font-weight: 700; margin-top: 10px; }
+.band .sub { margin: 14px 0 0; font-size: 1.1rem; color: #D5DEE5; max-width: 46ch; }
+.band .byline { margin: 14px 0 0; font-size: 0.95rem; color: #AEBBC7; }
+nav.jump { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 22px; }
+nav.jump a { text-decoration: none; font-weight: 600; font-size: 0.95rem; padding: 8px 14px; border: 2px solid #3B4B5A; border-radius: 3px; color: var(--band-ink); }
+nav.jump a:hover { border-color: var(--caution); }
+
+.intro { margin-top: 28px; display: grid; gap: 22px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 380px), 1fr)); }
+.panel { background: var(--surface); border: 1px solid var(--line); padding: 20px 22px 22px; min-width: 0; }
+.panel h2 { font-size: 1.5rem; font-weight: 700; margin-bottom: 10px; }
+.panel p { margin: 0 0 10px; }
+.panel ol { margin: 8px 0 0; padding-left: 1.3em; display: grid; gap: 6px; }
+.notice { background: var(--caution-soft); border: 2px solid var(--caution); padding: 16px 20px; margin-top: 22px; }
+.notice p { margin: 4px 0 0; }
+.notice h2 { font-size: 1.25rem; }
+
+/* section */
+.sec { margin-top: 56px; }
+.sec-head { border-top: 8px solid var(--ink); padding-top: 18px; }
+.sec-head h2 { font-size: clamp(2rem, 6vw, 3rem); font-weight: 700; margin-top: 6px; }
+.sec-head .obj { margin: 10px 0 0; color: var(--ink-soft); max-width: 62ch; }
+.part { margin-top: 34px; }
+.part-title { display: flex; align-items: baseline; gap: 12px; margin-bottom: 14px; }
+.part-title .letter { font-family: var(--font-mono); font-size: 13px; background: var(--ink); color: var(--bg); padding: 2px 8px; flex: none; }
+.part-title h3 { font-size: 1.7rem; font-weight: 700; }
+.part-title .time { margin-left: auto; font-family: var(--font-mono); font-size: 12px; color: var(--ink-soft); white-space: nowrap; }
+
+.prose { background: var(--surface); border: 1px solid var(--line); padding: 22px 24px; }
+.prose h4 { font-size: 1.25rem; font-weight: 700; margin: 20px 0 6px; color: var(--accent); }
+.prose h4:first-child { margin-top: 0; }
+.prose p { margin: 0 0 10px; max-width: 64ch; }
+.prose ul { margin: 0 0 10px; padding-left: 1.2em; max-width: 64ch; }
+.prose li { margin-bottom: 4px; }
+.prose .big { font-size: 1.12rem; font-weight: 500; border-left: 6px solid var(--caution); padding: 4px 0 4px 14px; margin: 0 0 16px; }
+.prose table { border-collapse: collapse; margin: 8px 0 14px; font-size: 0.95rem; width: 100%; max-width: 520px; }
+.prose th, .prose td { text-align: left; padding: 6px 10px; border-bottom: 1px solid var(--line); }
+.prose th { font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-soft); }
+.scroll { overflow-x: auto; }
+.case { background: var(--bg); border-left: 6px solid var(--accent); padding: 12px 16px; margin: 14px 0 0; max-width: 64ch; }
+.case b { font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.08em; text-transform: uppercase; display: block; color: var(--ink-soft); }
+
+/* review points */
+.points { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; counter-reset: pt; }
+.points li { background: var(--surface); border: 1px solid var(--line); }
+.points label { display: grid; grid-template-columns: 28px minmax(0, 1fr); gap: 12px; padding: 12px 16px; cursor: pointer; align-items: start; }
+.points input { width: 22px; height: 22px; margin: 2px 0 0; accent-color: var(--good); }
+.points li:has(input:checked) { background: var(--good-soft); border-color: var(--good); }
+.points b { font-weight: 600; }
+
+/* cards */
+.deck { display: grid; gap: 22px; grid-template-columns: repeat(auto-fill, minmax(min(100%, 270px), 1fr)); }
+.card { all: unset; box-sizing: border-box; display: block; cursor: pointer; perspective: 1100px; min-width: 0; }
+.card:focus-visible { outline: 3px solid var(--focus); outline-offset: 4px; }
+.card-inner { display: grid; transition: transform 0.5s cubic-bezier(.3,.7,.2,1); transform-style: preserve-3d; position: relative; }
+.card[aria-pressed="true"] .card-inner { transform: rotateY(180deg); }
+.face { grid-area: 1 / 1; backface-visibility: hidden; -webkit-backface-visibility: hidden; display: flex; flex-direction: column; min-height: 250px; border: 2px solid var(--ink); background: var(--surface); position: relative; overflow: hidden; }
+.face::before { content: ""; position: absolute; top: 12px; left: 50%; width: 16px; height: 16px; margin-left: -8px; border-radius: 50%; background: var(--tag-hole); border: 2px solid var(--ink); }
+.front .strip { background: var(--accent); color: var(--accent-ink); padding: 38px 16px 8px; font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.08em; text-transform: uppercase; }
+.front.key .strip { background: var(--ink); color: var(--bg); }
+.front .term { flex: 1; display: flex; align-items: center; padding: 16px 18px; font-family: var(--font-display); text-transform: uppercase; font-weight: 700; font-size: clamp(1.8rem, 7vw, 2.2rem); line-height: 1.02; letter-spacing: 0.02em; overflow-wrap: anywhere; }
+.front .hint { padding: 10px 18px 14px; font-size: 0.8rem; color: var(--ink-soft); border-top: 1px dashed var(--line); font-family: var(--font-mono); letter-spacing: 0.04em; }
+.back { transform: rotateY(180deg); background: var(--caution-soft); }
+.back .strip { background: var(--ink); color: var(--bg); padding: 38px 16px 8px; font-family: var(--font-display); text-transform: uppercase; font-weight: 700; letter-spacing: 0.04em; font-size: 1.1rem; line-height: 1.05; }
+.back .body { padding: 14px 18px 16px; display: grid; gap: 10px; align-content: start; font-size: 0.95rem; line-height: 1.45; }
+.back .label { font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-soft); display: block; margin-bottom: 1px; }
+.back .ask { border-top: 1px dashed var(--ink-soft); padding-top: 10px; font-weight: 500; }
+.deck-note { margin: 12px 0 0; font-size: 0.9rem; color: var(--ink-soft); }
+@media (prefers-reduced-motion: reduce) {
+  .card-inner { transition: none; transform-style: flat; }
+  .card[aria-pressed="true"] .card-inner { transform: none; }
+  .back { transform: none; }
+  .face { backface-visibility: visible; }
+  .card .back { visibility: hidden; }
+  .card[aria-pressed="true"] .back { visibility: visible; }
+  .card[aria-pressed="true"] .front { visibility: hidden; }
+}
+
+/* ticket */
+.ticket { background: var(--surface); border: 2px dashed var(--ink); padding: 8px 20px 18px; position: relative; }
+.ticket-intro { margin: 14px 0 4px; color: var(--ink-soft); font-size: 0.95rem; }
+.q { border: 0; border-top: 1px solid var(--line); margin: 0; padding: 16px 0 14px; min-width: 0; }
+.q:first-of-type { border-top: 0; }
+.q legend { font-weight: 600; padding: 0; margin-bottom: 8px; float: left; width: 100%; }
+.q .opts { clear: both; display: grid; gap: 8px; }
+.opt { font: inherit; text-align: left; padding: 10px 14px; background: var(--bg); color: var(--ink); border: 2px solid var(--line); border-radius: 3px; cursor: pointer; }
+.opt:hover:not(:disabled) { border-color: var(--ink); }
+.opt:disabled { cursor: default; }
+.opt.right { background: var(--good-soft); border-color: var(--good); }
+.opt.wrong { background: var(--bad-soft); border-color: var(--bad); }
+.fb { margin: 8px 0 0; font-size: 0.93rem; color: var(--ink-soft); }
+.fb b { color: var(--ink); }
+.ticket-foot { margin-top: 10px; display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+.ticket-foot p { margin: 0; font-weight: 500; }
+.btn { font: inherit; font-weight: 600; font-size: 0.92rem; padding: 8px 14px; background: var(--surface); color: var(--ink); border: 2px solid var(--ink); border-radius: 3px; cursor: pointer; }
+.btn:hover { background: var(--ink); color: var(--bg); }
+
+/* talk it over */
+.talk { display: grid; gap: 14px; }
+.talk .qs { background: var(--surface); border: 1px solid var(--line); padding: 16px 22px 16px 40px; margin: 0; display: grid; gap: 8px; }
+details.scn { background: var(--surface); border: 1px solid var(--line); border-left: 6px solid var(--caution); padding: 14px 18px; }
+details.scn summary { cursor: pointer; font-family: var(--font-display); text-transform: uppercase; letter-spacing: 0.03em; font-size: 1.3rem; font-weight: 700; }
+details.scn .setup { margin: 10px 0 8px; }
+details.scn .good { margin: 12px 0 0; padding: 10px 14px; background: var(--good-soft); border-left: 6px solid var(--good); }
+details.scn .good b { font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.08em; text-transform: uppercase; display: block; }
+details.scn .good ul { margin: 6px 0 0; padding-left: 1.1em; }
+.parent { background: var(--caution-soft); border: 2px solid var(--caution); padding: 12px 16px; }
+.parent b { font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.08em; text-transform: uppercase; display: block; }
+.parent p { margin: 4px 0 0; }
+
+/* practice questions */
+.pr-intro { margin: 0 0 14px; color: var(--ink-soft); max-width: 66ch; }
+.pr { background: var(--surface); border: 1px solid var(--line); margin-bottom: 18px; }
+.pr-head { display: flex; flex-wrap: wrap; gap: 6px 14px; justify-content: space-between; align-items: baseline; padding: 10px 18px; background: var(--ink); color: var(--bg); font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.06em; text-transform: uppercase; }
+.ask-block { padding: 14px 18px 16px; }
+.ask-block + .ask-block { border-top: 2px dashed var(--line); }
+.ask-block.formal { background: var(--bg); }
+.step-label { margin: 0 0 6px; font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); }
+.pr-q { margin: 0 0 10px; font-weight: 600; font-size: 1.05rem; max-width: 62ch; }
+.bridge { padding: 14px 18px 16px; border-top: 2px dashed var(--line); background: var(--caution-soft); }
+.bridge .step-label { color: var(--ink); }
+.bridge ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+.bridge li { display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); gap: 10px; align-items: baseline; }
+.bridge .you { font-style: italic; }
+.bridge .arrow { font-family: var(--font-mono); color: var(--ink-soft); }
+.bridge .pub { font-weight: 600; }
+@media (max-width: 520px) { .bridge li { grid-template-columns: minmax(0, 1fr); gap: 0; } .bridge .arrow { display: none; } .bridge .pub::before { content: "Textbook: "; font-weight: 400; font-family: var(--font-mono); font-size: 11px; color: var(--ink-soft); } .bridge .you::before { content: "You say: "; font-style: normal; font-family: var(--font-mono); font-size: 11px; color: var(--ink-soft); } }
+
+/* final checklist */
+.final { margin-top: 56px; border-top: 8px solid var(--ink); padding-top: 18px; }
+.final h2 { font-size: clamp(1.9rem, 5vw, 2.6rem); font-weight: 700; }
+.final .lead { color: var(--ink-soft); max-width: 62ch; margin: 10px 0 16px; }
+.note { margin: 28px 0 0; font-size: 0.9rem; color: var(--ink-soft); max-width: 70ch; }
+footer { margin-top: 48px; background: var(--band); color: #AEBBC7; padding-block: 26px 30px; font-size: 0.92rem; }
+footer strong { color: var(--band-ink); }
+footer p { margin: 0 0 6px; }
+</style>
+
+
+<header class="band">
+  <div class="wrap">
+    <span class="eyebrow">EVIT Electrical · Loved Ones Study Guide</span>
+    <h1>National<br>Electrical Code</h1>
+    <p class="sub">A Loved Ones Study Guide for NCCER Electrical Level 1, Module 26105-20: Introduction to the National Electrical Code</p>
+    <p class="byline">Mr. Ellis CTE — General Construction &amp; Electrical Teacher · High School &amp; Adult Pre-Apprentice Programs</p>
+    <nav class="jump" aria-label="Sections">
+      <a href="#s1">1 · Purpose &amp; history</a>
+      <a href="#s2">2 · Navigating the NEC</a>
+      <a href="#review">Loved ones review</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<div class="wrap">
+
+  <div class="intro">
+    <div class="panel">
+      <h2>Why this guide exists</h2>
+      <p>You do not need to be an electrician to support an electrical student. Your job is to help your student explain what they are learning, put it in their own words, and know when safety means stop and ask a qualified person.</p>
+      <p>If your student can read it and explain it, they are learning it. That is the whole idea.</p>
+    </div>
+    <div class="panel">
+      <h2>How to use each section</h2>
+      <p>Plan about 15 to 25 minutes per section. The student does most of the talking. You do not need the answers ahead of time.</p>
+      <ol>
+        <li><b>Read it together.</b> Plain-English version of the module section.</li>
+        <li><b>Study review points.</b> The must-know facts. Tick each one when your student can say it back.</li>
+        <li><b>Trade-term cards.</b> Tap a card to flip it.</li>
+        <li><b>Ticket out the door.</b> A quick recall check, just for practice.</li>
+        <li><b>Talk it over.</b> Questions and a real-world scenario.</li>
+        <li><b>Practice questions.</b> Each one comes twice: first in plain English, then in the textbook's words, so your student learns to recognize both.</li>
+      </ol>
+    </div>
+  </div>
+
+  <aside class="notice" aria-labelledby="safe-h">
+    <h2 id="safe-h">Important safety note</h2>
+    <p>This guide is for learning and talking. It is not permission to do electrical work. The NEC is for trained people working under proper guidance. Never use this guide in place of instructor supervision, employer procedures, required training, or properly rated equipment. No student names or grades appear here, and nothing you tick or tap on this page is saved or sent anywhere.</p>
+  </aside>
+
+  <!-- SECTION 1 -->
+  <section class="sec" id="s1" aria-labelledby="s1-h">
+    <div class="sec-head">
+      <span class="eyebrow">Module Section 1 of 2</span>
+      <h2 id="s1-h">Purpose and History of the NEC</h2>
+      <p class="obj">By the end of this section your student can say what the NEC is for, name key dates in its history, describe how changes are made, and name the other groups that set standards for electrical products.</p>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">A</span><h3>Read it together</h3><span class="time">about 14 min</span></div>
+      <div class="prose">
+        <p class="big">The National Electrical Code is the rulebook electricians work from every day. This section is about what the code is for, where it came from, how it gets changed, and who else sets standards for electrical products.</p>
+
+        <h4>What the NEC is</h4>
+        <p>The National Electrical Code (NEC) is also called NFPA 70. It is published by the National Fire Protection Association (NFPA). Used together with the code for your local area, it sets the <b>minimum</b> requirements for installing electrical systems. Local or job rules may be stricter, but they are never looser.</p>
+        <p>Its main purpose is the practical safeguarding of people and property from the hazards of using electricity. It is one of the most widely used and accepted codes in the world, and it has been translated into several languages.</p>
+        <div class="case"><b>Key idea</b>The NEC is not a design manual and it is not an instruction book for untrained people. It is a set of minimum safety rules. Learn it with proper guidance, use the edition your employer or local area requires, and follow all local ordinances too.</div>
+
+        <h4>A short history</h4>
+        <div class="scroll"><table>
+          <thead><tr><th>Year</th><th>What happened</th></tr></thead>
+          <tbody>
+            <tr><td>1881</td><td>The National Association of Fire Engineers meets in Richmond, Virginia. The idea of a national electrical code comes out of this meeting.</td></tr>
+            <tr><td>1895</td><td>The first nationally recommended electrical code is published by the National Board of Fire Underwriters (NBFU).</td></tr>
+            <tr><td>1896</td><td>The National Electric Light Association (NELA) works to bring insurance and utility requirements together, and helps start a conference to write one national code.</td></tr>
+            <tr><td>1897</td><td>The first edition of the NEC is published. It is the first cooperatively produced national code.</td></tr>
+            <tr><td>1911</td><td>The NFPA takes over administration and control of the NEC. The NBFU keeps publishing it until 1962.</td></tr>
+            <tr><td>1923 and 1937</td><td>The NEC is rearranged and rewritten (1923), then editorially revised (1937).</td></tr>
+            <tr><td>1949</td><td>The NFPA reorganizes the NEC into its present structure, with a Correlating Committee and Code-Making Panels.</td></tr>
+          </tbody>
+        </table></div>
+        <p>Since 1911 the code has been updated on a regular three-year cycle.</p>
+
+        <h4>Who keeps the code up to date</h4>
+        <p>The NEC is looked after by a <b>Correlating Committee</b> and a group of <b>Code-Making Panels (CMPs)</b>. Each panel has experts on particular subjects and is assigned certain articles to supervise and revise. The Correlating Committee makes sure there are no conflicts, that the different parts fit together, that NFPA rules were followed, and that a practical schedule is kept.</p>
+        <p>Panel members represent many interest groups: trade associations, electrical contractors, designers and engineers, electrical inspectors, manufacturers and suppliers, testing laboratories, and insurance organizations. No more than one-third of a panel can come from a single interest group. Government lobbyists are not on the list.</p>
+
+        <h4>How a change gets made</h4>
+        <p>Anyone can suggest a change. You do not have to be on an NFPA committee. A proposal goes through four steps.</p>
+        <div class="scroll"><table>
+          <thead><tr><th>Step</th><th>What happens</th></tr></thead>
+          <tbody>
+            <tr><td>1. Public input</td><td>The NFPA takes proposals through its website at www.nfpa.org/X, where X is the standard number. For the NEC the address is <b>www.nfpa.org/70</b>.</td></tr>
+            <tr><td>2. Public comment</td><td>People comment on the first draft. The technical committee reviews the comments at its second draft meeting.</td></tr>
+            <tr><td>3. NFPA technical meeting</td><td>More discussion is held at the annual NFPA Conference and Expo.</td></tr>
+            <tr><td>4. Standards Council action</td><td>The council considers any appeals and decides whether to issue the standard. If it does, the standard takes effect 20 days later.</td></tr>
+          </tbody>
+        </table></div>
+
+        <h4>Other organizations that matter</h4>
+        <p>The NFPA is not the only group that sets standards for electrical products.</p>
+        <div class="scroll"><table>
+          <thead><tr><th>Group</th><th>What it does</th></tr></thead>
+          <tbody>
+            <tr><td>Nationally Recognized Testing Laboratories (NRTLs)</td><td>Product safety certification labs. They test new products against established standards, and field representatives make unannounced factory visits to check products that carry their safety marks. OSHA publishes the list of recognized labs. Underwriters Laboratories (UL) is one of them.</td></tr>
+            <tr><td>National Electrical Manufacturers Association (NEMA)</td><td>Founded in 1926. Made up of companies that make electrical equipment. It works to keep products high in quality and reliability, supports safety standards, and develops product standards for things like ratings and testing. NEMA helps develop the NEC.</td></tr>
+            <tr><td>International Electrotechnical Commission (IEC)</td><td>Prepares and publishes international standards for electrical and electronic technologies.</td></tr>
+            <tr><td>Institute of Electrical and Electronics Engineers (IEEE)</td><td>A professional organization that develops international standards for electronics, telecommunications, information technology and power generation.</td></tr>
+          </tbody>
+        </table></div>
+        <p>The IEC and IEEE, along with other groups, are working toward the globalization of electronics standards. That matters because a single product may be made, shipped and assembled in many countries.</p>
+        <div class="case"><b>Why it matters</b>Underwriters Laboratories began after the 1893 Chicago World's Fair, where faulty, worn wiring in the Palace of Electricity helped start a fire. The engineer called in to inspect it, William Henry Merrill, pushed for standards and set up a testing laboratory. Standards usually exist because something went wrong.</div>
+      </div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">B</span><h3>Study review points</h3></div>
+      <ul class="points" data-points="1"></ul>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">C</span><h3>Trade-term cards</h3></div>
+      <div class="deck" data-cards="1"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">D</span><h3>Ticket out the door</h3></div>
+      <div class="ticket" data-quiz="1"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">E</span><h3>Talk it over</h3></div>
+      <div class="talk" data-talk="1"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">F</span><h3>Practice questions</h3><span class="time">about 4 min</span></div>
+      <div data-practice="1"></div>
+    </div>
+  </section>
+
+  <!-- SECTION 2 -->
+  <section class="sec" id="s2" aria-labelledby="s2-h">
+    <div class="sec-head">
+      <span class="eyebrow">Module Section 2 of 2</span>
+      <h2 id="s2-h">Navigating the NEC</h2>
+      <p class="obj">By the end of this section your student can describe how the NEC is laid out, tell mandatory rules from permissive rules, and follow the steps to find a specific requirement.</p>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">A</span><h3>Read it together</h3><span class="time">about 18 min</span></div>
+      <div class="prose">
+        <p class="big">The NEC is a big book, but it is organized the same way every time. Once you know the layout, you can find almost any rule by working from the chapter, to the article, to the section.</p>
+
+        <h4>How the book is built</h4>
+        <p>The NEC is organized into nine chapters, followed by informative annexes, an index, a schedule for the next code cycle, and information on how to submit proposed changes. Its main body starts with <b>Article 90, Introduction</b>, which covers the purpose and scope of the code, how it is arranged, enforcement, mandatory and permissive rules, formal interpretations, examination of equipment for safety, wiring planning and units of measurement.</p>
+        <div class="scroll"><table>
+          <thead><tr><th>Piece</th><th>What it is</th><th>Example</th></tr></thead>
+          <tbody>
+            <tr><td>Chapter</td><td>A group of articles on a broad category</td><td>Chapter 2, Wiring and Protection</td></tr>
+            <tr><td>Article</td><td>A specific subject in a chapter</td><td>Article 250, Grounding and Bonding</td></tr>
+            <tr><td>Part</td><td>A subdivision of some articles, marked with Roman numerals</td><td>Article 210, Part I, General Provisions</td></tr>
+            <tr><td>Section</td><td>A numbered rule inside an article, with the number after a period</td><td>Section 210.4, Multiwire Branch Circuits</td></tr>
+          </tbody>
+        </table></div>
+        <p>You will also see several kinds of text. Exceptions (in italics) explain when a rule does not apply. Informational Notes explain or suggest other sections to read. Figures show how an application might look, and tables give detailed requirements such as for wire sizes or box sizes.</p>
+
+        <h4>Mandatory and permissive rules</h4>
+        <p>Section 90.5 defines two types of rules.</p>
+        <div class="scroll"><table>
+          <thead><tr><th>Type</th><th>Words to look for</th><th>Meaning</th></tr></thead>
+          <tbody>
+            <tr><td>Mandatory</td><td>&ldquo;shall&rdquo; or &ldquo;shall not&rdquo;</td><td>Must be obeyed</td></tr>
+            <tr><td>Permissive</td><td>&ldquo;shall be permitted&rdquo; or &ldquo;shall not be required&rdquo;</td><td>Allowed but not required. Usually options or alternative methods.</td></tr>
+          </tbody>
+        </table></div>
+        <div class="case"><b>Key idea</b>A state, city or county may add requirements, exceptions or prohibitions to the NEC. The local rules apply in that area.</div>
+
+        <h4>The nine chapters</h4>
+        <div class="scroll"><table>
+          <thead><tr><th>Chapter</th><th>What it covers</th><th>A few examples</th></tr></thead>
+          <tbody>
+            <tr><td>1, General</td><td>Definitions and general installation requirements</td><td>Article 100 definitions. Article 110 marking, working space, and neat and workmanlike installation (Section 110.12).</td></tr>
+            <tr><td>2, Wiring and Protection</td><td>The information electricians need most often</td><td>Grounded conductors (200), branch circuits and feeders (210, 215), load calculations (220), services (230), overcurrent protection (240), surge protection (242), grounding and bonding (250)</td></tr>
+            <tr><td>3, Wiring Methods and Materials</td><td>Rules on what wiring methods and materials to use</td><td>General wiring methods (300), conductors (310), boxes and cabinets (312, 314), cables, conduit, tubing, wireways, cable trays (392)</td></tr>
+            <tr><td>4, Equipment for General Use</td><td>Common equipment</td><td>Flexible cords (400), switches (404), receptacles (406), switchboards and panelboards (408), luminaires (410), appliances (422), motors (430)</td></tr>
+            <tr><td>5, Special Occupancies</td><td>Places where sparks or heat could cause an explosion or fire</td><td>Hazardous locations (500 to 503), garages and fuel dispensing (511, 514), theaters (520), temporary installations (590)</td></tr>
+            <tr><td>6, Special Equipment</td><td>Special equipment not covered elsewhere</td><td>Electric signs (600), elevators (620), welders (630), electric vehicle charging (625), swimming pools (680), solar PV (690)</td></tr>
+            <tr><td>7, Special Conditions</td><td>Emergency and legally required standby systems, fire alarms and other conditions that do not fit elsewhere</td><td>Emergency lighting and exit signs</td></tr>
+            <tr><td>8, Communications Systems</td><td>Wiring for telephone, radio and TV, satellite dish and similar systems</td><td>Not subject to Chapters 1 through 7 unless they say so</td></tr>
+            <tr><td>9, Tables</td><td>Detailed tables used when other chapters point to them</td><td>Conduit bends, raceway fill, conductor dimensions</td></tr>
+          </tbody>
+        </table></div>
+        <p>A handy way to remember the groups: Chapters 1 through 4 give the general rules for designing and installing electrical systems and apply to nearly every installation. Chapters 5, 6 and 7 deal with special occupancies, equipment and conditions, and can modify the earlier chapters. Chapter 8 stands mostly on its own, and Chapter 9 supplies tables.</p>
+        <p>For hazardous locations, Chapter 5 sorts areas into classes. Class I has flammable gases or vapors, Class II has combustible dust, and Class III has easily ignitable fibers. Each class has Division 1 (normal operating conditions) and Division 2 (abnormal conditions).</p>
+
+        <h4>Two terms to know: labeled and listed</h4>
+        <p>Article 100 defines these. <b>Labeled</b> equipment carries a label or mark from an organization the authority having jurisdiction accepts, which inspects production and certifies compliance. <b>Listed</b> equipment, materials or services appear on a list published by such an organization, which states that they meet standards or have been tested and found suitable for a specified purpose. Testing laboratories such as UL do this work.</p>
+
+        <h4>The informative annexes</h4>
+        <p>Annexes A through J are helpful but not mandatory.</p>
+        <div class="scroll"><table>
+          <thead><tr><th>Annex</th><th>What it holds</th></tr></thead>
+          <tbody>
+            <tr><td>A</td><td>A list of product safety standards</td></tr>
+            <tr><td>B</td><td>Ampacity of conductors under engineering supervision</td></tr>
+            <tr><td>C</td><td>Conduit fill tables</td></tr>
+            <tr><td>D</td><td>Examples of branch circuit, feeder, service and load calculations</td></tr>
+            <tr><td>E</td><td>Types of building construction</td></tr>
+            <tr><td>F</td><td>Critical operations power systems</td></tr>
+            <tr><td>G</td><td>Supervisory control and data acquisition (SCADA) systems</td></tr>
+            <tr><td>H</td><td>Suggested administration and enforcement requirements</td></tr>
+            <tr><td>I</td><td>Recommended torque tables</td></tr>
+            <tr><td>J</td><td>Requirements for accessible design (ADA)</td></tr>
+          </tbody>
+        </table></div>
+
+        <h4>Finding a specific requirement</h4>
+        <ol>
+          <li>Get familiar with Articles 90, 100 and 110 first.</li>
+          <li>Open the Table of Contents at the front.</li>
+          <li>Find the chapter for the category you need.</li>
+          <li>Find the article for your specific application.</li>
+          <li>Turn to that page. Each application starts with a bold heading.</li>
+        </ol>
+        <p>The index at the back is also helpful when you know the topic but not the category.</p>
+        <div class="case"><b>Worked example</b>Type SE cable on the side of a house. The Table of Contents leads to Article 230, Services, and then Section 230.51. It says to support service-entrance cable within 12 inches of the service head or the connection to the enclosure, and at intervals of no more than 30 inches.</div>
+        <div class="case"><b>Worked example</b>Track lighting behind a curtain. Article 100 defines lighting track, Chapter 4 and Article 410 cover luminaires, and Part XIV covers lighting track. Section 410.151(C) lists places track is not allowed, including &ldquo;where concealed.&rdquo; Article 100 defines concealed as rendered inaccessible by the structure or finish of the building. A curtain can be pulled back, so the track is still accessible and is not concealed.</div>
+        <p>When you look something up, you will usually need more than one section. The code often points you to other articles. It can be confusing at first, but time and practice make it easier.</p>
+        <div class="case"><b>Safety</b>The NEC is for trained people working under proper guidance. If you are not sure whether something meets the code, stop and ask a qualified person or the authority having jurisdiction.</div>
+      </div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">B</span><h3>Study review points</h3></div>
+      <ul class="points" data-points="2"></ul>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">C</span><h3>Trade-term cards</h3></div>
+      <div class="deck" data-cards="2"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">D</span><h3>Ticket out the door</h3></div>
+      <div class="ticket" data-quiz="2"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">E</span><h3>Talk it over</h3></div>
+      <div class="talk" data-talk="2"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">F</span><h3>Practice questions</h3><span class="time">about 14 min</span></div>
+      <div data-practice="2"></div>
+    </div>
+  </section>
+
+  <section class="final" id="review" aria-labelledby="fin-h">
+    <span class="eyebrow">After both sections</span>
+    <h2 id="fin-h">Can your student explain it?</h2>
+    <p class="lead">The goal is not perfect wording. The goal is accurate understanding and good judgment. Tick each one when your student can explain it without looking at the page.</p>
+    <ul class="points" id="final-points"></ul>
+    <p class="note">Trade terms are placed with the section where each is taught, so a few official terms sit in a different section than they are listed in the textbook. Cards marked "Key term" are important words from the module that are not on its official trade-term list. The practice questions come from the handbook's Section Review and Module Review, and the answers follow the publisher's answer key. The textbook-style versions are written in the book's style and vocabulary, not copied word for word, so check the handbook itself for the exact wording. This guide is a plain-language companion, not a copy of the textbook. For real work, use the current standards, your employer's procedures and your instructor's directions. Draft for instructor review.</p>
+  </section>
+
+</div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><strong>Mr. Ellis CTE</strong> · East Valley Institute of Technology (EVIT), Mesa, Arizona · Your Future, Your Way</p>
+    <p>Based on NCCER Electrical Level 1 (10th edition), Module 26105-20, Introduction to the National Electrical Code.</p>
+    <p>Aim for perfection, take what you get.</p>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var SEC = { 1: `Purpose and History of the NEC`, 2: `Navigating the NEC` };
+
+  var POINTS = {
+    1: [
+      `<b>The NEC</b> (also called NFPA 70) sets the <b>minimum</b> requirements for installing electrical systems. It is published by the NFPA. Local or job rules may be stricter.`,
+      `<b>The main purpose</b> of the NEC is the practical safeguarding of people and property from the hazards of using electricity. It is not a design manual or a guide for untrained people.`,
+      `<b>Key dates:</b> the first nationally recommended code came out in 1895, the first NEC edition in 1897, and the NFPA took over in 1911. The NFPA reorganized the code into its present structure in 1949.`,
+      `<b>The code is updated every three years.</b> Use the edition your employer or local area requires, and follow local ordinances too.`,
+      `<b>Code-Making Panels (CMPs)</b> revise assigned articles, and a Correlating Committee keeps everything consistent. Panels include inspectors, contractors, manufacturers, insurers and others. No more than one-third come from one interest group.`,
+      `<b>Anyone can suggest a change.</b> Proposals go through four steps: public input (at www.nfpa.org/70 for the NEC), public comment, the NFPA technical meeting, and Standards Council action.`,
+      `<b>Nationally Recognized Testing Laboratories (NRTLs)</b> test and certify products. OSHA publishes the list, and Underwriters Laboratories (UL) is one of them.`,
+      `<b>NEMA, IEC and IEEE</b> are other standards groups. The IEC and IEEE are working with others toward global electronics standards.`
+    ],
+    2: [
+      `<b>Article 90</b> opens the NEC. It covers purpose, scope, code arrangement, enforcement, and mandatory and permissive rules. Mandatory and permissive rules are defined in Section 90.5.`,
+      `<b>Mandatory rules</b> use &ldquo;shall&rdquo; or &ldquo;shall not.&rdquo; <b>Permissive rules</b> use &ldquo;shall be permitted&rdquo; or &ldquo;shall not be required.&rdquo;`,
+      `<b>The layout:</b> nine chapters, made of articles, which are divided into parts and then sections. Informative Annexes A through J follow, then the index.`,
+      `<b>Chapters 1 through 4</b> give the general design and installation rules. Chapters 5, 6 and 7 cover special occupancies, equipment and conditions. Chapter 8 covers communications systems. Chapter 9 holds the tables.`,
+      `<b>Article 100</b> has the definitions. <b>Article 110</b> has the general requirements for installations, including working space and neat and workmanlike installation.`,
+      `<b>Know where to look:</b> branch circuit loads in Article 220, cable trays in 392, receptacles in 406, switchboards and panelboards in 408, luminaires in 410, theaters in 520, and electric signs in 600.`,
+      `<b>Finding a rule:</b> know Articles 90, 100 and 110, use the Table of Contents or the index, find the chapter, then the article, then the page. Expect to read more than one section.`
+    ]
+  };
+
+  // k = "o" for an official NCCER trade term, "k" for a key term from the module that is not on the official list.
+  var CARDS = {
+    1: [
+      { k: "o", t: `Articles`, plain: `The main topics of the NEC. They run from Article 90, the introduction, to the last one on communications systems.`, book: `The main topics of the NEC, beginning with Article 90, Introduction, and ending with Article 840, Premises-Powered Broadband Communications Systems.`, ask: `Where do you start reading when you want to know what the NEC covers?` },
+      { k: "o", t: `National Fire Protection Association (NFPA)`, plain: `The group that publishes the NEC. It writes codes and standards to cut down the chance and the damage of fire.`, book: `The publishers of the NEC. The NFPA develops codes and standards to minimize the possibility and effects of fire.`, ask: `What is the NEC's other name, and who publishes it?` },
+      { k: "o", t: `Nationally Recognized Testing Laboratories (NRTLs)`, plain: `Labs that test products and certify that they meet safety standards.`, book: `Product safety certification laboratories responsible for testing and certifying electrical equipment.`, ask: `Name one NRTL you might see on a product label.` },
+      { k: "o", t: `National Electrical Manufacturers Association (NEMA)`, plain: `A group of equipment makers that works to keep electrical products good and reliable.`, book: `The association that maintains and improves the quality and reliability of electrical products.`, ask: `Why would manufacturers want a say in the NEC?` },
+      { k: "o", t: `International Electrotechnical Commission (IEC)`, plain: `A worldwide group that develops standards for all electrical and electronic technology.`, book: `An international organization that develops consensus standards for all electrical and electronic technologies.`, ask: `Why do products made in many countries need shared standards?` },
+      { k: "o", t: `Institute for Electrical and Electronics Engineers (IEEE)`, plain: `A professional group that develops international standards for electronics, communications, information technology and power generation.`, book: `A professional organization that develops international standards affecting electronics, telecommunications, information technology, and power-generation products and services.`, ask: `Which two groups are working toward global electronics standards?` },
+      { k: "k", t: `Code-Making Panel (CMP)`, plain: `A group of experts who look after certain NEC articles and revise them.`, book: `A panel of subject experts, drawn from many interest groups, assigned to supervise and revise certain NEC articles.`, ask: `Which groups are usually on a Code-Making Panel?` },
+      { k: "k", t: `Correlating Committee`, plain: `The committee that checks the panels' work so the rules do not conflict.`, book: `The committee that ensures no conflict of requirements, that correlation is achieved, that NFPA rules are followed and that a practical schedule is kept.`, ask: `Why does the NEC need one group looking at the whole book?` },
+      { k: "k", t: `Underwriters Laboratories (UL)`, plain: `A testing lab that began after faulty wiring helped start a fire at the 1893 World's Fair.`, book: `An independent testing organization, now an internationally recognized authority on product safety testing and certification.`, ask: `What might the UL mark on a product tell you?` }
+    ],
+    2: [
+      { k: "o", t: `Chapters`, plain: `Groups of articles on one broad subject. The NEC has nine.`, book: `Groups of related articles on a broad category. Nine chapters form the broad structure of the NEC.`, ask: `Which chapter would you open first for a question about wiring and protection?` },
+      { k: "o", t: `Parts`, plain: `Smaller pieces of some articles, labeled with Roman numerals.`, book: `Subdivisions of certain articles that cover a specific topic. Parts are labeled with Roman numerals.`, ask: `What does Part I of an article usually give?` },
+      { k: "o", t: `Sections`, plain: `The numbered rules inside articles. The number comes after a period.`, book: `Subdivisions of parts and articles with numeric designations that follow the article number after a period, such as Section 501.4.`, ask: `In Section 210.4, which number tells you the article?` },
+      { k: "o", t: `Exceptions`, plain: `Notes that say when a rule does not apply, or let you use another method.`, book: `Statements that follow a section and allow alternative methods under specific conditions.`, ask: `Why is it risky to read a rule without checking for exceptions?` },
+      { k: "o", t: `Informational Note`, plain: `Extra explanation after a section. It gives tips or points to other sections.`, book: `Explanatory material that follows specific NEC sections.`, ask: `Is an Informational Note a rule you must follow?` },
+      { k: "k", t: `Mandatory rule`, plain: `A rule that says "shall" or "shall not." You must follow it.`, book: `A rule containing the words shall or shall not, defined in Section 90.5, that must be obeyed.`, ask: `What two words signal a mandatory rule?` },
+      { k: "k", t: `Permissive rule`, plain: `A rule that says what you are allowed to do, but do not have to do.`, book: `A rule that identifies actions that are allowed but not required, often using the phrases shall be permitted or shall not be required.`, ask: `What does "shall be permitted" mean?` },
+      { k: "k", t: `Labeled`, plain: `Equipment with a mark from an accepted organization that inspects production and says it meets standards.`, book: `Equipment or materials with a label, symbol or other identifying mark of an organization acceptable to the authority having jurisdiction.`, ask: `Where would you look for a label on a product?` },
+      { k: "k", t: `Listed`, plain: `Equipment on a published list that says it meets standards or was tested for its purpose.`, book: `Equipment, materials or services included in a list published by an organization acceptable to the authority having jurisdiction.`, ask: `What is the difference between labeled and listed?` },
+      { k: "k", t: `Informative Annex`, plain: `Extra helpful material at the back of the NEC. It is not mandatory.`, book: `One of Annexes A through J, which give helpful information and examples that are not mandatory.`, ask: `Which annex has examples of branch circuit calculations?` }
+    ]
+  };
+
+  // a = index of the right option
+  var QUIZ = {
+    1: [
+      { q: `What does the NEC set for installing electrical systems?`, o: [`Maximum limits`, `Minimum requirements`, `Design specifications`], a: 1, why: `The NEC gives minimum requirements. Local or job rules may be stricter.` },
+      { q: `Who publishes the NEC today?`, o: [`OSHA`, `The NFPA`, `The Department of Energy`], a: 1, why: `The NFPA took over administration of the NEC in 1911 and publishes NFPA 70.` },
+      { q: `In what year was the first edition of the NEC published?`, o: [`1881`, `1897`, `1949`], a: 1, why: `The first NEC edition came out in 1897.` },
+      { q: `How often is the NEC updated?`, o: [`Every year`, `Every three years`, `Every ten years`], a: 1, why: `The NEC has been updated on a regular three-year cycle.` },
+      { q: `Which group is usually NOT represented on the Code-Making Panels?`, o: [`Electrical inspectors`, `Insurance organizations`, `Government lobbyists`], a: 2, why: `Panels include inspectors, contractors, manufacturers, insurers and others, but not government lobbyists.` },
+      { q: `Where do you go to submit a proposal for the NEC?`, o: [`www.nfpa.org/70`, `www.osha.gov`, `www.nfpa.org/72`], a: 0, why: `The address pattern is www.nfpa.org/X, where X is the standard number. The NEC is NFPA 70.` },
+      { q: `Underwriters Laboratories is an example of:`, o: [`A Code-Making Panel`, `A Nationally Recognized Testing Laboratory`, `A trade association`], a: 1, why: `UL is a product safety testing and certification lab, and OSHA lists it as an NRTL.` },
+      { q: `Which two groups are working toward global electronics standards?`, o: [`IEC and IEEE`, `NFPA and OSHA`, `NEMA and NELA`], a: 0, why: `The IEC and IEEE, with help from other groups, are working toward the globalization of electronics standards.` }
+    ],
+    2: [
+      { q: `Which article opens the NEC and covers its purpose and scope?`, o: [`Article 90`, `Article 100`, `Article 250`], a: 0, why: `Article 90, Introduction, gives an overview of the NEC.` },
+      { q: `Which word tells you a rule is mandatory?`, o: [`May`, `Shall`, `Could`], a: 1, why: `Mandatory rules use shall or shall not and must be obeyed.` },
+      { q: `"Shall be permitted" marks what kind of rule?`, o: [`Mandatory`, `Permissive`, `Prohibited`], a: 1, why: `Permissive rules say what is allowed but not required.` },
+      { q: `How many chapters does the NEC have?`, o: [`Five`, `Nine`, `Twelve`], a: 1, why: `Nine chapters form the broad structure of the NEC.` },
+      { q: `Which chapter contains the tables other chapters refer to?`, o: [`Chapter 1`, `Chapter 4`, `Chapter 9`], a: 2, why: `Chapter 9 holds tables such as conduit bends, raceway fill and conductor dimensions.` },
+      { q: `Where would you find rules about receptacles?`, o: [`Article 406`, `Article 520`, `Article 600`], a: 0, why: `Article 406 covers receptacles, cord connectors and attachment plugs. Article 520 is theaters and 600 is signs.` },
+      { q: `Which article covers theaters?`, o: [`Article 110`, `Article 430`, `Article 520`], a: 2, why: `Article 520 regulates theaters and similar occupancies.` },
+      { q: `Which annex has examples of branch circuit calculations?`, o: [`Annex C`, `Annex D`, `Annex J`], a: 1, why: `Annex D contains examples of calculations for branch circuits, feeders and services.` }
+    ]
+  };
+
+  var TALK = {
+    1: {
+      qs: [`Why does the NEC say it is the minimum, and why might a job still have stricter rules?`, `Why is it good that inspectors, contractors, insurers and manufacturers all sit on the same panels?`],
+      scn: [{
+        t: `"It's only a suggestion"`,
+        s: `A new helper says, "The code is just a guideline, so it doesn't matter if we skip a step." How would you answer?`,
+        g: [`The NEC sets minimum requirements, and electrical work must follow the currently adopted code and all local ordinances.`, `Its purpose is protecting people and property from electrical hazards.`, `Local or job rules may be stricter than the NEC, but never looser.`]
+      }, {
+        t: `"I think the code is wrong"`,
+        s: `A student thinks one rule in the NEC makes no sense and wants to see it changed. What can they do?`,
+        g: [`Anyone can submit input to change the NEC, even people who are not on a committee.`, `Input goes in at www.nfpa.org/70, then public comment, the NFPA technical meeting, and Standards Council action.`, `Changes are made on a three-year cycle, so it takes time.`]
+      }, {
+        t: `"Is it approved?"`,
+        s: `You are about to install a new product. How can you tell whether it has been tested for safety?`,
+        g: [`Look for the mark of a testing laboratory such as UL.`, `Nationally Recognized Testing Laboratories test products and certify they meet safety standards.`, `Some labs make unannounced factory visits to check the products that carry their marks.`]
+      }],
+      parent: `Ask your student to explain in their own words what the NEC is, who publishes it, and why it says it is only the minimum.`
+    },
+    2: {
+      qs: [`Why does it help to know the layout of the NEC before you start looking things up?`, `Why do you often have to read more than one section to answer a code question?`],
+      scn: [{
+        t: `"Where do I look?"`,
+        s: `You need to know how far apart to support service-entrance cable on the side of a house. How would you find the answer in the NEC?`,
+        g: [`Use the Table of Contents or the index to find the right category.`, `Article 230, Services, leads to Section 230.51.`, `The rule says to support the cable within 12 inches of the service head or enclosure and at intervals of no more than 30 inches.`]
+      }, {
+        t: `"Is the track concealed?"`,
+        s: `Track lighting is going behind a curtain, and the code says track may not be installed where it is concealed. Is that a violation?`,
+        g: [`Look up the Article 100 definition: concealed means rendered inaccessible by the structure or finish of the building.`, `A curtain can be pulled back, so the track is still accessible.`, `So the track is not concealed under the code definition. Always check the definition before deciding.`]
+      }],
+      parent: `Hand your student a code book or its table of contents and ask them to find the chapter and article for one thing around the house, such as receptacles or lighting.`
+    }
+  };
+
+  var FINAL = [
+    `I can explain what the NEC is for, who publishes it, and why it sets only minimum requirements.`,
+    `I can name a few key dates in the history of the NEC.`,
+    `I can describe who is on the Code-Making Panels and how anyone can suggest a change.`,
+    `I can say what NRTLs, NEMA, the IEC and the IEEE do.`,
+    `I can explain the difference between mandatory and permissive rules, and the words that signal each.`,
+    `I can describe how the NEC is laid out into chapters, articles, parts and sections, and what the nine chapters cover.`,
+    `I can say where to find common topics, such as load calculations, receptacles, luminaires and panelboards.`,
+    `I can walk through the steps for finding a requirement in the NEC.`
+  ];
+
+  // Practice pairs. pq/po = plain English. tq/to = textbook style. a = index of the right answer (matches the answer key).
+  // Both versions keep the same option order. br = [[what you might say, what the textbook says], ...].
+  var PRACTICE = {
+    1: [
+      { src: `Section Review · Q1 (1.1.0)`, a: 2,
+        pq: `Which organization runs the NEC today?`,
+        po: [`DOT`, `OSHA`, `NFPA`, `DOE`],
+        tq: `Today, the NEC is administered by the _____.`,
+        to: [`DOT`, `OSHA`, `NFPA`, `DOE`],
+        why: `The NFPA took over administration of the NEC in 1911 and publishes it.`,
+        br: [[`runs`, `is administered by`]] },
+      { src: `Section Review · Q2 (1.2.0)`, a: 0,
+        pq: `What is the website address for sending in ideas to change the NEC?`,
+        po: [`www.nfpa.org/70`, `www.nfpa.org/72`, `www.nfpa.org/77`, `www.nfpa.org/80`],
+        tq: `The internet address to submit input for the National Electrical Code is _____.`,
+        to: [`www.nfpa.org/70`, `www.nfpa.org/72`, `www.nfpa.org/77`, `www.nfpa.org/80`],
+        why: `The pattern is www.nfpa.org/X, where X is the standard number. The NEC is NFPA 70.`,
+        br: [[`sending in ideas to change`, `submit input for`]] },
+      { src: `Section Review · Q3 (1.3.3)`, a: 0,
+        pq: `Which two organizations are working toward worldwide electronics standards?`,
+        po: [`IEC and IEEE`, `IEEE and NELA`, `NFPA and OSHA`, `IEC and NBFU`],
+        tq: `Two organizations working toward the globalization of electronics standards are _____.`,
+        to: [`IEC and IEEE`, `IEEE and NELA`, `NFPA and OSHA`, `IEC and NBFU`],
+        why: `The International Electrotechnical Commission and the Institute of Electrical and Electronics Engineers, with help from other groups, are working toward globalization of electronics standards.`,
+        br: [[`worldwide electronics standards`, `the globalization of electronics standards`]] },
+      { src: `Module Review · Q1 (1.0.0)`, a: 0,
+        pq: `Which word best describes what the NEC asks for when electrical systems are installed?`,
+        po: [`Minimum`, `Most stringent`, `Design specification`, `Complete`],
+        tq: `Which word or phrase best describes the NEC requirements for the installation of electrical systems?`,
+        to: [`Minimum`, `Most stringent`, `Design specification`, `Complete`],
+        why: `The NEC sets minimum requirements. It is not a design specification, and local or job rules may be stricter.`,
+        br: [[`what the NEC asks for`, `NEC requirements`]] },
+      { src: `Module Review · Q2 (1.1.0)`, a: 3,
+        pq: `Which of these groups is usually NOT on the Code-Making Panels?`,
+        po: [`Trade associations`, `Electrical inspectors`, `Insurance organizations`, `Government lobbyists`],
+        tq: `All of the following groups are usually represented on the Code-Making Panels, except _____.`,
+        to: [`trade associations`, `electrical inspectors`, `insurance organizations`, `government lobbyists`],
+        why: `Panels include trade associations, contractors, designers, inspectors, manufacturers, testing laboratories and insurance organizations. Government lobbyists are not on the list.`,
+        br: [[`usually NOT on`, `usually represented on ... except`]] }
+    ],
+    2: [
+      { src: `Section Review · Q1 (2.1.2)`, a: 1,
+        pq: `Where would you find how to calculate branch circuit loads?`,
+        po: [`NEC Article 110`, `NEC Article 220`, `NEC Article 342`, `NEC Article 404`],
+        tq: `Information on calculating branch circuit loads can be found in _____.`,
+        to: [`NEC Article 110`, `NEC Article 220`, `NEC Article 342`, `NEC Article 404`],
+        why: `Article 220 covers calculating branch circuit, feeder and service loads. Article 110 is general requirements, 342 is a conduit type, and 404 is switches.`,
+        br: [[`Where would you find`, `can be found in`]] },
+      { src: `Section Review · Q2 (2.2.0)`, a: 1,
+        pq: `Inside Article 406, which section covers installing receptacles in damp or wet places?`,
+        po: [`Section 406.3`, `Section 406.9`, `Section 406.5`, `Section 406.12`],
+        tq: `Where in NEC Article 406 can you find information on installing receptacles in damp or wet locations?`,
+        to: [`NEC Section 406.3`, `NEC Section 406.9`, `NEC Section 406.5`, `NEC Section 406.12`],
+        why: `The key gives Section 406.9. The handbook does not print this rule, so the answer follows the key. Check it in your own code book.`,
+        br: [[`damp or wet places`, `damp or wet locations`]] },
+      { src: `Module Review · Q3 (2.0.0)`, a: 0,
+        pq: `Where does the NEC define mandatory and permissive rules?`,
+        po: [`Article 90`, `Article 100`, `Article 110`, `Article 200`],
+        tq: `Mandatory and permissive rules are defined in _____.`,
+        to: [`NEC Article 90`, `NEC Article 100`, `NEC Article 110`, `NEC Article 200`],
+        why: `Article 90, Introduction, covers mandatory rules, permissive rules and explanatory material. They are defined in Section 90.5.`,
+        br: [[`Where does the NEC define`, `are defined in`]] },
+      { src: `Module Review · Q4 (2.1.0)`, a: 1,
+        pq: `Which chapters cover the general design and installation of electrical systems?`,
+        po: [`Chapters 1, 2 and 7`, `Chapters 1, 2, 3 and 4`, `Chapters 6, 7 and 8`, `Chapters 5, 6, 7 and 9`],
+        tq: `The general design and installation of electrical systems is covered in _____.`,
+        to: [`NEC Chapters 1, 2, and 7`, `NEC Chapters 1, 2, 3, and 4`, `NEC Chapters 6, 7, and 8`, `NEC Chapters 5, 6, 7, and 9`],
+        why: `The first four chapters present the rules for design and installation and generally apply to all electrical installations.`,
+        br: [[`Which chapters cover`, `is covered in`]] },
+      { src: `Module Review · Q5 (2.1.0)`, a: 0,
+        pq: `Which chapter covers wiring for things like radio, TV and telephones?`,
+        po: [`Chapter 8`, `Chapter 7`, `Chapter 6`, `Chapter 5`],
+        tq: `Devices such as radios, televisions, and telephones are covered in _____.`,
+        to: [`NEC Chapter 8`, `NEC Chapter 7`, `NEC Chapter 6`, `NEC Chapter 5`],
+        why: `Chapter 8 covers communications systems, including telephone, radio and TV, and satellite dish wiring.`,
+        br: [[`wiring for things like`, `Devices such as`]] },
+      { src: `Module Review · Q6 (2.1.1)`, a: 2,
+        pq: `What does Article 110 cover?`,
+        po: [`Branch circuits`, `Definitions`, `General requirements for electrical installations`, `Wiring design and protection`],
+        tq: `NEC Article 110 covers _____.`,
+        to: [`branch circuits`, `definitions`, `general requirements for electrical installations`, `wiring design and protection`],
+        why: `Article 110 gives general requirements, such as marking and working space. Article 100 has the definitions.`,
+        br: [[`What does Article 110 cover?`, `Article 110 covers _____`]] },
+      { src: `Module Review · Q7 (2.1.3)`, a: 3,
+        pq: `Which article covers cable trays?`,
+        po: [`Article 330`, `Article 342`, `Article 368`, `Article 392`],
+        tq: `Cable trays are covered in _____.`,
+        to: [`NEC Article 330`, `NEC Article 342`, `NEC Article 368`, `NEC Article 392`],
+        why: `Article 392 covers cable trays. Article 368 covers busways, and 342 is a conduit type.`,
+        br: [[`Which article covers`, `are covered in`]] },
+      { src: `Module Review · Q8 (2.1.4)`, a: 0,
+        pq: `Which article gives the installation rules for luminaires?`,
+        po: [`Article 410`, `Article 408`, `Article 366`, `Article 460`],
+        tq: `Installation procedures for luminaires are provided in _____.`,
+        to: [`NEC Article 410`, `NEC Article 408`, `NEC Article 366`, `NEC Article 460`],
+        why: `Article 410 covers luminaires in various locations. Article 408 is switchboards and panelboards.`,
+        br: [[`installation rules for luminaires`, `installation procedures for luminaires`]] },
+      { src: `Module Review · Q9 (2.1.5)`, a: 3,
+        pq: `Which article covers theaters?`,
+        po: [`Article 338`, `Article 110`, `Article 430`, `Article 520`],
+        tq: `Theaters are covered in _____.`,
+        to: [`NEC Article 338`, `NEC Article 110`, `NEC Article 430`, `NEC Article 520`],
+        why: `Article 520 regulates theaters and similar occupancies, where fire and panic can be hazards.`,
+        br: [[`Which article covers`, `are covered in`]] },
+      { src: `Module Review · Q10 (2.1.6)`, a: 1,
+        pq: `What does Article 600 cover?`,
+        po: [`Track lighting`, `Electric signs and outline lighting`, `X-ray equipment`, `Emergency lighting systems`],
+        tq: `NEC Article 600 covers _____.`,
+        to: [`track lighting`, `electric signs and outline lighting`, `X-ray equipment`, `emergency lighting systems`],
+        why: `Article 600 covers electric signs and outline lighting. X-ray equipment is Article 660.`,
+        br: [[`What does Article 600 cover?`, `Article 600 covers _____`]] },
+      { src: `Module Review · Q11 (2.1.10)`, a: 2,
+        pq: `Where can you find worked examples of branch circuit calculations?`,
+        po: [`Annex A`, `Annex C`, `Annex D`, `Annex G`],
+        tq: `Examples of branch circuit calculations can be found in _____.`,
+        to: [`NEC Informative Annex A`, `NEC Informative Annex C`, `NEC Informative Annex D`, `NEC Informative Annex G`],
+        why: `Informative Annex D has examples of calculations for branch circuits, feeders and services. Annex C is conduit fill.`,
+        br: [[`worked examples`, `Examples`], [`Annex`, `Informative Annex`]] },
+      { src: `Module Review · Q12 (2.2.0)`, a: 1,
+        pq: `Where do you find information on conductors for general wiring?`,
+        po: [`Article 280`, `Article 310`, `Article 404`, `Article 340`],
+        tq: `Information on conductors for general wiring can be found in _____.`,
+        to: [`NEC Article 280`, `NEC Article 310`, `NEC Article 404`, `NEC Article 340`],
+        why: `Article 310 describes acceptable conductors for the wiring methods in Chapter 3.`,
+        br: [[`Where do you find`, `can be found in`]] },
+      { src: `Module Review · Q13 (2.2.0; 310.3(C))`, a: 3,
+        pq: `Looking in Article 310, what is the smallest conductor size that must be stranded when it is installed in a raceway?`,
+        po: [`14 AWG or larger`, `12 AWG or larger`, `10 AWG or larger`, `8 AWG or larger`],
+        tq: `Within NEC Article 310, locate information on stranded conductors. Which size conductors must be stranded when installed in raceways?`,
+        to: [`14 AWG or larger`, `12 AWG or larger`, `10 AWG or larger`, `8 AWG or larger`],
+        why: `The key gives 8 AWG or larger (Section 310.3(C)). The handbook does not print this rule, so the answer follows the lesson plan key. Check it in your own code book.`,
+        br: [[`Looking in Article 310`, `Within NEC Article 310, locate information on stranded conductors`], [`smallest size that must be stranded`, `Which size conductors must be stranded`]] },
+      { src: `Module Review · Q14 (2.2.0)`, a: 2,
+        pq: `Where do you find information on switchboards and panelboards?`,
+        po: [`Article 285`, `Article 300`, `Article 408`, `Article 540`],
+        tq: `Information on switchboards and panelboards can be found in _____.`,
+        to: [`NEC Article 285`, `NEC Article 300`, `NEC Article 408`, `NEC Article 540`],
+        why: `Article 408 covers switchboards, switchgear and panelboards used to control light and power circuits.`,
+        br: [[`Where do you find`, `can be found in`]] },
+      { src: `Module Review · Q15 (2.2.0; 408.18(A))`, a: 3,
+        pq: `In Article 408, find the clearance rule for switchboards. With no noncombustible shield, how much space must there be between the top of a switchboard and a combustible ceiling?`,
+        po: [`12 inches (300 mm)`, `18 inches (400 mm)`, `24 inches (600 mm)`, `36 inches (900 mm)`],
+        tq: `Within NEC Article 408, find the section that covers switchboard clearances. Assuming the switchboard does not have a noncombustible shield, what is the minimum clearance between the top of the switchboard and a combustible ceiling?`,
+        to: [`12" (300 mm)`, `18" (400 mm)`, `24" (600 mm)`, `36" (900 mm)`],
+        why: `The key gives 36 inches, or 900 mm (Section 408.18(A)). The handbook does not print this rule, so the answer follows the lesson plan key. Check it in your own code book.`,
+        br: [[`how much space must there be`, `what is the minimum clearance`], [`no noncombustible shield`, `does not have a noncombustible shield`]] }
+    ]
+  };
+
+  function el(tag, cls, text) { var n = document.createElement(tag); if (cls) n.className = cls; if (text != null) n.textContent = text; return n; }
+
+  function buildPoints(ul, list, prefix) {
+    list.forEach(function (html, i) {
+      var li = el("li");
+      var label = el("label");
+      var input = document.createElement("input");
+      input.type = "checkbox";
+      input.id = prefix + "-" + i;
+      var span = el("span");
+      span.innerHTML = html; // static text written in this file
+      label.appendChild(input); label.appendChild(span);
+      li.appendChild(label); ul.appendChild(li);
+    });
+  }
+
+  function field(label, text) {
+    var d = el("span");
+    d.appendChild(el("span", "label", label));
+    d.appendChild(document.createTextNode(text));
+    return d;
+  }
+  function buildCards(host, n) {
+    CARDS[n].forEach(function (item) {
+      var b = el("button", "card");
+      b.type = "button";
+      b.setAttribute("aria-pressed", "false");
+      b.setAttribute("aria-label", item.t + ". Press to flip the card.");
+      var inner = el("span", "card-inner");
+      var f = el("span", "face front" + (item.k === "k" ? " key" : ""));
+      f.appendChild(el("span", "strip", (item.k === "o" ? "NCCER trade term" : "Key term") + " · Section " + n));
+      f.appendChild(el("span", "term", item.t));
+      f.appendChild(el("span", "hint", "TAP TO FLIP"));
+      var k = el("span", "face back");
+      k.appendChild(el("span", "strip", item.t));
+      var body = el("span", "body");
+      body.appendChild(field("In everyday words", item.plain));
+      body.appendChild(field("From the module", item.book));
+      var ask = field("Ask your student", item.ask);
+      ask.className = "ask";
+      body.appendChild(ask);
+      k.appendChild(body);
+      inner.appendChild(f); inner.appendChild(k);
+      b.appendChild(inner);
+      b.addEventListener("click", function () { b.setAttribute("aria-pressed", b.getAttribute("aria-pressed") === "true" ? "false" : "true"); });
+      host.appendChild(b);
+    });
+  }
+
+  function buildQuiz(host, n) {
+    var list = QUIZ[n];
+    var answered = 0;
+    host.appendChild(el("p", "ticket-intro", "Pick the answer. You will see right away if it is correct. Nothing is saved or sent."));
+    var foot = el("div", "ticket-foot");
+    var done = el("p", null, "");
+    done.setAttribute("aria-live", "polite");
+    var retry = el("button", "btn", "Try again");
+    retry.type = "button";
+    retry.hidden = true;
+    foot.appendChild(done); foot.appendChild(retry);
+
+    list.forEach(function (item, qi) {
+      var fs = el("fieldset", "q");
+      fs.appendChild(el("legend", null, (qi + 1) + ". " + item.q));
+      var opts = el("div", "opts");
+      var fb = el("p", "fb");
+      fb.setAttribute("aria-live", "polite");
+      var btns = [];
+      item.o.forEach(function (text, oi) {
+        var b = el("button", "opt", text);
+        b.type = "button";
+        b.addEventListener("click", function () {
+          btns.forEach(function (x) { x.disabled = true; });
+          answered++;
+          if (oi === item.a) {
+            b.classList.add("right");
+            fb.innerHTML = "";
+            var good = el("b", null, "Correct. "); fb.appendChild(good); fb.appendChild(document.createTextNode(item.why));
+          } else {
+            b.classList.add("wrong");
+            btns[item.a].classList.add("right");
+            fb.innerHTML = "";
+            var no = el("b", null, "Not quite. "); fb.appendChild(no);
+            fb.appendChild(document.createTextNode("The answer is \"" + item.o[item.a] + "\". " + item.why));
+          }
+          if (answered === list.length) {
+            done.textContent = "Ticket finished. Reread any part of the section that felt shaky, then try again.";
+            retry.hidden = false;
+          }
+        });
+        btns.push(b); opts.appendChild(b);
+      });
+      fs.appendChild(opts); fs.appendChild(fb);
+      host.insertBefore(fs, null);
+      fs._reset = function () { btns.forEach(function (x) { x.disabled = false; x.className = "opt"; }); fb.textContent = ""; };
+    });
+    host.appendChild(foot);
+    retry.addEventListener("click", function () {
+      host.querySelectorAll("fieldset").forEach(function (f) { f._reset(); });
+      answered = 0; done.textContent = ""; retry.hidden = true;
+    });
+  }
+
+  function buildTalk(host, n) {
+    var t = TALK[n];
+    var ol = el("ol", "qs");
+    t.qs.forEach(function (q) { ol.appendChild(el("li", null, q)); });
+    host.appendChild(ol);
+    t.scn.forEach(function (s) {
+      var d = el("details", "scn");
+      d.appendChild(el("summary", null, "Scenario: " + s.t));
+      d.appendChild(el("p", "setup", s.s));
+      var g = el("div", "good");
+      g.appendChild(el("b", null, "A good answer includes"));
+      var ul = el("ul");
+      s.g.forEach(function (x) { ul.appendChild(el("li", null, x)); });
+      g.appendChild(ul); d.appendChild(g);
+      host.appendChild(d);
+    });
+    if (t.parent) {
+      var p = el("div", "parent");
+      p.appendChild(el("b", null, "Parent prompt"));
+      p.appendChild(el("p", null, t.parent));
+      host.appendChild(p);
+    }
+  }
+
+
+  function ask(label, cls, q, opts, correct, onAnswer) {
+    var box = el("div", "ask-block" + (cls ? " " + cls : ""));
+    box.appendChild(el("p", "step-label", label));
+    box.appendChild(el("p", "pr-q", q));
+    var wrap = el("div", "opts");
+    wrap.setAttribute("role", "group");
+    wrap.setAttribute("aria-label", q);
+    var fb = el("p", "fb");
+    fb.setAttribute("aria-live", "polite");
+    var btns = [];
+    opts.forEach(function (text, oi) {
+      var b = el("button", "opt", String.fromCharCode(65 + oi) + ".  " + text);
+      b.type = "button";
+      b.addEventListener("click", function () {
+        btns.forEach(function (x) { x.disabled = true; });
+        var ok = oi === correct;
+        b.classList.add(ok ? "right" : "wrong");
+        if (!ok) btns[correct].classList.add("right");
+        onAnswer(ok, fb, String.fromCharCode(65 + correct));
+      });
+      btns.push(b); wrap.appendChild(b);
+    });
+    box.appendChild(wrap); box.appendChild(fb);
+    box.reset = function () { btns.forEach(function (x) { x.disabled = false; x.className = "opt"; }); fb.textContent = ""; };
+    return box;
+  }
+  function say(fb, lead, text) {
+    fb.textContent = "";
+    fb.appendChild(el("b", null, lead + " "));
+    fb.appendChild(document.createTextNode(text));
+  }
+
+  function buildPractice(host, n) {
+    var list = PRACTICE[n];
+    host.appendChild(el("p", "pr-intro", "Test questions use the textbook's formal words. Answer each question in plain English first, then see the same question the way the book asks it. The \"Words to notice\" box shows how the two fit together. Nothing is saved or sent."));
+    var items = [];
+    list.forEach(function (item, i) {
+      var art = el("article", "pr");
+      var head = el("div", "pr-head");
+      head.appendChild(el("span", null, "Question " + (i + 1) + " of " + list.length));
+      head.appendChild(el("span", null, "Source: " + item.src));
+      art.appendChild(head);
+
+      var bridge = el("div", "bridge");
+      bridge.hidden = true;
+      bridge.appendChild(el("p", "step-label", "Words to notice"));
+      var ul = el("ul");
+      item.br.forEach(function (p) {
+        var li = el("li");
+        li.appendChild(el("span", "you", p[0]));
+        li.appendChild(el("span", "arrow", "→"));
+        li.appendChild(el("span", "pub", p[1]));
+        ul.appendChild(li);
+      });
+      bridge.appendChild(ul);
+
+      var b2 = ask("Step 2 · The same question in the textbook's words", "formal", item.tq, item.to, item.a, function (ok, fb, letter) {
+        if (ok) say(fb, "Correct.", "You just answered it in the textbook's voice.");
+        else say(fb, "Not quite.", "The answer is " + letter + ". Compare it with your plain-English answer above.");
+        bridge.hidden = false;
+      });
+      b2.hidden = true;
+      var b1 = ask("Step 1 · In plain English", "", item.pq, item.po, item.a, function (ok, fb, letter) {
+        if (ok) say(fb, "Correct.", item.why);
+        else say(fb, "Not quite.", "The answer is " + letter + ". " + item.why);
+        b2.hidden = false;
+      });
+      art.appendChild(b1); art.appendChild(b2); art.appendChild(bridge);
+      host.appendChild(art);
+      items.push({ b1: b1, b2: b2, bridge: bridge });
+    });
+    var foot = el("div", "ticket-foot");
+    var retry = el("button", "btn", "Start this set over");
+    retry.type = "button";
+    retry.addEventListener("click", function () {
+      items.forEach(function (x) { x.b1.reset(); x.b2.reset(); x.b2.hidden = true; x.bridge.hidden = true; });
+    });
+    foot.appendChild(retry);
+    host.appendChild(foot);
+  }
+
+  [1, 2].forEach(function (n) {
+    buildPractice(document.querySelector('[data-practice="' + n + '"]'), n);
+    buildPoints(document.querySelector('[data-points="' + n + '"]'), POINTS[n], "s" + n);
+    buildCards(document.querySelector('[data-cards="' + n + '"]'), n);
+    buildQuiz(document.querySelector('[data-quiz="' + n + '"]'), n);
+    buildTalk(document.querySelector('[data-talk="' + n + '"]'), n);
+  });
+  buildPoints(document.getElementById("final-points"), FINAL, "fin");
+})();
+</script>
+
+</body></html>
+</body></html>

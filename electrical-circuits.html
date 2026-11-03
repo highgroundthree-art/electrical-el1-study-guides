@@ -1,0 +1,1178 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Electrical Circuits Loved Ones Study Guide</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+/* Layout concept: one long study sheet. Each module section runs the same six parts
+   (read, review points, trade-term tags, ticket out the door, talk it over). */
+:root {
+  --bg: #EEF1F3;
+  --surface: #FFFFFF;
+  --ink: #14202B;
+  --ink-soft: #46576A;
+  --line: #C9D2DA;
+  --band: #14202B;
+  --band-ink: #F4F7F9;
+  --accent: #C42B17;
+  --accent-ink: #FFFFFF;
+  --caution: #F2B705;
+  --caution-soft: #FFF3C4;
+  --good: #1E7A3C;
+  --good-soft: #DDF3E4;
+  --bad: #A8321F;
+  --bad-soft: #FBE3DE;
+  --tag-hole: #EEF1F3;
+  --focus: #0B5FFF;
+  --font-display: "Barlow Condensed", "Arial Narrow", Impact, sans-serif;
+  --font-body: "Barlow", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0F171E; --surface: #18232D; --ink: #EAF0F4; --ink-soft: #A5B4C2; --line: #2E3E4C;
+    --band: #0A1016; --band-ink: #F4F7F9; --accent: #FF5A44; --accent-ink: #14202B;
+    --caution: #F2B705; --caution-soft: #3A3210; --good: #6FD08C; --good-soft: #17301F;
+    --bad: #FF8E7C; --bad-soft: #3A1B16; --tag-hole: #0F171E; --focus: #6AA2FF;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0F171E; --surface: #18232D; --ink: #EAF0F4; --ink-soft: #A5B4C2; --line: #2E3E4C;
+  --band: #0A1016; --band-ink: #F4F7F9; --accent: #FF5A44; --accent-ink: #14202B;
+  --caution: #F2B705; --caution-soft: #3A3210; --good: #6FD08C; --good-soft: #17301F;
+  --bad: #FF8E7C; --bad-soft: #3A1B16; --tag-hole: #0F171E; --focus: #6AA2FF;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--ink); font-family: var(--font-body); font-size: 17px; line-height: 1.6; }
+:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
+.wrap { max-width: 920px; margin-inline: auto; padding-inline: max(16px, env(safe-area-inset-left, 0px)) max(16px, env(safe-area-inset-right, 0px)); }
+h1, h2, h3, h4 { font-family: var(--font-display); text-transform: uppercase; letter-spacing: 0.03em; line-height: 1.05; margin: 0; text-wrap: balance; }
+.eyebrow { font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-soft); }
+
+.band { background: var(--band); color: var(--band-ink); padding-block: 34px 26px; border-bottom: 8px solid var(--caution); }
+.band .eyebrow { color: var(--caution); }
+.band h1 { font-size: clamp(2.5rem, 9vw, 4.4rem); font-weight: 700; margin-top: 10px; }
+.band .sub { margin: 14px 0 0; font-size: 1.1rem; color: #D5DEE5; max-width: 46ch; }
+.band .byline { margin: 14px 0 0; font-size: 0.95rem; color: #AEBBC7; }
+nav.jump { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 22px; }
+nav.jump a { text-decoration: none; font-weight: 600; font-size: 0.95rem; padding: 8px 14px; border: 2px solid #3B4B5A; border-radius: 3px; color: var(--band-ink); }
+nav.jump a:hover { border-color: var(--caution); }
+
+.intro { margin-top: 28px; display: grid; gap: 22px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 380px), 1fr)); }
+.panel { background: var(--surface); border: 1px solid var(--line); padding: 20px 22px 22px; min-width: 0; }
+.panel h2 { font-size: 1.5rem; font-weight: 700; margin-bottom: 10px; }
+.panel p { margin: 0 0 10px; }
+.panel ol { margin: 8px 0 0; padding-left: 1.3em; display: grid; gap: 6px; }
+.notice { background: var(--caution-soft); border: 2px solid var(--caution); padding: 16px 20px; margin-top: 22px; }
+.notice p { margin: 4px 0 0; }
+.notice h2 { font-size: 1.25rem; }
+
+/* section */
+.sec { margin-top: 56px; }
+.sec-head { border-top: 8px solid var(--ink); padding-top: 18px; }
+.sec-head h2 { font-size: clamp(2rem, 6vw, 3rem); font-weight: 700; margin-top: 6px; }
+.sec-head .obj { margin: 10px 0 0; color: var(--ink-soft); max-width: 62ch; }
+.part { margin-top: 34px; }
+.part-title { display: flex; align-items: baseline; gap: 12px; margin-bottom: 14px; }
+.part-title .letter { font-family: var(--font-mono); font-size: 13px; background: var(--ink); color: var(--bg); padding: 2px 8px; flex: none; }
+.part-title h3 { font-size: 1.7rem; font-weight: 700; }
+.part-title .time { margin-left: auto; font-family: var(--font-mono); font-size: 12px; color: var(--ink-soft); white-space: nowrap; }
+
+.prose { background: var(--surface); border: 1px solid var(--line); padding: 22px 24px; }
+.prose h4 { font-size: 1.25rem; font-weight: 700; margin: 20px 0 6px; color: var(--accent); }
+.prose h4:first-child { margin-top: 0; }
+.prose p { margin: 0 0 10px; max-width: 64ch; }
+.prose ul { margin: 0 0 10px; padding-left: 1.2em; max-width: 64ch; }
+.prose li { margin-bottom: 4px; }
+.prose .big { font-size: 1.12rem; font-weight: 500; border-left: 6px solid var(--caution); padding: 4px 0 4px 14px; margin: 0 0 16px; }
+.prose table { border-collapse: collapse; margin: 8px 0 14px; font-size: 0.95rem; width: 100%; max-width: 520px; }
+.prose th, .prose td { text-align: left; padding: 6px 10px; border-bottom: 1px solid var(--line); }
+.prose th { font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-soft); }
+.scroll { overflow-x: auto; }
+.case { background: var(--bg); border-left: 6px solid var(--accent); padding: 12px 16px; margin: 14px 0 0; max-width: 64ch; }
+.case b { font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.08em; text-transform: uppercase; display: block; color: var(--ink-soft); }
+
+/* review points */
+.points { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; counter-reset: pt; }
+.points li { background: var(--surface); border: 1px solid var(--line); }
+.points label { display: grid; grid-template-columns: 28px minmax(0, 1fr); gap: 12px; padding: 12px 16px; cursor: pointer; align-items: start; }
+.points input { width: 22px; height: 22px; margin: 2px 0 0; accent-color: var(--good); }
+.points li:has(input:checked) { background: var(--good-soft); border-color: var(--good); }
+.points b { font-weight: 600; }
+
+/* cards */
+.deck { display: grid; gap: 22px; grid-template-columns: repeat(auto-fill, minmax(min(100%, 270px), 1fr)); }
+.card { all: unset; box-sizing: border-box; display: block; cursor: pointer; perspective: 1100px; min-width: 0; }
+.card:focus-visible { outline: 3px solid var(--focus); outline-offset: 4px; }
+.card-inner { display: grid; transition: transform 0.5s cubic-bezier(.3,.7,.2,1); transform-style: preserve-3d; position: relative; }
+.card[aria-pressed="true"] .card-inner { transform: rotateY(180deg); }
+.face { grid-area: 1 / 1; backface-visibility: hidden; -webkit-backface-visibility: hidden; display: flex; flex-direction: column; min-height: 250px; border: 2px solid var(--ink); background: var(--surface); position: relative; overflow: hidden; }
+.face::before { content: ""; position: absolute; top: 12px; left: 50%; width: 16px; height: 16px; margin-left: -8px; border-radius: 50%; background: var(--tag-hole); border: 2px solid var(--ink); }
+.front .strip { background: var(--accent); color: var(--accent-ink); padding: 38px 16px 8px; font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.08em; text-transform: uppercase; }
+.front.key .strip { background: var(--ink); color: var(--bg); }
+.front .term { flex: 1; display: flex; align-items: center; padding: 16px 18px; font-family: var(--font-display); text-transform: uppercase; font-weight: 700; font-size: clamp(1.8rem, 7vw, 2.2rem); line-height: 1.02; letter-spacing: 0.02em; overflow-wrap: anywhere; }
+.front .hint { padding: 10px 18px 14px; font-size: 0.8rem; color: var(--ink-soft); border-top: 1px dashed var(--line); font-family: var(--font-mono); letter-spacing: 0.04em; }
+.back { transform: rotateY(180deg); background: var(--caution-soft); }
+.back .strip { background: var(--ink); color: var(--bg); padding: 38px 16px 8px; font-family: var(--font-display); text-transform: uppercase; font-weight: 700; letter-spacing: 0.04em; font-size: 1.1rem; line-height: 1.05; }
+.back .body { padding: 14px 18px 16px; display: grid; gap: 10px; align-content: start; font-size: 0.95rem; line-height: 1.45; }
+.back .label { font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-soft); display: block; margin-bottom: 1px; }
+.back .ask { border-top: 1px dashed var(--ink-soft); padding-top: 10px; font-weight: 500; }
+.deck-note { margin: 12px 0 0; font-size: 0.9rem; color: var(--ink-soft); }
+@media (prefers-reduced-motion: reduce) {
+  .card-inner { transition: none; transform-style: flat; }
+  .card[aria-pressed="true"] .card-inner { transform: none; }
+  .back { transform: none; }
+  .face { backface-visibility: visible; }
+  .card .back { visibility: hidden; }
+  .card[aria-pressed="true"] .back { visibility: visible; }
+  .card[aria-pressed="true"] .front { visibility: hidden; }
+}
+
+/* ticket */
+.ticket { background: var(--surface); border: 2px dashed var(--ink); padding: 8px 20px 18px; position: relative; }
+.ticket-intro { margin: 14px 0 4px; color: var(--ink-soft); font-size: 0.95rem; }
+.q { border: 0; border-top: 1px solid var(--line); margin: 0; padding: 16px 0 14px; min-width: 0; }
+.q:first-of-type { border-top: 0; }
+.q legend { font-weight: 600; padding: 0; margin-bottom: 8px; float: left; width: 100%; }
+.q .opts { clear: both; display: grid; gap: 8px; }
+.opt { font: inherit; text-align: left; padding: 10px 14px; background: var(--bg); color: var(--ink); border: 2px solid var(--line); border-radius: 3px; cursor: pointer; }
+.opt:hover:not(:disabled) { border-color: var(--ink); }
+.opt:disabled { cursor: default; }
+.opt.right { background: var(--good-soft); border-color: var(--good); }
+.opt.wrong { background: var(--bad-soft); border-color: var(--bad); }
+.fb { margin: 8px 0 0; font-size: 0.93rem; color: var(--ink-soft); }
+.fb b { color: var(--ink); }
+.ticket-foot { margin-top: 10px; display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+.ticket-foot p { margin: 0; font-weight: 500; }
+.btn { font: inherit; font-weight: 600; font-size: 0.92rem; padding: 8px 14px; background: var(--surface); color: var(--ink); border: 2px solid var(--ink); border-radius: 3px; cursor: pointer; }
+.btn:hover { background: var(--ink); color: var(--bg); }
+
+/* talk it over */
+.talk { display: grid; gap: 14px; }
+.talk .qs { background: var(--surface); border: 1px solid var(--line); padding: 16px 22px 16px 40px; margin: 0; display: grid; gap: 8px; }
+details.scn { background: var(--surface); border: 1px solid var(--line); border-left: 6px solid var(--caution); padding: 14px 18px; }
+details.scn summary { cursor: pointer; font-family: var(--font-display); text-transform: uppercase; letter-spacing: 0.03em; font-size: 1.3rem; font-weight: 700; }
+details.scn .setup { margin: 10px 0 8px; }
+details.scn .good { margin: 12px 0 0; padding: 10px 14px; background: var(--good-soft); border-left: 6px solid var(--good); }
+details.scn .good b { font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.08em; text-transform: uppercase; display: block; }
+details.scn .good ul { margin: 6px 0 0; padding-left: 1.1em; }
+.parent { background: var(--caution-soft); border: 2px solid var(--caution); padding: 12px 16px; }
+.parent b { font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.08em; text-transform: uppercase; display: block; }
+.parent p { margin: 4px 0 0; }
+
+/* practice questions */
+.pr-intro { margin: 0 0 14px; color: var(--ink-soft); max-width: 66ch; }
+.pr { background: var(--surface); border: 1px solid var(--line); margin-bottom: 18px; }
+.pr-head { display: flex; flex-wrap: wrap; gap: 6px 14px; justify-content: space-between; align-items: baseline; padding: 10px 18px; background: var(--ink); color: var(--bg); font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.06em; text-transform: uppercase; }
+.ask-block { padding: 14px 18px 16px; }
+.ask-block + .ask-block { border-top: 2px dashed var(--line); }
+.ask-block.formal { background: var(--bg); }
+.step-label { margin: 0 0 6px; font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); }
+.pr-q { margin: 0 0 10px; font-weight: 600; font-size: 1.05rem; max-width: 62ch; }
+.bridge { padding: 14px 18px 16px; border-top: 2px dashed var(--line); background: var(--caution-soft); }
+.bridge .step-label { color: var(--ink); }
+.bridge ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+.bridge li { display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); gap: 10px; align-items: baseline; }
+.bridge .you { font-style: italic; }
+.bridge .arrow { font-family: var(--font-mono); color: var(--ink-soft); }
+.bridge .pub { font-weight: 600; }
+@media (max-width: 520px) { .bridge li { grid-template-columns: minmax(0, 1fr); gap: 0; } .bridge .arrow { display: none; } .bridge .pub::before { content: "Textbook: "; font-weight: 400; font-family: var(--font-mono); font-size: 11px; color: var(--ink-soft); } .bridge .you::before { content: "You say: "; font-style: normal; font-family: var(--font-mono); font-size: 11px; color: var(--ink-soft); } }
+
+/* final checklist */
+.final { margin-top: 56px; border-top: 8px solid var(--ink); padding-top: 18px; }
+.final h2 { font-size: clamp(1.9rem, 5vw, 2.6rem); font-weight: 700; }
+.final .lead { color: var(--ink-soft); max-width: 62ch; margin: 10px 0 16px; }
+.note { margin: 28px 0 0; font-size: 0.9rem; color: var(--ink-soft); max-width: 70ch; }
+footer { margin-top: 48px; background: var(--band); color: #AEBBC7; padding-block: 26px 30px; font-size: 0.92rem; }
+footer strong { color: var(--band-ink); }
+footer p { margin: 0 0 6px; }
+</style>
+
+
+<header class="band">
+  <div class="wrap">
+    <span class="eyebrow">EVIT Electrical · Loved Ones Study Guide</span>
+    <h1>Electrical<br>Circuits</h1>
+    <p class="sub">A Loved Ones Study Guide for NCCER Electrical Level 1, Module 26103-20: Introduction to Electrical Circuits</p>
+    <p class="byline">Mr. Ellis CTE — General Construction &amp; Electrical Teacher · High School &amp; Adult Pre-Apprentice Programs</p>
+    <nav class="jump" aria-label="Sections">
+      <a href="#s1">1 · Atoms &amp; power</a>
+      <a href="#s2">2 · Units &amp; Ohm's law</a>
+      <a href="#s3">3 · Schematics &amp; meters</a>
+      <a href="#review">Loved ones review</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<div class="wrap">
+
+  <div class="intro">
+    <div class="panel">
+      <h2>Why this guide exists</h2>
+      <p>You do not need to be an electrician to support an electrical student. Your job is to help your student explain what they are learning, put it in their own words, and know when safety means stop and ask a qualified person.</p>
+      <p>If your student can read it and explain it, they are learning it. That is the whole idea.</p>
+    </div>
+    <div class="panel">
+      <h2>How to use each section</h2>
+      <p>Plan about 15 to 25 minutes per section. The student does most of the talking. You do not need the answers ahead of time.</p>
+      <ol>
+        <li><b>Read it together.</b> Plain-English version of the module section.</li>
+        <li><b>Study review points.</b> The must-know facts. Tick each one when your student can say it back.</li>
+        <li><b>Trade-term cards.</b> Tap a card to flip it.</li>
+        <li><b>Ticket out the door.</b> A quick recall check, just for practice.</li>
+        <li><b>Talk it over.</b> Questions and a real-world scenario.</li>
+        <li><b>Practice questions.</b> Each one comes twice: first in plain English, then in the textbook's words, so your student learns to recognize both.</li>
+      </ol>
+    </div>
+  </div>
+
+  <aside class="notice" aria-labelledby="safe-h">
+    <h2 id="safe-h">Important safety note</h2>
+    <p>This guide is for learning and talking. It is not permission to do electrical work. Meters and live circuits are for trained, qualified people only. Never use this guide in place of instructor supervision, employer procedures, required training, or properly rated equipment. No student names or grades appear here, and nothing you tick or tap on this page is saved or sent anywhere.</p>
+  </aside>
+
+  <!-- SECTION 1 -->
+  <section class="sec" id="s1" aria-labelledby="s1-h">
+    <div class="sec-head">
+      <span class="eyebrow">Module Section 1 of 3</span>
+      <h2 id="s1-h">Atomic Structure and Electricity</h2>
+      <p class="obj">By the end of this section your student can name the parts of an atom, explain why conductors and insulators behave differently, say how magnetism and electricity work together, and describe how power travels from a plant to a home.</p>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">A</span><h3>Read it together</h3><span class="time">about 10 min</span></div>
+      <div class="prose">
+        <p class="big">Every light, motor and outlet depends on one idea: tiny charged particles that either push apart or pull together. Start with the atom, and the rest of electricity starts to make sense.</p>
+
+        <h4>What a circuit needs</h4>
+        <p>An electrical circuit has at least three things: a voltage source (such as a battery), a load (the part that uses the energy, such as a light bulb), and conductors (wires) to carry the current. Most circuits also have a switch to start and stop the current.</p>
+        <p>Electricity is cause and effect. Voltage, measured in volts, is like electrical pressure. When there is voltage across a closed circuit, current flows. Current is measured in amperes, also called amps. How much current flows also depends on resistance, measured in ohms, which is how hard the load makes it for current to move. The amount of energy a device uses is called power, and it is measured in watts.</p>
+
+        <h4>The atom</h4>
+        <p>The textbook explains the atom using the simplest one, hydrogen. It has a nucleus with one proton in the middle and one electron circling it. Two forces balance each other to keep the electron in its path: one tends to throw it outward as it circles, and the other, the electrostatic force, pulls it in toward the nucleus.</p>
+        <p>An atom is made of three kinds of particles.</p>
+        <div class="scroll"><table>
+          <thead><tr><th>Particle</th><th>Charge</th><th>Where it is</th></tr></thead>
+          <tbody>
+            <tr><td>Proton</td><td>Positive (+)</td><td>In the nucleus</td></tr>
+            <tr><td>Neutron</td><td>None</td><td>In the nucleus</td></tr>
+            <tr><td>Electron</td><td>Negative (&minus;)</td><td>Orbiting the nucleus</td></tr>
+          </tbody>
+        </table></div>
+        <p>The number of protons in the nucleus decides which element an atom is. An electron's negative charge is equal to a proton's positive charge. When an atom becomes positively or negatively charged, the charged particle is called an ion.</p>
+        <div class="case"><b>Key idea</b>Like charges repel and unlike charges attract. A proton repels another proton. An electron repels another electron. A proton attracts an electron. This is the Law of Electrical Charges.</div>
+
+        <h4>Conductors and insulators</h4>
+        <p>Electrons live in groups of orbits called shells. The outer shell is the valence shell, and the electrons in it are valence electrons. These are the electrons that break loose most easily, so they are the ones that matter most for electricity.</p>
+        <p>Every material falls into one of three groups, based mostly on how many valence electrons its atoms have.</p>
+        <div class="scroll"><table>
+          <thead><tr><th>Group</th><th>Valence electrons</th><th>What it does</th><th>Examples</th></tr></thead>
+          <tbody>
+            <tr><td>Conductor</td><td>Usually 3 or fewer</td><td>Lets current flow easily</td><td>Copper, silver</td></tr>
+            <tr><td>Semiconductor</td><td>4</td><td>In between a conductor and an insulator</td><td>Silicon, germanium</td></tr>
+            <tr><td>Insulator</td><td>Usually 5 or more</td><td>Resists current flow</td><td>Porcelain, plastic</td></tr>
+          </tbody>
+        </table></div>
+        <div class="case"><b>Why it matters</b>Some trainees ask why they should learn theory if they just want to install things. Think of a car: if you only know how to swap parts, you cannot find out why it will not start. When you understand why something works, you can troubleshoot it instead of guessing.</div>
+
+        <h4>Magnetism in electrical devices</h4>
+        <p>Motors, relays, transformers and solenoids all work because of magnetism. A magnet has a north pole and a south pole. Opposite poles attract and like poles repel.</p>
+        <p>Electricity also makes magnetism. Current flowing through a wire makes a small magnetic field around it. Coil that wire around an iron bar and you get an electromagnet. That is the idea behind electric motors.</p>
+
+        <h4>How power gets to you</h4>
+        <p>Electricity comes from generating plants run by utilities. Steam from coal or nuclear plants spins huge generators called turbines. Hydroelectric, solar and wind plants make electricity too. Transformers step the voltage up for long-distance transmission, and then step it down again at substations and near your building. Transmission lines can carry as much as 750,000 volts.</p>
+        <div class="scroll"><table>
+          <thead><tr><th>Where</th><th>Typical voltage</th></tr></thead>
+          <tbody>
+            <tr><td>Long-distance transmission lines</td><td>As high as 750,000V</td></tr>
+            <tr><td>Home, as supplied by the utility</td><td>About 240V</td></tr>
+            <tr><td>Wall outlet for small appliances such as a TV or toaster</td><td>About 120V</td></tr>
+            <tr><td>Stoves, dryers, water heaters, central air</td><td>The full 240V</td></tr>
+            <tr><td>Commercial buildings and factories</td><td>208V to 575V, depending on the power their machines use</td></tr>
+          </tbody>
+        </table></div>
+      </div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">B</span><h3>Study review points</h3></div>
+      <ul class="points" data-points="1"></ul>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">C</span><h3>Trade-term cards</h3></div>
+      <div class="deck" data-cards="1"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">D</span><h3>Ticket out the door</h3></div>
+      <div class="ticket" data-quiz="1"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">E</span><h3>Talk it over</h3></div>
+      <div class="talk" data-talk="1"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">F</span><h3>Practice questions</h3><span class="time">about 6 min</span></div>
+      <div data-practice="1"></div>
+    </div>
+  </section>
+
+  <!-- SECTION 2 -->
+  <section class="sec" id="s2" aria-labelledby="s2-h">
+    <div class="sec-head">
+      <span class="eyebrow">Module Section 2 of 3</span>
+      <h2 id="s2-h">Electrical Units of Measurement</h2>
+      <p class="obj">By the end of this section your student can define current, voltage and resistance, name their units, and use Ohm&rsquo;s law to find a missing value.</p>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">A</span><h3>Read it together</h3><span class="time">about 12 min</span></div>
+      <div class="prose">
+        <p class="big">Three measurements run nearly everything in electrical work: current, voltage and resistance. Ohm's law ties them together, so if you know two of them you can find the third.</p>
+
+        <h4>Current</h4>
+        <p>Current is the movement, or flow, of electrons. It is shown by the letter I and measured in amperes, or amps (A). One amp means one coulomb of charge passing a point in a conductor in one second. A coulomb is a big counting unit for charge: about 6.25 quintillion electrons.</p>
+        <p>Charge and current are not the same thing. Charge is an amount of electricity. Current is how fast that charge is moving.</p>
+        <p>Coulomb's law gives the force between two charges. The force gets bigger as the charges get bigger, and it gets weaker as the charges move farther apart. Charges that are alike repel, and charges that are opposite attract.</p>
+        <p>There are two ways to describe which direction current flows. Electron flow theory says current moves from negative to positive. Most electricians use it, and this curriculum does too. Many electronics engineers use conventional flow, which describes the opposite direction. Know which one you are using so you do not mix up directions or numbers.</p>
+        <div class="scroll"><table>
+          <thead><tr><th>What is measured</th><th>Unit</th><th>Symbol in a formula</th></tr></thead>
+          <tbody>
+            <tr><td>Current</td><td>Ampere (A)</td><td>I</td></tr>
+            <tr><td>Voltage (force of current)</td><td>Volt (V)</td><td>E</td></tr>
+            <tr><td>Resistance</td><td>Ohm (&Omega;)</td><td>R</td></tr>
+            <tr><td>Power</td><td>Watt (W)</td><td>P</td></tr>
+          </tbody>
+        </table></div>
+
+        <h4>Voltage</h4>
+        <p>A charge can do work by pulling or pushing another charge. That ability is called potential. When two charges are different, there is a difference in potential between them. That difference is called potential difference, electromotive force (emf), or voltage. The letter for it is E.</p>
+        <p>One volt is the potential difference between two points when one coulomb of charge does one joule of work. The joule is the unit of work.</p>
+        <p>A battery is one way to make voltage. It uses a chemical reaction to build a big reserve of free electrons at the negative (&minus;) terminal. The positive (+) terminal has had electrons removed, so it will accept electrons if there is a path for them. A battery that can no longer do this is dead. Batteries are rated in volts, and large ones are also rated in ampere-hours, where one ampere-hour is one amp supplied for one hour.</p>
+
+        <h4>Resistance</h4>
+        <p>Resistance is the opposition to current flow. All conductors have very low resistance and insulators have very high resistance. A resistor is a part made to have a known, specified resistance. Resistance is measured in ohms, shown by the symbol &Omega;, and the letter for it in a formula is R. One ohm is the resistance that limits the current to one amp when one volt is applied.</p>
+        <p>For a wire, resistance depends on a few things.</p>
+        <div class="scroll"><table>
+          <thead><tr><th>What changes</th><th>Effect on the wire's resistance</th></tr></thead>
+          <tbody>
+            <tr><td>A longer wire</td><td>More resistance</td></tr>
+            <tr><td>A bigger cross-sectional area (a thicker wire)</td><td>Less resistance</td></tr>
+            <tr><td>The material</td><td>Each material has its own. Copper building wire has less resistance than aluminum.</td></tr>
+            <tr><td>The temperature</td><td>Resistance changes with temperature</td></tr>
+            <tr><td>The type of power</td><td>No effect</td></tr>
+          </tbody>
+        </table></div>
+
+        <h4>Ohm's law</h4>
+        <p>Ohm's law links current, voltage and resistance. If you know any two, you can find the third. There are three ways to write it, and each solves for a different value.</p>
+        <ul>
+          <li><b>Current:</b> I = E &divide; R</li>
+          <li><b>Resistance:</b> R = E &divide; I</li>
+          <li><b>Voltage:</b> E = I &times; R</li>
+        </ul>
+        <p>In a DC circuit, current goes up when voltage goes up, and current goes down when resistance goes up. The Ohm's law circle is a memory trick: cover the value you want to find, and the other two show how to work it out.</p>
+        <div class="scroll"><table>
+          <thead><tr><th>You know</th><th>You want</th><th>Work</th><th>Answer</th></tr></thead>
+          <tbody>
+            <tr><td>E = 120V, R = 30&Omega;</td><td>I</td><td>120 &divide; 30</td><td>4A</td></tr>
+            <tr><td>E = 240V, I = 20A</td><td>R</td><td>240 &divide; 20</td><td>12&Omega;</td></tr>
+            <tr><td>I = 15A, R = 8&Omega;</td><td>E</td><td>15 &times; 8</td><td>120V</td></tr>
+            <tr><td>I = 30A, R = 4&Omega;</td><td>E</td><td>30 &times; 4</td><td>120V</td></tr>
+          </tbody>
+        </table></div>
+        <div class="case"><b>Key idea</b>Cover the one you want with your thumb. If E is on top, with I and R side by side below it, then E &divide; R finds I, E &divide; I finds R, and I &times; R finds E.</div>
+      </div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">B</span><h3>Study review points</h3></div>
+      <ul class="points" data-points="2"></ul>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">C</span><h3>Trade-term cards</h3></div>
+      <div class="deck" data-cards="2"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">D</span><h3>Ticket out the door</h3></div>
+      <div class="ticket" data-quiz="2"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">E</span><h3>Talk it over</h3></div>
+      <div class="talk" data-talk="2"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">F</span><h3>Practice questions</h3><span class="time">about 7 min</span></div>
+      <div data-practice="2"></div>
+    </div>
+  </section>
+
+  <!-- SECTION 3 -->
+  <section class="sec" id="s3" aria-labelledby="s3-h">
+    <div class="sec-head">
+      <span class="eyebrow">Module Section 3 of 3</span>
+      <h2 id="s3-h">Reading Schematic Diagrams</h2>
+      <p class="obj">By the end of this section your student can read a resistor&rsquo;s color bands, tell a series circuit from a parallel circuit, say which meter measures what and how it connects, and calculate power.</p>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">A</span><h3>Read it together</h3><span class="time">about 15 min</span></div>
+      <div class="prose">
+        <p class="big">A schematic is the shorthand electricians use to draw a circuit. Once you can read the symbols and tell a series circuit from a parallel one, you can follow the circuit and pick the right meter to test it.</p>
+
+        <h4>Schematics</h4>
+        <p>A schematic uses graphic symbols to show the parts of a circuit and how they connect. A simple circuit might show a battery, a switch and a lamp, joined by connecting wire. The textbook also has a chart of standard symbols for common parts. Many of them are shaped like what they stand for. For example, a battery shows + and &minus; marks, a resistor has a jagged line, a transformer shows two coils, and a circuit breaker shows a line with a break in it.</p>
+
+        <h4>Resistors</h4>
+        <p>A resistor gives a circuit a particular resistance. With a known current and resistance, you can predict the change in voltage across it, called the voltage drop. In a 10V circuit with one resistor, the whole 10V drops across that resistor.</p>
+        <p>There are two common types. A wire-wound resistor is nickel wire wound on a ceramic tube and covered with porcelain. A carbon composition resistor is molded from carbon and insulating material. Carbon composition resistors are smaller and cheaper, but the wire-wound type is tougher and can handle much more power. Fixed resistors have set values. Variable resistors, such as the rheostat and the potentiometer, can be adjusted.</p>
+        <p>Small carbon resistors use a color code instead of printed numbers.</p>
+        <ul>
+          <li><b>Bands 1 and 2</b> are the first two digits.</li>
+          <li><b>Band 3</b> is the multiplier, which is the number of zeros. Gold means &times; 0.1 and silver means &times; 0.01.</li>
+          <li><b>Band 4</b> is the tolerance. Gold is &plusmn;5% and silver is &plusmn;10%. No fourth band means &plusmn;20%.</li>
+        </ul>
+        <div class="scroll"><table>
+          <thead><tr><th>Color</th><th>Digit</th><th>Color</th><th>Digit</th></tr></thead>
+          <tbody>
+            <tr><td>Black</td><td>0</td><td>Violet</td><td>7</td></tr>
+            <tr><td>Brown</td><td>1</td><td>Gray</td><td>8</td></tr>
+            <tr><td>Red</td><td>2</td><td>White</td><td>9</td></tr>
+            <tr><td>Orange</td><td>3</td><td>Gold</td><td>&times; 0.1, or &plusmn;5%</td></tr>
+            <tr><td>Yellow</td><td>4</td><td>Silver</td><td>&times; 0.01, or &plusmn;10%</td></tr>
+            <tr><td>Green</td><td>5</td><td></td><td></td></tr>
+            <tr><td>Blue</td><td>6</td><td></td><td></td></tr>
+          </tbody>
+        </table></div>
+        <div class="case"><b>Worked example</b>Brown, black, red, gold. Brown is 1, black is 0, red means two zeros, so the value is 1,000&Omega;. Gold means &plusmn;5%, so the real value can be anywhere from 950&Omega; to 1,050&Omega;.</div>
+
+        <h4>Series circuits</h4>
+        <p>A series circuit has only one path for current. The total resistance is the sum of the individual resistances. In a 12V series circuit with two 30&Omega; loads, the total is 60&Omega;, so the current is 12 &divide; 60 = 0.2A. The current is the same through every load. The voltage drops across the loads add up to the voltage applied to the circuit.</p>
+        <p>If a series circuit opens at any point, no current flows anywhere in it. If you have five bulbs in series and one blows, all five go out. Loads wired in series are uncommon.</p>
+
+        <h4>Parallel circuits</h4>
+        <p>In a parallel circuit, each load connects directly to the voltage source. Every load gets the same voltage, and the current divides between the loads. The total current is the sum of the individual currents. The total resistance is less than the smallest individual resistance.</p>
+        <p>Take a 12V parallel circuit with three 30&Omega; loads. Each load draws 12 &divide; 30 = 0.4A, so the total is 1.2A. The total resistance is 12 &divide; 1.2 = 10&Omega;. For two resistors in parallel, you can also use R<sub>T</sub> = (R1 &times; R2) &divide; (R1 + R2). For 10&Omega; and 15&Omega;, that is 150 &divide; 25 = 6&Omega;.</p>
+        <p>Unlike series circuits, parallel circuits keep working when one branch opens. Household circuits are wired in parallel, and almost every load circuit you will meet is parallel.</p>
+        <div class="scroll"><table>
+          <thead><tr><th></th><th>Series</th><th>Parallel</th></tr></thead>
+          <tbody>
+            <tr><td>Paths for current</td><td>One</td><td>One for each load</td></tr>
+            <tr><td>Current</td><td>Same through every load</td><td>Divides; the currents add up</td></tr>
+            <tr><td>Voltage</td><td>Drops add up to the applied voltage</td><td>Same across every load</td></tr>
+            <tr><td>Total resistance</td><td>Add the resistances</td><td>Less than the smallest resistance</td></tr>
+            <tr><td>If one load opens</td><td>Everything stops</td><td>The others keep working</td></tr>
+          </tbody>
+        </table></div>
+
+        <h4>Electrical meters</h4>
+        <p>Electricians use test meters all the time. The most common is the volt-ohm-milliammeter (VOM), also called a multimeter. An analog meter has a pointer that moves in proportion to what is being measured, and the user reads a scale. A digital meter shows the number on a screen. Only qualified people may use these meters, so follow your company's safety policy.</p>
+        <div class="scroll"><table>
+          <thead><tr><th>Meter</th><th>Measures</th><th>How it connects</th><th>Good to know</th></tr></thead>
+          <tbody>
+            <tr><td>Clamp-on ammeter</td><td>Current</td><td>Jaws around a single conductor</td><td>The circuit does not have to be opened</td></tr>
+            <tr><td>In-line ammeter</td><td>Current</td><td>In series, so the circuit must be opened</td><td>Less common than the clamp-on type</td></tr>
+            <tr><td>Voltmeter</td><td>Voltage</td><td>In parallel, across the part being tested</td><td>Voltage must be checked with power applied</td></tr>
+            <tr><td>Ohmmeter</td><td>Resistance and continuity</td><td>Across the part being tested</td><td>Always used with the system power shut off</td></tr>
+          </tbody>
+        </table></div>
+
+        <h4>Measuring current</h4>
+        <ul>
+          <li>Put the clamp-on ammeter's jaws around one conductor at a time. Clamping two conductors at once gives a wrong reading.</li>
+          <li>Dirty or misaligned jaws give wrong readings.</li>
+          <li>Meters are precision tools, so handle them carefully.</li>
+          <li>On an analog meter, start at the highest range and work down. Too much current for the selected scale can damage it.</li>
+        </ul>
+
+        <h4>Measuring resistance and checking continuity</h4>
+        <p>An ohmmeter has its own battery inside, so resistance is always measured with the system power shut off. An ohmmeter can measure the resistance of a load, such as motor windings, but more often it is used to check continuity. A wire or a closed switch has almost no resistance, so the meter reads zero. The circuit has continuity. If something is open, there is no path, and the meter shows infinite resistance.</p>
+        <p>A continuity tester is a simple device with a battery and a buzzer or light. It can test a wire, and it can help identify wires inside a conduit. Touch the probe to the wires one at a time until it sounds, then tag both ends of that wire. Note that it only shows there is a path. It does not tell you the resistance value.</p>
+        <div class="case"><b>Safety</b>A voltage tester shows whether voltage is present, and it can be used as a safety check before touching any terminals or conductors. Resistance is measured with the power off, and voltage is checked with the power on. Never mix those up.</div>
+
+        <h4>Calculating electrical power</h4>
+        <p>Power is the rate of doing work, or how fast energy is being used. It is measured in watts (W). One watt is one joule per second, which is the power used when one amp flows through one volt. So power equals current times voltage.</p>
+        <ul>
+          <li><b>Power:</b> P = I &times; E</li>
+          <li><b>Voltage:</b> E = P &divide; I</li>
+          <li><b>Current:</b> I = P &divide; E</li>
+        </ul>
+        <div class="scroll"><table>
+          <thead><tr><th>You know</th><th>You want</th><th>Work</th><th>Answer</th></tr></thead>
+          <tbody>
+            <tr><td>E = 100V, I = 2A</td><td>P</td><td>2 &times; 100</td><td>200W</td></tr>
+            <tr><td>P = 1,200W, I = 5A</td><td>E</td><td>1,200 &divide; 5</td><td>240V</td></tr>
+            <tr><td>P = 600W, E = 120V</td><td>I</td><td>600 &divide; 120</td><td>5A</td></tr>
+            <tr><td>I = 20A, E = 120V</td><td>P</td><td>20 &times; 120</td><td>2,400W, or 2.4kW</td></tr>
+          </tbody>
+        </table></div>
+        <p>The prefix kilo means one thousand and mega means one million. So 1,000W is 1kW, and 1,000,000W is 1MW. One horsepower is 746 watts. Large amounts of energy are measured in kilowatt-hours (kWh), which is kilowatts times hours. A 0.3kW light bulb running for 4 hours uses 0.3 &times; 4 = 1.2kWh.</p>
+
+        <h4>The power rating of a resistor</h4>
+        <p>Too much current heats a resistor. That heating is called I&sup2;R heating, and it is power lost as heat: P = I&sup2; &times; R. Every resistor has a wattage rating that says how much of this heating it can take. A 1W resistor will burn out if the circuit makes it give off heat faster than 1W. If you know the rating, you can find the most current it can carry: I = &radic;(P &divide; R). A 4W resistor of 1&Omega; can carry at most &radic;(4 &divide; 1) = 2A.</p>
+        <div class="case"><b>Key idea</b>Ratings assume the resistor sits in open air at 104&deg;F (40&deg;C) or cooler. In a small, crowded space, or somewhere hotter, a resistor can burn out before it reaches its rating.</div>
+      </div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">B</span><h3>Study review points</h3></div>
+      <ul class="points" data-points="3"></ul>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">C</span><h3>Trade-term cards</h3></div>
+      <div class="deck" data-cards="3"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">D</span><h3>Ticket out the door</h3></div>
+      <div class="ticket" data-quiz="3"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">E</span><h3>Talk it over</h3></div>
+      <div class="talk" data-talk="3"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">F</span><h3>Practice questions</h3><span class="time">about 8 min</span></div>
+      <div data-practice="3"></div>
+    </div>
+  </section>
+
+  <section class="final" id="review" aria-labelledby="fin-h">
+    <span class="eyebrow">After all three sections</span>
+    <h2 id="fin-h">Can your student explain it?</h2>
+    <p class="lead">The goal is not perfect wording. The goal is accurate understanding and good judgment. Tick each one when your student can explain it without looking at the page.</p>
+    <ul class="points" id="final-points"></ul>
+    <p class="note">Trade terms are placed with the section where each is taught, so a few official terms sit in a different section than they are listed in the textbook. Cards marked "Key term" are important words from the module that are not on its official trade-term list. The practice questions come from the handbook's Section Review and Module Review, and the answers follow the publisher's answer key. The textbook-style versions are written in the book's style and vocabulary, not copied word for word, so check the handbook itself for the exact wording. This guide is a plain-language companion, not a copy of the textbook. For real work, use the current standards, your employer's procedures and your instructor's directions. Draft for instructor review.</p>
+  </section>
+
+</div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><strong>Mr. Ellis CTE</strong> · East Valley Institute of Technology (EVIT), Mesa, Arizona · Your Future, Your Way</p>
+    <p>Based on NCCER Electrical Level 1 (10th edition), Module 26103-20, Introduction to Electrical Circuits.</p>
+    <p>Aim for perfection, take what you get.</p>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var SEC = { 1: `Atomic Structure and Electricity`, 2: `Electrical Units of Measurement`, 3: `Reading Schematic Diagrams` };
+
+  var POINTS = {
+    1: [
+      `<b>A circuit</b> needs at least a voltage source, a load and conductors (wires). Most circuits also have a switch to start and stop the current.`,
+      `<b>Voltage</b> is electrical pressure and makes <b>current</b> flow in a closed circuit. <b>Resistance</b> limits how much flows. <b>Power</b> is how fast energy is used, in watts.`,
+      `<b>An atom</b> has a nucleus with <b>protons</b> (positive) and <b>neutrons</b> (no charge). <b>Electrons</b> (negative) orbit the nucleus. The number of protons decides which element it is.`,
+      `<b>Like charges repel and unlike charges attract.</b> This is the Law of Electrical Charges. A proton repels a proton, an electron repels an electron, and a proton attracts an electron.`,
+      `<b>The valence shell</b> is the outer shell. Valence electrons break loose most easily, so they matter most for electricity.`,
+      `<b>Conductors</b> usually have three or fewer valence electrons (copper, silver). <b>Insulators</b> usually have five or more (porcelain, plastic). <b>Semiconductors</b> have four (silicon, germanium).`,
+      `<b>Magnetism</b> is how motors, relays, transformers and solenoids work. Opposite poles attract and like poles repel. Current through a wire coiled around iron makes an <b>electromagnet</b>.`,
+      `<b>Power distribution:</b> generating plants make the electricity, and transformers step the voltage up for transmission and down again for use. Homes get about 240V, and a wall outlet gives about 120V.`
+    ],
+    2: [
+      `<b>Current (I)</b> is the flow of electrons, measured in <b>amperes</b> (amps, A). One amp is one coulomb of charge passing a point in one second.`,
+      `<b>A coulomb</b> is a quantity of charge, about 6.25 quintillion electrons. Charge is an amount. Current is how fast that charge moves.`,
+      `<b>Coulomb's law:</b> the force between two charges grows with the size of the charges and weakens as they move farther apart. Like charges repel and unlike charges attract.`,
+      `<b>Electron flow theory</b> (negative to positive) is what electricians and this curriculum use. Many electronics engineers use <b>conventional flow</b> (positive to negative). Know which one you are using.`,
+      `<b>Voltage (E)</b> is the difference in electrical potential between two points. It is also called electromotive force (emf). One volt means one coulomb does one joule of work.`,
+      `<b>A battery</b> chemically builds up free electrons at its negative (&minus;) terminal. It is rated in volts, and large batteries are also rated in ampere-hours.`,
+      `<b>Resistance (R)</b> is opposition to current flow, measured in <b>ohms</b> (&Omega;). Conductors have very low resistance and insulators have very high resistance.`,
+      `<b>Wire resistance</b> goes up with length, goes down with a bigger cross-sectional area, depends on the material and changes with temperature. The type of power makes no difference.`,
+      `<b>Ohm's law:</b> I = E &divide; R, R = E &divide; I and E = I &times; R. If you know any two values, you can find the third.`
+    ],
+    3: [
+      `<b>A schematic</b> is a drawing that uses symbols to show the parts of a circuit and how they connect. It is the shorthand way to draw a circuit.`,
+      `<b>A resistor</b> gives a circuit a known resistance. The change in voltage across it is its <b>voltage drop</b>. Wire-wound resistors are tougher and handle more power. Carbon composition resistors are smaller and cheaper.`,
+      `<b>Color bands:</b> bands 1 and 2 are digits, band 3 is the multiplier and band 4 is the tolerance. Gold is &plusmn;5%, silver is &plusmn;10%, and no fourth band means &plusmn;20%.`,
+      `<b>A series circuit</b> has one path for current. Add the resistances for the total. The current is the same everywhere, and the voltage drops add up to the applied voltage. If it opens anywhere, everything stops.`,
+      `<b>A parallel circuit</b> gives each load its own path to the source. Each load gets the same voltage, the currents add up, and the total resistance is less than the smallest resistance. Household circuits are parallel.`,
+      `<b>A clamp-on ammeter</b> measures current with its jaws around one conductor at a time. An in-line ammeter goes in series, so the circuit must be opened. On an analog meter, start at the highest range and work down.`,
+      `<b>A voltmeter</b> goes in parallel (across) the part being tested, with power applied. <b>An ohmmeter</b> measures resistance and checks continuity with the power shut off.`,
+      `<b>Power</b> is P = I &times; E, measured in watts. Kilo means 1,000 and mega means 1,000,000. Energy in kilowatt-hours is kilowatts times hours.`,
+      `<b>Resistor power rating:</b> too much current causes I&sup2;R heating that can burn a resistor out. The most current it can carry is the square root of power divided by resistance. Heat and crowded spaces can cause burnout sooner.`
+    ]
+  };
+
+  // k = "o" for an official NCCER trade term, "k" for a key term from the module that is not on the official list.
+  var CARDS = {
+    1: [
+      { k: "o", t: `Matter`, plain: `Anything that has weight and takes up space. Everything around you, including air, is matter.`, book: `Any substance that has mass and occupies space.`, ask: `Name three things in the room that are matter.` },
+      { k: "o", t: `Atoms`, plain: `The smallest pieces an element can be split into and still be that element.`, book: `The smallest particles an element can be divided into while keeping the properties of that element.`, ask: `What three kinds of particles make up an atom?` },
+      { k: "o", t: `Nucleus`, plain: `The center of an atom, where the protons and neutrons are.`, book: `The center of an atom, which holds its protons and neutrons.`, ask: `Which particles stay in the nucleus, and which ones travel around it?` },
+      { k: "o", t: `Proton`, plain: `The smallest positively charged piece of an atom. It sits in the nucleus.`, book: `The smallest positively charged particle of an atom, found in the nucleus.`, ask: `What does a proton do to another proton?` },
+      { k: "o", t: `Neutrons`, plain: `Particles in the nucleus that have no charge at all.`, book: `Electrically neutral particles in the nucleus, with about the same mass as a proton.`, ask: `Why do neutrons not matter much to how electricity behaves?` },
+      { k: "o", t: `Electrons`, plain: `Tiny negatively charged particles that circle the nucleus.`, book: `Negatively charged particles that orbit the nucleus of an atom.`, ask: `What happens when one electron gets close to another electron?` },
+      { k: "o", t: `Charge`, plain: `An amount of electricity. It can be positive or negative.`, book: `A quantity of electricity that is either positive or negative.`, ask: `What would happen if you pushed two positive charges close together?` },
+      { k: "o", t: `Valence shell`, plain: `The outermost ring of electrons around an atom.`, book: `The outer ring of electrons that orbit the nucleus of an atom.`, ask: `Why do the outer electrons matter more than the inner ones?` },
+      { k: "o", t: `Conductors`, plain: `Materials that let electricity flow through easily, like copper and silver.`, book: `Materials in which it is fairly easy to keep an electric current going.`, ask: `Why are electrical wires made of copper?` },
+      { k: "o", t: `Insulator`, plain: `A material that makes it hard for electricity to flow, like porcelain or plastic.`, book: `A material through which it is difficult to conduct current.`, ask: `Where do you see an insulator on a power cord?` },
+      { k: "o", t: `Circuit`, plain: `A complete path that electricity can travel around.`, book: `A complete path for current to flow.`, ask: `What happens to a flashlight if the circuit is broken?` },
+      { k: "o", t: `Relays`, plain: `Switches worked by a small electromagnet. A relay has a coil and one or more sets of contacts.`, book: `Electromechanical devices made of a coil and one or more sets of contacts, used for switching.`, ask: `Why might you want one circuit to switch another one on and off?` },
+      { k: "o", t: `Solenoids`, plain: `Coils of wire that act like a magnet to move something, such as a valve.`, book: `Electromagnetic coils used to control a mechanical device such as a valve.`, ask: `Where might you find a solenoid at home or in a car?` },
+      { k: "o", t: `Transformers`, plain: `Devices that raise or lower voltage. They are made of coils of wire wrapped around a core.`, book: `Devices made of one or more coils of wire around a common core, commonly used to step voltage up or down.`, ask: `Where have you seen a transformer on a utility pole?` },
+      { k: "k", t: `Ion`, plain: `An atom that has gained or lost electrons, so it carries a charge.`, book: `A charged particle formed when an atom becomes positively or negatively charged.`, ask: `If an atom loses an electron, is it positive or negative?` },
+      { k: "k", t: `Semiconductor`, plain: `A material that is not a good conductor and not a good insulator. Silicon and germanium are examples.`, book: `An element whose electrical behavior falls between that of conductors and insulators.`, ask: `How many valence electrons does a typical semiconductor have?` },
+      { k: "k", t: `Electromagnet`, plain: `A magnet you make by running current through a wire coiled around iron.`, book: `A magnet produced when current flows through a conductor coiled around an iron bar.`, ask: `What is one device that depends on an electromagnet?` }
+    ],
+    2: [
+      { k: "o", t: `Current`, plain: `The flow of electrons through a circuit.`, book: `The movement, or flow, of electrons in a circuit, measured in amperes.`, ask: `What does a circuit need before current can flow?` },
+      { k: "o", t: `Amperes (A)`, plain: `The unit for current. People also say amps.`, book: `The basic unit for measuring electrical current, shown by the letter A.`, ask: `Which letter stands for current in a formula?` },
+      { k: "o", t: `Coulomb`, plain: `A big counting unit for electric charge. One coulomb is about 6.25 quintillion electrons.`, book: `A unit of electrical charge equal to about 6.25 quintillion electrons.`, ask: `How many coulombs per second make one amp?` },
+      { k: "o", t: `Voltage`, plain: `The push that makes current flow. Think of it as electrical pressure.`, book: `The driving force that makes current flow in a circuit. It is also called electromotive force or potential difference.`, ask: `Which letter does Ohm's law use for voltage?` },
+      { k: "o", t: `Volts (V)`, plain: `The unit for voltage.`, book: `The unit for measuring voltage, shown by the letter V. One volt is the push needed to drive one amp through one ohm.`, ask: `About what voltage comes out of a wall outlet at home?` },
+      { k: "o", t: `Battery`, plain: `A voltage source made of two or more cells that turns chemical energy into electrical energy.`, book: `A DC voltage source of two or more cells that changes chemical energy into electrical energy.`, ask: `What does a battery build up at its negative terminal?` },
+      { k: "o", t: `Resistance`, plain: `How much a material fights the flow of current.`, book: `An electrical property that opposes the flow of current, measured in ohms.`, ask: `Which has more resistance, a conductor or an insulator?` },
+      { k: "o", t: `Ohms (Ω)`, plain: `The unit for resistance. The symbol looks like a horseshoe: Ω.`, book: `The basic unit for measuring resistance, shown by the symbol Ω.`, ask: `Which letter does Ohm's law use for resistance?` },
+      { k: "o", t: `Joule (J)`, plain: `The unit for work or energy. One joule is the work done when one coulomb moves through one volt.`, book: `A unit for measuring work. One joule is equal to one newton-meter.`, ask: `One joule of work every second is called what?` },
+      { k: "o", t: `Ohm's law`, plain: `The rule that links current, voltage and resistance. Current equals voltage divided by resistance.`, book: `A statement of how current, voltage and resistance relate: I = E ÷ R.`, ask: `If the voltage goes up and the resistance stays the same, what happens to the current?` },
+      { k: "k", t: `Potential difference`, plain: `The difference in electrical charge between two points. It is what pushes current. It is the same thing as voltage.`, book: `The difference in potential between two points, also called voltage or electromotive force (emf).`, ask: `Why does current need a potential difference in order to move?` },
+      { k: "k", t: `Electron flow theory`, plain: `The way electricians describe current: moving from negative to positive.`, book: `The theory that describes current flowing from negative to positive. Most electricians and this curriculum use it.`, ask: `Which way do many electronics engineers describe it, and why is it good to know both?` }
+    ],
+    3: [
+      { k: "o", t: `Resistors`, plain: `Parts that add a known amount of resistance to a circuit.`, book: `Devices in a circuit that resist the flow of electrons.`, ask: `Why would a circuit need a part that holds current back?` },
+      { k: "o", t: `Schematic`, plain: `A simple drawing that uses symbols for the parts of a circuit.`, book: `A type of drawing in which symbols stand for the components of a system.`, ask: `Why is a schematic easier to read than a photo of the circuit?` },
+      { k: "o", t: `Series circuit`, plain: `A circuit with only one path for current.`, book: `A circuit with only one route for current flow.`, ask: `What happens to the other bulbs if one bulb in a series string blows?` },
+      { k: "o", t: `Voltage drop`, plain: `The amount of voltage a part uses up as current moves through it.`, book: `The change in voltage across a component, caused by the current through it and the resistance it offers.`, ask: `In a 10V circuit with one resistor, how much voltage drops across it?` },
+      { k: "o", t: `Ammeter`, plain: `A meter that measures current.`, book: `An instrument for measuring electrical current.`, ask: `Which unit does an ammeter read in?` },
+      { k: "o", t: `Voltmeter`, plain: `A meter that measures voltage.`, book: `An instrument for measuring voltage.`, ask: `How is a voltmeter connected to the part being tested?` },
+      { k: "o", t: `Ohmmeter`, plain: `A meter that measures resistance.`, book: `An instrument used for measuring resistance.`, ask: `Why must the power be off when you use an ohmmeter?` },
+      { k: "o", t: `Power`, plain: `How fast energy is being used. It is measured in watts.`, book: `The rate of doing work, or the rate at which energy is used or given off. Electrical power is measured in watts.`, ask: `Which two values do you multiply to get power?` },
+      { k: "o", t: `Watts (W)`, plain: `The unit for power.`, book: `The basic unit for measuring electrical power, shown by the letter W.`, ask: `How many watts does 5 amps at 120 volts use?` },
+      { k: "o", t: `Kilo`, plain: `A prefix that means one thousand.`, book: `A prefix meaning one thousand. For example, one kilowatt is one thousand watts.`, ask: `How many watts are in 2 kilowatts?` },
+      { k: "o", t: `Mega`, plain: `A prefix that means one million.`, book: `A prefix meaning one million. For example, one megawatt is one million watts.`, ask: `How many kilowatts make one megawatt?` },
+      { k: "k", t: `Parallel circuit`, plain: `A circuit where each load has its own direct path to the power source.`, book: `A circuit in which each load connects directly to the voltage source, so each load gets the same voltage and the current divides.`, ask: `Why do the lights in your home keep working when one bulb burns out?` },
+      { k: "k", t: `Tolerance`, plain: `How far a resistor's real value can be from the value its color bands say.`, book: `The allowed variation of a resistor from its stated value, shown by the fourth color band.`, ask: `A 1,000Ω resistor with a gold band can be anywhere in what range?` },
+      { k: "k", t: `Clamp-on ammeter`, plain: `A meter with jaws that close around one wire to read the current without opening the circuit.`, book: `A meter whose jaws close around a single conductor and read the current from its magnetic field.`, ask: `Why must the jaws close around only one conductor?` },
+      { k: "k", t: `Continuity`, plain: `A complete, unbroken path for current.`, book: `The condition of a circuit that is complete and continuous, so current can flow.`, ask: `What would an ohmmeter show on a wire that is broken?` },
+      { k: "k", t: `Multimeter`, plain: `A meter that can measure voltage, resistance and usually current. It is also called a VOM.`, book: `A volt-ohm-milliammeter (VOM) that usually measures voltage, resistance and current.`, ask: `What are the two kinds of display on a multimeter?` },
+      { k: "k", t: `Kilowatt-hour`, plain: `A unit of energy: how many kilowatts you use, times how many hours you use them.`, book: `A common unit for large amounts of electrical energy, equal to kilowatts multiplied by hours.`, ask: `How many kilowatt-hours does a 0.3kW light bulb use in 4 hours?` }
+    ]
+  };
+
+  // a = index of the right option
+  var QUIZ = {
+    1: [
+      { q: `Which particle in an atom has a positive charge?`, o: [`Electron`, `Proton`, `Neutron`], a: 1, why: `A proton carries the smallest unit of positive charge. Electrons are negative and neutrons have no charge.` },
+      { q: `True or false: two electrons attract each other.`, o: [`True`, `False`], a: 1, why: `Like charges repel. Two electrons push apart.` },
+      { q: `Copper is a good conductor. Which describes the outer shell of a typical conductor?`, o: [`Five or more valence electrons`, `Three or fewer valence electrons`, `Exactly four valence electrons`], a: 1, why: `Conductors usually have three or fewer valence electrons, so those electrons break loose easily.` },
+      { q: `Which of these is a semiconductor?`, o: [`Porcelain`, `Copper`, `Silicon`], a: 2, why: `Silicon and germanium are semiconductors. Porcelain is an insulator and copper is a conductor.` },
+      { q: `Which of these depends on magnetism to work?`, o: [`A relay`, `A plain copper wire`, `A porcelain insulator`], a: 0, why: `Motors, relays, transformers and solenoids all rely on magnetism.` },
+      { q: `What do transformers do on the way from a power plant to your home?`, o: [`Make electricity from steam`, `Step voltage up or down`, `Store electricity until it is needed`], a: 1, why: `Transformers step voltage up for transmission and back down for use. Turbines are the machines that make the electricity.` },
+      { q: `Electric stoves and clothes dryers usually need:`, o: [`60V`, `120V`, `240V`], a: 2, why: `Stoves, dryers, water heaters and central air usually need the full 240V.` }
+    ],
+    2: [
+      { q: `One ampere is how many coulombs passing a point each second?`, o: [`1`, `10`, `6.25`], a: 0, why: `One amp is one coulomb of charge passing a point in one second.` },
+      { q: `True or false: charge and current are the same thing.`, o: [`True`, `False`], a: 1, why: `Charge is an amount of electricity. Current is the rate at which charge moves.` },
+      { q: `In electron flow theory, current flows from:`, o: [`Positive to negative`, `Negative to positive`, `Back and forth`], a: 1, why: `Electron flow theory describes current going from negative to positive. This curriculum uses it.` },
+      { q: `One volt is the potential difference when one coulomb does how much work?`, o: [`One joule`, `One watt`, `One ohm`], a: 0, why: `One volt means one coulomb of charge does one joule of work.` },
+      { q: `Two copper wires carry the same current. Which has the least resistance?`, o: [`A long, thin wire`, `A short, thick wire`, `A long, thick wire`], a: 1, why: `Resistance goes up with length and down with a bigger cross-sectional area. Short and thick is lowest.` },
+      { q: `Find I when E = 120V and R = 30Ω.`, o: [`4A`, `40A`, `3,600A`], a: 0, why: `I = E ÷ R = 120 ÷ 30 = 4A.` },
+      { q: `Find R when E = 240V and I = 20A.`, o: [`12Ω`, `4,800Ω`, `220Ω`], a: 0, why: `R = E ÷ I = 240 ÷ 20 = 12Ω.` }
+    ],
+    3: [
+      { q: `A resistor has bands yellow, violet, brown, silver. What are its value and tolerance?`, o: [`470Ω ±10%`, `4,700Ω ±5%`, `47Ω ±10%`], a: 0, why: `Yellow is 4 and violet is 7. Brown means one zero, so 470Ω. Silver means ±10%.` },
+      { q: `A 12V series circuit has two 30Ω loads. What is the total resistance?`, o: [`15Ω`, `30Ω`, `60Ω`], a: 2, why: `In a series circuit you add the resistances: 30 + 30 = 60Ω.` },
+      { q: `True or false: in a series circuit, the other loads keep working when one load opens.`, o: [`True`, `False`], a: 1, why: `A series circuit has one path. If it opens anywhere, no current flows.` },
+      { q: `In a parallel circuit, the total resistance is:`, o: [`More than the biggest resistor`, `Less than the smallest resistor`, `All the resistors added together`], a: 1, why: `Each extra path gives current another way through, so the total drops below the smallest resistance.` },
+      { q: `Which meter do you use with the power shut off?`, o: [`Voltmeter`, `Clamp-on ammeter`, `Ohmmeter`], a: 2, why: `An ohmmeter has its own battery, so resistance is measured with the system power off.` },
+      { q: `How do you connect a voltmeter to the part you are testing?`, o: [`In series`, `In parallel, across it`, `Around one wire`], a: 1, why: `A voltmeter goes in parallel with (across) the part being tested.` },
+      { q: `Power equals:`, o: [`Current × voltage`, `Current ÷ voltage`, `Voltage ÷ resistance`], a: 0, why: `P = I × E. Current times voltage gives power in watts.` },
+      { q: `A 0.3kW light bulb runs for 4 hours. How many kilowatt-hours is that?`, o: [`1.2kWh`, `12kWh`, `0.12kWh`], a: 0, why: `Kilowatts times hours: 0.3 × 4 = 1.2kWh.` }
+    ]
+  };
+
+  var TALK = {
+    1: {
+      qs: [`Why do the electrons in the outer shell matter most when we talk about electricity?`, `If you only knew how to install something, but not why it works, what could go wrong when it stops working?`],
+      scn: [{
+        t: `"It's just a wire"`,
+        s: `A new trainee says, "Why do I need to learn about atoms? I just need to know how to pull wire." How would you answer?`,
+        g: [`Knowing why things work lets you troubleshoot instead of swapping parts until something fits.`, `A copper wire carries current easily because of how the electrons in its outer shell are arranged.`, `Understanding the theory means there is no limit on what you can figure out later.`]
+      }, {
+        t: `"Why 240?"`,
+        s: `A student notices that the plug for an electric dryer looks different from the plug on a toaster. What could explain it?`,
+        g: [`Small appliances such as a TV or a toaster plug into a wall outlet at about 120V.`, `Stoves, dryers, water heaters and central air usually need the full 240V.`, `Commercial buildings and factories may receive 208V to 575V, depending on how much power their machines use.`]
+      }],
+      parent: `Ask your student to name the three particles in an atom, say what charge each one has, and tell you which two attract each other.`
+    },
+    2: {
+      qs: [`Why do you need to know both the voltage and the resistance to tell how much current will flow?`, `What is the difference between charge and current?`],
+      scn: [{
+        t: `"Plug it in anywhere"`,
+        s: `A 120V hair dryer is plugged into a 240V outlet on a trip, with no converter. Using what you know about Ohm's law, what do you expect to happen?`,
+        g: [`With the same resistance, twice the voltage means twice the current (I = E ÷ R).`, `More current means a lot more heat in the dryer's parts.`, `Too much heat can burn out the dryer. Always match a device to the voltage it is made for.`]
+      }, {
+        t: `"Which wire?"`,
+        s: `Two copper wires run to the same load. One is short and thick, and one is long and thin. Which one resists current more, and why?`,
+        g: [`The longer, thinner wire has more resistance.`, `Resistance goes up with length and down with a bigger cross-sectional area.`, `The material and the temperature also change a wire's resistance.`]
+      }],
+      parent: `Draw the Ohm's law circle on scrap paper. Cover E, then I, then R, and ask your student to say each formula. Then try one: 120V and 4A. What is the resistance?`
+    },
+    3: {
+      qs: [`Why do the lights in a house keep working when one bulb burns out?`, `Why does an ohmmeter need the power to be off?`],
+      scn: [{
+        t: `"Why did they all go out?"`,
+        s: `A string of five bulbs goes dark when one bulb blows. What kind of circuit is it, and why did the others go out?`,
+        g: [`It is a series circuit, with only one path for current.`, `When a series circuit opens at any point, no current flows anywhere in it.`, `Household circuits are parallel, so each load keeps its own path.`]
+      }, {
+        t: `"Which meter?"`,
+        s: `You need to know how much current a wire is carrying, and you do not want to open the circuit. Which tool fits, and how do you use it?`,
+        g: [`A clamp-on ammeter reads current without opening the circuit.`, `Put the jaws around one conductor only, never two at once.`, `Only qualified people may use these meters. Follow your company's safety policy.`]
+      }, {
+        t: `"Will it burn out?"`,
+        s: `A resistor is rated for 4 watts and has 1 ohm of resistance. The circuit sends 3 amps through it. Is that okay?`,
+        g: [`The most current it can carry is the square root of P ÷ R, which is the square root of 4, or 2 amps.`, `3 amps is more than 2 amps, so the resistor would give off more than its rating (3 × 3 × 1 = 9W) and could burn out.`, `Ratings assume open air at 104°F (40°C) or cooler. Crowded or hot spaces can cause burnout sooner.`]
+      }],
+      parent: `Point to a lamp or small appliance at home. Ask your student to find its watt rating and work out the current at 120V using I = P ÷ E.`
+    }
+  };
+
+  var FINAL = [
+    `I can name the three particles in an atom, tell which ones are charged, and say which charges attract.`,
+    `I can explain why valence electrons decide whether a material is a conductor or an insulator.`,
+    `I can say how electricity and magnetism work together in an electromagnet.`,
+    `I can describe how voltage is stepped up and down on the way from a power plant to a home.`,
+    `I can define current, voltage and resistance, and give the unit and letter for each.`,
+    `I can use Ohm's law to find current, voltage or resistance when I know the other two.`,
+    `I can read a resistor's color bands and its tolerance.`,
+    `I can tell a series circuit from a parallel circuit and say what happens when one load opens.`,
+    `I can say which meter measures what, how each one connects, and when the power must be off.`,
+    `I can calculate power, and explain why too much current can burn out a resistor.`
+  ];
+
+  // Practice pairs. pq/po = plain English. tq/to = textbook style. a = index of the right answer (matches the publisher's answer key).
+  // Both versions keep the same option order. br = [what you might say, what the textbook says].
+  var PRACTICE = {
+    1: [
+      { src: `Section Review · Q1 (1.1.0)`, a: 1,
+        pq: `Two particles with the same charge get close together. A proton pushes away which of these?`,
+        po: [`An electron`, `Another proton`, `A neutron`, `A negative ion`],
+        tq: `A proton exerts a repelling force on a(n) _____.`,
+        to: [`electron`, `proton`, `neutron`, `negative ion`],
+        why: `Like charges repel. A proton is positive, so it pushes away another proton. It attracts an electron.`,
+        br: [[`pushes away`, `exerts a repelling force on`]] },
+      { src: `Section Review · Q2 (1.2.0)`, a: 0,
+        pq: `An atom has seven electrons in its outer shell. What is it most likely to be?`,
+        po: [`An insulator`, `A conductor`, `A capacitor`, `A semiconductor`],
+        tq: `An atom whose valence shell holds seven electrons is most likely a(n) _____.`,
+        to: [`insulator`, `conductor`, `capacitor`, `semiconductor`],
+        why: `Insulators usually have five or more valence electrons. Conductors have three or fewer, and semiconductors have four.`,
+        br: [[`electrons in its outer shell`, `electrons in its valence shell`]] },
+      { src: `Section Review · Q3 (1.3.0)`, a: 2,
+        pq: `Current runs through a wire that is coiled around an iron bar. What do you get?`,
+        po: [`An insulator`, `A capacitor`, `An electromagnet`, `A turbine`],
+        tq: `When current passes through a conductor wrapped around an iron bar, the result is a(n) _____.`,
+        to: [`insulator`, `capacitor`, `electromagnet`, `turbine`],
+        why: `Current makes a magnetic field. Coiling the wire around iron makes an electromagnet, which is the basis for electric motors.`,
+        br: [[`a wire coiled around an iron bar`, `a conductor wrapped around an iron bar`]] },
+      { src: `Section Review · Q4 (1.4.0)`, a: 1,
+        pq: `About what voltage does a TV or a toaster use at the wall outlet?`,
+        po: [`60V`, `120V`, `180V`, `240V`],
+        tq: `A typical television or toaster operates on a voltage of _____.`,
+        to: [`60V`, `120V`, `180V`, `240V`],
+        why: `Small appliances plug into a wall outlet at about 120V. Stoves, dryers, water heaters and central air use 240V.`,
+        br: [[`uses at the wall outlet`, `operates on`]] },
+      { src: `Module Review · Q1 (1.0.0)`, a: 2,
+        pq: `What is the least a working circuit needs?`,
+        po: [`A voltage source, a load and an overcurrent device`, `An ammeter, a load and a voltage source`, `A voltage source, a load and wires`, `Wires, a switch and a load`],
+        tq: `At a minimum, an electrical circuit consists of a _____.`,
+        to: [`voltage source, load and overcurrent device`, `ammeter, load and voltage source`, `voltage source, load and conductors`, `conductor, switch and load`],
+        why: `A circuit needs a voltage source, a load and conductors (wires). A switch is common, but it is not part of the minimum.`,
+        br: [[`the least a circuit needs`, `at a minimum`], [`wires`, `conductors`]] },
+      { src: `Module Review · Q2 (1.1.1)`, a: 0,
+        pq: `Which particle in an atom carries a positive charge?`,
+        po: [`Proton`, `Neutron`, `Electron`, `Nucleus`],
+        tq: `A subatomic particle with a positive charge is called a(n) _____.`,
+        to: [`proton`, `neutron`, `electron`, `nucleus`],
+        why: `Protons are positive, electrons are negative and neutrons have no charge. The nucleus is the center of the atom, not a particle.`,
+        br: [[`a particle in an atom`, `a subatomic particle`]] },
+      { src: `Module Review · Q3 (1.2.0)`, a: 3,
+        pq: `Which of these materials is an insulator?`,
+        po: [`Gold`, `Copper`, `Silver`, `Porcelain`],
+        tq: `Which substance is classified as an insulator?`,
+        to: [`Gold`, `Copper`, `Silver`, `Porcelain`],
+        why: `Porcelain and plastic are examples of insulators. The other three are metals that conduct.`,
+        br: [[`a material that blocks electricity`, `an insulator`]] },
+      { src: `Module Review · Q4 (1.4.0)`, a: 1,
+        pq: `What voltage does the power company usually deliver to a home?`,
+        po: [`120V`, `240V`, `480V`, `208V`],
+        tq: `The voltage commonly supplied to a residence by the local utility is _____.`,
+        to: [`120V`, `240V`, `480V`, `208V`],
+        why: `A home usually gets about 240V. The wall outlet gives about 120V, and commercial buildings and factories get 208V to 575V.`,
+        br: [[`delivers to a home`, `supplied to a residence`], [`power company`, `local utility`]] }
+    ],
+    2: [
+      { src: `Section Review · Q1 (2.1.0)`, a: 1,
+        pq: `What can Coulomb's law help you find?`,
+        po: [`Which way current flows`, `The force between two charges`, `How fast electrons move`, `How much current is lost`],
+        tq: `Coulomb's law is used to calculate the _____.`,
+        to: [`direction of current flow`, `force between two charges`, `speed of electron movement`, `loss of current`],
+        why: `Coulomb's law gives the force between two charges. It depends on the size of the charges and how far apart they are.`,
+        br: [[`find`, `calculate`]] },
+      { src: `Section Review · Q2 (2.2.0)`, a: 0,
+        pq: `What does the negative terminal of a battery hold a big supply of?`,
+        po: [`Free electrons`, `Protons`, `Neutrons`, `Acid`],
+        tq: `The negative terminal of a battery holds a large reserve of free _____.`,
+        to: [`electrons`, `protons`, `neutrons`, `acid`],
+        why: `A battery chemically builds up free electrons at its negative terminal. The positive terminal will accept them when there is a path.`,
+        br: [[`a big supply`, `a large reserve`]] },
+      { src: `Section Review · Q3 (2.3.0)`, a: 1,
+        pq: `Which of these does NOT change how much resistance a wire has?`,
+        po: [`Temperature`, `The type of power`, `The length of the wire`, `What the wire is made of`],
+        tq: `Which of the following has no effect on the resistance of a wire?`,
+        to: [`Temperature`, `Type of power`, `Wire length`, `Material`],
+        why: `Length, material, thickness and temperature all affect wire resistance. The type of power does not.`,
+        br: [[`does NOT change`, `has no effect on`]] },
+      { src: `Section Review · Q4 (2.4.0)`, a: 2,
+        pq: `A circuit has 30 amps and 4 ohms. What is the voltage?`,
+        po: [`30V`, `60V`, `120V`, `180V`],
+        tq: `Determine the applied voltage when the current is 30A and the resistance is 4Ω.`,
+        to: [`30V`, `60V`, `120V`, `180V`],
+        why: `E = I × R = 30A × 4Ω = 120V.`,
+        br: [[`What is the voltage`, `Determine the applied voltage`]] },
+      { src: `Module Review · Q5 (2.1.0)`, a: 2,
+        pq: `What unit is used to measure current?`,
+        po: [`Joules`, `Coulombs`, `Amperes`, `Volt-amperes`],
+        tq: `Current is measured in units called _____.`,
+        to: [`joules`, `coulombs`, `amperes`, `volt-amperes`],
+        why: `Current is measured in amperes (amps). A coulomb measures charge and a joule measures work.`,
+        br: [[`What unit is used to measure`, `is measured in units called`]] },
+      { src: `Module Review · Q6 (2.2.0)`, a: 0,
+        pq: `What is a joule?`,
+        po: [`A unit of work`, `The difference in potential between two points`, `The gap between EMF and current`, `How fast current flows`],
+        tq: `Joules are _____.`,
+        to: [`units of work`, `the potential difference between two points`, `the difference between EMF and current`, `the rate of current flow`],
+        why: `A joule is the unit of work. One joule of work is done when one coulomb moves through one volt.`,
+        br: [[`a unit of work`, `units of work`]] },
+      { src: `Module Review · Q7 (2.2.0)`, a: 0,
+        pq: `Which of these is another name for voltage?`,
+        po: [`EMF`, `Coulomb`, `Current`, `Joule`],
+        tq: `Another term for voltage is _____.`,
+        to: [`emf`, `coulomb`, `current`, `joule`],
+        why: `Voltage is also called electromotive force (emf), potential difference or electrical pressure.`,
+        br: [[`another name for`, `another term for`], [`EMF`, `electromotive force`]] },
+      { src: `Module Review · Q8 (2.3.0)`, a: 1,
+        pq: `What do all conductors have, even good ones?`,
+        po: [`Current flow`, `Some resistance`, `EMF`, `Voltage potential`],
+        tq: `All conductors have _____.`,
+        to: [`current flow`, `some resistance`, `EMF`, `voltage potential`],
+        why: `Even good conductors have a little resistance. Insulators have a very high amount.`,
+        br: [[`even good ones`, `all conductors`]] },
+      { src: `Module Review · Q9 (2.4.0)`, a: 3,
+        pq: `How do you find the current in a circuit?`,
+        po: [`Multiply voltage by resistance`, `Divide resistance by power`, `Multiply power by resistance`, `Divide voltage by resistance`],
+        tq: `To calculate the current flowing in a circuit, _____.`,
+        to: [`multiply voltage by resistance (E × R)`, `divide resistance by power (R/P)`, `multiply power by resistance (P × R)`, `divide voltage by resistance (E/R)`],
+        why: `Ohm's law says I = E ÷ R. Current is voltage divided by resistance.`,
+        br: [[`find the current`, `calculate the current flowing`]] }
+    ],
+    3: [
+      { src: `Section Review · Q1 (3.1.0)`, a: 1,
+        pq: `A resistor has a gold band in the fourth position. What is its tolerance?`,
+        po: [`±1%`, `±5%`, `±10%`, `±20%`],
+        tq: `A gold fourth band on a resistor indicates a tolerance of _____.`,
+        to: [`±1%`, `±5%`, `±10%`, `±20%`],
+        why: `Gold in the fourth position means ±5%. Silver means ±10%, and no fourth band means ±20%.`,
+        br: [[`how far off the value can be`, `tolerance`]] },
+      { src: `Section Review · Q2 (3.2.1)`, a: 2,
+        pq: `Three 10Ω resistors are wired in series across 120V. What is the total resistance?`,
+        po: [`1.2Ω`, `12Ω`, `30Ω`, `120Ω`],
+        tq: `What is the total resistance of a 120V series circuit that contains three 10Ω resistors?`,
+        to: [`1.2Ω`, `12Ω`, `30Ω`, `120Ω`],
+        why: `In a series circuit you add the resistances: 10 + 10 + 10 = 30Ω. The 120V does not change the total resistance.`,
+        br: [[`wired in series`, `series circuit`]] },
+      { src: `Section Review · Q3 (3.3.1)`, a: 0,
+        pq: `Which of these is the right way to use a clamp-on ammeter?`,
+        po: [`Put the jaws around one wire at a time`, `Put the jaws around an even number of wires`, `Start on the lowest range and work up`, `Fix misaligned jaws by tapping them with a hammer`],
+        tq: `Which statement is true about using a clamp-on ammeter?`,
+        to: [`Place the jaws around a single conductor at a time.`, `Place the jaws around only an even number of conductors.`, `Begin at the lowest meter range and work upward.`, `Tapping misaligned jaws with a hammer will correct them.`],
+        why: `Clamp the jaws around one conductor only. On an analog meter, start at the highest range and work down. Dirty or misaligned jaws give wrong readings, so never hammer them.`,
+        br: [[`the right way to use`, `true about using`], [`wire`, `conductor`]] },
+      { src: `Section Review · Q4 (3.4.1)`, a: 3,
+        pq: `A circuit has 240 volts and 10 amps. How many watts of power is that?`,
+        po: [`12W`, `240W`, `1,200W`, `2,400W`],
+        tq: `Calculate the power in a circuit where a 240V source produces 10A.`,
+        to: [`12W`, `240W`, `1,200W`, `2,400W`],
+        why: `P = I × E = 10A × 240V = 2,400W.`,
+        br: [[`How many watts of power`, `Calculate the power`]] },
+      { src: `Module Review · Q10 (3.1.0)`, a: 0,
+        pq: `Which color band on a resistor shows its tolerance?`,
+        po: [`The 4th band`, `The 3rd band`, `The 2nd band`, `The 1st band`],
+        tq: `The band that represents a resistor's tolerance is the _____.`,
+        to: [`4th band`, `3rd band`, `2nd band`, `1st band`],
+        why: `Bands 1 and 2 are digits, band 3 is the multiplier and band 4 is the tolerance.`,
+        br: [[`shows`, `represents`]] },
+      { src: `Module Review · Q11 (3.2.2)`, a: 2,
+        pq: `In a parallel circuit, how does the total resistance compare to the smallest single resistance?`,
+        po: [`It is greater than it`, `It is equal to it`, `It is less than it`, `It is proportional to it`],
+        tq: `In a parallel circuit, the total resistance is _____ the smallest individual resistance.`,
+        to: [`greater than`, `equal to`, `less than`, `proportional to`],
+        why: `Each added path gives current another way through, so the total resistance drops below even the smallest resistor. Three 30Ω loads in parallel total 10Ω.`,
+        br: [[`how does it compare to`, `is ___ the smallest individual resistance`]] },
+      { src: `Module Review · Q12 (3.3.1)`, a: 2,
+        pq: `What does an ammeter measure?`,
+        po: [`Voltage`, `Resistance`, `Current`, `Power`],
+        tq: `Ammeters are used to measure _____.`,
+        to: [`voltage`, `resistance`, `current`, `power`],
+        why: `An ammeter measures current, in amperes. A voltmeter measures voltage and an ohmmeter measures resistance.`,
+        br: [[`What does it measure`, `are used to measure`]] },
+      { src: `Module Review · Q13 (3.3.3)`, a: 2,
+        pq: `Which meter function checks whether a circuit is complete?`,
+        po: [`Ammeter`, `Voltmeter`, `Ohmmeter`, `Wattmeter`],
+        tq: `Circuit continuity is checked with the _____ function of a multimeter.`,
+        to: [`ammeter`, `voltmeter`, `ohmmeter`, `wattmeter`],
+        why: `The ohmmeter function checks continuity. A good wire or closed switch reads near zero resistance, and an open path reads infinite resistance. The power must be off.`,
+        br: [[`is complete`, `has continuity`]] },
+      { src: `Module Review · Q14 (3.3.3)`, a: 0,
+        pq: `What unit is resistance measured in?`,
+        po: [`Ohms`, `Amperes`, `Volt-amperes`, `Coulombs`],
+        tq: `Resistance is measured in _____.`,
+        to: [`ohms`, `amperes`, `volt-amperes`, `coulombs`],
+        why: `Resistance is measured in ohms (Ω). An ohmmeter is the meter that reads it.`,
+        br: [[`What unit`, `measured in`]] },
+      { src: `Module Review · Q15 (3.4.1)`, a: 3,
+        pq: `A circuit has 120 volts and 5 amps. How many watts is that?`,
+        po: [`5 watts`, `120 watts`, `240 watts`, `600 watts`],
+        tq: `The power in a circuit with 120 volts and 5 amps is _____.`,
+        to: [`5 watts`, `120 watts`, `240 watts`, `600 watts`],
+        why: `P = I × E = 5A × 120V = 600W.`,
+        br: [[`How many watts`, `The power`]] }
+    ]
+  };
+
+  function el(tag, cls, text) { var n = document.createElement(tag); if (cls) n.className = cls; if (text != null) n.textContent = text; return n; }
+
+  function buildPoints(ul, list, prefix) {
+    list.forEach(function (html, i) {
+      var li = el("li");
+      var label = el("label");
+      var input = document.createElement("input");
+      input.type = "checkbox";
+      input.id = prefix + "-" + i;
+      var span = el("span");
+      span.innerHTML = html; // static text written in this file
+      label.appendChild(input); label.appendChild(span);
+      li.appendChild(label); ul.appendChild(li);
+    });
+  }
+
+  function field(label, text) {
+    var d = el("span");
+    d.appendChild(el("span", "label", label));
+    d.appendChild(document.createTextNode(text));
+    return d;
+  }
+  function buildCards(host, n) {
+    CARDS[n].forEach(function (item) {
+      var b = el("button", "card");
+      b.type = "button";
+      b.setAttribute("aria-pressed", "false");
+      b.setAttribute("aria-label", item.t + ". Press to flip the card.");
+      var inner = el("span", "card-inner");
+      var f = el("span", "face front" + (item.k === "k" ? " key" : ""));
+      f.appendChild(el("span", "strip", (item.k === "o" ? "NCCER trade term" : "Key term") + " · Section " + n));
+      f.appendChild(el("span", "term", item.t));
+      f.appendChild(el("span", "hint", "TAP TO FLIP"));
+      var k = el("span", "face back");
+      k.appendChild(el("span", "strip", item.t));
+      var body = el("span", "body");
+      body.appendChild(field("In everyday words", item.plain));
+      body.appendChild(field("From the module", item.book));
+      var ask = field("Ask your student", item.ask);
+      ask.className = "ask";
+      body.appendChild(ask);
+      k.appendChild(body);
+      inner.appendChild(f); inner.appendChild(k);
+      b.appendChild(inner);
+      b.addEventListener("click", function () { b.setAttribute("aria-pressed", b.getAttribute("aria-pressed") === "true" ? "false" : "true"); });
+      host.appendChild(b);
+    });
+  }
+
+  function buildQuiz(host, n) {
+    var list = QUIZ[n];
+    var answered = 0;
+    host.appendChild(el("p", "ticket-intro", "Pick the answer. You will see right away if it is correct. Nothing is saved or sent."));
+    var foot = el("div", "ticket-foot");
+    var done = el("p", null, "");
+    done.setAttribute("aria-live", "polite");
+    var retry = el("button", "btn", "Try again");
+    retry.type = "button";
+    retry.hidden = true;
+    foot.appendChild(done); foot.appendChild(retry);
+
+    list.forEach(function (item, qi) {
+      var fs = el("fieldset", "q");
+      fs.appendChild(el("legend", null, (qi + 1) + ". " + item.q));
+      var opts = el("div", "opts");
+      var fb = el("p", "fb");
+      fb.setAttribute("aria-live", "polite");
+      var btns = [];
+      item.o.forEach(function (text, oi) {
+        var b = el("button", "opt", text);
+        b.type = "button";
+        b.addEventListener("click", function () {
+          btns.forEach(function (x) { x.disabled = true; });
+          answered++;
+          if (oi === item.a) {
+            b.classList.add("right");
+            fb.innerHTML = "";
+            var good = el("b", null, "Correct. "); fb.appendChild(good); fb.appendChild(document.createTextNode(item.why));
+          } else {
+            b.classList.add("wrong");
+            btns[item.a].classList.add("right");
+            fb.innerHTML = "";
+            var no = el("b", null, "Not quite. "); fb.appendChild(no);
+            fb.appendChild(document.createTextNode("The answer is \"" + item.o[item.a] + "\". " + item.why));
+          }
+          if (answered === list.length) {
+            done.textContent = "Ticket finished. Reread any part of the section that felt shaky, then try again.";
+            retry.hidden = false;
+          }
+        });
+        btns.push(b); opts.appendChild(b);
+      });
+      fs.appendChild(opts); fs.appendChild(fb);
+      host.insertBefore(fs, null);
+      fs._reset = function () { btns.forEach(function (x) { x.disabled = false; x.className = "opt"; }); fb.textContent = ""; };
+    });
+    host.appendChild(foot);
+    retry.addEventListener("click", function () {
+      host.querySelectorAll("fieldset").forEach(function (f) { f._reset(); });
+      answered = 0; done.textContent = ""; retry.hidden = true;
+    });
+  }
+
+  function buildTalk(host, n) {
+    var t = TALK[n];
+    var ol = el("ol", "qs");
+    t.qs.forEach(function (q) { ol.appendChild(el("li", null, q)); });
+    host.appendChild(ol);
+    t.scn.forEach(function (s) {
+      var d = el("details", "scn");
+      d.appendChild(el("summary", null, "Scenario: " + s.t));
+      d.appendChild(el("p", "setup", s.s));
+      var g = el("div", "good");
+      g.appendChild(el("b", null, "A good answer includes"));
+      var ul = el("ul");
+      s.g.forEach(function (x) { ul.appendChild(el("li", null, x)); });
+      g.appendChild(ul); d.appendChild(g);
+      host.appendChild(d);
+    });
+    if (t.parent) {
+      var p = el("div", "parent");
+      p.appendChild(el("b", null, "Parent prompt"));
+      p.appendChild(el("p", null, t.parent));
+      host.appendChild(p);
+    }
+  }
+
+
+  function ask(label, cls, q, opts, correct, onAnswer) {
+    var box = el("div", "ask-block" + (cls ? " " + cls : ""));
+    box.appendChild(el("p", "step-label", label));
+    box.appendChild(el("p", "pr-q", q));
+    var wrap = el("div", "opts");
+    wrap.setAttribute("role", "group");
+    wrap.setAttribute("aria-label", q);
+    var fb = el("p", "fb");
+    fb.setAttribute("aria-live", "polite");
+    var btns = [];
+    opts.forEach(function (text, oi) {
+      var b = el("button", "opt", String.fromCharCode(65 + oi) + ".  " + text);
+      b.type = "button";
+      b.addEventListener("click", function () {
+        btns.forEach(function (x) { x.disabled = true; });
+        var ok = oi === correct;
+        b.classList.add(ok ? "right" : "wrong");
+        if (!ok) btns[correct].classList.add("right");
+        onAnswer(ok, fb, String.fromCharCode(65 + correct));
+      });
+      btns.push(b); wrap.appendChild(b);
+    });
+    box.appendChild(wrap); box.appendChild(fb);
+    box.reset = function () { btns.forEach(function (x) { x.disabled = false; x.className = "opt"; }); fb.textContent = ""; };
+    return box;
+  }
+  function say(fb, lead, text) {
+    fb.textContent = "";
+    fb.appendChild(el("b", null, lead + " "));
+    fb.appendChild(document.createTextNode(text));
+  }
+
+  function buildPractice(host, n) {
+    var list = PRACTICE[n];
+    host.appendChild(el("p", "pr-intro", "Test questions use the textbook's formal words. Answer each question in plain English first, then see the same question the way the book asks it. The \"Words to notice\" box shows how the two fit together. Nothing is saved or sent."));
+    var items = [];
+    list.forEach(function (item, i) {
+      var art = el("article", "pr");
+      var head = el("div", "pr-head");
+      head.appendChild(el("span", null, "Question " + (i + 1) + " of " + list.length));
+      head.appendChild(el("span", null, "Source: " + item.src));
+      art.appendChild(head);
+
+      var bridge = el("div", "bridge");
+      bridge.hidden = true;
+      bridge.appendChild(el("p", "step-label", "Words to notice"));
+      var ul = el("ul");
+      item.br.forEach(function (p) {
+        var li = el("li");
+        li.appendChild(el("span", "you", p[0]));
+        li.appendChild(el("span", "arrow", "→"));
+        li.appendChild(el("span", "pub", p[1]));
+        ul.appendChild(li);
+      });
+      bridge.appendChild(ul);
+
+      var b2 = ask("Step 2 · The same question in the textbook's words", "formal", item.tq, item.to, item.a, function (ok, fb, letter) {
+        if (ok) say(fb, "Correct.", "You just answered it in the textbook's voice.");
+        else say(fb, "Not quite.", "The answer is " + letter + ". Compare it with your plain-English answer above.");
+        bridge.hidden = false;
+      });
+      b2.hidden = true;
+      var b1 = ask("Step 1 · In plain English", "", item.pq, item.po, item.a, function (ok, fb, letter) {
+        if (ok) say(fb, "Correct.", item.why);
+        else say(fb, "Not quite.", "The answer is " + letter + ". " + item.why);
+        b2.hidden = false;
+      });
+      art.appendChild(b1); art.appendChild(b2); art.appendChild(bridge);
+      host.appendChild(art);
+      items.push({ b1: b1, b2: b2, bridge: bridge });
+    });
+    var foot = el("div", "ticket-foot");
+    var retry = el("button", "btn", "Start this set over");
+    retry.type = "button";
+    retry.addEventListener("click", function () {
+      items.forEach(function (x) { x.b1.reset(); x.b2.reset(); x.b2.hidden = true; x.bridge.hidden = true; });
+    });
+    foot.appendChild(retry);
+    host.appendChild(foot);
+  }
+
+  [1, 2, 3].forEach(function (n) {
+    buildPractice(document.querySelector('[data-practice="' + n + '"]'), n);
+    buildPoints(document.querySelector('[data-points="' + n + '"]'), POINTS[n], "s" + n);
+    buildCards(document.querySelector('[data-cards="' + n + '"]'), n);
+    buildQuiz(document.querySelector('[data-quiz="' + n + '"]'), n);
+    buildTalk(document.querySelector('[data-talk="' + n + '"]'), n);
+  });
+  buildPoints(document.getElementById("final-points"), FINAL, "fin");
+})();
+</script>
+
+</body></html>
+</body></html>

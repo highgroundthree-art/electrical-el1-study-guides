@@ -1,0 +1,929 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Electrical Theory Loved Ones Study Guide</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+/* Layout concept: one long study sheet. Each module section runs the same six parts
+   (read, review points, trade-term tags, ticket out the door, talk it over). */
+:root {
+  --bg: #EEF1F3;
+  --surface: #FFFFFF;
+  --ink: #14202B;
+  --ink-soft: #46576A;
+  --line: #C9D2DA;
+  --band: #14202B;
+  --band-ink: #F4F7F9;
+  --accent: #C42B17;
+  --accent-ink: #FFFFFF;
+  --caution: #F2B705;
+  --caution-soft: #FFF3C4;
+  --good: #1E7A3C;
+  --good-soft: #DDF3E4;
+  --bad: #A8321F;
+  --bad-soft: #FBE3DE;
+  --tag-hole: #EEF1F3;
+  --focus: #0B5FFF;
+  --font-display: "Barlow Condensed", "Arial Narrow", Impact, sans-serif;
+  --font-body: "Barlow", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0F171E; --surface: #18232D; --ink: #EAF0F4; --ink-soft: #A5B4C2; --line: #2E3E4C;
+    --band: #0A1016; --band-ink: #F4F7F9; --accent: #FF5A44; --accent-ink: #14202B;
+    --caution: #F2B705; --caution-soft: #3A3210; --good: #6FD08C; --good-soft: #17301F;
+    --bad: #FF8E7C; --bad-soft: #3A1B16; --tag-hole: #0F171E; --focus: #6AA2FF;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0F171E; --surface: #18232D; --ink: #EAF0F4; --ink-soft: #A5B4C2; --line: #2E3E4C;
+  --band: #0A1016; --band-ink: #F4F7F9; --accent: #FF5A44; --accent-ink: #14202B;
+  --caution: #F2B705; --caution-soft: #3A3210; --good: #6FD08C; --good-soft: #17301F;
+  --bad: #FF8E7C; --bad-soft: #3A1B16; --tag-hole: #0F171E; --focus: #6AA2FF;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--ink); font-family: var(--font-body); font-size: 17px; line-height: 1.6; }
+:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
+.wrap { max-width: 920px; margin-inline: auto; padding-inline: max(16px, env(safe-area-inset-left, 0px)) max(16px, env(safe-area-inset-right, 0px)); }
+h1, h2, h3, h4 { font-family: var(--font-display); text-transform: uppercase; letter-spacing: 0.03em; line-height: 1.05; margin: 0; text-wrap: balance; }
+.eyebrow { font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-soft); }
+
+.band { background: var(--band); color: var(--band-ink); padding-block: 34px 26px; border-bottom: 8px solid var(--caution); }
+.band .eyebrow { color: var(--caution); }
+.band h1 { font-size: clamp(2.5rem, 9vw, 4.4rem); font-weight: 700; margin-top: 10px; }
+.band .sub { margin: 14px 0 0; font-size: 1.1rem; color: #D5DEE5; max-width: 46ch; }
+.band .byline { margin: 14px 0 0; font-size: 0.95rem; color: #AEBBC7; }
+nav.jump { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 22px; }
+nav.jump a { text-decoration: none; font-weight: 600; font-size: 0.95rem; padding: 8px 14px; border: 2px solid #3B4B5A; border-radius: 3px; color: var(--band-ink); }
+nav.jump a:hover { border-color: var(--caution); }
+
+.intro { margin-top: 28px; display: grid; gap: 22px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 380px), 1fr)); }
+.panel { background: var(--surface); border: 1px solid var(--line); padding: 20px 22px 22px; min-width: 0; }
+.panel h2 { font-size: 1.5rem; font-weight: 700; margin-bottom: 10px; }
+.panel p { margin: 0 0 10px; }
+.panel ol { margin: 8px 0 0; padding-left: 1.3em; display: grid; gap: 6px; }
+.notice { background: var(--caution-soft); border: 2px solid var(--caution); padding: 16px 20px; margin-top: 22px; }
+.notice p { margin: 4px 0 0; }
+.notice h2 { font-size: 1.25rem; }
+
+/* section */
+.sec { margin-top: 56px; }
+.sec-head { border-top: 8px solid var(--ink); padding-top: 18px; }
+.sec-head h2 { font-size: clamp(2rem, 6vw, 3rem); font-weight: 700; margin-top: 6px; }
+.sec-head .obj { margin: 10px 0 0; color: var(--ink-soft); max-width: 62ch; }
+.part { margin-top: 34px; }
+.part-title { display: flex; align-items: baseline; gap: 12px; margin-bottom: 14px; }
+.part-title .letter { font-family: var(--font-mono); font-size: 13px; background: var(--ink); color: var(--bg); padding: 2px 8px; flex: none; }
+.part-title h3 { font-size: 1.7rem; font-weight: 700; }
+.part-title .time { margin-left: auto; font-family: var(--font-mono); font-size: 12px; color: var(--ink-soft); white-space: nowrap; }
+
+.prose { background: var(--surface); border: 1px solid var(--line); padding: 22px 24px; }
+.prose h4 { font-size: 1.25rem; font-weight: 700; margin: 20px 0 6px; color: var(--accent); }
+.prose h4:first-child { margin-top: 0; }
+.prose p { margin: 0 0 10px; max-width: 64ch; }
+.prose ul { margin: 0 0 10px; padding-left: 1.2em; max-width: 64ch; }
+.prose li { margin-bottom: 4px; }
+.prose .big { font-size: 1.12rem; font-weight: 500; border-left: 6px solid var(--caution); padding: 4px 0 4px 14px; margin: 0 0 16px; }
+.prose table { border-collapse: collapse; margin: 8px 0 14px; font-size: 0.95rem; width: 100%; max-width: 520px; }
+.prose th, .prose td { text-align: left; padding: 6px 10px; border-bottom: 1px solid var(--line); }
+.prose th { font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-soft); }
+.scroll { overflow-x: auto; }
+.case { background: var(--bg); border-left: 6px solid var(--accent); padding: 12px 16px; margin: 14px 0 0; max-width: 64ch; }
+.case b { font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.08em; text-transform: uppercase; display: block; color: var(--ink-soft); }
+
+/* review points */
+.points { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; counter-reset: pt; }
+.points li { background: var(--surface); border: 1px solid var(--line); }
+.points label { display: grid; grid-template-columns: 28px minmax(0, 1fr); gap: 12px; padding: 12px 16px; cursor: pointer; align-items: start; }
+.points input { width: 22px; height: 22px; margin: 2px 0 0; accent-color: var(--good); }
+.points li:has(input:checked) { background: var(--good-soft); border-color: var(--good); }
+.points b { font-weight: 600; }
+
+/* cards */
+.deck { display: grid; gap: 22px; grid-template-columns: repeat(auto-fill, minmax(min(100%, 270px), 1fr)); }
+.card { all: unset; box-sizing: border-box; display: block; cursor: pointer; perspective: 1100px; min-width: 0; }
+.card:focus-visible { outline: 3px solid var(--focus); outline-offset: 4px; }
+.card-inner { display: grid; transition: transform 0.5s cubic-bezier(.3,.7,.2,1); transform-style: preserve-3d; position: relative; }
+.card[aria-pressed="true"] .card-inner { transform: rotateY(180deg); }
+.face { grid-area: 1 / 1; backface-visibility: hidden; -webkit-backface-visibility: hidden; display: flex; flex-direction: column; min-height: 250px; border: 2px solid var(--ink); background: var(--surface); position: relative; overflow: hidden; }
+.face::before { content: ""; position: absolute; top: 12px; left: 50%; width: 16px; height: 16px; margin-left: -8px; border-radius: 50%; background: var(--tag-hole); border: 2px solid var(--ink); }
+.front .strip { background: var(--accent); color: var(--accent-ink); padding: 38px 16px 8px; font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.08em; text-transform: uppercase; }
+.front.key .strip { background: var(--ink); color: var(--bg); }
+.front .term { flex: 1; display: flex; align-items: center; padding: 16px 18px; font-family: var(--font-display); text-transform: uppercase; font-weight: 700; font-size: clamp(1.8rem, 7vw, 2.2rem); line-height: 1.02; letter-spacing: 0.02em; overflow-wrap: anywhere; }
+.front .hint { padding: 10px 18px 14px; font-size: 0.8rem; color: var(--ink-soft); border-top: 1px dashed var(--line); font-family: var(--font-mono); letter-spacing: 0.04em; }
+.back { transform: rotateY(180deg); background: var(--caution-soft); }
+.back .strip { background: var(--ink); color: var(--bg); padding: 38px 16px 8px; font-family: var(--font-display); text-transform: uppercase; font-weight: 700; letter-spacing: 0.04em; font-size: 1.1rem; line-height: 1.05; }
+.back .body { padding: 14px 18px 16px; display: grid; gap: 10px; align-content: start; font-size: 0.95rem; line-height: 1.45; }
+.back .label { font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-soft); display: block; margin-bottom: 1px; }
+.back .ask { border-top: 1px dashed var(--ink-soft); padding-top: 10px; font-weight: 500; }
+.deck-note { margin: 12px 0 0; font-size: 0.9rem; color: var(--ink-soft); }
+@media (prefers-reduced-motion: reduce) {
+  .card-inner { transition: none; transform-style: flat; }
+  .card[aria-pressed="true"] .card-inner { transform: none; }
+  .back { transform: none; }
+  .face { backface-visibility: visible; }
+  .card .back { visibility: hidden; }
+  .card[aria-pressed="true"] .back { visibility: visible; }
+  .card[aria-pressed="true"] .front { visibility: hidden; }
+}
+
+/* ticket */
+.ticket { background: var(--surface); border: 2px dashed var(--ink); padding: 8px 20px 18px; position: relative; }
+.ticket-intro { margin: 14px 0 4px; color: var(--ink-soft); font-size: 0.95rem; }
+.q { border: 0; border-top: 1px solid var(--line); margin: 0; padding: 16px 0 14px; min-width: 0; }
+.q:first-of-type { border-top: 0; }
+.q legend { font-weight: 600; padding: 0; margin-bottom: 8px; float: left; width: 100%; }
+.q .opts { clear: both; display: grid; gap: 8px; }
+.opt { font: inherit; text-align: left; padding: 10px 14px; background: var(--bg); color: var(--ink); border: 2px solid var(--line); border-radius: 3px; cursor: pointer; }
+.opt:hover:not(:disabled) { border-color: var(--ink); }
+.opt:disabled { cursor: default; }
+.opt.right { background: var(--good-soft); border-color: var(--good); }
+.opt.wrong { background: var(--bad-soft); border-color: var(--bad); }
+.fb { margin: 8px 0 0; font-size: 0.93rem; color: var(--ink-soft); }
+.fb b { color: var(--ink); }
+.ticket-foot { margin-top: 10px; display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+.ticket-foot p { margin: 0; font-weight: 500; }
+.btn { font: inherit; font-weight: 600; font-size: 0.92rem; padding: 8px 14px; background: var(--surface); color: var(--ink); border: 2px solid var(--ink); border-radius: 3px; cursor: pointer; }
+.btn:hover { background: var(--ink); color: var(--bg); }
+
+/* talk it over */
+.talk { display: grid; gap: 14px; }
+.talk .qs { background: var(--surface); border: 1px solid var(--line); padding: 16px 22px 16px 40px; margin: 0; display: grid; gap: 8px; }
+details.scn { background: var(--surface); border: 1px solid var(--line); border-left: 6px solid var(--caution); padding: 14px 18px; }
+details.scn summary { cursor: pointer; font-family: var(--font-display); text-transform: uppercase; letter-spacing: 0.03em; font-size: 1.3rem; font-weight: 700; }
+details.scn .setup { margin: 10px 0 8px; }
+details.scn .good { margin: 12px 0 0; padding: 10px 14px; background: var(--good-soft); border-left: 6px solid var(--good); }
+details.scn .good b { font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.08em; text-transform: uppercase; display: block; }
+details.scn .good ul { margin: 6px 0 0; padding-left: 1.1em; }
+.parent { background: var(--caution-soft); border: 2px solid var(--caution); padding: 12px 16px; }
+.parent b { font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.08em; text-transform: uppercase; display: block; }
+.parent p { margin: 4px 0 0; }
+
+/* practice questions */
+.pr-intro { margin: 0 0 14px; color: var(--ink-soft); max-width: 66ch; }
+.pr { background: var(--surface); border: 1px solid var(--line); margin-bottom: 18px; }
+.pr-head { display: flex; flex-wrap: wrap; gap: 6px 14px; justify-content: space-between; align-items: baseline; padding: 10px 18px; background: var(--ink); color: var(--bg); font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.06em; text-transform: uppercase; }
+.ask-block { padding: 14px 18px 16px; }
+.ask-block + .ask-block { border-top: 2px dashed var(--line); }
+.ask-block.formal { background: var(--bg); }
+.step-label { margin: 0 0 6px; font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); }
+.pr-q { margin: 0 0 10px; font-weight: 600; font-size: 1.05rem; max-width: 62ch; }
+.bridge { padding: 14px 18px 16px; border-top: 2px dashed var(--line); background: var(--caution-soft); }
+.bridge .step-label { color: var(--ink); }
+.bridge ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+.bridge li { display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); gap: 10px; align-items: baseline; }
+.bridge .you { font-style: italic; }
+.bridge .arrow { font-family: var(--font-mono); color: var(--ink-soft); }
+.bridge .pub { font-weight: 600; }
+@media (max-width: 520px) { .bridge li { grid-template-columns: minmax(0, 1fr); gap: 0; } .bridge .arrow { display: none; } .bridge .pub::before { content: "Textbook: "; font-weight: 400; font-family: var(--font-mono); font-size: 11px; color: var(--ink-soft); } .bridge .you::before { content: "You say: "; font-style: normal; font-family: var(--font-mono); font-size: 11px; color: var(--ink-soft); } }
+
+/* final checklist */
+.final { margin-top: 56px; border-top: 8px solid var(--ink); padding-top: 18px; }
+.final h2 { font-size: clamp(1.9rem, 5vw, 2.6rem); font-weight: 700; }
+.final .lead { color: var(--ink-soft); max-width: 62ch; margin: 10px 0 16px; }
+.note { margin: 28px 0 0; font-size: 0.9rem; color: var(--ink-soft); max-width: 70ch; }
+footer { margin-top: 48px; background: var(--band); color: #AEBBC7; padding-block: 26px 30px; font-size: 0.92rem; }
+footer strong { color: var(--band-ink); }
+footer p { margin: 0 0 6px; }
+</style>
+
+
+<header class="band">
+  <div class="wrap">
+    <span class="eyebrow">EVIT Electrical · Loved Ones Study Guide</span>
+    <h1>Electrical<br>Theory</h1>
+    <p class="sub">A Loved Ones Study Guide for NCCER Electrical Level 1, Module 26104-20: Electrical Theory</p>
+    <p class="byline">Mr. Ellis CTE — General Construction &amp; Electrical Teacher · High School &amp; Adult Pre-Apprentice Programs</p>
+    <nav class="jump" aria-label="Sections">
+      <a href="#s1">1 · Resistive circuits</a>
+      <a href="#s2">2 · Kirchhoff's laws</a>
+      <a href="#review">Loved ones review</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<div class="wrap">
+
+  <div class="intro">
+    <div class="panel">
+      <h2>Why this guide exists</h2>
+      <p>You do not need to be an electrician to support an electrical student. Your job is to help your student explain what they are learning, put it in their own words, and know when safety means stop and ask a qualified person.</p>
+      <p>If your student can read it and explain it, they are learning it. That is the whole idea.</p>
+    </div>
+    <div class="panel">
+      <h2>How to use each section</h2>
+      <p>Plan about 15 to 25 minutes per section. The student does most of the talking. You do not need the answers ahead of time.</p>
+      <ol>
+        <li><b>Read it together.</b> Plain-English version of the module section.</li>
+        <li><b>Study review points.</b> The must-know facts. Tick each one when your student can say it back.</li>
+        <li><b>Trade-term cards.</b> Tap a card to flip it.</li>
+        <li><b>Ticket out the door.</b> A quick recall check, just for practice.</li>
+        <li><b>Talk it over.</b> Questions and a real-world scenario.</li>
+        <li><b>Practice questions.</b> Each one comes twice: first in plain English, then in the textbook's words, so your student learns to recognize both.</li>
+      </ol>
+    </div>
+  </div>
+
+  <aside class="notice" aria-labelledby="safe-h">
+    <h2 id="safe-h">Important safety note</h2>
+    <p>This guide is for learning and talking. It is not permission to do electrical work. Live circuits are for trained, qualified people only. Never use this guide in place of instructor supervision, employer procedures, required training, or properly rated equipment. No student names or grades appear here, and nothing you tick or tap on this page is saved or sent anywhere.</p>
+  </aside>
+
+  <!-- SECTION 1 -->
+  <section class="sec" id="s1" aria-labelledby="s1-h">
+    <div class="sec-head">
+      <span class="eyebrow">Module Section 1 of 2</span>
+      <h2 id="s1-h">Resistive Circuits</h2>
+      <p class="obj">By the end of this section your student can tell series, parallel and series-parallel circuits apart, find the total resistance of each, and use Ohm&rsquo;s law to find current and voltage drops.</p>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">A</span><h3>Read it together</h3><span class="time">about 18 min</span></div>
+      <div class="prose">
+        <p class="big">Real circuits are rarely a single loop with a single part. This section is about how resistors connect, how to find the total resistance, and how Ohm's law finds the voltage and current in each part.</p>
+
+        <h4>Resistance in series</h4>
+        <p>A series circuit has only one path for current. Because there is only one path, the current is the same everywhere in it. The current through the first resistor is the same as the current through the last one, and the same as the current the battery supplies.</p>
+        <p>To find the total resistance of a series circuit, add up all the resistances. A series circuit can have any number of resistors.</p>
+        <div class="scroll"><table>
+          <thead><tr><th>Series circuit</th><th>Work</th><th>Total resistance</th></tr></thead>
+          <tbody>
+            <tr><td>Three resistors: 50&Omega;, 75&Omega; and 100&Omega;</td><td>50 + 75 + 100</td><td>225&Omega;</td></tr>
+            <tr><td>Three lamps: 20&Omega;, 40&Omega; and 60&Omega;</td><td>20 + 40 + 60</td><td>120&Omega;</td></tr>
+          </tbody>
+        </table></div>
+        <p>The module also reminds you of the forms of Ohm's law and the power equation. Both can be used on any circuit, and each one solves for a different value.</p>
+        <div class="scroll"><table>
+          <thead><tr><th>To find</th><th>Ohm's law</th><th>Power equation</th></tr></thead>
+          <tbody>
+            <tr><td>Voltage (E)</td><td>E = I &times; R</td><td>E = P &divide; I</td></tr>
+            <tr><td>Current (I)</td><td>I = E &divide; R</td><td>I = P &divide; E</td></tr>
+            <tr><td>Resistance (R)</td><td>R = E &divide; I</td><td>&nbsp;</td></tr>
+            <tr><td>Power (P)</td><td>&nbsp;</td><td>P = I &times; E</td></tr>
+          </tbody>
+        </table></div>
+
+        <h4>Resistance in parallel</h4>
+        <p>A parallel circuit has two or more paths that current can take. The total resistance is found by adding the reciprocals of the branch resistances (a reciprocal is 1 divided by the number), and then taking the reciprocal of that sum.</p>
+        <div class="case"><b>Worked example</b>Three branches of 2&Omega;, 4&Omega; and 8&Omega;. The reciprocals are 0.5, 0.25 and 0.125, which add up to 0.875. One divided by 0.875 is about 1.14&Omega;. Add a fourth 2&Omega; branch and the reciprocals add up to 1.375, so the total drops to about 0.73&Omega;.</div>
+        <p>Notice what happened. In a parallel circuit, the total resistance is always less than the resistance of any single branch, and every extra branch makes the total go down, because it gives the current one more way through.</p>
+
+        <h4>Shortcuts for parallel circuits</h4>
+        <p>There are two shortcuts that save work. Both have limits, so know when each one applies.</p>
+        <div class="scroll"><table>
+          <thead><tr><th>Shortcut</th><th>When to use it</th><th>How it works</th><th>Example</th></tr></thead>
+          <tbody>
+            <tr><td>Product over sum</td><td>Exactly two resistors in parallel</td><td>Multiply the two, then divide by their sum</td><td>6&Omega; and 18&Omega;: 108 &divide; 24 = 4.5&Omega;</td></tr>
+            <tr><td>Equal resistors</td><td>All the parallel resistors are the same</td><td>Divide one resistor's value by how many there are</td><td>Two 200&Omega;: 200 &divide; 2 = 100&Omega;</td></tr>
+          </tbody>
+        </table></div>
+        <p>Product over sum only works for two resistors. If there are three or more that are different, go back to the reciprocal method.</p>
+
+        <h4>Series-parallel circuits</h4>
+        <p>A series-parallel circuit has some parts in series and some parts in parallel. In the series parts, use the series rules. In the parallel parts, use the parallel rules. The first job is to tell which is which, and a complicated drawing may need to be redrawn so the pattern is easier to see.</p>
+        <p>Here is a simple trick for telling the circuit type. Trace the path of current from one terminal of the source back to the other.</p>
+        <ul>
+          <li>The current never splits: it is a <b>series</b> circuit.</li>
+          <li>The current splits into branches and there are no series loads: it is a <b>parallel</b> circuit.</li>
+          <li>The current splits into branches and there are also series loads: it is a <b>series-parallel</b> circuit.</li>
+        </ul>
+        <p>To find the total resistance, reduce the circuit to one equivalent resistance in four steps.</p>
+        <ol>
+          <li>Redraw the circuit if needed so each series part and each parallel part is easy to spot.</li>
+          <li>Find the effective resistance of each parallel group.</li>
+          <li>Replace each parallel group with one resistor of that value. Now everything is in series.</li>
+          <li>Add the series resistances to get the total.</li>
+        </ol>
+        <div class="case"><b>Worked example</b>A 50&Omega; resistor is in series with two 200&Omega; resistors that are in parallel with each other. The two 200&Omega; resistors are equal, so they act like one 100&Omega; resistor. The total is 50 + 100 = 150&Omega;.</div>
+
+        <h4>Ohm's law in a series circuit</h4>
+        <p>Ohm's law works on the whole circuit and also on any one part. For one part, the voltage across it equals the current through it times its resistance.</p>
+        <p>Here is the module's example. Three resistors of 20&Omega;, 50&Omega; and 120&Omega; are in series with a 95V source.</p>
+        <div class="scroll"><table>
+          <thead><tr><th>Step</th><th>Work</th><th>Result</th></tr></thead>
+          <tbody>
+            <tr><td>Total resistance</td><td>20 + 50 + 120</td><td>190&Omega;</td></tr>
+            <tr><td>Total current</td><td>95V &divide; 190&Omega;</td><td>0.5A</td></tr>
+            <tr><td>Drop across the 20&Omega; resistor</td><td>0.5A &times; 20&Omega;</td><td>10V</td></tr>
+            <tr><td>Drop across the 50&Omega; resistor</td><td>0.5A &times; 50&Omega;</td><td>25V</td></tr>
+            <tr><td>Drop across the 120&Omega; resistor</td><td>0.5A &times; 120&Omega;</td><td>60V</td></tr>
+          </tbody>
+        </table></div>
+        <p>A voltage drop is also called an IR drop. The drops add up: 10 + 25 + 60 = 95V, which is exactly the applied voltage. In any series circuit, the voltage drops always add up to the applied voltage.</p>
+
+        <h4>Ohm's law in a parallel circuit</h4>
+        <p>In a parallel circuit, every branch connects straight to the same source. That means every branch has the same voltage across it, equal to the source voltage. Each branch is like its own little series circuit, with its own current.</p>
+        <ul>
+          <li>The voltage across each branch is the same as the source voltage.</li>
+          <li>The branch currents can be different. A branch with less resistance carries more current.</li>
+          <li>The total current is the sum of all the branch currents.</li>
+          <li>To find one branch current, divide the source voltage by that branch's resistance.</li>
+        </ul>
+        <div class="case"><b>Worked example</b>Two branches across a 240V line draw a total of 35A. One branch takes 20A. The other branch takes 35 &minus; 20 = 15A.</div>
+
+        <h4>Ohm's law in a series-parallel circuit</h4>
+        <p>For a series-parallel circuit, work from the outside in, then back out again. The module's circuit has a 1.5V battery. Two 0.5k&Omega; resistors are in series, and two 1k&Omega; resistors are in parallel with each other. (A kiloohm, k&Omega;, is 1,000&Omega;.)</p>
+        <div class="scroll"><table>
+          <thead><tr><th>Step</th><th>Work</th><th>Result</th></tr></thead>
+          <tbody>
+            <tr><td>Add the two series resistors</td><td>0.5k&Omega; + 0.5k&Omega;</td><td>1k&Omega;</td></tr>
+            <tr><td>Reduce the parallel pair (equal, so divide by 2)</td><td>1k&Omega; &divide; 2</td><td>0.5k&Omega;</td></tr>
+            <tr><td>Total resistance</td><td>1k&Omega; + 0.5k&Omega;</td><td>1.5k&Omega;</td></tr>
+            <tr><td>Total current</td><td>1.5V &divide; 1.5k&Omega;</td><td>1mA</td></tr>
+            <tr><td>Drop across each series resistor</td><td>1mA &times; 0.5k&Omega;</td><td>0.5V</td></tr>
+            <tr><td>Drop across the parallel pair</td><td>1.5V &minus; 0.5V &minus; 0.5V</td><td>0.5V</td></tr>
+            <tr><td>Current in each parallel branch</td><td>0.5V &divide; 1k&Omega;</td><td>0.5mA</td></tr>
+          </tbody>
+        </table></div>
+        <p>The two equal parallel resistors share the total current evenly, 0.5mA each, and the two branch currents add back up to the 1mA total. Be careful when you simplify: every simplified value has to stay equivalent to the original, or the final numbers will be wrong.</p>
+      </div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">B</span><h3>Study review points</h3></div>
+      <ul class="points" data-points="1"></ul>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">C</span><h3>Trade-term cards</h3></div>
+      <div class="deck" data-cards="1"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">D</span><h3>Ticket out the door</h3></div>
+      <div class="ticket" data-quiz="1"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">E</span><h3>Talk it over</h3></div>
+      <div class="talk" data-talk="1"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">F</span><h3>Practice questions</h3><span class="time">about 12 min</span></div>
+      <div data-practice="1"></div>
+    </div>
+  </section>
+
+  <!-- SECTION 2 -->
+  <section class="sec" id="s2" aria-labelledby="s2-h">
+    <div class="sec-head">
+      <span class="eyebrow">Module Section 2 of 2</span>
+      <h2 id="s2-h">Kirchhoff&rsquo;s Laws</h2>
+      <p class="obj">By the end of this section your student can state Kirchhoff&rsquo;s current law and voltage law, and use each one to find a missing current or voltage drop.</p>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">A</span><h3>Read it together</h3><span class="time">about 8 min</span></div>
+      <div class="prose">
+        <p class="big">Kirchhoff gave electricians two simple rules, one for current and one for voltage. They sound new, but they are really the rules you already use for parallel and series circuits, written in a more general way.</p>
+
+        <h4>Kirchhoff's current law</h4>
+        <p>At any point in a circuit, the total current entering that point equals the total current leaving it. Current does not pile up or disappear at a junction. In a parallel circuit, this means the total current equals the sum of the currents in all the branches.</p>
+        <p>To write it as an equation, call current flowing into a point positive and current flowing away from it negative. Then everything at the point adds up to zero.</p>
+        <div class="scroll"><table>
+          <thead><tr><th>Example</th><th>Current in</th><th>Current out</th><th>Check</th></tr></thead>
+          <tbody>
+            <tr><td>A point with two currents in and one out</td><td>5A and 3A</td><td>8A</td><td>5 + 3 &minus; 8 = 0</td></tr>
+            <tr><td>Point C, where the line current splits</td><td>6A</td><td>2A and 4A</td><td>6 &minus; 2 &minus; 4 = 0</td></tr>
+            <tr><td>Point D, where the branches rejoin</td><td>2A and 4A</td><td>6A</td><td>2 + 4 &minus; 6 = 0</td></tr>
+          </tbody>
+        </table></div>
+        <div class="case"><b>Key idea</b>Current in equals current out. In a parallel circuit, that is why the total line current must equal the sum of the branch currents.</div>
+
+        <h4>Kirchhoff's voltage law</h4>
+        <p>The algebraic sum of the voltages around any closed path is zero. In a simple circuit this means the voltage drops add up to the voltage applied. If a 240V source feeds three resistors, then the three drops must add up to 240V.</p>
+        <p>Another way to say it is that the voltage rises and the voltage drops cancel out. A source, such as a battery, is a voltage rise. A resistor is a voltage drop.</p>
+        <div class="scroll"><table>
+          <thead><tr><th>Source</th><th>Drops</th><th>Check</th></tr></thead>
+          <tbody>
+            <tr><td>240V</td><td>30V, 120V and 90V</td><td>240 &minus; 30 &minus; 120 &minus; 90 = 0</td></tr>
+          </tbody>
+        </table></div>
+
+        <h4>Loop equations</h4>
+        <p>Any closed path that current can follow is called a loop. A loop equation lists the voltages around one loop. You pick a direction and go around it, and each part is a rise or a drop depending on what you meet first.</p>
+        <ul>
+          <li>Go around the loop in either direction. It does not matter which.</li>
+          <li>At each part, look at the sign (+ or &minus;) you reach first.</li>
+          <li>If it is positive, count the part as a voltage rise (+). If it is negative, count it as a voltage drop (&minus;).</li>
+          <li>Do not just assume that every battery is a rise and every resistor is a drop. That shortcut can fail.</li>
+        </ul>
+        <div class="case"><b>Worked example</b>A 15V source drives four parts. Three resistors drop 2V, 6V and 3V, and the fourth drop is unknown. Write the loop: 15 &minus; 2 &minus; 6 &minus; 3 &minus; E = 0. Then E = 15 &minus; 2 &minus; 6 &minus; 3 = 4V. The answer came out positive, so the direction of current you assumed was correct.</div>
+        <p>In its most general form, the law says the sum of all the potential differences around a closed loop is zero. For a series circuit, that means the drops add up to the applied voltage. For a parallel circuit, it means the voltage across every branch is the same.</p>
+        <div class="scroll"><table>
+          <thead><tr><th>Circuit type</th><th>What Kirchhoff's voltage law tells you</th></tr></thead>
+          <tbody>
+            <tr><td>Series</td><td>The voltage drops add up to the applied voltage</td></tr>
+            <tr><td>Parallel</td><td>The voltage drops across all the branches are equal</td></tr>
+          </tbody>
+        </table></div>
+      </div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">B</span><h3>Study review points</h3></div>
+      <ul class="points" data-points="2"></ul>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">C</span><h3>Trade-term cards</h3></div>
+      <div class="deck" data-cards="2"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">D</span><h3>Ticket out the door</h3></div>
+      <div class="ticket" data-quiz="2"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">E</span><h3>Talk it over</h3></div>
+      <div class="talk" data-talk="2"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">F</span><h3>Practice questions</h3><span class="time">about 6 min</span></div>
+      <div data-practice="2"></div>
+    </div>
+  </section>
+
+  <section class="final" id="review" aria-labelledby="fin-h">
+    <span class="eyebrow">After both sections</span>
+    <h2 id="fin-h">Can your student explain it?</h2>
+    <p class="lead">The goal is not perfect wording. The goal is accurate understanding and good judgment. Tick each one when your student can explain it without looking at the page.</p>
+    <ul class="points" id="final-points"></ul>
+    <p class="note">Trade terms are placed with the section where each is taught, so a few official terms sit in a different section than they are listed in the textbook. Cards marked "Key term" are important words from the module that are not on its official trade-term list. The practice questions come from the handbook's Section Review and Module Review, and the answers follow the publisher's answer key. The textbook-style versions are written in the book's style and vocabulary, not copied word for word, so check the handbook itself for the exact wording. This guide is a plain-language companion, not a copy of the textbook. For real work, use the current standards, your employer's procedures and your instructor's directions. Draft for instructor review.</p>
+  </section>
+
+</div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><strong>Mr. Ellis CTE</strong> · East Valley Institute of Technology (EVIT), Mesa, Arizona · Your Future, Your Way</p>
+    <p>Based on NCCER Electrical Level 1 (10th edition), Module 26104-20, Electrical Theory.</p>
+    <p>Aim for perfection, take what you get.</p>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var SEC = { 1: `Resistive Circuits`, 2: `Kirchhoff's Laws` };
+
+  var POINTS = {
+    1: [
+      `<b>A series circuit</b> has only one path for current. The current is the same everywhere in it, and the total resistance is the sum of all the resistances.`,
+      `<b>A parallel circuit</b> has two or more paths for current. Each branch has the same voltage, the branch currents add up to the total current, and the total resistance is less than the smallest branch.`,
+      `<b>Parallel resistance:</b> add the reciprocals of the branches, then take the reciprocal of the sum. Every extra branch makes the total resistance go down.`,
+      `<b>Two shortcuts:</b> for exactly two resistors, multiply them and divide by their sum (product over sum). For equal resistors, divide one value by how many there are.`,
+      `<b>A series-parallel circuit</b> has both. Trace the current: if it never splits it is series, if it splits with no series loads it is parallel, and if it splits and also has series loads it is series-parallel.`,
+      `<b>To reduce a series-parallel circuit,</b> redraw it, replace each parallel group with one equivalent resistor, then add all the series resistances for the total.`,
+      `<b>Ohm's law in series:</b> find the total resistance, find the total current (I = E &divide; R), then find each drop (E = I &times; R). The drops add up to the applied voltage.`,
+      `<b>Ohm's law in parallel:</b> every branch gets the source voltage, so the branch current is source voltage &divide; branch resistance. The total current is the sum of the branch currents.`
+    ],
+    2: [
+      `<b>Kirchhoff's current law:</b> at any point in a circuit, the current entering equals the current leaving. In a parallel circuit, the line current equals the sum of the branch currents.`,
+      `<b>Writing the current law:</b> count current into a point as positive and current away from it as negative. Everything at the point adds up to zero, such as 5A + 3A &minus; 8A = 0.`,
+      `<b>Kirchhoff's voltage law:</b> the algebraic sum of the voltages around any closed path is zero. In a series circuit, the voltage drops add up to the applied voltage.`,
+      `<b>A voltage source is a rise.</b> A voltage across a resistor is a drop. The rises and drops around a loop cancel out.`,
+      `<b>A loop</b> is any closed path for current. A loop equation lists the voltages around it. Go around in either direction and use the sign you reach first on each part.`,
+      `<b>Do not assume</b> every battery is a rise and every resistor is a drop. Use the sign you meet first. If a solved voltage comes out positive, the direction you assumed was right.`,
+      `<b>For a parallel circuit,</b> the voltage law means the voltage across every branch is the same.`
+    ]
+  };
+
+  // k = "o" for an official NCCER trade term, "k" for a key term from the module that is not on the official list.
+  var CARDS = {
+    1: [
+      { k: "o", t: `Series circuit`, plain: `A circuit with only one path for current.`, book: `A circuit that has only one path for current flow.`, ask: `If you remove one bulb from a series string, what happens to the others?` },
+      { k: "o", t: `Parallel circuits`, plain: `Circuits where current has two or more paths it can take.`, book: `Circuits containing two or more parallel paths through which current can flow.`, ask: `Why does the total resistance get smaller when you add another path?` },
+      { k: "o", t: `Series-parallel circuits`, plain: `Circuits that have some parts in series and some parts in parallel.`, book: `Circuits that contain both series and parallel current paths.`, ask: `How can you tell a series-parallel circuit from a plain parallel one?` },
+      { k: "k", t: `Total resistance (RT)`, plain: `The one resistance that the whole circuit acts like, as seen by the source.`, book: `The combined resistance of all the resistances in a circuit, written RT.`, ask: `How do you find the total resistance of a series circuit?` },
+      { k: "k", t: `Equivalent resistance`, plain: `One resistor that can stand in for a group of resistors and behave the same way.`, book: `A single effective resistance that replaces a combination of resistances without changing the circuit's total current.`, ask: `What is the equivalent resistance of two 200Ω resistors in parallel?` },
+      { k: "k", t: `Product over sum`, plain: `A shortcut for two resistors in parallel: multiply them, then divide by their sum.`, book: `A method for two parallel resistors: RT = (R1 × R2) ÷ (R1 + R2). It works only for two resistors.`, ask: `Why can you not use this shortcut on three different resistors?` },
+      { k: "k", t: `Voltage drop (IR drop)`, plain: `The voltage used up by a part as current goes through it. It equals current times resistance.`, book: `The voltage across a component, found with E = I × R. Also called an IR drop.`, ask: `In a series circuit, what do all the voltage drops add up to?` },
+      { k: "k", t: `Branch`, plain: `One of the separate paths in a parallel circuit.`, book: `One of the separate current paths in a parallel circuit, each with its own current.`, ask: `Do all branches have the same current? The same voltage?` },
+      { k: "k", t: `Kiloohm (kΩ)`, plain: `One thousand ohms.`, book: `A unit equal to 1,000 ohms, shown as kΩ.`, ask: `How many ohms is 0.5kΩ?` }
+    ],
+    2: [
+      { k: "o", t: `Kirchhoff's current law`, plain: `The current going into a point equals the current coming out of it.`, book: `The statement that the total current flowing through a parallel circuit equals the sum of the currents through each current path.`, ask: `A line carries 6A and splits into two branches. One takes 2A. How much does the other take?` },
+      { k: "o", t: `Kirchhoff's voltage law`, plain: `Around any closed path, the voltage rises and the voltage drops cancel out to zero.`, book: `The statement that the sum of all the voltage drops in a circuit equals the source voltage of the circuit.`, ask: `A 12V source feeds two resistors. One drops 5V. How much does the other drop?` },
+      { k: "k", t: `Loop`, plain: `Any closed path that current can follow.`, book: `Any closed circuit path for current flow.`, ask: `How many loops can you find in a simple series circuit?` },
+      { k: "k", t: `Loop equation`, plain: `An equation that adds up the rises and drops around one loop.`, book: `An equation that specifies the voltages around a loop, using Kirchhoff's voltage law.`, ask: `Which direction do you go around the loop when you write it?` },
+      { k: "k", t: `Voltage rise`, plain: `A part of the loop that adds voltage, like a battery.`, book: `An increase in voltage around a loop, such as across a voltage source. Counted as positive.`, ask: `How do you decide if a part is a rise or a drop?` }
+    ]
+  };
+
+  // a = index of the right option
+  var QUIZ = {
+    1: [
+      { q: `How many paths does a series circuit give the current?`, o: [`One`, `Two`, `One for every load`], a: 0, why: `A series circuit has only one path for current flow.` },
+      { q: `True or false: in a series circuit, the current is the same in every part.`, o: [`True`, `False`], a: 0, why: `With only one path, the same current flows through every resistor and the source.` },
+      { q: `Three resistors of 50Ω, 75Ω and 100Ω are in series. What is the total resistance?`, o: [`225Ω`, `25Ω`, `75Ω`], a: 0, why: `Add them: 50 + 75 + 100 = 225Ω.` },
+      { q: `In a parallel circuit, the total resistance is:`, o: [`More than the largest resistor`, `Less than the smallest resistor`, `All the resistors added together`], a: 1, why: `Each added path gives current another way through, so the total drops below even the smallest branch.` },
+      { q: `What is the total resistance of a 6Ω and an 18Ω resistor in parallel?`, o: [`4.5Ω`, `12Ω`, `24Ω`], a: 0, why: `Product over sum: (6 × 18) ÷ (6 + 18) = 108 ÷ 24 = 4.5Ω.` },
+      { q: `Two 200Ω resistors are in parallel. What is their equivalent resistance?`, o: [`400Ω`, `200Ω`, `100Ω`], a: 2, why: `Two equal resistors in parallel equal half of one: 200 ÷ 2 = 100Ω.` },
+      { q: `Two branches across a 240V line draw 35A total. One branch takes 20A. What does the other take?`, o: [`55A`, `15A`, `20A`], a: 1, why: `The branch currents add up to the total, so 35 − 20 = 15A.` },
+      { q: `A series circuit has 190Ω of total resistance and 95V applied. What is the current?`, o: [`0.5A`, `2A`, `18,050A`], a: 0, why: `I = E ÷ R = 95 ÷ 190 = 0.5A.` }
+    ],
+    2: [
+      { q: `Kirchhoff's current law says the current entering a point equals:`, o: [`The current leaving that point`, `The sum of the voltage drops`, `Twice the source current`], a: 0, why: `Current does not pile up or disappear at a point. What comes in goes out.` },
+      { q: `At a point, 5A and 3A flow in. How much flows out?`, o: [`2A`, `8A`, `15A`], a: 1, why: `Current in equals current out: 5 + 3 = 8A.` },
+      { q: `Kirchhoff's voltage law says the algebraic sum of the voltages around a closed path is:`, o: [`Infinity`, `Equal to the current`, `Zero`], a: 2, why: `The voltage rises and drops around a closed loop cancel out to zero.` },
+      { q: `A 12V source feeds three resistors in series. Two drop 3V and 4V. What does the third drop?`, o: [`5V`, `7V`, `19V`], a: 0, why: `The drops add up to the source: 12 − 3 − 4 = 5V.` },
+      { q: `True or false: in a series circuit, the voltage drops add up to the applied voltage.`, o: [`True`, `False`], a: 0, why: `That is Kirchhoff's voltage law applied to a series circuit.` },
+      { q: `What does the voltage law say about the branches of a parallel circuit?`, o: [`The voltage across each one is the same`, `The voltages add up`, `The voltages are all zero`], a: 0, why: `Every branch connects to the same source, so each has the same voltage across it.` }
+    ]
+  };
+
+  var TALK = {
+    1: {
+      qs: [`Why does adding another branch to a parallel circuit make the total resistance go down instead of up?`, `If you can tell series from parallel just by tracing the current, why does that make hard circuits easier?`],
+      scn: [{
+        t: `"Why did they all go out?"`,
+        s: `A string of holiday lights goes dark when one bulb is removed, but the lights in your living room keep working when one lamp is unplugged. What is different about the two circuits?`,
+        g: [`The holiday string is a series circuit, with only one path for current. Open it anywhere and it all stops.`, `Each lamp in a house is on its own branch of a parallel circuit, with its own path to the source.`, `In a parallel circuit, the other branches keep their voltage and keep working.`]
+      }, {
+        t: `"Which formula?"`,
+        s: `A student has two resistors in parallel, 100Ω and 150Ω. Another student has three different resistors in parallel. Which shortcut can each use?`,
+        g: [`The first student can use product over sum: (100 × 150) ÷ 250 = 60Ω.`, `Product over sum only works for exactly two resistors.`, `The second student should add the reciprocals of the branches, then take the reciprocal of the sum.`]
+      }, {
+        t: `"Where do I start?"`,
+        s: `You are given a drawing with a 50Ω resistor in series with two 200Ω resistors that are in parallel. How would you find the total resistance, step by step?`,
+        g: [`Find the parallel part first: two equal 200Ω resistors act like one 100Ω resistor.`, `Replace the parallel group with 100Ω. Now everything is in series.`, `Add the series resistances: 50 + 100 = 150Ω.`]
+      }],
+      parent: `Ask your student to explain, using a string of lights, the difference between a series and a parallel circuit. Then ask what happens to the others when one light goes out in each.`
+    },
+    2: {
+      qs: [`In your own words, what does it mean that current in equals current out at a point?`, `Why is it useful that the voltage drops in a loop must add up to the source voltage?`],
+      scn: [{
+        t: `"The numbers do not add up"`,
+        s: `A 15V source drives a series circuit with three known drops: 2V, 6V and 3V. A student says the last drop must be 4V. How can you check that?`,
+        g: [`Kirchhoff's voltage law says the rises and drops around the loop add up to zero.`, `15 − 2 − 6 − 3 − E = 0, so E = 4V.`, `The answer is positive, so the direction of current assumed was correct.`]
+      }, {
+        t: `"Where did the current go?"`,
+        s: `A 6A line splits at a junction into two branches. One branch carries 2A. A student says the other carries 2A too. What would you tell them?`,
+        g: [`Kirchhoff's current law says the current in equals the current out.`, `6A in means 2A + the other branch must equal 6A, so the other branch carries 4A.`, `Checking that the numbers balance at each junction is a way to catch mistakes.`]
+      }],
+      parent: `Ask your student to draw a simple circuit with a battery and three resistors, put made-up voltage drops on them, and show you that the drops add up to the battery voltage.`
+    }
+  };
+
+  var FINAL = [
+    `I can explain how a series circuit differs from a parallel circuit, and what happens to current and voltage in each.`,
+    `I can find the total resistance of a series circuit by adding the resistances.`,
+    `I can find the total resistance of a parallel circuit, and use product over sum when there are exactly two resistors.`,
+    `I can say why the total resistance of a parallel circuit is always less than the smallest branch.`,
+    `I can tell series, parallel and series-parallel circuits apart by tracing the current.`,
+    `I can reduce a series-parallel circuit to one equivalent resistance, step by step.`,
+    `I can use Ohm's law to find current and voltage drops in series, parallel and series-parallel circuits.`,
+    `I can state Kirchhoff's current law and use it to find a missing current at a point.`,
+    `I can state Kirchhoff's voltage law and use it to find a missing voltage drop in a loop.`
+  ];
+
+  // Practice pairs. pq/po = plain English. tq/to = textbook style. a = index of the right answer (matches the lesson plan answer key).
+  // Both versions keep the same option order. br = [[what you might say, what the textbook says], ...].
+  var PRACTICE = {
+    1: [
+      { src: `Section Review · Q1 (1.1.0)`, a: 1,
+        pq: `Which of these is true about a series circuit?`,
+        po: [`It has more than one path for current`, `The current is the same through every resistor`, `The current changes depending on how strong each resistor is`, `The current through each resistor is always lower than the source current`],
+        tq: `Which of the following is true regarding a series circuit?`,
+        to: [`It has more than one path for current flow.`, `The current flow is the same through all resistors.`, `The current flow varies depending on the strength of the resistor.`, `The current flow through the resistors is always lower than the source current.`],
+        why: `A series circuit has only one path, so the same current flows through every resistor and equals the source current.`,
+        br: [[`Which of these is true about`, `Which of the following is true regarding`], [`the current is the same`, `the current flow is the same`]] },
+      { src: `Section Review · Q2 (1.2.0)`, a: 0,
+        pq: `Which of these is true about a parallel circuit?`,
+        po: [`It has more than one path for current`, `Every part has the same resistance`, `The total resistance is all the resistances added together`, `The current through each resistor is always less than the total resistance`],
+        tq: `Which of the following is true regarding a parallel circuit?`,
+        to: [`It has more than one path for current flow.`, `The resistance is the same through all circuit components.`, `The total resistance is equal to the sum of the individual resistances.`, `The current flow through each resistor is always less than the total resistance.`],
+        why: `A parallel circuit has more than one path. Adding resistances is the series rule, not the parallel rule.`,
+        br: [[`more than one path`, `more than one path for current flow`], [`added together`, `the sum of the individual resistances`]] },
+      { src: `Section Review · Q3 (1.3.0)`, a: 2,
+        pq: `Which of these is true about a series-parallel circuit?`,
+        po: [`Once it is reduced to a series circuit, you add the reciprocals of the resistances and divide by 1`, `Every part has the same resistance`, `Once it is reduced to a series circuit, you add up the loads`, `The current through each resistor is always less than the total resistance`],
+        tq: `Which of the following is true regarding a series-parallel circuit?`,
+        to: [`Once reduced to an equivalent series circuit, the total resistance is found by adding the reciprocal of each resistance and then dividing by 1.`, `The resistance is the same through all circuit components.`, `If a circuit is reduced to an equivalent series circuit, the total resistance is found by adding the loads.`, `The current flow through each resistor is always less than the total resistance.`],
+        why: `After the parallel groups are replaced with equivalent resistors, only series is left, and a series total is found by adding. The reciprocal method belongs to parallel groups.`,
+        br: [[`reduced to a series circuit`, `reduced to an equivalent series circuit`], [`add up the loads`, `adding the loads`]] },
+      { src: `Section Review · Q4 (1.4.2)`, a: 1,
+        pq: `Two branches across a 120V line draw 30A in total. One branch takes 15A. How much does the other branch take?`,
+        po: [`12A`, `15A`, `17A`, `30A`],
+        tq: `Two branches of a circuit (R1 and R2) across a 120V power line draw a total line current of 30A. Branch R1 takes 15A. What is the current I2 in branch R2?`,
+        to: [`12A`, `15A`, `17A`, `30A`],
+        why: `The branch currents add up to the total line current: I2 = 30 − 15 = 15A.`,
+        br: [[`How much does the other branch take?`, `What is the current I2 in branch R2?`], [`in total`, `a total line current of`]] },
+      { src: `Module Review · Q1 (1.1.0)`, a: 0,
+        pq: `True or false: you can use Ohm's law to find the current in each branch of a parallel circuit.`,
+        po: [`True`, `False`],
+        tq: `True or False? You can use Ohm's law to find the value of each branch current in a parallel circuit.`,
+        to: [`True`, `False`],
+        why: `Every branch has the source voltage across it, so each branch current is the source voltage divided by that branch's resistance.`,
+        br: [[`the current in each branch`, `the value of each branch current`]] },
+      { src: `Module Review · Q2 (1.1.0)`, a: 3,
+        pq: `Three resistors of 10Ω, 20Ω and 30Ω are in series. What is the total resistance?`,
+        po: [`1Ω`, `15Ω`, `20Ω`, `60Ω`],
+        tq: `Find the total resistance in a series circuit with three resistances of 10Ω, 20Ω, and 30Ω.`,
+        to: [`1Ω`, `15Ω`, `20Ω`, `60Ω`],
+        why: `In a series circuit you add the resistances: 10 + 20 + 30 = 60Ω.`,
+        br: [[`Three resistors ... are in series`, `a series circuit with three resistances`]] },
+      { src: `Module Review · Q3 (1.2.1; 1.3.1)`, a: 0,
+        pq: `Picture two paths side by side. The first has an 80Ω and a 120Ω resistor in series. The second has three 240Ω resistors in parallel, in series with a 45Ω and a 75Ω resistor. What is the total resistance?`,
+        po: [`100Ω`, `129Ω`, `157Ω`, `1,040Ω`],
+        tq: `The total resistance in Figure RQ01 is _____. (Figure RQ01 is a drawing in the handbook, shown here in words.)`,
+        to: [`100Ω`, `129Ω`, `157Ω`, `1,040Ω`],
+        why: `The first path is 80 + 120 = 200Ω. In the second, three equal 240Ω in parallel make 240 ÷ 3 = 80Ω, and adding 45Ω and 75Ω gives 200Ω. Two equal 200Ω paths in parallel make 100Ω.`,
+        br: [[`Picture two paths side by side`, `Figure RQ01`]] },
+      { src: `Module Review · Q4 (1.4.2)`, a: 3,
+        pq: `In a parallel circuit, the voltage across each path is the same as what?`,
+        po: [`The total circuit resistance times the path current`, `The source voltage minus the path voltage`, `The path resistance times the total current`, `The applied voltage`],
+        tq: `In a parallel circuit, the voltage across each path is equal to the _____.`,
+        to: [`total circuit resistance times path current`, `source voltage minus path voltage`, `path resistance times total current`, `applied voltage`],
+        why: `Every branch connects straight across the source, so each path has the applied (source) voltage across it.`,
+        br: [[`is the same as what?`, `is equal to the _____`]] },
+      { src: `Module Review · Q5 (1.4.2)`, a: 2,
+        pq: `A 100V source is connected to two 40Ω resistors in parallel. What is the total current?`,
+        po: [`1.25A`, `2.50A`, `5A`, `10A`],
+        tq: `The value for total current in Figure RQ02 is _____. (Figure RQ02 is a drawing in the handbook: a 100V source with two 40Ω resistors in parallel.)`,
+        to: [`1.25A`, `2.50A`, `5A`, `10A`],
+        why: `Two equal 40Ω resistors in parallel make 20Ω. Then I = E ÷ R = 100 ÷ 20 = 5A. (Each branch takes 2.5A, and 2.5 + 2.5 = 5A.)`,
+        br: [[`A 100V source is connected to two 40Ω resistors in parallel`, `Figure RQ02`]] },
+      { src: `Module Review · Q6 (1.4.3)`, a: 2,
+        pq: `A 32Ω resistor is in parallel with a 36Ω resistor, and a 54Ω resistor is in series with that pair. With 350V applied, how much current goes through the 54Ω resistor?`,
+        po: [`2.87A`, `3.26A`, `4.93A`, `5.86A`],
+        tq: `A resistor of 32Ω is in parallel with a resistor of 36Ω, and a 54Ω resistor is in series with the pair. When 350V is applied to the combination, the current through the 54Ω resistor is _____.`,
+        to: [`2.87A`, `3.26A`, `4.93A`, `5.86A`],
+        why: `The pair is (32 × 36) ÷ (32 + 36) = 1,152 ÷ 68 ≈ 16.94Ω. Add the 54Ω in series for about 70.94Ω. Then I = 350 ÷ 70.94 ≈ 4.93A. The 54Ω resistor is in series with the whole pair, so it carries the total current.`,
+        br: [[`how much current goes through`, `the current through ... is`], [`with that pair`, `with the pair`]] },
+      { src: `Module Review · Q7 (1.4.3)`, a: 0,
+        pq: `A 242Ω resistor is in parallel with a 180Ω resistor, and a 420Ω resistor is in series with them, in a 27V circuit. The 242Ω resistor carries 22mA. How much current does the 180Ω resistor carry?`,
+        po: [`29.6mA`, `36.4mA`, `59.4mA`, `60.3mA`],
+        tq: `A 242Ω resistor is in parallel with a 180Ω resistor, and a 420Ω resistor is in series with the combination in a 27V circuit. A current of 22mA flows through the 242Ω resistor. The current through the 180Ω resistor is _____.`,
+        to: [`29.6mA`, `36.4mA`, `59.4mA`, `60.3mA`],
+        why: `The voltage across the 242Ω resistor is 0.022A × 242Ω ≈ 5.32V. The 180Ω resistor is in parallel with it, so it has the same 5.32V. Then I = 5.32 ÷ 180 ≈ 29.6mA.`,
+        br: [[`carries 22mA`, `A current of 22mA flows through`], [`in series with them`, `in series with the combination`]] }
+    ],
+    2: [
+      { src: `Section Review · Q1 (2.1.0)`, a: 0,
+        pq: `Who stated that the current entering a point must equal the current leaving it?`,
+        po: [`Kirchhoff`, `Joule`, `Pascal`, `Ohm`],
+        tq: `Who stated that the current entering a point must equal the total current leaving that point?`,
+        to: [`Kirchhoff`, `Joule`, `Pascal`, `Ohm`],
+        why: `That is Kirchhoff's current law. Ohm is known for Ohm's law and Joule for the unit of work.`,
+        br: [[`the current leaving it`, `the total current leaving that point`]] },
+      { src: `Section Review · Q2 (2.2.0)`, a: 0,
+        pq: `A 10V source has three voltage drops: E1 = 2V, E2 = 5V and an unknown E3. What is E3?`,
+        po: [`3V`, `7V`, `12V`, `17V`],
+        tq: `In a circuit with an applied voltage of 10V and voltage drops of E1 = 2V, E2 = 5V, and E3 = ?, the value of E3 must be _____.`,
+        to: [`3V`, `7V`, `12V`, `17V`],
+        why: `The drops add up to the applied voltage: E3 = 10 − 2 − 5 = 3V.`,
+        br: [[`A 10V source has`, `an applied voltage of 10V`], [`What is E3?`, `the value of E3 must be`]] },
+      { src: `Module Review · Q8 (2.0.0)`, a: 3,
+        pq: `Which of these is NOT correct about Kirchhoff's current law?`,
+        po: [`IA + IB − IC = 0`, `The total current entering a point equals the total current leaving it`, `The total line current equals the sum of the branch currents`, `Kirchhoff's laws apply to current only`],
+        tq: `Which statement is not correct relative to Kirchhoff's current law?`,
+        to: [`IA + IB − IC = 0.`, `The total current entering a point must equal total current leaving a point.`, `The total line current must equal the sum of the branch currents.`, `Kirchhoff's laws apply to current only.`],
+        why: `Kirchhoff gave two laws, one for current and one for voltage, so saying they apply to current only is wrong. The other three statements are correct.`,
+        br: [[`NOT correct about`, `not correct relative to`]] },
+      { src: `Module Review · Q9 (2.2.0)`, a: 1,
+        pq: `Kirchhoff's voltage law says the algebraic sum of the voltages around any closed path is what?`,
+        po: [`Infinity`, `Zero`, `Twice the current`, `Always less than the individual voltages because of voltage drop`],
+        tq: `Kirchhoff's voltage law states that the algebraic sum of the voltages around any closed current path is _____.`,
+        to: [`infinity`, `zero`, `twice the current`, `always less than the individual voltages due to voltage drop`],
+        why: `The rises and drops around a closed loop cancel out, so the algebraic sum is zero.`,
+        br: [[`says`, `states that`], [`any closed path`, `any closed current path`]] },
+      { src: `Module Review · Q10 (2.2.1)`, a: 2,
+        pq: `Two 24Ω resistors are in parallel, and a 42Ω resistor is in series with them. With 78V applied, about how much voltage drops across the 42Ω resistor?`,
+        po: [`49.8V`, `55.8V`, `60.5V`, `65.3V`],
+        tq: `Two 24Ω resistors are in parallel, and a 42Ω resistor is in series with the combination. When 78V is applied to the three resistors, the voltage drop across the 42Ω resistor is about _____.`,
+        to: [`49.8V`, `55.8V`, `60.5V`, `65.3V`],
+        why: `Two equal 24Ω in parallel make 12Ω. The total is 12 + 42 = 54Ω, so I = 78 ÷ 54 ≈ 1.44A. The drop across the 42Ω is 1.44 × 42 ≈ 60.7V, and the closest choice, 60.5V, is the answer the key gives.`,
+        br: [[`about how much voltage drops across`, `the voltage drop across ... is about`], [`with them`, `with the combination`]] }
+    ]
+  };
+
+  function el(tag, cls, text) { var n = document.createElement(tag); if (cls) n.className = cls; if (text != null) n.textContent = text; return n; }
+
+  function buildPoints(ul, list, prefix) {
+    list.forEach(function (html, i) {
+      var li = el("li");
+      var label = el("label");
+      var input = document.createElement("input");
+      input.type = "checkbox";
+      input.id = prefix + "-" + i;
+      var span = el("span");
+      span.innerHTML = html; // static text written in this file
+      label.appendChild(input); label.appendChild(span);
+      li.appendChild(label); ul.appendChild(li);
+    });
+  }
+
+  function field(label, text) {
+    var d = el("span");
+    d.appendChild(el("span", "label", label));
+    d.appendChild(document.createTextNode(text));
+    return d;
+  }
+  function buildCards(host, n) {
+    CARDS[n].forEach(function (item) {
+      var b = el("button", "card");
+      b.type = "button";
+      b.setAttribute("aria-pressed", "false");
+      b.setAttribute("aria-label", item.t + ". Press to flip the card.");
+      var inner = el("span", "card-inner");
+      var f = el("span", "face front" + (item.k === "k" ? " key" : ""));
+      f.appendChild(el("span", "strip", (item.k === "o" ? "NCCER trade term" : "Key term") + " · Section " + n));
+      f.appendChild(el("span", "term", item.t));
+      f.appendChild(el("span", "hint", "TAP TO FLIP"));
+      var k = el("span", "face back");
+      k.appendChild(el("span", "strip", item.t));
+      var body = el("span", "body");
+      body.appendChild(field("In everyday words", item.plain));
+      body.appendChild(field("From the module", item.book));
+      var ask = field("Ask your student", item.ask);
+      ask.className = "ask";
+      body.appendChild(ask);
+      k.appendChild(body);
+      inner.appendChild(f); inner.appendChild(k);
+      b.appendChild(inner);
+      b.addEventListener("click", function () { b.setAttribute("aria-pressed", b.getAttribute("aria-pressed") === "true" ? "false" : "true"); });
+      host.appendChild(b);
+    });
+  }
+
+  function buildQuiz(host, n) {
+    var list = QUIZ[n];
+    var answered = 0;
+    host.appendChild(el("p", "ticket-intro", "Pick the answer. You will see right away if it is correct. Nothing is saved or sent."));
+    var foot = el("div", "ticket-foot");
+    var done = el("p", null, "");
+    done.setAttribute("aria-live", "polite");
+    var retry = el("button", "btn", "Try again");
+    retry.type = "button";
+    retry.hidden = true;
+    foot.appendChild(done); foot.appendChild(retry);
+
+    list.forEach(function (item, qi) {
+      var fs = el("fieldset", "q");
+      fs.appendChild(el("legend", null, (qi + 1) + ". " + item.q));
+      var opts = el("div", "opts");
+      var fb = el("p", "fb");
+      fb.setAttribute("aria-live", "polite");
+      var btns = [];
+      item.o.forEach(function (text, oi) {
+        var b = el("button", "opt", text);
+        b.type = "button";
+        b.addEventListener("click", function () {
+          btns.forEach(function (x) { x.disabled = true; });
+          answered++;
+          if (oi === item.a) {
+            b.classList.add("right");
+            fb.innerHTML = "";
+            var good = el("b", null, "Correct. "); fb.appendChild(good); fb.appendChild(document.createTextNode(item.why));
+          } else {
+            b.classList.add("wrong");
+            btns[item.a].classList.add("right");
+            fb.innerHTML = "";
+            var no = el("b", null, "Not quite. "); fb.appendChild(no);
+            fb.appendChild(document.createTextNode("The answer is \"" + item.o[item.a] + "\". " + item.why));
+          }
+          if (answered === list.length) {
+            done.textContent = "Ticket finished. Reread any part of the section that felt shaky, then try again.";
+            retry.hidden = false;
+          }
+        });
+        btns.push(b); opts.appendChild(b);
+      });
+      fs.appendChild(opts); fs.appendChild(fb);
+      host.insertBefore(fs, null);
+      fs._reset = function () { btns.forEach(function (x) { x.disabled = false; x.className = "opt"; }); fb.textContent = ""; };
+    });
+    host.appendChild(foot);
+    retry.addEventListener("click", function () {
+      host.querySelectorAll("fieldset").forEach(function (f) { f._reset(); });
+      answered = 0; done.textContent = ""; retry.hidden = true;
+    });
+  }
+
+  function buildTalk(host, n) {
+    var t = TALK[n];
+    var ol = el("ol", "qs");
+    t.qs.forEach(function (q) { ol.appendChild(el("li", null, q)); });
+    host.appendChild(ol);
+    t.scn.forEach(function (s) {
+      var d = el("details", "scn");
+      d.appendChild(el("summary", null, "Scenario: " + s.t));
+      d.appendChild(el("p", "setup", s.s));
+      var g = el("div", "good");
+      g.appendChild(el("b", null, "A good answer includes"));
+      var ul = el("ul");
+      s.g.forEach(function (x) { ul.appendChild(el("li", null, x)); });
+      g.appendChild(ul); d.appendChild(g);
+      host.appendChild(d);
+    });
+    if (t.parent) {
+      var p = el("div", "parent");
+      p.appendChild(el("b", null, "Parent prompt"));
+      p.appendChild(el("p", null, t.parent));
+      host.appendChild(p);
+    }
+  }
+
+
+  function ask(label, cls, q, opts, correct, onAnswer) {
+    var box = el("div", "ask-block" + (cls ? " " + cls : ""));
+    box.appendChild(el("p", "step-label", label));
+    box.appendChild(el("p", "pr-q", q));
+    var wrap = el("div", "opts");
+    wrap.setAttribute("role", "group");
+    wrap.setAttribute("aria-label", q);
+    var fb = el("p", "fb");
+    fb.setAttribute("aria-live", "polite");
+    var btns = [];
+    opts.forEach(function (text, oi) {
+      var b = el("button", "opt", String.fromCharCode(65 + oi) + ".  " + text);
+      b.type = "button";
+      b.addEventListener("click", function () {
+        btns.forEach(function (x) { x.disabled = true; });
+        var ok = oi === correct;
+        b.classList.add(ok ? "right" : "wrong");
+        if (!ok) btns[correct].classList.add("right");
+        onAnswer(ok, fb, String.fromCharCode(65 + correct));
+      });
+      btns.push(b); wrap.appendChild(b);
+    });
+    box.appendChild(wrap); box.appendChild(fb);
+    box.reset = function () { btns.forEach(function (x) { x.disabled = false; x.className = "opt"; }); fb.textContent = ""; };
+    return box;
+  }
+  function say(fb, lead, text) {
+    fb.textContent = "";
+    fb.appendChild(el("b", null, lead + " "));
+    fb.appendChild(document.createTextNode(text));
+  }
+
+  function buildPractice(host, n) {
+    var list = PRACTICE[n];
+    host.appendChild(el("p", "pr-intro", "Test questions use the textbook's formal words. Answer each question in plain English first, then see the same question the way the book asks it. The \"Words to notice\" box shows how the two fit together. Nothing is saved or sent."));
+    var items = [];
+    list.forEach(function (item, i) {
+      var art = el("article", "pr");
+      var head = el("div", "pr-head");
+      head.appendChild(el("span", null, "Question " + (i + 1) + " of " + list.length));
+      head.appendChild(el("span", null, "Source: " + item.src));
+      art.appendChild(head);
+
+      var bridge = el("div", "bridge");
+      bridge.hidden = true;
+      bridge.appendChild(el("p", "step-label", "Words to notice"));
+      var ul = el("ul");
+      item.br.forEach(function (p) {
+        var li = el("li");
+        li.appendChild(el("span", "you", p[0]));
+        li.appendChild(el("span", "arrow", "→"));
+        li.appendChild(el("span", "pub", p[1]));
+        ul.appendChild(li);
+      });
+      bridge.appendChild(ul);
+
+      var b2 = ask("Step 2 · The same question in the textbook's words", "formal", item.tq, item.to, item.a, function (ok, fb, letter) {
+        if (ok) say(fb, "Correct.", "You just answered it in the textbook's voice.");
+        else say(fb, "Not quite.", "The answer is " + letter + ". Compare it with your plain-English answer above.");
+        bridge.hidden = false;
+      });
+      b2.hidden = true;
+      var b1 = ask("Step 1 · In plain English", "", item.pq, item.po, item.a, function (ok, fb, letter) {
+        if (ok) say(fb, "Correct.", item.why);
+        else say(fb, "Not quite.", "The answer is " + letter + ". " + item.why);
+        b2.hidden = false;
+      });
+      art.appendChild(b1); art.appendChild(b2); art.appendChild(bridge);
+      host.appendChild(art);
+      items.push({ b1: b1, b2: b2, bridge: bridge });
+    });
+    var foot = el("div", "ticket-foot");
+    var retry = el("button", "btn", "Start this set over");
+    retry.type = "button";
+    retry.addEventListener("click", function () {
+      items.forEach(function (x) { x.b1.reset(); x.b2.reset(); x.b2.hidden = true; x.bridge.hidden = true; });
+    });
+    foot.appendChild(retry);
+    host.appendChild(foot);
+  }
+
+  [1, 2].forEach(function (n) {
+    buildPractice(document.querySelector('[data-practice="' + n + '"]'), n);
+    buildPoints(document.querySelector('[data-points="' + n + '"]'), POINTS[n], "s" + n);
+    buildCards(document.querySelector('[data-cards="' + n + '"]'), n);
+    buildQuiz(document.querySelector('[data-quiz="' + n + '"]'), n);
+    buildTalk(document.querySelector('[data-talk="' + n + '"]'), n);
+  });
+  buildPoints(document.getElementById("final-points"), FINAL, "fin");
+})();
+</script>
+
+</body></html>
+</body></html>

@@ -1,8 +1,8 @@
-# EVIT Electrical Family Study Guides
+# EVIT Electrical Loved Ones Study Guides
 
-Plain-English study guides for families and students in the EVIT Electrical program (East Valley Institute of Technology, Mesa, Arizona). There is one guide for each NCCER module. Each guide is a single web page that opens in any browser. No account is needed.
+Plain-English study guides for loved ones and students in the EVIT Electrical program (East Valley Institute of Technology, Mesa, Arizona). There is one guide for each NCCER module. Each guide is a single web page that opens in any browser. No account is needed.
 
-**Status: draft for instructor and administrator review. Not yet published to students or families.**
+**Status: draft for instructor and administrator review. Not yet published to students or loved ones.**
 
 ## What each guide contains
 
@@ -21,6 +21,10 @@ Every module section follows the same six parts:
 | --- | --- |
 | NCCER Electrical Level 1, Module 26102-20: Safety for Electricians | `electrical-foundations.html` |
 | NCCER Core, Module 00105: Introduction to Construction Drawings | `construction-drawings.html` |
+| NCCER Electrical Level 1, Module 26103-20: Introduction to Electrical Circuits | `electrical-circuits.html` |
+| NCCER Electrical Level 1, Module 26104-20: Electrical Theory | `electrical-theory.html` |
+| NCCER Electrical Level 1, Module 26105-20: Introduction to the National Electrical Code | `national-electrical-code.html` |
+| NCCER Core, Module 00107: Basic Communication Skills | `communication-skills.html` |
 
 `index.html` is the landing page that links to the finished guides.
 

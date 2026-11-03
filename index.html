@@ -27,7 +27,13 @@ h2.list{font-size:clamp(1.8rem,5vw,2.4rem);margin:40px 0 14px;border-top:8px sol
 .grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fill,minmax(min(100%,270px),1fr));list-style:none;margin:0;padding:0}
 .mod{background:var(--surface);border:2px solid var(--ink);display:flex;flex-direction:column;min-height:190px}
 .mod .tag{background:var(--accent);color:#fff;font-family:var(--font-mono);font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;padding:8px 14px}
-.mod.soon .tag{background:var(--ink-soft)}
+.mod.core .tag{background:#1B5FC9;color:#fff}
+.mod.el1 .tag{background:#F2B705;color:#14202B}
+.mod.el2 .tag{background:#E8710A;color:#14202B}
+.mod.soon .tag{background:var(--ink-soft);color:#fff}
+.key{display:flex;flex-wrap:wrap;gap:10px 18px;margin:0 0 16px;font-family:var(--font-mono);font-size:12px;letter-spacing:.06em;text-transform:uppercase}
+.key span::before{content:"";display:inline-block;width:12px;height:12px;margin-right:6px;vertical-align:-1px;border:1px solid var(--ink)}
+.key .k-core::before{background:#1B5FC9}.key .k-el1::before{background:#F2B705}.key .k-el2::before{background:#E8710A}
 .mod .body{padding:14px 16px;flex:1;display:flex;flex-direction:column;gap:8px}
 .mod h3{font-size:1.5rem;font-weight:700}
 .mod p{margin:0;font-size:.95rem;color:var(--ink-soft)}
@@ -59,57 +65,66 @@ footer strong{color:var(--band-ink)}footer p{margin:0 0 6px}
   </section>
 
   <h2 class="list">Modules</h2>
+  <p class="key" aria-label="Color key"><span class="k-core">Core</span><span class="k-el1">Electrical Level 1</span><span class="k-el2">Electrical Level 2 (coming)</span></p>
   <ul class="grid">
-    <li class="mod">
-      <span class="tag">Ready</span>
+    <li class="mod el1">
+      <span class="tag">EL1 · Ready</span>
       <div class="body">
         <h3>Electrical Foundations</h3>
         <p>NCCER Electrical Level 1, Module 26102-20: Safety for Electricians.</p>
         <a class="go" href="electrical-foundations.html">Open the guide</a>
       </div>
     </li>
-    <li class="mod">
-      <span class="tag">Ready</span>
+    <li class="mod core">
+      <span class="tag">Core · Ready</span>
       <div class="body">
         <h3>Construction Drawings</h3>
         <p>NCCER Core, Module 00105: Introduction to Construction Drawings.</p>
         <a class="go" href="construction-drawings.html">Open the guide</a>
       </div>
     </li>
-    <li class="mod">
-      <span class="tag">Ready</span>
+    <li class="mod el1">
+      <span class="tag">EL1 · Ready</span>
       <div class="body">
         <h3>Electrical Circuits</h3>
         <p>NCCER Electrical Level 1, Module 26103-20: Introduction to Electrical Circuits.</p>
         <a class="go" href="electrical-circuits.html">Open the guide</a>
       </div>
     </li>
-    <li class="mod">
-      <span class="tag">Ready</span>
+    <li class="mod el1">
+      <span class="tag">EL1 · Ready</span>
       <div class="body">
         <h3>Electrical Theory</h3>
         <p>NCCER Electrical Level 1, Module 26104-20: Electrical Theory.</p>
         <a class="go" href="electrical-theory.html">Open the guide</a>
       </div>
     </li>
-    <li class="mod">
-      <span class="tag">Ready</span>
+    <li class="mod el1">
+      <span class="tag">EL1 · Ready</span>
       <div class="body">
         <h3>National Electrical Code</h3>
         <p>NCCER Electrical Level 1, Module 26105-20: Introduction to the National Electrical Code.</p>
         <a class="go" href="national-electrical-code.html">Open the guide</a>
       </div>
     </li>
-    <li class="mod">
-      <span class="tag">Ready</span>
+    <li class="mod core">
+      <span class="tag">Core · Ready</span>
       <div class="body">
         <h3>Basic Communication Skills</h3>
         <p>NCCER Core, Module 00107: Basic Communication Skills.</p>
         <a class="go" href="communication-skills.html">Open the guide</a>
       </div>
     </li>
+    <li class="mod core">
+      <span class="tag">Core · Ready</span>
+      <div class="body">
+        <h3>Basic Employability Skills</h3>
+        <p>NCCER Core, Module 00108: Basic Employability Skills.</p>
+        <a class="go" href="employability-skills.html">Open the guide</a>
+      </div>
+    </li>
     <!-- TO ADD A MODULE: copy one of the blocks above, change the title, the description and the href
-         to the new file name. For a guide that is not finished yet, copy this block instead:
+         to the new file name. Keep the class on the li: core (blue), el1 (yellow) or el2 (orange), and change the tag text to match. For a guide that is not finished yet, copy this block instead:
     <li class="mod soon">
       <span class="tag">Coming soon</span>
       <div class="body">

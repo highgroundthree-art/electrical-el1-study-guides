@@ -25,6 +25,7 @@ Every module section follows the same six parts:
 | NCCER Electrical Level 1, Module 26104-20: Electrical Theory | `electrical-theory.html` |
 | NCCER Electrical Level 1, Module 26105-20: Introduction to the National Electrical Code | `national-electrical-code.html` |
 | NCCER Core, Module 00107: Basic Communication Skills | `communication-skills.html` |
+| NCCER Core, Module 00108: Basic Employability Skills | `employability-skills.html` |
 
 `index.html` is the landing page that links to the finished guides.
 

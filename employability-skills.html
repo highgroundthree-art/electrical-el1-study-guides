@@ -690,7 +690,7 @@ footer p { margin: 0 0 6px; }
         s: `The supplier sent a different material than the contract lists. Why might this slow the job down?`,
         g: [`The substitution was not listed in the contract specifications, so it must go through an approval process.`, `That can take a significant amount of time and effort.`, `Tell your supervisor early so approval can start.`]
       }],
-      parent: `Ask your student to describe a real problem from school or home and walk it through the five steps out loud.`
+      parent: `Ask your student to describe a real problem from school or where you live and walk it through the five steps out loud.`
     },
     3: {
       qs: [`What first impression do you want a new supervisor to have of you?`, `Why do you think some people ignore good advice from someone they do not like?`],
@@ -751,7 +751,7 @@ footer p { margin: 0 0 6px; }
         pq: `What is one of the most productive ways to find job openings?`,
         po: [`Networking with loved ones and friends`, `Posting a "Seeking Employment" ad on Facebook`, `Calling Human Resources offices directly`, `Checking the Help Wanted section of the local newspaper online`],
         tq: `One of the most important and productive methods to identify job opportunities is by _____.`,
-        to: [`networking with family and friends`, `posting a "Seeking Employment" ad on Facebook`, `trying to call Human Resource offices directly`, `checking the Help Wanted section of the online local newspaper`],
+        to: [`networking with friends and associates`, `posting a "Seeking Employment" ad on Facebook`, `trying to call Human Resource offices directly`, `checking the Help Wanted section of the online local newspaper`],
         why: `Networking. As many as 70 percent of available positions are not publicly advertised.`,
         br: [[`one of the most productive ways to find job openings`, `One of the most important and productive methods to identify job opportunities`]] }
     ],
@@ -1029,7 +1029,7 @@ footer p { margin: 0 0 6px; }
     });
     if (t.parent) {
       var p = el("div", "parent");
-      p.appendChild(el("b", null, "Parent prompt"));
+      p.appendChild(el("b", null, "Talk it over with your loved ones"));
       p.appendChild(el("p", null, t.parent));
       host.appendChild(p);
     }

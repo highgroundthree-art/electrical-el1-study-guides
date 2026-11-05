@@ -1,0 +1,1026 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Basic Electrical Construction Documents Loved Ones Study Guide</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+/* Layout concept: one long study sheet. Each module section runs the same six parts
+   (read, review points, trade-term tags, ticket out the door, talk it over). */
+:root {
+  --bg: #EEF1F3;
+  --surface: #FFFFFF;
+  --ink: #14202B;
+  --ink-soft: #46576A;
+  --line: #C9D2DA;
+  --band: #14202B;
+  --band-ink: #F4F7F9;
+  --accent: #C42B17;
+  --accent-ink: #FFFFFF;
+  --caution: #F2B705;
+  --caution-soft: #FFF3C4;
+  --good: #1E7A3C;
+  --good-soft: #DDF3E4;
+  --bad: #A8321F;
+  --bad-soft: #FBE3DE;
+  --tag-hole: #EEF1F3;
+  --focus: #0B5FFF;
+  --font-display: "Barlow Condensed", "Arial Narrow", Impact, sans-serif;
+  --font-body: "Barlow", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0F171E; --surface: #18232D; --ink: #EAF0F4; --ink-soft: #A5B4C2; --line: #2E3E4C;
+    --band: #0A1016; --band-ink: #F4F7F9; --accent: #FF5A44; --accent-ink: #14202B;
+    --caution: #F2B705; --caution-soft: #3A3210; --good: #6FD08C; --good-soft: #17301F;
+    --bad: #FF8E7C; --bad-soft: #3A1B16; --tag-hole: #0F171E; --focus: #6AA2FF;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0F171E; --surface: #18232D; --ink: #EAF0F4; --ink-soft: #A5B4C2; --line: #2E3E4C;
+  --band: #0A1016; --band-ink: #F4F7F9; --accent: #FF5A44; --accent-ink: #14202B;
+  --caution: #F2B705; --caution-soft: #3A3210; --good: #6FD08C; --good-soft: #17301F;
+  --bad: #FF8E7C; --bad-soft: #3A1B16; --tag-hole: #0F171E; --focus: #6AA2FF;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--ink); font-family: var(--font-body); font-size: 17px; line-height: 1.6; }
+:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
+.wrap { max-width: 920px; margin-inline: auto; padding-inline: max(16px, env(safe-area-inset-left, 0px)) max(16px, env(safe-area-inset-right, 0px)); }
+h1, h2, h3, h4 { font-family: var(--font-display); text-transform: uppercase; letter-spacing: 0.03em; line-height: 1.05; margin: 0; text-wrap: balance; }
+.eyebrow { font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-soft); }
+
+.band { background: var(--band); color: var(--band-ink); padding-block: 34px 26px; border-bottom: 8px solid var(--caution); }
+.band .eyebrow { color: var(--caution); }
+.band h1 { font-size: clamp(2.5rem, 9vw, 4.4rem); font-weight: 700; margin-top: 10px; }
+.band .sub { margin: 14px 0 0; font-size: 1.1rem; color: #D5DEE5; max-width: 46ch; }
+.band .byline { margin: 14px 0 0; font-size: 0.95rem; color: #AEBBC7; }
+nav.jump { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 22px; }
+nav.jump a { text-decoration: none; font-weight: 600; font-size: 0.95rem; padding: 8px 14px; border: 2px solid #3B4B5A; border-radius: 3px; color: var(--band-ink); }
+nav.jump a:hover { border-color: var(--caution); }
+
+.intro { margin-top: 28px; display: grid; gap: 22px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 380px), 1fr)); }
+.panel { background: var(--surface); border: 1px solid var(--line); padding: 20px 22px 22px; min-width: 0; }
+.panel h2 { font-size: 1.5rem; font-weight: 700; margin-bottom: 10px; }
+.panel p { margin: 0 0 10px; }
+.panel ol { margin: 8px 0 0; padding-left: 1.3em; display: grid; gap: 6px; }
+.notice { background: var(--caution-soft); border: 2px solid var(--caution); padding: 16px 20px; margin-top: 22px; }
+.notice p { margin: 4px 0 0; }
+.notice h2 { font-size: 1.25rem; }
+
+/* section */
+.sec { margin-top: 56px; }
+.sec-head { border-top: 8px solid var(--ink); padding-top: 18px; }
+.sec-head h2 { font-size: clamp(2rem, 6vw, 3rem); font-weight: 700; margin-top: 6px; }
+.sec-head .obj { margin: 10px 0 0; color: var(--ink-soft); max-width: 62ch; }
+.part { margin-top: 34px; }
+.part-title { display: flex; align-items: baseline; gap: 12px; margin-bottom: 14px; }
+.part-title .letter { font-family: var(--font-mono); font-size: 13px; background: var(--ink); color: var(--bg); padding: 2px 8px; flex: none; }
+.part-title h3 { font-size: 1.7rem; font-weight: 700; }
+.part-title .time { margin-left: auto; font-family: var(--font-mono); font-size: 12px; color: var(--ink-soft); white-space: nowrap; }
+
+.prose { background: var(--surface); border: 1px solid var(--line); padding: 22px 24px; }
+.prose h4 { font-size: 1.25rem; font-weight: 700; margin: 20px 0 6px; color: var(--accent); }
+.prose h4:first-child { margin-top: 0; }
+.prose p { margin: 0 0 10px; max-width: 64ch; }
+.prose ul { margin: 0 0 10px; padding-left: 1.2em; max-width: 64ch; }
+.prose li { margin-bottom: 4px; }
+.prose .big { font-size: 1.12rem; font-weight: 500; border-left: 6px solid var(--caution); padding: 4px 0 4px 14px; margin: 0 0 16px; }
+.prose table { border-collapse: collapse; margin: 8px 0 14px; font-size: 0.95rem; width: 100%; max-width: 520px; }
+.prose th, .prose td { text-align: left; padding: 6px 10px; border-bottom: 1px solid var(--line); }
+.prose th { font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-soft); }
+.scroll { overflow-x: auto; }
+.case { background: var(--bg); border-left: 6px solid var(--accent); padding: 12px 16px; margin: 14px 0 0; max-width: 64ch; }
+.case b { font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.08em; text-transform: uppercase; display: block; color: var(--ink-soft); }
+
+/* review points */
+.points { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; counter-reset: pt; }
+.points li { background: var(--surface); border: 1px solid var(--line); }
+.points label { display: grid; grid-template-columns: 28px minmax(0, 1fr); gap: 12px; padding: 12px 16px; cursor: pointer; align-items: start; }
+.points input { width: 22px; height: 22px; margin: 2px 0 0; accent-color: var(--good); }
+.points li:has(input:checked) { background: var(--good-soft); border-color: var(--good); }
+.points b { font-weight: 600; }
+
+/* cards */
+.deck { display: grid; gap: 22px; grid-template-columns: repeat(auto-fill, minmax(min(100%, 270px), 1fr)); }
+.card { all: unset; box-sizing: border-box; display: block; cursor: pointer; perspective: 1100px; min-width: 0; }
+.card:focus-visible { outline: 3px solid var(--focus); outline-offset: 4px; }
+.card-inner { display: grid; transition: transform 0.5s cubic-bezier(.3,.7,.2,1); transform-style: preserve-3d; position: relative; }
+.card[aria-pressed="true"] .card-inner { transform: rotateY(180deg); }
+.face { grid-area: 1 / 1; backface-visibility: hidden; -webkit-backface-visibility: hidden; display: flex; flex-direction: column; min-height: 250px; border: 2px solid var(--ink); background: var(--surface); position: relative; overflow: hidden; }
+.face::before { content: ""; position: absolute; top: 12px; left: 50%; width: 16px; height: 16px; margin-left: -8px; border-radius: 50%; background: var(--tag-hole); border: 2px solid var(--ink); }
+.front .strip { background: var(--accent); color: var(--accent-ink); padding: 38px 16px 8px; font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.08em; text-transform: uppercase; }
+.front.key .strip { background: var(--ink); color: var(--bg); }
+.front .term { flex: 1; display: flex; align-items: center; padding: 16px 18px; font-family: var(--font-display); text-transform: uppercase; font-weight: 700; font-size: clamp(1.8rem, 7vw, 2.2rem); line-height: 1.02; letter-spacing: 0.02em; overflow-wrap: anywhere; }
+.front .hint { padding: 10px 18px 14px; font-size: 0.8rem; color: var(--ink-soft); border-top: 1px dashed var(--line); font-family: var(--font-mono); letter-spacing: 0.04em; }
+.back { transform: rotateY(180deg); background: var(--caution-soft); }
+.back .strip { background: var(--ink); color: var(--bg); padding: 38px 16px 8px; font-family: var(--font-display); text-transform: uppercase; font-weight: 700; letter-spacing: 0.04em; font-size: 1.1rem; line-height: 1.05; }
+.back .body { padding: 14px 18px 16px; display: grid; gap: 10px; align-content: start; font-size: 0.95rem; line-height: 1.45; }
+.back .label { font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-soft); display: block; margin-bottom: 1px; }
+.back .ask { border-top: 1px dashed var(--ink-soft); padding-top: 10px; font-weight: 500; }
+.deck-note { margin: 12px 0 0; font-size: 0.9rem; color: var(--ink-soft); }
+@media (prefers-reduced-motion: reduce) {
+  .card-inner { transition: none; transform-style: flat; }
+  .card[aria-pressed="true"] .card-inner { transform: none; }
+  .back { transform: none; }
+  .face { backface-visibility: visible; }
+  .card .back { visibility: hidden; }
+  .card[aria-pressed="true"] .back { visibility: visible; }
+  .card[aria-pressed="true"] .front { visibility: hidden; }
+}
+
+/* ticket */
+.ticket { background: var(--surface); border: 2px dashed var(--ink); padding: 8px 20px 18px; position: relative; }
+.ticket-intro { margin: 14px 0 4px; color: var(--ink-soft); font-size: 0.95rem; }
+.q { border: 0; border-top: 1px solid var(--line); margin: 0; padding: 16px 0 14px; min-width: 0; }
+.q:first-of-type { border-top: 0; }
+.q legend { font-weight: 600; padding: 0; margin-bottom: 8px; float: left; width: 100%; }
+.q .opts { clear: both; display: grid; gap: 8px; }
+.opt { font: inherit; text-align: left; padding: 10px 14px; background: var(--bg); color: var(--ink); border: 2px solid var(--line); border-radius: 3px; cursor: pointer; }
+.opt:hover:not(:disabled) { border-color: var(--ink); }
+.opt:disabled { cursor: default; }
+.opt.right { background: var(--good-soft); border-color: var(--good); }
+.opt.wrong { background: var(--bad-soft); border-color: var(--bad); }
+.fb { margin: 8px 0 0; font-size: 0.93rem; color: var(--ink-soft); }
+.fb b { color: var(--ink); }
+.ticket-foot { margin-top: 10px; display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+.ticket-foot p { margin: 0; font-weight: 500; }
+.btn { font: inherit; font-weight: 600; font-size: 0.92rem; padding: 8px 14px; background: var(--surface); color: var(--ink); border: 2px solid var(--ink); border-radius: 3px; cursor: pointer; }
+.btn:hover { background: var(--ink); color: var(--bg); }
+
+/* talk it over */
+.talk { display: grid; gap: 14px; }
+.talk .qs { background: var(--surface); border: 1px solid var(--line); padding: 16px 22px 16px 40px; margin: 0; display: grid; gap: 8px; }
+details.scn { background: var(--surface); border: 1px solid var(--line); border-left: 6px solid var(--caution); padding: 14px 18px; }
+details.scn summary { cursor: pointer; font-family: var(--font-display); text-transform: uppercase; letter-spacing: 0.03em; font-size: 1.3rem; font-weight: 700; }
+details.scn .setup { margin: 10px 0 8px; }
+details.scn .good { margin: 12px 0 0; padding: 10px 14px; background: var(--good-soft); border-left: 6px solid var(--good); }
+details.scn .good b { font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.08em; text-transform: uppercase; display: block; }
+details.scn .good ul { margin: 6px 0 0; padding-left: 1.1em; }
+.parent { background: var(--caution-soft); border: 2px solid var(--caution); padding: 12px 16px; }
+.parent b { font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.08em; text-transform: uppercase; display: block; }
+.parent p { margin: 4px 0 0; }
+
+/* practice questions */
+.pr-intro { margin: 0 0 14px; color: var(--ink-soft); max-width: 66ch; }
+.pr { background: var(--surface); border: 1px solid var(--line); margin-bottom: 18px; }
+.pr-head { display: flex; flex-wrap: wrap; gap: 6px 14px; justify-content: space-between; align-items: baseline; padding: 10px 18px; background: var(--ink); color: var(--bg); font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.06em; text-transform: uppercase; }
+.ask-block { padding: 14px 18px 16px; }
+.ask-block + .ask-block { border-top: 2px dashed var(--line); }
+.ask-block.formal { background: var(--bg); }
+.step-label { margin: 0 0 6px; font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); }
+.pr-q { margin: 0 0 10px; font-weight: 600; font-size: 1.05rem; max-width: 62ch; }
+.bridge { padding: 14px 18px 16px; border-top: 2px dashed var(--line); background: var(--caution-soft); }
+.bridge .step-label { color: var(--ink); }
+.bridge ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+.bridge li { display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); gap: 10px; align-items: baseline; }
+.bridge .you { font-style: italic; }
+.bridge .arrow { font-family: var(--font-mono); color: var(--ink-soft); }
+.bridge .pub { font-weight: 600; }
+@media (max-width: 520px) { .bridge li { grid-template-columns: minmax(0, 1fr); gap: 0; } .bridge .arrow { display: none; } .bridge .pub::before { content: "Textbook: "; font-weight: 400; font-family: var(--font-mono); font-size: 11px; color: var(--ink-soft); } .bridge .you::before { content: "You say: "; font-style: normal; font-family: var(--font-mono); font-size: 11px; color: var(--ink-soft); } }
+
+/* final checklist */
+.final { margin-top: 56px; border-top: 8px solid var(--ink); padding-top: 18px; }
+.final h2 { font-size: clamp(1.9rem, 5vw, 2.6rem); font-weight: 700; }
+.final .lead { color: var(--ink-soft); max-width: 62ch; margin: 10px 0 16px; }
+.note { margin: 28px 0 0; font-size: 0.9rem; color: var(--ink-soft); max-width: 70ch; }
+footer { margin-top: 48px; background: var(--band); color: #AEBBC7; padding-block: 26px 30px; font-size: 0.92rem; }
+footer strong { color: var(--band-ink); }
+footer p { margin: 0 0 6px; }
+</style>
+</head>
+<body>
+<header class="band">
+  <div class="wrap">
+    <span class="eyebrow">EVIT Electrical · Loved Ones Study Guide</span>
+    <h1>Electrical<br>Construction<br>Documents</h1>
+    <p class="sub">A Loved Ones Study Guide for NCCER Electrical Level 1, Module 26110-20: Basic Electrical Construction Documents</p>
+    <p class="byline">Mr. Ellis CTE — General Construction &amp; Electrical Teacher · High School &amp; Adult Pre-Apprentice Programs</p>
+    <nav class="jump" aria-label="Sections">
+      <a href="#s1">1 · Revision Block</a>
+      <a href="#s2">2 · Floor Plans</a>
+      <a href="#s3">3 · Sectional Views</a>
+      <a href="#s4">4 · Metric Scale</a>
+      <a href="#s5">5 · Electrical Symbols and Lines</a>
+      <a href="#s6">6 · Luminaires</a>
+      <a href="#s7">7 · Block Diagrams</a>
+      <a href="#s8">8 · Changes</a>
+      <a href="#review">Final review</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<div class="wrap">
+
+  <div class="intro">
+    <div class="panel">
+      <h2>Why this guide exists</h2>
+      <p>You do not need to be an electrician to support an electrical student. Your job is to help your student explain what they are learning and put it in their own words.</p>
+      <p>If your student can read it and explain it, they are learning it. That is the whole idea.</p>
+    </div>
+    <div class="panel">
+      <h2>How to use each section</h2>
+      <p>Plan about 15 to 25 minutes per section. The student does most of the talking. You do not need the answers ahead of time.</p>
+      <ol>
+        <li><b>Read it together.</b> Plain-English version of the module section.</li>
+        <li><b>Study review points.</b> The must-know facts. Tick each one when your student can say it back.</li>
+        <li><b>Trade-term cards.</b> Tap a card to flip it.</li>
+        <li><b>Ticket out the door.</b> A quick recall check, just for practice.</li>
+        <li><b>Talk it over.</b> Questions and a real-world scenario.</li>
+        <li><b>Practice questions.</b> Each one comes twice: first in plain English, then in the textbook's words, so your student learns to recognize both.</li>
+      </ol>
+    </div>
+  </div>
+
+  <aside class="notice" aria-labelledby="safe-h">
+    <h2 id="safe-h">Important safety note</h2>
+    <p>This guide is for learning and talking. It is not permission to do electrical work. Drawings and specifications are read by trained people working under proper guidance. Never use this guide in place of instructor supervision, employer procedures, required training, or properly rated equipment. No student names or grades appear here, and nothing you tick or tap on this page is saved or sent anywhere.</p>
+  </aside>
+
+  <section class="sec" id="s1" aria-labelledby="s1-h">
+    <div class="sec-head">
+      <span class="eyebrow">Module Section 1 of 8 · 1.1.4</span>
+      <h2 id="s1-h">Revision Block</h2>
+      <p class="obj">By the end of this section your student can say what a revision block is, why a drawing gets revised, and what a cloud shape on a drawing is pointing to.</p>
+    </div>
+    <div class="part">
+      <div class="part-title"><span class="letter">A</span><h3>Read it together</h3><span class="time">about 6 min</span></div>
+      <div class="prose">
+<p class="big">Drawings change. The revision block is where a drawing keeps its own change history, so everyone on the job is working from the latest information.</p>
+<h4>What it is</h4>
+<p>A <b>revision block</b> is a small table on a drawing sheet that lists the changes made to that sheet after it was first issued. It is usually found near the title block. Each change gets a line in the block, so you can see what changed and when.</p>
+<p>On the drawing itself, the changed area is often circled with a <b>cloud shape</b>. The cloud tells you where to look. The revision block tells you what the change is.</p>
+<div class="case"><b>Key idea</b>A cloud on a drawing means "something here changed." Find the revision block to read the details.</div>
+<h4>Why it matters on a job</h4>
+<p>Electricians build from the drawings. If you are working from an old sheet, you can install the wrong thing in the wrong place. Checking the revision block and the cloud shapes is how you know you have the current information.</p>
+<p>The drawings you will work from are called <b>architectural drawings</b> (the working drawings for building the structure) and <b>electrical drawings</b> (the part that shows the electrical system). People still call them <b>blueprints</b>, but a blueprint is really an exact copy or reproduction of an original drawing.</p>
+<h4>Parts of a drawing you will see</h4>
+<ul>
+<li><b>Dimensions</b> are the sizes or measurements printed on a drawing.</li>
+<li>A <b>detail drawing</b> is an enlarged view of one area of a drawing, shown separately so you can see it clearly.</li>
+<li>An <b>electrical drawing</b> packs a lot of exact information into lines, symbols, dimensions and notes, so the people who install the system can read it.</li>
+</ul>
+      </div>
+    </div>
+    <div class="part">
+      <div class="part-title"><span class="letter">B</span><h3>Study review points</h3></div>
+      <ul class="points" data-points="1"></ul>
+    </div>
+    <div class="part">
+      <div class="part-title"><span class="letter">C</span><h3>Trade-term cards</h3></div>
+      <div class="deck" data-cards="1"></div>
+    </div>
+    <div class="part">
+      <div class="part-title"><span class="letter">D</span><h3>Ticket out the door</h3></div>
+      <div class="ticket" data-quiz="1"></div>
+    </div>
+    <div class="part">
+      <div class="part-title"><span class="letter">E</span><h3>Talk it over</h3></div>
+      <div class="talk" data-talk="1"></div>
+    </div>
+    <div class="part">
+      <div class="part-title"><span class="letter">F</span><h3>Practice questions</h3></div>
+      <div data-practice="1"></div>
+    </div>
+  </section>
+
+  <section class="sec" id="s2" aria-labelledby="s2-h">
+    <div class="sec-head">
+      <span class="eyebrow">Module Section 2 of 8 · 1.2.2</span>
+      <h2 id="s2-h">Floor Plans</h2>
+      <p class="obj">By the end of this section your student can describe a floor plan, tell it apart from a site plan and an elevation view, and explain what a match line and dimensions tell you.</p>
+    </div>
+    <div class="part">
+      <div class="part-title"><span class="letter">A</span><h3>Read it together</h3><span class="time">about 8 min</span></div>
+      <div class="prose">
+<p class="big">A floor plan is the drawing you will use most. It shows the building from above, with the roof and upper part taken away so you can see inside.</p>
+<h4>Floor plan</h4>
+<p>A <b>floor plan</b> is a drawing of a building as if a horizontal cut were made through it at about window level and the top part removed. What you see is what you would see looking down on the rest of the building. Walls, doors, rooms and (on electrical sheets) outlets, switches and lights are shown from above.</p>
+<p>A <b>plan</b>, in general, is any drawing made as though you were looking straight down on an object from above.</p>
+<h4>Other views of the same building</h4>
+<div class="scroll"><table>
+<thead><tr><th>Drawing</th><th>What it shows</th></tr></thead>
+<tbody>
+<tr><td>Site plan</td><td>Where the building sits on the property. It often shows topographical lines, electrical and communication lines, water and sewer lines, sidewalks and driveways.</td></tr>
+<tr><td>Floor plan</td><td>The inside layout of the building, seen from above.</td></tr>
+<tr><td>Elevation view</td><td>The outside faces of the building: height and width, but not depth. Usually the front, rear or sides.</td></tr>
+</tbody></table></div>
+<p>If a question asks which drawing shows the <b>face of a building</b>, the answer is the elevation view.</p>
+<h4>Contour lines</h4>
+<p><b>Contour lines</b> are curving lines on a site plan that follow a given elevation. When the lines are close together, the ground is steep. When they are far apart, the ground is fairly level.</p>
+<h4>Match lines and dimensions</h4>
+<p>Big buildings do not fit on one sheet. A <b>match line</b> shows where the drawing continues on another sheet. Line it up with the same match line on the next sheet. <b>Dimension lines</b> show the real sizes. The number you read is the actual dimension, not a measurement you take with a ruler.</p>
+<div class="case"><b>Why it matters</b>Before you run a single wire you need to know where you are in the building. The floor plan and the match lines tell you.</div>
+      </div>
+    </div>
+    <div class="part">
+      <div class="part-title"><span class="letter">B</span><h3>Study review points</h3></div>
+      <ul class="points" data-points="2"></ul>
+    </div>
+    <div class="part">
+      <div class="part-title"><span class="letter">C</span><h3>Trade-term cards</h3></div>
+      <div class="deck" data-cards="2"></div>
+    </div>
+    <div class="part">
+      <div class="part-title"><span class="letter">D</span><h3>Ticket out the door</h3></div>
+      <div class="ticket" data-quiz="2"></div>
+    </div>
+    <div class="part">
+      <div class="part-title"><span class="letter">E</span><h3>Talk it over</h3></div>
+      <div class="talk" data-talk="2"></div>
+    </div>
+    <div class="part">
+      <div class="part-title"><span class="letter">F</span><h3>Practice questions</h3></div>
+      <div data-practice="2"></div>
+    </div>
+  </section>
+
+  <section class="sec" id="s3" aria-labelledby="s3-h">
+    <div class="sec-head">
+      <span class="eyebrow">Module Section 3 of 8 · 1.2.4</span>
+      <h2 id="s3-h">Sectional Views</h2>
+      <p class="obj">By the end of this section your student can explain what a sectional view shows and what a section line on a plan is telling you.</p>
+    </div>
+    <div class="part">
+      <div class="part-title"><span class="letter">A</span><h3>Read it together</h3><span class="time">about 6 min</span></div>
+      <div class="prose">
+<p class="big">A sectional view lets you see inside something by pretending to slice it open.</p>
+<h4>Sectional view</h4>
+<p>A <b>sectional view</b> is a cutaway drawing that shows the inside of an object or building. Think of cutting a loaf of bread to see the slices inside. The drawing shows what you would see at the cut.</p>
+<h4>Section line</h4>
+<p>On a plan, a <b>section line</b> marks where that imaginary cut was made. It shows the location of the section on the plan, so you can match the plan to the sectional view that goes with it.</p>
+<div class="case"><b>Key idea</b>The section line is on the plan. The sectional view is the drawing of what you would see if the building were cut there.</div>
+<h4>Where you will use it</h4>
+<p>A sectional view can show things a floor plan cannot, such as how high something is mounted, or what is inside a wall or above a ceiling. If a plan leaves you wondering how a part of the building is put together, look for a section line and its matching view.</p>
+      </div>
+    </div>
+    <div class="part">
+      <div class="part-title"><span class="letter">B</span><h3>Study review points</h3></div>
+      <ul class="points" data-points="3"></ul>
+    </div>
+    <div class="part">
+      <div class="part-title"><span class="letter">C</span><h3>Trade-term cards</h3></div>
+      <div class="deck" data-cards="3"></div>
+    </div>
+    <div class="part">
+      <div class="part-title"><span class="letter">D</span><h3>Ticket out the door</h3></div>
+      <div class="ticket" data-quiz="3"></div>
+    </div>
+    <div class="part">
+      <div class="part-title"><span class="letter">E</span><h3>Talk it over</h3></div>
+      <div class="talk" data-talk="3"></div>
+    </div>
+    <div class="part">
+      <div class="part-title"><span class="letter">F</span><h3>Practice questions</h3></div>
+      <div data-practice="3"></div>
+    </div>
+  </section>
+
+  <section class="sec" id="s4" aria-labelledby="s4-h">
+    <div class="sec-head">
+      <span class="eyebrow">Module Section 4 of 8 · 2.3.0</span>
+      <h2 id="s4-h">Metric Scale</h2>
+      <p class="obj">By the end of this section your student can explain what scale means, name the three kinds of scales, and work simple scale problems.</p>
+    </div>
+    <div class="part">
+      <div class="part-title"><span class="letter">A</span><h3>Read it together</h3><span class="time">about 10 min</span></div>
+      <div class="prose">
+<p class="big">A drawing cannot be the size of the building, so everything is drawn smaller by a set amount. That amount is the scale.</p>
+<h4>Scale</h4>
+<p>On a drawing, <b>scale</b> is the size relationship between an object's actual size and the size it is drawn. Scale also means the measuring tool you use to read that relationship.</p>
+<h4>Three kinds of scales</h4>
+<div class="scroll"><table>
+<thead><tr><th>Scale</th><th>What it measures</th></tr></thead>
+<tbody>
+<tr><td>Architect's scale</td><td>A special ruler used on architectural drawings. It measures distances in inches and fractions of an inch.</td></tr>
+<tr><td>Engineer's scale</td><td>A special ruler that measures distances in decimal units.</td></tr>
+<tr><td>Metric scale</td><td>Uses a ratio such as 1:1,000. A drawing at 1:1,000 typically shows units in meters.</td></tr>
+</tbody></table></div>
+<p>On an architect's triangular scale, the ⅜" = 1'–0" and ¾" = 1'–0" scales start on opposite ends of the same edge, so you read one from the left and the other from the right.</p>
+<h4>Worked examples</h4>
+<p><b>Architect's scale.</b> A floor plan is drawn at ⅛" = 1'–0". That means every ⅛" on the drawing is 1 foot on the building. A distance of 1⅜" is eleven eighths. Eleven eighths, at 1 foot each, is <b>11'–0"</b>.</p>
+<p><b>Engineer's scale.</b> At a 1:20 scale, 1 inch on the drawing is 20 feet. So 2 inches on the drawing is <b>40 feet</b>.</p>
+<div class="case"><b>Key idea</b>Find the scale first. Then every measurement on the sheet means something. A ratio like 1:1,000 means one unit on paper is one thousand of the same unit in real life.</div>
+      </div>
+    </div>
+    <div class="part">
+      <div class="part-title"><span class="letter">B</span><h3>Study review points</h3></div>
+      <ul class="points" data-points="4"></ul>
+    </div>
+    <div class="part">
+      <div class="part-title"><span class="letter">C</span><h3>Trade-term cards</h3></div>
+      <div class="deck" data-cards="4"></div>
+    </div>
+    <div class="part">
+      <div class="part-title"><span class="letter">D</span><h3>Ticket out the door</h3></div>
+      <div class="ticket" data-quiz="4"></div>
+    </div>
+    <div class="part">
+      <div class="part-title"><span class="letter">E</span><h3>Talk it over</h3></div>
+      <div class="talk" data-talk="4"></div>
+    </div>
+    <div class="part">
+      <div class="part-title"><span class="letter">F</span><h3>Practice questions</h3></div>
+      <div data-practice="4"></div>
+    </div>
+  </section>
+
+  <section class="sec" id="s5" aria-labelledby="s5-h">
+    <div class="sec-head">
+      <span class="eyebrow">Module Section 5 of 8 · 3.1.0</span>
+      <h2 id="s5-h">Electrical Symbols and Lines</h2>
+      <p class="obj">By the end of this section your student can explain why drawings use symbols, read common receptacle and luminaire symbols with the legend, and say what the main kinds of lines mean.</p>
+    </div>
+    <div class="part">
+      <div class="part-title"><span class="letter">A</span><h3>Read it together</h3><span class="time">about 12 min</span></div>
+      <div class="prose">
+<p class="big">Electrical drawings are written in symbols and lines. There is not room to write out every device, so each one gets a small picture, and the sheet comes with a legend that tells you what each picture means.</p>
+<h4>Symbols and the legend</h4>
+<p>The symbols are standard, but always check the legend on the drawing you are working from. Letters sometimes sit beside a symbol. For example, <b>SL</b> on an electrical drawing indicates a <b>low-voltage switch</b>.</p>
+<p>Many symbols are variations of one shape. For receptacle outlets, the symbol shows how many receptacles there are. You will see symbols for a <b>single</b> receptacle, a <b>duplex</b> (two), a <b>triplex</b> (three), a <b>quadruplex</b> (four), and a <b>split-wired</b> duplex. Light fixtures have symbols too, with different versions for surface-mounted, pendant, or pull-chain types. Your textbook has these symbols in a figure, and the practice questions below point you to the picture.</p>
+<h4>Lines</h4>
+<ul>
+<li>Lines on a plan show <b>branch circuit wiring</b>.</li>
+<li>A <b>dashed line</b> means the wiring is concealed in the <b>floor</b>.</li>
+<li>A line with an <b>arrowhead</b> is a branch circuit <b>homerun</b>, the run that goes back to the panel.</li>
+</ul>
+<h4>Shop drawings</h4>
+<p>A <b>shop drawing</b> is developed by a manufacturer, fabricator or contractor. It shows specific dimensions and other details about one piece of equipment and how it is installed.</p>
+<div class="case"><b>Key idea</b>Never guess a symbol. Check the legend, and when it is still unclear, ask.</div>
+      </div>
+    </div>
+    <div class="part">
+      <div class="part-title"><span class="letter">B</span><h3>Study review points</h3></div>
+      <ul class="points" data-points="5"></ul>
+    </div>
+    <div class="part">
+      <div class="part-title"><span class="letter">C</span><h3>Trade-term cards</h3></div>
+      <div class="deck" data-cards="5"></div>
+    </div>
+    <div class="part">
+      <div class="part-title"><span class="letter">D</span><h3>Ticket out the door</h3></div>
+      <div class="ticket" data-quiz="5"></div>
+    </div>
+    <div class="part">
+      <div class="part-title"><span class="letter">E</span><h3>Talk it over</h3></div>
+      <div class="talk" data-talk="5"></div>
+    </div>
+    <div class="part">
+      <div class="part-title"><span class="letter">F</span><h3>Practice questions</h3></div>
+      <div data-practice="5"></div>
+    </div>
+  </section>
+
+  <section class="sec" id="s6" aria-labelledby="s6-h">
+    <div class="sec-head">
+      <span class="eyebrow">Module Section 6 of 8 · 3.3.4</span>
+      <h2 id="s6-h">Identifying Luminaires on a Lighting Floor Plan</h2>
+      <p class="obj">By the end of this section your student can explain how lights are identified on a lighting plan, read AFF, and use the 80 percent rule for a branch circuit.</p>
+    </div>
+    <div class="part">
+      <div class="part-title"><span class="letter">A</span><h3>Read it together</h3><span class="time">about 10 min</span></div>
+      <div class="prose">
+<p class="big">A lighting floor plan tells you which light goes where. A luminaire is the lighting fixture, and each one on the plan is labeled so you can match it to the schedule.</p>
+<h4>Identifying luminaires</h4>
+<p>On a lighting plan, each luminaire is shown with a symbol and usually a letter or label. That label is matched to a table or schedule that gives the details of that fixture. A <b>schedule</b> is a systematic way of presenting a list of equipment on a drawing in table form.</p>
+<h4>Abbreviations</h4>
+<p>Drawings are full of abbreviations. For example, <b>AFF</b> means <b>above finished floor</b>. It tells you how high to mount something, measured up from the finished floor.</p>
+<h4>Power plans and branch circuits</h4>
+<p>A commercial floor power plan shows the <b>electrical panels</b>. Each branch circuit runs back to a panel on its own homerun.</p>
+<h4>The 80 percent rule</h4>
+<p>The load on a branch circuit should not go over <b>80 percent</b> of its rated capacity. To find the limit, multiply the rating by 0.8.</p>
+<p><b>Example.</b> A residential branch circuit rated for 2,400 VA. 0.8 × 2,400 VA = <b>1,920 VA</b>. The connected load should be no more than 1,920 VA.</p>
+<div class="case"><b>Why it matters</b>A circuit loaded right up to its limit is a hot circuit. Planning for 80 percent leaves room to stay safe.</div>
+      </div>
+    </div>
+    <div class="part">
+      <div class="part-title"><span class="letter">B</span><h3>Study review points</h3></div>
+      <ul class="points" data-points="6"></ul>
+    </div>
+    <div class="part">
+      <div class="part-title"><span class="letter">C</span><h3>Trade-term cards</h3></div>
+      <div class="deck" data-cards="6"></div>
+    </div>
+    <div class="part">
+      <div class="part-title"><span class="letter">D</span><h3>Ticket out the door</h3></div>
+      <div class="ticket" data-quiz="6"></div>
+    </div>
+    <div class="part">
+      <div class="part-title"><span class="letter">E</span><h3>Talk it over</h3></div>
+      <div class="talk" data-talk="6"></div>
+    </div>
+    <div class="part">
+      <div class="part-title"><span class="letter">F</span><h3>Practice questions</h3></div>
+      <div data-practice="6"></div>
+    </div>
+  </section>
+
+  <section class="sec" id="s7" aria-labelledby="s7-h">
+    <div class="sec-head">
+      <span class="eyebrow">Module Section 7 of 8 · 3.4.2</span>
+      <h2 id="s7-h">Block Diagrams</h2>
+      <p class="obj">By the end of this section your student can tell a block diagram, a power-riser diagram, a one-line diagram and a schematic apart, and say what each is used for.</p>
+    </div>
+    <div class="part">
+      <div class="part-title"><span class="letter">A</span><h3>Read it together</h3><span class="time">about 10 min</span></div>
+      <div class="prose">
+<p class="big">Not every electrical drawing is a floor plan. Some drawings leave out the building and show only how equipment is connected.</p>
+<h4>Block diagram</h4>
+<p>A <b>block diagram</b> is a single-line diagram that shows electrical equipment and the connections between the pieces. Each piece is a block, and lines show how they connect.</p>
+<h4>Power-riser diagram</h4>
+<p>A <b>power-riser diagram</b> is a single-line block diagram used to show the electric service equipment, service conductors and feeders, and subpanels. Notes on it identify the equipment, the conduit size, and the number, size and type of conductors. A panelboard schedule is usually included to list what is in each panelboard, such as fuses and circuit breakers.</p>
+<h4>One-line diagram</h4>
+<p>A <b>one-line diagram</b> (also called a single-line diagram) shows, with lines and symbols, the path of a circuit or system of circuits and the parts along the way.</p>
+<h4>Schematic diagram</h4>
+<p>A <b>schematic diagram</b> is a detailed diagram of complicated circuits, such as control circuits. It has no scale, but it shows the components and their electrical connections. On a typical motor starter schematic, the symbols T1, T2 and T3 are the <b>motor terminals</b>.</p>
+<h4>Schedules</h4>
+<p>A <b>schedule</b> is a table. It is the tabular format drawings use to list equipment.</p>
+<div class="scroll"><table>
+<thead><tr><th>Diagram</th><th>Best for</th></tr></thead>
+<tbody>
+<tr><td>Block / power-riser</td><td>How major equipment connects</td></tr>
+<tr><td>One-line</td><td>The path of a circuit</td></tr>
+<tr><td>Schematic</td><td>How a control circuit works</td></tr>
+</tbody></table></div>
+      </div>
+    </div>
+    <div class="part">
+      <div class="part-title"><span class="letter">B</span><h3>Study review points</h3></div>
+      <ul class="points" data-points="7"></ul>
+    </div>
+    <div class="part">
+      <div class="part-title"><span class="letter">C</span><h3>Trade-term cards</h3></div>
+      <div class="deck" data-cards="7"></div>
+    </div>
+    <div class="part">
+      <div class="part-title"><span class="letter">D</span><h3>Ticket out the door</h3></div>
+      <div class="ticket" data-quiz="7"></div>
+    </div>
+    <div class="part">
+      <div class="part-title"><span class="letter">E</span><h3>Talk it over</h3></div>
+      <div class="talk" data-talk="7"></div>
+    </div>
+    <div class="part">
+      <div class="part-title"><span class="letter">F</span><h3>Practice questions</h3></div>
+      <div data-practice="7"></div>
+    </div>
+  </section>
+
+  <section class="sec" id="s8" aria-labelledby="s8-h">
+    <div class="sec-head">
+      <span class="eyebrow">Module Section 8 of 8 · 4.3.0</span>
+      <h2 id="s8-h">Changes</h2>
+      <p class="obj">By the end of this section your student can explain what written specifications are, how drawings and specifications work together, and the difference between a change order, a request for information and as-built drawings.</p>
+    </div>
+    <div class="part">
+      <div class="part-title"><span class="letter">A</span><h3>Read it together</h3><span class="time">about 12 min</span></div>
+      <div class="prose">
+<p class="big">Plans are not the whole story, and they are not final. Changes happen, and there are set ways to handle them.</p>
+<h4>Written specifications</h4>
+<p><b>Written specifications</b> describe what the owner, architect and engineer require in materials and workmanship. Together with the working drawings, they form the basis of the contract. A well-written specification includes things like <b>model and part numbers</b>.</p>
+<p>Specifications are organized by <b>MasterFormat</b> divisions. For example, communications systems are in Division 27, integrated automation is in Division 25, and medium-voltage electrical distribution equipment is in division 261000.</p>
+<h4>When changes come up</h4>
+<div class="scroll"><table>
+<thead><tr><th>Document</th><th>What it is</th></tr></thead>
+<tbody>
+<tr><td>Request for information (RFI)</td><td>A formal document from the contractor asking for clarification when errors, omissions or discrepancies are found in or between the construction documents.</td></tr>
+<tr><td>Change order</td><td>A formal document from the project manager or owner that changes the drawings, specifications or scope. It also states any change in cost.</td></tr>
+<tr><td>As-built drawings</td><td>A marked-up set of drawings, also called red-lines, made at the end of the project to show all the changes made during construction.</td></tr>
+</tbody></table></div>
+<p>If the drawings and the specifications <b>conflict</b>, the conflict is resolved with a <b>change order</b>.</p>
+<div class="case"><b>Key idea</b>Ask first (RFI), change it officially (change order), then record what was really built (as-built drawings).</div>
+      </div>
+    </div>
+    <div class="part">
+      <div class="part-title"><span class="letter">B</span><h3>Study review points</h3></div>
+      <ul class="points" data-points="8"></ul>
+    </div>
+    <div class="part">
+      <div class="part-title"><span class="letter">C</span><h3>Trade-term cards</h3></div>
+      <div class="deck" data-cards="8"></div>
+    </div>
+    <div class="part">
+      <div class="part-title"><span class="letter">D</span><h3>Ticket out the door</h3></div>
+      <div class="ticket" data-quiz="8"></div>
+    </div>
+    <div class="part">
+      <div class="part-title"><span class="letter">E</span><h3>Talk it over</h3></div>
+      <div class="talk" data-talk="8"></div>
+    </div>
+    <div class="part">
+      <div class="part-title"><span class="letter">F</span><h3>Practice questions</h3></div>
+      <div data-practice="8"></div>
+    </div>
+  </section>
+
+  <section class="final" id="review" aria-labelledby="fin-h">
+    <span class="eyebrow">After all 8 sections</span>
+    <h2 id="fin-h">Can your student explain it?</h2>
+    <p class="lead">The goal is not perfect wording. The goal is accurate understanding and good judgment. Tick each one when your student can explain it without looking at the page.</p>
+    <ul class="points" id="final-points"></ul>
+    <p class="note">Trade terms are placed with the section where each is taught, so a few official terms sit in a different section than they are listed in the textbook. Cards marked "Key term" are important words from the module that are not on its official trade-term list. The practice questions come from the handbook's Section Review (13 questions) and Module Review (20 questions), and the answers follow the publisher's answer keys. Questions that refer to a figure need the figure in your student's textbook. The textbook-style versions are written in the book's style and vocabulary, not copied word for word, so check the handbook itself for the exact wording. This guide is a plain-language companion, not a copy of the textbook. For real work, use the current standards, your employer's procedures and your instructor's directions. Draft for instructor review.</p>
+  </section>
+
+</div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><strong>Mr. Ellis CTE</strong> · East Valley Institute of Technology (EVIT), Mesa, Arizona · Your Future, Your Way</p>
+    <p>Based on NCCER Electrical Level 1 (10th edition), Module 26110-20, Basic Electrical Construction Documents.</p>
+    <p>Aim for perfection, take what you get.</p>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var POINTS = {
+    1: [
+      `A <b>revision block</b> lists the changes made to a drawing sheet after it was first issued. Details of a change are often in the revision block.`,
+      `A <b>cloud shape</b> drawn around an area shows where a change was made. Look at the revision block to read what the change is.`,
+      `Always work from the <b>current</b> sheet. An old sheet can lead to the wrong thing installed in the wrong place.`,
+      `<b>Architectural drawings</b> are the working drawings for the building. <b>Electrical drawings</b> pack exact information into lines, symbols, dimensions and notes.`,
+      `A <b>blueprint</b> is an exact copy of an original drawing. A <b>detail drawing</b> is an enlarged view of one area. <b>Dimensions</b> are the sizes printed on a drawing.`
+    ],
+    2: [
+      `A <b>floor plan</b> shows a building as if it were cut horizontally at about window level and the top removed, so you look down on the inside.`,
+      `A <b>plan</b> is any drawing made as though you were looking straight down from above.`,
+      `A <b>site plan</b> shows where the building sits on the property, with items like utility lines, sidewalks and driveways.`,
+      `An <b>elevation view</b> shows height and width, but not depth. It shows the face of a building.`,
+      `<b>Contour lines</b> on a site plan show slope. Close together means steep. Far apart means fairly level.`,
+      `A <b>match line</b> means the drawing continues on another sheet. <b>Dimension lines</b> show the actual dimensions.`
+    ],
+    3: [
+      `A <b>sectional view</b> is a cutaway drawing that shows the inside of an object or building.`,
+      `A <b>section line</b> on a plan shows where the imaginary cut was made, so you can find the matching sectional view.`,
+      `A sectional view can show things a floor plan cannot, such as height or what is inside a wall.`
+    ],
+    4: [
+      `<b>Scale</b> is the size relationship between an object's actual size and the size it is drawn. It is also the name of the measuring tool.`,
+      `An <b>architect's scale</b> measures in inches and fractions of an inch. An <b>engineer's scale</b> measures in decimal units.`,
+      `A metric scale such as <b>1:1,000</b> typically shows units in <b>meters</b>.`,
+      `At <b>⅛" = 1'–0"</b>, every ⅛" on the drawing is 1 foot. A distance of 1⅜" is 11 eighths, which is <b>11'–0"</b>.`,
+      `At a <b>1:20</b> engineer's scale, <b>2"</b> on the drawing is <b>40'</b>.`,
+      `On an architect's triangular scale, ⅜" and ¾" start on <b>opposite ends of the same edge</b>.`
+    ],
+    5: [
+      `<b>Symbols</b> are small pictures for devices. Check the <b>legend</b> on the drawing before you trust a symbol.`,
+      `<b>SL</b> on an electrical drawing means a <b>low-voltage switch</b>.`,
+      `Receptacle symbols show how many receptacles there are: single, duplex, triplex, quadruplex, or split-wired.`,
+      `A <b>dashed line</b> for a branch circuit means the wiring is concealed in the <b>floor</b>. An <b>arrowhead</b> means a branch circuit <b>homerun</b>.`,
+      `A <b>shop drawing</b> is made by a manufacturer, fabricator or contractor to show specific dimensions and installation details for one piece of equipment.`
+    ],
+    6: [
+      `A <b>luminaire</b> is a light fixture. On a lighting plan each one is labeled so it can be matched to a schedule.`,
+      `<b>AFF</b> means <b>above finished floor</b>.`,
+      `The load on a branch circuit should not exceed <b>80 percent</b> of its rated capacity.`,
+      `For a 2,400 VA circuit, 0.8 × 2,400 = <b>1,920 VA</b> maximum connected load.`,
+      `A commercial floor power plan shows the <b>electrical panels</b>.`
+    ],
+    7: [
+      `A <b>block diagram</b> is a single-line diagram showing equipment and its connections. See power-riser diagram.`,
+      `A <b>power-riser diagram</b> shows service equipment, service conductors and feeders, and subpanels, with notes on conduit and conductors.`,
+      `A <b>one-line diagram</b> (single-line diagram) shows the path of a circuit and its parts.`,
+      `A <b>schematic diagram</b> shows complicated circuits, such as control circuits. It has no scale but shows the components and their connections.`,
+      `In a motor starter schematic, <b>T1, T2 and T3</b> are the motor terminals.`,
+      `A <b>schedule</b> presents equipment lists in table form.`
+    ],
+    8: [
+      `<b>Written specifications</b> describe what the owner, architect and engineer require for materials and workmanship. They include model and part numbers.`,
+      `Drawings plus specifications form the basis of the contract.`,
+      `A <b>request for information</b> is how the contractor asks for clarification about errors, omissions or discrepancies.`,
+      `A <b>change order</b> is a formal document that changes the drawings, specifications or scope, and states any cost change.`,
+      `A conflict between drawings and specifications is resolved with a <b>change order</b>.`,
+      `<b>As-built drawings</b> (red-lines) show every change made during construction.`,
+      `MasterFormat: communications is Division 27, integrated automation is Division 25.`
+    ]
+  };
+
+  // k = "o" official NCCER trade term, "k" key term from the module that is not on the official list.
+  var CARDS = {
+    1: [
+      { k: "o", t: `Architectural drawings`, plain: `The working drawings used to build the building: site plans, floor plans, elevations and more.`, book: `Working drawings made up of site plans, floor plans, elevations, sectional views, details and other information needed to construct a building.`, ask: `What are some of the drawings in a set of architectural drawings?` },
+      { k: "o", t: `Blueprint`, plain: `An exact copy of an original drawing.`, book: `An exact copy or reproduction of an original drawing.`, ask: `Why do people still say "blueprint" for any set of plans?` },
+      { k: "o", t: `Detail drawing`, plain: `A close-up of one part of a drawing, shown on its own.`, book: `An enlarged, detailed view taken from an area of a drawing and shown in a separate view.`, ask: `When would a close-up view help you?` },
+      { k: "o", t: `Dimensions`, plain: `The sizes and measurements written on a drawing.`, book: `Sizes or measurements printed on a drawing.`, ask: `Where on a drawing do you find the actual size of a room?` },
+      { k: "o", t: `Electrical drawing`, plain: `A drawing that packs a lot of exact information into lines, symbols, sizes and notes so installers can build the system.`, book: `A means of conveying a large amount of exact, detailed information in an abbreviated form understood by electricians, using blocks, lines, symbols, dimensions and notations.`, ask: `Why use symbols instead of writing everything out?` },
+      { k: "k", t: `Revision block`, plain: `The table on a sheet that lists changes made after the drawing was first issued.`, book: `The place where changes to a drawing are detailed. A changed area is often circled in a cloud shape.`, ask: `What does a cloud shape on a drawing tell you?` }
+    ],
+    2: [
+      { k: "o", t: `Plan`, plain: `A drawing made as if you were looking straight down on something.`, book: `A drawing made as though the viewer were looking straight down on an object from above.`, ask: `Which direction are you looking when you read a plan?` },
+      { k: "o", t: `Floor plan`, plain: `A look down into a building after the top part has been cut away at about window level.`, book: `A drawing of a building as if a horizontal cut were made at about window level and the top portion removed.`, ask: `What would you see on a floor plan that you could not see from outside?` },
+      { k: "o", t: `Site plan`, plain: `A drawing that shows where the building sits on the property, along with utilities, sidewalks and driveways.`, book: `A drawing showing the location of a building on the building site, often with topographical lines, utility lines, sidewalks and driveways.`, ask: `How is a site plan different from a floor plan?` },
+      { k: "o", t: `Elevation view`, plain: `A straight-on picture of the outside of a building, showing height and width but not depth.`, book: `An architectural drawing showing height and width, but not depth, usually of the front, rear or sides of a building.`, ask: `Which view shows the face of a building?` },
+      { k: "o", t: `Contour lines`, plain: `Curving lines on a site plan that show how steep the ground is.`, book: `Curving lines on a site plan that follow a given elevation. Close together means steep. Far apart means fairly level.`, ask: `What do contour lines that are close together tell you?` },
+      { k: "k", t: `Match line`, plain: `A line that shows the drawing continues on another sheet.`, book: `A line on a drawing indicating that the drawing continues on another sheet.`, ask: `What do you do when you reach a match line?` }
+    ],
+    3: [
+      { k: "o", t: `Sectional view`, plain: `A cutaway drawing that shows the inside of something.`, book: `A cutaway drawing that shows the inside of an object or building.`, ask: `Why is a cutaway helpful when you cannot see inside a wall?` },
+      { k: "k", t: `Section line`, plain: `A line on a plan that shows where the imaginary cut was made.`, book: `A line that shows the location of the section on the plan.`, ask: `How does a section line help you find the right sectional view?` }
+    ],
+    4: [
+      { k: "o", t: `Scale`, plain: `How much smaller a drawing is than the real thing. Also the ruler used to read it.`, book: `On a drawing, the size relationship between an object's actual size and the size it is drawn. Also the measuring tool used to find this relationship.`, ask: `What does a scale of ⅛" = 1'–0" tell you?` },
+      { k: "o", t: `Architect's scale`, plain: `A special ruler for architectural drawings. It measures in inches and fractions of an inch.`, book: `A ruler with various measurement scales for drafting or measuring architectural drawings. It measures distances in inches and fractions thereof.`, ask: `What does the architect's scale measure in?` },
+      { k: "o", t: `Engineer's scale`, plain: `A special ruler that measures in decimal units.`, book: `A ruler with various measurement scales for drafting or measuring drawings. It measures distances in decimal units.`, ask: `How is it different from an architect's scale?` }
+    ],
+    5: [
+      { k: "o", t: `Shop drawing`, plain: `A drawing made by a manufacturer, fabricator or contractor for one piece of equipment, with its dimensions and how it is installed.`, book: `A drawing usually developed by manufacturers, fabricators or contractors to show specific dimensions and other information for a piece of equipment and its installation methods.`, ask: `Who usually makes a shop drawing?` },
+      { k: "k", t: `Legend`, plain: `The key on a drawing that tells you what each symbol means.`, book: `The list on a drawing that explains its symbols.`, ask: `Why check the legend before reading a symbol?` }
+    ],
+    6: [
+      { k: "k", t: `Luminaire`, plain: `A lighting fixture. On a lighting plan each one is labeled so you can match it to its details.`, book: `A light fixture identified on a lighting floor plan.`, ask: `How do you find out which fixture a label on the plan refers to?` },
+      { k: "k", t: `AFF`, plain: `Above finished floor. A height measured up from the finished floor.`, book: `The abbreviation AFF means above finished floor.`, ask: `If a box is 48" AFF, where do you measure from?` }
+    ],
+    7: [
+      { k: "o", t: `Block diagram`, plain: `A single-line diagram of equipment and how it connects.`, book: `A single-line diagram used to show electrical equipment and related connections. See power-riser diagram.`, ask: `What does each block stand for?` },
+      { k: "o", t: `One-line diagram`, plain: `A drawing that shows the path of a circuit, with lines and symbols.`, book: `A drawing that shows, with lines and symbols, the path of an electrical circuit or system of circuits and the various components. Also called a single-line diagram.`, ask: `What is another name for it?` },
+      { k: "o", t: `Power-riser diagram`, plain: `A single-line diagram of the service equipment, feeders and subpanels, with notes about conduit and wire.`, book: `A single-line block diagram used to indicate service equipment, service conductors and feeders, and subpanels, with notes identifying equipment, conduit size, and the number, size and type of conductors.`, ask: `What kind of schedule usually goes with a power-riser diagram?` },
+      { k: "o", t: `Schematic diagram`, plain: `A detailed diagram of complicated circuits like control circuits. It shows how parts connect but is not drawn to scale.`, book: `A detailed diagram showing complicated circuits, such as control circuits. It has no scale but shows the components and their electrical connections.`, ask: `Does a schematic show where things are in the building?` },
+      { k: "o", t: `Schedule`, plain: `A table of equipment on a drawing.`, book: `A systematic method of presenting equipment lists on a drawing in tabular form.`, ask: `Why use a table instead of writing notes all over the plan?` }
+    ],
+    8: [
+      { k: "o", t: `Written specifications`, plain: `A written description of the materials and workmanship the owner, architect and engineer require.`, book: `A written description of what is required in materials and workmanship. With the drawings, the specifications form the basis of the contract.`, ask: `What would you find in a specification that is not on a drawing?` },
+      { k: "o", t: `Request for information`, plain: `A formal question from the contractor when something in the plans is wrong, missing or does not match.`, book: `A formal document from the contractor seeking clarification when errors, omissions or discrepancies are found in or between the construction documents.`, ask: `Who sends a request for information?` },
+      { k: "o", t: `Change order`, plain: `A formal document that changes the drawings, the specifications or the scope, and says what the change does to the cost.`, book: `A formal document from the project manager or owner specifying changes to the drawings, specifications or project scope, and any change in project cost.`, ask: `What two things does a change order change?` },
+      { k: "o", t: `As-built drawings`, plain: `A marked-up set of drawings, also called red-lines, showing every change made while building.`, book: `A marked-up set of drawings, also called red-lines, made at the completion of the project, showing all changes made during construction.`, ask: `Why record what was actually built?` }
+    ]
+  };
+
+  // a = index of the right option
+  var QUIZ = {
+    1: [
+      { q: `What is the cloud shape on a drawing pointing to?`, o: [`A changed area`, `The north direction`, `The scale`], a: 0, why: `A cloud circles an area that was changed. The details are in the revision block.` },
+      { q: `Where do you find the details of a change?`, o: [`Revision block`, `Site plan`, `Elevation view`], a: 0, why: `The revision block lists changes made after the sheet was first issued.` },
+      { q: `What is a blueprint?`, o: [`An exact copy of an original drawing`, `A wiring diagram`, `A written specification`], a: 0, why: `A blueprint is an exact copy or reproduction of an original drawing.` }
+    ],
+    2: [
+      { q: `Which drawing shows the face of a building?`, o: [`Site plan`, `Elevation view`, `Floor plan`], a: 1, why: `An elevation view shows height and width of the outside, usually front, rear or sides.` },
+      { q: `What does a match line mean?`, o: [`The drawing continues on another sheet`, `The building is symmetrical`, `Two points on one sheet connect`], a: 0, why: `A match line shows where the drawing continues on another sheet.` },
+      { q: `Contour lines that are close together mean the ground is:`, o: [`Level`, `Steep`, `Wet`], a: 1, why: `Close contour lines mean a steep slope. Far apart means fairly level.` },
+      { q: `Which drawing shows where the building sits on the property?`, o: [`Site plan`, `Sectional view`, `Schedule`], a: 0, why: `A site plan shows the building's location on the site.` }
+    ],
+    3: [
+      { q: `What does a sectional view show?`, o: [`The outside only`, `The inside, as if cut open`, `Only the roof`], a: 1, why: `A sectional view is a cutaway drawing that shows the inside.` },
+      { q: `What does a section line on a plan show?`, o: [`The scale`, `Where the cut was made`, `The north direction`], a: 1, why: `A section line shows the location of the section on the plan.` }
+    ],
+    4: [
+      { q: `At ⅛" = 1'–0", what does 1⅜" on the drawing equal?`, o: [`1'–3"`, `8'–0"`, `11'–0"`], a: 2, why: `1⅜" is eleven eighths. Each eighth is one foot, so it equals 11'–0".` },
+      { q: `On an engineer's scale at 1:20, what does 2" equal?`, o: [`10'`, `20'`, `40'`], a: 2, why: `At 1:20, each inch is 20 feet. So 2 inches is 40 feet.` },
+      { q: `A metric scale of 1:1,000 typically shows units in:`, o: [`Millimeters`, `Meters`, `Centimeters`], a: 1, why: `The book says 1:1,000 typically depicts units in meters.` },
+      { q: `An architect's scale measures in:`, o: [`Decimal units`, `Inches and fractions`, `Meters only`], a: 1, why: `The architect's scale measures in inches and fractions of an inch.` }
+    ],
+    5: [
+      { q: `What does SL mean on an electrical drawing?`, o: [`Limit switch`, `Low-voltage switch`, `Load switch`], a: 1, why: `SL is the designation for a low-voltage switch.` },
+      { q: `Where do you check what a symbol means?`, o: [`The legend`, `The revision block`, `The elevation`], a: 0, why: `The legend explains the symbols used on the drawing.` },
+      { q: `A dashed branch circuit line means the wiring is:`, o: [`Exposed`, `Concealed in the floor`, `Turned up`], a: 1, why: `Dashed lines show wiring concealed in the floor.` },
+      { q: `Who usually develops a shop drawing?`, o: [`The inspector`, `A manufacturer, fabricator or contractor`, `The student`], a: 1, why: `Shop drawings are usually developed by manufacturers, fabricators or contractors.` }
+    ],
+    6: [
+      { q: `AFF means:`, o: [`After final finish`, `Above finished floor`, `Attach front first`], a: 1, why: `AFF stands for above finished floor.` },
+      { q: `A branch circuit should not be loaded past what share of its rating?`, o: [`70 percent`, `80 percent`, `100 percent`], a: 1, why: `The load should not exceed 80 percent of rated capacity.` },
+      { q: `80 percent of a 2,400 VA circuit is:`, o: [`1,680 VA`, `1,920 VA`, `2,160 VA`], a: 1, why: `0.8 × 2,400 = 1,920 VA.` },
+      { q: `What does a commercial floor power plan show?`, o: [`Luminaire locations`, `Electrical panels`, `Fire alarm details`], a: 1, why: `A commercial floor power plan shows electrical panels.` }
+    ],
+    7: [
+      { q: `Which diagram shows connections between pieces of electrical equipment?`, o: [`Power-riser diagram`, `Elevation view`, `Site plan`], a: 0, why: `Power-riser and block diagrams show how equipment connects.` },
+      { q: `What do T1, T2 and T3 stand for on a motor starter schematic?`, o: [`Motor terminals`, `Voltage supply lines`, `Auxiliary contacts`], a: 0, why: `T1, T2 and T3 represent the motor terminals.` },
+      { q: `A table that lists equipment on a drawing is a:`, o: [`Schedule`, `Submittal`, `Symbol list`], a: 0, why: `A schedule is a tabular format for giving information on a drawing.` },
+      { q: `Which diagram has no scale but shows components and connections?`, o: [`Schematic diagram`, `Floor plan`, `Site plan`], a: 0, why: `A schematic diagram has no scale but shows components and their connections.` }
+    ],
+    8: [
+      { q: `A conflict between drawings and specifications is resolved by:`, o: [`The equipment supplier`, `A change order`, `The as-built drawings`], a: 1, why: `A change order resolves the conflict.` },
+      { q: `What does a well-written specification include?`, o: [`Elevation drawings`, `Model and part numbers`, `PPE requirements`], a: 1, why: `A well-written specification includes model and part numbers.` },
+      { q: `What are as-built drawings also called?`, o: [`Blueprints`, `Red-lines`, `Details`], a: 1, why: `As-built drawings are a marked-up set also called red-lines.` },
+      { q: `Which MasterFormat division covers communications systems?`, o: [`Division 16`, `Division 27`, `Division 48`], a: 1, why: `Communications systems are in Division 27.` }
+    ]
+  };
+
+  var PRACTICE = {"1": [{"src": "Section Review 1.0.0 · Q1 (1.1.4)", "a": 2, "pq": "A drawing has an area circled in a cloud shape. Where would you read the details of that change?", "po": ["Legend block", "Approval block", "Revision block", "Engineer's title block"], "tq": "A drawing contains an area circled in a cloud shape. This information is often detailed in the _____.", "to": ["legend block", "approval block", "revision block", "engineer's title block"], "why": "Clouds mark changes, and the revision block lists them.", "br": [["circled in a cloud shape", "contains an area circled in a cloud shape"], ["read the details", "is often detailed in"]]}], "2": [{"src": "Section Review 1.0.0 · Q2 (1.2.3)", "a": 3, "pq": "Which drawing shows the face of a building?", "po": ["Section view", "Floor plan", "Site plan", "Elevation view"], "tq": "Which of the following shows the face of a building?", "to": ["section view", "floor plan", "site plan", "elevation view"], "why": "An elevation view shows the outside faces of a building.", "br": [["shows the face", "shows the face of a building"]]}, {"src": "Section Review 1.0.0 · Q3 (1.3.0)", "a": 0, "pq": "What does a match line on a drawing tell you?", "po": ["The drawing continues on another sheet.", "The building is symmetrical.", "Two points on the same sheet connect.", "These are side details that do not matter."], "tq": "A drawing contains a match line. What does this mean?", "to": ["It indicates that the drawing continues on another sheet.", "It indicates that the structure is symmetrical.", "It connects together two points on the same drawing.", "It indicates reference points that are secondary to the drawing's purpose."], "why": "A match line shows the drawing continues on another sheet.", "br": [["match line", "match line"], ["continues on another sheet", "indicates that the drawing continues on another sheet"]]}, {"src": "Module Review · Q3 (1.3.0)", "a": 3, "pq": "On a drawing with dimension lines, what do the numbers shown on the lines tell you?", "po": ["They are for reference only.", "They are shrunk to scale.", "They are always decimals.", "They are the actual dimensions."], "tq": "In a drawing with dimension lines, the values shown inside the lines are _____.", "to": ["for general reference only", "reduced to scale", "always shown in decimal values", "the actual dimensions"], "why": "Dimension values are the actual dimensions.", "br": [["numbers on the lines", "values shown inside the lines"], ["actual size", "the actual dimensions"]]}], "3": [{"src": "Module Review · Q1 (1.2.4)", "a": 0, "pq": "What do you call the dashed line that shows where an imaginary cut was made?", "po": ["Section line", "Match line", "Hidden line", "Break line"], "tq": "A dashed line showing the location of an imaginary cut on a drawing is called a _____.", "to": ["section line", "match line", "hidden line", "break line"], "why": "A section line marks where the cut was made.", "br": [["where an imaginary cut was made", "the location of an imaginary cut"]]}, {"src": "Module Review · Q2 (1.3.0)", "a": 1, "pq": "What does a section line on a drawing tell you?", "po": ["The north direction", "Where the section is on the plan", "Where to put receptacles", "The scale of the section"], "tq": "A section line on a drawing shows _____.", "to": ["the north orientation", "the location of the section on the plan", "where to locate receptacles in that section", "the section scale"], "why": "A section line shows the location of the section on the plan.", "br": [["where the section is", "the location of the section"]]}], "4": [{"src": "Section Review 2.0.0 · Q1 (2.1.0)", "a": 2, "pq": "A floor plan is drawn at ⅛\" = 1'–0\". What real distance is 1⅜\" on the drawing?", "po": ["1'–3\"", "8'–0\"", "11'–0\"", "13'–8\""], "tq": "If a floor plan of a building is drawn to a scale of ⅛\" = 1'–0\", a distance of 1⅜\" on the drawing would equal _____.", "to": ["1'–3\" on the building itself", "8'–0\" on the building itself", "11'–0\" on the building itself", "13'–8\" on the building itself"], "why": "1⅜\" is eleven eighths, and each eighth is 1 foot, so 11'–0\".", "br": [["real distance", "on the building itself"], ["drawn at", "drawn to a scale of"]]}, {"src": "Section Review 2.0.0 · Q2 (2.2.0)", "a": 3, "pq": "On an engineer's scale at 1:20, what does 2\" on the drawing equal?", "po": ["5'", "10'", "20'", "40'"], "tq": "Using a 1:20 scale on an engineer's scale, a measurement of 2\" on a drawing would equal _____.", "to": ["5'", "10'", "20'", "40'"], "why": "At 1:20 each inch is 20 feet, so 2 inches is 40 feet.", "br": [["2\" on the drawing", "a measurement of 2\" on a drawing"]]}, {"src": "Section Review 2.0.0 · Q3 (2.3.0)", "a": 3, "pq": "A metric drawing at 1:1,000 usually shows units in what?", "po": ["Millimeters", "Centimeters", "Decimeters", "Meters"], "tq": "A metric drawing scale of 1:1,000 typically depicts units in _____.", "to": ["millimeters", "centimeters", "decimeters", "meters"], "why": "The book says 1:1,000 typically depicts meters.", "br": [["usually shows", "typically depicts"]]}, {"src": "Module Review · Q4 (2.1.0)", "a": 2, "pq": "On an architect's triangular scale, where do the ⅜\" and ¾\" scales start?", "po": ["Same end of the same edge", "Same edge as a 1:38 scale", "Opposite ends of the same edge", "Opposite ends of different edges"], "tq": "On an architect's triangular scale, the ⅜\" = 1'–0\" and ¾\" = 1'–0\" scales will start _____.", "to": ["at the same end of the same edge", "on the same edge as a scale marked 1:38", "on opposite ends of the same edge", "on opposite ends of different edges"], "why": "These two scales share an edge and start at opposite ends.", "br": [["where do they start", "will start"]]}], "5": [{"src": "Section Review 3.0.0 · Q1 (3.1.0)", "a": 1, "pq": "What does the letter designation SL mean on an electrical drawing?", "po": ["Limit switch", "Low-voltage switch", "Load switch", "Light switch"], "tq": "The letter designation SL on an electrical drawing indicates a _____.", "to": ["limit switch", "low-voltage switch", "load switch", "light switch"], "why": "SL means low-voltage switch.", "br": [["mean", "indicates"]]}, {"src": "Module Review · Q5 (3.0.0)", "a": 0, "pq": "What do you call a special drawing prepared by a vendor for use by their employees?", "po": ["Shop drawing", "Detail drawing", "Perspective drawing", "Plan view"], "tq": "A _____ is a special drawing prepared by a vendor for use by their employees.", "to": ["shop drawing", "detail drawing", "perspective drawing", "plan view"], "why": "That is a shop drawing.", "br": [["special drawing by a vendor", "special drawing prepared by a vendor"]]}, {"src": "Module Review · Q6 (3.1.0)", "a": 1, "pq": "Look at Figure RQ01 in your textbook's Module Review (printed page 54). What does the symbol represent?", "po": ["Single receptacle outlet", "Duplex receptacle outlet", "Duplex receptacle outlet, split wired", "Triplex receptacle outlet"], "tq": "The symbol shown in Figure RQ01 represents a _____.", "to": ["single receptacle outlet", "duplex receptacle outlet", "duplex receptacle outlet split wired", "triplex receptacle outlet"], "why": "Check your answer with the symbols in the textbook's symbols figure.", "br": [["the symbol", "the symbol shown in the figure"]]}, {"src": "Module Review · Q7 (3.1.0)", "a": 3, "pq": "Look at Figure RQ02 in your textbook's Module Review (printed page 54). What does the symbol represent?", "po": ["Temperature control relay", "Transformer", "Incandescent luminaire (surface or pendant)", "Incandescent luminaire with pull chain (surface or pendant)"], "tq": "The symbol shown in Figure RQ02 represents a _____.", "to": ["temperature control relay", "transformer", "incandescent luminaire (surface or pendant)", "incandescent luminaire with pull chain (surface or pendant)"], "why": "Check your answer with the symbols in the textbook's symbols figure.", "br": [["the symbol", "the symbol shown in the figure"]]}, {"src": "Module Review · Q8 (3.1.0)", "a": 3, "pq": "Look at Figure RQ03 in your textbook's Module Review (printed page 54). What does the symbol represent?", "po": ["Single receptacle outlet", "Duplex receptacle outlet", "Receptacle outlet, split wired", "Triplex receptacle outlet"], "tq": "The symbol shown in Figure RQ03 represents a _____.", "to": ["single receptacle outlet", "duplex receptacle outlet", "receptacle outlet split wired", "triplex receptacle outlet"], "why": "Check your answer with the symbols in the textbook's symbols figure.", "br": [["the symbol", "the symbol shown in the figure"]]}, {"src": "Module Review · Q9 (3.1.0)", "a": 0, "pq": "Look at Figure RQ04 in your textbook's Module Review (printed page 54). What does the symbol represent?", "po": ["Single receptacle outlet", "Duplex receptacle outlet", "Duplex receptacle outlet, split wired", "Quadruplex receptacle outlet"], "tq": "The symbol shown in Figure RQ04 represents a _____.", "to": ["single receptacle outlet", "duplex receptacle outlet", "duplex receptacle outlet split wired", "quadruplex receptacle outlet"], "why": "Check your answer with the symbols in the textbook's symbols figure.", "br": [["the symbol", "the symbol shown in the figure"]]}, {"src": "Module Review · Q10 (3.1.0)", "a": 2, "pq": "Look at Figure RQ05 in your textbook's Module Review (printed page 55). What does the symbol represent?", "po": ["Temperature control relay", "Transformer", "Incandescent surface-mounted luminaire", "Incandescent surface-mounted luminaire with pull chain"], "tq": "The symbol shown in Figure RQ05 represents a _____.", "to": ["temperature control relay", "transformer", "incandescent surface-mounted luminaire", "incandescent surface-mounted luminaire with pull chain"], "why": "Check your answer with the symbols in the textbook's symbols figure.", "br": [["the symbol", "the symbol shown in the figure"]]}, {"src": "Module Review · Q11 (3.1.0)", "a": 3, "pq": "Look at Figure RQ06 in your textbook's Module Review (printed page 55). What electrical symbol is this?", "po": ["Panelboard", "Underfloor bus junction box", "Motor controller", "Fusible safety switch"], "tq": "What electrical symbol is shown in Figure RQ06?", "to": ["Panelboard", "Underfloor bus junction box", "Motor controller", "Fusible safety switch"], "why": "Check your answer with the symbols in the textbook's symbols figure.", "br": [["this symbol", "the symbol shown in the figure"]]}], "6": [{"src": "Section Review 3.0.0 · Q2 (3.2.1)", "a": 2, "pq": "A branch circuit should not be loaded past what percent of its rating?", "po": ["100", "90", "80", "70"], "tq": "The load on a branch circuit should not exceed _____% of its rated capacity.", "to": ["100", "90", "80", "70"], "why": "The limit is 80 percent of rated capacity.", "br": [["loaded past", "exceed"], ["its rating", "its rated capacity"]]}, {"src": "Section Review 3.0.0 · Q3 (3.3.2)", "a": 0, "pq": "What does the abbreviation AFF mean?", "po": ["Above finished floor", "As found formerly", "After final finish", "Attach front first"], "tq": "The abbreviation AFF means _____.", "to": ["above finished floor", "as found formerly", "after final finish", "attach front first"], "why": "AFF means above finished floor.", "br": [["mean", "means"]]}, {"src": "Module Review · Q12 (3.2.1)", "a": 1, "pq": "Dashed lines for a branch circuit on a drawing mean the wiring goes where?", "po": ["Concealed in the ceiling or wall", "Concealed in the floor", "Exposed", "Turned up"], "tq": "Dashed lines used to represent a branch circuit on a drawing mean that the wiring is to be _____.", "to": ["concealed in the ceiling or wall", "concealed in the floor", "exposed", "turned up"], "why": "Dashed lines show wiring concealed in the floor.", "br": [["dashed lines", "dashed lines used to represent a branch circuit"]]}, {"src": "Module Review · Q13 (3.2.1)", "a": 3, "pq": "What does an electrical drafting line with an arrowhead stand for?", "po": ["Wiring concealed in the floor", "Wiring turned down", "Wiring concealed in a ceiling or wall", "A branch circuit homerun"], "tq": "An electrical drafting line with an arrowhead represents _____.", "to": ["wiring concealed in the floor", "wiring turned down", "wiring concealed in a ceiling or wall", "a branch circuit homerun"], "why": "An arrowhead marks a homerun.", "br": [["stand for", "represents"]]}, {"src": "Module Review · Q14 (3.2.1)", "a": 1, "pq": "A home circuit is rated 2,400 VA. What is the most load it should carry?", "po": ["1,680 VA", "1,920 VA", "2,040 VA", "2,160 VA"], "tq": "To meet general recommendations, a residential branch circuit rated for 2,400VA should have a connected load of no more than _____.", "to": ["1,680VA", "1,920VA", "2,040VA", "2,160VA"], "why": "80 percent of 2,400 VA: 0.8 × 2,400 = 1,920 VA.", "br": [["the most load it should carry", "a connected load of no more than"]]}, {"src": "Module Review · Q15 (3.3.3)", "a": 3, "pq": "What will a commercial floor power plan show?", "po": ["Luminaire locations", "Fire alarm details", "Service size calculations", "Electrical panels"], "tq": "A commercial floor power plan will show _____.", "to": ["luminaire locations", "fire alarm details", "service size calculations", "electrical panels"], "why": "A commercial floor power plan shows electrical panels.", "br": [["show", "will show"]]}], "7": [{"src": "Section Review 3.0.0 · Q4 (3.4.0)", "a": 3, "pq": "What is a table format for giving information on a drawing called?", "po": ["Symbol list", "Submittal", "Schematic diagram", "Schedule"], "tq": "A tabular format for giving information on a drawing is called a _____.", "to": ["symbol list", "submittal", "schematic diagram", "schedule"], "why": "A table on a drawing is a schedule.", "br": [["table format", "tabular format"]]}, {"src": "Module Review · Q16 (3.4.2)", "a": 0, "pq": "What are power-riser diagrams used to show?", "po": ["Connections between pieces of equipment", "Branch circuit layout for power", "Branch circuit layout for lighting", "Panelboard schedule"], "tq": "Power-riser diagrams are used to show the _____.", "to": ["connections between pieces of electrical equipment", "branch circuit layout for power", "branch circuit layout for lighting", "panelboard schedule"], "why": "Power-riser diagrams show how equipment connects.", "br": [["show", "are used to show"]]}, {"src": "Module Review · Q17 (3.4.3)", "a": 2, "pq": "On a typical motor starter schematic, what do T1, T2 and T3 stand for?", "po": ["Voltage supply lines", "Auxiliary contacts", "Motor terminals", "Line contacts"], "tq": "The symbols T1, T2, and T3 in a typical motor starter schematic represent _____.", "to": ["voltage supply lines", "auxiliary contacts", "motor terminals", "line contacts"], "why": "T1, T2 and T3 are the motor terminals.", "br": [["stand for", "represent"]]}], "8": [{"src": "Section Review 4.0.0 · Q1 (4.1.0)", "a": 1, "pq": "What will a well-written specification document contain?", "po": ["Elevation drawings", "Model and part numbers", "NEC references for installation", "PPE requirements"], "tq": "A well-written specification document will contain _____.", "to": ["elevation drawings", "model and part numbers", "NEC® references for installation", "personal protective equipment (PPE) requirements"], "why": "A good specification includes model and part numbers.", "br": [["contain", "will contain"]]}, {"src": "Section Review 4.0.0 · Q2 (4.2.0)", "a": 0, "pq": "Medium-voltage electrical distribution equipment specifications are in which MasterFormat division?", "po": ["261000", "262000", "263000", "264000"], "tq": "Specifications for medium-voltage electrical distribution equipment are currently located in MasterFormat® division _____.", "to": ["261000", "262000", "263000", "264000"], "why": "Medium-voltage distribution equipment is in division 261000.", "br": [["which division", "division"]]}, {"src": "Section Review 4.0.0 · Q3 (4.3.0)", "a": 3, "pq": "When the drawings and specifications disagree, how is it settled?", "po": ["The equipment supplier", "The electrical contractor", "The as-built drawings", "The change order"], "tq": "A conflict between the drawings and the specifications is resolved by _____.", "to": ["the equipment supplier", "the electrical contractor", "the as-built drawings", "the change order"], "why": "A change order resolves the conflict.", "br": [["disagree", "conflict"], ["settled", "resolved"]]}, {"src": "Module Review · Q18 (4.2.0)", "a": 1, "pq": "Which MasterFormat division covers communications systems?", "po": ["Division 16", "Division 27", "Division 37", "Division 48"], "tq": "The current MasterFormat® section covering communications systems is under _____.", "to": ["Division 16", "Division 27", "Division 37", "Division 48"], "why": "Communications systems are in Division 27.", "br": [["covers", "covering"]]}, {"src": "Module Review · Q19 (4.2.0)", "a": 2, "pq": "Which MasterFormat division covers integrated automation?", "po": ["Division 12", "Division 18", "Division 25", "Division 28"], "tq": "The current MasterFormat® section covering integrated automation is _____.", "to": ["Division 12", "Division 18", "Division 25", "Division 28"], "why": "Integrated automation is Division 25.", "br": [["covers", "covering"]]}, {"src": "Module Review · Q20 (4.3.0)", "a": 0, "pq": "Why is a change order made?", "po": ["A request for information", "A construction error", "An as-built drawing", "A late material delivery"], "tq": "A change order is made because of _____.", "to": ["a request for information", "a construction error", "an as-built drawing", "a late material delivery"], "why": "The answer key gives a request for information.", "br": [["why", "because of"]]}]};
+  var TALK = {"1": {"qs": ["Why would a drawing keep a list of its own changes?", "What could go wrong if someone builds from an old sheet?"], "scn": [{"t": "The cloud shape", "s": "You open a sheet and see a cloud around part of the plan. What do you do?", "g": ["Understand a cloud marks an area that changed.", "Find the revision block to read what the change is.", "Check you have the current sheet before building."]}], "parent": "Ask your student to explain what a revision block is for, and why a cloud shape matters."}, "2": {"qs": ["How is a floor plan different from an elevation view?", "What would you do when you reach a match line?"], "scn": [{"t": "Which drawing?", "s": "You want to know where the building sits on the lot, and what the ground does. Which drawing do you look at?", "g": ["The site plan shows the building on the property.", "Contour lines show the slope: close together is steep.", "The floor plan shows the inside, not the lot."]}], "parent": "Ask your student to sketch a simple floor plan of a room and say what a match line would do on a bigger plan."}, "3": {"qs": ["Why does a cutaway help you see what a plan cannot?", "How does a section line connect a plan to a sectional view?"], "scn": [{"t": "Inside the wall", "s": "You need to know how something is built inside a wall. How could the drawings help?", "g": ["Look for a section line on the plan.", "Find the matching sectional view.", "Use it to see what a plan view does not show."]}], "parent": "Ask your student to explain a section line using a loaf of bread or a cut fruit."}, "4": {"qs": ["Why do drawings use a scale?", "Which scale ruler measures in fractions of an inch, and which in decimals?"], "scn": [{"t": "Measure it", "s": "A plan is at ⅛\" = 1'–0\" and a wall measures 1⅜\" on the drawing. How long is the wall?", "g": ["Every ⅛\" is 1 foot.", "1⅜\" is 11 eighths.", "So the wall is 11'–0\"."]}], "parent": "Ask your student to work out one scale problem aloud, step by step."}, "5": {"qs": ["Why do drawings use symbols instead of words?", "Where do you check what a symbol means?"], "scn": [{"t": "Unknown symbol", "s": "You see a symbol you do not recognize on a plan. What do you do?", "g": ["Check the legend on the drawing.", "Do not guess.", "Ask if the legend does not answer it."]}], "parent": "Ask your student to tell you what a dashed line and an arrowhead mean on a plan."}, "6": {"qs": ["Why does a plan label each luminaire?", "Why keep a branch circuit at 80 percent?"], "scn": [{"t": "How much load?", "s": "A circuit is rated 2,400 VA. How much load should you plan for?", "g": ["No more than 80 percent.", "0.8 × 2,400 = 1,920 VA.", "This leaves room to stay safe."]}], "parent": "Ask your student to explain the 80 percent rule and work the 2,400 VA example."}, "7": {"qs": ["How is a block diagram different from a floor plan?", "What can a schematic show that a power-riser diagram does not?"], "scn": [{"t": "Which diagram?", "s": "You want to see how the main equipment is connected, not where it sits in the building. Which diagram helps?", "g": ["A block or power-riser diagram.", "Equipment is shown as blocks with connecting lines.", "A schematic shows control circuit detail."]}], "parent": "Ask your student to draw a simple block diagram of anything with connected parts."}, "8": {"qs": ["What is the difference between a change order and a request for information?", "Why record changes in as-built drawings?"], "scn": [{"t": "The plans do not match", "s": "The drawings and the specifications disagree. What happens?", "g": ["The contractor can ask for clarification with a request for information.", "A change order resolves the conflict.", "As-built drawings record what was built."]}], "parent": "Ask your student to walk through the order: ask, change, then record."}};
+  var FINAL = ["I can explain what a revision block and a cloud shape show.", "I can tell a floor plan, site plan and elevation view apart, and say what a match line is.", "I can explain what a sectional view and a section line show.", "I can read a scale and work a simple scale problem.", "I can read common symbols with a legend, and say what dashed lines and arrowheads mean.", "I can read AFF and use the 80 percent rule for a branch circuit.", "I can tell block, power-riser, one-line and schematic diagrams apart.", "I can explain written specifications, a request for information, a change order and as-built drawings."];
+
+  function el(tag, cls, text) { var n = document.createElement(tag); if (cls) n.className = cls; if (text != null) n.textContent = text; return n; }
+
+  function buildPoints(ul, list, prefix) {
+    list.forEach(function (html, i) {
+      var li = el("li");
+      var label = el("label");
+      var input = document.createElement("input");
+      input.type = "checkbox";
+      input.id = prefix + "-" + i;
+      var span = el("span");
+      span.innerHTML = html; // static text written in this file
+      label.appendChild(input); label.appendChild(span);
+      li.appendChild(label); ul.appendChild(li);
+    });
+  }
+
+  function field(label, text) {
+    var d = el("span");
+    d.appendChild(el("span", "label", label));
+    d.appendChild(document.createTextNode(text));
+    return d;
+  }
+  function buildCards(host, n) {
+    CARDS[n].forEach(function (item) {
+      var b = el("button", "card");
+      b.type = "button";
+      b.setAttribute("aria-pressed", "false");
+      b.setAttribute("aria-label", item.t + ". Press to flip the card.");
+      var inner = el("span", "card-inner");
+      var f = el("span", "face front" + (item.k === "k" ? " key" : ""));
+      f.appendChild(el("span", "strip", (item.k === "o" ? "NCCER trade term" : "Key term") + " · Section " + n));
+      f.appendChild(el("span", "term", item.t));
+      f.appendChild(el("span", "hint", "TAP TO FLIP"));
+      var k = el("span", "face back");
+      k.appendChild(el("span", "strip", item.t));
+      var body = el("span", "body");
+      body.appendChild(field("In everyday words", item.plain));
+      body.appendChild(field("From the module", item.book));
+      var ask = field("Ask your student", item.ask);
+      ask.className = "ask";
+      body.appendChild(ask);
+      k.appendChild(body);
+      inner.appendChild(f); inner.appendChild(k);
+      b.appendChild(inner);
+      b.addEventListener("click", function () { b.setAttribute("aria-pressed", b.getAttribute("aria-pressed") === "true" ? "false" : "true"); });
+      host.appendChild(b);
+    });
+  }
+
+  function buildQuiz(host, n) {
+    var list = QUIZ[n];
+    var answered = 0;
+    host.appendChild(el("p", "ticket-intro", "Pick the answer. You will see right away if it is correct. Nothing is saved or sent."));
+    var foot = el("div", "ticket-foot");
+    var done = el("p", null, "");
+    done.setAttribute("aria-live", "polite");
+    var retry = el("button", "btn", "Try again");
+    retry.type = "button";
+    retry.hidden = true;
+    foot.appendChild(done); foot.appendChild(retry);
+
+    list.forEach(function (item, qi) {
+      var fs = el("fieldset", "q");
+      fs.appendChild(el("legend", null, (qi + 1) + ". " + item.q));
+      var opts = el("div", "opts");
+      var fb = el("p", "fb");
+      fb.setAttribute("aria-live", "polite");
+      var btns = [];
+      item.o.forEach(function (text, oi) {
+        var b = el("button", "opt", text);
+        b.type = "button";
+        b.addEventListener("click", function () {
+          btns.forEach(function (x) { x.disabled = true; });
+          answered++;
+          if (oi === item.a) {
+            b.classList.add("right");
+            fb.innerHTML = "";
+            var good = el("b", null, "Correct. "); fb.appendChild(good); fb.appendChild(document.createTextNode(item.why));
+          } else {
+            b.classList.add("wrong");
+            btns[item.a].classList.add("right");
+            fb.innerHTML = "";
+            var no = el("b", null, "Not quite. "); fb.appendChild(no);
+            fb.appendChild(document.createTextNode("The answer is \"" + item.o[item.a] + "\". " + item.why));
+          }
+          if (answered === list.length) {
+            done.textContent = "Ticket finished. Reread any part of the section that felt shaky, then try again.";
+            retry.hidden = false;
+          }
+        });
+        btns.push(b); opts.appendChild(b);
+      });
+      fs.appendChild(opts); fs.appendChild(fb);
+      host.insertBefore(fs, null);
+      fs._reset = function () { btns.forEach(function (x) { x.disabled = false; x.className = "opt"; }); fb.textContent = ""; };
+    });
+    host.appendChild(foot);
+    retry.addEventListener("click", function () {
+      host.querySelectorAll("fieldset").forEach(function (f) { f._reset(); });
+      answered = 0; done.textContent = ""; retry.hidden = true;
+    });
+  }
+
+  function buildTalk(host, n) {
+    var t = TALK[n];
+    var ol = el("ol", "qs");
+    t.qs.forEach(function (q) { ol.appendChild(el("li", null, q)); });
+    host.appendChild(ol);
+    t.scn.forEach(function (s) {
+      var d = el("details", "scn");
+      d.appendChild(el("summary", null, "Scenario: " + s.t));
+      d.appendChild(el("p", "setup", s.s));
+      var g = el("div", "good");
+      g.appendChild(el("b", null, "A good answer includes"));
+      var ul = el("ul");
+      s.g.forEach(function (x) { ul.appendChild(el("li", null, x)); });
+      g.appendChild(ul); d.appendChild(g);
+      host.appendChild(d);
+    });
+    if (t.parent) {
+      var p = el("div", "parent");
+      p.appendChild(el("b", null, "Talk it over with your loved ones"));
+      p.appendChild(el("p", null, t.parent));
+      host.appendChild(p);
+    }
+  }
+
+
+  function ask(label, cls, q, opts, correct, onAnswer) {
+    var box = el("div", "ask-block" + (cls ? " " + cls : ""));
+    box.appendChild(el("p", "step-label", label));
+    box.appendChild(el("p", "pr-q", q));
+    var wrap = el("div", "opts");
+    wrap.setAttribute("role", "group");
+    wrap.setAttribute("aria-label", q);
+    var fb = el("p", "fb");
+    fb.setAttribute("aria-live", "polite");
+    var btns = [];
+    opts.forEach(function (text, oi) {
+      var b = el("button", "opt", String.fromCharCode(65 + oi) + ".  " + text);
+      b.type = "button";
+      b.addEventListener("click", function () {
+        btns.forEach(function (x) { x.disabled = true; });
+        var ok = oi === correct;
+        b.classList.add(ok ? "right" : "wrong");
+        if (!ok) btns[correct].classList.add("right");
+        onAnswer(ok, fb, String.fromCharCode(65 + correct));
+      });
+      btns.push(b); wrap.appendChild(b);
+    });
+    box.appendChild(wrap); box.appendChild(fb);
+    box.reset = function () { btns.forEach(function (x) { x.disabled = false; x.className = "opt"; }); fb.textContent = ""; };
+    return box;
+  }
+  function say(fb, lead, text) {
+    fb.textContent = "";
+    fb.appendChild(el("b", null, lead + " "));
+    fb.appendChild(document.createTextNode(text));
+  }
+
+  function buildPractice(host, n) {
+    var list = PRACTICE[n];
+    host.appendChild(el("p", "pr-intro", "Test questions use the textbook's formal words. Answer each question in plain English first, then see the same question the way the book asks it. The \"Words to notice\" box shows how the two fit together. Nothing is saved or sent."));
+    var items = [];
+    list.forEach(function (item, i) {
+      var art = el("article", "pr");
+      var head = el("div", "pr-head");
+      head.appendChild(el("span", null, "Question " + (i + 1) + " of " + list.length));
+      head.appendChild(el("span", null, "Source: " + item.src));
+      art.appendChild(head);
+
+      var bridge = el("div", "bridge");
+      bridge.hidden = true;
+      bridge.appendChild(el("p", "step-label", "Words to notice"));
+      var ul = el("ul");
+      item.br.forEach(function (p) {
+        var li = el("li");
+        li.appendChild(el("span", "you", p[0]));
+        li.appendChild(el("span", "arrow", "→"));
+        li.appendChild(el("span", "pub", p[1]));
+        ul.appendChild(li);
+      });
+      bridge.appendChild(ul);
+
+      var b2 = ask("Step 2 · The same question in the textbook's words", "formal", item.tq, item.to, item.a, function (ok, fb, letter) {
+        if (ok) say(fb, "Correct.", "You just answered it in the textbook's voice.");
+        else say(fb, "Not quite.", "The answer is " + letter + ". Compare it with your plain-English answer above.");
+        bridge.hidden = false;
+      });
+      b2.hidden = true;
+      var b1 = ask("Step 1 · In plain English", "", item.pq, item.po, item.a, function (ok, fb, letter) {
+        if (ok) say(fb, "Correct.", item.why);
+        else say(fb, "Not quite.", "The answer is " + letter + ". " + item.why);
+        b2.hidden = false;
+      });
+      art.appendChild(b1); art.appendChild(b2); art.appendChild(bridge);
+      host.appendChild(art);
+      items.push({ b1: b1, b2: b2, bridge: bridge });
+    });
+    var foot = el("div", "ticket-foot");
+    var retry = el("button", "btn", "Start this set over");
+    retry.type = "button";
+    retry.addEventListener("click", function () {
+      items.forEach(function (x) { x.b1.reset(); x.b2.reset(); x.b2.hidden = true; x.bridge.hidden = true; });
+    });
+    foot.appendChild(retry);
+    host.appendChild(foot);
+  }
+
+  for (var n = 1; n <= 8; n++) {
+    buildPractice(document.querySelector('[data-practice="' + n + '"]'), n);
+    buildPoints(document.querySelector('[data-points="' + n + '"]'), POINTS[n], "s" + n);
+    var d = document.querySelector('[data-cards="' + n + '"]'); if (CARDS[n] && CARDS[n].length) buildCards(d, n); else d.closest('.part').hidden = true;
+    buildQuiz(document.querySelector('[data-quiz="' + n + '"]'), n);
+    buildTalk(document.querySelector('[data-talk="' + n + '"]'), n);
+  }
+  buildPoints(document.getElementById("final-points"), FINAL, "fin");
+})();
+</script>
+</body>
+</html>

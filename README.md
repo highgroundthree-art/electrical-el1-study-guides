@@ -27,6 +27,7 @@ Every module section follows the same six parts:
 | NCCER Core, Module 00107: Basic Communication Skills | `communication-skills.html` |
 | NCCER Core, Module 00108: Basic Employability Skills | `employability-skills.html` |
 | NCCER Electrical Level 1, Module 26110-20: Basic Electrical Construction Documents | `electrical-construction-documents.html` |
+| NCCER Electrical Level 1, Module 26111-20: Residential Wiring | `residential-wiring.html` |
 
 `index.html` is the landing page that links to the finished guides.
 

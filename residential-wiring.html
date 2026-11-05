@@ -1,0 +1,1042 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Residential Wiring Loved Ones Study Guide</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+/* Layout concept: one long study sheet. Each module section runs the same six parts
+   (read, review points, trade-term tags, ticket out the door, talk it over). */
+:root {
+  --bg: #EEF1F3;
+  --surface: #FFFFFF;
+  --ink: #14202B;
+  --ink-soft: #46576A;
+  --line: #C9D2DA;
+  --band: #14202B;
+  --band-ink: #F4F7F9;
+  --accent: #C42B17;
+  --accent-ink: #FFFFFF;
+  --caution: #F2B705;
+  --caution-soft: #FFF3C4;
+  --good: #1E7A3C;
+  --good-soft: #DDF3E4;
+  --bad: #A8321F;
+  --bad-soft: #FBE3DE;
+  --tag-hole: #EEF1F3;
+  --focus: #0B5FFF;
+  --font-display: "Barlow Condensed", "Arial Narrow", Impact, sans-serif;
+  --font-body: "Barlow", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0F171E; --surface: #18232D; --ink: #EAF0F4; --ink-soft: #A5B4C2; --line: #2E3E4C;
+    --band: #0A1016; --band-ink: #F4F7F9; --accent: #FF5A44; --accent-ink: #14202B;
+    --caution: #F2B705; --caution-soft: #3A3210; --good: #6FD08C; --good-soft: #17301F;
+    --bad: #FF8E7C; --bad-soft: #3A1B16; --tag-hole: #0F171E; --focus: #6AA2FF;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0F171E; --surface: #18232D; --ink: #EAF0F4; --ink-soft: #A5B4C2; --line: #2E3E4C;
+  --band: #0A1016; --band-ink: #F4F7F9; --accent: #FF5A44; --accent-ink: #14202B;
+  --caution: #F2B705; --caution-soft: #3A3210; --good: #6FD08C; --good-soft: #17301F;
+  --bad: #FF8E7C; --bad-soft: #3A1B16; --tag-hole: #0F171E; --focus: #6AA2FF;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--ink); font-family: var(--font-body); font-size: 17px; line-height: 1.6; }
+:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
+.wrap { max-width: 920px; margin-inline: auto; padding-inline: max(16px, env(safe-area-inset-left, 0px)) max(16px, env(safe-area-inset-right, 0px)); }
+h1, h2, h3, h4 { font-family: var(--font-display); text-transform: uppercase; letter-spacing: 0.03em; line-height: 1.05; margin: 0; text-wrap: balance; }
+.eyebrow { font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-soft); }
+
+.band { background: var(--band); color: var(--band-ink); padding-block: 34px 26px; border-bottom: 8px solid var(--caution); }
+.band .eyebrow { color: var(--caution); }
+.band h1 { font-size: clamp(2.5rem, 9vw, 4.4rem); font-weight: 700; margin-top: 10px; }
+.band .sub { margin: 14px 0 0; font-size: 1.1rem; color: #D5DEE5; max-width: 46ch; }
+.band .byline { margin: 14px 0 0; font-size: 0.95rem; color: #AEBBC7; }
+nav.jump { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 22px; }
+nav.jump a { text-decoration: none; font-weight: 600; font-size: 0.95rem; padding: 8px 14px; border: 2px solid #3B4B5A; border-radius: 3px; color: var(--band-ink); }
+nav.jump a:hover { border-color: var(--caution); }
+
+.intro { margin-top: 28px; display: grid; gap: 22px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 380px), 1fr)); }
+.panel { background: var(--surface); border: 1px solid var(--line); padding: 20px 22px 22px; min-width: 0; }
+.panel h2 { font-size: 1.5rem; font-weight: 700; margin-bottom: 10px; }
+.panel p { margin: 0 0 10px; }
+.panel ol { margin: 8px 0 0; padding-left: 1.3em; display: grid; gap: 6px; }
+.notice { background: var(--caution-soft); border: 2px solid var(--caution); padding: 16px 20px; margin-top: 22px; }
+.notice p { margin: 4px 0 0; }
+.notice h2 { font-size: 1.25rem; }
+
+/* section */
+.sec { margin-top: 56px; }
+.sec-head { border-top: 8px solid var(--ink); padding-top: 18px; }
+.sec-head h2 { font-size: clamp(2rem, 6vw, 3rem); font-weight: 700; margin-top: 6px; }
+.sec-head .obj { margin: 10px 0 0; color: var(--ink-soft); max-width: 62ch; }
+.part { margin-top: 34px; }
+.part-title { display: flex; align-items: baseline; gap: 12px; margin-bottom: 14px; }
+.part-title .letter { font-family: var(--font-mono); font-size: 13px; background: var(--ink); color: var(--bg); padding: 2px 8px; flex: none; }
+.part-title h3 { font-size: 1.7rem; font-weight: 700; }
+.part-title .time { margin-left: auto; font-family: var(--font-mono); font-size: 12px; color: var(--ink-soft); white-space: nowrap; }
+
+.prose { background: var(--surface); border: 1px solid var(--line); padding: 22px 24px; }
+.prose h4 { font-size: 1.25rem; font-weight: 700; margin: 20px 0 6px; color: var(--accent); }
+.prose h4:first-child { margin-top: 0; }
+.prose p { margin: 0 0 10px; max-width: 64ch; }
+.prose ul { margin: 0 0 10px; padding-left: 1.2em; max-width: 64ch; }
+.prose li { margin-bottom: 4px; }
+.prose .big { font-size: 1.12rem; font-weight: 500; border-left: 6px solid var(--caution); padding: 4px 0 4px 14px; margin: 0 0 16px; }
+.prose table { border-collapse: collapse; margin: 8px 0 14px; font-size: 0.95rem; width: 100%; max-width: 520px; }
+.prose th, .prose td { text-align: left; padding: 6px 10px; border-bottom: 1px solid var(--line); }
+.prose th { font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-soft); }
+.scroll { overflow-x: auto; }
+.case { background: var(--bg); border-left: 6px solid var(--accent); padding: 12px 16px; margin: 14px 0 0; max-width: 64ch; }
+.case b { font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.08em; text-transform: uppercase; display: block; color: var(--ink-soft); }
+
+/* review points */
+.points { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; counter-reset: pt; }
+.points li { background: var(--surface); border: 1px solid var(--line); }
+.points label { display: grid; grid-template-columns: 28px minmax(0, 1fr); gap: 12px; padding: 12px 16px; cursor: pointer; align-items: start; }
+.points input { width: 22px; height: 22px; margin: 2px 0 0; accent-color: var(--good); }
+.points li:has(input:checked) { background: var(--good-soft); border-color: var(--good); }
+.points b { font-weight: 600; }
+
+/* cards */
+.deck { display: grid; gap: 22px; grid-template-columns: repeat(auto-fill, minmax(min(100%, 270px), 1fr)); }
+.card { all: unset; box-sizing: border-box; display: block; cursor: pointer; perspective: 1100px; min-width: 0; }
+.card:focus-visible { outline: 3px solid var(--focus); outline-offset: 4px; }
+.card-inner { display: grid; transition: transform 0.5s cubic-bezier(.3,.7,.2,1); transform-style: preserve-3d; position: relative; }
+.card[aria-pressed="true"] .card-inner { transform: rotateY(180deg); }
+.face { grid-area: 1 / 1; backface-visibility: hidden; -webkit-backface-visibility: hidden; display: flex; flex-direction: column; min-height: 250px; border: 2px solid var(--ink); background: var(--surface); position: relative; overflow: hidden; }
+.face::before { content: ""; position: absolute; top: 12px; left: 50%; width: 16px; height: 16px; margin-left: -8px; border-radius: 50%; background: var(--tag-hole); border: 2px solid var(--ink); }
+.front .strip { background: var(--accent); color: var(--accent-ink); padding: 38px 16px 8px; font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.08em; text-transform: uppercase; }
+.front.key .strip { background: var(--ink); color: var(--bg); }
+.front .term { flex: 1; display: flex; align-items: center; padding: 16px 18px; font-family: var(--font-display); text-transform: uppercase; font-weight: 700; font-size: clamp(1.8rem, 7vw, 2.2rem); line-height: 1.02; letter-spacing: 0.02em; overflow-wrap: anywhere; }
+.front .hint { padding: 10px 18px 14px; font-size: 0.8rem; color: var(--ink-soft); border-top: 1px dashed var(--line); font-family: var(--font-mono); letter-spacing: 0.04em; }
+.back { transform: rotateY(180deg); background: var(--caution-soft); }
+.back .strip { background: var(--ink); color: var(--bg); padding: 38px 16px 8px; font-family: var(--font-display); text-transform: uppercase; font-weight: 700; letter-spacing: 0.04em; font-size: 1.1rem; line-height: 1.05; }
+.back .body { padding: 14px 18px 16px; display: grid; gap: 10px; align-content: start; font-size: 0.95rem; line-height: 1.45; }
+.back .label { font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-soft); display: block; margin-bottom: 1px; }
+.back .ask { border-top: 1px dashed var(--ink-soft); padding-top: 10px; font-weight: 500; }
+.deck-note { margin: 12px 0 0; font-size: 0.9rem; color: var(--ink-soft); }
+@media (prefers-reduced-motion: reduce) {
+  .card-inner { transition: none; transform-style: flat; }
+  .card[aria-pressed="true"] .card-inner { transform: none; }
+  .back { transform: none; }
+  .face { backface-visibility: visible; }
+  .card .back { visibility: hidden; }
+  .card[aria-pressed="true"] .back { visibility: visible; }
+  .card[aria-pressed="true"] .front { visibility: hidden; }
+}
+
+/* ticket */
+.ticket { background: var(--surface); border: 2px dashed var(--ink); padding: 8px 20px 18px; position: relative; }
+.ticket-intro { margin: 14px 0 4px; color: var(--ink-soft); font-size: 0.95rem; }
+.q { border: 0; border-top: 1px solid var(--line); margin: 0; padding: 16px 0 14px; min-width: 0; }
+.q:first-of-type { border-top: 0; }
+.q legend { font-weight: 600; padding: 0; margin-bottom: 8px; float: left; width: 100%; }
+.q .opts { clear: both; display: grid; gap: 8px; }
+.opt { font: inherit; text-align: left; padding: 10px 14px; background: var(--bg); color: var(--ink); border: 2px solid var(--line); border-radius: 3px; cursor: pointer; }
+.opt:hover:not(:disabled) { border-color: var(--ink); }
+.opt:disabled { cursor: default; }
+.opt.right { background: var(--good-soft); border-color: var(--good); }
+.opt.wrong { background: var(--bad-soft); border-color: var(--bad); }
+.fb { margin: 8px 0 0; font-size: 0.93rem; color: var(--ink-soft); }
+.fb b { color: var(--ink); }
+.ticket-foot { margin-top: 10px; display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+.ticket-foot p { margin: 0; font-weight: 500; }
+.btn { font: inherit; font-weight: 600; font-size: 0.92rem; padding: 8px 14px; background: var(--surface); color: var(--ink); border: 2px solid var(--ink); border-radius: 3px; cursor: pointer; }
+.btn:hover { background: var(--ink); color: var(--bg); }
+
+/* talk it over */
+.talk { display: grid; gap: 14px; }
+.talk .qs { background: var(--surface); border: 1px solid var(--line); padding: 16px 22px 16px 40px; margin: 0; display: grid; gap: 8px; }
+details.scn { background: var(--surface); border: 1px solid var(--line); border-left: 6px solid var(--caution); padding: 14px 18px; }
+details.scn summary { cursor: pointer; font-family: var(--font-display); text-transform: uppercase; letter-spacing: 0.03em; font-size: 1.3rem; font-weight: 700; }
+details.scn .setup { margin: 10px 0 8px; }
+details.scn .good { margin: 12px 0 0; padding: 10px 14px; background: var(--good-soft); border-left: 6px solid var(--good); }
+details.scn .good b { font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.08em; text-transform: uppercase; display: block; }
+details.scn .good ul { margin: 6px 0 0; padding-left: 1.1em; }
+.parent { background: var(--caution-soft); border: 2px solid var(--caution); padding: 12px 16px; }
+.parent b { font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.08em; text-transform: uppercase; display: block; }
+.parent p { margin: 4px 0 0; }
+
+/* practice questions */
+.pr-intro { margin: 0 0 14px; color: var(--ink-soft); max-width: 66ch; }
+.pr { background: var(--surface); border: 1px solid var(--line); margin-bottom: 18px; }
+.pr-head { display: flex; flex-wrap: wrap; gap: 6px 14px; justify-content: space-between; align-items: baseline; padding: 10px 18px; background: var(--ink); color: var(--bg); font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.06em; text-transform: uppercase; }
+.ask-block { padding: 14px 18px 16px; }
+.ask-block + .ask-block { border-top: 2px dashed var(--line); }
+.ask-block.formal { background: var(--bg); }
+.step-label { margin: 0 0 6px; font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); }
+.pr-q { margin: 0 0 10px; font-weight: 600; font-size: 1.05rem; max-width: 62ch; }
+.bridge { padding: 14px 18px 16px; border-top: 2px dashed var(--line); background: var(--caution-soft); }
+.bridge .step-label { color: var(--ink); }
+.bridge ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+.bridge li { display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); gap: 10px; align-items: baseline; }
+.bridge .you { font-style: italic; }
+.bridge .arrow { font-family: var(--font-mono); color: var(--ink-soft); }
+.bridge .pub { font-weight: 600; }
+@media (max-width: 520px) { .bridge li { grid-template-columns: minmax(0, 1fr); gap: 0; } .bridge .arrow { display: none; } .bridge .pub::before { content: "Textbook: "; font-weight: 400; font-family: var(--font-mono); font-size: 11px; color: var(--ink-soft); } .bridge .you::before { content: "You say: "; font-style: normal; font-family: var(--font-mono); font-size: 11px; color: var(--ink-soft); } }
+
+/* final checklist */
+.final { margin-top: 56px; border-top: 8px solid var(--ink); padding-top: 18px; }
+.final h2 { font-size: clamp(1.9rem, 5vw, 2.6rem); font-weight: 700; }
+.final .lead { color: var(--ink-soft); max-width: 62ch; margin: 10px 0 16px; }
+.note { margin: 28px 0 0; font-size: 0.9rem; color: var(--ink-soft); max-width: 70ch; }
+footer { margin-top: 48px; background: var(--band); color: #AEBBC7; padding-block: 26px 30px; font-size: 0.92rem; }
+footer strong { color: var(--band-ink); }
+footer p { margin: 0 0 6px; }
+</style>
+</head>
+<body>
+<header class="band">
+  <div class="wrap">
+    <span class="eyebrow">EVIT Electrical · Loved Ones Study Guide</span>
+    <h1>Residential<br>Wiring</h1>
+    <p class="sub">A Loved Ones Study Guide for NCCER Electrical Level 1, Module 26111-20: Residential Wiring</p>
+    <p class="byline">Mr. Ellis CTE — General Construction &amp; Electrical Teacher · High School &amp; Adult Pre-Apprentice Programs</p>
+    <nav class="jump" aria-label="Sections">
+      <a href="#s1">1 · General Lighting Loads</a>
+      <a href="#s2">2 · Small Appliance Loads</a>
+      <a href="#s3">3 · Lighting Demand Factors</a>
+      <a href="#s4">4 · Main Bonding Jumper</a>
+      <a href="#s5">5 · Panelboard Locations</a>
+      <a href="#s6">6 · Service-Entrance Cable</a>
+      <a href="#s7">7 · Raceways</a>
+      <a href="#s8">8 · Branch Circuits and Feeders</a>
+      <a href="#s9">9 · 240-Volt Circuits</a>
+      <a href="#s10">10 · Electric Heating Circuits</a>
+      <a href="#s11">11 · Ceiling Fan Boxes</a>
+      <a href="#s12">12 · Receptacles</a>
+      <a href="#s13">13 · Switch Locations</a>
+      <a href="#review">Final review</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<div class="wrap">
+
+  <div class="intro">
+    <div class="panel">
+      <h2>Why this guide exists</h2>
+      <p>You do not need to be an electrician to support an electrical student. Your job is to help your student explain what they are learning and put it in their own words.</p>
+      <p>If your student can read it and explain it, they are learning it. That is the whole idea.</p>
+    </div>
+    <div class="panel">
+      <h2>How to use each section</h2>
+      <p>Plan about 15 to 25 minutes per section. The student does most of the talking. You do not need the answers ahead of time.</p>
+      <ol>
+        <li><b>Read it together.</b> Plain-English version of the module section.</li>
+        <li><b>Study review points.</b> The must-know facts. Tick each one when your student can say it back.</li>
+        <li><b>Trade-term cards.</b> Tap a card to flip it.</li>
+        <li><b>Ticket out the door.</b> A quick recall check, just for practice.</li>
+        <li><b>Talk it over.</b> Questions and a real-world scenario.</li>
+        <li><b>Practice questions.</b> Each one comes twice: first in plain English, then in the textbook's words, so your student learns to recognize both.</li>
+      </ol>
+    </div>
+  </div>
+
+  <aside class="notice" aria-labelledby="safe-h">
+    <h2 id="safe-h">Important safety note</h2>
+    <p>This guide is for learning and talking. It is not permission to do electrical work. Drawings and specifications are read by trained people working under proper guidance. Never use this guide in place of instructor supervision, employer procedures, required training, or properly rated equipment. No student names or grades appear here, and nothing you tick or tap on this page is saved or sent anywhere.</p>
+  </aside>
+
+  <section class="sec" id="s1" aria-labelledby="s1-h">
+    <div class="sec-head">
+      <span class="eyebrow">Module Section 1 of 13 · 1.1.1</span>
+      <h2 id="s1-h">General Lighting Loads</h2>
+      <p class="obj">By the end of this section your student can explain what the general lighting load is, calculate it from floor area, and turn volt-amperes into amps.</p>
+    </div>
+    <div class="part">
+      <div class="part-title"><span class="letter">A</span><h3>Read it together</h3><span class="time">about 8 min</span></div>
+      <div class="prose">
+<p class="big">Before anyone can size the electrical service for a house, they have to know how much load the house will put on it. The first piece is lighting.</p>
+<h4>General lighting load</h4>
+<p>For a home, the code figures the <b>general lighting load</b> from the size of the living space. It uses <b>3 volt-amperes (VA) for every square foot</b>. Multiply the floor area by 3.</p>
+<p><b>Example.</b> A small house has 900 square feet. 3 VA × 900 ft² = <b>2,700 VA</b>.</p>
+<h4>From VA to amps</h4>
+<p>To find the amps, divide the load by the voltage. Lighting circuits are 120 volts.</p>
+<p><b>Example.</b> 2,700 VA ÷ 120 V = <b>22.5 A</b>. And a 3,600 VA load ÷ 120 V = <b>30 A</b>.</p>
+<div class="case"><b>Key idea</b>Area × 3 VA gives the lighting load. Load ÷ volts gives the amps.</div>
+      </div>
+    </div>
+    <div class="part">
+      <div class="part-title"><span class="letter">B</span><h3>Study review points</h3></div>
+      <ul class="points" data-points="1"></ul>
+    </div>
+    <div class="part">
+      <div class="part-title"><span class="letter">C</span><h3>Trade-term cards</h3></div>
+      <div class="deck" data-cards="1"></div>
+    </div>
+    <div class="part">
+      <div class="part-title"><span class="letter">D</span><h3>Ticket out the door</h3></div>
+      <div class="ticket" data-quiz="1"></div>
+    </div>
+    <div class="part">
+      <div class="part-title"><span class="letter">E</span><h3>Talk it over</h3></div>
+      <div class="talk" data-talk="1"></div>
+    </div>
+    <div class="part">
+      <div class="part-title"><span class="letter">F</span><h3>Practice questions</h3></div>
+      <div data-practice="1"></div>
+    </div>
+  </section>
+
+  <section class="sec" id="s2" aria-labelledby="s2-h">
+    <div class="sec-head">
+      <span class="eyebrow">Module Section 2 of 13 · 1.1.2</span>
+      <h2 id="s2-h">Small Appliance Loads</h2>
+      <p class="obj">By the end of this section your student can say how many small appliance circuits a kitchen needs, and how the laundry load is counted.</p>
+    </div>
+    <div class="part">
+      <div class="part-title"><span class="letter">A</span><h3>Read it together</h3><span class="time">about 7 min</span></div>
+      <div class="prose">
+<p class="big">Kitchens and laundry areas plug in the heavy hitters, so the code sets aside circuits just for them.</p>
+<h4>Appliances</h4>
+<p><b>Appliances</b> are equipment designed for a particular purpose, such as making heat, light, or motion with electricity. They are usually self-contained and are normally made in standard sizes or types.</p>
+<h4>Small appliance circuits</h4>
+<p>A kitchen area needs at least <b>two small appliance branch circuits</b>, each counted at <b>1,500 VA</b>. If a dwelling has <b>two kitchen areas</b>, it needs <b>four</b> of these circuits, two for each area.</p>
+<h4>Laundry load</h4>
+<p>When sizing a home's electrical service, the <b>laundry load is counted as 1,500 VA</b>.</p>
+<div class="case"><b>Key idea</b>Two circuits at 1,500 VA for each kitchen area. Laundry is 1,500 VA.</div>
+      </div>
+    </div>
+    <div class="part">
+      <div class="part-title"><span class="letter">B</span><h3>Study review points</h3></div>
+      <ul class="points" data-points="2"></ul>
+    </div>
+    <div class="part">
+      <div class="part-title"><span class="letter">C</span><h3>Trade-term cards</h3></div>
+      <div class="deck" data-cards="2"></div>
+    </div>
+    <div class="part">
+      <div class="part-title"><span class="letter">D</span><h3>Ticket out the door</h3></div>
+      <div class="ticket" data-quiz="2"></div>
+    </div>
+    <div class="part">
+      <div class="part-title"><span class="letter">E</span><h3>Talk it over</h3></div>
+      <div class="talk" data-talk="2"></div>
+    </div>
+    <div class="part">
+      <div class="part-title"><span class="letter">F</span><h3>Practice questions</h3></div>
+      <div data-practice="2"></div>
+    </div>
+  </section>
+
+  <section class="sec" id="s3" aria-labelledby="s3-h">
+    <div class="sec-head">
+      <span class="eyebrow">Module Section 3 of 13 · 1.1.4</span>
+      <h2 id="s3-h">Lighting Demand Factors</h2>
+      <p class="obj">By the end of this section your student can explain what a demand factor is, and use the examples the module gives.</p>
+    </div>
+    <div class="part">
+      <div class="part-title"><span class="letter">A</span><h3>Read it together</h3><span class="time">about 7 min</span></div>
+      <div class="prose">
+<p class="big">Not every light and appliance in a house runs at the same time. A demand factor is how the code allows for that when sizing a service.</p>
+<h4>Demand factors</h4>
+<p>A <b>demand factor</b> is a percentage you apply to a load to account for the fact that not everything is on at once. The code uses tables for this.</p>
+<ul>
+<li>For the general lighting load, the <b>first 3,000 VA is counted at 100%</b>. The rest is counted at lower percentages from the table.</li>
+<li>Under NEC Section 220.53, a demand factor of <b>75%</b> may be applied to <b>four or more fixed appliance loads</b>.</li>
+<li>Under NEC Table 220.54, a household with <b>two dryers</b> has a demand factor of <b>100%</b>.</li>
+</ul>
+<div class="case"><b>Key idea</b>A demand factor lowers the load you count, but only where the code table says it can.</div>
+      </div>
+    </div>
+    <div class="part">
+      <div class="part-title"><span class="letter">B</span><h3>Study review points</h3></div>
+      <ul class="points" data-points="3"></ul>
+    </div>
+    <div class="part">
+      <div class="part-title"><span class="letter">C</span><h3>Trade-term cards</h3></div>
+      <div class="deck" data-cards="3"></div>
+    </div>
+    <div class="part">
+      <div class="part-title"><span class="letter">D</span><h3>Ticket out the door</h3></div>
+      <div class="ticket" data-quiz="3"></div>
+    </div>
+    <div class="part">
+      <div class="part-title"><span class="letter">E</span><h3>Talk it over</h3></div>
+      <div class="talk" data-talk="3"></div>
+    </div>
+    <div class="part">
+      <div class="part-title"><span class="letter">F</span><h3>Practice questions</h3></div>
+      <div data-practice="3"></div>
+    </div>
+  </section>
+
+  <section class="sec" id="s4" aria-labelledby="s4-h">
+    <div class="sec-head">
+      <span class="eyebrow">Module Section 4 of 13 · 2.2.0</span>
+      <h2 id="s4-h">Main Bonding Jumper</h2>
+      <p class="obj">By the end of this section your student can explain grounding and bonding basics: the ground ring, the main bonding jumper, and when metal parts must be grounded.</p>
+    </div>
+    <div class="part">
+      <div class="part-title"><span class="letter">A</span><h3>Read it together</h3><span class="time">about 9 min</span></div>
+      <div class="prose">
+<p class="big">Grounding and bonding give fault current a safe path. This section covers a few of the specifics.</p>
+<h4>Bonding</h4>
+<p>A <b>bonding jumper</b> is a bare or green insulated conductor used to make sure metal parts that must be connected electrically are connected. A <b>bonding bushing</b> is a special conduit bushing with a terminal for a bonding jumper. It can bite into the enclosure wall to bond the conduit when no concentric knockouts are left.</p>
+<h4>Main bonding jumper</h4>
+<p>When a <b>screw</b> is used as the main bonding jumper, it must be colored <b>green</b>.</p>
+<h4>Other grounding facts</h4>
+<ul>
+<li>A <b>ground ring</b> used as a grounding electrode must be at least <b>20 feet</b> long.</li>
+<li>Exposed noncurrent-carrying metal parts of fixed equipment must be grounded if the equipment operates with any terminal over <b>150 volts to ground</b>.</li>
+<li>Information on equipment grounding for computers is in NEC Section <b>250.114</b>.</li>
+</ul>
+<div class="case"><b>Key idea</b>Green means grounding and bonding. Know where the book says to look.</div>
+      </div>
+    </div>
+    <div class="part">
+      <div class="part-title"><span class="letter">B</span><h3>Study review points</h3></div>
+      <ul class="points" data-points="4"></ul>
+    </div>
+    <div class="part">
+      <div class="part-title"><span class="letter">C</span><h3>Trade-term cards</h3></div>
+      <div class="deck" data-cards="4"></div>
+    </div>
+    <div class="part">
+      <div class="part-title"><span class="letter">D</span><h3>Ticket out the door</h3></div>
+      <div class="ticket" data-quiz="4"></div>
+    </div>
+    <div class="part">
+      <div class="part-title"><span class="letter">E</span><h3>Talk it over</h3></div>
+      <div class="talk" data-talk="4"></div>
+    </div>
+    <div class="part">
+      <div class="part-title"><span class="letter">F</span><h3>Practice questions</h3></div>
+      <div data-practice="4"></div>
+    </div>
+  </section>
+
+  <section class="sec" id="s5" aria-labelledby="s5-h">
+    <div class="sec-head">
+      <span class="eyebrow">Module Section 5 of 13 · 3.2.0</span>
+      <h2 id="s5-h">Panelboard Locations</h2>
+      <p class="obj">By the end of this section your student can name the parts of a residential service, and say what the module tells you about heights, clearances and where service conductors count as inside the building.</p>
+    </div>
+    <div class="part">
+      <div class="part-title"><span class="letter">A</span><h3>Read it together</h3><span class="time">about 14 min</span></div>
+      <div class="prose">
+<p class="big">Power comes from the utility to the house through a chain of parts. Knowing the names is half the battle.</p>
+<h4>The parts of a service</h4>
+<div class="scroll"><table>
+<thead><tr><th>Term</th><th>What it is</th></tr></thead>
+<tbody>
+<tr><td>Service drop</td><td>The overhead conductors from the last power company pole to where they connect at the building.</td></tr>
+<tr><td>Service lateral</td><td>The underground conductors from the power company's facilities to the building.</td></tr>
+<tr><td>Service entrance</td><td>The point where power is supplied to the building, including the main switch or panelboard, meters, protective devices and conductors.</td></tr>
+<tr><td>Service-entrance conductors</td><td>The conductors from the drop or lateral to the main disconnect in the building.</td></tr>
+<tr><td>Service-entrance equipment</td><td>Equipment that protects the feeder and service conductors, disconnects them, and measures the energy used.</td></tr>
+<tr><td>Load center</td><td>A panelboard normally at the service entrance of a home. It sometimes contains the main disconnect.</td></tr>
+</tbody></table></div>
+<p><b>Roughing in</b> is the first stage of an installation: raceway, cable, boxes and other equipment go in before any finish work.</p>
+<h4>Numbers from the module</h4>
+<ul>
+<li>The minimum service disconnect rating for a single home is <b>100 A</b>.</li>
+<li>Service conductors over residential property and driveways must be at least <b>12 feet</b> above the ground.</li>
+<li>Service drop conductors must be at least <b>10 feet</b> above the ground or other accessible surface.</li>
+<li>A service conductor without an overall jacket must be at least <b>3 feet</b> from a porch or balcony.</li>
+<li>Raceway fittings used with service masts must be identified for that use (NEC Section 230.28).</li>
+</ul>
+<h4>Inside or outside?</h4>
+<p>Under NEC Section 230.6, conductors installed under at least <b>2 inches</b> of concrete are considered outside the building. Under only 1 inch of slab, they are considered <b>inside</b>, and a disconnect is required at the meter base.</p>
+<div class="case"><b>Why it matters</b>Heights and clearances protect people, so these numbers are worth knowing.</div>
+      </div>
+    </div>
+    <div class="part">
+      <div class="part-title"><span class="letter">B</span><h3>Study review points</h3></div>
+      <ul class="points" data-points="5"></ul>
+    </div>
+    <div class="part">
+      <div class="part-title"><span class="letter">C</span><h3>Trade-term cards</h3></div>
+      <div class="deck" data-cards="5"></div>
+    </div>
+    <div class="part">
+      <div class="part-title"><span class="letter">D</span><h3>Ticket out the door</h3></div>
+      <div class="ticket" data-quiz="5"></div>
+    </div>
+    <div class="part">
+      <div class="part-title"><span class="letter">E</span><h3>Talk it over</h3></div>
+      <div class="talk" data-talk="5"></div>
+    </div>
+    <div class="part">
+      <div class="part-title"><span class="letter">F</span><h3>Practice questions</h3></div>
+      <div data-practice="5"></div>
+    </div>
+  </section>
+
+  <section class="sec" id="s6" aria-labelledby="s6-h">
+    <div class="sec-head">
+      <span class="eyebrow">Module Section 6 of 13 · 4.1.4</span>
+      <h2 id="s6-h">Service-Entrance Cable</h2>
+      <p class="obj">By the end of this section your student can tell NM, MC, SE and SER cable apart, and say where each can and cannot be used.</p>
+    </div>
+    <div class="part">
+      <div class="part-title"><span class="letter">A</span><h3>Read it together</h3><span class="time">about 12 min</span></div>
+      <div class="prose">
+<p class="big">Houses are wired with several kinds of cable. Each has its own rules.</p>
+<h4>Nonmetallic-sheathed cable (Type NM and NMC)</h4>
+<p>A factory assembly of two or more insulated conductors in an overall nonmetallic jacket. Type NMC has a corrosion-resistant jacket. People often call it <b>Romex®</b>, which is really a trade name for Type NM. In three-wire NM cable the conductors are <b>black, white and red</b>, with a bare or green grounding conductor. Type NM is <b>prohibited in shallow chases of masonry, concrete or adobe</b>.</p>
+<h4>Metal-clad cable (Type MC)</h4>
+<p>A factory assembly of insulated conductors in an armor of interlocking metal tape or a metallic sheath. Type MC is <b>prohibited where subject to physical damage</b>.</p>
+<h4>Service-entrance cable (Types SE and SER)</h4>
+<p>For interior wiring, Type SE cable is available with an <b>insulated grounded conductor</b>. Type SER cable may be used <b>as a subfeed under certain conditions</b>.</p>
+<div class="case"><b>Key idea</b>Check the type, then check the rules for where it can go.</div>
+      </div>
+    </div>
+    <div class="part">
+      <div class="part-title"><span class="letter">B</span><h3>Study review points</h3></div>
+      <ul class="points" data-points="6"></ul>
+    </div>
+    <div class="part">
+      <div class="part-title"><span class="letter">C</span><h3>Trade-term cards</h3></div>
+      <div class="deck" data-cards="6"></div>
+    </div>
+    <div class="part">
+      <div class="part-title"><span class="letter">D</span><h3>Ticket out the door</h3></div>
+      <div class="ticket" data-quiz="6"></div>
+    </div>
+    <div class="part">
+      <div class="part-title"><span class="letter">E</span><h3>Talk it over</h3></div>
+      <div class="talk" data-talk="6"></div>
+    </div>
+    <div class="part">
+      <div class="part-title"><span class="letter">F</span><h3>Practice questions</h3></div>
+      <div data-practice="6"></div>
+    </div>
+  </section>
+
+  <section class="sec" id="s7" aria-labelledby="s7-h">
+    <div class="sec-head">
+      <span class="eyebrow">Module Section 7 of 13 · 4.2.0</span>
+      <h2 id="s7-h">Raceways</h2>
+      <p class="obj">By the end of this section your student can say what raceways are for in a house and where conductors are most likely to be run in conduit.</p>
+    </div>
+    <div class="part">
+      <div class="part-title"><span class="letter">A</span><h3>Read it together</h3><span class="time">about 5 min</span></div>
+      <div class="prose">
+<p class="big">Conductors can be protected by running them inside a raceway such as conduit.</p>
+<h4>Where raceways show up in a home</h4>
+<p>Most finished rooms, like bedrooms, are wired with cable inside the walls. Conductors are most likely to be run in <b>conduit</b> in places like <b>unfinished basements</b>, where wiring is exposed and could be damaged.</p>
+<p>During roughing in, the raceway, boxes and other equipment go in first, before any finishing work.</p>
+<div class="case"><b>Key idea</b>Exposed wiring needs more protection, and conduit provides it.</div>
+      </div>
+    </div>
+    <div class="part">
+      <div class="part-title"><span class="letter">B</span><h3>Study review points</h3></div>
+      <ul class="points" data-points="7"></ul>
+    </div>
+    <div class="part">
+      <div class="part-title"><span class="letter">C</span><h3>Trade-term cards</h3></div>
+      <div class="deck" data-cards="7"></div>
+    </div>
+    <div class="part">
+      <div class="part-title"><span class="letter">D</span><h3>Ticket out the door</h3></div>
+      <div class="ticket" data-quiz="7"></div>
+    </div>
+    <div class="part">
+      <div class="part-title"><span class="letter">E</span><h3>Talk it over</h3></div>
+      <div class="talk" data-talk="7"></div>
+    </div>
+    <div class="part">
+      <div class="part-title"><span class="letter">F</span><h3>Practice questions</h3></div>
+      <div data-practice="7"></div>
+    </div>
+  </section>
+
+  <section class="sec" id="s8" aria-labelledby="s8-h">
+    <div class="sec-head">
+      <span class="eyebrow">Module Section 8 of 13 · 5.1.1</span>
+      <h2 id="s8-h">Branch Circuits and Feeders</h2>
+      <p class="obj">By the end of this section your student can tell a branch circuit from a feeder and use the 80 percent rule.</p>
+    </div>
+    <div class="part">
+      <div class="part-title"><span class="letter">A</span><h3>Read it together</h3><span class="time">about 8 min</span></div>
+      <div class="prose">
+<p class="big">Power flows from the service to feeders, and from feeders to branch circuits. The names tell you where you are.</p>
+<h4>Definitions</h4>
+<p>A <b>feeder</b> is any circuit conductor between the service equipment (or other power source) and the final branch circuit overcurrent device. A <b>branch circuit</b> is the part of the wiring system beyond that final overcurrent device.</p>
+<h4>The 80 percent rule</h4>
+<p>A branch circuit should be loaded to no more than <b>80%</b> of its capacity.</p>
+<p><b>Example.</b> A lighting circuit with a capacity of 1,800 VA: 0.8 × 1,800 VA = <b>1,440 VA</b> maximum load.</p>
+<div class="case"><b>Key idea</b>Feeders go to the panel. Branch circuits go beyond it. Keep branch circuits at 80 percent or less.</div>
+      </div>
+    </div>
+    <div class="part">
+      <div class="part-title"><span class="letter">B</span><h3>Study review points</h3></div>
+      <ul class="points" data-points="8"></ul>
+    </div>
+    <div class="part">
+      <div class="part-title"><span class="letter">C</span><h3>Trade-term cards</h3></div>
+      <div class="deck" data-cards="8"></div>
+    </div>
+    <div class="part">
+      <div class="part-title"><span class="letter">D</span><h3>Ticket out the door</h3></div>
+      <div class="ticket" data-quiz="8"></div>
+    </div>
+    <div class="part">
+      <div class="part-title"><span class="letter">E</span><h3>Talk it over</h3></div>
+      <div class="talk" data-talk="8"></div>
+    </div>
+    <div class="part">
+      <div class="part-title"><span class="letter">F</span><h3>Practice questions</h3></div>
+      <div data-practice="8"></div>
+    </div>
+  </section>
+
+  <section class="sec" id="s9" aria-labelledby="s9-h">
+    <div class="sec-head">
+      <span class="eyebrow">Module Section 9 of 13 · 5.1.5</span>
+      <h2 id="s9-h">240-Volt Circuits</h2>
+      <p class="obj">By the end of this section your student can explain how a water heater circuit is sized and what 240-volt circuits are used for.</p>
+    </div>
+    <div class="part">
+      <div class="part-title"><span class="letter">A</span><h3>Read it together</h3><span class="time">about 7 min</span></div>
+      <div class="prose">
+<p class="big">Large loads like water heaters often run on 240 volts. The circuit has to be sized with some room to spare.</p>
+<h4>Water heaters</h4>
+<p>The branch circuit for a storage-type water heater of 120 gallons or less must be rated at least <b>125%</b> of the nameplate rating. The conductors are sized the same way.</p>
+<p><b>Example.</b> A water heater nameplate says 20 A. 20 A × 1.25 = <b>25 A</b>.</p>
+<div class="case"><b>Key idea</b>Take the nameplate amps and multiply by 1.25.</div>
+      </div>
+    </div>
+    <div class="part">
+      <div class="part-title"><span class="letter">B</span><h3>Study review points</h3></div>
+      <ul class="points" data-points="9"></ul>
+    </div>
+    <div class="part">
+      <div class="part-title"><span class="letter">C</span><h3>Trade-term cards</h3></div>
+      <div class="deck" data-cards="9"></div>
+    </div>
+    <div class="part">
+      <div class="part-title"><span class="letter">D</span><h3>Ticket out the door</h3></div>
+      <div class="ticket" data-quiz="9"></div>
+    </div>
+    <div class="part">
+      <div class="part-title"><span class="letter">E</span><h3>Talk it over</h3></div>
+      <div class="talk" data-talk="9"></div>
+    </div>
+    <div class="part">
+      <div class="part-title"><span class="letter">F</span><h3>Practice questions</h3></div>
+      <div data-practice="9"></div>
+    </div>
+  </section>
+
+  <section class="sec" id="s10" aria-labelledby="s10-h">
+    <div class="sec-head">
+      <span class="eyebrow">Module Section 10 of 13 · 5.1.6</span>
+      <h2 id="s10-h">Electric Heating Circuits</h2>
+      <p class="obj">By the end of this section your student can say why electric heating circuits need careful planning, and knows to study this one in the textbook.</p>
+    </div>
+    <div class="part">
+      <div class="part-title"><span class="letter">A</span><h3>Read it together</h3><span class="time">about 4 min</span></div>
+      <div class="prose">
+<p class="big">Electric heat is a big load that can run for hours.</p>
+<p>None of the review questions in this module point to this subsection, so this guide keeps it short. Electric heating equipment is usually a large load, so these circuits are planned carefully and are often 240 volts. Use the textbook section for the specifics, and use the 80 and 125 percent rules from the last two sections as your starting habits.</p>
+<div class="case"><b>Key idea</b>Big, long-running loads get extra care when you size the circuit.</div>
+      </div>
+    </div>
+    <div class="part">
+      <div class="part-title"><span class="letter">B</span><h3>Study review points</h3></div>
+      <ul class="points" data-points="10"></ul>
+    </div>
+    <div class="part">
+      <div class="part-title"><span class="letter">C</span><h3>Trade-term cards</h3></div>
+      <div class="deck" data-cards="10"></div>
+    </div>
+    <div class="part">
+      <div class="part-title"><span class="letter">D</span><h3>Ticket out the door</h3></div>
+      <div class="ticket" data-quiz="10"></div>
+    </div>
+    <div class="part">
+      <div class="part-title"><span class="letter">E</span><h3>Talk it over</h3></div>
+      <div class="talk" data-talk="10"></div>
+    </div>
+    <div class="part">
+      <div class="part-title"><span class="letter">F</span><h3>Practice questions</h3></div>
+      <div data-practice="10"></div>
+    </div>
+  </section>
+
+  <section class="sec" id="s11" aria-labelledby="s11-h">
+    <div class="sec-head">
+      <span class="eyebrow">Module Section 11 of 13 · 5.3.2</span>
+      <h2 id="s11-h">Ceiling Fan Boxes</h2>
+      <p class="obj">By the end of this section your student can explain how boxes are filled and counted, and why a ceiling fan needs the right box.</p>
+    </div>
+    <div class="part">
+      <div class="part-title"><span class="letter">A</span><h3>Read it together</h3><span class="time">about 9 min</span></div>
+      <div class="prose">
+<p class="big">A box can only hold so many conductors. The code counts each item inside.</p>
+<h4>Box fill</h4>
+<p>Each conductor counts, and so do certain other items. A common set of counts: each insulated conductor counts as one, all the grounding wires together count as one, cable clamps together count as one, and each switch counts as two. A looped conductor over <b>12 inches</b> counts as <b>two</b>.</p>
+<p><b>Example.</b> A metallic outlet box with two No. 12 conductors (2), a ground wire (1), a cable clamp (1), a switch (2) and a looped conductor over 12 inches (2) counts as <b>8 conductors</b>.</p>
+<h4>Ceiling fans</h4>
+<p>A ceiling fan hangs from the box, so the box must be one made to carry that weight and movement. A plain lighting box is not enough.</p>
+<div class="case"><b>Key idea</b>Count everything in the box. For a ceiling fan, use a box made for fans.</div>
+      </div>
+    </div>
+    <div class="part">
+      <div class="part-title"><span class="letter">B</span><h3>Study review points</h3></div>
+      <ul class="points" data-points="11"></ul>
+    </div>
+    <div class="part">
+      <div class="part-title"><span class="letter">C</span><h3>Trade-term cards</h3></div>
+      <div class="deck" data-cards="11"></div>
+    </div>
+    <div class="part">
+      <div class="part-title"><span class="letter">D</span><h3>Ticket out the door</h3></div>
+      <div class="ticket" data-quiz="11"></div>
+    </div>
+    <div class="part">
+      <div class="part-title"><span class="letter">E</span><h3>Talk it over</h3></div>
+      <div class="talk" data-talk="11"></div>
+    </div>
+    <div class="part">
+      <div class="part-title"><span class="letter">F</span><h3>Practice questions</h3></div>
+      <div data-practice="11"></div>
+    </div>
+  </section>
+
+  <section class="sec" id="s12" aria-labelledby="s12-h">
+    <div class="sec-head">
+      <span class="eyebrow">Module Section 12 of 13 · 6.1.0</span>
+      <h2 id="s12-h">Receptacles</h2>
+      <p class="obj">By the end of this section your student can read common receptacle symbols, say which screw is which, and know the rules for GFCI protection near pools and hot tubs.</p>
+    </div>
+    <div class="part">
+      <div class="part-title"><span class="letter">A</span><h3>Read it together</h3><span class="time">about 14 min</span></div>
+      <div class="prose">
+<p class="big">Receptacles are the outlets people use every day, and they come in many types and symbols.</p>
+<h4>Wiring a receptacle</h4>
+<p>The <b>brass screw</b> connects to the <b>ungrounded</b> (hot) conductor. The silver screw is for the neutral, and the green screw is for the grounding conductor.</p>
+<h4>Receptacle symbols</h4>
+<p>On drawings, receptacles are shown with symbols: single, duplex, split-wired duplex, range receptacle (50 A), dryer receptacle (30 A) and special-purpose outlet. The practice questions below point you to the figures in the textbook.</p>
+<h4>GFCI and wet areas</h4>
+<ul>
+<li>A single-pole GFCI breaker is rated at <b>120 VAC</b>.</li>
+<li>Around a <b>hot tub</b>, GFCI protection is required for all receptacles within <b>10 feet</b> of the inside wall of the tub.</li>
+<li>In a residential <b>pool</b> area, receptacles must be at least <b>6 feet</b> from the inside walls of the pool.</li>
+</ul>
+<div class="case"><b>Key idea</b>Brass is hot. Water means GFCI. Check the symbol, check the figure.</div>
+      </div>
+    </div>
+    <div class="part">
+      <div class="part-title"><span class="letter">B</span><h3>Study review points</h3></div>
+      <ul class="points" data-points="12"></ul>
+    </div>
+    <div class="part">
+      <div class="part-title"><span class="letter">C</span><h3>Trade-term cards</h3></div>
+      <div class="deck" data-cards="12"></div>
+    </div>
+    <div class="part">
+      <div class="part-title"><span class="letter">D</span><h3>Ticket out the door</h3></div>
+      <div class="ticket" data-quiz="12"></div>
+    </div>
+    <div class="part">
+      <div class="part-title"><span class="letter">E</span><h3>Talk it over</h3></div>
+      <div class="talk" data-talk="12"></div>
+    </div>
+    <div class="part">
+      <div class="part-title"><span class="letter">F</span><h3>Practice questions</h3></div>
+      <div data-practice="12"></div>
+    </div>
+  </section>
+
+  <section class="sec" id="s13" aria-labelledby="s13-h">
+    <div class="sec-head">
+      <span class="eyebrow">Module Section 13 of 13 · 6.2.6</span>
+      <h2 id="s13-h">Switch Locations</h2>
+      <p class="obj">By the end of this section your student can say what a switch and a switch leg are, how four-way switching works, and when stairs need switches at each level.</p>
+    </div>
+    <div class="part">
+      <div class="part-title"><span class="letter">A</span><h3>Read it together</h3><span class="time">about 9 min</span></div>
+      <div class="prose">
+<p class="big">Switches control lights, and where they go matters.</p>
+<h4>Switch and switch leg</h4>
+<p>A <b>switch</b> is a mechanical device for turning an electrical circuit on and off. A <b>switch leg</b> is a circuit routed to a switch box to control electric lights.</p>
+<h4>Three-way and four-way</h4>
+<p>To control a light from more than two places, the correct operation of a <b>four-way switch</b> requires at least <b>two three-way switches</b>, one at each end.</p>
+<h4>Stairways</h4>
+<p>A wall switch is required to control stairway lighting at each level when the levels are separated by <b>six or more risers</b>.</p>
+<div class="case"><b>Key idea</b>Two three-ways plus one or more four-ways. Switches at each level of stairs with six or more risers.</div>
+      </div>
+    </div>
+    <div class="part">
+      <div class="part-title"><span class="letter">B</span><h3>Study review points</h3></div>
+      <ul class="points" data-points="13"></ul>
+    </div>
+    <div class="part">
+      <div class="part-title"><span class="letter">C</span><h3>Trade-term cards</h3></div>
+      <div class="deck" data-cards="13"></div>
+    </div>
+    <div class="part">
+      <div class="part-title"><span class="letter">D</span><h3>Ticket out the door</h3></div>
+      <div class="ticket" data-quiz="13"></div>
+    </div>
+    <div class="part">
+      <div class="part-title"><span class="letter">E</span><h3>Talk it over</h3></div>
+      <div class="talk" data-talk="13"></div>
+    </div>
+    <div class="part">
+      <div class="part-title"><span class="letter">F</span><h3>Practice questions</h3></div>
+      <div data-practice="13"></div>
+    </div>
+  </section>
+
+  <section class="final" id="review" aria-labelledby="fin-h">
+    <span class="eyebrow">After all 13 sections</span>
+    <h2 id="fin-h">Can your student explain it?</h2>
+    <p class="lead">The goal is not perfect wording. The goal is accurate understanding and good judgment. Tick each one when your student can explain it without looking at the page.</p>
+    <ul class="points" id="final-points"></ul>
+    <p class="note">Trade terms are placed with the section where each is taught, so a few official terms sit in a different section than they are listed in the textbook. Cards marked "Key term" are important words from the module that are not on its official trade-term list. The practice questions come from the handbook's Section Review (17 questions) and Module Review (25 questions), and the answers follow the publisher's answer keys. Questions that refer to a figure need the figure in your student's textbook. The section names follow the module's score-report topics, and the reading text is a plain-language companion to the module, so check it against the textbook. The textbook-style versions are written in the book's style and vocabulary, not copied word for word, so check the handbook itself for the exact wording. This guide is a plain-language companion, not a copy of the textbook. For real work, use the current standards, your employer's procedures and your instructor's directions. Draft for instructor review.</p>
+  </section>
+
+</div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><strong>Mr. Ellis CTE</strong> · East Valley Institute of Technology (EVIT), Mesa, Arizona · Your Future, Your Way</p>
+    <p>Based on NCCER Electrical Level 1 (10th edition), Module 26111-20, Residential Wiring.</p>
+    <p>Aim for perfection, take what you get.</p>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var POINTS = {"1": ["The <b>general lighting load<\/b> for a home is <b>3 VA per square foot<\/b> of living space.", "Example: 900 ft² × 3 VA = <b>2,700 VA<\/b>.", "<b>Amps = VA ÷ volts.<\/b> 2,700 VA ÷ 120 V = <b>22.5 A<\/b>. 3,600 VA ÷ 120 V = <b>30 A<\/b>."], "2": ["<b>Appliances<\/b> are equipment made for a particular purpose, such as making heat, light or motion.", "A kitchen area needs at least <b>two<\/b> small appliance circuits, each counted at <b>1,500 VA<\/b>.", "Two kitchen areas need <b>four<\/b> small appliance circuits.", "The <b>laundry load<\/b> counts as <b>1,500 VA<\/b>."], "3": ["A <b>demand factor<\/b> is a percentage that allows for not everything being on at once.", "The first <b>3,000 VA<\/b> of the general lighting load is counted at <b>100%<\/b>.", "A <b>75%<\/b> demand factor may be used for <b>four or more fixed appliance loads<\/b> (NEC 220.53).", "A household with <b>two dryers<\/b> has a demand factor of <b>100%<\/b> (Table 220.54)."], "4": ["A <b>bonding jumper<\/b> is a bare or green insulated conductor that keeps required metal parts electrically connected.", "A <b>bonding bushing<\/b> has a terminal for a bonding jumper and can bite into the enclosure wall.", "A screw used as a <b>main bonding jumper<\/b> must be <b>green<\/b>.", "A <b>ground ring<\/b> used as a grounding electrode must be at least <b>20 feet<\/b> long.", "Fixed equipment metal parts must be grounded if any terminal is over <b>150 V to ground<\/b>.", "Equipment grounding for computers is in NEC Section <b>250.114<\/b>."], "5": ["The <b>service drop<\/b> is overhead. The <b>service lateral<\/b> is underground.", "The <b>service entrance<\/b> is where power is supplied to the building. <b>Service-entrance equipment<\/b> protects, disconnects and measures.", "A <b>load center<\/b> is a panelboard normally at the service entrance of a home.", "<b>Roughing in<\/b> is the first stage of installation, before finish work.", "Minimum service disconnect for a single home: <b>100 A<\/b>.", "Service conductors over residential property and driveways: at least <b>12 ft<\/b> up. Service drop: at least <b>10 ft<\/b>. Jacketless conductors: <b>3 ft<\/b> from a porch or balcony.", "Under <b>2 inches<\/b> of concrete is <b>outside<\/b>. Under 1 inch of slab is <b>inside<\/b>, with a disconnect at the meter base (NEC 230.6)."], "6": ["<b>Type NM<\/b> (Romex® is a trade name) has <b>black, white and red<\/b> conductors plus a bare or green ground in three-wire cable.", "Type NM is prohibited in <b>shallow chases of masonry, concrete or adobe<\/b>.", "<b>Type MC<\/b> is prohibited where subject to <b>physical damage<\/b>.", "<b>Type SE<\/b> for interior wiring is available with an <b>insulated grounded conductor<\/b>.", "<b>Type SER<\/b> may be used as a <b>subfeed<\/b> under certain conditions."], "7": ["Conductors are most likely to be run in <b>conduit<\/b> in places like <b>unfinished basements<\/b>.", "Raceways, boxes and other equipment go in during <b>roughing in<\/b>."], "8": ["A <b>feeder<\/b> is any circuit conductor between the service equipment and the final branch circuit overcurrent device.", "A <b>branch circuit<\/b> is the part of the wiring beyond the final overcurrent device.", "Load a branch circuit to no more than <b>80%<\/b> of its capacity.", "A 1,800 VA lighting circuit: 0.8 × 1,800 = <b>1,440 VA<\/b>."], "9": ["A water heater branch circuit (120 gallons or less) must be rated at least <b>125%<\/b> of the nameplate rating.", "A 20 A nameplate: 20 × 1.25 = <b>25 A<\/b>."], "10": ["Electric heating is usually a large load that can run for hours.", "These circuits are planned with extra care. Use the textbook for the specifics."], "11": ["Each conductor counts toward <b>box fill<\/b>, and so do some other items.", "A looped conductor over <b>12 inches<\/b> counts as <b>two<\/b>.", "The example box (two No. 12 conductors, a ground, a clamp, a switch, and a looped conductor) counts as <b>8 conductors<\/b>.", "A ceiling fan needs a box made to carry the fan."], "12": ["The <b>brass screw<\/b> connects to the <b>ungrounded<\/b> (hot) conductor.", "Receptacle symbols show single, duplex, split-wired, range (50 A), dryer (30 A) and special-purpose outlets.", "A single-pole GFCI breaker is rated <b>120 VAC<\/b>.", "Hot tub: GFCI for receptacles within <b>10 ft<\/b> of the inside wall.", "Pool: receptacles at least <b>6 ft<\/b> from the inside walls."], "13": ["A <b>switch<\/b> turns a circuit on and off. A <b>switch leg<\/b> is a circuit routed to a switch box to control lights.", "A <b>four-way<\/b> switch needs at least <b>two three-way<\/b> switches.", "Stairways with <b>six or more risers<\/b> need a wall switch at each level."]};
+  var CARDS = {"2": [{"k": "o", "t": "Appliances", "plain": "Equipment made for a particular purpose, like making heat, light or motion with electricity.", "book": "Equipment designed for a particular purpose. Usually self-contained, available for uses other than industrial, and made in standard sizes or types.", "ask": "Name two appliances that need their own circuit."}], "4": [{"k": "o", "t": "Bonding bushing", "plain": "A special conduit bushing with a terminal for a bonding jumper.", "book": "A conduit bushing with a conductor terminal for a bonding jumper. It can bite into the enclosure wall to bond the conduit when no concentric knockouts are left.", "ask": "Why would a bushing need a terminal?"}, {"k": "o", "t": "Bonding jumper", "plain": "A bare or green wire that keeps metal parts connected to each other electrically.", "book": "A bare or green insulated conductor that ensures the required electrical conductivity between metal parts.", "ask": "What color is a bonding jumper?"}], "5": [{"k": "o", "t": "Load center", "plain": "A panelboard usually at the service entrance of a home. It sometimes holds the main disconnect.", "book": "A panelboard normally located at the service entrance of a residential installation, sometimes containing the main disconnect.", "ask": "Where in a house would you find the load center?"}, {"k": "o", "t": "Roughing in", "plain": "The first stage of an installation: raceway, cable, boxes and equipment go in before any finish work.", "book": "The first stage of an electrical installation, when raceway, cable, wires, boxes and other equipment are installed, before finishing work.", "ask": "Why does rough-in come before finish work?"}, {"k": "o", "t": "Service drop", "plain": "The overhead wires from the last utility pole to the building.", "book": "The overhead conductors between the last power company pole and the connection to the service facilities at the building.", "ask": "How is it different from a service lateral?"}, {"k": "o", "t": "Service entrance", "plain": "The point where power is supplied to the building, including the main switch or panelboard, meters and protective devices.", "book": "The point where power is supplied to a building, including the main switch or panelboard, metering, overcurrent protection and conductors or raceways to the power company.", "ask": "Name two things included at the service entrance."}, {"k": "o", "t": "Service-entrance conductors", "plain": "The conductors from the service drop or lateral to the main disconnect inside the building.", "book": "The conductors between the termination of the overhead service drop or underground service lateral and the main disconnecting device in the building.", "ask": "Where do they end?"}, {"k": "o", "t": "Service-entrance equipment", "plain": "Equipment that protects, disconnects and measures the power coming in.", "book": "Equipment that provides overcurrent protection, a means of disconnecting from energized service conductors, and a means of measuring the energy used.", "ask": "What three jobs does it do?"}, {"k": "o", "t": "Service lateral", "plain": "The underground wires that bring power from the utility to the building.", "book": "The underground conductors between the power company's distribution facilities and the first connection at the building.", "ask": "When would a building have a lateral instead of a drop?"}], "6": [{"k": "o", "t": "Metal-clad (Type MC) cable", "plain": "Cable with insulated conductors inside a metal armor.", "book": "A factory assembly of one or more insulated conductors, with or without optical fiber, enclosed in interlocking metal tape or a smooth or corrugated metallic sheath.", "ask": "Where is Type MC prohibited?"}, {"k": "o", "t": "Nonmetallic-sheathed (Type NM and NMC) cable", "plain": "Cable with two or more insulated wires inside a plastic jacket. NMC has a corrosion-resistant jacket.", "book": "A factory assembly of two or more insulated conductors in an overall nonmetallic jacket. Type NMC has a corrosion-resistant nonmetallic jacket.", "ask": "What colors are in three-wire NM cable?"}, {"k": "o", "t": "Romex®", "plain": "A trade name for Type NM cable that people use for any nonmetallic-sheathed cable.", "book": "General Cable's trade name for Type NM cable, often used generically for nonmetallic-sheathed cable.", "ask": "Is every nonmetallic-sheathed cable a Romex?"}], "8": [{"k": "o", "t": "Branch circuit", "plain": "The part of the wiring beyond the last breaker or fuse that protects the circuit.", "book": "The portion of a wiring system extending beyond the final overcurrent device protecting a circuit.", "ask": "Where does a branch circuit start?"}, {"k": "o", "t": "Feeder", "plain": "Any wire between the service equipment (or other source) and the last breaker or fuse before the branch circuit.", "book": "Any circuit conductor between the service equipment, the source of a separately derived system, or other power supply and the final branch circuit overcurrent device.", "ask": "How is a feeder different from a branch circuit?"}], "13": [{"k": "o", "t": "Switch", "plain": "A mechanical device that turns a circuit on and off.", "book": "A mechanical device used for turning an electrical circuit On and Off.", "ask": "What does a switch do to the circuit?"}, {"k": "o", "t": "Switch leg", "plain": "The circuit routed to a switch box to control lights.", "book": "A circuit routed to a switch box for controlling electric lights.", "ask": "Where does a switch leg go?"}]};
+  var QUIZ = {"1": [{"q": "What load does the code use per square foot of living space?", "o": ["1 VA", "3 VA", "5 VA"], "a": 1, "why": "The general lighting load uses 3 VA per square foot."}, {"q": "A 900 ft² house has a general lighting load of:", "o": ["900 VA", "2,700 VA", "3,600 VA"], "a": 1, "why": "900 × 3 = 2,700 VA."}, {"q": "How do you turn VA into amps?", "o": ["Divide by volts", "Multiply by volts", "Add the volts"], "a": 0, "why": "Amps = VA ÷ volts."}], "2": [{"q": "How many small appliance circuits does one kitchen area need at minimum?", "o": ["1", "2", "3"], "a": 1, "why": "At least two circuits."}, {"q": "How is the laundry load counted?", "o": ["1,200 VA", "1,500 VA", "2,400 VA"], "a": 1, "why": "The laundry load is 1,500 VA."}, {"q": "Two kitchen areas need how many small appliance circuits?", "o": ["Two", "Three", "Four"], "a": 2, "why": "Two for each kitchen area makes four."}], "3": [{"q": "The first 3,000 VA of the general lighting load is counted at:", "o": ["50%", "85%", "100%"], "a": 2, "why": "The first 3,000 VA is at 100%."}, {"q": "A 75% demand factor may be used for four or more:", "o": ["Fixed appliance loads", "Electric stoves", "Dryers"], "a": 0, "why": "NEC 220.53 allows 75% for four or more fixed appliance loads."}, {"q": "What is a demand factor for?", "o": ["Allowing for not everything being on at once", "Raising the load", "Choosing wire color"], "a": 0, "why": "It accounts for loads not all running at once."}], "4": [{"q": "What color must a screw used as a main bonding jumper be?", "o": ["White", "Green", "Black"], "a": 1, "why": "It must be green."}, {"q": "A ground ring used as a grounding electrode must be at least:", "o": ["10 ft long", "15 ft long", "20 ft long"], "a": 2, "why": "At least 20 feet."}, {"q": "Fixed equipment must be grounded if any terminal is over:", "o": ["60 V to ground", "150 V to ground", "240 V to ground"], "a": 1, "why": "Over 150 volts to ground."}], "5": [{"q": "Which are the underground service conductors?", "o": ["Service drop", "Service lateral", "Feeder"], "a": 1, "why": "A service lateral is underground."}, {"q": "What is the minimum service disconnect for a single home?", "o": ["60 A", "100 A", "200 A"], "a": 1, "why": "100 A."}, {"q": "Conductors under at least how much concrete count as outside?", "o": ["1 inch", "2 inches", "5 inches"], "a": 1, "why": "Under at least 2 inches of concrete is outside."}, {"q": "Service drop conductors must be at least how high?", "o": ["6 ft", "10 ft", "15 ft"], "a": 1, "why": "At least 10 feet above the ground or other accessible surface."}], "6": [{"q": "Type NM is prohibited in:", "o": ["Shallow chases of masonry or concrete", "Wood framing", "Attics"], "a": 0, "why": "Prohibited in shallow chases of masonry, concrete or adobe."}, {"q": "Type MC is prohibited:", "o": ["Where subject to physical damage", "In dry masonry", "In attics"], "a": 0, "why": "Prohibited where subject to physical damage."}, {"q": "Which cable can be used as a subfeed under certain conditions?", "o": ["Type SER", "Type NM", "Type MC"], "a": 0, "why": "Type SER."}, {"q": "Three-wire NM cable has conductors colored:", "o": ["Black, white and red", "Black, blue and white", "All black"], "a": 0, "why": "Black, white and red, plus a bare or green ground."}], "7": [{"q": "Where are conductors most likely run in conduit in a house?", "o": ["Bedrooms", "Unfinished basements", "Kitchens"], "a": 1, "why": "Unfinished basements."}, {"q": "When do raceways and boxes go in?", "o": ["During roughing in", "After painting", "Last"], "a": 0, "why": "During the first stage, roughing in."}], "8": [{"q": "What is a feeder?", "o": ["A conductor between the service equipment and the final branch overcurrent device", "The wire after the last breaker", "A kind of switch"], "a": 0, "why": "A feeder is between the service equipment and the final branch circuit overcurrent device."}, {"q": "A branch circuit should be loaded to no more than:", "o": ["80%", "100%", "125%"], "a": 0, "why": "80% of capacity."}, {"q": "80% of an 1,800 VA circuit is:", "o": ["1,440 VA", "1,800 VA", "2,250 VA"], "a": 0, "why": "0.8 × 1,800 = 1,440 VA."}], "9": [{"q": "A water heater branch circuit must be rated at least:", "o": ["100% of nameplate", "125% of nameplate", "150% of nameplate"], "a": 1, "why": "125% of the nameplate rating."}, {"q": "20 A nameplate × 1.25 =", "o": ["22 A", "25 A", "30 A"], "a": 1, "why": "25 A."}], "10": [{"q": "Electric heating is usually:", "o": ["A large load", "A tiny load", "Not a circuit"], "a": 0, "why": "A large load that can run for hours."}, {"q": "Where do you find the specifics for this section?", "o": ["The textbook", "This guide only", "Nowhere"], "a": 0, "why": "Study the textbook section."}], "11": [{"q": "A looped conductor over 12 inches counts as:", "o": ["One", "Two", "Three"], "a": 1, "why": "It counts as two."}, {"q": "The example box counts as how many conductors?", "o": ["Four", "Five", "Eight"], "a": 2, "why": "Eight."}, {"q": "A ceiling fan needs:", "o": ["A box made to carry the fan", "Any box", "No box"], "a": 0, "why": "A box made for the fan."}], "12": [{"q": "The brass screw on a receptacle connects to the:", "o": ["Ungrounded conductor", "Grounding conductor", "Neutral"], "a": 0, "why": "The ungrounded (hot) conductor."}, {"q": "GFCI protection around a hot tub is required within:", "o": ["10 ft", "15 ft", "20 ft"], "a": 0, "why": "Within 10 feet of the inside wall."}, {"q": "Pool receptacles must be at least how far from the pool walls?", "o": ["3 ft", "6 ft", "10 ft"], "a": 1, "why": "At least 6 feet."}, {"q": "A single-pole GFCI breaker is rated:", "o": ["120 VAC", "240 VAC", "480 VAC"], "a": 0, "why": "120 VAC."}], "13": [{"q": "A four-way switch needs at least:", "o": ["Two three-way switches", "One three-way switch", "No other switches"], "a": 0, "why": "At least two three-way switches."}, {"q": "Stairs need a switch at each level with how many risers?", "o": ["Three or more", "Four or more", "Six or more"], "a": 2, "why": "Six or more risers."}, {"q": "A switch leg is:", "o": ["A circuit routed to a switch box", "A breaker", "A cable"], "a": 0, "why": "A circuit routed to a switch box to control lights."}]};
+  var PRACTICE = {"1": [{"src": "Section Review 1.0.0 · Q1 (1.1.1)", "a": 2, "pq": "A small house has 900 square feet. What is its general lighting load?", "po": ["900 VA", "1,800 VA", "2,700 VA", "3,600 VA"], "tq": "A small residence has a floor area of 900 square feet. What is its general lighting load?", "to": ["900VA", "1,800VA", "2,700VA", "3,600VA"], "why": "900 × 3 VA = 2,700 VA.", "br": [["small house", "small residence"]]}, {"src": "Section Review 1.0.0 · Q4 (1.4.0)", "a": 1, "pq": "A lighting load of 2,700 VA at 120 V draws how many amps?", "po": ["20 A", "22.5 A", "30 A", "36.5 A"], "tq": "A lighting load of 2,700VA at 120V has an amperage of _____.", "to": ["20A", "22.5A", "30A", "36.5A"], "why": "2,700 ÷ 120 = 22.5 A.", "br": [["draws", "has an amperage of"]]}, {"src": "Module Review · Q6 (1.4.0)", "a": 1, "pq": "A house lighting load is 3,600 VA at 120 V. How many amps?", "po": ["20 A", "30 A", "45 A", "60 A"], "tq": "The general lighting load in a residence is 3,600VA at 120V. What is the amperage?", "to": ["20A", "30A", "45A", "60A"], "why": "3,600 ÷ 120 = 30 A.", "br": [["How many amps", "What is the amperage"]]}], "2": [{"src": "Section Review 1.0.0 · Q3 (1.3.1)", "a": 3, "pq": "A dwelling has two kitchen areas. How many small appliance circuits does it need?", "po": ["One at 1,500 VA", "Two at 1,500 VA each", "Three at 1,500 VA each", "Four at 1,500 VA each"], "tq": "If a dwelling has two kitchen areas, then the total small appliance branch circuits required would be _____.", "to": ["one at 1,500VA each", "two at 1,500VA each", "three at 1,500VA each", "four at 1,500VA each"], "why": "Two for each area makes four.", "br": [["needs", "required"]]}, {"src": "Module Review · Q1 (1.1.2)", "a": 1, "pq": "What is the minimum number of small appliance circuits in a kitchen area?", "po": ["1", "2", "3", "4"], "tq": "The minimum number of small appliance circuits required by the NEC® in a kitchen area is _____.", "to": ["1", "2", "3", "4"], "why": "At least two.", "br": [["minimum number", "minimum number required"]]}, {"src": "Module Review · Q2 (1.1.3)", "a": 1, "pq": "How is the laundry load counted when sizing a home's service?", "po": ["1,200 VA", "1,500 VA", "1,800 VA", "2,400 VA"], "tq": "When sizing residential electrical services, the laundry load is calculated as _____.", "to": ["1,200VA", "1,500VA", "1,800VA", "2,400VA"], "why": "The laundry load is 1,500 VA.", "br": [["counted", "calculated"]]}], "3": [{"src": "Section Review 1.0.0 · Q2 (1.2.0)", "a": 0, "pq": "Per NEC Table 220.54, what demand factor applies to a household with two dryers?", "po": ["100%", "85%", "75%", "65%"], "tq": "Per NEC Table 220.54, a household with two dryers has a demand factor of _____.", "to": ["100%", "85%", "75%", "65%"], "why": "Two dryers have a demand factor of 100%.", "br": [["applies to", "has a demand factor of"]]}, {"src": "Module Review · Q3 (1.1.4)", "a": 3, "pq": "For the general lighting load, how is the first 3,000 VA rated?", "po": ["50%", "65%", "85%", "100%"], "tq": "When sizing the general lighting load for electric services, the first 3,000VA is rated at _____.", "to": ["50%", "65%", "85%", "100%"], "why": "The first 3,000 VA is at 100%.", "br": [["rated", "is rated at"]]}, {"src": "Module Review · Q4 (1.1.5)", "a": 1, "pq": "Under NEC 220.53, a 75% demand factor may be used for four or more of what?", "po": ["Electric stoves", "Fixed appliance loads", "Heating loads", "Air conditioning loads"], "tq": "According to NEC Section 220.53, a demand factor of 75% may be applied to four or more _____.", "to": ["electric stoves", "fixed appliance loads", "heating loads", "air conditioning loads"], "why": "Four or more fixed appliance loads.", "br": [["may be used for", "may be applied to"]]}], "4": [{"src": "Section Review 2.0.0 · Q1 (2.1.0)", "a": 3, "pq": "How long must a ground ring be at minimum when used as a grounding electrode?", "po": ["5 ft", "10 ft", "15 ft", "20 ft"], "tq": "When used as a grounding electrode, a ground ring must be at least _____.", "to": ["5' (1.5 m) long", "10' (3.0 m) long", "15' (4.5 m) long", "20' (6.0 m) long"], "why": "At least 20 feet.", "br": [["at minimum", "at least"]]}, {"src": "Section Review 2.0.0 · Q2 (2.2.0)", "a": 1, "pq": "What color must a screw used as a main bonding jumper be?", "po": ["White", "Green", "Blue", "Black"], "tq": "When a screw is used as a main bonding jumper, it must be colored _____.", "to": ["white", "green", "blue", "black"], "why": "Green.", "br": [["What color", "colored"]]}, {"src": "Section Review 2.0.0 · Q3 (2.3.0)", "a": 1, "pq": "Where is information on equipment grounding for computers?", "po": ["NEC 250.112", "NEC 250.114", "NEC 250.116", "NEC 250.118"], "tq": "Information on equipment grounding for computers is found in _____.", "to": ["NEC Section 250.112", "NEC Section 250.114", "NEC Section 250.116", "NEC Section 250.118"], "why": "NEC Section 250.114.", "br": [["Where is", "is found in"]]}, {"src": "Module Review · Q8 (2.3.0)", "a": 2, "pq": "Exposed metal parts of fixed equipment must be grounded if any terminal is over what voltage to ground?", "po": ["60 V", "120 V", "150 V", "240 V"], "tq": "Exposed noncurrent-carrying metal parts of fixed equipment must be grounded if the equipment operates with any terminal over _____.", "to": ["60V to ground", "120V to ground", "150V to ground", "240V to ground"], "why": "Over 150 volts to ground.", "br": [["metal parts", "noncurrent-carrying metal parts"]]}], "5": [{"src": "Section Review 3.0.0 · Q1 (3.1.1)", "a": 0, "pq": "Service conductors pass over a residential property or driveway. How high must they be at least?", "po": ["12 ft", "15 ft", "18 ft", "20 ft"], "tq": "Per NEC Section 230.24(B), if 120V/240V service conductors pass over residential property and driveways or commercial property that is not subject to truck traffic, the conductors must be at least _____.", "to": ["12' (3.7 m) above the ground", "15' (4.5 m) above the ground", "18' (5.5 m) above the ground", "20' (6.0 m) above the ground"], "why": "At least 12 feet.", "br": [["over a driveway", "over residential property and driveways"]]}, {"src": "Section Review 3.0.0 · Q2 (3.2.0)", "a": 1, "pq": "Conductors run under a 1-inch slab. Are they inside or outside, and is a disconnect needed at the meter base?", "po": ["Inside, no disconnect", "Inside, disconnect required", "Outside, no disconnect", "Outside, disconnect required"], "tq": "A residence has conductors installed under a 1\" (25 mm) slab. According to NEC Section 230.6, these conductors are considered _____.", "to": ["inside the house, and no disconnect is required at the meter base", "inside the house, and a disconnect is required at the meter base", "outside the house, and no disconnect is required at the meter base", "outside the house, and a disconnect is required at the meter base"], "why": "Under only 1 inch they count as inside, with a disconnect.", "br": [["inside or outside", "are considered"]]}, {"src": "Module Review · Q5 (1.1.7)", "a": 1, "pq": "What is the minimum service disconnect rating for a single home?", "po": ["60 A", "100 A", "200 A", "250 A"], "tq": "The minimum service disconnect rating for a single home is _____.", "to": ["60A", "100A", "200A", "250A"], "why": "100 A.", "br": [["service disconnect", "service disconnect rating"]]}, {"src": "Module Review · Q9 (3.1.0)", "a": 0, "pq": "Which NEC section requires raceway fittings used with service masts to be identified for that use?", "po": ["230.28", "230.40", "250.46", "250.84"], "tq": "Which section of the NEC® requires that raceway fittings be identified for use with service masts?", "to": ["NEC Section 230.28", "NEC Section 230.40", "NEC Section 250.46", "NEC Section 250.84"], "why": "NEC Section 230.28.", "br": [["identified for that use", "identified for use with service masts"]]}, {"src": "Module Review · Q10 (3.1.1)", "a": 2, "pq": "How high must service drop conductors be at minimum?", "po": ["6 ft", "8 ft", "10 ft", "12 ft"], "tq": "Service drop conductors must be located at a minimum height of _____.", "to": ["6' above the ground or other accessible surface", "8' above the ground or other accessible surface", "10' above the ground or other accessible surface", "12' above the ground or other accessible surface"], "why": "10 feet.", "br": [["how high", "minimum height"]]}, {"src": "Module Review · Q11 (3.1.2)", "a": 1, "pq": "How far must a service conductor without an overall jacket stay from a porch or balcony?", "po": ["2 ft", "3 ft", "8 ft", "10 ft"], "tq": "The clearance between a service conductor without an overall jacket and a porch or balcony must not be less than _____.", "to": ["2' (600 mm)", "3' (900 mm)", "8' (2.5 m)", "10' (3.0 m)"], "why": "At least 3 feet.", "br": [["stay from", "clearance between"]]}, {"src": "Module Review · Q12 (3.2.0)", "a": 1, "pq": "Under how much concrete are conductors considered outside the building?", "po": ["1 inch", "2 inches", "4 inches", "5 inches"], "tq": "NEC Section 230.6 considers conductors to be outside the building when installed under at least _____.", "to": ["1\" (25 mm) of concrete", "2\" (50 mm) of concrete", "4\" (100 mm) of concrete", "5\" (125 mm) of concrete"], "why": "At least 2 inches.", "br": [["outside", "outside the building"]]}], "6": [{"src": "Section Review 4.0.0 · Q1 (4.1.1)", "a": 0, "pq": "What are the colors of the conductors in three-wire NM cable?", "po": ["Black, white and red, with a bare or green ground", "Black, black and white, with a bare or green ground", "Black, blue and white, with a bare or green ground", "Black, black and black, with a bare or green ground"], "tq": "In three-wire NM cable, the color code of the conductors is _____.", "to": ["black, white, and red, with a bare or green grounding conductor", "black, black, and white, with a bare or green grounding conductor", "black, blue, and white with a bare or green grounding conductor", "black, black, and black, with a bare or green grounding conductor"], "why": "Black, white and red.", "br": [["colors", "color code"]]}, {"src": "Module Review · Q13 (4.1.1)", "a": 0, "pq": "Where is Type NM cable prohibited?", "po": ["In shallow chases of masonry, concrete or adobe", "In the framework of a building", "Where used with protective strips", "In attic spaces"], "tq": "Type NM cable is prohibited _____.", "to": ["in shallow chases of masonry, concrete, or adobe", "in the framework of a building", "where used with protective strips", "in attic spaces"], "why": "Prohibited in shallow chases of masonry, concrete or adobe.", "br": [["Where", "prohibited"]]}, {"src": "Module Review · Q14 (4.1.2)", "a": 3, "pq": "Where is Type MC cable prohibited?", "po": ["In concrete or plaster where dry", "In dry masonry", "In attic spaces", "Where subject to physical damage"], "tq": "Type MC cable is prohibited _____.", "to": ["in concrete or plaster where dry", "in dry masonry", "in attic spaces", "where subject to physical damage"], "why": "Where subject to physical damage.", "br": [["Where", "prohibited"]]}, {"src": "Module Review · Q15 (4.1.4)", "a": 1, "pq": "Type SE cable for interior wiring comes with what?", "po": ["A non-insulated ground or neutral", "An insulated grounded conductor", "No ground conductor", "Guard strips"], "tq": "When used for interior wiring systems, Type SE cable is available with _____.", "to": ["a non-insulated ground or neutral conductor", "an insulated grounded conductor", "no ground conductor", "guard strips"], "why": "An insulated grounded conductor.", "br": [["comes with", "is available with"]]}, {"src": "Module Review · Q16 (4.1.4)", "a": 2, "pq": "How may Type SER cable be used?", "po": ["In overhead applications", "Underground", "As a subfeed under certain conditions", "In hazardous locations"], "tq": "Type SER cable may be used _____.", "to": ["in overhead applications", "underground", "as a subfeed under certain conditions", "in hazardous locations"], "why": "As a subfeed under certain conditions.", "br": [["How", "may be used"]]}], "7": [{"src": "Section Review 4.0.0 · Q2 (4.2.0)", "a": 3, "pq": "Which area of a house would most likely use conductors run in conduit?", "po": ["Bedrooms", "Bathrooms", "Kitchens", "Unfinished basements"], "tq": "Which of the following areas of a residence would most likely use conductors run in conduit?", "to": ["Bedrooms", "Bathrooms", "Kitchens", "Unfinished basements"], "why": "Unfinished basements.", "br": [["house", "residence"]]}], "8": [{"src": "Section Review 5.0.0 · Q2 (5.2.0)", "a": 0, "pq": "A lighting branch circuit has a capacity of 1,800 VA. How much load should it carry at most?", "po": ["1,440 VA", "1,800 VA", "2,250 VA", "2,700 VA"], "tq": "A branch circuit for lighting has a capacity of 1,800VA. It should be loaded to no more than _____.", "to": ["1,440VA", "1,800VA", "2,250VA", "2,700VA"], "why": "0.8 × 1,800 = 1,440 VA.", "br": [["carry at most", "loaded to no more than"]]}], "9": [{"src": "Section Review 5.0.0 · Q1 (5.1.5)", "a": 3, "pq": "A water heater (120 gallons or less) has a 20 A nameplate. What must its branch circuit be rated at minimum?", "po": ["18 A", "20 A", "22 A", "25 A"], "tq": "A branch circuit that supplies a storage-type water heater with a capacity of 120 gallons (450 L) or less and a nameplate rating of 20A must be rated at a minimum of _____.", "to": ["18A", "20A", "22A", "25A"], "why": "125% of 20 A = 25 A.", "br": [["at minimum", "minimum"]]}, {"src": "Module Review · Q23 (5.1.5)", "a": 3, "pq": "How must conductors for electric water heaters be sized?", "po": ["70% of nameplate", "95% of nameplate", "100% of nameplate", "125% of nameplate"], "tq": "Conductors used for electric water heaters must be sized at _____.", "to": ["70% of the heater's nameplate rating", "95% of the heater's nameplate rating", "100% of the heater's nameplate rating", "125% of the heater's nameplate rating"], "why": "125% of the nameplate rating.", "br": [["sized", "sized at"]]}], "11": [{"src": "Section Review 5.0.0 · Q3 (5.3.0)", "a": 3, "pq": "A metallic box has two No. 12 conductors, a ground, a cable clamp, a switch and a looped conductor over 12\". How many conductors does it count as?", "po": ["Two", "Four", "Five", "Eight"], "tq": "A metallic outlet box for two No. 12 AWG conductors with a ground wire, cable clamp, a switch, and a looped conductor over 12\" (300 mm) would count as _____.", "to": ["two conductors", "four conductors", "five conductors", "eight conductors"], "why": "2 + 1 + 1 + 2 + 2 = 8.", "br": [["count as", "would count as"]]}], "12": [{"src": "Section Review 6.0.0 · Q1 (6.1.0)", "a": 3, "pq": "The brass screw on a receptacle connects to what?", "po": ["Equipment grounding conductor", "Neutral conductor", "Grounded conductor", "Ungrounded conductor"], "tq": "The brass screw on a receptacle connects to the _____.", "to": ["equipment grounding conductor", "neutral conductor", "grounded conductor", "ungrounded conductor"], "why": "The ungrounded (hot) conductor.", "br": [["connects to", "connects to the"]]}, {"src": "Section Review 6.0.0 · Q3 (6.3.0)", "a": 0, "pq": "Around a hot tub, GFCI protection is required for receptacles within how far of the inside wall?", "po": ["10 ft", "12 ft", "15 ft", "20 ft"], "tq": "When installing a hot tub, GFCI protection is required for all receptacles located within _____.", "to": ["10' (3.0 m) of the inside wall of the hot tub", "12' (3.7 m) of the inside wall of the hot tub", "15' (4.5 m) of the inside wall of the hot tub", "20' (6.0 m) of the inside wall of the hot tub"], "why": "Within 10 feet.", "br": [["how far", "within"]]}, {"src": "Module Review · Q7 (1.4.1)", "a": 0, "pq": "What is a single-pole GFCI breaker rated at?", "po": ["120 VAC", "240 VAC", "120/240 VAC", "240/480 VAC"], "tq": "A single-pole GFCI breaker is rated at _____.", "to": ["120VAC", "240VAC", "120/240VAC", "240/480VAC"], "why": "120 VAC.", "br": [["rated at", "is rated at"]]}, {"src": "Module Review · Q17 (5.1.0)", "a": 1, "pq": "Look at Figure RQ01 in your textbook's Module Review (printed page 70). What does the symbol show?", "po": ["Special purpose outlet", "Single receptacle", "Range receptacle", "Duplex receptacle"], "tq": "The symbol shown in Figure RQ01 indicates a _____.", "to": ["special purpose outlet", "single receptacle", "range receptacle", "duplex receptacle"], "why": "Check your answer with the symbols figure in the textbook.", "br": [["the symbol", "the symbol shown in the figure"]]}, {"src": "Module Review · Q18 (5.1.0)", "a": 1, "pq": "Look at Figure RQ02 in your textbook's Module Review (printed page 70; the label says 50A). What does the symbol show?", "po": ["Duplex receptacle", "Range receptacle", "Dryer receptacle", "Split-wired receptacle"], "tq": "The symbol shown in Figure RQ02 indicates a _____.", "to": ["duplex receptacle", "range receptacle", "dryer receptacle", "split-wired receptacle"], "why": "Check your answer with the symbols figure in the textbook.", "br": [["the symbol", "the symbol shown in the figure"]]}, {"src": "Module Review · Q19 (5.1.0)", "a": 3, "pq": "Look at Figure RQ03 in your textbook's Module Review (printed page 70). What does the symbol show?", "po": ["Duplex receptacle", "Single receptacle", "Dryer receptacle", "Special-purpose outlet"], "tq": "The symbol shown in Figure RQ03 indicates a _____.", "to": ["duplex receptacle", "single receptacle", "dryer receptacle", "special-purpose outlet"], "why": "Check your answer with the symbols figure in the textbook.", "br": [["the symbol", "the symbol shown in the figure"]]}, {"src": "Module Review · Q20 (5.1.0)", "a": 2, "pq": "Look at Figure RQ04 in your textbook's Module Review (printed page 70). What does the symbol show?", "po": ["Range receptacle", "Single receptacle", "Duplex receptacle", "Split-wired receptacle"], "tq": "The symbol shown in Figure RQ04 indicates a _____.", "to": ["range receptacle", "single receptacle", "duplex receptacle", "split-wired receptacle"], "why": "Check your answer with the symbols figure in the textbook.", "br": [["the symbol", "the symbol shown in the figure"]]}, {"src": "Module Review · Q21 (5.1.0)", "a": 1, "pq": "Look at Figure RQ05 in your textbook's Module Review (printed page 70). What does the symbol show?", "po": ["Special-purpose outlet", "Split-wired receptacle", "Duplex receptacle", "Range receptacle"], "tq": "The symbol shown in Figure RQ05 indicates a _____.", "to": ["special-purpose outlet", "split-wired receptacle", "duplex receptacle", "range receptacle"], "why": "Check your answer with the symbols figure in the textbook.", "br": [["the symbol", "the symbol shown in the figure"]]}, {"src": "Module Review · Q22 (5.1.0)", "a": 0, "pq": "Look at Figure RQ06 in your textbook's Module Review (printed page 70; the label says 30A). What does the symbol show?", "po": ["Dryer receptacle", "Split-wired receptacle", "Duplex receptacle", "Special-purpose outlet"], "tq": "The symbol shown in Figure RQ06 indicates a _____.", "to": ["dryer receptacle", "split-wired receptacle", "duplex receptacle", "special-purpose outlet"], "why": "Check your answer with the symbols figure in the textbook.", "br": [["the symbol", "the symbol shown in the figure"]]}, {"src": "Module Review · Q25 (6.3.0)", "a": 2, "pq": "In a residential pool area, what is true of receptacles?", "po": ["They are not allowed in the fenced area", "They must be approved for underwater lighting", "They must be at least 6 feet from the inside walls of the pool", "They are only allowed if the manufacturer requires them"], "tq": "In a residential pool area, receptacles _____.", "to": ["are not allowed within the fenced area", "must be approved for providing power to underwater lighting fixtures", "must be at least 6 feet from the inside walls of the pool", "are only allowed if required by the pool manufacturer"], "why": "At least 6 feet from the inside walls.", "br": [["what is true", "receptacles"]]}], "13": [{"src": "Section Review 6.0.0 · Q2 (6.2.2)", "a": 1, "pq": "What does a four-way switch need to work correctly?", "po": ["One three-way switch", "Two three-way switches", "Three three-way switches", "Four three-way switches"], "tq": "The correct operation of a four-way switch requires at least _____.", "to": ["one three-way switch", "two three-way switches", "three three-way switches", "four three-way switches"], "why": "At least two three-way switches.", "br": [["need", "requires at least"]]}, {"src": "Module Review · Q24 (6.2.6)", "a": 3, "pq": "A wall switch is needed at each level of a stairway when the levels are separated by how many risers?", "po": ["Three or more", "Four or more", "Five or more", "Six or more"], "tq": "A wall switch is required to control stairway lighting at each level when the levels are separated by _____.", "to": ["three or more risers", "four or more risers", "five or more risers", "six or more risers"], "why": "Six or more risers.", "br": [["needed", "required"]]}]};
+  var TALK = {"1": {"qs": ["Why does the code count lighting by square feet?", "What do you divide by to find amps?"], "scn": [{"t": "Size the load", "s": "A house has 900 square feet. What is its lighting load, and how many amps at 120 V?", "g": ["3 VA × 900 = 2,700 VA.", "2,700 ÷ 120 = 22.5 A."]}], "parent": "Ask your student to work the 900 square foot example aloud."}, "2": {"qs": ["Why do kitchens get their own circuits?", "What is the laundry load?"], "scn": [{"t": "Two kitchens", "s": "A house has two kitchen areas. How many small appliance circuits?", "g": ["Two for each area.", "Four in all, each counted at 1,500 VA."]}], "parent": "Ask your student to explain how many kitchen circuits a house needs."}, "3": {"qs": ["Why not count every load at 100%?", "What demand factor applies to four or more fixed appliances?"], "scn": [{"t": "Who runs at once?", "s": "Why can the code allow a demand factor?", "g": ["Not every load runs at the same time.", "The tables say how much it can be reduced."]}], "parent": "Ask your student to name one demand factor from this section."}, "4": {"qs": ["Why must a bonding jumper screw be green?", "What is a ground ring?"], "scn": [{"t": "Which color?", "s": "You find a bare screw on a main bonding jumper. What should it be?", "g": ["It must be green.", "Green marks grounding and bonding."]}], "parent": "Ask your student to tell you what green means in grounding."}, "5": {"qs": ["How is a service drop different from a lateral?", "Why do heights and clearances matter?"], "scn": [{"t": "Over the driveway", "s": "Service conductors cross a residential driveway. How high must they be?", "g": ["At least 12 feet.", "A drop is at least 10 feet above ground in general.", "Heights protect people."]}], "parent": "Ask your student to trace power from the pole to the panel."}, "6": {"qs": ["How can you tell NM from MC?", "Why does the code limit some cable in some places?"], "scn": [{"t": "Wrong place", "s": "Someone wants to use NM in a shallow masonry chase. What do you say?", "g": ["NM is prohibited in shallow chases of masonry, concrete or adobe.", "Check the cable type against the rule."]}], "parent": "Ask your student to name the colors in three-wire NM cable."}, "7": {"qs": ["Why use conduit in a basement?", "What is roughing in?"], "scn": [{"t": "Unfinished basement", "s": "The basement is unfinished and the wiring is exposed. What protects it?", "g": ["Conduit.", "Exposed wiring needs more protection."]}], "parent": "Ask your student to explain when conduit is used."}, "8": {"qs": ["What is the difference between a feeder and a branch circuit?", "Why keep a circuit at 80%?"], "scn": [{"t": "How much load?", "s": "A lighting circuit has a capacity of 1,800 VA. How much load is the limit?", "g": ["80% of 1,800.", "0.8 × 1,800 = 1,440 VA."]}], "parent": "Ask your student to work the 1,800 VA example."}, "9": {"qs": ["Why is a water heater circuit sized above its nameplate?", "What is 125% of 20 A?"], "scn": [{"t": "Size the circuit", "s": "A water heater nameplate says 20 A. What circuit rating is needed?", "g": ["125% of 20 A.", "20 × 1.25 = 25 A."]}], "parent": "Ask your student to do the 25 A calculation aloud."}, "10": {"qs": ["Why do heating circuits need extra care?", "Where do you look for the specifics?"], "scn": [{"t": "Heater circuit", "s": "You are planning a circuit for a heater. What habits help?", "g": ["Treat it as a large, long-running load.", "Keep the 80 and 125 percent rules in mind.", "Use the textbook for the specifics."]}], "parent": "Ask your student why long-running loads need extra care."}, "11": {"qs": ["How do you count a box?", "Why does a ceiling fan need a special box?"], "scn": [{"t": "Count the box", "s": "A box has two No. 12 conductors, a ground, a clamp, a switch and a looped conductor over 12 inches. How many?", "g": ["2 + 1 + 1 + 2 + 2.", "Eight conductors."]}], "parent": "Ask your student to count the example box."}, "12": {"qs": ["Which screw is the hot one?", "Why does water call for GFCI?"], "scn": [{"t": "Near water", "s": "A receptacle is close to a hot tub. What is required?", "g": ["GFCI protection within 10 feet of the inside wall.", "Pool receptacles must be at least 6 feet from the pool."]}], "parent": "Ask your student which screw is hot and why water means GFCI."}, "13": {"qs": ["How many switches does a four-way setup need?", "Where do stairs need a switch?"], "scn": [{"t": "The staircase", "s": "A staircase has eight risers. How must it be switched?", "g": ["A switch at each level.", "Six or more risers triggers this rule."]}], "parent": "Ask your student to explain how three switches control one light."}};
+  var FINAL = ["I can work the general lighting load and turn VA into amps.", "I can say how many kitchen circuits a home needs and how the laundry load is counted.", "I can explain demand factors and give the examples from the module.", "I can explain bonding and grounding basics: green screw, ground ring, 150 volts.", "I can name the parts of a service and give the key heights and clearances.", "I can tell NM, MC, SE and SER cable apart and say where each is prohibited.", "I can say where conduit is used and what roughing in is.", "I can tell a feeder from a branch circuit and use the 80 percent rule.", "I can size a water heater circuit with the 125 percent rule.", "I can count conductors in a box and say why a ceiling fan needs the right box.", "I can wire a receptacle correctly and state the GFCI and pool rules.", "I can explain four-way switching and when stairs need switches at each level."];
+
+  function el(tag, cls, text) { var n = document.createElement(tag); if (cls) n.className = cls; if (text != null) n.textContent = text; return n; }
+
+  function buildPoints(ul, list, prefix) {
+    list.forEach(function (html, i) {
+      var li = el("li");
+      var label = el("label");
+      var input = document.createElement("input");
+      input.type = "checkbox";
+      input.id = prefix + "-" + i;
+      var span = el("span");
+      span.innerHTML = html; // static text written in this file
+      label.appendChild(input); label.appendChild(span);
+      li.appendChild(label); ul.appendChild(li);
+    });
+  }
+
+  function field(label, text) {
+    var d = el("span");
+    d.appendChild(el("span", "label", label));
+    d.appendChild(document.createTextNode(text));
+    return d;
+  }
+  function buildCards(host, n) {
+    CARDS[n].forEach(function (item) {
+      var b = el("button", "card");
+      b.type = "button";
+      b.setAttribute("aria-pressed", "false");
+      b.setAttribute("aria-label", item.t + ". Press to flip the card.");
+      var inner = el("span", "card-inner");
+      var f = el("span", "face front" + (item.k === "k" ? " key" : ""));
+      f.appendChild(el("span", "strip", (item.k === "o" ? "NCCER trade term" : "Key term") + " · Section " + n));
+      f.appendChild(el("span", "term", item.t));
+      f.appendChild(el("span", "hint", "TAP TO FLIP"));
+      var k = el("span", "face back");
+      k.appendChild(el("span", "strip", item.t));
+      var body = el("span", "body");
+      body.appendChild(field("In everyday words", item.plain));
+      body.appendChild(field("From the module", item.book));
+      var ask = field("Ask your student", item.ask);
+      ask.className = "ask";
+      body.appendChild(ask);
+      k.appendChild(body);
+      inner.appendChild(f); inner.appendChild(k);
+      b.appendChild(inner);
+      b.addEventListener("click", function () { b.setAttribute("aria-pressed", b.getAttribute("aria-pressed") === "true" ? "false" : "true"); });
+      host.appendChild(b);
+    });
+  }
+
+  function buildQuiz(host, n) {
+    var list = QUIZ[n];
+    var answered = 0;
+    host.appendChild(el("p", "ticket-intro", "Pick the answer. You will see right away if it is correct. Nothing is saved or sent."));
+    var foot = el("div", "ticket-foot");
+    var done = el("p", null, "");
+    done.setAttribute("aria-live", "polite");
+    var retry = el("button", "btn", "Try again");
+    retry.type = "button";
+    retry.hidden = true;
+    foot.appendChild(done); foot.appendChild(retry);
+
+    list.forEach(function (item, qi) {
+      var fs = el("fieldset", "q");
+      fs.appendChild(el("legend", null, (qi + 1) + ". " + item.q));
+      var opts = el("div", "opts");
+      var fb = el("p", "fb");
+      fb.setAttribute("aria-live", "polite");
+      var btns = [];
+      item.o.forEach(function (text, oi) {
+        var b = el("button", "opt", text);
+        b.type = "button";
+        b.addEventListener("click", function () {
+          btns.forEach(function (x) { x.disabled = true; });
+          answered++;
+          if (oi === item.a) {
+            b.classList.add("right");
+            fb.innerHTML = "";
+            var good = el("b", null, "Correct. "); fb.appendChild(good); fb.appendChild(document.createTextNode(item.why));
+          } else {
+            b.classList.add("wrong");
+            btns[item.a].classList.add("right");
+            fb.innerHTML = "";
+            var no = el("b", null, "Not quite. "); fb.appendChild(no);
+            fb.appendChild(document.createTextNode("The answer is \"" + item.o[item.a] + "\". " + item.why));
+          }
+          if (answered === list.length) {
+            done.textContent = "Ticket finished. Reread any part of the section that felt shaky, then try again.";
+            retry.hidden = false;
+          }
+        });
+        btns.push(b); opts.appendChild(b);
+      });
+      fs.appendChild(opts); fs.appendChild(fb);
+      host.insertBefore(fs, null);
+      fs._reset = function () { btns.forEach(function (x) { x.disabled = false; x.className = "opt"; }); fb.textContent = ""; };
+    });
+    host.appendChild(foot);
+    retry.addEventListener("click", function () {
+      host.querySelectorAll("fieldset").forEach(function (f) { f._reset(); });
+      answered = 0; done.textContent = ""; retry.hidden = true;
+    });
+  }
+
+  function buildTalk(host, n) {
+    var t = TALK[n];
+    var ol = el("ol", "qs");
+    t.qs.forEach(function (q) { ol.appendChild(el("li", null, q)); });
+    host.appendChild(ol);
+    t.scn.forEach(function (s) {
+      var d = el("details", "scn");
+      d.appendChild(el("summary", null, "Scenario: " + s.t));
+      d.appendChild(el("p", "setup", s.s));
+      var g = el("div", "good");
+      g.appendChild(el("b", null, "A good answer includes"));
+      var ul = el("ul");
+      s.g.forEach(function (x) { ul.appendChild(el("li", null, x)); });
+      g.appendChild(ul); d.appendChild(g);
+      host.appendChild(d);
+    });
+    if (t.parent) {
+      var p = el("div", "parent");
+      p.appendChild(el("b", null, "Talk it over with your loved ones"));
+      p.appendChild(el("p", null, t.parent));
+      host.appendChild(p);
+    }
+  }
+
+
+  function ask(label, cls, q, opts, correct, onAnswer) {
+    var box = el("div", "ask-block" + (cls ? " " + cls : ""));
+    box.appendChild(el("p", "step-label", label));
+    box.appendChild(el("p", "pr-q", q));
+    var wrap = el("div", "opts");
+    wrap.setAttribute("role", "group");
+    wrap.setAttribute("aria-label", q);
+    var fb = el("p", "fb");
+    fb.setAttribute("aria-live", "polite");
+    var btns = [];
+    opts.forEach(function (text, oi) {
+      var b = el("button", "opt", String.fromCharCode(65 + oi) + ".  " + text);
+      b.type = "button";
+      b.addEventListener("click", function () {
+        btns.forEach(function (x) { x.disabled = true; });
+        var ok = oi === correct;
+        b.classList.add(ok ? "right" : "wrong");
+        if (!ok) btns[correct].classList.add("right");
+        onAnswer(ok, fb, String.fromCharCode(65 + correct));
+      });
+      btns.push(b); wrap.appendChild(b);
+    });
+    box.appendChild(wrap); box.appendChild(fb);
+    box.reset = function () { btns.forEach(function (x) { x.disabled = false; x.className = "opt"; }); fb.textContent = ""; };
+    return box;
+  }
+  function say(fb, lead, text) {
+    fb.textContent = "";
+    fb.appendChild(el("b", null, lead + " "));
+    fb.appendChild(document.createTextNode(text));
+  }
+
+  function buildPractice(host, n) {
+    var list = PRACTICE[n];
+    host.appendChild(el("p", "pr-intro", "Test questions use the textbook's formal words. Answer each question in plain English first, then see the same question the way the book asks it. The \"Words to notice\" box shows how the two fit together. Nothing is saved or sent."));
+    var items = [];
+    list.forEach(function (item, i) {
+      var art = el("article", "pr");
+      var head = el("div", "pr-head");
+      head.appendChild(el("span", null, "Question " + (i + 1) + " of " + list.length));
+      head.appendChild(el("span", null, "Source: " + item.src));
+      art.appendChild(head);
+
+      var bridge = el("div", "bridge");
+      bridge.hidden = true;
+      bridge.appendChild(el("p", "step-label", "Words to notice"));
+      var ul = el("ul");
+      item.br.forEach(function (p) {
+        var li = el("li");
+        li.appendChild(el("span", "you", p[0]));
+        li.appendChild(el("span", "arrow", "→"));
+        li.appendChild(el("span", "pub", p[1]));
+        ul.appendChild(li);
+      });
+      bridge.appendChild(ul);
+
+      var b2 = ask("Step 2 · The same question in the textbook's words", "formal", item.tq, item.to, item.a, function (ok, fb, letter) {
+        if (ok) say(fb, "Correct.", "You just answered it in the textbook's voice.");
+        else say(fb, "Not quite.", "The answer is " + letter + ". Compare it with your plain-English answer above.");
+        bridge.hidden = false;
+      });
+      b2.hidden = true;
+      var b1 = ask("Step 1 · In plain English", "", item.pq, item.po, item.a, function (ok, fb, letter) {
+        if (ok) say(fb, "Correct.", item.why);
+        else say(fb, "Not quite.", "The answer is " + letter + ". " + item.why);
+        b2.hidden = false;
+      });
+      art.appendChild(b1); art.appendChild(b2); art.appendChild(bridge);
+      host.appendChild(art);
+      items.push({ b1: b1, b2: b2, bridge: bridge });
+    });
+    var foot = el("div", "ticket-foot");
+    var retry = el("button", "btn", "Start this set over");
+    retry.type = "button";
+    retry.addEventListener("click", function () {
+      items.forEach(function (x) { x.b1.reset(); x.b2.reset(); x.b2.hidden = true; x.bridge.hidden = true; });
+    });
+    foot.appendChild(retry);
+    host.appendChild(foot);
+  }
+
+  for (var n = 1; n <= 13; n++) {
+    var pd = document.querySelector('[data-practice="' + n + '"]'); if (PRACTICE[n] && PRACTICE[n].length) buildPractice(pd, n); else pd.closest('.part').hidden = true;
+    buildPoints(document.querySelector('[data-points="' + n + '"]'), POINTS[n], "s" + n);
+    var d = document.querySelector('[data-cards="' + n + '"]'); if (CARDS[n] && CARDS[n].length) buildCards(d, n); else d.closest('.part').hidden = true;
+    buildQuiz(document.querySelector('[data-quiz="' + n + '"]'), n);
+    buildTalk(document.querySelector('[data-talk="' + n + '"]'), n);
+  }
+  buildPoints(document.getElementById("final-points"), FINAL, "fin");
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,890 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Device Boxes Loved Ones Study Guide</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+/* Layout concept: one long study sheet. Each module section runs the same six parts
+   (read, review points, trade-term tags, ticket out the door, talk it over). */
+:root {
+  --bg: #EEF1F3;
+  --surface: #FFFFFF;
+  --ink: #14202B;
+  --ink-soft: #46576A;
+  --line: #C9D2DA;
+  --band: #14202B;
+  --band-ink: #F4F7F9;
+  --accent: #C42B17;
+  --accent-ink: #FFFFFF;
+  --caution: #F2B705;
+  --caution-soft: #FFF3C4;
+  --good: #1E7A3C;
+  --good-soft: #DDF3E4;
+  --bad: #A8321F;
+  --bad-soft: #FBE3DE;
+  --tag-hole: #EEF1F3;
+  --focus: #0B5FFF;
+  --font-display: "Barlow Condensed", "Arial Narrow", Impact, sans-serif;
+  --font-body: "Barlow", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0F171E; --surface: #18232D; --ink: #EAF0F4; --ink-soft: #A5B4C2; --line: #2E3E4C;
+    --band: #0A1016; --band-ink: #F4F7F9; --accent: #FF5A44; --accent-ink: #14202B;
+    --caution: #F2B705; --caution-soft: #3A3210; --good: #6FD08C; --good-soft: #17301F;
+    --bad: #FF8E7C; --bad-soft: #3A1B16; --tag-hole: #0F171E; --focus: #6AA2FF;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0F171E; --surface: #18232D; --ink: #EAF0F4; --ink-soft: #A5B4C2; --line: #2E3E4C;
+  --band: #0A1016; --band-ink: #F4F7F9; --accent: #FF5A44; --accent-ink: #14202B;
+  --caution: #F2B705; --caution-soft: #3A3210; --good: #6FD08C; --good-soft: #17301F;
+  --bad: #FF8E7C; --bad-soft: #3A1B16; --tag-hole: #0F171E; --focus: #6AA2FF;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--ink); font-family: var(--font-body); font-size: 17px; line-height: 1.6; }
+:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
+.wrap { max-width: 920px; margin-inline: auto; padding-inline: max(16px, env(safe-area-inset-left, 0px)) max(16px, env(safe-area-inset-right, 0px)); }
+h1, h2, h3, h4 { font-family: var(--font-display); text-transform: uppercase; letter-spacing: 0.03em; line-height: 1.05; margin: 0; text-wrap: balance; }
+.eyebrow { font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-soft); }
+
+.band { background: var(--band); color: var(--band-ink); padding-block: 34px 26px; border-bottom: 8px solid var(--caution); }
+.band .eyebrow { color: var(--caution); }
+.band h1 { font-size: clamp(2.5rem, 9vw, 4.4rem); font-weight: 700; margin-top: 10px; }
+.band .sub { margin: 14px 0 0; font-size: 1.1rem; color: #D5DEE5; max-width: 46ch; }
+.band .byline { margin: 14px 0 0; font-size: 0.95rem; color: #AEBBC7; }
+nav.jump { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 22px; }
+nav.jump a { text-decoration: none; font-weight: 600; font-size: 0.95rem; padding: 8px 14px; border: 2px solid #3B4B5A; border-radius: 3px; color: var(--band-ink); }
+nav.jump a:hover { border-color: var(--caution); }
+
+.intro { margin-top: 28px; display: grid; gap: 22px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 380px), 1fr)); }
+.panel { background: var(--surface); border: 1px solid var(--line); padding: 20px 22px 22px; min-width: 0; }
+.panel h2 { font-size: 1.5rem; font-weight: 700; margin-bottom: 10px; }
+.panel p { margin: 0 0 10px; }
+.panel ol { margin: 8px 0 0; padding-left: 1.3em; display: grid; gap: 6px; }
+.notice { background: var(--caution-soft); border: 2px solid var(--caution); padding: 16px 20px; margin-top: 22px; }
+.notice p { margin: 4px 0 0; }
+.notice h2 { font-size: 1.25rem; }
+
+/* section */
+.sec { margin-top: 56px; }
+.sec-head { border-top: 8px solid var(--ink); padding-top: 18px; }
+.sec-head h2 { font-size: clamp(2rem, 6vw, 3rem); font-weight: 700; margin-top: 6px; }
+.sec-head .obj { margin: 10px 0 0; color: var(--ink-soft); max-width: 62ch; }
+.part { margin-top: 34px; }
+.part-title { display: flex; align-items: baseline; gap: 12px; margin-bottom: 14px; }
+.part-title .letter { font-family: var(--font-mono); font-size: 13px; background: var(--ink); color: var(--bg); padding: 2px 8px; flex: none; }
+.part-title h3 { font-size: 1.7rem; font-weight: 700; }
+.part-title .time { margin-left: auto; font-family: var(--font-mono); font-size: 12px; color: var(--ink-soft); white-space: nowrap; }
+
+.prose { background: var(--surface); border: 1px solid var(--line); padding: 22px 24px; }
+.prose h4 { font-size: 1.25rem; font-weight: 700; margin: 20px 0 6px; color: var(--accent); }
+.prose h4:first-child { margin-top: 0; }
+.prose p { margin: 0 0 10px; max-width: 64ch; }
+.prose ul { margin: 0 0 10px; padding-left: 1.2em; max-width: 64ch; }
+.prose li { margin-bottom: 4px; }
+.prose .big { font-size: 1.12rem; font-weight: 500; border-left: 6px solid var(--caution); padding: 4px 0 4px 14px; margin: 0 0 16px; }
+.prose table { border-collapse: collapse; margin: 8px 0 14px; font-size: 0.95rem; width: 100%; max-width: 520px; }
+.prose th, .prose td { text-align: left; padding: 6px 10px; border-bottom: 1px solid var(--line); }
+.prose th { font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-soft); }
+.scroll { overflow-x: auto; }
+.case { background: var(--bg); border-left: 6px solid var(--accent); padding: 12px 16px; margin: 14px 0 0; max-width: 64ch; }
+.case b { font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.08em; text-transform: uppercase; display: block; color: var(--ink-soft); }
+
+/* review points */
+.points { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; counter-reset: pt; }
+.points li { background: var(--surface); border: 1px solid var(--line); }
+.points label { display: grid; grid-template-columns: 28px minmax(0, 1fr); gap: 12px; padding: 12px 16px; cursor: pointer; align-items: start; }
+.points input { width: 22px; height: 22px; margin: 2px 0 0; accent-color: var(--good); }
+.points li:has(input:checked) { background: var(--good-soft); border-color: var(--good); }
+.points b { font-weight: 600; }
+
+/* cards */
+.deck { display: grid; gap: 22px; grid-template-columns: repeat(auto-fill, minmax(min(100%, 270px), 1fr)); }
+.card { all: unset; box-sizing: border-box; display: block; cursor: pointer; perspective: 1100px; min-width: 0; }
+.card:focus-visible { outline: 3px solid var(--focus); outline-offset: 4px; }
+.card-inner { display: grid; transition: transform 0.5s cubic-bezier(.3,.7,.2,1); transform-style: preserve-3d; position: relative; }
+.card[aria-pressed="true"] .card-inner { transform: rotateY(180deg); }
+.face { grid-area: 1 / 1; backface-visibility: hidden; -webkit-backface-visibility: hidden; display: flex; flex-direction: column; min-height: 250px; border: 2px solid var(--ink); background: var(--surface); position: relative; overflow: hidden; }
+.face::before { content: ""; position: absolute; top: 12px; left: 50%; width: 16px; height: 16px; margin-left: -8px; border-radius: 50%; background: var(--tag-hole); border: 2px solid var(--ink); }
+.front .strip { background: var(--accent); color: var(--accent-ink); padding: 38px 16px 8px; font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.08em; text-transform: uppercase; }
+.front.key .strip { background: var(--ink); color: var(--bg); }
+.front .term { flex: 1; display: flex; align-items: center; padding: 16px 18px; font-family: var(--font-display); text-transform: uppercase; font-weight: 700; font-size: clamp(1.8rem, 7vw, 2.2rem); line-height: 1.02; letter-spacing: 0.02em; overflow-wrap: anywhere; }
+.front .hint { padding: 10px 18px 14px; font-size: 0.8rem; color: var(--ink-soft); border-top: 1px dashed var(--line); font-family: var(--font-mono); letter-spacing: 0.04em; }
+.back { transform: rotateY(180deg); background: var(--caution-soft); }
+.back .strip { background: var(--ink); color: var(--bg); padding: 38px 16px 8px; font-family: var(--font-display); text-transform: uppercase; font-weight: 700; letter-spacing: 0.04em; font-size: 1.1rem; line-height: 1.05; }
+.back .body { padding: 14px 18px 16px; display: grid; gap: 10px; align-content: start; font-size: 0.95rem; line-height: 1.45; }
+.back .label { font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-soft); display: block; margin-bottom: 1px; }
+.back .ask { border-top: 1px dashed var(--ink-soft); padding-top: 10px; font-weight: 500; }
+.deck-note { margin: 12px 0 0; font-size: 0.9rem; color: var(--ink-soft); }
+@media (prefers-reduced-motion: reduce) {
+  .card-inner { transition: none; transform-style: flat; }
+  .card[aria-pressed="true"] .card-inner { transform: none; }
+  .back { transform: none; }
+  .face { backface-visibility: visible; }
+  .card .back { visibility: hidden; }
+  .card[aria-pressed="true"] .back { visibility: visible; }
+  .card[aria-pressed="true"] .front { visibility: hidden; }
+}
+
+/* ticket */
+.ticket { background: var(--surface); border: 2px dashed var(--ink); padding: 8px 20px 18px; position: relative; }
+.ticket-intro { margin: 14px 0 4px; color: var(--ink-soft); font-size: 0.95rem; }
+.q { border: 0; border-top: 1px solid var(--line); margin: 0; padding: 16px 0 14px; min-width: 0; }
+.q:first-of-type { border-top: 0; }
+.q legend { font-weight: 600; padding: 0; margin-bottom: 8px; float: left; width: 100%; }
+.q .opts { clear: both; display: grid; gap: 8px; }
+.opt { font: inherit; text-align: left; padding: 10px 14px; background: var(--bg); color: var(--ink); border: 2px solid var(--line); border-radius: 3px; cursor: pointer; }
+.opt:hover:not(:disabled) { border-color: var(--ink); }
+.opt:disabled { cursor: default; }
+.opt.right { background: var(--good-soft); border-color: var(--good); }
+.opt.wrong { background: var(--bad-soft); border-color: var(--bad); }
+.fb { margin: 8px 0 0; font-size: 0.93rem; color: var(--ink-soft); }
+.fb b { color: var(--ink); }
+.ticket-foot { margin-top: 10px; display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+.ticket-foot p { margin: 0; font-weight: 500; }
+.btn { font: inherit; font-weight: 600; font-size: 0.92rem; padding: 8px 14px; background: var(--surface); color: var(--ink); border: 2px solid var(--ink); border-radius: 3px; cursor: pointer; }
+.btn:hover { background: var(--ink); color: var(--bg); }
+
+/* talk it over */
+.talk { display: grid; gap: 14px; }
+.talk .qs { background: var(--surface); border: 1px solid var(--line); padding: 16px 22px 16px 40px; margin: 0; display: grid; gap: 8px; }
+details.scn { background: var(--surface); border: 1px solid var(--line); border-left: 6px solid var(--caution); padding: 14px 18px; }
+details.scn summary { cursor: pointer; font-family: var(--font-display); text-transform: uppercase; letter-spacing: 0.03em; font-size: 1.3rem; font-weight: 700; }
+details.scn .setup { margin: 10px 0 8px; }
+details.scn .good { margin: 12px 0 0; padding: 10px 14px; background: var(--good-soft); border-left: 6px solid var(--good); }
+details.scn .good b { font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.08em; text-transform: uppercase; display: block; }
+details.scn .good ul { margin: 6px 0 0; padding-left: 1.1em; }
+.parent { background: var(--caution-soft); border: 2px solid var(--caution); padding: 12px 16px; }
+.parent b { font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.08em; text-transform: uppercase; display: block; }
+.parent p { margin: 4px 0 0; }
+
+/* practice questions */
+.pr-intro { margin: 0 0 14px; color: var(--ink-soft); max-width: 66ch; }
+.pr { background: var(--surface); border: 1px solid var(--line); margin-bottom: 18px; }
+.pr-head { display: flex; flex-wrap: wrap; gap: 6px 14px; justify-content: space-between; align-items: baseline; padding: 10px 18px; background: var(--ink); color: var(--bg); font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.06em; text-transform: uppercase; }
+.ask-block { padding: 14px 18px 16px; }
+.ask-block + .ask-block { border-top: 2px dashed var(--line); }
+.ask-block.formal { background: var(--bg); }
+.step-label { margin: 0 0 6px; font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); }
+.pr-q { margin: 0 0 10px; font-weight: 600; font-size: 1.05rem; max-width: 62ch; }
+.bridge { padding: 14px 18px 16px; border-top: 2px dashed var(--line); background: var(--caution-soft); }
+.bridge .step-label { color: var(--ink); }
+.bridge ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+.bridge li { display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); gap: 10px; align-items: baseline; }
+.bridge .you { font-style: italic; }
+.bridge .arrow { font-family: var(--font-mono); color: var(--ink-soft); }
+.bridge .pub { font-weight: 600; }
+@media (max-width: 520px) { .bridge li { grid-template-columns: minmax(0, 1fr); gap: 0; } .bridge .arrow { display: none; } .bridge .pub::before { content: "Textbook: "; font-weight: 400; font-family: var(--font-mono); font-size: 11px; color: var(--ink-soft); } .bridge .you::before { content: "You say: "; font-style: normal; font-family: var(--font-mono); font-size: 11px; color: var(--ink-soft); } }
+
+/* final checklist */
+.final { margin-top: 56px; border-top: 8px solid var(--ink); padding-top: 18px; }
+.final h2 { font-size: clamp(1.9rem, 5vw, 2.6rem); font-weight: 700; }
+.final .lead { color: var(--ink-soft); max-width: 62ch; margin: 10px 0 16px; }
+.note { margin: 28px 0 0; font-size: 0.9rem; color: var(--ink-soft); max-width: 70ch; }
+footer { margin-top: 48px; background: var(--band); color: #AEBBC7; padding-block: 26px 30px; font-size: 0.92rem; }
+footer strong { color: var(--band-ink); }
+footer p { margin: 0 0 6px; }
+</style>
+
+
+<header class="band">
+  <div class="wrap">
+    <span class="eyebrow">EVIT Electrical · Loved Ones Study Guide</span>
+    <h1>Device<br>Boxes</h1>
+    <p class="sub">A Loved Ones Study Guide for NCCER Electrical Level 1, Module 26106-20: Device Boxes</p>
+    <p class="byline">Mr. Ellis CTE — General Construction &amp; Electrical Teacher · High School &amp; Adult Pre-Apprentice Programs</p>
+    <nav class="jump" aria-label="Sections">
+      <a href="#s1">1 · Outlet boxes</a>
+      <a href="#s2">2 · Pull &amp; junction boxes</a>
+      <a href="#review">Loved ones review</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<div class="wrap">
+
+  <div class="intro">
+    <div class="panel">
+      <h2>Why this guide exists</h2>
+      <p>You do not need to be an electrician to support an electrical student. Your job is to help your student explain what they are learning, put it in their own words, and know when safety means stop and ask a qualified person.</p>
+      <p>If your student can read it and explain it, they are learning it. That is the whole idea.</p>
+    </div>
+    <div class="panel">
+      <h2>How to use each section</h2>
+      <p>Plan about 15 to 25 minutes per section. The student does most of the talking. You do not need the answers ahead of time.</p>
+      <ol>
+        <li><b>Read it together.</b> Plain-English version of the module section.</li>
+        <li><b>Study review points.</b> The must-know facts. Tick each one when your student can say it back.</li>
+        <li><b>Trade-term cards.</b> Tap a card to flip it.</li>
+        <li><b>Ticket out the door.</b> A quick recall check, just for practice.</li>
+        <li><b>Talk it over.</b> Questions and a real-world scenario.</li>
+        <li><b>Practice questions.</b> Each one comes twice: first in plain English, then in the textbook's words, so your student learns to recognize both.</li>
+      </ol>
+    </div>
+  </div>
+
+  <aside class="notice" aria-labelledby="safe-h">
+    <h2 id="safe-h">Important safety note</h2>
+    <p>This guide is for learning and talking. It is not permission to do electrical work. The NEC is for trained people working under proper guidance. Never use this guide in place of instructor supervision, employer procedures, required training, or properly rated equipment. No student names or grades appear here, and nothing you tick or tap on this page is saved or sent anywhere.</p>
+  </aside>
+
+  <!-- SECTION 1 -->
+  <section class="sec" id="s1" aria-labelledby="s1-h">
+    <div class="sec-head">
+      <span class="eyebrow">Module Section 1 of 2</span>
+      <h2 id="s1-h">Outlet Boxes</h2>
+      <p class="obj">By the end of this section your student can name the types of outlet boxes and what each is for, work out how many wires a box can hold, and say how outlet boxes are installed.</p>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">A</span><h3>Read it together</h3><span class="time">about 20 min</span></div>
+      <div class="prose">
+        <p class="big">Every electrical job needs boxes. This section is about the kinds of boxes your student will meet, how to count how many wires a box can safely hold, and the rules for putting boxes in.</p>
+
+        <h4>Why the right box matters</h4>
+        <p>Every box on a job has to be sized, installed and supported to meet the current NEC. The NEC limits the number of conductors, fittings and devices allowed in each box, and the limit depends on the box's size and volume. That is why knowing the types of boxes, and the space inside each one, is essential.</p>
+        <p>Electrical drawings rarely show the exact type of box, except for boxes in hazardous locations. The electrician has to choose, and a poor choice costs time. For example, a box used with Type AC cable should have built-in clamps. If it is ordered with knockouts only, it needs extra connectors, and every connection takes extra seconds that add up over a large project. Labor is expensive, so extra labor costs more than any money saved on the wrong materials.</p>
+        <div class="case"><b>Key idea</b>Plug raceway openings with capped bushings or similar protection so debris does not get in. Tighten all fittings and couplings. All openings in boxes must be closed as Section 314.17(A) requires, and knockout closures are used for this.</div>
+
+        <h4>The types of boxes</h4>
+        <p>Outlet boxes normally fall into three categories: pressed steel boxes with knockouts of various sizes, cast iron, aluminum or brass boxes with threaded hubs, and nonmetallic boxes. Pressed steel boxes are made either for conduit, electric metallic tubing and cable, or for use with specific surface metal raceways.</p>
+        <div class="scroll"><table>
+          <thead><tr><th>Box</th><th>What to know</th></tr></thead>
+          <tbody>
+            <tr><td>Octagon and round (1.1.1)</td><td>Octagon boxes are 4 inches (100 mm) wide, in depths of 1&frac14;, 1&frac12; or 2&#8539; inches. Used mostly for wall-mounted lighting fixtures (luminaires). Round boxes may not have conduit or connectors that need locknuts and bushings entering the side. Those must enter at the top. Round boxes with cable clamps may take Type AC and NM cable at the side or top.</td></tr>
+            <tr><td>Square (1.1.2)</td><td>Typically 4 inches (100 mm) and 4<sup>11</sup>&frasl;<sub>16</sub> inches (120 mm) square, in depths of 1&frac14;, 1&frac12; and 2&#8539; inches. Extension rings add depth. Single or two-gang device rings (plaster or tile rings) let them hold receptacles or switches. Blank covers make them junction boxes.</td></tr>
+            <tr><td>Device (1.1.3)</td><td>Houses switches and receptacles. Made for flush mounting, mainly in homes and some commercial buildings. Some have integral nails for wall studs. In metal studs use self-tapping sheet metal screws. In concrete, special powder-actuated fasteners may be needed.</td></tr>
+            <tr><td>Handy box (1.1.3)</td><td>A single-gang box with the mounting ears on the inside. Also called a utility box. Depths of 1&frac12;, 1&#8542; and 2&#8539; inches. Its small volume limits how many conductors it can hold.</td></tr>
+            <tr><td>Masonry (1.1.4)</td><td>Used in flat-slab concrete work. A sleeve with outside ears, plus a plate attached after the sleeve is nailed to the deck. Choose one tall enough that the knockouts sit well above the reinforcing rods, so the conduit needs no offsets.</td></tr>
+          </tbody>
+        </table></div>
+        <p>Box covers adapt a box to its job. For example, a 4-inch square box becomes a one-gang or two-gang switch or receptacle box with the right flush device cover.</p>
+        <div class="case"><b>Good to know</b>Fire-rated walls: boxes on opposite sides of a fire-rated wall between occupancies should be at least 24 inches (600 mm) apart to protect the fire rating.</div>
+
+        <h4>Holding up lights and fans</h4>
+        <p>Boxes that support luminaires (lighting fixtures) must be listed for the purpose. Most device boxes are not designed or listed to do that (Section 314.27(A)). A floor box has to be listed for floor use wherever receptacles or junction boxes go in a floor, and it comes with a cover and gaskets to keep out surface water and cleaning compounds.</p>
+        <p>A box at a fan outlet cannot be the only support for a ceiling fan unless it is listed for that job. A ceiling fan up to <b>70 pounds (32 kg)</b> may hang from a listed outlet box identified for the purpose. A box designed to support <b>more than 35 pounds (16 kg)</b> must be marked with the maximum weight it can hold. The box must be rigidly supported from a structural member of the building (Section 314.27(C)). A paddle-fan box for an existing ceiling uses a bar hanger that is placed between two joists and tightened.</p>
+        <div class="case"><b>Safety</b>If a box is not marked for the weight, do not hang a fan from it. Ask a qualified person to confirm the box is listed and marked for the load.</div>
+
+        <h4>Wet and damp locations</h4>
+        <div class="scroll"><table>
+          <thead><tr><th>Type</th><th>What it means</th><th>Examples from the module</th></tr></thead>
+          <tbody>
+            <tr><td>Wet</td><td>A location subject to saturation with water or other liquids</td><td>Places exposed to weather or water, washrooms, garages, interiors that might be hosed down, underground, and in concrete slabs or masonry touching the earth</td></tr>
+            <tr><td>Damp</td><td>A location subject to some moisture</td><td>Partially protected outdoor spots such as under canopies, marquees and roofed open porches. Some basements, some barns, cold storage warehouses.</td></tr>
+          </tbody>
+        </table></div>
+        <p>Boxes in wet locations must be listed for the use (Section 314.15). Boxes and fittings in damp or wet places must keep moisture from getting in and collecting. Nonconductive boxes are recommended with nonmetallic sheathed cable or nonmetallic conduit where occasional moisture is likely. Boxes with threaded hubs and gasketed covers normally keep water out, except for condensation inside.</p>
+        <p>All 15A and 20A, 125 to 250V receptacles in wet locations need a cover that is weatherproof whether or not the receptacle is in use (Sections 406.9(A) and (B)). Raintight or watertight equipment may satisfy the weatherproof requirement. <b>Drip-tight</b> boxes only deflect falling rain and are not waterproof. <b>Watertight</b> boxes use gaskets to keep water out from any angle.</p>
+
+        <h4>How many wires fit in a box</h4>
+        <p>NEC Table 314.16(A) lists the most conductors allowed in standard boxes, but only when the box has no fittings or devices in it. In real wiring, boxes hold things, and each one takes up room. Add up the conductor equivalents:</p>
+        <div class="scroll"><table>
+          <thead><tr><th>What is in the box</th><th>Counts as</th></tr></thead>
+          <tbody>
+            <tr><td>Each conductor</td><td>1</td></tr>
+            <tr><td>Each looped conductor over 12 inches (300 mm)</td><td>2</td></tr>
+            <tr><td>Each strap-mounted device (switch, duplex receptacle)</td><td>2</td></tr>
+            <tr><td>Each fixture stud or hickey</td><td>1</td></tr>
+            <tr><td>Up to four grounding conductors, all together</td><td>1</td></tr>
+            <tr><td>One or more cable clamps, all together</td><td>1</td></tr>
+          </tbody>
+        </table></div>
+        <p>A wire that runs through the box without a splice or tap counts as one conductor. A wire that enters, is spliced or connects to a terminal, and leaves counts as two. Wires that start and stop in the same box (pigtails) are not counted, and neither are grounding clips and screws, wire nuts, cable connectors held by locknuts, or prewired fixture wires. Add a &frac14; volume allowance for each grounding conductor over four. Raised device covers and extension rings (Figure 9) add room.</p>
+        <div class="case"><b>Worked example</b>A 3" &times; 2" &times; 3&frac12;" box holds eight No. 12 wires. Add a cable clamp (1) and a duplex receptacle (2): subtract three, leaving five. Add a ground wire and only four No. 12 wires may be used.</div>
+        <div class="case"><b>Worked example</b>Two No. 12 conductors enter a box that has one receptacle. That is 2 + 2 = 4 conductor equivalents. A No. 12 conductor needs 2.25 cubic inches (36.9 cm&sup3;), so 4 &times; 2.25 = 9.00 cubic inches (147.6 cm&sup3;). The closest box in Table 314.16(A) is a 3" &times; 2" &times; 2" box rated at 10.0 cubic inches (164 cm&sup3;). With four No. 12 conductors entering, the count is 6, so 6 &times; 2.25 = 13.5 cubic inches (221 cm&sup3;). A 3" &times; 2" &times; 2&frac34;" device box rated at 14.0 cubic inches (230 cm&sup3;) fits. Any larger box is also allowed.</div>
+
+        <h4>Installing outlet boxes</h4>
+        <p>Beyond box fill, the NEC has other requirements (Sections 314.15 through 314.30):</p>
+        <ul>
+          <li>The box must be listed for its use. A box in a wet location must be listed for wet locations.</li>
+          <li>It must have enough volume (Table 314.16(A)) and enough free space for the conductors (Table 314.16(B)).</li>
+          <li>Conductors entering boxes and fittings must be protected from abrasion.</li>
+          <li>Boxes must be installed and supported properly, and the finished job must be accessible for later repair or maintenance.</li>
+        </ul>
+        <p>Boxes in walls or ceilings of concrete, tile or other noncombustible material must not be set back more than &frac14; inch (6 mm) from the finished surface (Section 314.20). Gaps or damage around a box in drywall or plaster must be repaired so there are no gaps wider than &#8539; inch (3 mm) between the box and the wall material (Section 314.21). Repair before the faceplate goes on, with a noncombustible caulking or spackling compound.</p>
+        <p>Section 210.52 sets the receptacle layout for the main rooms of a dwelling. In most living spaces, no point along the floor line of a wall may be more than 6 feet (1.8 m) from a receptacle, so a 6-foot cord can reach one. Each wall space 2 feet (600 mm) or wider is treated by itself, and floor receptacles count only if they are within 18 inches (450 mm) of the wall. At least one receptacle is also required in each laundry area, near bathroom basins (within 3 feet, or 900 mm), outside the front and back (GFCI protected), on balconies, decks and porches reached from inside, in basements, garages, long hallways (10 feet or more), larger foyers (over 60 square feet), and where HVAC equipment needs service.</p>
+        <div class="scroll"><table>
+          <thead><tr><th>Height rule</th><th>What the module says</th></tr></thead>
+          <tbody>
+            <tr><td>Kitchen countertop</td><td>Receptacles not more than 20 inches (500 mm) above the countertop (Section 210.52(C)(3)). Not face up on countertops. Where allowed, not more than 12 inches (300 mm) below the top, or where the countertop sticks out more than 6 inches (150 mm) past its support.</td></tr>
+            <tr><td>Other heights</td><td>The NEC sets no general mounting height. Common practice is 15 inches (380 mm) from the floor to the bottom of the box, which homeowners in a survey preferred over the older 12 inches (300 mm) to the center. Heights are measured to the bottom of the box, so a chalk line is easy to follow.</td></tr>
+            <tr><td>Tile</td><td>Adjust the height so the receptacle sits completely in the tile or completely out of it.</td></tr>
+          </tbody>
+        </table></div>
+        <p>Always check the working drawings, written specifications and local codes first. People who use wheelchairs may need receptacles in specific places.</p>
+        <div class="case"><b>Safety</b>This guide is for learning. Box fill and receptacle rules are for trained people working under supervision. When you are not sure whether a box is big enough, stop and ask a qualified person.</div>
+      </div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">B</span><h3>Study review points</h3></div>
+      <ul class="points" data-points="1"></ul>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">C</span><h3>Trade-term cards</h3></div>
+      <div class="deck" data-cards="1"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">D</span><h3>Ticket out the door</h3></div>
+      <div class="ticket" data-quiz="1"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">E</span><h3>Talk it over</h3></div>
+      <div class="talk" data-talk="1"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">F</span><h3>Practice questions</h3><span class="time">about 12 min</span></div>
+      <div data-practice="1"></div>
+    </div>
+  </section>
+
+  <!-- SECTION 2 -->
+  <section class="sec" id="s2" aria-labelledby="s2-h">
+    <div class="sec-head">
+      <span class="eyebrow">Module Section 2 of 2</span>
+      <h2 id="s2-h">Pull and Junction Boxes</h2>
+      <p class="obj">By the end of this section your student can size a pull or junction box for a straight pull, say how an angle pull is different, and explain where these boxes go and how they are installed.</p>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">A</span><h3>Read it together</h3><span class="time">about 10 min</span></div>
+      <div class="prose">
+        <p class="big">Pull boxes and junction boxes are the bigger boxes in a wiring run. This section is about how to size them so the wires fit, and how to place them so the job is easier and safer.</p>
+
+        <h4>What they are</h4>
+        <p>A <b>junction box</b> is an enclosure where one or more raceways or cables enter, and where the conductors can be, or are, spliced. A <b>pull box</b> is a sheet metal box-like enclosure used in conduit runs to make pulling cable easier in long runs, to hold conduit support bushings for the weight of long riser cables, or to allow turns in multiple conduit runs.</p>
+
+        <h4>Sizing pull and junction boxes</h4>
+        <p>Pull boxes should be as large as possible. Workers need room for both hands, and with big wire they need room for their arms to feed it. Section 314.28 sets the minimum size. These rules apply to raceways and cables with conductors of <b>No. 4 or larger</b>:</p>
+        <div class="scroll"><table>
+          <thead><tr><th>Kind of pull</th><th>The rule</th></tr></thead>
+          <tbody>
+            <tr><td>Straight pull</td><td>The box length is at least <b>8 times</b> the trade size (or metric designator, MD) of the largest raceway.</td></tr>
+            <tr><td>Angle or U pull</td><td>The distance from each raceway entry to the opposite wall is at least <b>6 times</b> the trade size of the largest raceway in a row. Add the trade sizes of all other entries in the same row on the same wall. Work out each row separately and use the row that gives the largest distance.</td></tr>
+            <tr><td>Angle or U pull, between entries</td><td>The distance between raceway entries enclosing the same conductor is at least 6 times the trade size of the larger raceway.</td></tr>
+            <tr><td>Cables</td><td>When a cable is changed into raceway size, use the smallest raceway trade size needed for the number and size of conductors in the cable.</td></tr>
+          </tbody>
+        </table></div>
+        <p>The width of the box only needs to be large enough to fit the locknuts and bushings on the conduits. The depth only needs to be enough for the locknuts and bushings to go on properly.</p>
+        <div class="case"><b>Worked example: straight pull</b>The largest conduit is trade size 4" (MD 103). Length = trade size &times; 8 = 4" &times; 8 = <b>32 inches</b> (824 mm). Always use the largest conduit in the group.</div>
+        <div class="case"><b>Worked example: angle pull</b>The largest conduit is 4" (MD 103), with 3" and 2" conduits also entering on that wall. L1 = 6 &times; 4" + (3" + 2") = <b>29 inches</b> (749 mm). The same runs are on the next wall, so L2 is also 29 inches (749 mm). The distance between entries for the same conductor is 6 &times; 4" = 24 inches (618 mm). A 6-inch-deep (152 mm) box is enough.</div>
+        <div class="case"><b>Another straight pull</b>Two raceways, 3 inches and 2 inches. Use the largest: 3" &times; 8 = 24 inches. The box must be at least 24 inches long.</div>
+
+        <h4>Installing pull and junction boxes</h4>
+        <ul>
+          <li><b>Do not make very long pulls.</b> Pull boxes put at convenient spots take strain off the conductors. They save time and hard work, remove bends and elbows, and avoid fishing from both ends of a run.</li>
+          <li><b>Put them where people can work.</b> A pull box set too high forces the electrician onto a ladder and leaves no room for the loop of wire or the pulling tools. Unless the drawings or the engineer say otherwise, chest height lets workers stand on the floor.</li>
+          <li><b>Junction boxes must be readily accessible.</b> A person has to be able to reach the conductors without removing plaster, wall covering or any other part of the building.</li>
+          <li><b>Fasten them securely</b> on walls or ceilings, or support them properly. Cover every unused opening, such as knockouts.</li>
+          <li><b>Plan the knockouts.</b> Some factory boxes have concentric knockouts. Often a box must be custom built, or knockouts cut on the job. For large pull boxes and troughs, shop drawings should show every knockout before the box is built.</li>
+        </ul>
+        <div class="case"><b>Tips from the module</b>A pull box counts as the end of a run for the 360-degree bend rule. Metal boxes must be grounded to the circuit grounding system. Label every junction cover with the circuit number, the panel it came from and where it goes. A knockout punch kit can make a hole where a box has no precut knockout.</div>
+        <div class="case"><b>Safety</b>The NEC is for trained people working under proper guidance. If you are not sure a box is the right size or is grounded correctly, stop and ask a qualified person.</div>
+      </div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">B</span><h3>Study review points</h3></div>
+      <ul class="points" data-points="2"></ul>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">C</span><h3>Trade-term cards</h3></div>
+      <div class="deck" data-cards="2"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">D</span><h3>Ticket out the door</h3></div>
+      <div class="ticket" data-quiz="2"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">E</span><h3>Talk it over</h3></div>
+      <div class="talk" data-talk="2"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">F</span><h3>Practice questions</h3><span class="time">about 5 min</span></div>
+      <div data-practice="2"></div>
+    </div>
+  </section>
+
+  <section class="final" id="review" aria-labelledby="fin-h">
+    <span class="eyebrow">After both sections</span>
+    <h2 id="fin-h">Can your student explain it?</h2>
+    <p class="lead">The goal is not perfect wording. The goal is accurate understanding and good judgment. Tick each one when your student can explain it without looking at the page.</p>
+    <ul class="points" id="final-points"></ul>
+    <p class="note">Trade terms are placed with the section where each is taught, so a few official terms sit in a different section than they are listed in the textbook. Cards marked "Key term" are important words from the module that are not on its official trade-term list. The practice questions come from the handbook's Section Review and Module Review. The Section Review answers follow the module's own key. The module does not print a Module Review key, so those answers follow the publisher's lesson plan key. The textbook-style versions are written in the book's style and vocabulary, not copied word for word, so check the handbook itself for the exact wording. This guide is a plain-language companion, not a copy of the textbook. For real work, use the current standards, your employer's procedures and your instructor's directions. Draft for instructor review.</p>
+  </section>
+
+</div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><strong>Mr. Ellis CTE</strong> · East Valley Institute of Technology (EVIT), Mesa, Arizona · Your Future, Your Way</p>
+    <p>Based on NCCER Electrical Level 1 (2020 edition), Module 26106-20, Device Boxes.</p>
+    <p>Aim for perfection, take what you get.</p>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var SEC = { 1: `Outlet Boxes`, 2: `Pull and Junction Boxes` };
+
+  var POINTS = {
+    1: [
+      `<b>Every box</b> must be sized, installed and supported to meet the current NEC. The NEC limits the conductors, fittings and devices allowed in each box.`,
+      `<b>Box types:</b> pressed steel (knockouts), cast iron, aluminum or brass (threaded hubs), and nonmetallic. Octagon, round, square, device, handy and masonry boxes each have their own uses.`,
+      `<b>Square boxes</b> come in 4 inch and 4¹¹⁄₁₆ inch sizes. A <b>handy box</b> (utility box) is a single-gang box with its mounting ears on the inside.`,
+      `<b>Boxes that hold up lights or fans</b> must be listed for it. A ceiling fan up to 70 lbs may use a listed, marked box. A box rated for more than 35 lbs must be marked with its maximum weight.`,
+      `<b>Wet locations</b> are saturated with water or other liquids. <b>Damp locations</b> have some moisture, such as under a roofed open porch. Boxes in wet locations must be listed for it.`,
+      `<b>Box fill:</b> each conductor counts 1. A looped conductor over 12 inches counts 2. Each strap-mounted device counts 2. Cable clamps (all together) count 1, and up to four grounding conductors (all together) count 1. Fixture studs and hickeys count 1 each.`,
+      `<b>Raised device covers and extension rings</b> add room to a box. Wire nuts, grounding clips and screws, and pigtails that start and stop in the box are not counted.`,
+      `<b>Installing:</b> the box must be listed for its use, have enough volume, protect wires from abrasion, be supported properly and stay accessible. Boxes are covered in NEC Sections 314.15 through 314.30.`
+    ],
+    2: [
+      `<b>A junction box</b> is where raceways or cables enter and conductors can be spliced. <b>A pull box</b> makes pulling cable easier in long runs.`,
+      `<b>Straight pull:</b> the box length must be at least 8 times the trade size of the largest raceway. Example: a 3 inch raceway needs a box at least 24 inches long.`,
+      `<b>Angle or U pull:</b> at least 6 times the largest raceway in a row, plus the other raceways in that row on the same wall. These rules apply to conductors No. 4 or larger (Section 314.28).`,
+      `<b>Depth</b> only needs to be enough for locknuts and bushings. Width only needs to fit the locknuts and bushings on all the conduits.`,
+      `<b>Placement:</b> put pull boxes where workers can stand and work, such as chest height. Do not make very long pulls.`,
+      `<b>Junction boxes</b> must be readily accessible, fastened securely, and have all unused openings covered. Metal boxes must be grounded.`
+    ]
+  };
+
+  // k = "o" for an official NCCER trade term, "k" for a key term from the module that is not on the official list.
+  var CARDS = {
+    1: [
+      { k: "o", t: `Connector`, plain: `The part that fastens conduit or cable to a box or cabinet.`, book: `Device used to physically connect conduit or cable to an outlet box, cabinet, or other enclosure.`, ask: `Why might a box ordered with knockouts only cost extra time on the job?` },
+      { k: "o", t: `Explosion-proof`, plain: `Built to hold an explosion inside without causing a fire or explosion outside.`, book: `Designed and constructed to withstand an internal explosion without creating an external explosion or fire.`, ask: `Where might an explosion-proof box be needed?` },
+      { k: "o", t: `Handy box`, plain: `A small single-gang box, also called a utility box. It mounts on the surface and its ears are inside.`, book: `Single-gang outlet box used for surface mounting to enclose receptacles or wall switches on concrete or concrete block construction of industrial and commercial buildings; nongangable; also made for recessed mounting; also known as a utility box.`, ask: `Why does a handy box hold fewer wires than a larger box?` },
+      { k: "o", t: `Outlet box`, plain: `A box in a wiring system where current is taken out to power something.`, book: `A metallic or nonmetallic box installed in an electrical wiring system from which current is taken to supply some apparatus or device.`, ask: `What are the three main categories of outlet box?` },
+      { k: "o", t: `Raintight`, plain: `Built so a beating rain will not get water inside, under test conditions.`, book: `Constructed or protected so that exposure to a beating rain will not result in the entrance of water under specified test conditions.`, ask: `How is raintight different from watertight?` },
+      { k: "o", t: `Watertight`, plain: `Built so moisture will not get in, under test conditions.`, book: `Constructed so that moisture will not enter the enclosure under specified test conditions.`, ask: `What do watertight boxes use to keep water out from any angle?` },
+      { k: "o", t: `Weatherproof`, plain: `Built or protected so weather does not stop the equipment from working.`, book: `Constructed or protected so that exposure to the weather will not interfere with successful operation.`, ask: `Which receptacles in wet locations need a weatherproof cover?` },
+      { k: "k", t: `Device box`, plain: `A box made to hold switches and receptacles, usually mounted flush in the wall.`, book: `Houses switches and receptacles. Designed for flush mounting, mainly in residential and some commercial applications.`, ask: `Can you tell a device box from a junction box?` },
+      { k: "k", t: `Masonry box`, plain: `A box for concrete slab work. A sleeve with ears is nailed to the deck, then a plate goes on.`, book: `Special boxes used in flat-slab construction, consisting of a sleeve with external ears and a plate attached after the sleeve is nailed to the deck.`, ask: `Why pick a box tall enough that the knockouts sit above the rebar?` },
+      { k: "k", t: `Wet location`, plain: `A place where water or other liquids can soak things.`, book: `Any location subject to saturation with water or other liquids, such as locations exposed to weather or water, washrooms, garages, and interiors that might be hosed down.`, ask: `Is a slab that touches the earth wet or damp?` },
+      { k: "k", t: `Damp location`, plain: `A place with some moisture, like under a roofed open porch.`, book: `A location subject to some degree of moisture, including partially protected outdoor locations such as under canopies, marquees, and roofed open porches.`, ask: `Name one indoor place that might be damp.` }
+    ],
+    2: [
+      { k: "o", t: `Junction box`, plain: `A box where wires or cables come in and can be joined.`, book: `An enclosure where one or more raceways or cables enter, and in which electrical conductors can be, or are, spliced.`, ask: `What must a person be able to do without removing part of the building?` },
+      { k: "o", t: `Pull box`, plain: `A metal box in a conduit run that makes pulling long wires easier.`, book: `A sheet metal box-like enclosure used in conduit runs to facilitate the pulling of cables from point to point in long runs, or to provide for the installation of conduit support bushings needed to support the weight of long riser cables, or to provide for turns in multiple conduit runs.`, ask: `Why might you add a pull box in the middle of a long run?` },
+      { k: "k", t: `Straight pull`, plain: `Wires go straight in one side and out the opposite side.`, book: `A pull where the box length must be at least eight times the trade size of the largest raceway [Section 314.28(A)(1)].`, ask: `What is the minimum box length for a 3 inch raceway?` },
+      { k: "k", t: `Angle or U pull`, plain: `Wires enter on one side and leave on another side, or turn back the way they came.`, book: `A pull where the distance from each raceway entry to the opposite wall is at least six times the trade size of the largest raceway in a row, plus the other entries in that row.`, ask: `Which number do you multiply by for an angle pull?` }
+    ]
+  };
+
+  // a = index of the right option
+  var QUIZ = {
+    1: [
+      { q: `What is a receptacle usually housed in?`, o: [`A pull box`, `A device box`, `A round box`], a: 1, why: `Device boxes house switches and receptacles.` },
+      { q: `A ceiling fan up to what weight may hang from a listed, marked box?`, o: [`35 pounds`, `70 pounds`, `100 pounds`], a: 1, why: `The module says a fan that does not exceed 70 lbs (32 kg) may be supported by a listed box identified for the use.` },
+      { q: `A box designed to support more than 35 pounds must be:`, o: [`Painted red`, `Marked with its maximum weight`, `Set in concrete`], a: 1, why: `Boxes designed to support more than 35 lbs (16 kg) must be marked with the maximum weight.` },
+      { q: `A box set under a roofed open porch is what kind of location?`, o: [`Dry`, `Damp`, `Wet`], a: 1, why: `Damp locations include partially protected outdoor spots such as roofed open porches.` },
+      { q: `How many conductors does a strap-mounted device count as?`, o: [`One`, `Two`, `Four`], a: 1, why: `Each strap-mounted device, such as a switch or duplex receptacle, counts as two.` },
+      { q: `A box holds eight No. 12 wires and has a cable clamp and a duplex receptacle. How many No. 12 wires fit now?`, o: [`Three`, `Five`, `Seven`], a: 1, why: `The clamp counts 1 and the receptacle counts 2, so you subtract three from eight, leaving five.` },
+      { q: `Which of these adds room to an outlet box?`, o: [`A raised device cover`, `A fixture stud`, `A strap-mounted switch`], a: 0, why: `Raised device covers and extension rings add volume. Fixture studs and devices take up room.` },
+      { q: `A box in a wet location must be:`, o: [`Installed upside down`, `Plastic`, `Listed for the application`], a: 2, why: `Boxes in wet locations must be listed for that use (Section 314.15).` }
+    ],
+    2: [
+      { q: `A straight pull has one 3 inch raceway and one 2 inch raceway. How long must the box be?`, o: [`16 inches`, `24 inches`, `32 inches`], a: 1, why: `Use the largest raceway: 3 inches times 8 is 24 inches.` },
+      { q: `For a straight pull, the box length is at least:`, o: [`Four times the trade size`, `Six times the trade size`, `Eight times the trade size`], a: 2, why: `For a straight pull the length is at least eight times the trade size of the largest raceway.` },
+      { q: `For an angle pull, the distance to the opposite wall is at least:`, o: [`Two times`, `Six times`, `Twelve times`], a: 1, why: `For an angle or U pull it is at least six times the trade size of the largest raceway in a row, plus the other entries in that row.` },
+      { q: `Where should a pull box go, if possible?`, o: [`High on the wall for security`, `Where it is easy to work when pulling wire`, `Behind a wall covering`], a: 1, why: `Place it where workers can stand and work with room for the wire loop and tools.` },
+      { q: `What does a junction box need to be?`, o: [`Hidden behind plaster`, `Readily accessible`, `Painted to match the wall`], a: 1, why: `A person must be able to reach the conductors without removing plaster, wall covering or any part of the building.` },
+      { q: `What should you do with unused knockouts in a junction box?`, o: [`Leave them open for air`, `Securely cover them`, `Remove all of them`], a: 1, why: `All unused openings, such as knockouts, must be securely covered.` }
+    ]
+  };
+
+  var TALK = {
+    1: {
+      qs: [`Why does the NEC limit how many wires go in a box?`, `Why might a worker pick a box with built-in clamps for Type AC cable?`, `Walk through your own home. Where would you expect to find a device box, a junction box and a box in a damp or wet place?`],
+      scn: [{
+        t: `"This box looks big enough"`,
+        s: `Someone is putting in a switch and a receptacle and says the box "looks big enough." How can they tell for sure?`,
+        g: [`Count the conductors, the devices and the clamps, using the box-fill rules.`, `Each conductor counts 1, each strap-mounted device counts 2, cable clamps together count 1, and up to four grounding conductors together count 1.`, `Compare the total volume to the box's rated volume in the NEC table. Use a bigger box if it does not fit.`]
+      }, {
+        t: `"Just hang the fan from the old box"`,
+        s: `A homeowner wants to hang a new ceiling fan from the old light box. What should you ask first?`,
+        g: [`Is the box listed and marked for a ceiling fan, and for how much weight?`, `A fan up to 70 lbs may be supported by a listed box identified for the use. A box designed for more than 35 lbs must be marked with its maximum weight.`, `The box must be rigidly supported from a structural member of the building.`]
+      }, {
+        t: `"It's under a porch roof"`,
+        s: `A box is going on an open porch that has a roof. Is it a wet, damp or dry location, and why does that matter?`,
+        g: [`A roofed open porch is a partially protected outdoor spot, so the module calls it a damp location.`, `Boxes in damp or wet places must keep moisture out. Boxes in wet locations must be listed for it.`, `Receptacles in wet locations need weatherproof covers whether or not they are in use.`]
+      }],
+      parent: `Ask your student to explain what a box holds, and to tell you in their own words why you cannot just squeeze more wires in.`
+    },
+    2: {
+      qs: [`Why would a long run of heavy wire be easier with a pull box in the middle?`, `Why should a junction box never be covered up behind a finished wall?`],
+      scn: [{
+        t: `"How big does the pull box need to be?"`,
+        s: `Two raceways, one 3 inch and one 2 inch, go straight through a pull box carrying No. 4 wire. How long must the box be?`,
+        g: [`Use the largest raceway: 3 inches.`, `For a straight pull, multiply by 8: 3 inches times 8 is 24 inches.`, `The width only needs to be big enough for the locknuts and bushings on the conduits.`]
+      }, {
+        t: `"Too high to work"`,
+        s: `A pull box is going near the ceiling, high on the wall. What problems could that cause?`,
+        g: [`The electrician has to stand on a ladder while feeding wire.`, `There is no room to support the weight of the wire loop or to use the pulling tools.`, `Unless the drawings or engineer say otherwise, chest height lets a worker stand on the floor.`]
+      }],
+      parent: `Ask your student to explain, with a 3 inch and a 2 inch raceway, how they find the length of a straight pull box.`
+    }
+  };
+
+  var FINAL = [
+    `I can name the main types of boxes and say what each is used for.`,
+    `I can explain how a handy box, a device box and a masonry box differ.`,
+    `I can say how heavy a ceiling fan may be on a listed box, and what a box rated for more than 35 pounds must show.`,
+    `I can tell a wet location from a damp location, and say why that matters for the box and the cover.`,
+    `I can count box fill: conductors, looped wires, devices, clamps, grounds and studs.`,
+    `I can show how to size a box for a few wires using volume in cubic inches.`,
+    `I can say why boxes must be listed, supported, accessible and set flush with the wall surface.`,
+    `I can find the length of a straight pull box, and say how an angle pull is different.`,
+    `I can explain where pull boxes and junction boxes should go and what must be done with them.`
+  ];
+
+  // Practice pairs. pq/po = plain English. tq/to = textbook style. a = index of the right answer (matches the answer key).
+  // Both versions keep the same option order. br = [[what you might say, what the textbook says], ...].
+  var PRACTICE = {
+    1: [
+      { src: `Section Review · Q1 (1.1.3)`, a: 3,
+        pq: `What kind of box usually holds a receptacle?`,
+        po: [`Pull box`, `Round box`, `Junction box`, `Device box`],
+        tq: `A receptacle is usually housed in a(n) _____.`,
+        to: [`pull box`, `round box`, `junction box`, `device box`],
+        why: `Device boxes house switches and receptacles.`,
+        br: [[`What kind of box usually holds`, `is usually housed in`]] },
+      { src: `Section Review · Q2 (1.2.0)`, a: 1,
+        pq: `A box can hold eight No. 12 wires. It has a cable clamp, a switch and a looped wire that is 13 inches long. How many No. 12 wires can still go in?`,
+        po: [`Two`, `Three`, `Four`, `Five`],
+        tq: `If a box can hold eight No. 12 conductors and contains a cable clamp, a switch, and a looped conductor that is 13" (330 mm) long, the final number of No. 12 conductors allowed in this box is _____.`,
+        to: [`two`, `three`, `four`, `five`],
+        why: `Subtract from eight: the clamp is 1, the switch is 2, and the looped conductor over 12 inches is 2. That is 8 minus 1 minus 2 minus 2, or 3.`,
+        br: [[`how many ... can still go in`, `the final number ... allowed in this box`]] },
+      { src: `Section Review · Q3 (1.3.0)`, a: 3,
+        pq: `What must be true of a box in a wet location?`,
+        po: [`It is installed upside down`, `It is plastic`, `It is sealed with caulk`, `It is listed for the application`],
+        tq: `A box installed in a wet location must be _____.`,
+        to: [`installed upside down`, `plastic`, `sealed with caulk`, `listed for the application`],
+        why: `The first requirement the module gives for installing boxes is that the box be listed for the application. A box in a wet location must be listed for that use.`,
+        br: [[`What must be true of`, `must be`]] },
+      { src: `Module Review · Q1 (1.1.0)`, a: 1,
+        pq: `What is the most weight the NEC allows when a ceiling fan is mounted straight to an approved box that is not marked?`,
+        po: [`25 pounds`, `35 pounds`, `45 pounds`, `55 pounds`],
+        tq: `The maximum weight allowed by the NEC when ceiling fans are mounted directly to an approved, unmarked outlet box is _____.`,
+        to: [`25 pounds`, `35 pounds`, `45 pounds`, `55 pounds`],
+        why: `The module says a box designed to support more than 35 lbs must be marked with its maximum weight, so an unmarked box is limited to 35 pounds. The answer follows the lesson plan key, because the module's own text does not say this in one sentence.`,
+        br: [[`most weight ... allows`, `maximum weight allowed`], [`straight to`, `directly to`]] },
+      { src: `Module Review · Q2 (1.1.2)`, a: 0,
+        pq: `Square metal boxes come in 4 inches and which other size?`,
+        po: [`4¹¹⁄₁₆ inches`, `5 inches`, `5¼ inches`, `6 inches`],
+        tq: `Square metal boxes are available in sizes of 4" and _____.`,
+        to: [`4¹¹⁄₁₆"`, `5"`, `5¼"`, `6"`],
+        why: `Square boxes are typically 4 inches (100 mm) and 4¹¹⁄₁₆ inches (120 mm).`,
+        br: [[`come in 4 inches and which other size`, `are available in sizes of 4" and`]] },
+      { src: `Module Review · Q3 (1.1.5)`, a: 2,
+        pq: `What kind of location is a box under a roofed open porch?`,
+        po: [`Dry location`, `Wet location`, `Damp location`, `Weatherproof location`],
+        tq: `A box installed under a roofed open porch is considered a _____.`,
+        to: [`dry location`, `wet location`, `damp location`, `weatherproof location`],
+        why: `Damp locations include partially protected outdoor locations such as under canopies, marquees and roofed open porches.`,
+        br: [[`What kind of location is`, `is considered a`]] },
+      { src: `Module Review · Q4 (1.2.0)`, a: 1,
+        pq: `How many conductors do you subtract for each strap-mounted device in a device box?`,
+        po: [`One`, `Two`, `Three`, `Four`],
+        tq: `How many conductor(s) must be deducted for each strap-mounted device in a device box?`,
+        to: [`One`, `Two`, `Three`, `Four`],
+        why: `Each strap-mounted device, such as a switch or duplex receptacle, takes two conductors out of the total.`,
+        br: [[`subtract`, `must be deducted`]] },
+      { src: `Module Review · Q5 (1.2.0)`, a: 3,
+        pq: `Which of these can make an outlet box hold more?`,
+        po: [`Fixture studs`, `Strap-mounted devices`, `Wire nuts`, `Raised device covers`],
+        tq: `The capacity of an outlet box can be increased by using _____.`,
+        to: [`fixture studs`, `strap-mounted devices`, `wire nuts`, `raised device covers`],
+        why: `Raised covers and extension rings add volume (Figure 9). Fixture studs and devices take room away. Wire nuts do not change the count.`,
+        br: [[`can make an outlet box hold more`, `can be increased`]] },
+      { src: `Module Review · Q6 (1.2.0)`, a: 1,
+        pq: `A wire shorter than 12 inches that runs through a box counts as how many conductors?`,
+        po: [`0`, `1`, `2`, `12`],
+        tq: `A conductor under 12" (300 mm) long running through a box counts as the conductor equivalent of _____.`,
+        to: [`0`, `1`, `2`, `12`],
+        why: `A wire that passes through without a splice counts as one. Only a looped conductor over 12 inches counts as two.`,
+        br: [[`shorter than 12 inches that runs through`, `under 12" long running through`]] },
+      { src: `Module Review · Q7 (1.2.0)`, a: 0,
+        pq: `Four equipment grounding conductors are in a box. How many conductors do you subtract from the total?`,
+        po: [`1`, `2`, `3`, `4`],
+        tq: `If there are four equipment grounding conductors in a box, you must deduct _____ conductor(s) from the total allowed.`,
+        to: [`1`, `2`, `3`, `4`],
+        why: `Up to four grounding conductors together are counted as one.`,
+        br: [[`subtract`, `must deduct`]] },
+      { src: `Module Review · Q8 (1.3.0)`, a: 1,
+        pq: `Which NEC sections cover installing boxes?`,
+        po: [`Sections 314.1 through 314.4`, `Sections 314.15 through 314.30`, `Sections 314.40 through 314.44`, `Sections 314.70 through 314.72`],
+        tq: `Box installations are covered in _____.`,
+        to: [`NEC Sections 314.1 through 314.4`, `NEC Sections 314.15 through 314.30`, `NEC Sections 314.40 through 314.44`, `NEC Sections 314.70 through 314.72`],
+        why: `The module sends you to NEC Sections 314.15 through 314.30 for the details on installing boxes.`,
+        br: [[`Which NEC sections cover installing boxes`, `Box installations are covered in`]] }
+    ],
+    2: [
+      { src: `Section Review · Q1 (2.1.0)`, a: 1,
+        pq: `In a straight pull, one raceway is 3 inches and one is 2 inches. How long must the box be?`,
+        po: [`16 inches`, `24 inches`, `26 inches`, `32 inches`],
+        tq: `A straight pull contains two raceways. One of the raceways has a trade size of 3" and one has a trade size of 2". The length of the box must be _____.`,
+        to: [`16"`, `24"`, `26"`, `32"`],
+        why: `Use the largest trade size: 3 inches times 8 [Section 314.28(A)(1)] is 24 inches.`,
+        br: [[`one raceway is 3 inches and one is 2 inches`, `One ... has a trade size of 3" and one ... of 2"`]] },
+      { src: `Section Review · Q2 (2.2.0)`, a: 1,
+        pq: `Where should pull boxes go, if it is possible?`,
+        po: [`High on the wall for security`, `Where it is easy to work when pulling conductors`, `Behind wall coverings so they look neat`, `With extra knockouts left open for air`],
+        tq: `If possible, pull boxes should be installed _____.`,
+        to: [`high on the wall for security`, `at a height/location for ease when pulling conductors`, `behind wall coverings for a neater appearance`, `with extra knockouts left open for ventilation`],
+        why: `Install pull boxes where electricians can work easily. Too high a box forces work from a ladder with no room for the wire loop and tools.`,
+        br: [[`Where should ... go`, `should be installed`]] },
+      { src: `Module Review · Q9 (2.1.0)`, a: 1,
+        pq: `For a straight pull, the biggest raceway is 3 inches. What is the smallest box allowed?`,
+        po: [`20 inches`, `24 inches`, `30 inches`, `36 inches`],
+        tq: `If the largest trade diameter of a raceway entering a pull box is 3", and it is a straight pull, the minimum size box allowed is _____.`,
+        to: [`20"`, `24"`, `30"`, `36"`],
+        why: `3 inches times 8 is 24 inches.`,
+        br: [[`the biggest raceway`, `the largest trade diameter of a raceway entering a pull box`]] },
+      { src: `Module Review · Q10 (2.1.0)`, a: 0,
+        pq: `A pull box has conduit runs entering at right angles. How deep must it be?`,
+        po: [`Just deep enough for the locknuts and bushings`, `Eight times the diameter of the smallest conduit`, `Four times the diameter of the largest conduit`, `Six times the diameter of the smallest conduit`],
+        tq: `The depth of a pull box with conduit runs entering at right angles _____.`,
+        to: [`need only be deep enough to permit the proper installation of locknuts and bushings`, `must be eight times the diameter of the smallest conduit`, `must be four times the diameter of the largest conduit`, `must be six times the diameter of the smallest conduit`],
+        why: `The depth only needs to be enough for locknuts and bushings to go on properly. In the module's example a 6 inch deep box is enough.`,
+        br: [[`How deep must it be`, `The depth ... need only be`]] }
+    ]
+  };
+
+  function el(tag, cls, text) { var n = document.createElement(tag); if (cls) n.className = cls; if (text != null) n.textContent = text; return n; }
+
+  function buildPoints(ul, list, prefix) {
+    list.forEach(function (html, i) {
+      var li = el("li");
+      var label = el("label");
+      var input = document.createElement("input");
+      input.type = "checkbox";
+      input.id = prefix + "-" + i;
+      var span = el("span");
+      span.innerHTML = html; // static text written in this file
+      label.appendChild(input); label.appendChild(span);
+      li.appendChild(label); ul.appendChild(li);
+    });
+  }
+
+  function field(label, text) {
+    var d = el("span");
+    d.appendChild(el("span", "label", label));
+    d.appendChild(document.createTextNode(text));
+    return d;
+  }
+  function buildCards(host, n) {
+    CARDS[n].forEach(function (item) {
+      var b = el("button", "card");
+      b.type = "button";
+      b.setAttribute("aria-pressed", "false");
+      b.setAttribute("aria-label", item.t + ". Press to flip the card.");
+      var inner = el("span", "card-inner");
+      var f = el("span", "face front" + (item.k === "k" ? " key" : ""));
+      f.appendChild(el("span", "strip", (item.k === "o" ? "NCCER trade term" : "Key term") + " · Section " + n));
+      f.appendChild(el("span", "term", item.t));
+      f.appendChild(el("span", "hint", "TAP TO FLIP"));
+      var k = el("span", "face back");
+      k.appendChild(el("span", "strip", item.t));
+      var body = el("span", "body");
+      body.appendChild(field("In everyday words", item.plain));
+      body.appendChild(field("From the module", item.book));
+      var ask = field("Ask your student", item.ask);
+      ask.className = "ask";
+      body.appendChild(ask);
+      k.appendChild(body);
+      inner.appendChild(f); inner.appendChild(k);
+      b.appendChild(inner);
+      b.addEventListener("click", function () { b.setAttribute("aria-pressed", b.getAttribute("aria-pressed") === "true" ? "false" : "true"); });
+      host.appendChild(b);
+    });
+  }
+
+  function buildQuiz(host, n) {
+    var list = QUIZ[n];
+    var answered = 0;
+    host.appendChild(el("p", "ticket-intro", "Pick the answer. You will see right away if it is correct. Nothing is saved or sent."));
+    var foot = el("div", "ticket-foot");
+    var done = el("p", null, "");
+    done.setAttribute("aria-live", "polite");
+    var retry = el("button", "btn", "Try again");
+    retry.type = "button";
+    retry.hidden = true;
+    foot.appendChild(done); foot.appendChild(retry);
+
+    list.forEach(function (item, qi) {
+      var fs = el("fieldset", "q");
+      fs.appendChild(el("legend", null, (qi + 1) + ". " + item.q));
+      var opts = el("div", "opts");
+      var fb = el("p", "fb");
+      fb.setAttribute("aria-live", "polite");
+      var btns = [];
+      item.o.forEach(function (text, oi) {
+        var b = el("button", "opt", text);
+        b.type = "button";
+        b.addEventListener("click", function () {
+          btns.forEach(function (x) { x.disabled = true; });
+          answered++;
+          if (oi === item.a) {
+            b.classList.add("right");
+            fb.innerHTML = "";
+            var good = el("b", null, "Correct. "); fb.appendChild(good); fb.appendChild(document.createTextNode(item.why));
+          } else {
+            b.classList.add("wrong");
+            btns[item.a].classList.add("right");
+            fb.innerHTML = "";
+            var no = el("b", null, "Not quite. "); fb.appendChild(no);
+            fb.appendChild(document.createTextNode("The answer is \"" + item.o[item.a] + "\". " + item.why));
+          }
+          if (answered === list.length) {
+            done.textContent = "Ticket finished. Reread any part of the section that felt shaky, then try again.";
+            retry.hidden = false;
+          }
+        });
+        btns.push(b); opts.appendChild(b);
+      });
+      fs.appendChild(opts); fs.appendChild(fb);
+      host.insertBefore(fs, null);
+      fs._reset = function () { btns.forEach(function (x) { x.disabled = false; x.className = "opt"; }); fb.textContent = ""; };
+    });
+    host.appendChild(foot);
+    retry.addEventListener("click", function () {
+      host.querySelectorAll("fieldset").forEach(function (f) { f._reset(); });
+      answered = 0; done.textContent = ""; retry.hidden = true;
+    });
+  }
+
+  function buildTalk(host, n) {
+    var t = TALK[n];
+    var ol = el("ol", "qs");
+    t.qs.forEach(function (q) { ol.appendChild(el("li", null, q)); });
+    host.appendChild(ol);
+    t.scn.forEach(function (s) {
+      var d = el("details", "scn");
+      d.appendChild(el("summary", null, "Scenario: " + s.t));
+      d.appendChild(el("p", "setup", s.s));
+      var g = el("div", "good");
+      g.appendChild(el("b", null, "A good answer includes"));
+      var ul = el("ul");
+      s.g.forEach(function (x) { ul.appendChild(el("li", null, x)); });
+      g.appendChild(ul); d.appendChild(g);
+      host.appendChild(d);
+    });
+    if (t.parent) {
+      var p = el("div", "parent");
+      p.appendChild(el("b", null, "Talk it over with your loved ones"));
+      p.appendChild(el("p", null, t.parent));
+      host.appendChild(p);
+    }
+  }
+
+
+  function ask(label, cls, q, opts, correct, onAnswer) {
+    var box = el("div", "ask-block" + (cls ? " " + cls : ""));
+    box.appendChild(el("p", "step-label", label));
+    box.appendChild(el("p", "pr-q", q));
+    var wrap = el("div", "opts");
+    wrap.setAttribute("role", "group");
+    wrap.setAttribute("aria-label", q);
+    var fb = el("p", "fb");
+    fb.setAttribute("aria-live", "polite");
+    var btns = [];
+    opts.forEach(function (text, oi) {
+      var b = el("button", "opt", String.fromCharCode(65 + oi) + ".  " + text);
+      b.type = "button";
+      b.addEventListener("click", function () {
+        btns.forEach(function (x) { x.disabled = true; });
+        var ok = oi === correct;
+        b.classList.add(ok ? "right" : "wrong");
+        if (!ok) btns[correct].classList.add("right");
+        onAnswer(ok, fb, String.fromCharCode(65 + correct));
+      });
+      btns.push(b); wrap.appendChild(b);
+    });
+    box.appendChild(wrap); box.appendChild(fb);
+    box.reset = function () { btns.forEach(function (x) { x.disabled = false; x.className = "opt"; }); fb.textContent = ""; };
+    return box;
+  }
+  function say(fb, lead, text) {
+    fb.textContent = "";
+    fb.appendChild(el("b", null, lead + " "));
+    fb.appendChild(document.createTextNode(text));
+  }
+
+  function buildPractice(host, n) {
+    var list = PRACTICE[n];
+    host.appendChild(el("p", "pr-intro", "Test questions use the textbook's formal words. Answer each question in plain English first, then see the same question the way the book asks it. The \"Words to notice\" box shows how the two fit together. Nothing is saved or sent."));
+    var items = [];
+    list.forEach(function (item, i) {
+      var art = el("article", "pr");
+      var head = el("div", "pr-head");
+      head.appendChild(el("span", null, "Question " + (i + 1) + " of " + list.length));
+      head.appendChild(el("span", null, "Source: " + item.src));
+      art.appendChild(head);
+
+      var bridge = el("div", "bridge");
+      bridge.hidden = true;
+      bridge.appendChild(el("p", "step-label", "Words to notice"));
+      var ul = el("ul");
+      item.br.forEach(function (p) {
+        var li = el("li");
+        li.appendChild(el("span", "you", p[0]));
+        li.appendChild(el("span", "arrow", "→"));
+        li.appendChild(el("span", "pub", p[1]));
+        ul.appendChild(li);
+      });
+      bridge.appendChild(ul);
+
+      var b2 = ask("Step 2 · The same question in the textbook's words", "formal", item.tq, item.to, item.a, function (ok, fb, letter) {
+        if (ok) say(fb, "Correct.", "You just answered it in the textbook's voice.");
+        else say(fb, "Not quite.", "The answer is " + letter + ". Compare it with your plain-English answer above.");
+        bridge.hidden = false;
+      });
+      b2.hidden = true;
+      var b1 = ask("Step 1 · In plain English", "", item.pq, item.po, item.a, function (ok, fb, letter) {
+        if (ok) say(fb, "Correct.", item.why);
+        else say(fb, "Not quite.", "The answer is " + letter + ". " + item.why);
+        b2.hidden = false;
+      });
+      art.appendChild(b1); art.appendChild(b2); art.appendChild(bridge);
+      host.appendChild(art);
+      items.push({ b1: b1, b2: b2, bridge: bridge });
+    });
+    var foot = el("div", "ticket-foot");
+    var retry = el("button", "btn", "Start this set over");
+    retry.type = "button";
+    retry.addEventListener("click", function () {
+      items.forEach(function (x) { x.b1.reset(); x.b2.reset(); x.b2.hidden = true; x.bridge.hidden = true; });
+    });
+    foot.appendChild(retry);
+    host.appendChild(foot);
+  }
+
+  [1, 2].forEach(function (n) {
+    buildPractice(document.querySelector('[data-practice="' + n + '"]'), n);
+    buildPoints(document.querySelector('[data-points="' + n + '"]'), POINTS[n], "s" + n);
+    buildCards(document.querySelector('[data-cards="' + n + '"]'), n);
+    buildQuiz(document.querySelector('[data-quiz="' + n + '"]'), n);
+    buildTalk(document.querySelector('[data-talk="' + n + '"]'), n);
+  });
+  buildPoints(document.getElementById("final-points"), FINAL, "fin");
+})();
+</script>
+
+</body></html>
+</body></html>

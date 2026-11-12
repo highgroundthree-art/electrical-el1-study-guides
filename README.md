@@ -53,5 +53,5 @@ The guides are plain-language companions to NCCER curriculum. They are not copie
 
 Maintained by Mr. Ellis, Electrical CTE Instructor, EVIT.
 
-## 8-Day Course tab
-`business-course.html` hosts the Start Your Own Business crash course (8 days, 5 hours each): the course lesson plan, the Team Build Project student packet, and eight 30-minute daily slide decks in `business-course/`. Aligned to ADE CTE Business Management (52.0201.00).
+## Financial Comprehension tab
+`financial-comprehension.html` hosts three tracks in `financial-comprehension/`: `personal/`, `business/` (8-day course, Team Build packet, 8 daily decks), and `entrepreneurship/`, each with a standards sheet, plus the Economic Education Standards sheet.

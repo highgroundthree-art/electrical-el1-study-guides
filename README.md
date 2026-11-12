@@ -32,6 +32,10 @@ Every module section follows the same six parts:
 
 `index.html` is the landing page that links to the finished guides.
 
+## Business tab
+
+`business.html` is the Business page. It holds the download link and steps for the Business Plan and Loan Assembly Guide (`Business_Plan_and_Loan_Assembly_Guide.docx`), a fillable Word file students complete and save as a PDF to turn in. Its content comes from SBA.gov guidance.
+
 ## Privacy
 
 - No student names, grades, or personal information appear in any guide.

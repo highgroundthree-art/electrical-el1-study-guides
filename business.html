@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Business Plan and Loan Assembly Guide | EVIT Electrical</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+:root{--bg:#EEF1F3;--surface:#fff;--ink:#14202B;--ink-soft:#46576A;--line:#C9D2DA;--band:#14202B;--band-ink:#F4F7F9;--accent:#C42B17;--caution:#F2B705;--caution-soft:#FFF3C4;--focus:#0B5FFF;
+--font-display:"Barlow Condensed","Arial Narrow",Impact,sans-serif;--font-body:"Barlow",system-ui,-apple-system,"Segoe UI",sans-serif;--font-mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace}
+@media (prefers-color-scheme:dark){:root{--bg:#0F171E;--surface:#18232D;--ink:#EAF0F4;--ink-soft:#A5B4C2;--line:#2E3E4C;--band:#0A1016;--accent:#FF5A44;--caution-soft:#3A3210;--focus:#6AA2FF}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font-body);font-size:17px;line-height:1.6}
+:focus-visible{outline:3px solid var(--focus);outline-offset:2px}
+.wrap{max-width:920px;margin-inline:auto;padding-inline:16px}
+h1,h2,h3{font-family:var(--font-display);text-transform:uppercase;letter-spacing:.03em;line-height:1.05;margin:0}
+.eyebrow{font-family:var(--font-mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase}
+.band{background:var(--band);color:var(--band-ink);padding-block:34px 28px;border-bottom:8px solid var(--caution)}
+.band .eyebrow{color:var(--caution)}
+.band h1{font-size:clamp(2.5rem,9vw,4.2rem);font-weight:700;margin-top:10px}
+.band p{margin:14px 0 0;max-width:52ch;color:#D5DEE5;font-size:1.08rem}
+.notice{background:var(--caution-soft);border:2px solid var(--caution);padding:16px 20px;margin-top:26px}
+.notice h2{font-size:1.25rem}.notice p{margin:4px 0 0}
+.how{margin-top:26px;background:var(--surface);border:1px solid var(--line);padding:18px 22px}
+.how h2{font-size:1.4rem;margin-bottom:6px}.how p{margin:0 0 8px;max-width:64ch}
+h2.list{font-size:clamp(1.8rem,5vw,2.4rem);margin:40px 0 14px;border-top:8px solid var(--ink);padding-top:16px}
+.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fill,minmax(min(100%,270px),1fr));list-style:none;margin:0;padding:0}
+.mod{background:var(--surface);border:2px solid var(--ink);display:flex;flex-direction:column;min-height:190px}
+.mod .tag{background:var(--accent);color:#fff;font-family:var(--font-mono);font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;padding:8px 14px}
+.mod.core .tag{background:#1B5FC9;color:#fff}
+.mod.el1 .tag{background:#F2B705;color:#14202B}
+.mod.el2 .tag{background:#E8710A;color:#14202B}
+.mod.soon .tag{background:var(--ink-soft);color:#fff}
+.key{display:flex;flex-wrap:wrap;gap:10px 18px;margin:0 0 16px;font-family:var(--font-mono);font-size:12px;letter-spacing:.06em;text-transform:uppercase}
+.key span::before{content:"";display:inline-block;width:12px;height:12px;margin-right:6px;vertical-align:-1px;border:1px solid var(--ink)}
+.key .k-core::before{background:#1B5FC9}.key .k-el1::before{background:#F2B705}.key .k-el2::before{background:#E8710A}
+.mod .body{padding:14px 16px;flex:1;display:flex;flex-direction:column;gap:8px}
+.mod h3{font-size:1.5rem;font-weight:700}
+.mod p{margin:0;font-size:.95rem;color:var(--ink-soft)}
+.mod a.go{margin-top:auto;font-weight:600;color:var(--ink);text-decoration:none;border:2px solid var(--ink);padding:8px 14px;border-radius:3px;text-align:center}
+.mod a.go:hover{background:var(--ink);color:var(--bg)}
+.mod .later{margin-top:auto;font-family:var(--font-mono);font-size:12px;color:var(--ink-soft)}
+footer{margin-top:48px;background:var(--band);color:#AEBBC7;padding-block:26px 30px;font-size:.92rem}
+footer strong{color:var(--band-ink)}footer p{margin:0 0 6px}
+
+.tabs{display:flex;gap:10px;margin-top:22px;flex-wrap:wrap}
+.tabs a{font-family:var(--font-mono);font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;color:var(--band-ink);border:2px solid var(--band-ink);padding:9px 16px;border-radius:3px}
+.tabs a:hover{background:var(--band-ink);color:var(--band)}
+.tabs a[aria-current="page"]{background:var(--caution);border-color:var(--caution);color:#14202B;font-weight:600}
+.steps{margin:0;padding-left:1.3em}.steps li{margin-bottom:8px;max-width:64ch}
+.dl{display:inline-block;margin-top:6px;font-weight:600;color:#fff;background:var(--accent);text-decoration:none;border:2px solid var(--accent);padding:12px 20px;border-radius:3px}
+.dl:hover{background:var(--ink);border-color:var(--ink)}
+.biz{background:var(--surface);border:2px solid var(--ink);margin-top:16px;display:flex;flex-direction:column}
+.biz .tag{background:#2E7D32;color:#fff;font-family:var(--font-mono);font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;padding:8px 14px}
+.biz .body{padding:14px 16px;display:flex;flex-direction:column;gap:8px}
+.biz h3{font-size:1.5rem;font-weight:700}.biz p{margin:0;font-size:.95rem;color:var(--ink-soft)}
+.biz a.go{align-self:flex-start;font-weight:600;color:var(--ink);text-decoration:none;border:2px solid var(--ink);padding:8px 14px;border-radius:3px}
+.biz a.go:hover{background:var(--ink);color:var(--bg)}
+</style>
+</head>
+<body>
+<header class="band">
+  <div class="wrap">
+    <span class="eyebrow">EVIT Electrical · Business</span>
+    <h1>Business Plan &amp;<br>Loan Assembly Guide</h1>
+    <p>Build a business plan and a loan package step by step, using guidance from the U.S. Small Business Administration (SBA.gov).</p>
+    <nav class="tabs" aria-label="Site sections">
+      <a href="index.html">Study Guides</a>
+      <a href="business.html" aria-current="page">Business</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="how" aria-labelledby="s1">
+    <h2 id="s1">Step 1: Download your guide</h2>
+    <p>This is a Word file. Download it to your computer. You do not need a Google account.</p>
+    <a class="dl" href="Business_Plan_and_Loan_Assembly_Guide.docx" download>Download the fillable guide (Word file)</a>
+  </section>
+
+  <section class="how" aria-labelledby="s2">
+    <h2 id="s2">Step 2: Complete it</h2>
+    <ol class="steps">
+      <li>Open the file in Word.</li>
+      <li>Read each step. The content comes from SBA.gov, the U.S. government's small business website.</li>
+      <li>Type your answers in the empty boxes. The boxes grow as you type.</li>
+      <li>Type your name, class, team business name, and date at the top of page 1.</li>
+    </ol>
+  </section>
+
+  <section class="how" aria-labelledby="s3">
+    <h2 id="s3">Step 3: Save as a PDF and turn it in</h2>
+    <ol class="steps">
+      <li>Click File, then Save As (or Print), and choose PDF.</li>
+      <li>Name the file with your last name and class period.</li>
+      <li>Submit the PDF for your grade. Your finished PDF is your assessment.</li>
+    </ol>
+  </section>
+
+  <section class="how" aria-labelledby="s4">
+    <h2 id="s4">Free expert help</h2>
+    <p>SCORE mentors give free business advice: <a href="https://www.sba.gov/score">sba.gov/score</a>. Lender Match finds SBA-approved lenders: <a href="https://www.sba.gov/loans/lender-match/">sba.gov/loans/lender-match</a>.</p>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><strong>Mr. Ellis CTE</strong> · East Valley Institute of Technology (EVIT), Mesa, Arizona · Your Future, Your Way</p>
+    <p>Aim for perfection, take what you get.</p>
+  </div>
+</footer>
+</body>
+</html>

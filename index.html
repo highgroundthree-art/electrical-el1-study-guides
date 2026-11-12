@@ -42,6 +42,20 @@ h2.list{font-size:clamp(1.8rem,5vw,2.4rem);margin:40px 0 14px;border-top:8px sol
 .mod .later{margin-top:auto;font-family:var(--font-mono);font-size:12px;color:var(--ink-soft)}
 footer{margin-top:48px;background:var(--band);color:#AEBBC7;padding-block:26px 30px;font-size:.92rem}
 footer strong{color:var(--band-ink)}footer p{margin:0 0 6px}
+
+.tabs{display:flex;gap:10px;margin-top:22px;flex-wrap:wrap}
+.tabs a{font-family:var(--font-mono);font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;color:var(--band-ink);border:2px solid var(--band-ink);padding:9px 16px;border-radius:3px}
+.tabs a:hover{background:var(--band-ink);color:var(--band)}
+.tabs a[aria-current="page"]{background:var(--caution);border-color:var(--caution);color:#14202B;font-weight:600}
+.steps{margin:0;padding-left:1.3em}.steps li{margin-bottom:8px;max-width:64ch}
+.dl{display:inline-block;margin-top:6px;font-weight:600;color:#fff;background:var(--accent);text-decoration:none;border:2px solid var(--accent);padding:12px 20px;border-radius:3px}
+.dl:hover{background:var(--ink);border-color:var(--ink)}
+.biz{background:var(--surface);border:2px solid var(--ink);margin-top:16px;display:flex;flex-direction:column}
+.biz .tag{background:#2E7D32;color:#fff;font-family:var(--font-mono);font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;padding:8px 14px}
+.biz .body{padding:14px 16px;display:flex;flex-direction:column;gap:8px}
+.biz h3{font-size:1.5rem;font-weight:700}.biz p{margin:0;font-size:.95rem;color:var(--ink-soft)}
+.biz a.go{align-self:flex-start;font-weight:600;color:var(--ink);text-decoration:none;border:2px solid var(--ink);padding:8px 14px;border-radius:3px}
+.biz a.go:hover{background:var(--ink);color:var(--bg)}
 </style>
 </head>
 <body>
@@ -50,6 +64,10 @@ footer strong{color:var(--band-ink)}footer p{margin:0 0 6px}
     <span class="eyebrow">EVIT Electrical · For Loved Ones and Students</span>
     <h1>Loved Ones Study<br>Guides</h1>
     <p>One plain-English study guide for each module your student studies. Read it together, talk it over, and help your student explain what they are learning.</p>
+    <nav class="tabs" aria-label="Site sections">
+      <a href="index.html" aria-current="page">Study Guides</a>
+      <a href="business.html">Business</a>
+    </nav>
   </div>
 </header>
 
@@ -159,6 +177,16 @@ footer strong{color:var(--band-ink)}footer p{margin:0 0 6px}
     </li>
     -->
   </ul>
+
+  <h2 class="list">Business</h2>
+  <div class="biz">
+    <span class="tag">Business · Ready</span>
+    <div class="body">
+      <h3>Business Plan &amp; Loan Assembly Guide</h3>
+      <p>Build a business plan and a loan package step by step, using SBA.gov guidance. Download the Word file, type your answers, and save as a PDF to turn in.</p>
+      <a class="go" href="business.html">Open the Business page</a>
+    </div>
+  </div>
 </main>
 
 <footer>

@@ -8,3 +8,8 @@ Standards sheet only so far. Lessons and decks to be built.
 ## Chapters 4 to 6
 
 `chapter-04/` (Credit and Debt), `chapter-05/` (Consumer Awareness), and `chapter-06/` (Career Readiness) use the same package: six lesson decks, lesson plan, guided notes (student and teacher key), and a Loved Ones Study Guide. Video links and some video blanks are still open; see each lesson plan's instructor notes.
+
+
+## Chapters 7, 8 and 10
+
+`chapter-07/` (College Planning), `chapter-08/` (Financial Services, four lessons) and `chapter-10/` (Income and Taxes) use the same package: lesson decks, lesson plan, guided notes (student and teacher key), and a Loved Ones Study Guide. Chapter 9 is not here yet. Video links and some video blanks are still open; see each lesson plan's instructor notes.

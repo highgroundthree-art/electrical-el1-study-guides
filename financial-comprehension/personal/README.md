@@ -13,3 +13,8 @@ Standards sheet only so far. Lessons and decks to be built.
 ## Chapters 7, 8 and 10
 
 `chapter-07/` (College Planning), `chapter-08/` (Financial Services, four lessons) and `chapter-10/` (Income and Taxes) use the same package: lesson decks, lesson plan, guided notes (student and teacher key), and a Loved Ones Study Guide. Chapter 9 is not here yet. Video links and some video blanks are still open; see each lesson plan's instructor notes.
+
+
+## Chapters 11 and 12
+
+`chapter-11/` (Housing and Real Estate, four lessons) and `chapter-12/` (Investing and Retirement, six lessons) use the same package. Chapter 12 is missing printed pages 307 and 308 in the source file, which affects Lesson 3 (retirement plans); see the lesson plan notes. Video links and some video blanks are still open.

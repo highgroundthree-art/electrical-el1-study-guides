@@ -1,0 +1,1092 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Occupational Overview Loved Ones Study Guide</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+/* Layout concept: one long study sheet. Each module section runs the same six parts
+   (read, review points, trade-term tags, ticket out the door, talk it over, practice questions). */
+:root {
+  --bg: #EEF1F3;
+  --surface: #FFFFFF;
+  --ink: #14202B;
+  --ink-soft: #46576A;
+  --line: #C9D2DA;
+  --band: #14202B;
+  --band-ink: #F4F7F9;
+  --accent: #C42B17;
+  --accent-ink: #FFFFFF;
+  --caution: #F2B705;
+  --caution-soft: #FFF3C4;
+  --good: #1E7A3C;
+  --good-soft: #DDF3E4;
+  --bad: #A8321F;
+  --bad-soft: #FBE3DE;
+  --tag-hole: #EEF1F3;
+  --focus: #0B5FFF;
+  --font-display: "Barlow Condensed", "Arial Narrow", Impact, sans-serif;
+  --font-body: "Barlow", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0F171E; --surface: #18232D; --ink: #EAF0F4; --ink-soft: #A5B4C2; --line: #2E3E4C;
+    --band: #0A1016; --band-ink: #F4F7F9; --accent: #FF5A44; --accent-ink: #14202B;
+    --caution: #F2B705; --caution-soft: #3A3210; --good: #6FD08C; --good-soft: #17301F;
+    --bad: #FF8E7C; --bad-soft: #3A1B16; --tag-hole: #0F171E; --focus: #6AA2FF;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0F171E; --surface: #18232D; --ink: #EAF0F4; --ink-soft: #A5B4C2; --line: #2E3E4C;
+  --band: #0A1016; --band-ink: #F4F7F9; --accent: #FF5A44; --accent-ink: #14202B;
+  --caution: #F2B705; --caution-soft: #3A3210; --good: #6FD08C; --good-soft: #17301F;
+  --bad: #FF8E7C; --bad-soft: #3A1B16; --tag-hole: #0F171E; --focus: #6AA2FF;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--font-body); font-size: 17px; line-height: 1.6; }
+[hidden] { display: none !important; }
+:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
+.wrap { max-width: 920px; margin-inline: auto; padding-inline: max(16px, env(safe-area-inset-left, 0px)) max(16px, env(safe-area-inset-right, 0px)); }
+h1, h2, h3, h4 { font-family: var(--font-display); text-transform: uppercase; letter-spacing: 0.03em; line-height: 1.05; margin: 0; text-wrap: balance; }
+.eyebrow { font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-soft); }
+
+.band { background: var(--band); color: var(--band-ink); padding-block: 34px 26px; border-bottom: 8px solid var(--caution); }
+.band .eyebrow { color: var(--caution); }
+.band h1 { font-size: clamp(2.5rem, 9vw, 4.4rem); font-weight: 700; margin-top: 10px; }
+.band .sub { margin: 14px 0 0; font-size: 1.1rem; color: #D5DEE5; max-width: 46ch; }
+.band .byline { margin: 14px 0 0; font-size: 0.95rem; color: #AEBBC7; }
+nav.jump { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 22px; }
+nav.jump a { text-decoration: none; font-weight: 600; font-size: 0.95rem; padding: 8px 14px; border: 2px solid #3B4B5A; border-radius: 3px; color: var(--band-ink); }
+nav.jump a:hover { border-color: var(--caution); }
+
+.intro { margin-top: 28px; display: grid; gap: 22px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 380px), 1fr)); }
+.panel { background: var(--surface); border: 1px solid var(--line); padding: 20px 22px 22px; min-width: 0; }
+.panel h2 { font-size: 1.5rem; font-weight: 700; margin-bottom: 10px; }
+.panel p { margin: 0 0 10px; }
+.panel ol { margin: 8px 0 0; padding-left: 1.3em; display: grid; gap: 6px; }
+.notice { background: var(--caution-soft); border: 2px solid var(--caution); padding: 16px 20px; margin-top: 22px; }
+.notice p { margin: 4px 0 0; }
+.notice h2 { font-size: 1.25rem; }
+
+/* section */
+.sec { margin-top: 56px; }
+.sec-head { border-top: 8px solid var(--ink); padding-top: 18px; }
+.sec-head h2 { font-size: clamp(2rem, 6vw, 3rem); font-weight: 700; margin-top: 6px; }
+.sec-head .obj { margin: 10px 0 0; color: var(--ink-soft); max-width: 62ch; }
+.part { margin-top: 34px; }
+.part-title { display: flex; align-items: baseline; gap: 12px; margin-bottom: 14px; }
+.part-title .letter { font-family: var(--font-mono); font-size: 13px; background: var(--ink); color: var(--bg); padding: 2px 8px; flex: none; }
+.part-title h3 { font-size: 1.7rem; font-weight: 700; }
+.part-title .time { margin-left: auto; font-family: var(--font-mono); font-size: 12px; color: var(--ink-soft); white-space: nowrap; }
+
+.prose { background: var(--surface); border: 1px solid var(--line); padding: 22px 24px; }
+.prose h4 { font-size: 1.25rem; font-weight: 700; margin: 20px 0 6px; color: var(--accent); }
+.prose h4:first-child { margin-top: 0; }
+.prose p { margin: 0 0 10px; max-width: 64ch; }
+.prose ul, .prose ol { margin: 0 0 10px; padding-left: 1.2em; max-width: 64ch; }
+.prose li { margin-bottom: 4px; }
+.prose .big { font-size: 1.12rem; font-weight: 500; border-left: 6px solid var(--caution); padding: 4px 0 4px 14px; margin: 0 0 16px; }
+.prose table { border-collapse: collapse; margin: 8px 0 14px; font-size: 0.95rem; width: 100%; max-width: 620px; }
+.prose th, .prose td { text-align: left; padding: 6px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+.prose th { font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-soft); }
+.prose caption { caption-side: top; text-align: left; font-weight: 600; font-size: 0.95rem; padding: 0 0 8px; color: var(--ink); }
+.scroll { overflow-x: auto; }
+.case { background: var(--bg); border-left: 6px solid var(--accent); padding: 12px 16px; margin: 14px 0 0; max-width: 64ch; }
+.case b { font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.08em; text-transform: uppercase; display: block; color: var(--ink-soft); }
+.case ul { margin: 6px 0 0; }
+
+/* review points */
+.points { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.points li { background: var(--surface); border: 1px solid var(--line); }
+.points label { display: grid; grid-template-columns: 28px minmax(0, 1fr); gap: 12px; padding: 12px 16px; cursor: pointer; align-items: start; }
+.points input { width: 22px; height: 22px; margin: 2px 0 0; accent-color: var(--good); }
+.points li:has(input:checked) { background: var(--good-soft); border-color: var(--good); }
+.points b { font-weight: 600; }
+
+/* cards */
+.deck { display: grid; gap: 22px; grid-template-columns: repeat(auto-fill, minmax(min(100%, 270px), 1fr)); }
+.card { all: unset; box-sizing: border-box; display: block; cursor: pointer; perspective: 1100px; min-width: 0; }
+.card:focus-visible { outline: 3px solid var(--focus); outline-offset: 4px; }
+.card-inner { display: grid; transition: transform 0.5s cubic-bezier(.3,.7,.2,1); transform-style: preserve-3d; position: relative; }
+.card[aria-pressed="true"] .card-inner { transform: rotateY(180deg); }
+.face { grid-area: 1 / 1; backface-visibility: hidden; -webkit-backface-visibility: hidden; display: flex; flex-direction: column; min-height: 250px; border: 2px solid var(--ink); background: var(--surface); position: relative; overflow: hidden; }
+.face::before { content: ""; position: absolute; top: 12px; left: 50%; width: 16px; height: 16px; margin-left: -8px; border-radius: 50%; background: var(--tag-hole); border: 2px solid var(--ink); }
+.front .strip { background: var(--accent); color: var(--accent-ink); padding: 38px 16px 8px; font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.08em; text-transform: uppercase; }
+.front.key .strip { background: var(--ink); color: var(--bg); }
+.front .term { flex: 1; display: flex; align-items: center; padding: 16px 18px; font-family: var(--font-display); text-transform: uppercase; font-weight: 700; font-size: clamp(1.8rem, 7vw, 2.2rem); line-height: 1.02; letter-spacing: 0.02em; overflow-wrap: anywhere; }
+.front .hint { padding: 10px 18px 14px; font-size: 0.8rem; color: var(--ink-soft); border-top: 1px dashed var(--line); font-family: var(--font-mono); letter-spacing: 0.04em; }
+.back { transform: rotateY(180deg); background: var(--caution-soft); }
+.back .strip { background: var(--ink); color: var(--bg); padding: 38px 16px 8px; font-family: var(--font-display); text-transform: uppercase; font-weight: 700; letter-spacing: 0.04em; font-size: 1.1rem; line-height: 1.05; }
+.back .body { padding: 14px 18px 16px; display: grid; gap: 10px; align-content: start; font-size: 0.95rem; line-height: 1.45; }
+.back .label { font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-soft); display: block; margin-bottom: 1px; }
+.back .ask { border-top: 1px dashed var(--ink-soft); padding-top: 10px; font-weight: 500; }
+@media (prefers-reduced-motion: reduce) {
+  .card-inner { transition: none; transform-style: flat; }
+  .card[aria-pressed="true"] .card-inner { transform: none; }
+  .back { transform: none; }
+  .face { backface-visibility: visible; }
+  .card .back { visibility: hidden; }
+  .card[aria-pressed="true"] .back { visibility: visible; }
+  .card[aria-pressed="true"] .front { visibility: hidden; }
+}
+
+/* ticket */
+.ticket { background: var(--surface); border: 2px dashed var(--ink); padding: 8px 20px 18px; position: relative; }
+.ticket-intro { margin: 14px 0 4px; color: var(--ink-soft); font-size: 0.95rem; }
+.q { border: 0; border-top: 1px solid var(--line); margin: 0; padding: 16px 0 14px; min-width: 0; }
+.q:first-of-type { border-top: 0; }
+.q legend { font-weight: 600; padding: 0; margin-bottom: 8px; float: left; width: 100%; }
+.q .opts { clear: both; display: grid; gap: 8px; }
+.opts { display: grid; gap: 8px; }
+.opt { font: inherit; text-align: left; padding: 10px 14px; background: var(--bg); color: var(--ink); border: 2px solid var(--line); border-radius: 3px; cursor: pointer; }
+.opt:hover:not(:disabled) { border-color: var(--ink); }
+.opt:disabled { cursor: default; }
+.opt.right { background: var(--good-soft); border-color: var(--good); }
+.opt.wrong { background: var(--bad-soft); border-color: var(--bad); }
+.fb { margin: 8px 0 0; font-size: 0.93rem; color: var(--ink-soft); }
+.fb b { color: var(--ink); }
+.ticket-foot { margin-top: 10px; display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+.ticket-foot p { margin: 0; font-weight: 500; }
+.btn { font: inherit; font-weight: 600; font-size: 0.92rem; padding: 8px 14px; background: var(--surface); color: var(--ink); border: 2px solid var(--ink); border-radius: 3px; cursor: pointer; }
+.btn:hover { background: var(--ink); color: var(--bg); }
+
+/* talk it over */
+.talk { display: grid; gap: 14px; }
+.talk .qs { background: var(--surface); border: 1px solid var(--line); padding: 16px 22px 16px 40px; margin: 0; display: grid; gap: 8px; }
+details.scn { background: var(--surface); border: 1px solid var(--line); border-left: 6px solid var(--caution); padding: 14px 18px; }
+details.scn summary { cursor: pointer; font-family: var(--font-display); text-transform: uppercase; letter-spacing: 0.03em; font-size: 1.3rem; font-weight: 700; }
+details.scn .setup { margin: 10px 0 8px; }
+details.scn .good { margin: 12px 0 0; padding: 10px 14px; background: var(--good-soft); border-left: 6px solid var(--good); }
+details.scn .good b { font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.08em; text-transform: uppercase; display: block; }
+details.scn .good ul { margin: 6px 0 0; padding-left: 1.1em; }
+.parent { background: var(--caution-soft); border: 2px solid var(--caution); padding: 12px 16px; }
+.parent b { font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.08em; text-transform: uppercase; display: block; }
+.parent p { margin: 4px 0 0; }
+
+/* practice questions */
+.pr-intro { margin: 0 0 14px; color: var(--ink-soft); max-width: 66ch; }
+.pr { background: var(--surface); border: 1px solid var(--line); margin-bottom: 18px; }
+.pr-head { display: flex; flex-wrap: wrap; gap: 6px 14px; justify-content: space-between; align-items: baseline; padding: 10px 18px; background: var(--ink); color: var(--bg); font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.06em; text-transform: uppercase; }
+.ask-block { padding: 14px 18px 16px; }
+.ask-block + .ask-block { border-top: 2px dashed var(--line); }
+.ask-block.formal { background: var(--bg); }
+.step-label { margin: 0 0 6px; font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); }
+.pr-q { margin: 0 0 10px; font-weight: 600; font-size: 1.05rem; max-width: 62ch; }
+.bridge { padding: 14px 18px 16px; border-top: 2px dashed var(--line); background: var(--caution-soft); }
+.bridge .step-label { color: var(--ink); }
+.bridge ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+.bridge li { display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); gap: 10px; align-items: baseline; }
+.bridge .you { font-style: italic; }
+.bridge .arrow { font-family: var(--font-mono); color: var(--ink-soft); }
+.bridge .pub { font-weight: 600; }
+@media (max-width: 520px) { .bridge li { grid-template-columns: minmax(0, 1fr); gap: 0; } .bridge .arrow { display: none; } .bridge .pub::before { content: "Textbook: "; font-weight: 400; font-family: var(--font-mono); font-size: 11px; color: var(--ink-soft); } .bridge .you::before { content: "You say: "; font-style: normal; font-family: var(--font-mono); font-size: 11px; color: var(--ink-soft); } }
+
+/* final checklist */
+.final { margin-top: 56px; border-top: 8px solid var(--ink); padding-top: 18px; }
+.final h2 { font-size: clamp(1.9rem, 5vw, 2.6rem); font-weight: 700; }
+.final .lead { color: var(--ink-soft); max-width: 62ch; margin: 10px 0 16px; }
+.note { margin: 28px 0 0; font-size: 0.9rem; color: var(--ink-soft); max-width: 70ch; }
+footer { margin-top: 48px; background: var(--band); color: #AEBBC7; padding-block: 26px 30px; font-size: 0.92rem; }
+footer strong { color: var(--band-ink); }
+footer p { margin: 0 0 6px; }
+</style>
+</head>
+<body>
+
+<header class="band">
+  <div class="wrap">
+    <span class="eyebrow">EVIT Electrical · Loved Ones Study Guide</span>
+    <h1>Occupational<br>Overview</h1>
+    <p class="sub">A Loved Ones Study Guide for NCCER Electrical Level 1, Module 26101-20: Occupational Overview: The Electrical Industry</p>
+    <p class="byline">Mr. Ellis CTE — General Construction &amp; Electrical Teacher · High School &amp; Adult Pre-Apprentice Programs</p>
+    <nav class="jump" aria-label="Sections">
+      <a href="#s1">1 · Sectors &amp; careers</a>
+      <a href="#s2">2 · Training &amp; apprenticeship</a>
+      <a href="#s3">3 · Employee &amp; employer duties</a>
+      <a href="#review">Loved ones review</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<div class="wrap">
+
+  <div class="intro">
+    <div class="panel">
+      <h2>Why this guide exists</h2>
+      <p>You do not need to be an electrician to support an electrical student. Your job is to help your student explain what they are learning, put it in their own words, and know when safety means stop and ask a qualified person.</p>
+      <p>If your student can read it and explain it, they are learning it. That is the whole idea.</p>
+    </div>
+    <div class="panel">
+      <h2>How to use each section</h2>
+      <p>Plan about 15 to 25 minutes per section. The student does most of the talking. You do not need the answers ahead of time.</p>
+      <ol>
+        <li><b>Read it together.</b> Plain-English version of the module section.</li>
+        <li><b>Study review points.</b> The must-know facts. Tick each one when your student can say it back.</li>
+        <li><b>Trade-term cards.</b> Tap a card to flip it.</li>
+        <li><b>Ticket out the door.</b> A quick recall check, just for practice.</li>
+        <li><b>Talk it over.</b> Questions and a real-world scenario.</li>
+        <li><b>Practice questions.</b> Each one comes twice: first in plain English, then in the textbook's words, so your student learns to recognize both.</li>
+      </ol>
+    </div>
+  </div>
+
+  <aside class="notice" aria-labelledby="safe-h">
+    <h2 id="safe-h">Important safety note</h2>
+    <p>This guide is for learning and talking. It is not permission to do electrical work. Never use this guide in place of instructor supervision, employer procedures, required training, or properly rated equipment. No student names or grades appear here, and nothing you tick or tap on this page is saved or sent anywhere.</p>
+  </aside>
+
+  <!-- SECTION 1 -->
+  <section class="sec" id="s1" aria-labelledby="s1-h">
+    <div class="sec-head">
+      <span class="eyebrow">Module Section 1 of 3</span>
+      <h2 id="s1-h">Identifying Sectors and Career Options in the Electrical Industry</h2>
+      <p class="obj">By the end of this section your student can describe what goes into residential, commercial and industrial wiring, and name the main career paths in the electrical trade and what each one does.</p>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">A</span><h3>Read it together</h3><span class="time">about 25 min</span></div>
+      <div class="prose">
+        <p class="big">Most people only think about electricity when the power goes out. It takes a lot of skilled people to produce it, deliver it, install it and keep it running. This section covers the three main areas of electrical work and the many career paths inside the trade.</p>
+
+        <h4>Three areas of electrical work (1.0.0)</h4>
+        <p>The electrical field splits into three broad areas: <b>residential</b> (homes), <b>commercial</b> (offices, stores and similar buildings) and <b>industrial</b> (plants and factories). Every trainee eventually picks an area. Some electricians settle into homes or businesses. Others like big industrial sites, such as petrochemical plants, where they install or maintain large systems with motors and controls. Some go on to start their own contracting company or to teach the trade.</p>
+
+        <h4>Residential wiring systems (1.1.0)</h4>
+        <p>A home's electrical system includes an electrical supply, the <b>electrical service</b>, nonmetallic-sheathed cable, nail-on device boxes, panelboards and fixtures. House wiring happens in phases: <b>rough-in</b>, <b>trim-out</b>, testing and troubleshooting.</p>
+        <div class="scroll"><table>
+          <caption>The two main wiring stages</caption>
+          <thead><tr><th>Stage</th><th>When</th><th>What gets installed</th></tr></thead>
+          <tbody>
+            <tr><td><b>Rough-in</b></td><td>Beginning</td><td>Panelboard, raceway system, wiring and boxes</td></tr>
+            <tr><td><b>Trim-out</b></td><td>Final</td><td>Devices and fixtures, installed and terminated (connected)</td></tr>
+          </tbody>
+        </table></div>
+        <p>The book's Figure 1 shows six main parts of a home system: a pad-mounted transformer, the residential electrical service, a nail-on device box, nonmetallic-sheathed cable, an interior panel (subpanel), and a luminaire (lighting fixture).</p>
+        <div class="case"><b>Key idea</b>The interior panel enclosure usually goes in, and is partly connected, during <b>rough-in</b>. Devices and fixtures are connected during <b>trim-out</b>.</div>
+
+        <h4>Commercial wiring systems (1.2.0)</h4>
+        <p>Commercial buildings, such as offices and stores, have many of the same parts as homes. One big difference: in commercial and industrial work, the conductors usually run inside <b>metal raceways</b>, so the electricians need to be skilled at bending conduit. A well-trained electrician can install a metal raceway system with little or no wasted conduit. A beginner may go through several pieces before getting a bend right.</p>
+        <p>The book's Figure 2 lists parts of a commercial system: a pad-mounted commercial transformer, the commercial electrical service, a conduit system, a <b>fire alarm system</b>, and office and outdoor lighting.</p>
+
+        <h4>Industrial wiring systems (1.3.0)</h4>
+        <p>Many industrial sites handle hazardous materials, so their electrical systems must follow strict National Electrical Code (NEC) requirements. Homes and businesses have strict code rules too.</p>
+        <p>In potentially explosive areas, called <b>classified locations</b>, conduit must be sealed against outside vapors and gases. Anything that could spark or arc must sit inside a special enclosure so it cannot ignite those vapors.</p>
+        <p>Industrial electricians usually fall into two groups: <b>installers</b> and <b>maintenance personnel</b>. At a large plant, contract electricians (who work for a contractor the plant hired) install the conduit, conductors, motors and equipment. The finished system is then handed over to <b>maintenance electricians who work directly for the plant</b> (on-site personnel). They keep it running once it is energized. At a smaller plant, the same electricians may do both jobs.</p>
+        <p>The book's Figure 3 shows industrial equipment: distribution switchgear, a rigid metal conduit (RMC) system, and a motor control center.</p>
+
+        <h4>Career paths in the electrical industry (1.4.0)</h4>
+        <p>Every electrical system, here and around the world, has to be installed and maintained by someone qualified. Industry growth, new technology, upgrades to older equipment, and workers retiring all open jobs for trained electricians.</p>
+        <div class="case"><b>Real-world example from the book</b>In 2017, electricians replaced the "Crown of Lights" on the 99th floor of Chicago's John Hancock Center. The old crown used 552 fluorescent tubes drawing 57,408 watts. The new LED fixtures use only 9,400 watts, can show hundreds of color presets from a touchscreen, and did away with $80,000 a year in maintenance for changing colored tube covers.</div>
+
+        <h4>Residential electrician (1.4.1)</h4>
+        <p>Provides the complete electrical system in a home: service entrance equipment, branch circuit conductors, device boxes, panel enclosures, circuit breakers, lighting, smoke detectors and other fixtures. Residential electricians work for residential electrical contractors, or as independent contractors who pay their own taxes and insurance, bring their own equipment, and are often paid <b>by piece work</b> (a fixed price per house). They frequently wire <b>tract homes</b> (subdivisions). With the right license, a residential electrician can run their own contracting business.</p>
+
+        <h4>Commercial electrician (1.4.2)</h4>
+        <p>Installs power, lighting and control wiring in apartment buildings, stores, offices, service stations and hospitals. Commercial electricians are often employed by electrical contractors who work as <b>subcontractors for a general contractor</b>. Many contractors do both residential and commercial work but hire specialists for each.</p>
+
+        <h4>Service electrician (1.4.3)</h4>
+        <p>Works in the residential or light commercial market and mostly <b>answers calls for repairs or upgrades to existing systems</b>. A service electrician needs a strong understanding of electrical theory in order to <b>troubleshoot</b>. They also add wiring, new receptacles and new lighting in existing buildings or outdoors, and sometimes change out a building's electrical service. Unlike construction electricians, they usually do <b>not</b> work on new construction. Many run their business as a <b>sole proprietorship</b> (a one-owner business).</p>
+
+        <h4>Remodeling contractor (1.4.4)</h4>
+        <p>Focuses on updating electrical systems in existing homes and businesses. Jobs range from simple installs to rewiring an entire older building. Remodeling work can include new lighting, ceiling fans, switches or dimmers, smart home devices, pool or hot tub wiring, and panelboard changes.</p>
+
+        <h4>Industrial electrician (1.4.5)</h4>
+        <p>Needs extra training because of all the specialty equipment in industrial sites. Industrial electricians must understand the code rules for <b>hazardous locations</b>, including the different classes and divisions. They also work with three-phase power, motors and motor controls, may install conduit and wiring for process control instrumentation, and must troubleshoot systems that fail during testing. They are usually employed by large corporations or contractors that build industrial facilities.</p>
+
+        <h4>Electrical maintenance technician (1.4.6)</h4>
+        <p>Works in commercial and industrial facilities, usually directly for the owner or management. At big facilities they are part of a maintenance group led by a maintenance manager or supervisor.</p>
+        <p>In industrial plants, maintenance electricians often handle both electrical and instrumentation systems and are called <b>E&amp;I technicians</b> (electrical and instrumentation). Instrumentation is its own craft and takes training beyond this course. Most maintenance electricians are employees of the facility, but some contract maintenance crews work side by side with plant staff.</p>
+        <div class="case"><b>Key idea</b>Every maintenance electrician must know the <b>magnetic motor starter</b>. They fail often in industrial settings, so maintenance electricians must be able to take them apart, put them back together, troubleshoot them and repair them.</div>
+
+        <h4>Utility substation electrician (1.4.7)</h4>
+        <p>Trained to build, maintain and operate <b>substations</b> so the public gets reliable power. They work on transmission and distribution substations, including installing and starting up (commissioning) the equipment that delivers power. Their work includes monitoring, troubleshooting, repairing and testing circuit breakers, transformers, voltage regulators, reclosers and other equipment. They also install grounding systems, cable tray, conduit and other raceways, and they must know how to size, select and install substation cable, from control cable up to medium-voltage cable. They work for utility companies, city (municipal) power providers and some independent power providers.</p>
+
+        <h4>Maritime electrician (1.4.8)</h4>
+        <p>Shipbuilders and ship repair yards are big employers of electricians. Maritime electricians <b>do not follow the NEC</b>. They follow standards from the <b>American Bureau of Shipping (ABS)</b>, the <b>Institute of Electrical and Electronics Engineers (IEEE)</b>, and <b>US Navy</b> standards.</p>
+        <p>On a vessel they work on steering systems, alarm and monitoring systems, and power distribution. They install batteries and generators and work on motors, pumps and navigation systems.</p>
+      </div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">B</span><h3>Study review points</h3></div>
+      <ul class="points" data-points="1"></ul>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">C</span><h3>Trade-term cards</h3></div>
+      <div class="deck" data-cards="1"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">D</span><h3>Ticket out the door</h3></div>
+      <div class="ticket" data-quiz="1"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">E</span><h3>Talk it over</h3></div>
+      <div class="talk" data-talk="1"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">F</span><h3>Practice questions</h3><span class="time">about 15 min</span></div>
+      <div data-practice="1"></div>
+    </div>
+  </section>
+
+  <!-- SECTION 2 -->
+  <section class="sec" id="s2" aria-labelledby="s2-h">
+    <div class="sec-head">
+      <span class="eyebrow">Module Section 2 of 3</span>
+      <h2 id="s2-h">Training and Apprenticeship Process for Electricians</h2>
+      <p class="obj">By the end of this section your student can list the Department of Labor (DOL) requirements for apprenticeship and describe the kinds of training in the electrical field, from on-the-job learning to licensing.</p>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">A</span><h3>Read it together</h3><span class="time">about 15 min</span></div>
+      <div class="prose">
+        <p class="big">Skilled electricians are in high demand, and the pay is near the top of all construction jobs. An apprenticeship lets you earn a paycheck while you learn the trade. This section covers how apprenticeships work, what they require, and what comes after.</p>
+
+        <h4>Why the trade needs you (2.0.0)</h4>
+        <p>New homes, schools, offices, malls, airports and plants are built every day, and the US Bureau of Labor Statistics reports that this creates a big demand for skilled workers every year. Electrical work is demanding but rewarding, with plenty of variety: one day you may be indoors installing boxes or hooking up motor controllers, the next you may be outside on a ladder or running conduit on a pipe rack high in the air. Electricity is needed everywhere, so electricians are needed everywhere.</p>
+
+        <h4>DOL apprenticeship standards (2.1.0)</h4>
+        <p>Apprenticeship goes back thousands of years and still works the same way: you learn from people who have mastered the craft, and you learn by doing. Some theory is taught in the classroom, always tied to the skill you are learning.</p>
+        <p>The <b>US Department of Labor (DOL) Office of Apprenticeship</b> sets the <b>minimum standards</b> for apprenticeship programs across the country. Programs combine required classroom instruction with <b>on-the-job learning (OJL)</b>. During OJL you are paid to learn, which is a big advantage over a college student paying tuition.</p>
+        <div class="scroll"><table>
+          <caption>DOL apprenticeship numbers</caption>
+          <thead><tr><th>Requirement</th><th>Per year (minimum)</th><th>Typical full program</th></tr></thead>
+          <tbody>
+            <tr><td>Classroom instruction</td><td>144 hours</td><td>576 hours (144 &times; 4 years)</td></tr>
+            <tr><td>On-the-job learning (OJL)</td><td>2,000 hours</td><td>8,000 hours (2,000 &times; 4 years)</td></tr>
+          </tbody>
+        </table></div>
+        <p>After completing a typical program, apprentices receive journeyman certificates from registered apprenticeship programs. OJL must be supervised by a <b>journeyman or master electrician</b>.</p>
+        <p>NCCER builds its curriculum on the DOL minimums. The NCCER electrical program is a <b>four-year program</b> and is <b>competency-based</b>: trainees must show the instructor they have the knowledge and skills to safely do the hands-on tasks in each module. When a certified instructor signs off, the record goes into NCCER's <b>Registry</b>, which can confirm a worker's training as they move from state to state or company to company. Whatever program you join, work for an employer or sponsor that supports nationally standardized training with credentials.</p>
+
+        <h4>Types of training (2.2.0)</h4>
+        <p>Every apprenticeship includes on-the-job learning. Training can start after high school graduation, or before it through a youth apprenticeship program. After training, electricians may sit for one or more licensing exams.</p>
+
+        <h4>On-the-job learning (2.2.1)</h4>
+        <p>OJL is broken into specific tasks, each with a required number of hours. The total is traditionally <b>8,000 hours, or four years</b>. A competency-based program may let you shorten this by testing out of tasks with performance exams. In a traditional program you earn OJL in steps of 2,000 hours a year.</p>
+        <p>Apprentices log all work time (the book's Figure 10 is a monthly record page) and turn it in to the <b>apprenticeship committee</b>. After each <b>1,000 hours</b> of related work, an apprentice typically gets a pay raise.</p>
+        <p>Helpful background: a high school or technical school education, and classes in shop, mechanical drawing and general math. Good hand skills, physical condition and quick reflexes matter, along with solving problems quickly and working well with others. Strong safety awareness is a must.</p>
+        <div class="case"><b>What the apprenticeship committee may ask for</b><ul>
+          <li>Aptitude test results: the General Aptitude Test Battery (<b>GATB Form Test</b>), usually given by the local Employment Security Commission</li>
+          <li>Proof of education (school transcripts sent to the committee)</li>
+          <li>Letters of reference from past employers and friends</li>
+          <li>Proof of age</li>
+          <li>For veterans, a copy of Form DD214</li>
+          <li>A record of construction-related technical or pre-apprenticeship training</li>
+        </ul></div>
+        <p>Some companies also have physical requirements. In general, apprentices must wear proper safety gear and personal protective equipment (PPE), buy and maintain the tools the contractor requires, turn in a monthly OJL report, tell the committee about any change in employment, and attend classes and follow class rules such as attendance.</p>
+        <p>Informal on-the-job training from an employer is usually less thorough than a formal apprenticeship. A small contractor may train you in one area, while a large company may train you in several.</p>
+
+        <h4>Youth Apprenticeship Program (2.2.2)</h4>
+        <p>Students can start apprenticeship training while still in high school. Students who enter in eleventh grade can finish <b>up to two years</b> of the four-year NCCER program by graduation. Working with local employers, the program lets students work in the trade and earn money while in school. After graduation they can start at a higher level, with more pay, than someone just beginning. Official transcripts let students continue the program wherever it is offered, and some colleges may accept the credits.</p>
+
+        <h4>Licensing (2.2.3)</h4>
+        <p>After training, most electricians take a state or local licensing exam. A license shows you are qualified to install or maintain electrical systems, and it lets you work independently and earn more. A licensed electrician is <b>responsible and liable</b> for their own work, and for the work of anyone working for them.</p>
+        <div class="case"><b>Key idea</b>Licensing requirements <b>vary from state to state</b> and may vary by city. Contact your local building department to find out the rules where you live. Many places also require continuing education to renew a license.</div>
+      </div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">B</span><h3>Study review points</h3></div>
+      <ul class="points" data-points="2"></ul>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">C</span><h3>Trade-term cards</h3></div>
+      <div class="deck" data-cards="2"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">D</span><h3>Ticket out the door</h3></div>
+      <div class="ticket" data-quiz="2"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">E</span><h3>Talk it over</h3></div>
+      <div class="talk" data-talk="2"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">F</span><h3>Practice questions</h3><span class="time">about 10 min</span></div>
+      <div data-practice="2"></div>
+    </div>
+  </section>
+
+  <!-- SECTION 3 -->
+  <section class="sec" id="s3" aria-labelledby="s3-h">
+    <div class="sec-head">
+      <span class="eyebrow">Module Section 3 of 3</span>
+      <h2 id="s3-h">Employee and Employer Responsibilities</h2>
+      <p class="obj">By the end of this section your student can identify what an employee owes the job (professionalism, honesty, showing up, working safely) and what an employer owes its workers under OSHA and other laws.</p>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">A</span><h3>Read it together</h3><span class="time">about 25 min</span></div>
+      <div class="prose">
+        <p class="big">Safe, cost-effective electrical work takes employers and employees working together. Both sides have responsibilities. This section covers what a good employee brings to the job, why safety is everyone's job, and what the law requires of employers.</p>
+
+        <h4>Employee responsibilities (3.1.0)</h4>
+        <p>To succeed, you need to use current materials, tools and equipment to finish work quickly and well, keep up with new technology, and keep learning the skills to use it. A professional never takes chances with their own safety or anyone else's.</p>
+
+        <h4>Professionalism (3.1.1)</h4>
+        <p><b>Professionalism</b> is the overall behavior and attitude expected at work. Management support helps, but each person is responsible for their own. It includes honesty, productivity, safety, civility, cooperation, teamwork, clear communication, being on time and coming ready to work.</p>
+        <p>Professionalism carries into writing, too. For work email:</p>
+        <ul>
+          <li>Start with a clear subject line that says what the message is about.</li>
+          <li>Address the person you are writing to.</li>
+          <li>Keep it brief and to the point.</li>
+          <li>Make clear what response or action you need.</li>
+          <li>Use a positive tone and avoid blaming.</li>
+          <li>Do not type in all capital letters.</li>
+          <li>Avoid sarcasm. It is easy to misread.</li>
+        </ul>
+        <p>Texting is best for short messages that need to be seen right away. It is not for complicated messages or emotional ones, such as an apology or criticism. Proofread so autocorrect does not change your meaning, avoid shorthand unless you know the person understands it, and <b>never text while driving or operating machinery</b>.</p>
+
+        <h4>Honesty (3.1.2)</h4>
+        <p>Successful professionals are punctual and dependable, and they never cut corners or skimp on materials. They protect tools, materials and property belonging to the employer, customers and other trades from damage or theft. Dishonesty, whether stealing from the job site or lying about your work, always catches up with you. Honesty also means a fair day's work for a fair day's pay. Owning up to a mistake builds trust: errors in judgment can be forgiven, but dishonesty is much harder to forgive.</p>
+
+        <h4>Loyalty and respect (3.1.3)</h4>
+        <p>Employees expect employers to look out for them, provide steady work and promote them when openings come up. Employers expect loyalty back: keeping the company's interests in mind, speaking well of it, keeping small problems inside the company, and keeping business matters confidential. <b>Loyalty is earned, not demanded.</b> Respect, on the other hand, should always be there: treat others how you would like to be treated, do not insult or put people down, and watch your tone and body language.</p>
+
+        <h4>Learning, responsibility, cooperation and rules (3.1.4 to 3.1.7)</h4>
+        <ul>
+          <li><b>Willingness to learn:</b> every company does things its own way. Be ready to adapt and learn new methods quickly, even when you are experienced.</li>
+          <li><b>Taking responsibility:</b> once you understand an assignment and its safety rules, own it without needing reminders.</li>
+          <li><b>Cooperation:</b> work as part of a team to get the job done efficiently, safely and on time. Helpful suggestions and compliments work better than negativity.</li>
+          <li><b>Rules and regulations:</b> they are needed on every job and must be followed by every employee.</li>
+        </ul>
+
+        <h4>Tardiness and absenteeism (3.1.8)</h4>
+        <p><b>Tardiness</b> means being late. <b>Absenteeism</b> means being off the job. An occasional absence cannot be helped, but frequent lateness or absence signals poor work habits, unprofessional conduct and a lack of commitment.</p>
+        <div class="case"><b>Key idea</b>Even if you are not paid when you are absent, it still costs the employer. Your health insurance still has to be paid, and jobs are bid and scheduled around a set crew size. If you must be absent, <b>call in as soon as possible</b> so your employer can find a replacement.</div>
+
+        <h4>Safety (3.1.9)</h4>
+        <p>In exchange for your job's benefits, you are obligated to <b>work safely</b> and to make sure anyone you supervise or work with does too. Your employer is obligated to keep the workplace safe. <b>Safety is everyone's responsibility.</b></p>
+        <p>Keeping the workplace safe means two things:</p>
+        <ol>
+          <li>Follow your company's rules for proper work procedures.</li>
+          <li><b>Report any unsafe equipment or condition directly to your supervisor.</b></li>
+        </ol>
+        <p>Never ignore something unsafe, even if you think it does not affect you. It will not fix itself. Do not worry that your boss will be upset about lost time; you are more likely to be criticized for <b>not</b> reporting it. A little lost time is nothing compared with a major accident that shuts down the whole job. <b>OSHA regulations require you to report hazardous conditions</b>, on every kind of construction job, big contractor or small.</p>
+        <div class="case"><b>Safety</b>Always report unsafe conditions. Ignoring them could cause serious injury or even death.</div>
+        <p>Beyond OSHA, there are standards just for electrical work:</p>
+        <ul>
+          <li><b>The National Electrical Code (NEC)</b> sets the <b>minimum standards for the safe installation</b> of electrical systems. For example, NEC temporary power rules are stricter than OSHA's and can be enforced by the inspector and by OSHA.</li>
+          <li><b>NFPA 70E, Standard for Electrical Safety in the Workplace</b>, covers safe work practices near exposed energized parts: how to put a circuit into an electrically safe working condition, safe approach distances, and the PPE needed against electric shock and arc flash, such as the arc flash hood in the book's Figure 12.</li>
+        </ul>
+        <div class="case"><b>Ethical principles for the construction trades (sidebar in 3.1.9)</b><ul>
+          <li><b>Honesty:</b> be truthful, keep your commitments, never mislead.</li>
+          <li><b>Integrity:</b> do what is right, even under pressure.</li>
+          <li><b>Loyalty:</b> be worthy of trust.</li>
+          <li><b>Fairness:</b> never take advantage of someone else's mistakes; treat people equally.</li>
+          <li><b>Respect for others:</b> be courteous to everyone.</li>
+          <li><b>Obedience:</b> follow laws, rules and regulations.</li>
+          <li><b>Commitment to excellence:</b> stay prepared and keep building your skills.</li>
+          <li><b>Leadership:</b> be a positive role model.</li>
+        </ul></div>
+
+        <h4>Employer responsibilities (3.2.0)</h4>
+        <p>Employers' duties come from the <b>Occupational Safety and Health Act of 1970</b>. <b>OSHA</b>'s job is to set safety and health standards for all workplaces, enforce them, <b>make sure employers provide and maintain a safe workplace</b>, and support safe work with research and education.</p>
+        <p>OSHA requires every employer to provide a safe, hazard-free workplace, and it requires employees to follow OSHA rules about worker conduct. To get compliance, OSHA can do spot inspections, issue fines and even stop work until the site is safe.</p>
+        <div class="case"><b>Key idea: your right to safety training</b>Under OSHA, your employer must:<ul>
+          <li>Show you how to do each job safely</li>
+          <li>Provide the required personal protective equipment</li>
+          <li>Warn you about specific hazards</li>
+          <li>Supervise you for safety while you work</li>
+        </ul></div>
+        <p>Federal and state safety inspectors enforce the law and can fine violators. States may run their own safety programs, but the US Secretary of Labor must approve them first. Where a state has none, federal OSHA standards apply.</p>
+        <div class="scroll"><table>
+          <caption>Safety standards that apply to construction</caption>
+          <thead><tr><th>Standard</th><th>Covers</th></tr></thead>
+          <tbody>
+            <tr><td>29 CFR 1926</td><td>OSHA standards for the <b>construction</b> industry</td></tr>
+            <tr><td>29 CFR 1910</td><td>OSHA standards for <b>general industry</b></td></tr>
+            <tr><td>NFPA 70E</td><td>Electrical safety in the workplace</td></tr>
+            <tr><td>NEC</td><td>Minimum standards for safe electrical installation</td></tr>
+          </tbody>
+        </table></div>
+        <p>OSHA's main general requirements for construction employers:</p>
+        <ul>
+          <li>Post signs where employees can easily see their rights and responsibilities.</li>
+          <li>Keep the job site free of serious hazards and in line with OSHA rules.</li>
+          <li>Post warning signs, posters and labels wherever required.</li>
+          <li>Inspect equipment on the job site often and regularly.</li>
+          <li>Teach every employee to recognize and avoid unsafe conditions and to know the rules for the job.</li>
+          <li>Allow no tools, equipment, machines or materials that do not meet 29 CFR 1926.</li>
+          <li>Let only qualified people operate tools, equipment and machines.</li>
+          <li>Provide medical training and exams when OSHA requires them.</li>
+          <li>Employers with <b>more than 10 employees</b> must keep records of work-related injuries and illnesses, available to employees.</li>
+          <li>Never discriminate against employees who use their OSHA rights.</li>
+        </ul>
+        <p>The <b>Americans with Disabilities Act of 1990 (ADA)</b> adds more: a worker with a disability who is qualified for the job has equal rights to employment. The US Equal Employment Opportunity Commission and state and local civil rights agencies enforce the ADA.</p>
+      </div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">B</span><h3>Study review points</h3></div>
+      <ul class="points" data-points="3"></ul>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">C</span><h3>Trade-term cards</h3></div>
+      <div class="deck" data-cards="3"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">D</span><h3>Ticket out the door</h3></div>
+      <div class="ticket" data-quiz="3"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">E</span><h3>Talk it over</h3></div>
+      <div class="talk" data-talk="3"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">F</span><h3>Practice questions</h3><span class="time">about 15 min</span></div>
+      <div data-practice="3"></div>
+    </div>
+  </section>
+
+  <section class="final" id="review" aria-labelledby="fin-h">
+    <span class="eyebrow">After all three sections</span>
+    <h2 id="fin-h">Can your student explain it?</h2>
+    <p class="lead">The goal is not perfect wording. The goal is accurate understanding and good judgment. Tick each one when your student can explain it without looking at the page.</p>
+    <ul class="points" id="final-points"></ul>
+    <p class="note">The module's seven official trade terms are spread across the sections where the book introduces them: five in Section 1, one in Section 2 and one in Section 3. Cards marked "Key term" are important words from the module that are not on its official trade-term list. The practice questions come from the handbook's Section Review and Module Review. The Section Review answers follow the module's own key. The module does not print a Module Review key, so those answers follow the publisher's lesson plan key. The textbook-style versions are written in the book's style and vocabulary, not copied word for word, so check the handbook itself for the exact wording. This guide is a plain-language companion, not a copy of the textbook. For real work, use the current standards, your employer's procedures and your instructor's directions. Draft for instructor review.</p>
+  </section>
+
+</div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><strong>Mr. Ellis CTE</strong> · East Valley Institute of Technology (EVIT), Mesa, Arizona · Your Future, Your Way</p>
+    <p>Based on NCCER Electrical Level 1 (2020 edition), Module 26101-20, Occupational Overview: The Electrical Industry.</p>
+    <p>Aim for perfection, take what you get.</p>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var POINTS = {
+    1: [
+      `<b>Three areas of electrical work:</b> residential (homes), commercial (offices, stores) and industrial (plants and factories).`,
+      `<b>Residential system parts:</b> electrical supply, electrical service, nonmetallic-sheathed cable, nail-on device boxes, panelboards and fixtures.`,
+      `<b>Rough-in</b> is the beginning stage: panelboard, raceway system, wiring and boxes. The panel enclosure goes in during rough-in.`,
+      `<b>Trim-out</b> is the final stage: devices and fixtures are installed and terminated (connected).`,
+      `<b>Commercial work</b> has many of the same parts as homes, but conductors usually run in metal raceways, so conduit bending skill matters. Fire alarm systems are part of commercial systems.`,
+      `<b>Industrial work</b> follows strict NEC rules because of hazardous materials. In classified (hazardous) locations, conduit is sealed against vapors and sparking devices go in special enclosures.`,
+      `<b>Industrial electricians</b> split into installers and maintenance personnel. At large plants, contract electricians install and on-site maintenance electricians keep the system running.`,
+      `<b>Residential electricians</b> wire complete homes, often tract homes, and may be paid by piece work (a fixed price per house). <b>Commercial electricians</b> often work for electrical contractors who are subcontractors for a general contractor.`,
+      `<b>Service electricians</b> answer calls for repairs and upgrades on existing systems, need strong electrical theory to troubleshoot, usually do not do new construction, and often run a sole proprietorship.`,
+      `<b>Electrical maintenance technicians</b> work for the facility owner. In industrial plants they are often E&amp;I (electrical and instrumentation) technicians, and they must be able to repair magnetic motor starters.`,
+      `<b>Utility substation electricians</b> build, maintain and test substation equipment (breakers, transformers, voltage regulators, reclosers) for utilities and power providers.`,
+      `<b>Maritime electricians</b> do not follow the NEC. They follow ABS, IEEE and US Navy standards, and work on steering, alarm, power distribution and navigation systems.`
+    ],
+    2: [
+      `<b>Demand for electricians is high</b>, and their pay is near the top of all construction jobs.`,
+      `<b>The DOL Office of Apprenticeship</b> sets the minimum standards for apprenticeship programs nationwide.`,
+      `<b>DOL minimums per year:</b> 144 hours of classroom instruction and 2,000 hours of on-the-job learning (OJL).`,
+      `<b>A typical program</b> totals at least 576 classroom hours and 8,000 OJL hours (four years), supervised by a journeyman or master electrician.`,
+      `<b>The NCCER electrical program</b> is a four-year, competency-based program: you show the instructor you can safely do each task. Results go into NCCER's Registry.`,
+      `<b>OJL</b> is logged and turned in to the apprenticeship committee. A pay raise typically comes after each 1,000 hours of work.`,
+      `<b>To apply</b>, you may need GATB aptitude test results, transcripts, references, proof of age, a DD214 if you are a veteran, and a record of related training.`,
+      `<b>The Youth Apprenticeship Program</b> lets students finish up to two years of the four-year program before high school graduation, and earn money in the trade.`,
+      `<b>Licensing</b> lets you work independently and earn more, but makes you responsible and liable for your work. Requirements vary by state and city.`
+    ],
+    3: [
+      `<b>Professionalism</b> includes honesty, productivity, safety, civility, cooperation, teamwork, clear communication, being on time and coming prepared.`,
+      `<b>Professional email:</b> clear subject line, address the person, keep it brief, say what you need, positive tone, no all capitals, no sarcasm.`,
+      `<b>Texting:</b> short messages only, proofread for autocorrect, and never text while driving or operating machinery.`,
+      `<b>Honesty</b> means no stealing, no cutting corners, a fair day's work for a fair day's pay, and owning up to mistakes.`,
+      `<b>Loyalty is earned. Respect should always be there.</b>`,
+      `<b>Tardiness</b> is being late. <b>Absenteeism</b> is being off the job. Both cost the employer even when you are not paid. If you must be absent, call in as soon as possible.`,
+      `<b>Safety is everyone's responsibility.</b> Follow company rules and report unsafe equipment or conditions directly to your supervisor.`,
+      `<b>OSHA regulations require you to report hazardous conditions.</b> You are more likely to be criticized for not reporting than for reporting.`,
+      `<b>The NEC</b> sets the minimum standards for safe installation of electrical systems. <b>NFPA 70E</b> covers safe work near exposed energized parts, including shock and arc flash PPE.`,
+      `<b>OSHA</b> comes from the Occupational Safety and Health Act of 1970. Its main mission is to make sure employers provide and maintain a safe workplace. It can inspect, fine and stop work.`,
+      `<b>Your employer must</b> show you how to do each job safely, provide required PPE, warn you about specific hazards and supervise you for safety.`,
+      `<b>29 CFR 1926</b> covers construction. <b>29 CFR 1910</b> covers general industry. Employers with more than 10 employees must keep injury and illness records.`
+    ]
+  };
+
+  var CARDS = {
+    1: [
+      { k: "o", t: `Electrical service`, plain: `The equipment that connects the power company's lines to a building's wiring.`, book: `The electrical components that are used to connect the serving utility to the premises wiring system.`, ask: `Where does the power company's job end and the building's wiring begin?` },
+      { k: "o", t: `Raceway system`, plain: `The "pipes and boxes" that hold and protect the wires.`, book: `An enclosure that houses the conductors in an electrical system (such as fittings, boxes, and conduit).`, ask: `Why does commercial work use metal raceways so often?` },
+      { k: "o", t: `Rough-in`, plain: `The first wiring stage, before the walls are finished.`, book: `The beginning stage of wiring that involves the installation of the panelboard, raceway system, wiring, and boxes.`, ask: `Is the panelboard installed during rough-in or trim-out?` },
+      { k: "o", t: `Substation`, plain: `A fenced-in collection of high-voltage equipment that changes and routes power between the power plant and the grid.`, book: `An enclosed assembly of high-voltage equipment, including switches, circuit breakers, buses, and transformers, that connects the power generation facility to the grid and through which electrical energy is passed in order to change its characteristics, such as stepping voltage up or down, changing control frequency, or other characteristics.`, ask: `Name two kinds of equipment a substation electrician tests.` },
+      { k: "o", t: `Trim-out`, plain: `The final wiring stage, when devices and fixtures get connected.`, book: `The final stage of wiring that involves the installation and termination of devices and fixtures.`, ask: `What gets installed during trim-out?` },
+      { k: "k", t: `Classified location`, plain: `An area where explosive vapors or gases could be present.`, book: `A potentially explosive location. Conduit must be sealed to outside vapors and gases, and sparking or arcing devices must be in special enclosures.`, ask: `Which type of electrician most needs to know about classified locations?` },
+      { k: "k", t: `E&I technician`, plain: `A maintenance electrician who also works on instrument systems.`, book: `An industrial maintenance electrician responsible for both electrical and instrumentation systems and equipment.`, ask: `Why does instrumentation take extra training?` },
+      { k: "k", t: `Magnetic motor starter`, plain: `A part that starts and stops motors, and fails often in plants.`, book: `A common industrial component that all electrical maintenance personnel must be able to disassemble, reassemble, troubleshoot, and repair.`, ask: `Why does a maintenance electrician need to know this part well?` },
+      { k: "k", t: `Piece work`, plain: `Getting paid a set price for each house you wire.`, book: `A fixed price paid for each house completed, common for residential electricians working as individual contractors.`, ask: `What other costs does an independent contractor have to cover?` }
+    ],
+    2: [
+      { k: "o", t: `On-the-job learning (OJL)`, plain: `Learning the trade by doing real work, while being paid, under an experienced electrician.`, book: `Job-related learning an apprentice acquires while working under the supervision of journey-level workers. Also called on-the-job training (OJT).`, ask: `How many OJL hours does the DOL require each year?` },
+      { k: "k", t: `Apprenticeship`, plain: `Learning a trade from people who have mastered it, by doing the work.`, book: `Training that combines mandatory classroom instruction with on-the-job learning, under minimum standards set by the DOL Office of Apprenticeship.`, ask: `Why is an apprenticeship called "earn while you learn"?` },
+      { k: "k", t: `Competency-based`, plain: `You move on by showing you can do the task, not just by putting in time.`, book: `Trainees must show the instructor they have the knowledge and skills needed to safely perform the hands-on tasks in each module.`, ask: `How could competency-based training shorten an apprenticeship?` },
+      { k: "k", t: `GATB Form Test`, plain: `An aptitude test you may take to get into an apprenticeship.`, book: `General Aptitude Test Battery, usually administered by the local Employment Security Commission.`, ask: `What else might the apprenticeship committee ask for?` },
+      { k: "k", t: `Licensing`, plain: `Passing a state or local exam that proves you are qualified.`, book: `Assurance that you are qualified to install and/or maintain electrical systems. Requirements vary from state to state and may vary by municipality.`, ask: `Who would you contact to learn the licensing rules where you live?` }
+    ],
+    3: [
+      { k: "o", t: `OSHA`, plain: `The federal agency that makes and enforces workplace safety rules.`, book: `Occupational Safety and Health Administration: the federal government agency established to ensure a safe and healthy environment in the workplace.`, ask: `What can OSHA do to an unsafe job site?` },
+      { k: "k", t: `Professionalism`, plain: `How you act and carry yourself at work, in person and in writing.`, book: `The desired overall behavior and attitude expected in the workplace.`, ask: `Name three things professionalism includes.` },
+      { k: "k", t: `Tardiness / absenteeism`, plain: `Being late, and being off the job.`, book: `Tardiness means being late for work; absenteeism means being off the job for one reason or another.`, ask: `Why does an absence cost the employer even if you are not paid?` },
+      { k: "k", t: `NEC`, plain: `The rulebook for installing electrical systems safely.`, book: `The National Electrical Code sets the minimum standards for the safe installation of electrical systems.`, ask: `Which electricians do not follow the NEC?` },
+      { k: "k", t: `NFPA 70E`, plain: `The rules for working safely near live electrical parts.`, book: `Standard for Electrical Safety in the Workplace: safe work practices near exposed energized parts, approach distances, and PPE for shock and arc flash.`, ask: `What is an arc flash hood for?` },
+      { k: "k", t: `29 CFR 1926`, plain: `OSHA's rule book for construction.`, book: `OSHA Safety and Health Standards for the Construction Industry. General industry standards are in 29 CFR 1910.`, ask: `Which one covers general industry, 1910 or 1926?` }
+    ]
+  };
+
+  var QUIZ = {
+    1: [
+      { q: `Which stage installs the panelboard, raceway, wiring and boxes?`, o: [`Rough-in`, `Trim-out`, `Testing`], a: 0, why: `Rough-in is the beginning stage of wiring.` },
+      { q: `In commercial and industrial work, conductors usually run in...`, o: [`Nonmetallic-sheathed cable only`, `Metal raceways`, `Open air`], a: 1, why: `That is why commercial and industrial electricians must be skilled at bending conduit.` },
+      { q: `At a large industrial plant, who keeps the system running after it is installed?`, o: [`On-site maintenance electricians`, `The power company`, `The general contractor`], a: 0, why: `Contract electricians install it, then hand it over to maintenance electricians who work directly for the plant.` },
+      { q: `What does a service electrician mostly do?`, o: [`Wires new tract homes`, `Answers calls for repairs and upgrades on existing systems`, `Builds substations`], a: 1, why: `Service electricians work on existing systems and usually not on new construction.` },
+      { q: `What does E&I stand for in "E&I technician"?`, o: [`Electrical and instrumentation`, `Engineering and inspection`, `Energy and installation`], a: 0, why: `Industrial maintenance electricians often handle both electrical and instrumentation systems.` },
+      { q: `Which standards do maritime electricians follow?`, o: [`The NEC`, `ABS, IEEE and US Navy standards`, `Only OSHA`], a: 1, why: `Maritime electricians do not follow the NEC.` },
+      { q: `Who works on transmission and distribution substations?`, o: [`Utility substation electricians`, `Maritime electricians`, `Remodeling contractors`], a: 0, why: `Substation electricians install, test and repair substation equipment for power providers.` }
+    ],
+    2: [
+      { q: `Who sets the minimum standards for apprenticeship programs?`, o: [`The DOL Office of Apprenticeship`, `OSHA`, `The NEC`], a: 0, why: `The US Department of Labor sets the minimum standards nationwide.` },
+      { q: `How many OJL hours per year do DOL standards require?`, o: [`1,000`, `2,000`, `8,000`], a: 1, why: `2,000 hours a year. Over four years that is 8,000.` },
+      { q: `How many classroom hours per year do DOL standards require at minimum?`, o: [`144`, `576`, `2,000`], a: 0, why: `At least 144 hours a year, or 576 over a typical four-year program.` },
+      { q: `An apprentice typically gets a pay raise after each...`, o: [`500 hours`, `1,000 hours`, `4,000 hours`], a: 1, why: `After each 1,000 hours of related work, as set by the apprenticeship standards.` },
+      { q: `How much of the four-year program can a youth apprentice finish by high school graduation?`, o: [`One year`, `Up to two years`, `All four years`], a: 1, why: `Students entering in eleventh grade can finish up to two years.` },
+      { q: `Licensing requirements are...`, o: [`The same in every state`, `Different from state to state, and sometimes city to city`, `Set by NCCER`], a: 1, why: `Check with your local building department for the rules where you live.` }
+    ],
+    3: [
+      { q: `You see something unsafe on the job. What do you do?`, o: [`Report it directly to your supervisor`, `Ignore it if it does not affect you`, `Mention it next week`], a: 0, why: `OSHA regulations require you to report hazardous conditions.` },
+      { q: `Which sets the minimum standards for safely installing electrical systems?`, o: [`The NEC`, `NFPA 70E`, `29 CFR 1910`], a: 0, why: `The NEC sets the minimum standards for safe installation.` },
+      { q: `What does NFPA 70E cover?`, o: [`Safe work near exposed energized parts`, `Building permits`, `Apprenticeship hours`], a: 0, why: `It covers safe work practices, approach distances and PPE for shock and arc flash.` },
+      { q: `Which standard covers OSHA rules for construction?`, o: [`29 CFR 1926`, `29 CFR 1910`, `NFPA 70E`], a: 0, why: `1926 is construction. 1910 is general industry.` },
+      { q: `If you must be absent, you should...`, o: [`Call in as soon as possible`, `Just not show up`, `Tell a coworker next week`], a: 0, why: `Calling in early lets your employer find a replacement.` },
+      { q: `Which one breaks the rules for professional email?`, o: [`A clear subject line`, `Typing in all capital letters`, `Keeping it brief`], a: 1, why: `Do not type in all capital letters.` },
+      { q: `Employers with more than how many employees must keep injury and illness records?`, o: [`5`, `10`, `50`], a: 1, why: `More than 10 employees, and the records must be available to employees.` }
+    ]
+  };
+
+  var TALK = {
+    1: {
+      qs: [`What is the difference between rough-in and trim-out?`, `Why do commercial electricians need to be good at bending conduit?`, `Why does industrial work need special knowledge of hazardous locations?`, `Which career path in this section sounds most interesting to you, and why?`],
+      scn: [{
+        t: `"The kitchen lights stopped working"`,
+        s: `A homeowner's kitchen lights stopped working and they want them fixed. Which kind of electrician gets this call, and what skills do they need?`,
+        g: [`A service electrician. They answer repair and upgrade calls on existing systems.`, `They need a strong understanding of electrical theory to troubleshoot the problem.`, `Service electricians usually work in existing buildings, not new construction, and many run their own business.`]
+      }, {
+        t: `"I want to work at a shipyard"`,
+        s: `Your student is interested in becoming a maritime electrician. What rules would they follow, and what would they work on?`,
+        g: [`Maritime electricians do not follow the NEC.`, `They follow ABS, IEEE and US Navy standards.`, `They work on steering, alarm and monitoring, and power distribution systems, and install batteries, generators, motors, pumps and navigation equipment.`]
+      }],
+      parent: `Ask your student to name the three areas of electrical work and one kind of electrician who works in each.`
+    },
+    2: {
+      qs: [`Why is an apprenticeship sometimes called "earn while you learn"?`, `What does competency-based training mean?`, `Why do apprentices log their hours and turn them in?`, `Why does getting a license also make you liable?`],
+      scn: [{
+        t: `"How long until I am done?"`,
+        s: `An apprentice works 2,000 OJL hours a year. How long until they reach 8,000 hours, and how often might they get a raise?`,
+        g: [`8,000 divided by 2,000 is four years.`, `A raise typically comes after each 1,000 hours of work, which is about twice a year at that pace.`, `A competency-based program may shorten the time if they test out of tasks.`]
+      }, {
+        t: `"Applying to the program"`,
+        s: `Your student wants to apply to an apprenticeship. What might the committee ask them to provide?`,
+        g: [`Aptitude test (GATB Form Test) results.`, `School transcripts, letters of reference and proof of age.`, `A DD214 if they are a veteran, and a record of any related or pre-apprenticeship training.`]
+      }],
+      parent: `Ask your student how they would find out the electrical licensing requirements where you live. (Hint: the local building department.)`
+    },
+    3: {
+      qs: [`Why does being late or absent cost the employer, even if you are not paid?`, `What is the difference between loyalty and respect?`, `Why should you report an unsafe condition even if it does not affect you?`, `What is OSHA's main mission?`],
+      scn: [{
+        t: `"Just a few minutes late"`,
+        s: `A coworker says being a little late is fine as long as they make up the time. What do you think?`,
+        g: [`Frequent lateness signals poor work habits and a lack of commitment.`, `Jobs are bid and scheduled around a set crew size, so missing time hurts the whole crew.`, `If you must be absent, call in as soon as possible so a replacement can be found.`]
+      }, {
+        t: `"It's not my area"`,
+        s: `Your student notices a hazard on the job site in an area where they are not working. Should they say anything?`,
+        g: [`Yes. Report it directly to the supervisor.`, `OSHA regulations require workers to report hazardous conditions.`, `Employers are more likely to criticize you for not reporting. Ignoring a hazard could cause serious injury or death.`]
+      }],
+      parent: `Ask your student to name the four things an employer must do for their safety training.`
+    }
+  };
+
+  var FINAL = [
+    `I can name the three areas of electrical work.`,
+    `I can explain the difference between rough-in and trim-out, and say what goes in during each.`,
+    `I can name parts of a residential, a commercial and an industrial electrical system.`,
+    `I can explain why classified (hazardous) locations need special care.`,
+    `I can describe what a service electrician, a maintenance technician, a substation electrician and a maritime electrician do.`,
+    `I can say which standards maritime electricians follow instead of the NEC.`,
+    `I can state the DOL minimum hours per year for classroom and OJL, and the four-year totals.`,
+    `I can explain what competency-based training means.`,
+    `I can describe the Youth Apprenticeship Program and why licensing matters.`,
+    `I can explain professionalism, honesty, loyalty and respect on the job.`,
+    `I can say what to do when I see something unsafe, and why.`,
+    `I can explain what the NEC, NFPA 70E and OSHA each cover, and what my employer must do for my safety.`
+  ];
+
+  var PRACTICE = {
+    1: [
+      { src: `Section Review · Q1 (1.1.0)`, a: 1,
+        pq: `During which stage are devices and fixtures connected?`,
+        po: [`Rough-in`, `Trim-out`, `Final finish`, `Cleanup`],
+        tq: `Devices and fixtures are terminated during the construction phase called _____.`,
+        to: [`rough-in`, `trim-out`, `final finish`, `cleanup`],
+        why: `Trim-out is the final stage of wiring: devices and fixtures are installed and terminated.`,
+        br: [[`connected`, `terminated`], [`stage`, `construction phase`]] },
+      { src: `Section Review · Q2 (1.2.0)`, a: 2,
+        pq: `What is true about commercial electrical work?`,
+        po: [`Wiring hardly ever goes in raceways`, `Most wiring is in hazardous locations`, `Fire alarm systems are often required`, `It is the same as house wiring`],
+        tq: `Which statement about commercial electrical work is true?`,
+        to: [`Wiring is seldom installed in raceways.`, `Most wiring is installed in classified (hazardous) locations.`, `Fire alarm systems are commonly required.`, `It is identical to residential work.`],
+        why: `A fire alarm system is one of the parts of a commercial electrical system.`,
+        br: [[`often required`, `commonly required`], [`hazardous locations`, `classified (hazardous) locations`]] },
+      { src: `Section Review · Q3 (1.3.0)`, a: 0,
+        pq: `At a factory or plant, who usually keeps the electrical system running?`,
+        po: [`The plant's own maintenance crew`, `Outside electrical contractors`, `Top managers`, `The power company`],
+        tq: `Electrical systems in industrial facilities are most likely maintained by _____.`,
+        to: [`on-site maintenance personnel`, `outside electrical contractors`, `senior management`, `the local utility`],
+        why: `Contract electricians install the system, then hand it over to maintenance electricians who work directly for the facility.`,
+        br: [[`factory or plant`, `industrial facilities`], [`the plant's own maintenance crew`, `on-site maintenance personnel`]] },
+      { src: `Section Review · Q4 (1.4.2)`, a: 2,
+        pq: `Commercial electricians often work for electrical contractors. Who hires those contractors?`,
+        po: [`Bigger electrical contractors`, `Standards groups`, `General contractors`, `Architects`],
+        tq: `Commercial electricians are often employed by electrical contractors working as subcontractors for _____.`,
+        to: [`larger electrical contractors`, `standards organizations`, `general contractors`, `architects`],
+        why: `Electrical contractors often work as subcontractors for a general contractor.`,
+        br: [[`Who hires those contractors`, `working as subcontractors for`]] },
+      { src: `Module Review · Q1 (1.1.0)`, a: 0,
+        pq: `When is the panelboard in a house usually put in?`,
+        po: [`Rough-in`, `Trim-out`, `When the service goes in`, `During planning`],
+        tq: `In residential wiring, panelboards are typically installed during _____.`,
+        to: [`rough-in`, `trim-out`, `service installation`, `planning`],
+        why: `Rough-in includes the panelboard, raceway system, wiring and boxes.`,
+        br: [[`in a house`, `in residential wiring`], [`usually put in`, `typically installed`]] },
+      { src: `Module Review · Q2 (1.1.0)`, a: 3,
+        pq: `What kind of cable is usually used to wire a house?`,
+        po: [`Medium-voltage cable`, `Tray cable`, `Flat conductor cable`, `Nonmetallic-sheathed cable`],
+        tq: `Residential wiring systems typically use _____.`,
+        to: [`medium-voltage cable`, `tray cable`, `flat conductor cable`, `nonmetallic-sheathed cable`],
+        why: `Nonmetallic-sheathed cable is one of the main parts of a residential system.`,
+        br: [[`wire a house`, `residential wiring systems`]] },
+      { src: `Module Review · Q3 (1.2.0)`, a: 2,
+        pq: `Where would you most likely find a commercial electrician at work?`,
+        po: [`A shipyard`, `A new housing tract`, `An office building`, `A petrochemical plant`],
+        tq: `In which of these environments would a commercial electrician most likely be working?`,
+        to: [`Shipyard`, `Tract home construction`, `Office building`, `Petrochemical plant`],
+        why: `Commercial work includes offices, stores, apartment buildings, service stations and hospitals.`,
+        br: [[`Where would you ... find`, `In which of these environments`]] },
+      { src: `Module Review · Q4 (1.3.0)`, a: 1,
+        pq: `Which kind of work most needs special knowledge of hazardous locations?`,
+        po: [`House wiring`, `Industrial wiring`, `Commercial wiring`, `Service work`],
+        tq: `Which of the following would most likely call for special knowledge of hazardous locations?`,
+        to: [`Residential wiring`, `Industrial wiring`, `Commercial wiring`, `Service work`],
+        why: `Many industrial sites handle hazardous materials and have classified locations.`,
+        br: [[`house wiring`, `residential wiring`], [`most needs`, `most likely call for`]] },
+      { src: `Module Review · Q5 (1.4.1)`, a: 0,
+        pq: `Who usually wires tract homes?`,
+        po: [`Residential electricians`, `Commercial electricians`, `Homeowners`, `Utility workers`],
+        tq: `Tract homes are typically wired by _____.`,
+        to: [`residential electricians`, `commercial electricians`, `homeowners`, `utility workers`],
+        why: `Tract homes (subdivisions) are frequently wired by residential electricians.`,
+        br: [[`usually`, `typically`]] }
+    ],
+    2: [
+      { src: `Section Review · Q1 (2.1.0)`, a: 3,
+        pq: `How long is the NCCER electrical training program?`,
+        po: [`One year`, `Two years`, `Three years`, `Four years`],
+        tq: `The NCCER electrical training program, which applies DOL standards, is a _____.`,
+        to: [`one-year program`, `two-year program`, `three-year program`, `four-year program`],
+        why: `NCCER uses the DOL minimum standards to build a four-year electrical program.`,
+        br: [[`How long is`, `is a _____ program`]] },
+      { src: `Section Review · Q2 (2.2.1)`, a: 0,
+        pq: `What will you probably need to take to get into an apprenticeship program?`,
+        po: [`The GATB aptitude test`, `A license`, `The SAT`, `An OSHA 40-hour course`],
+        tq: `Entry into an apprenticeship program will likely require a(n) _____.`,
+        to: [`GATB Form Test`, `license`, `Scholastic Aptitude Test`, `OSHA 40-hour course`],
+        why: `The apprenticeship committee may ask for General Aptitude Test Battery (GATB Form Test) results.`,
+        br: [[`get into`, `entry into`], [`GATB aptitude test`, `GATB Form Test`]] },
+      { src: `Module Review · Q6 (2.1.0)`, a: 1,
+        pq: `Who sets the minimum standards for apprenticeship training programs?`,
+        po: [`OSHA`, `The Department of Labor (DOL)`, `NCCER`, `The employer`],
+        tq: `Minimum standards for apprenticeship training programs are established by _____.`,
+        to: [`OSHA`, `the DOL`, `NCCER`, `the employer`],
+        why: `The US Department of Labor Office of Apprenticeship sets the minimum standards across the country.`,
+        br: [[`Who sets`, `are established by`]] },
+      { src: `Module Review · Q7 (2.2.3)`, a: 1,
+        pq: `Which is true about your apprenticeship?`,
+        po: [`Your training ends when the apprenticeship ends`, `Licensing rules are different from state to state`, `OSHA sets the minimum training standards`, `You get a license automatically when you finish`],
+        tq: `Which statement about your apprenticeship is true?`,
+        to: [`Once your apprenticeship is finished, your training is over.`, `Licensing requirements vary from state to state.`, `OSHA sets the minimum standards for training programs nationwide.`, `After completing your apprenticeship, you automatically receive a license.`],
+        why: `Licensing requirements vary from state to state and may vary by city. You still have to take a licensing exam.`,
+        br: [[`different from state to state`, `vary from state to state`]] }
+    ],
+    3: [
+      { src: `Section Review · Q1 (3.1.9)`, a: 0,
+        pq: `Where do you find the minimum standards for safely installing electrical systems?`,
+        po: [`The NEC`, `29 CFR 1910`, `29 CFR 1926`, `NFPA 70E`],
+        tq: `The minimum standards for the safe installation of electrical systems are found in _____.`,
+        to: [`the National Electrical Code® (NEC®)`, `29 CFR, Part 1910`, `29 CFR, Part 1926`, `NFPA 70E®`],
+        why: `The NEC sets the minimum standards for the safe installation of electrical systems.`,
+        br: [[`safely installing`, `the safe installation of`]] },
+      { src: `Section Review · Q2 (3.2.0)`, a: 0,
+        pq: `Which OSHA standards cover general industry?`,
+        po: [`29 CFR 1910`, `29 CFR 1926`, `29 CFR 1965`, `29 CFR 1970`],
+        tq: `OSHA standards for general industry are found in _____.`,
+        to: [`29 CFR, Part 1910`, `29 CFR, Part 1926`, `29 CFR, Part 1965`, `29 CFR, Part 1970`],
+        why: `29 CFR 1910 is general industry. 29 CFR 1926 is construction.`,
+        br: [[`29 CFR 1910`, `29 CFR, Part 1910`]] },
+      { src: `Module Review · Q8 (3.1.8)`, a: 2,
+        pq: `Which is true about being late or absent?`,
+        po: [`Never be absent, even when you are contagious`, `Being a little late is fine if you make up the time`, `If you must be absent, call in early so your employer can find a replacement`, `If you are not paid, your absence costs the company nothing`],
+        tq: `Which statement about tardiness and absenteeism is true?`,
+        to: [`It is never acceptable to be absent, even if you are contagious.`, `It is acceptable to be a little late as long as you make up the time.`, `If you must be absent, call in early so your employer can find a replacement.`, `If you are not paid, your absence costs the company nothing.`],
+        why: `Absences still cost the employer, so call in as soon as possible if you must be out.`,
+        br: [[`being late or absent`, `tardiness and absenteeism`]] },
+      { src: `Module Review · Q9 (3.1.9)`, a: 2,
+        pq: `You see a safety violation at your job site. What should you do?`,
+        po: [`Ignore it unless it affects you`, `Remember to stay away from that area`, `Report it to your supervisor`, `Assume it is fine if nobody has been hurt`],
+        tq: `If you observe a safety violation at your job site, you should _____.`,
+        to: [`ignore it unless it affects you directly`, `make a mental note to avoid the area in the future`, `report it to your supervisor`, `assume it is acceptable as long as no one has been injured`],
+        why: `Report unsafe equipment and conditions directly to your supervisor. OSHA requires it.`,
+        br: [[`see`, `observe`]] },
+      { src: `Module Review · Q10 (3.2.0)`, a: 3,
+        pq: `What is OSHA's main job?`,
+        po: [`Inspect job sites`, `Fine companies`, `Hand out safety equipment`, `Make sure employers keep the workplace safe`],
+        tq: `The primary mission of OSHA is to _____.`,
+        to: [`inspect job sites for safety violations`, `fine companies that violate safety regulations`, `distribute safety equipment to workers`, `ensure that employers maintain a safe workplace`],
+        why: `OSHA can inspect and fine, but those are tools. Its mission is to make sure employers provide and maintain a safe workplace.`,
+        br: [[`main job`, `primary mission`]] }
+    ]
+  };
+
+  function el(tag, cls, text) { var n = document.createElement(tag); if (cls) n.className = cls; if (text != null) n.textContent = text; return n; }
+
+  function buildPoints(ul, list, prefix) {
+    list.forEach(function (html, i) {
+      var li = el("li");
+      var label = el("label");
+      var input = document.createElement("input");
+      input.type = "checkbox";
+      input.id = prefix + "-" + i;
+      var span = el("span");
+      span.innerHTML = html; // static text written in this file
+      label.appendChild(input); label.appendChild(span);
+      li.appendChild(label); ul.appendChild(li);
+    });
+  }
+
+  function field(label, text) {
+    var d = el("span");
+    d.appendChild(el("span", "label", label));
+    d.appendChild(document.createTextNode(text));
+    return d;
+  }
+  function buildCards(host, n) {
+    CARDS[n].forEach(function (item) {
+      var b = el("button", "card");
+      b.type = "button";
+      b.setAttribute("aria-pressed", "false");
+      b.setAttribute("aria-label", item.t + ". Press to flip the card.");
+      var inner = el("span", "card-inner");
+      var f = el("span", "face front" + (item.k === "k" ? " key" : ""));
+      f.appendChild(el("span", "strip", (item.k === "o" ? "NCCER trade term" : "Key term") + " · Section " + n));
+      f.appendChild(el("span", "term", item.t));
+      f.appendChild(el("span", "hint", "TAP TO FLIP"));
+      var k = el("span", "face back");
+      k.appendChild(el("span", "strip", item.t));
+      var body = el("span", "body");
+      body.appendChild(field("In everyday words", item.plain));
+      body.appendChild(field("From the module", item.book));
+      var ask = field("Ask your student", item.ask);
+      ask.className = "ask";
+      body.appendChild(ask);
+      k.appendChild(body);
+      inner.appendChild(f); inner.appendChild(k);
+      b.appendChild(inner);
+      b.addEventListener("click", function () { b.setAttribute("aria-pressed", b.getAttribute("aria-pressed") === "true" ? "false" : "true"); });
+      host.appendChild(b);
+    });
+  }
+
+  function buildQuiz(host, n) {
+    var list = QUIZ[n];
+    var answered = 0;
+    host.appendChild(el("p", "ticket-intro", "Pick the answer. You will see right away if it is correct. Nothing is saved or sent."));
+    var foot = el("div", "ticket-foot");
+    var done = el("p", null, "");
+    done.setAttribute("aria-live", "polite");
+    var retry = el("button", "btn", "Try again");
+    retry.type = "button";
+    retry.hidden = true;
+    foot.appendChild(done); foot.appendChild(retry);
+
+    list.forEach(function (item, qi) {
+      var fs = el("fieldset", "q");
+      fs.appendChild(el("legend", null, (qi + 1) + ". " + item.q));
+      var opts = el("div", "opts");
+      var fb = el("p", "fb");
+      fb.setAttribute("aria-live", "polite");
+      var btns = [];
+      item.o.forEach(function (text, oi) {
+        var b = el("button", "opt", text);
+        b.type = "button";
+        b.addEventListener("click", function () {
+          btns.forEach(function (x) { x.disabled = true; });
+          answered++;
+          fb.textContent = "";
+          if (oi === item.a) {
+            b.classList.add("right");
+            fb.appendChild(el("b", null, "Correct. ")); fb.appendChild(document.createTextNode(item.why));
+          } else {
+            b.classList.add("wrong");
+            btns[item.a].classList.add("right");
+            fb.appendChild(el("b", null, "Not quite. "));
+            fb.appendChild(document.createTextNode("The answer is \"" + item.o[item.a] + "\". " + item.why));
+          }
+          if (answered === list.length) {
+            done.textContent = "Ticket finished. Reread any part of the section that felt shaky, then try again.";
+            retry.hidden = false;
+          }
+        });
+        btns.push(b); opts.appendChild(b);
+      });
+      fs.appendChild(opts); fs.appendChild(fb);
+      host.appendChild(fs);
+      fs._reset = function () { btns.forEach(function (x) { x.disabled = false; x.className = "opt"; }); fb.textContent = ""; };
+    });
+    host.appendChild(foot);
+    retry.addEventListener("click", function () {
+      host.querySelectorAll("fieldset").forEach(function (f) { f._reset(); });
+      answered = 0; done.textContent = ""; retry.hidden = true;
+    });
+  }
+
+  function buildTalk(host, n) {
+    var t = TALK[n];
+    var ol = el("ol", "qs");
+    t.qs.forEach(function (q) { ol.appendChild(el("li", null, q)); });
+    host.appendChild(ol);
+    t.scn.forEach(function (s) {
+      var d = el("details", "scn");
+      d.appendChild(el("summary", null, "Scenario: " + s.t));
+      d.appendChild(el("p", "setup", s.s));
+      var g = el("div", "good");
+      g.appendChild(el("b", null, "A good answer includes"));
+      var ul = el("ul");
+      s.g.forEach(function (x) { ul.appendChild(el("li", null, x)); });
+      g.appendChild(ul); d.appendChild(g);
+      host.appendChild(d);
+    });
+    if (t.parent) {
+      var p = el("div", "parent");
+      p.appendChild(el("b", null, "Talk it over with your loved ones"));
+      p.appendChild(el("p", null, t.parent));
+      host.appendChild(p);
+    }
+  }
+
+  function ask(label, cls, q, opts, correct, onAnswer) {
+    var box = el("div", "ask-block" + (cls ? " " + cls : ""));
+    box.appendChild(el("p", "step-label", label));
+    box.appendChild(el("p", "pr-q", q));
+    var wrap = el("div", "opts");
+    wrap.setAttribute("role", "group");
+    wrap.setAttribute("aria-label", q);
+    var fb = el("p", "fb");
+    fb.setAttribute("aria-live", "polite");
+    var btns = [];
+    opts.forEach(function (text, oi) {
+      var b = el("button", "opt", String.fromCharCode(65 + oi) + ".  " + text);
+      b.type = "button";
+      b.addEventListener("click", function () {
+        btns.forEach(function (x) { x.disabled = true; });
+        var ok = oi === correct;
+        b.classList.add(ok ? "right" : "wrong");
+        if (!ok) btns[correct].classList.add("right");
+        onAnswer(ok, fb, String.fromCharCode(65 + correct));
+      });
+      btns.push(b); wrap.appendChild(b);
+    });
+    box.appendChild(wrap); box.appendChild(fb);
+    box.reset = function () { btns.forEach(function (x) { x.disabled = false; x.className = "opt"; }); fb.textContent = ""; };
+    return box;
+  }
+  function say(fb, lead, text) {
+    fb.textContent = "";
+    fb.appendChild(el("b", null, lead + " "));
+    fb.appendChild(document.createTextNode(text));
+  }
+
+  function buildPractice(host, n) {
+    var list = PRACTICE[n];
+    host.appendChild(el("p", "pr-intro", "Test questions use the textbook's formal words. Answer each question in plain English first, then see the same question the way the book asks it. The \"Words to notice\" box shows how the two fit together. Nothing is saved or sent."));
+    var items = [];
+    list.forEach(function (item, i) {
+      var art = el("article", "pr");
+      var head = el("div", "pr-head");
+      head.appendChild(el("span", null, "Question " + (i + 1) + " of " + list.length));
+      head.appendChild(el("span", null, "Source: " + item.src));
+      art.appendChild(head);
+
+      var bridge = el("div", "bridge");
+      bridge.hidden = true;
+      bridge.appendChild(el("p", "step-label", "Words to notice"));
+      var ul = el("ul");
+      item.br.forEach(function (p) {
+        var li = el("li");
+        li.appendChild(el("span", "you", p[0]));
+        li.appendChild(el("span", "arrow", "→"));
+        li.appendChild(el("span", "pub", p[1]));
+        ul.appendChild(li);
+      });
+      bridge.appendChild(ul);
+
+      var b2 = ask("Step 2 · The same question in the textbook's words", "formal", item.tq, item.to, item.a, function (ok, fb, letter) {
+        if (ok) say(fb, "Correct.", "You just answered it in the textbook's voice.");
+        else say(fb, "Not quite.", "The answer is " + letter + ". Compare it with your plain-English answer above.");
+        bridge.hidden = false;
+      });
+      b2.hidden = true;
+      var b1 = ask("Step 1 · In plain English", "", item.pq, item.po, item.a, function (ok, fb, letter) {
+        if (ok) say(fb, "Correct.", item.why);
+        else say(fb, "Not quite.", "The answer is " + letter + ". " + item.why);
+        b2.hidden = false;
+      });
+      art.appendChild(b1); art.appendChild(b2); art.appendChild(bridge);
+      host.appendChild(art);
+      items.push({ b1: b1, b2: b2, bridge: bridge });
+    });
+    var foot = el("div", "ticket-foot");
+    var retry = el("button", "btn", "Start this set over");
+    retry.type = "button";
+    retry.addEventListener("click", function () {
+      items.forEach(function (x) { x.b1.reset(); x.b2.reset(); x.b2.hidden = true; x.bridge.hidden = true; });
+    });
+    foot.appendChild(retry);
+    host.appendChild(foot);
+  }
+
+  [1, 2, 3].forEach(function (n) {
+    buildPoints(document.querySelector('[data-points="' + n + '"]'), POINTS[n], "s" + n);
+    buildCards(document.querySelector('[data-cards="' + n + '"]'), n);
+    buildQuiz(document.querySelector('[data-quiz="' + n + '"]'), n);
+    buildTalk(document.querySelector('[data-talk="' + n + '"]'), n);
+    buildPractice(document.querySelector('[data-practice="' + n + '"]'), n);
+  });
+  buildPoints(document.getElementById("final-points"), FINAL, "fin");
+})();
+</script>
+
+</body>
+</html>

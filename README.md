@@ -19,6 +19,7 @@ Every module section follows the same six parts:
 
 | Module | Guide file |
 | --- | --- |
+| NCCER Electrical Level 1, Module 26101-20: Occupational Overview: The Electrical Industry | `occupational-overview.html` (guided notes and slides in `occupational-overview-materials/`) |
 | NCCER Electrical Level 1, Module 26102-20: Safety for Electricians | `electrical-foundations.html` |
 | NCCER Core, Module 00105: Introduction to Construction Drawings | `construction-drawings.html` |
 | NCCER Electrical Level 1, Module 26103-20: Introduction to Electrical Circuits | `electrical-circuits.html` |

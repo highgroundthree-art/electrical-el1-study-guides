@@ -33,6 +33,10 @@ Every module section follows the same six parts:
 
 `index.html` is the landing page that links to the finished guides.
 
+## Lecture decks and guided notes
+
+Each module that has them keeps its student guided notes and two lecture decks (click-to-reveal and no-animation) in a `<guide-name>-materials/` folder, linked from the module's card on `index.html`. Answer keys are not posted here.
+
 ## Business tab
 
 `business.html` is the Business page. It holds the download link and steps for the Business Plan and Loan Assembly Guide (`Business_Plan_and_Loan_Assembly_Guide.docx`), a fillable Word file students complete and save as a PDF to turn in. Its content comes from SBA.gov guidance.

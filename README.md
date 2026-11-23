@@ -26,6 +26,7 @@ Every module section follows the same six parts:
 | NCCER Electrical Level 1, Module 26104-20: Electrical Theory | `electrical-theory.html` |
 | NCCER Electrical Level 1, Module 26105-20: Introduction to the National Electrical Code | `national-electrical-code.html` |
 | NCCER Electrical Level 1, Module 26106-20: Device Boxes | `device-boxes.html` |
+| NCCER Electrical Level 1, Module 26108-20: Wireways, Raceways, and Fittings (draft: some scanned-page sections not yet covered) | `wireways-raceways-fittings.html` (guided notes and slides in `wireways-raceways-fittings-materials/`) |
 | NCCER Core, Module 00107: Basic Communication Skills | `communication-skills.html` |
 | NCCER Core, Module 00108: Basic Employability Skills | `employability-skills.html` |
 | NCCER Electrical Level 1, Module 26110-20: Basic Electrical Construction Documents | `electrical-construction-documents.html` |

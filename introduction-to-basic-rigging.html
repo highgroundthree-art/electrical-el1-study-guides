@@ -1,0 +1,1167 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Introduction to Basic Rigging Loved Ones Study Guide</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+/* Layout concept: one long study sheet. Each module part runs the same six parts
+   (read, review points, trade-term tags, ticket out the door, talk it over, practice questions). */
+:root {
+  --bg: #EEF1F3;
+  --surface: #FFFFFF;
+  --ink: #14202B;
+  --ink-soft: #46576A;
+  --line: #C9D2DA;
+  --band: #14202B;
+  --band-ink: #F4F7F9;
+  --accent: #C42B17;
+  --accent-ink: #FFFFFF;
+  --caution: #F2B705;
+  --caution-soft: #FFF3C4;
+  --good: #1E7A3C;
+  --good-soft: #DDF3E4;
+  --bad: #A8321F;
+  --bad-soft: #FBE3DE;
+  --tag-hole: #EEF1F3;
+  --focus: #0B5FFF;
+  --font-display: "Barlow Condensed", "Arial Narrow", Impact, sans-serif;
+  --font-body: "Barlow", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0F171E; --surface: #18232D; --ink: #EAF0F4; --ink-soft: #A5B4C2; --line: #2E3E4C;
+    --band: #0A1016; --band-ink: #F4F7F9; --accent: #FF5A44; --accent-ink: #14202B;
+    --caution: #F2B705; --caution-soft: #3A3210; --good: #6FD08C; --good-soft: #17301F;
+    --bad: #FF8E7C; --bad-soft: #3A1B16; --tag-hole: #0F171E; --focus: #6AA2FF;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0F171E; --surface: #18232D; --ink: #EAF0F4; --ink-soft: #A5B4C2; --line: #2E3E4C;
+  --band: #0A1016; --band-ink: #F4F7F9; --accent: #FF5A44; --accent-ink: #14202B;
+  --caution: #F2B705; --caution-soft: #3A3210; --good: #6FD08C; --good-soft: #17301F;
+  --bad: #FF8E7C; --bad-soft: #3A1B16; --tag-hole: #0F171E; --focus: #6AA2FF;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--font-body); font-size: 17px; line-height: 1.6; }
+[hidden] { display: none !important; }
+:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
+.wrap { max-width: 920px; margin-inline: auto; padding-inline: max(16px, env(safe-area-inset-left, 0px)) max(16px, env(safe-area-inset-right, 0px)); }
+h1, h2, h3, h4 { font-family: var(--font-display); text-transform: uppercase; letter-spacing: 0.03em; line-height: 1.05; margin: 0; text-wrap: balance; }
+.eyebrow { font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-soft); }
+
+.band { background: var(--band); color: var(--band-ink); padding-block: 34px 26px; border-bottom: 8px solid var(--caution); }
+.band .eyebrow { color: var(--caution); }
+.band h1 { font-size: clamp(2.5rem, 9vw, 4.4rem); font-weight: 700; margin-top: 10px; }
+.band .sub { margin: 14px 0 0; font-size: 1.1rem; color: #D5DEE5; max-width: 46ch; }
+.band .byline { margin: 14px 0 0; font-size: 0.95rem; color: #AEBBC7; }
+nav.jump { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 22px; }
+nav.jump a { text-decoration: none; font-weight: 600; font-size: 0.95rem; padding: 8px 14px; border: 2px solid #3B4B5A; border-radius: 3px; color: var(--band-ink); }
+nav.jump a:hover { border-color: var(--caution); }
+
+.intro { margin-top: 28px; display: grid; gap: 22px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 380px), 1fr)); }
+.panel { background: var(--surface); border: 1px solid var(--line); padding: 20px 22px 22px; min-width: 0; }
+.panel h2 { font-size: 1.5rem; font-weight: 700; margin-bottom: 10px; }
+.panel p { margin: 0 0 10px; }
+.panel ol { margin: 8px 0 0; padding-left: 1.3em; display: grid; gap: 6px; }
+.notice { background: var(--caution-soft); border: 2px solid var(--caution); padding: 16px 20px; margin-top: 22px; }
+.notice p { margin: 4px 0 0; }
+.notice h2 { font-size: 1.25rem; }
+
+/* section */
+.sec { margin-top: 56px; }
+.sec-head { border-top: 8px solid var(--ink); padding-top: 18px; }
+.sec-head h2 { font-size: clamp(2rem, 6vw, 3rem); font-weight: 700; margin-top: 6px; }
+.sec-head .obj { margin: 10px 0 0; color: var(--ink-soft); max-width: 62ch; }
+.part { margin-top: 34px; }
+.part-title { display: flex; align-items: baseline; gap: 12px; margin-bottom: 14px; }
+.part-title .letter { font-family: var(--font-mono); font-size: 13px; background: var(--ink); color: var(--bg); padding: 2px 8px; flex: none; }
+.part-title h3 { font-size: 1.7rem; font-weight: 700; }
+.part-title .time { margin-left: auto; font-family: var(--font-mono); font-size: 12px; color: var(--ink-soft); white-space: nowrap; }
+
+.prose { background: var(--surface); border: 1px solid var(--line); padding: 22px 24px; }
+.prose h4 { font-size: 1.25rem; font-weight: 700; margin: 20px 0 6px; color: var(--accent); }
+.prose h4:first-child { margin-top: 0; }
+.prose p { margin: 0 0 10px; max-width: 64ch; }
+.prose ul, .prose ol { margin: 0 0 10px; padding-left: 1.2em; max-width: 64ch; }
+.prose li { margin-bottom: 4px; }
+.prose .big { font-size: 1.12rem; font-weight: 500; border-left: 6px solid var(--caution); padding: 4px 0 4px 14px; margin: 0 0 16px; }
+.prose table { border-collapse: collapse; margin: 8px 0 14px; font-size: 0.95rem; width: 100%; max-width: 620px; }
+.prose th, .prose td { text-align: left; padding: 6px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+.prose th { font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-soft); }
+.prose caption { caption-side: top; text-align: left; font-weight: 600; font-size: 0.95rem; padding: 0 0 8px; color: var(--ink); }
+.scroll { overflow-x: auto; }
+.case { background: var(--bg); border-left: 6px solid var(--accent); padding: 12px 16px; margin: 14px 0 0; max-width: 64ch; }
+.case b { font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.08em; text-transform: uppercase; display: block; color: var(--ink-soft); }
+.case ul { margin: 6px 0 0; }
+.warn { background: var(--bad-soft); border-left: 6px solid var(--bad); padding: 12px 16px; margin: 14px 0 0; max-width: 64ch; }
+.warn b { font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.08em; text-transform: uppercase; display: block; color: var(--bad); }
+
+/* review points */
+.points { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.points li { background: var(--surface); border: 1px solid var(--line); }
+.points label { display: grid; grid-template-columns: 28px minmax(0, 1fr); gap: 12px; padding: 12px 16px; cursor: pointer; align-items: start; }
+.points input { width: 22px; height: 22px; margin: 2px 0 0; accent-color: var(--good); }
+.points li:has(input:checked) { background: var(--good-soft); border-color: var(--good); }
+.points b { font-weight: 600; }
+
+/* cards */
+.deck { display: grid; gap: 22px; grid-template-columns: repeat(auto-fill, minmax(min(100%, 270px), 1fr)); }
+.card { all: unset; box-sizing: border-box; display: block; cursor: pointer; perspective: 1100px; min-width: 0; }
+.card:focus-visible { outline: 3px solid var(--focus); outline-offset: 4px; }
+.card-inner { display: grid; transition: transform 0.5s cubic-bezier(.3,.7,.2,1); transform-style: preserve-3d; position: relative; }
+.card[aria-pressed="true"] .card-inner { transform: rotateY(180deg); }
+.face { grid-area: 1 / 1; backface-visibility: hidden; -webkit-backface-visibility: hidden; display: flex; flex-direction: column; min-height: 250px; border: 2px solid var(--ink); background: var(--surface); position: relative; overflow: hidden; }
+.face::before { content: ""; position: absolute; top: 12px; left: 50%; width: 16px; height: 16px; margin-left: -8px; border-radius: 50%; background: var(--tag-hole); border: 2px solid var(--ink); }
+.front .strip { background: var(--accent); color: var(--accent-ink); padding: 38px 16px 8px; font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.08em; text-transform: uppercase; }
+.front.key .strip { background: var(--ink); color: var(--bg); }
+.front .term { flex: 1; display: flex; align-items: center; padding: 16px 18px; font-family: var(--font-display); text-transform: uppercase; font-weight: 700; font-size: clamp(1.8rem, 7vw, 2.2rem); line-height: 1.02; letter-spacing: 0.02em; overflow-wrap: anywhere; }
+.front .hint { padding: 10px 18px 14px; font-size: 0.8rem; color: var(--ink-soft); border-top: 1px dashed var(--line); font-family: var(--font-mono); letter-spacing: 0.04em; }
+.back { transform: rotateY(180deg); background: var(--caution-soft); }
+.back .strip { background: var(--ink); color: var(--bg); padding: 38px 16px 8px; font-family: var(--font-display); text-transform: uppercase; font-weight: 700; letter-spacing: 0.04em; font-size: 1.1rem; line-height: 1.05; }
+.back .body { padding: 14px 18px 16px; display: grid; gap: 10px; align-content: start; font-size: 0.95rem; line-height: 1.45; }
+.back .label { font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-soft); display: block; margin-bottom: 1px; }
+.back .ask { border-top: 1px dashed var(--ink-soft); padding-top: 10px; font-weight: 500; }
+@media (prefers-reduced-motion: reduce) {
+  .card-inner { transition: none; transform-style: flat; }
+  .card[aria-pressed="true"] .card-inner { transform: none; }
+  .back { transform: none; }
+  .face { backface-visibility: visible; }
+  .card .back { visibility: hidden; }
+  .card[aria-pressed="true"] .back { visibility: visible; }
+  .card[aria-pressed="true"] .front { visibility: hidden; }
+}
+
+/* ticket */
+.ticket { background: var(--surface); border: 2px dashed var(--ink); padding: 8px 20px 18px; position: relative; }
+.ticket-intro { margin: 14px 0 4px; color: var(--ink-soft); font-size: 0.95rem; }
+.q { border: 0; border-top: 1px solid var(--line); margin: 0; padding: 16px 0 14px; min-width: 0; }
+.q:first-of-type { border-top: 0; }
+.q legend { font-weight: 600; padding: 0; margin-bottom: 8px; float: left; width: 100%; }
+.q .opts { clear: both; display: grid; gap: 8px; }
+.opts { display: grid; gap: 8px; }
+.opt { font: inherit; text-align: left; padding: 10px 14px; background: var(--bg); color: var(--ink); border: 2px solid var(--line); border-radius: 3px; cursor: pointer; }
+.opt:hover:not(:disabled) { border-color: var(--ink); }
+.opt:disabled { cursor: default; }
+.opt.right { background: var(--good-soft); border-color: var(--good); }
+.opt.wrong { background: var(--bad-soft); border-color: var(--bad); }
+.fb { margin: 8px 0 0; font-size: 0.93rem; color: var(--ink-soft); }
+.fb b { color: var(--ink); }
+.ticket-foot { margin-top: 10px; display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+.ticket-foot p { margin: 0; font-weight: 500; }
+.btn { font: inherit; font-weight: 600; font-size: 0.92rem; padding: 8px 14px; background: var(--surface); color: var(--ink); border: 2px solid var(--ink); border-radius: 3px; cursor: pointer; }
+.btn:hover { background: var(--ink); color: var(--bg); }
+
+/* talk it over */
+.talk { display: grid; gap: 14px; }
+.talk .qs { background: var(--surface); border: 1px solid var(--line); padding: 16px 22px 16px 40px; margin: 0; display: grid; gap: 8px; }
+details.scn { background: var(--surface); border: 1px solid var(--line); border-left: 6px solid var(--caution); padding: 14px 18px; }
+details.scn summary { cursor: pointer; font-family: var(--font-display); text-transform: uppercase; letter-spacing: 0.03em; font-size: 1.3rem; font-weight: 700; }
+details.scn .setup { margin: 10px 0 8px; }
+details.scn .good { margin: 12px 0 0; padding: 10px 14px; background: var(--good-soft); border-left: 6px solid var(--good); }
+details.scn .good b { font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.08em; text-transform: uppercase; display: block; }
+details.scn .good ul { margin: 6px 0 0; padding-left: 1.1em; }
+.parent { background: var(--caution-soft); border: 2px solid var(--caution); padding: 12px 16px; }
+.parent b { font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.08em; text-transform: uppercase; display: block; }
+.parent p { margin: 4px 0 0; }
+
+/* practice questions */
+.pr-intro { margin: 0 0 14px; color: var(--ink-soft); max-width: 66ch; }
+.pr { background: var(--surface); border: 1px solid var(--line); margin-bottom: 18px; }
+.pr-head { display: flex; flex-wrap: wrap; gap: 6px 14px; justify-content: space-between; align-items: baseline; padding: 10px 18px; background: var(--ink); color: var(--bg); font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.06em; text-transform: uppercase; }
+.ask-block { padding: 14px 18px 16px; }
+.ask-block + .ask-block { border-top: 2px dashed var(--line); }
+.ask-block.formal { background: var(--bg); }
+.step-label { margin: 0 0 6px; font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); }
+.pr-q { margin: 0 0 10px; font-weight: 600; font-size: 1.05rem; max-width: 62ch; }
+.bridge { padding: 14px 18px 16px; border-top: 2px dashed var(--line); background: var(--caution-soft); }
+.bridge .step-label { color: var(--ink); }
+.bridge ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+.bridge li { display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); gap: 10px; align-items: baseline; }
+.bridge .you { font-style: italic; }
+.bridge .arrow { font-family: var(--font-mono); color: var(--ink-soft); }
+.bridge .pub { font-weight: 600; }
+@media (max-width: 520px) { .bridge li { grid-template-columns: minmax(0, 1fr); gap: 0; } .bridge .arrow { display: none; } .bridge .pub::before { content: "Textbook: "; font-weight: 400; font-family: var(--font-mono); font-size: 11px; color: var(--ink-soft); } .bridge .you::before { content: "You say: "; font-style: normal; font-family: var(--font-mono); font-size: 11px; color: var(--ink-soft); } }
+
+/* final checklist */
+.final { margin-top: 56px; border-top: 8px solid var(--ink); padding-top: 18px; }
+.final h2 { font-size: clamp(1.9rem, 5vw, 2.6rem); font-weight: 700; }
+.final .lead { color: var(--ink-soft); max-width: 62ch; margin: 10px 0 16px; }
+.note { margin: 28px 0 0; font-size: 0.9rem; color: var(--ink-soft); max-width: 70ch; }
+footer { margin-top: 48px; background: var(--band); color: #AEBBC7; padding-block: 26px 30px; font-size: 0.92rem; }
+footer strong { color: var(--band-ink); }
+footer p { margin: 0 0 6px; }
+</style>
+</head>
+<body>
+
+<header class="band">
+  <div class="wrap">
+    <span class="eyebrow">EVIT Electrical · Loved Ones Study Guide</span>
+    <h1>Introduction to<br>Basic Rigging</h1>
+    <p class="sub">A Loved Ones Study Guide for NCCER Core, Module 00106: Introduction to Basic Rigging</p>
+    <p class="byline">Mr. Ellis CTE — General Construction &amp; Electrical Teacher · High School &amp; Adult Pre-Apprentice Programs</p>
+    <nav class="jump" aria-label="Sections">
+      <a href="#s1">1 · Slings</a>
+      <a href="#s2">2 · Sling inspection</a>
+      <a href="#s3">3 · Hardware and hoists</a>
+      <a href="#s4">4 · Hitches and E-Stop</a>
+      <a href="#review">Loved ones review</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<div class="wrap">
+
+  <div class="intro">
+    <div class="panel">
+      <h2>Why this guide exists</h2>
+      <p>You do not need to work in construction to support a construction student. Your job is to help your student explain what they are learning and put it in their own words. Rigging is about moving heavy things without hurting anyone, so the habit worth building is slowing down, checking the gear and asking before acting.</p>
+      <p>If your student can read it and explain it, they are learning it. That is the whole idea.</p>
+    </div>
+    <div class="panel">
+      <h2>How to use each section</h2>
+      <p>Plan about 20 to 30 minutes per section. The student does most of the talking. You do not need the answers ahead of time.</p>
+      <ol>
+        <li><b>Read it together.</b> Plain-English version of the module section.</li>
+        <li><b>Study review points.</b> The must-know facts. Tick each one when your student can say it back.</li>
+        <li><b>Trade-term cards.</b> Tap a card to flip it.</li>
+        <li><b>Ticket out the door.</b> A quick recall check, just for practice.</li>
+        <li><b>Talk it over.</b> Questions and a real-world scenario.</li>
+        <li><b>Practice questions.</b> Each one comes twice: first in plain English, then in the textbook's words, so your student learns to recognize both.</li>
+      </ol>
+    </div>
+  </div>
+
+  <aside class="notice" aria-labelledby="safe-h">
+    <h2 id="safe-h">Good to know before you start</h2>
+    <p>This guide explains rigging equipment so your student can talk about it. It does not certify anyone to rig or lift. The module says rigging can be extremely complicated and dangerous, never to attempt a lift without the supervision of a qualified person, and to follow the manufacturer's instructions for every piece of equipment. Temperatures, ratings and limits come from the textbook. Always follow the rules that apply at your student's school or job site. The module is an elective, not required for Core completion. No student names or grades appear here, and nothing you tick or tap on this page is saved or sent anywhere.</p>
+  </aside>
+
+  <!-- SECTION 1 -->
+  <section class="sec" id="s1" aria-labelledby="s1-h">
+    <div class="sec-head">
+      <span class="eyebrow">Module Part 1 of 4 · Sections 1.0.0 to 1.1.4</span>
+      <h2 id="s1-h">Rigging and Slings</h2>
+      <p class="obj">By the end of this section your student can explain what rigging is, name the three sling types, read what a sling tag must say, and describe the strengths of synthetic, chain and wire rope slings.</p>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">A</span><h3>Read it together</h3><span class="time">about 30 min</span></div>
+      <div class="prose">
+        <p class="big">Almost every construction site moves material and equipment from one place to another. The planned way of doing that is called rigging, and the sling is the link between the load and the machine that lifts it.</p>
+
+        <h4>What rigging is (1.0.0)</h4>
+        <p><b>Rigging</b> is the planned movement of material and equipment from one location to another using slings, hoists or other equipment. Some jobs use a loader. Others use cranes, and the module shows two common types: <b>overhead cranes</b> and <b>mobile cranes</b>. Not every worker will rig, but nearly everyone is around it at some point.</p>
+        <div class="warn"><b>Warning from the module</b>Rigging can be extremely complicated and dangerous. Do not experiment. Never attempt a lift without the supervision of an officially recognized <b>qualified person</b>, and only qualified persons may rig without supervision. This module does not provide any level of certification.</div>
+        <div class="case"><b>Around the world: heavy lifters</b>The module notes that the world's biggest cranes lift astonishing weights. The Taisun gantry crane in China can lift over 22,000 tons. Mammoet's stationary-ring cranes lift up to 3,200 tons, and Liebherr's LR 13000 crawler crane lifts over 3,300 tons.</div>
+
+        <h4>Slings and the load (1.1.0)</h4>
+        <p>The <b>load</b> is the total amount of what is being lifted, including all slings, hitches and hardware. The link between the load and the lifting apparatus is often a <b>sling</b>. The module covers three types: <b>synthetic</b> slings, <b>alloy steel chain</b> slings and <b>wire rope</b> slings.</p>
+
+        <h4>Sling tags and rated capacity (1.1.1)</h4>
+        <p>Every sling must have a securely attached identification tag. For all three types it includes the manufacturer's name or trademark and the <b>rated capacity</b> for the type of hitch used. Rated capacity, also called the <b>working load limit (WLL)</b>, is the maximum load weight a sling or piece of hardware can hold or lift. It must <b>never</b> be exceeded, because overloading can cause catastrophic failure.</p>
+        <div class="scroll"><table>
+          <caption>What each tag must show</caption>
+          <thead><tr><th>Sling</th><th>Tag requirements</th></tr></thead>
+          <tbody>
+            <tr><td><b>Synthetic</b></td><td>Manufacturer's name or trademark; a unique code or stock number; rated capacities for the hitches used; the type of synthetic material.</td></tr>
+            <tr><td><b>Alloy steel chain</b></td><td>Manufacturer's name or trademark; grade of steel; link size (diameter); rated load and the angle the rating is based on; sling reach; number of legs.</td></tr>
+            <tr><td><b>Wire rope</b></td><td>Manufacturer's name or trademark; rated capacity in a vertical hitch (other hitches optional); rope diameter (optional); code or stock number (optional).</td></tr>
+          </tbody>
+        </table></div>
+        <div class="warn"><b>No tag, no use</b>Any sling without an identification tag must be removed from service immediately, since its characteristics and rating can no longer be identified. A qualified person may be able to install a new tag in some cases.</div>
+        <p><b>Sling reach</b> is measured from the master link, where it bears weight, to the end fitting or the lowest point of the basket. <b>Sling legs</b> are the parts that reach from the attachment device around the object being lifted.</p>
+
+        <h4>Synthetic slings (1.1.2)</h4>
+        <p>Synthetic slings are widely used, especially for easily damaged loads. The module covers <b>web slings</b> and <b>round slings</b>.</p>
+        <ul>
+          <li><b>Advantages:</b> softer and wider than chain or wire rope so they do not scratch machined or delicate surfaces; they do not rust or corrode or stain the load; most weigh less than half as much as a wire rope sling of the same rated capacity (some new ones one-tenth); they are flexible and mold to the load; they stretch much more than wire rope, which cushions shock; and loads in them are less likely to twist.</li>
+          <li><b>Concerns:</b> do not expose web slings to temperatures above <b>180°F (82°C)</b>. They are vulnerable to cuts, abrasion and wear, so riggers use protective pads or softeners (old sling, fire hose, canvas or rubber work too).</li>
+          <li><b>Red warning yarns:</b> most web slings have red-core yarns. When the red yarns are exposed, the sling is too worn or damaged to use.</li>
+        </ul>
+        <div class="scroll"><table>
+          <caption>Common synthetic web sling designs</caption>
+          <thead><tr><th>Design</th><th>What it is</th></tr></thead>
+          <tbody>
+            <tr><td><b>Endless (grommet)</b></td><td>A continuous loop.</td></tr>
+            <tr><td><b>Eye-and-eye</b></td><td>Ends sewn to the body. <b>Standard</b> eyes sit on the same plane as the sling; <b>twisted</b> eyes sit at right angles to the body and are mainly used for choker hitches.</td></tr>
+            <tr><td><b>With end fittings</b></td><td>Eye-and-eye slings can also have aluminum or steel hardware end fittings, in male and female types.</td></tr>
+            <tr><td><b>Round sling</b></td><td>An endless loop of polyester filament yarn covered by a woven sleeve (jacket).</td></tr>
+          </tbody>
+        </table></div>
+        <p><b>Twin-Path</b> (a Slingmax trademark, sometimes used generically) round slings are wound loops of yarn inside a protective jacket. Aramid round slings carry more for their size than web slings do. Jackets come in heat-resistant Nomex, polyester (light to medium duty) and bulked nylon Covermax (heavy duty, much better cut and abrasion resistance). K-Spec yarn slings weigh at least 50 percent less than a polyester round sling of the same size and capacity. <b>Tattle-tail</b> cords protrude from the jacket to show if the sling was stretched or overloaded, and some slings have a fiber optic cable that lights up at the far end when the strand is unbroken.</p>
+        <div class="case"><b>Did you know?</b>Cuts are the main cause of synthetic sling failure, often from sharp edges on the load. Edge protectors on the load's edges help keep slings from being cut.</div>
+
+        <h4>Alloy steel chain slings (1.1.3)</h4>
+        <p>Chain slings suit high heat and rugged conditions. They are the most durable and can be adjusted over a center of gravity, but they weigh much more than wire rope slings and may be harder to inspect. Most can be used up to <b>500°F (260°C)</b> with little loss of rated capacity.</p>
+        <ul>
+          <li>Slings for overhead lifting must be made of <b>alloy steel</b>. Higher grades are safer and more durable. Common markings are 8, 80, 800 or the letter A.</li>
+          <li>Two basic designs: <b>single- and double-basket</b> slings (chain attached to the <b>master link</b> in permanent basket hitches, no end hardware needed) and <b>bridle</b> slings with two to four legs and hooks.</li>
+          <li>They can still be damaged by dropped loads, by sharp corners without softeners and by intense heat. Never drag chain across hard surfaces, especially concrete.</li>
+        </ul>
+
+        <h4>Wire rope slings (1.1.4)</h4>
+        <p><b>Wire rope</b> is made of high-strength steel wires formed into <b>strands</b> and wrapped around a supporting <b>core</b>. Wire rope slings are lighter than chain, can take substantial abuse, are easier to handle and tolerate relatively high temperatures. The strand wires and core slide and adjust against each other as stress changes, which protects them when bent around <b>sheaves</b> or loads, so a rope's rated capacity depends on it being in good condition.</p>
+        <div class="scroll"><table>
+          <caption>Wire rope supporting cores</caption>
+          <thead><tr><th>Core</th><th>What it is</th></tr></thead>
+          <tbody>
+            <tr><td><b>Fiber core</b></td><td>Synthetic or natural fiber such as sisal. Can be damaged by heat at relatively low temperatures (180°F to 200°F, or 82°C to 93°C) and by caustic chemicals.</td></tr>
+            <tr><td><b>Independent wire rope core</b></td><td>A separate wire rope with its own core and strands; its wires are smaller and more delicate than the outer strand wires.</td></tr>
+            <tr><td><b>Strand core</b></td><td>One strand the same size and type as the rest of the rope's strands.</td></tr>
+          </tbody>
+        </table></div>
+      </div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">B</span><h3>Study review points</h3></div>
+      <ul class="points" data-points="1"></ul>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">C</span><h3>Trade-term cards</h3></div>
+      <div class="deck" data-cards="1"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">D</span><h3>Ticket out the door</h3></div>
+      <div class="ticket" data-quiz="1"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">E</span><h3>Talk it over</h3></div>
+      <div class="talk" data-talk="1"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">F</span><h3>Practice questions</h3><span class="time">about 15 min</span></div>
+      <div data-practice="1"></div>
+    </div>
+  </section>
+
+  <!-- SECTION 2 -->
+  <section class="sec" id="s2" aria-labelledby="s2-h">
+    <div class="sec-head">
+      <span class="eyebrow">Module Part 2 of 4 · Section 1.2.0</span>
+      <h2 id="s2-h">Sling Inspection</h2>
+      <p class="obj">By the end of this section your student can say when slings are inspected, who inspects them, and what damage makes a synthetic, chain or wire rope sling unfit to use.</p>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">A</span><h3>Read it together</h3><span class="time">about 30 min</span></div>
+      <div class="prose">
+        <p class="big">If a sling fails, the results can be devastating. So every sling is inspected, every time, no matter what tags or past inspection marks are on it. When a sling meets any <b>rejection criteria</b>, it comes out of service.</p>
+
+        <h4>Ground rules for inspection (1.2.0)</h4>
+        <p><b>Rejection criteria</b> are the standards or tests used to decide an object is no longer safe and must be removed from service. Inspections must happen regardless of any existing markings or tags from earlier inspections. Along with watching for one major problem, the rigger also uses sound judgment about <b>combinations of minor defects</b>, which can make a sling unsafe even if none is listed. Workers who help inspect must alert a qualified person to any suspected defect.</p>
+
+        <h4>Synthetic sling inspection (1.2.1)</h4>
+        <p>Inspect before <b>each use</b>, along the entire length, both <b>visually</b> (looking) and <b>manually</b> (feeling), because some damage can only be felt. A competent person must do it. Remove the sling for any of these:</p>
+        <ul>
+          <li>A missing or unreadable tag.</li>
+          <li><b>Abrasion</b> that wears through the outer jacket, exposes the load-bearing yarn, or exposes the warning yarn of a web sling.</li>
+          <li>A <b>cut</b> or <b>tear</b> that severs the outer jacket or exposes the load-bearing yarns (or the warning yarn of a web sling), and any <b>puncture</b>.</li>
+          <li>Broken or worn <b>stitching</b> in the splice or body of a web sling.</li>
+          <li>A <b>knot</b> that cannot be removed by hand. A <b>snag</b> that shows warning yarn or tears the outer jacket.</li>
+          <li><b>Crushing:</b> in a web sling it feels like a hollow pocket or depression, and in a round sling like a hard, flat spot under the jacket.</li>
+          <li><b>Overload (tensile) damage:</b> in a web sling the weave begins to pull apart. In a Twin-Path sling, tattle-tails pulled into the jacket mean it may have been overloaded.</li>
+          <li><b>Chemical damage:</b> discoloration, burns, melting of the fabric or jacket.</li>
+          <li><b>Heat damage:</b> friction burns (a crusty or slick texture on webbing), glazing or charring on a round sling jacket. With heat-resistant jackets, damage may be inside: feel for brittle or fused fibers, or flex the sling and listen for cracking.</li>
+          <li><b>UV damage:</b> bleached-out material; web slings release a powder-like substance when flexed. Round slings may just show a roughened fabric texture.</li>
+          <li><b>Loss of flexibility</b> from dirt or abrasives, which cut the internal fibers like tiny blades each time the sling is stretched or flexed.</li>
+        </ul>
+        <div class="case"><b>Sling jackets</b>If only the outer jacket is damaged, the manufacturer can replace it, then test and certify the sling. Slings removed for heat- or tension-related damage cannot be repaired and must be disposed of by a qualified person.</div>
+
+        <h4>Alloy steel chain sling inspection (1.2.2)</h4>
+        <p>Inspect before each use. Not every rigger is qualified to decide, so if in doubt, consult a qualified person. Chain links <b>cannot be repaired by replacement</b>. Remove the sling for any of these:</p>
+        <ul>
+          <li>Missing or unreadable tag; cracks; heat damage.</li>
+          <li><b>Stretched links</b> (the link gets longer and the barrels, the long sides, close up), <b>bent links</b> (for example from wrapping a load with sharp corners) and <b>twisted links</b> (from knotting or twisting the chain before load).</li>
+          <li>Evidence of <b>replacement links</b> used to repair the chain.</li>
+          <li>Excessive rust or corrosion that cannot be easily removed with a wire brush.</li>
+          <li>Cuts, chips or gouges; scraping or abrasion; excessive wear at the link-bearing surfaces.</li>
+          <li>Damaged end fittings such as hooks and clamps.</li>
+        </ul>
+
+        <h4>Wire rope sling inspection (1.2.3)</h4>
+        <p>Inspect before each use by a <b>competent person</b>, who decides whether a damaged rope may be used or must be discarded. Anyone who suspects damage must tell a competent person, stopping an active lift if necessary. A wire rope sling that is simply missing its tag, or whose tag is unreadable, can be retagged by a qualified person.</p>
+        <div class="warn"><b>Sharp wires</b>Broken wires are extremely sharp and can cut or puncture skin. Never use a bare hand to handle wire rope slings or to inspect them by running a hand along them.</div>
+        <div class="scroll"><table>
+          <caption>Common wire rope damage</caption>
+          <thead><tr><th>Damage</th><th>What it means</th></tr></thead>
+          <tbody>
+            <tr><td><b>Broken wires</b></td><td>Weaken the rope and interfere with how it moves. Counted per <b>one-rope lay</b>, the lengthwise distance for one strand to make one full turn around the core. External breaks are usually normal fatigue; internal or severe external breaks need close investigation and mean improper use.</td></tr>
+            <tr><td><b>Kinks</b></td><td>Distortion of the rope. Sharp kinks stop wires from moving, so the rope must not be used. Large gradual corkscrew loops also mean removal.</td></tr>
+            <tr><td><b>Birdcaging</b></td><td>Strands pulled or bounced away from the core, often when a load is released too fast. Any sign means remove it from service immediately.</td></tr>
+            <tr><td><b>Unstranding</b></td><td>Strands have untwisted, which weakens the rope.</td></tr>
+            <tr><td><b>Core failure</b></td><td>Usually seen as core strands poking out through the outer strands.</td></tr>
+            <tr><td><b>Crushing</b></td><td>From setting a load down on a sling or hammering it into place. Remove immediately.</td></tr>
+            <tr><td><b>Corrosion and rust</b></td><td>Excessive if there is scaling or rust that will not brush off, or if it is inside the rope.</td></tr>
+            <tr><td><b>Heat damage</b></td><td>Wires become brittle: discoloration or melting.</td></tr>
+            <tr><td><b>End connections</b></td><td>Check for damage, and for marks showing the connection has slipped or moved.</td></tr>
+          </tbody>
+        </table></div>
+      </div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">B</span><h3>Study review points</h3></div>
+      <ul class="points" data-points="2"></ul>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">C</span><h3>Trade-term cards</h3></div>
+      <div class="deck" data-cards="2"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">D</span><h3>Ticket out the door</h3></div>
+      <div class="ticket" data-quiz="2"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">E</span><h3>Talk it over</h3></div>
+      <div class="talk" data-talk="2"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">F</span><h3>Practice questions</h3><span class="time">about 10 min</span></div>
+      <div data-practice="2"></div>
+    </div>
+  </section>
+
+  <!-- SECTION 3 -->
+  <section class="sec" id="s3" aria-labelledby="s3-h">
+    <div class="sec-head">
+      <span class="eyebrow">Module Part 3 of 4 · Sections 1.3.0 to 1.4.2</span>
+      <h2 id="s3-h">Rigging Hardware and Hoists</h2>
+      <p class="obj">By the end of this section your student can describe shackles, eyebolts, lifting clamps and rigging hooks and when each is rejected, and explain how block and tackle and chain hoists lift loads safely.</p>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">A</span><h3>Read it together</h3><span class="time">about 30 min</span></div>
+      <div class="prose">
+        <p class="big">Hardware is as crucial as the crane or the sling. If the hardware that joins the sling to the load or the master link fails, the load drops just as if the crane failed. The requirements for rigging hardware are as strict as those for cranes and slings.</p>
+
+        <h4>Shackles (1.3.1)</h4>
+        <p>A <b>shackle</b> attaches an item to a load or couples slings together. It has a U-shaped body and a removable pin.</p>
+        <ul>
+          <li>For overhead lifting, shackles should be <b>forged steel</b>, not cast. Quenched and tempered steel is preferred, and at a minimum they must be drop- or hammer-forged.</li>
+          <li>Every shackle must be stamped with the manufacturer's trademark, its <b>size</b> (set by the diameter of the <b>body</b>, not the pin) and its rated capacity.</li>
+          <li>Two classes by shape: <b>anchor</b> shackles and <b>chain</b> shackles. Pins can be screw, round or safety designs. The screw pin is the most widely used. Specialty types include wide-body shackles for heavy lifting and synthetic web sling shackles with a wide throat and wide, contoured bow.</li>
+          <li><b>Screw pin:</b> screw it in until it is fully engaged and the shoulder touches the shackle body. A loose pin lets the shackle stretch under load. An over-tightened pin can be torqued further by <b>load stress</b>, which can stretch and jam the threads.</li>
+          <li><b>Position:</b> the load goes in the <b>bow</b>, not on the pin. If a screw pin carries the load, shifting can twist the pin and unscrew it.</li>
+          <li>Never swap pins between shackles. Thread forms and capacities may not match, and there is no easy way to know how much reserve strength is left.</li>
+        </ul>
+        <p><b>Remove a shackle from use for:</b> bends, cracks or other body damage; a wrong or substituted pin; a bent, broken or loose pin; damaged pin threads; missing or unreadable capacity and size markings. Inspect before each use.</p>
+
+        <h4>Eyebolts (1.3.2)</h4>
+        <p>An eyebolt has a <b>threaded shank</b> that screws into the load and an eye that takes the sling. For overhead lifting use drop- or hammer-forged steel. Three basic designs:</p>
+        <ul>
+          <li><b>Unshouldered:</b> straight vertical pulls only.</li>
+          <li><b>Shouldered:</b> the shoulder supports the eyebolt in slightly angular pulls.</li>
+          <li><b>Swivel</b> (hoist rings): angular pulls from 0 to 90 degrees from the horizontal plane of the load.</li>
+        </ul>
+        <p>In a few cases eyebolts must be torqued to a specific value when installed for lifting.</p>
+
+        <h4>Lifting clamps (1.3.3)</h4>
+        <p><b>Lifting clamps</b> move steel plates, sheet piles, large pipe or concrete panels without slings. They bite down on the load and use jaw tension to hold it.</p>
+        <ul>
+          <li>Made of forged steel and stamped with rated capacity. Some tighten as the load increases. Others use an adjustable cam that is set and tightened.</li>
+          <li>Each clamp lifts <b>one item at a time</b>. The cam and jaw must grip both sides of a single plate, so never put more than one plate in. Keep the load balanced, and use two clamps for larger loads.</li>
+          <li>Match the clamp type to the job. Inspect before every use.</li>
+          <li><b>Remove from use for:</b> cracks; abrasion, wear or scraping; deformation or impact damage; excessive rust or corrosion; worn cam teeth; heat damage; loose or damaged screws or rivets; worn springs; changes in the jaw opening; missing or unreadable capacity marks.</li>
+        </ul>
+
+        <h4>Rigging hooks (1.3.4)</h4>
+        <p>A <b>rigging hook</b> attaches a sling to a load. Hooks must be drop- or hammer-forged steel. Most have safety latches or gates, and a latch that is installed must work. Report any damaged latch to your instructor or supervisor.</p>
+        <ul>
+          <li><b>Eye hooks:</b> the most common end-fitting hook, with a large eye for big couplers.</li>
+          <li><b>Reverse eye hooks:</b> the hook point sits perpendicular to the eye.</li>
+          <li><b>Sliding choker hooks:</b> for chain slings, installed when the sling is made and used to secure the sling eye in a choker hitch.</li>
+          <li><b>Grab hooks:</b> for chain slings, fit the chain link so choker hitches can be made and chains shortened.</li>
+          <li><b>Shortening clutches:</b> a more efficient grab hook that fully supports the links, so no capacity is lost in the shortened leg.</li>
+        </ul>
+        <p><b>Remove a sling for hook defects:</b> wear, scraping or abrasion; cracks; cuts, gouges, nicks or chips; excessive rust; a wider throat opening (easy to spot because the latch no longer bridges it); a twist in the hook; elongation; a broken or missing safety latch.</p>
+
+        <h4>Hoists (1.4.0)</h4>
+        <p>A <b>hoist</b> uses pulleys or gears to give a mechanical advantage so objects can be lifted that cannot be lifted by hand. Some ride on trolleys and run on electricity or compressed air.</p>
+        <ul>
+          <li><b>Block and tackle:</b> a simple rope-and-pulley system. Fixed pulleys and a wire rope let a rigger lift or lower a load by pulling the rope or using a winch, and it multiplies the power applied.</li>
+          <li><b>Chain hoists</b> are <b>manual</b>, <b>electric</b> or <b>pneumatic</b>. Electric and pneumatic are <b>powered chain hoists</b>. All use a gear system turning a sprocket, with a chain and hook attached. The hoist hangs from a hook on an appropriate anchorage point or from a trolley system.</li>
+        </ul>
+
+        <h4>Operating a chain hoist (1.4.1)</h4>
+        <ul>
+          <li><b>Hand chain hoist:</b> suspend it above the load by its suspension hook or trolley mount, attach the hook to the load, and pull the hand chain. Which side of the chain you pull decides whether the load rises or falls.</li>
+          <li><b>Powered chain hoist:</b> position it on the trolley above the load, attach the hook and use the control pad. <b>Only qualified persons may use powered chain hoists.</b></li>
+        </ul>
+
+        <h4>Hoist safety and maintenance (1.4.2)</h4>
+        <ul>
+          <li>Wear PPE: at minimum a hard hat, safety glasses, safety shoes and a high-visibility vest.</li>
+          <li>Make sure the load is <b>balanced</b> and attached correctly. Unbalanced loads can slide or shift and cause the hoist to fail.</li>
+          <li>Keep gears, chains and ropes clean, and lubricate gears so the wheels do not freeze up. Maintenance must be done by a competent person.</li>
+          <li>Never do a lift of any size without proper supervision.</li>
+        </ul>
+        <div class="warn"><b>Come-along is not a lifting hoist</b>Never use a common cable come-along for vertical overhead lifting. Use it only to move loads horizontally over the ground. Do not confuse it with a <b>ratchet lever hoist</b>, which has both a friction-type holding brake and a ratchet-and-pawl load control brake. A come-along has only a spring-loaded ratchet, so if the ratchet and pawl fail an overhead load falls.</div>
+      </div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">B</span><h3>Study review points</h3></div>
+      <ul class="points" data-points="3"></ul>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">C</span><h3>Trade-term cards</h3></div>
+      <div class="deck" data-cards="3"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">D</span><h3>Ticket out the door</h3></div>
+      <div class="ticket" data-quiz="3"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">E</span><h3>Talk it over</h3></div>
+      <div class="talk" data-talk="3"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">F</span><h3>Practice questions</h3><span class="time">about 20 min</span></div>
+      <div data-practice="3"></div>
+    </div>
+  </section>
+
+  <!-- SECTION 4 -->
+  <section class="sec" id="s4" aria-labelledby="s4-h">
+    <div class="sec-head">
+      <span class="eyebrow">Module Part 4 of 4 · Sections 1.5.0 to 1.5.4</span>
+      <h2 id="s4-h">Hitches and the Emergency Stop Signal</h2>
+      <p class="obj">By the end of this section your student can name the three basic hitches, say when each is used and how it changes sling capacity, and demonstrate the Emergency Stop hand signal.</p>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">A</span><h3>Read it together</h3><span class="time">about 25 min</span></div>
+      <div class="prose">
+        <p class="big">The way a sling is arranged to hold a load is called the <b>hitch</b>. The right hitch depends on the load and on how it will move, because the rigger has to both secure the load and control it.</p>
+
+        <h4>Choosing a hitch (1.5.0)</h4>
+        <p>A hitch is the rigging configuration by which a sling connects the load to the hoist hook, built from the sling alone or with connecting hardware. The three basic types are <b>vertical</b>, <b>choker</b> and <b>basket</b>. <b>Load control</b> means moving the load safely and efficiently with proper communication and handling. Some loads go straight up and down, while others are lifted, turned in midair and set down elsewhere, so the rigger must consider the planned movement too.</p>
+        <div class="warn"><b>Only a qualified person selects the hitch</b>Every rigging operation is dangerous. A straight up-and-down lift is as dangerous as one that turns a load in midair.</div>
+
+        <h4>Vertical hitch (1.5.1)</h4>
+        <ul>
+          <li>A <b>single vertical hitch</b> lifts a load straight up and forms a 90-degree angle between the hitch and the load. It needs attachment hardware such as a shackle, and it lets the load <b>rotate freely</b>. To stop rotation, use load control such as a <b>tag line</b>, a rope from the load to the ground that riggers hold to keep it from swinging or spinning.</li>
+          <li>A <b>bridle hitch</b> is two or more vertical hitches attached to the same hook, master link or <b>bull ring</b> (a single ring that joins several slings to a hoist hook). It connects slings to one load without a <b>spreader beam</b> (a stiff bar used when lifting large objects with a crane hook).</li>
+          <li>A <b>multiple-leg bridle</b> has three or four single hitches on the same hook, master link or bull ring and gives the load more stability. It is always counted as only <b>two legs</b> carrying most of the load, with the rest balancing it.</li>
+        </ul>
+
+        <h4>Choker hitch (1.5.2)</h4>
+        <p>A <b>choker hitch</b> is used when a load has no attachment points or when they are not practical. The sling wraps the load and passes through one eye (or through a shackle) to form a constricting loop. When a shackle is used, orient it correctly so the load never presses on the pin.</p>
+        <ul>
+          <li>It reduces the sling's capacity by <b>at least 25 percent</b>, so account for that when choosing the sling.</li>
+          <li>It does not grip securely and is not recommended for loose bundles, because it tends to push loose items up and out. Forcing the choke down only raises stress on the choke leg.</li>
+          <li>For items more than <b>12 feet (about 3.5 m)</b> long, use <b>two choker hitches</b> spaced far enough apart for stability.</li>
+          <li>A <b>double-wrap choker</b> wraps the sling completely around the load once more before connecting. It is useful for bundles of loose pipe or structural steel, because the load's own weight makes the constricting action. There is no need to force the sling down. Loads over 12 feet use two double-wrap chokers.</li>
+        </ul>
+
+        <h4>Basket hitch (1.5.3)</h4>
+        <p>A <b>basket hitch</b> passes the sling around (or through) the load and puts both eyes in the hook. It creates two legs from one sling, so it <b>doubles the sling's capacity</b>.</p>
+        <ul>
+          <li>It should not lift loose materials, and the load in it should be balanced.</li>
+          <li>A <b>double-wrap basket hitch</b> combines the constricting power of a double-wrap choker with the capacity of a basket, holding the load more tightly. It needs a much longer sling than a double-wrap choker.</li>
+          <li>If slings are joined, the load must touch only the sling body, never the joining hardware.</li>
+        </ul>
+
+        <h4>The Emergency Stop signal (1.5.4)</h4>
+        <p>Safe lifts depend on clear communication between the crane operator and the designated signal person on the ground, by radio or hand signals. In the US, hand signals for all cranes were standardized by the <b>American Society of Mechanical Engineers (ASME)</b>. Normally only the designated signal person gives hand signals, but the <b>Emergency Stop</b> is the exception: it can be given by <b>anyone</b> on the ground within sight of the operator.</p>
+        <div class="case"><b>How to make it</b>Extend both arms horizontally with palms down, then quickly move the arms back and forth by repeatedly extending and retracting them.</div>
+        <div class="case"><b>Around the world: hand signals</b>Hand signals differ by country. A new ISO standard, ISO 16715, was developed with 31 countries to give multinational crews one standard set. Local crews will probably keep using the signals familiar in their region.</div>
+        <p>The module's two performance tasks: demonstrate the ASME Emergency Stop signal, and report the load capacity of a sling and whether it is too damaged to use.</p>
+      </div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">B</span><h3>Study review points</h3></div>
+      <ul class="points" data-points="4"></ul>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">C</span><h3>Trade-term cards</h3></div>
+      <div class="deck" data-cards="4"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">D</span><h3>Ticket out the door</h3></div>
+      <div class="ticket" data-quiz="4"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">E</span><h3>Talk it over</h3></div>
+      <div class="talk" data-talk="4"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">F</span><h3>Practice questions</h3><span class="time">about 15 min</span></div>
+      <div data-practice="4"></div>
+    </div>
+  </section>
+
+  <section class="final" id="review" aria-labelledby="fin-h">
+    <span class="eyebrow">After all four sections</span>
+    <h2 id="fin-h">Can your student explain it?</h2>
+    <p class="lead">The goal is not perfect wording. The goal is accurate understanding and good judgment. Tick each one when your student can explain it without looking at the page.</p>
+    <ul class="points" id="final-points"></ul>
+    <p class="note">The module prints 31 defined terms in its margins. They are spread across the sections where the book introduces them: 13 in Section 1, six in Section 2, seven in Section 3 and five in Section 4. Cards marked "Key term" are important words from the module that are not defined in its margins. The practice questions come from the handbook's Section Review (5 questions) and Module Review (10 questions). The answer keys for both are in the textbook's Appendix A, which is not part of the module pages used to build this guide, so every answer here was worked out from the module text and is marked on each question. Check them against the publisher's key before relying on them. The textbook-style versions are written in the book's style and vocabulary, not copied word for word, so check the handbook itself for the exact wording. This guide is a plain-language companion, not a copy of the textbook, and it does not certify anyone to rig or lift. Draft for instructor review.</p>
+  </section>
+
+</div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><strong>Mr. Ellis CTE</strong> · East Valley Institute of Technology (EVIT), Mesa, Arizona · Your Future, Your Way</p>
+    <p>Based on NCCER Core, Module 00106, Introduction to Basic Rigging.</p>
+    <p>Aim for perfection, take what you get.</p>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var POINTS = {
+    1: [
+      `<b>Rigging</b> is the planned movement of material and equipment from one location to another using slings, hoists or other equipment, including cranes (overhead and mobile).`,
+      `<b>Never attempt a lift</b> without the supervision of a qualified person. Only qualified persons may rig without supervision. The module does not certify you.`,
+      `<b>The load</b> is everything being lifted, including all slings, hitches and hardware.`,
+      `<b>Three sling types:</b> synthetic, alloy steel chain and wire rope.`,
+      `<b>Rated capacity</b> is also called the working load limit (WLL). It is the most a sling or hardware can hold or lift, and it must never be exceeded.`,
+      `<b>Every sling needs an ID tag</b> with the manufacturer's name or trademark and the rated capacity for the hitch used. A sling without a tag is removed from service immediately.`,
+      `<b>Synthetic slings</b> are soft, light, flexible and do not rust or scratch the load. Keep web slings below 180°F (82°C) and protect them from cuts and abrasion.`,
+      `<b>Red warning yarns</b> showing on a web sling mean it is too damaged to use. <b>Tattle-tails</b> pulled in on a Twin-Path sling mean it may have been overloaded.`,
+      `<b>Web sling designs:</b> endless (grommet), eye-and-eye (standard or twisted), and slings with hardware end fittings. <b>Round slings</b> are endless loops in a woven jacket.`,
+      `<b>Cuts</b> are the main cause of synthetic sling failure. Use protective pads, softeners and edge protectors.`,
+      `<b>Chain slings</b> are the most durable and handle heat up to 500°F (260°C), but they are heavy and harder to inspect. Overhead lifting needs alloy steel. Never drag them across concrete.`,
+      `<b>Chain sling designs:</b> single- and double-basket slings on a master link, and bridle slings with two to four legs.`,
+      `<b>Wire rope slings</b> are strands wrapped around a core. They are lighter than chain, tough and tolerate relatively high temperatures. A fiber core can be damaged by heat at 180°F to 200°F.`,
+      `<b>Core types:</b> fiber core, independent wire rope core and strand core.`
+    ],
+    2: [
+      `<b>Inspect every sling before each use</b>, regardless of any earlier tags or inspection marks.`,
+      `<b>Rejection criteria</b> decide when a sling is no longer safe. Watch for combinations of minor defects too, since together they can make a sling unsafe.`,
+      `<b>Inspect synthetic slings</b> along the whole length by looking and by feeling. A competent person does it.`,
+      `<b>Synthetic reject signs:</b> missing tag; abrasion, cuts, tears or punctures exposing yarn; broken stitching; knots or snags; crushing; overload damage; chemical, heat or UV damage; loss of flexibility.`,
+      `<b>Heat damage</b> on webbing feels crusty or slick. On round slings it looks like glazing or charring.`,
+      `<b>Damage to only the outer jacket</b> may be repaired by the manufacturer. Heat- or tension-damaged slings must be disposed of.`,
+      `<b>Chain reject signs:</b> missing tag, cracks, heat damage, stretched links (barrels close up), bent or twisted links, replacement links, heavy rust, cuts or gouges, worn links, damaged end fittings.`,
+      `<b>Chain links cannot be repaired by replacement.</b> Ask a qualified person if you are unsure.`,
+      `<b>Wire rope slings</b> are inspected before each use by a competent person, who decides whether to use or discard a damaged rope.`,
+      `<b>Wire rope damage:</b> broken wires (counted per one-rope lay), kinks, birdcaging, unstranding, core failure, crushing, corrosion, heat damage and end connection slippage.`,
+      `<b>Birdcaging or crushing:</b> remove the rope from service immediately.`,
+      `<b>Never use a bare hand</b> on wire rope. Broken wires are razor sharp.`,
+      `<b>A competent person</b> spots hazards and is authorized to fix them. A <b>qualified person</b> has a degree, certificate or professional standing, or lots of knowledge, training and experience. A qualified person may retag a wire rope sling.`
+    ],
+    3: [
+      `<b>Hardware</b> failure drops the load just like a failed crane or sling, and hardware rules are just as strict.`,
+      `<b>Shackles</b> for overhead lifting are forged steel, never cast. They are stamped with trademark, size and rated capacity.`,
+      `<b>Shackle size</b> is the diameter of the body, not the pin.`,
+      `<b>Shackle pin:</b> screw it in until it is fully engaged and the shoulder touches the body. Not loose, not over-tightened.`,
+      `<b>Position the load</b> in the bow of the shackle, never on the pin.`,
+      `<b>Never swap pins</b> between shackles.`,
+      `<b>Reject a shackle for</b> a bent, cracked or damaged body, a wrong, bent, broken or loose pin, damaged threads or missing capacity marks.`,
+      `<b>Eyebolts:</b> unshouldered for straight vertical pulls only, shouldered for slightly angular pulls, swivel for angular pulls 0 to 90 degrees from horizontal.`,
+      `<b>Lifting clamps</b> lift steel plate, sheet piles, pipe or concrete panels without slings. One item at a time. Use two clamps for larger loads.`,
+      `<b>Reject a clamp for</b> cracks, wear, deformation, heavy rust, worn cam teeth, heat damage, loose screws or rivets, worn springs or missing capacity marks.`,
+      `<b>Rigging hooks</b> are drop- or hammer-forged steel with safety latches. Types: eye, reverse eye, sliding choker, grab and shortening clutch.`,
+      `<b>Reject a hook for</b> wear, cracks, gouges, heavy rust, a wider throat opening, a twist, elongation or a broken or missing latch.`,
+      `<b>Block and tackle</b> is a rope-and-pulley system that multiplies the power applied.`,
+      `<b>Chain hoists</b> are manual, electric or pneumatic and use gears to lift. Only qualified persons use powered chain hoists.`,
+      `<b>Hoist safety:</b> wear PPE, balance the load, keep parts clean and lubricated, and never lift without supervision.`,
+      `<b>Never use a cable come-along</b> for vertical overhead lifting. Only a ratchet lever hoist is made for it.`
+    ],
+    4: [
+      `<b>A hitch</b> is how a sling connects the load to the hoist hook. The three basic types are vertical, choker and basket.`,
+      `<b>Only a qualified person</b> selects the hitch for a rigging operation.`,
+      `<b>Single vertical hitch:</b> straight up, 90-degree angle, needs attachment hardware, load can rotate freely. Use a tag line for load control.`,
+      `<b>Bridle hitch:</b> two or more vertical hitches on one hook, master link or bull ring. No spreader beam needed.`,
+      `<b>Multiple-leg bridle</b> (three or four legs) is counted as only two legs carrying most of the load.`,
+      `<b>Choker hitch:</b> for loads with no practical attachment points. It cuts the sling's capacity by at least 25 percent.`,
+      `<b>A choker does not grip loose bundles</b>, and forcing the choke down only adds stress to the choke leg.`,
+      `<b>Loads over 12 feet (3.5 m)</b> need two choker hitches, spaced apart.`,
+      `<b>Double-wrap choker</b> holds bundles of pipe or steel because the load's own weight does the constricting.`,
+      `<b>Basket hitch:</b> both eyes go in the hook, which makes two legs and doubles the sling's capacity. Do not use it for loose materials, and keep the load balanced.`,
+      `<b>Double-wrap basket</b> combines choker grip with basket capacity but needs a much longer sling.`,
+      `<b>Hand signals</b> are given by the designated signal person only, except the Emergency Stop.`,
+      `<b>Emergency Stop:</b> anyone on the ground within sight of the operator can give it. Both arms out horizontally, palms down, quickly extending and retracting them back and forth.`,
+      `<b>Performance tasks:</b> demonstrate the ASME Emergency Stop signal, and report a sling's load capacity and whether it is too damaged to use.`
+    ]
+  };
+
+  var CARDS = {
+    1: [
+      { k: "o", t: `Slings`, plain: `The straps, chains or ropes that connect a load to the lifting machine.`, book: `Wire rope, alloy steel chain, metal mesh fabric, synthetic rope, synthetic webbing, or jacketed synthetic continuous loop fibers made into forms, with or without end fittings, used to handle loads.`, ask: `Which three sling types does this module cover?` },
+      { k: "o", t: `Load`, plain: `Everything being lifted, not just the object itself.`, book: `The total amount of what is being lifted, including all slings, hitches and hardware.`, ask: `Why do the slings and hardware count as part of the load?` },
+      { k: "o", t: `Wire rope`, plain: `A strong rope made of twisted steel wires.`, book: `A rope made from steel wires that are formed into strands and then laid around a supporting core to form a complete rope; sometimes called cable.`, ask: `What are the three basic parts of wire rope?` },
+      { k: "o", t: `Rated capacity`, plain: `The most weight a sling or piece of hardware is allowed to lift.`, book: `The maximum load weight a sling or piece of hardware or equipment can hold or lift. Also referred to as the working load limit (WLL).`, ask: `What can happen if you go over it?` },
+      { k: "o", t: `Sling reach`, plain: `How long the sling is from where it carries weight to its end.`, book: `A measure taken from the master link of the sling, where it bears weight, to either the end fitting of the sling or the lowest point on the basket.`, ask: `Which sling type's tag must show the reach?` },
+      { k: "o", t: `Sling legs`, plain: `The parts of the sling that go from the connection down around the load.`, book: `The parts of the sling that reach from the attachment device around the object being lifted.`, ask: `How many legs does a basket hitch make from one sling?` },
+      { k: "o", t: `Warning yarns`, plain: `Bright threads that show when a web sling is worn out.`, book: `A component of the sling that shows the rigger whether the sling has suffered too much damage to be used.`, ask: `What color are they, and what do you do if you see them?` },
+      { k: "o", t: `Plane`, plain: `A flat surface.`, book: `A surface in which a straight line joining two points lies wholly within that surface.`, ask: `How are standard and twisted eyes different in relation to the plane?` },
+      { k: "o", t: `Core`, plain: `The center of a wire rope that the strands wrap around.`, book: `Center support member of a wire rope around which the strands are laid.`, ask: `Name the three types of core.` },
+      { k: "o", t: `Strands`, plain: `Groups of wires twisted together, which are then wrapped around the core.`, book: `A group of wires wound, or laid, around a center wire, or core. Strands are laid around a supporting core to form a rope.`, ask: `What happens when strands untwist?` },
+      { k: "o", t: `Tattle-tail`, plain: `A cord that shows if a round sling was stretched or overloaded.`, book: `Cord attached to the strands of an endless loop sling. It protrudes from the jacket. A tattle-tail is used to determine if an endless sling has been stretched or overloaded.`, ask: `What does it mean if the tattle-tail is pulled into the jacket?` },
+      { k: "o", t: `Master link`, plain: `The big ring at the top of a chain sling that connects to the hook.`, book: `The main connection fitting for chain slings.`, ask: `Where is sling reach measured from?` },
+      { k: "o", t: `Sheaves`, plain: `Grooved pulley wheels that change the direction of a rope.`, book: `A grooved pulley-wheel for changing the direction of a rope's pull; often found on a crane.`, ask: `Why does wire rope need to bend smoothly around them?` },
+      { k: "k", t: `Web sling`, plain: `A flat, wide, soft synthetic sling.`, book: `Synthetic web slings are softer and wider than chain or wire rope, so they protect delicate surfaces. Designs include endless, eye-and-eye and ones with end fittings.`, ask: `When would you pick one over chain?` },
+      { k: "k", t: `Round sling`, plain: `A loop of synthetic yarn inside a protective sleeve.`, book: `Endless, made in a continuous circle of polyester filament yarn covered by a woven sleeve (jacket).`, ask: `What does the jacket protect?` },
+      { k: "k", t: `Alloy steel chain sling`, plain: `A sling made of strong steel chain links.`, book: `The most durable sling type, used in high heat and rugged conditions; usable up to 500°F (260°C).`, ask: `What is one downside of chain slings?` }
+    ],
+    2: [
+      { k: "o", t: `Rejection criteria`, plain: `The rules that tell you when to stop using something.`, book: `Standards, rules, or tests on which a decision can be based to remove an object or device from service because it is no longer safe.`, ask: `Can a sling still be unsafe if it meets no single criterion?` },
+      { k: "o", t: `Splice`, plain: `A joined spot.`, book: `To join together.`, ask: `Where could a web sling's stitching at the splice fail?` },
+      { k: "o", t: `Competent person`, plain: `Someone who spots hazards and has the authority to fix them right now.`, book: `An individual capable of identifying existing and predictable hazards in the surroundings and working conditions which are unsanitary, hazardous, or dangerous to employees; an individual who is authorized to take prompt corrective measures to eliminate these issues.`, ask: `Who inspects synthetic and wire rope slings?` },
+      { k: "o", t: `Qualified person`, plain: `Someone with proven knowledge, training and credentials to solve problems in this work.`, book: `A person who, through the possession of a recognized degree, certificate, or professional standing, or one who has gained extensive knowledge, training, and experience, has successfully demonstrated his or her ability to solve problems relating to the subject matter, the work, or the project.`, ask: `Who must supervise a lift?` },
+      { k: "o", t: `One-rope lay`, plain: `The length along a rope where one strand makes a full turn around the core.`, book: `The lengthwise distance it takes for one strand of a wire rope to make one complete turn around the core.`, ask: `Why do inspectors count broken wires per one-rope lay?` },
+      { k: "o", t: `Unstranding`, plain: `When the strands of wire rope come untwisted.`, book: `Describes wire rope strands that have become untwisted. This weakens the rope and makes it easier to break.`, ask: `Is an unstranded rope still safe?` },
+      { k: "k", t: `Birdcaging`, plain: `Strands bulging out of a wire rope like the bars of a birdcage.`, book: `Damage that occurs when a load is released too quickly and the strands are pulled or bounced away from the core. Any sign means remove the rope from service immediately.`, ask: `What causes it?` },
+      { k: "k", t: `Kink`, plain: `A sharp bend or twist that distorts the rope.`, book: `Distortion of the rope that restricts the movement of wires. A sharply kinked rope must not be used.`, ask: `Why can a kink cause a serious accident?` },
+      { k: "k", t: `Crushing`, plain: `Flattened or smashed rope or sling.`, book: `Results from setting a load down on a sling or hammering it into place. Remove a crushed wire rope sling immediately.`, ask: `How does crushing feel in a web sling versus a round sling?` },
+      { k: "k", t: `Tensile damage`, plain: `Damage from stretching or overloading.`, book: `Also called overload damage or overstretching. In a web sling, the weave pulls apart.`, ask: `How does a tattle-tail help you spot it?` }
+    ],
+    3: [
+      { k: "o", t: `Shackle`, plain: `A U-shaped metal connector with a removable pin.`, book: `Coupling device used in an appropriate lifting apparatus to connect the rope to eye fittings, hooks, or other connectors.`, ask: `Where on the shackle does the load belong?` },
+      { k: "o", t: `Load stress`, plain: `The strain on the rigging from the weight of what is hanging.`, book: `The strain or tension applied on the rigging by the weight of the suspended load.`, ask: `Why can load stress jam an over-tightened pin?` },
+      { k: "o", t: `Threaded shank`, plain: `The screw-in end of a bolt or eyebolt.`, book: `A connecting end of a fastener, such as a bolt, with a series of spiral grooves cut into it. The grooves are designed to mate with grooves cut into another object in order to join them together.`, ask: `Which end of an eyebolt goes into the load?` },
+      { k: "o", t: `Lifting clamps`, plain: `Clamps that grip a plate or panel so you can lift it without a sling.`, book: `A device used to move loads such as steel plates or concrete panels without the use of slings.`, ask: `How many plates can one clamp carry?` },
+      { k: "o", t: `Rigging hook`, plain: `A hook on a sling that attaches it to the load.`, book: `An item of rigging hardware used to attach a sling to a load.`, ask: `What does a safety latch do?` },
+      { k: "o", t: `Hoists`, plain: `Machines that lift or lower a load for you using pulleys or gears.`, book: `A device that applies a mechanical force for lifting or lowering a load.`, ask: `What is the difference between a manual and a powered hoist?` },
+      { k: "o", t: `Block and tackle`, plain: `A rope and pulleys that make lifting easier.`, book: `A simple rope-and-pulley system used to lift loads.`, ask: `How does it multiply a person's power?` },
+      { k: "k", t: `Eyebolt`, plain: `A bolt with a ring on the end that you screw into the load.`, book: `An item of rigging hardware with a threaded shank. The shank attaches to the load, and the eye attaches a sling. Designs: unshouldered, shouldered, swivel.`, ask: `Which type is only for straight vertical pulls?` },
+      { k: "k", t: `Chain hoist`, plain: `A hoist that lifts with a chain and gears.`, book: `Manual, electric or pneumatic. Electric and pneumatic types are powered chain hoists.`, ask: `Who may use a powered chain hoist?` },
+      { k: "k", t: `Ratchet lever hoist`, plain: `A lever hoist made for lifting, with two brakes.`, book: `Has both a friction-type holding brake and a ratchet-and-pawl load control brake.`, ask: `How is it different from a cable come-along?` },
+      { k: "k", t: `Come-along`, plain: `A hand winch for pulling loads along the ground, not for lifting.`, book: `Has only a spring-loaded ratchet that holds the pawl in place. Use only to move loads horizontally over the ground, never for vertical overhead lifting.`, ask: `What could happen if the ratchet failed overhead?` }
+    ],
+    4: [
+      { k: "o", t: `Hitch`, plain: `The way a sling is arranged to connect a load to the hook.`, book: `The rigging configuration by which a sling connects the load to the hoist hook. The three basic types of hitches are vertical, choker, and basket.`, ask: `Name the three basic hitches.` },
+      { k: "o", t: `Bridle`, plain: `Two or more slings joined at one hook to hold a load.`, book: `A configuration using two or more slings to connect a load to a single hoist hook.`, ask: `How is it used instead of a spreader beam?` },
+      { k: "o", t: `Load control`, plain: `Keeping the load under control while it moves.`, book: `The safe and efficient practice of load manipulation, using proper communication and handling techniques.`, ask: `What simple tool controls spinning?` },
+      { k: "o", t: `Tag line`, plain: `A rope from the load to the ground used to steer it.`, book: `Rope that runs from the load to the ground. Riggers hold on to tag lines to keep a load from swinging or spinning during the lift.`, ask: `Why hold a tag line instead of the load?` },
+      { k: "o", t: `Bull ring`, plain: `A single ring that gathers several slings onto one hook.`, book: `A single ring used to attach multiple slings to a hoist hook.`, ask: `Which hitch uses one?` },
+      { k: "k", t: `Choker hitch`, plain: `A sling that tightens around the load when lifted.`, book: `Made by wrapping the sling around the load and passing it through one eye. Reduces sling capacity by at least 25 percent.`, ask: `When would you pick a choker?` },
+      { k: "k", t: `Basket hitch`, plain: `The sling cradles the load and both eyes go on the hook.`, book: `Creates two sling legs from one sling, which doubles the capacity.`, ask: `Why not use it for loose materials?` },
+      { k: "k", t: `Spreader beam`, plain: `A stiff bar that spreads the sling legs apart when lifting something large.`, book: `A stiff bar used when lifting large objects with a crane hook.`, ask: `Which hitch avoids the need for one?` },
+      { k: "k", t: `Emergency Stop signal`, plain: `Both arms out, palms down, waving back and forth.`, book: `Extend both arms horizontally with palms down, then quickly move the arms back and forth. Anyone on the ground within sight of the operator can give it.`, ask: `Show it. Who is allowed to give it?` },
+      { k: "k", t: `ASME`, plain: `The group that set the hand signals used in the US.`, book: `American Society of Mechanical Engineers. Standardized the hand signals used in US rigging for all cranes.`, ask: `Who normally gives hand signals?` }
+    ]
+  };
+
+  var QUIZ = {
+    1: [
+      { q: `Rated capacity is also called the...`, o: [`Working load limit (WLL)`, `Wire length limit`, `Web load level`], a: 0, why: `It is the most a sling or piece of hardware can hold or lift, and it must never be exceeded.` },
+      { q: `A sling has no identification tag. What do you do?`, o: [`Use it for a light load`, `Remove it from service immediately`, `Guess its capacity`], a: 1, why: `Without a tag, its characteristics and rating cannot be identified.` },
+      { q: `Red warning yarns are showing on a web sling. This means...`, o: [`The sling is brand new`, `The sling is too damaged to use`, `The sling can only be used as a choker`], a: 1, why: `Exposed red yarns mean too much wear or damage.` },
+      { q: `Synthetic web slings should not be exposed to temperatures above...`, o: [`180°F (82°C)`, `500°F (260°C)`, `1,000°F`], a: 0, why: `Chain slings can handle up to 500°F (260°C).` },
+      { q: `Which sling type is the most durable and often used in high heat?`, o: [`Synthetic web`, `Alloy steel chain`, `Round sling`], a: 1, why: `Chain is heavier and harder to inspect, though.` },
+      { q: `On a Twin-Path sling, a tattle-tail pulled into the jacket means...`, o: [`The sling is brand new`, `The sling may have been overloaded`, `The sling is wet`], a: 1, why: `Tattle-tails show if an endless sling was stretched or overloaded.` }
+    ],
+    2: [
+      { q: `When must slings be inspected?`, o: [`Once a month`, `Before each use`, `Only after an accident`], a: 1, why: `Inspect regardless of any earlier tags or marks.` },
+      { q: `What is the primary cause of synthetic sling failure?`, o: [`Cuts`, `Rust`, `Magnetism`], a: 0, why: `Cuts often come from sharp edges on the load.` },
+      { q: `Chain links are stretching when...`, o: [`The barrels close up`, `The chain turns blue`, `The link feels warm`], a: 0, why: `The link grows long and the long sides close up.` },
+      { q: `What do you do if you see birdcaging on a wire rope?`, o: [`Keep using it carefully`, `Remove it from service immediately`, `Oil it`], a: 1, why: `Any sign of birdcaging means remove the rope immediately.` },
+      { q: `Why should you never run a bare hand along a wire rope sling?`, o: [`Broken wires are sharp`, `It leaves oil on the rope`, `The rope is hot`], a: 0, why: `Broken wires can cut or puncture skin.` },
+      { q: `Evidence that replacement links were used to repair a chain sling means...`, o: [`The chain is as good as new`, `Remove it from service`, `Use it for light loads`], a: 1, why: `Chain links cannot be repaired by replacement.` }
+    ],
+    3: [
+      { q: `A shackle's size is set by the diameter of its...`, o: [`Body`, `Pin`, `Eye`], a: 0, why: `The pin diameter does not set the size.` },
+      { q: `In a shackle, where should the load sit?`, o: [`On the pin`, `In the bow`, `On the threads`], a: 1, why: `If a screw pin carries the load, shifting can unscrew it.` },
+      { q: `How many plates should one lifting clamp carry?`, o: [`One at a time`, `Two`, `As many as fit`], a: 0, why: `The cam and jaw must grip both sides of a single item.` },
+      { q: `A common cable come-along can be used for vertical overhead lifting.`, o: [`True`, `False`], a: 1, why: `Use it only to move loads horizontally over the ground.` },
+      { q: `Chain hoists lift heavy loads by using a...`, o: [`Gear system`, `Counterweight`, `Rigger's strength`], a: 0, why: `The gearing turns a sprocket that moves the chain.` },
+      { q: `Before lifting with a chain hoist, you must make sure the load is...`, o: [`Properly balanced`, `Wet`, `Tied to a come-along`], a: 0, why: `Unbalanced loads can slide or shift and cause the hoist to fail.` }
+    ],
+    4: [
+      { q: `Which hitch is used when a load has no practical attachment points?`, o: [`Choker`, `Single vertical`, `Bridle`], a: 0, why: `A choker constricts around the load.` },
+      { q: `A choker hitch reduces a sling's capacity by at least...`, o: [`5 percent`, `25 percent`, `75 percent`], a: 1, why: `Account for this when choosing the sling.` },
+      { q: `A basket hitch does what to a sling's capacity?`, o: [`Doubles it`, `Halves it`, `Has no effect`], a: 0, why: `It creates two legs from one sling.` },
+      { q: `A load more than 12 feet long should be rigged with...`, o: [`One choker hitch`, `Two choker hitches`, `A come-along`], a: 1, why: `Space them far enough apart for stability.` },
+      { q: `Who can give the Emergency Stop signal?`, o: [`Only the signal person`, `Anyone on the ground within sight of the operator`, `Only the operator`], a: 1, why: `All other hand signals come from the designated signal person only.` },
+      { q: `The Emergency Stop signal is...`, o: [`Both arms horizontal, palms down, moved back and forth`, `One fist raised overhead`, `Both arms waved above the head`], a: 0, why: `Extend and retract the arms rapidly.` }
+    ]
+  };
+
+  var TALK = {
+    1: {
+      qs: [`Why does the module say never to attempt a lift without the supervision of a qualified person?`, `Why is a tag so important on a sling?`, `When would you pick a synthetic sling over chain, and why?`, `Why can synthetic slings be dangerous even when they look fine?`],
+      scn: [{
+        t: `"There is no tag on it"`,
+        s: `A student finds a sling lying near the job with no identification tag. It looks fine. What should happen?`,
+        g: [`Remove it from service immediately, since its rating cannot be identified.`, `Do not guess its capacity.`, `A qualified person may be able to install a new tag in some cases.`]
+      }, {
+        t: `"It is a heavy machined part"`,
+        s: `A crew has a polished machined part to lift. Which sling type would protect it best, and what extra protection would you want?`,
+        g: [`A synthetic web sling, since it is soft and wider and does not scratch machined surfaces.`, `Protective pads, softeners or edge protectors where sharp edges touch the sling.`, `Keep it below 180°F and check for cuts, since cuts are the main cause of failure.`]
+      }],
+      parent: `Ask your student to name the three sling types and tell you one strength of each.`
+    },
+    2: {
+      qs: [`Why does the module say to inspect slings even if they already have an inspection tag?`, `How would you inspect a synthetic sling with your hands as well as your eyes?`, `Why is it dangerous to slide a bare hand along a wire rope?`, `Who decides whether a damaged sling can still be used?`],
+      scn: [{
+        t: `"The red threads are showing"`,
+        s: `A student sees red yarn peeking out of a web sling. What does that mean, and what happens next?`,
+        g: [`The sling has suffered too much wear or damage, and it must not be used.`, `Remove it from service and tell a qualified person.`, `Cuts and abrasion are the usual causes.`]
+      }, {
+        t: `"I fixed that link myself"`,
+        s: `A chain sling has a link that was swapped to repair it. Can the sling be used?`,
+        g: [`No. Replacement links are a rejection criterion.`, `Chain links cannot be repaired by replacement.`, `Ask a qualified person if there is any doubt.`]
+      }],
+      parent: `Ask your student what a rigger looks and feels for when inspecting a synthetic sling, and what "rejection criteria" means.`
+    },
+    3: {
+      qs: [`Why is the load placed in the bow of a shackle and not on the pin?`, `How is a ratchet lever hoist different from a cable come-along?`, `Why does a lifting clamp carry only one plate at a time?`, `Why must a powered chain hoist be used only by a qualified person?`],
+      scn: [{
+        t: `"This pin looks close enough"`,
+        s: `A worker finds a shackle with a missing pin and offers a pin from another shackle that fits. What does the module say?`,
+        g: [`Pins should never be swapped. Thread forms and capacities may not match.`, `A wrong or substituted pin is a reason to remove the shackle.`, `There is no easy way to know how much reserve strength is left.`]
+      }, {
+        t: `"Let us just use the come-along"`,
+        s: `A crew wants to lift a load overhead with a cable come-along because it is handy. What is wrong?`,
+        g: [`Come-alongs are for horizontal moves only. Their spring-loaded ratchet alone holds the load.`, `A ratchet lever hoist is the right device because it has two brakes.`, `Use the device designed and specified for the task.`]
+      }],
+      parent: `Ask your student to name four pieces of rigging hardware and what each is used for.`
+    },
+    4: {
+      qs: [`Why does the module say only a qualified person picks the hitch?`, `Why does a choker hitch lower a sling's capacity?`, `What can a tag line do during a lift?`, `Why might anyone on the site need to know the Emergency Stop signal?`],
+      scn: [{
+        t: `"Loose pipes in a choker"`,
+        s: `A rigger wants to lift a loose bundle of pipes with a single choker hitch and pull the choke tight. What is wrong?`,
+        g: [`A choker does not grip loose bundles well, and loose items can be pushed up and out.`, `Forcing the choke down only raises stress on the choke leg.`, `A double-wrap choker is better because the load weight makes the constricting force.`]
+      }, {
+        t: `"Something is wrong"`,
+        s: `A student on the ground sees a worker walk under a swinging load and the signal person is looking away. What can the student do?`,
+        g: [`Give the Emergency Stop signal. Anyone on the ground within sight of the operator can.`, `Arms out horizontally, palms down, extending and retracting quickly.`, `All other hand signals come only from the designated signal person.`]
+      }],
+      parent: `Ask your student to show you the Emergency Stop signal and explain who can give it.`
+    }
+  };
+
+  var FINAL = [
+    `I can explain what rigging is and why only qualified persons supervise lifts.`,
+    `I can name the three sling types and one strength and weakness of each.`,
+    `I can explain what rated capacity (WLL) means and why it can never be exceeded.`,
+    `I can say what each sling tag must show and what to do about a missing tag.`,
+    `I can say when slings are inspected and who inspects them.`,
+    `I can list several rejection criteria for synthetic, chain and wire rope slings.`,
+    `I can tell a competent person from a qualified person.`,
+    `I can describe how to use a shackle correctly and when to reject one.`,
+    `I can name eyebolt types and explain how a lifting clamp works.`,
+    `I can name five kinds of rigging hooks and tell when a hook is rejected.`,
+    `I can explain how a block and tackle and a chain hoist lift loads, and why a come-along is not a lifting hoist.`,
+    `I can name the three basic hitches and explain when each is used.`,
+    `I can explain how choker and basket hitches change a sling's capacity.`,
+    `I can demonstrate the Emergency Stop signal and say who may give it.`
+  ];
+
+  /* The answer keys (Appendix A) are not in the module pages. Every answer was worked out from the module text. */
+  var TF = [`True`, `False`];
+  function Q(src, a, pq, po, tq, to, why, br) { return { src: src + " · answer from module text", a: a, pq: pq, po: po, tq: tq, to: to, why: why, br: br }; }
+  var PRACTICE = {
+    1: [
+      Q(`Section Review 1.0.0 · Q1 (1.1.0)`, 2,
+        `What are slings commonly made of?`, [`Synthetic fibers, cast-iron links and wire rope`, `Fiberglass strands, exotic metals and synthetic rope`, `Synthetic material, alloy steel and wire rope`, `Carbon fiber, stainless steel and twisted pair cable`],
+        `Slings are commonly made out of _____.`, [`synthetic fibers, cast-iron links, and wire rope`, `fiberglass strands, exotic metals, and synthetic rope`, `synthetic material, alloy steel, and wire rope`, `carbon fiber, stainless steel, and twisted pair cable`],
+        `The three sling types are synthetic, alloy steel chain and wire rope.`, [[`What are slings ... made of`, `Slings are commonly made out of`]]),
+      Q(`Section Review 1.0.0 · Q2 (1.1.1)`, 1,
+        `A synthetic sling's tag is missing. What must happen?`, [`A qualified rigger retags it on the spot`, `It is removed from service immediately`, `It is used only for light loads`, `It is tested to find its capacity`],
+        `If the identification tag on a synthetic sling is missing or illegible, the sling must be _____.`, [`re-tagged by a qualified rigger onsite`, `removed from service immediately`, `used only for minimal loads`, `tested on a load to determine its capacity`],
+        `Any synthetic sling without a tag is removed from service immediately.`, [[`tag is missing`, `missing or illegible`], [`What must happen`, `the sling must be`]]),
+      Q(`Module Review · Q1 (1.1.1)`, 3,
+        `What must every sling tag include?`, [`The pads to use`, `The damage it has had`, `The color of the tattle-tail`, `The maker's name or trademark`],
+        `Identification tags for slings must include the _____.`, [`type of protective pads to use`, `type of damage sustained during use`, `color of the tattle-tail`, `manufacturer's name or trademark`],
+        `Every tag includes the manufacturer's name or trademark and the rated capacity for the hitch used.`, [[`What must ... include`, `must include the`], [`maker's name or trademark`, `manufacturer's name or trademark`]]),
+      Q(`Module Review · Q2 (1.1.4)`, 0,
+        `Which wire rope core can be damaged by heat at fairly low temperatures?`, [`Fiber core`, `Strand core`, `Independent wire rope core`, `Metal link core`],
+        `The type of wire rope core that is susceptible to heat damage at relatively low temperatures is the _____.`, [`fiber core`, `strand core`, `independent wire rope core`, `metallic link supporting core`],
+        `A fiber core can be damaged by heat at 180°F to 200°F (82°C to 93°C).`, [[`damaged by heat at fairly low temperatures`, `susceptible to heat damage at relatively low temperatures`]])
+    ],
+    2: [
+      Q(`Module Review · Q3 (1.2.1)`, 2,
+        `When must synthetic slings be inspected?`, [`Once every month`, `At the start of each workweek`, `Before every use`, `Once damage shows up`],
+        `Synthetic slings must be inspected _____.`, [`once every month`, `visually at the start of each workweek`, `before every use`, `once wear or damage becomes apparent`],
+        `Inspect before each use, both visually and by feel.`, [[`When must ... be inspected`, `must be inspected`], [`Before every use`, `before every use`]]),
+      Q(`Module Review · Q4 (1.2.2)`, 1,
+        `What must remove an alloy steel chain sling from service?`, [`It was used with different hitches`, `Replacement links were used to repair the chain`, `It is more than a year old`, `Core strands have weakened`],
+        `An alloy steel chain sling must be removed from service if there is evidence that _____.`, [`the sling has been used in different hitch configurations`, `replacement links have been used to repair the chain`, `the sling has been used for more than one year`, `strands in the supporting core have weakened`],
+        `Chain links cannot be repaired by replacement. Chain slings have no strands or core.`, [[`What must remove`, `must be removed from service if there is evidence that`], [`repair the chain`, `used to repair the chain`]])
+    ],
+    3: [
+      Q(`Section Review 1.0.0 · Q3 (1.3.1)`, 0,
+        `A shackle's size comes from the diameter of its what?`, [`Body`, `Shank`, `Eye`, `Pin`],
+        `The size of a shackle is determined by the diameter of its _____.`, [`body`, `shank`, `eye`, `pin`],
+        `The size is set by the body, not the pin.`, [[`comes from`, `is determined by`]]),
+      Q(`Section Review 1.0.0 · Q4 (1.4.0)`, 2,
+        `What uses a pulley system to give a mechanical advantage for lifting?`, [`A fulcrum`, `A hitch`, `A hoist`, `A come-along`],
+        `A type of rigging equipment that uses a pulley system to provide a mechanical advantage for lifting a load is a _____.`, [`fulcrum`, `hitch`, `hoist`, `come-along`],
+        `A hoist uses pulleys or gears to give a mechanical advantage.`, [[`uses a pulley system`, `uses a pulley system to provide a mechanical advantage`]]),
+      Q(`Module Review · Q5 (1.3.1)`, 2,
+        `What hardware couples the end of a wire rope to eye fittings or hooks?`, [`Eyebolt`, `Hitch`, `Shackle`, `U-bolt`],
+        `A piece of rigging hardware used to couple the end of a wire rope to eye fittings, hooks, or other connections is a(n) _____.`, [`eyebolt`, `hitch`, `shackle`, `U-bolt`],
+        `A shackle has a U-shaped body and a removable pin.`, [[`couples`, `couple`]]),
+      Q(`Module Review · Q6 (1.3.3)`, 0,
+        `What is a lifting clamp most likely used to move?`, [`Steel plates`, `Piping bundles`, `Concrete blocks`, `Plastic tubing`],
+        `A lifting clamp is most likely to be used to move loads such as _____.`, [`steel plates`, `piping bundles`, `concrete blocks`, `plastic tubing`],
+        `Lifting clamps move steel plates, sheet piles, large pipe or concrete panels. Of these choices, steel plates is the match, and a clamp holds one item at a time, so check it against the publisher's key.`, [[`most likely used to move`, `most likely to be used to move`]]),
+      Q(`Module Review · Q7 (1.4.1)`, 3,
+        `How do chain hoists lift heavy loads?`, [`With a rope and pulley system`, `With the rigger's strength`, `With a stationary counterweight`, `With a gear system`],
+        `Chain hoists are able to lift heavy loads by utilizing a _____.`, [`rope and pulley system`, `rigger's strength`, `stationary counterweight`, `gear system`],
+        `All chain hoists use a gear system turning a sprocket.`, [[`How do ... lift`, `are able to lift ... by utilizing`]]),
+      Q(`Module Review · Q8 (1.4.2)`, 1,
+        `What must be true before lifting with a chain hoist?`, [`The hoist is secured to a come-along`, `The load is properly balanced`, `The tag lines are anchored`, `The tackle is plugged in`],
+        `Before attempting to lift a load with a chain hoist, make sure that the _____.`, [`hoist is secured to a come-along`, `load is properly balanced`, `tag lines are properly anchored`, `tackle is connected to its power source`],
+        `Unbalanced loads can slide or shift and cause the hoist to fail.`, [[`What must be true`, `make sure that the`]])
+    ],
+    4: [
+      Q(`Section Review 1.0.0 · Q5 (1.5.2)`, 3,
+        `Which hitch is best when a load has no practical attachment points?`, [`Bridle hitch`, `Vertical hitch`, `Multiple-leg hitch`, `Choker hitch`],
+        `When a load has no attachment points or when the attachment points are not practical for lifting, it is best to use a _____.`, [`bridle hitch`, `vertical hitch`, `multiple-leg hitch`, `choker hitch`],
+        `A choker hitch constricts around the load, and it cuts a sling's capacity by at least 25 percent.`, [[`best`, `it is best to use a`]]),
+      Q(`Module Review · Q9 (1.5.1)`, 2,
+        `Which hitch connects slings to one load without a spreader beam?`, [`Double-wrap hitch`, `Choker hitch`, `Bridle hitch`, `Basket hitch`],
+        `A hitch configuration that allows slings to be connected to the same load without using a spreader beam is a _____.`, [`double-wrap hitch`, `choker hitch`, `bridle hitch`, `basket hitch`],
+        `A bridle hitch is two or more vertical hitches on the same hook, master link or bull ring.`, [[`connects slings to one load`, `allows slings to be connected to the same load`]]),
+      Q(`Module Review · Q10 (1.5.4)`, 0,
+        `How do you give the Emergency Stop signal?`, [`Arms out horizontally with palms down, moved quickly back and forth`, `Arms straight out in front, moved up and down`, `Arms straight overhead, waved back and forth`, `Arms out horizontally with fists, moved up and down`],
+        `To make the Emergency Stop signal used by riggers, extend both arms _____.`, [`horizontally with palms down and quickly move both arms back and forth`, `directly in front and then move both arms up and down repeatedly`, `vertically above the head and wave both arms back and forth`, `horizontally with clenched fists and move both arms up and down`],
+        `Extend both arms horizontally, palms down, then repeatedly extend and retract them.`, [[`How do you give`, `To make ... extend both arms`]])
+    ]
+  };
+
+  function el(tag, cls, text) { var n = document.createElement(tag); if (cls) n.className = cls; if (text != null) n.textContent = text; return n; }
+
+  function buildPoints(ul, list, prefix) {
+    list.forEach(function (html, i) {
+      var li = el("li");
+      var label = el("label");
+      var input = document.createElement("input");
+      input.type = "checkbox";
+      input.id = prefix + "-" + i;
+      var span = el("span");
+      span.innerHTML = html; // static text written in this file
+      label.appendChild(input); label.appendChild(span);
+      li.appendChild(label); ul.appendChild(li);
+    });
+  }
+
+  function field(label, text) {
+    var d = el("span");
+    d.appendChild(el("span", "label", label));
+    d.appendChild(document.createTextNode(text));
+    return d;
+  }
+  function buildCards(host, n) {
+    CARDS[n].forEach(function (item) {
+      var b = el("button", "card");
+      b.type = "button";
+      b.setAttribute("aria-pressed", "false");
+      b.setAttribute("aria-label", item.t + ". Press to flip the card.");
+      var inner = el("span", "card-inner");
+      var f = el("span", "face front" + (item.k === "k" ? " key" : ""));
+      f.appendChild(el("span", "strip", (item.k === "o" ? "NCCER trade term" : "Key term") + " · Section " + n));
+      f.appendChild(el("span", "term", item.t));
+      f.appendChild(el("span", "hint", "TAP TO FLIP"));
+      var k = el("span", "face back");
+      k.appendChild(el("span", "strip", item.t));
+      var body = el("span", "body");
+      body.appendChild(field("In everyday words", item.plain));
+      body.appendChild(field("From the module", item.book));
+      var ask = field("Ask your student", item.ask);
+      ask.className = "ask";
+      body.appendChild(ask);
+      k.appendChild(body);
+      inner.appendChild(f); inner.appendChild(k);
+      b.appendChild(inner);
+      b.addEventListener("click", function () { b.setAttribute("aria-pressed", b.getAttribute("aria-pressed") === "true" ? "false" : "true"); });
+      host.appendChild(b);
+    });
+  }
+
+  function buildQuiz(host, n) {
+    var list = QUIZ[n];
+    var answered = 0;
+    host.appendChild(el("p", "ticket-intro", "Pick the answer. You will see right away if it is correct. Nothing is saved or sent."));
+    var foot = el("div", "ticket-foot");
+    var done = el("p", null, "");
+    done.setAttribute("aria-live", "polite");
+    var retry = el("button", "btn", "Try again");
+    retry.type = "button";
+    retry.hidden = true;
+    foot.appendChild(done); foot.appendChild(retry);
+
+    list.forEach(function (item, qi) {
+      var fs = el("fieldset", "q");
+      fs.appendChild(el("legend", null, (qi + 1) + ". " + item.q));
+      var opts = el("div", "opts");
+      var fb = el("p", "fb");
+      fb.setAttribute("aria-live", "polite");
+      var btns = [];
+      item.o.forEach(function (text, oi) {
+        var b = el("button", "opt", text);
+        b.type = "button";
+        b.addEventListener("click", function () {
+          btns.forEach(function (x) { x.disabled = true; });
+          answered++;
+          fb.textContent = "";
+          if (oi === item.a) {
+            b.classList.add("right");
+            fb.appendChild(el("b", null, "Correct. ")); fb.appendChild(document.createTextNode(item.why));
+          } else {
+            b.classList.add("wrong");
+            btns[item.a].classList.add("right");
+            fb.appendChild(el("b", null, "Not quite. "));
+            fb.appendChild(document.createTextNode("The answer is \"" + item.o[item.a] + "\". " + item.why));
+          }
+          if (answered === list.length) {
+            done.textContent = "Ticket finished. Reread any part of the section that felt shaky, then try again.";
+            retry.hidden = false;
+          }
+        });
+        btns.push(b); opts.appendChild(b);
+      });
+      fs.appendChild(opts); fs.appendChild(fb);
+      host.appendChild(fs);
+      fs._reset = function () { btns.forEach(function (x) { x.disabled = false; x.className = "opt"; }); fb.textContent = ""; };
+    });
+    host.appendChild(foot);
+    retry.addEventListener("click", function () {
+      host.querySelectorAll("fieldset").forEach(function (f) { f._reset(); });
+      answered = 0; done.textContent = ""; retry.hidden = true;
+    });
+  }
+
+  function buildTalk(host, n) {
+    var t = TALK[n];
+    var ol = el("ol", "qs");
+    t.qs.forEach(function (q) { ol.appendChild(el("li", null, q)); });
+    host.appendChild(ol);
+    t.scn.forEach(function (s) {
+      var d = el("details", "scn");
+      d.appendChild(el("summary", null, "Scenario: " + s.t));
+      d.appendChild(el("p", "setup", s.s));
+      var g = el("div", "good");
+      g.appendChild(el("b", null, "A good answer includes"));
+      var ul = el("ul");
+      s.g.forEach(function (x) { ul.appendChild(el("li", null, x)); });
+      g.appendChild(ul); d.appendChild(g);
+      host.appendChild(d);
+    });
+    if (t.parent) {
+      var p = el("div", "parent");
+      p.appendChild(el("b", null, "Talk it over with your loved ones"));
+      p.appendChild(el("p", null, t.parent));
+      host.appendChild(p);
+    }
+  }
+
+  function ask(label, cls, q, opts, correct, onAnswer) {
+    var box = el("div", "ask-block" + (cls ? " " + cls : ""));
+    box.appendChild(el("p", "step-label", label));
+    box.appendChild(el("p", "pr-q", q));
+    var wrap = el("div", "opts");
+    wrap.setAttribute("role", "group");
+    wrap.setAttribute("aria-label", q);
+    var fb = el("p", "fb");
+    fb.setAttribute("aria-live", "polite");
+    var btns = [];
+    opts.forEach(function (text, oi) {
+      var b = el("button", "opt", String.fromCharCode(65 + oi) + ".  " + text);
+      b.type = "button";
+      b.addEventListener("click", function () {
+        btns.forEach(function (x) { x.disabled = true; });
+        var ok = oi === correct;
+        b.classList.add(ok ? "right" : "wrong");
+        if (!ok) btns[correct].classList.add("right");
+        onAnswer(ok, fb, String.fromCharCode(65 + correct));
+      });
+      btns.push(b); wrap.appendChild(b);
+    });
+    box.appendChild(wrap); box.appendChild(fb);
+    box.reset = function () { btns.forEach(function (x) { x.disabled = false; x.className = "opt"; }); fb.textContent = ""; };
+    return box;
+  }
+  function say(fb, lead, text) {
+    fb.textContent = "";
+    fb.appendChild(el("b", null, lead + " "));
+    fb.appendChild(document.createTextNode(text));
+  }
+
+  function buildPractice(host, n) {
+    var list = PRACTICE[n];
+    host.appendChild(el("p", "pr-intro", "Test questions use the textbook's formal words. Answer each question in plain English first, then see the same question the way the book asks it. The \"Words to notice\" box shows how the two fit together. Nothing is saved or sent."));
+    var items = [];
+    list.forEach(function (item, i) {
+      var formalOpts = item.to || item.po;
+      var art = el("article", "pr");
+      var head = el("div", "pr-head");
+      head.appendChild(el("span", null, "Question " + (i + 1) + " of " + list.length));
+      head.appendChild(el("span", null, "Source: " + item.src));
+      art.appendChild(head);
+
+      var bridge = el("div", "bridge");
+      bridge.hidden = true;
+      bridge.appendChild(el("p", "step-label", "Words to notice"));
+      var ul = el("ul");
+      item.br.forEach(function (p) {
+        var li = el("li");
+        li.appendChild(el("span", "you", p[0]));
+        li.appendChild(el("span", "arrow", "→"));
+        li.appendChild(el("span", "pub", p[1]));
+        ul.appendChild(li);
+      });
+      bridge.appendChild(ul);
+
+      var b2 = ask("Step 2 · The same question in the textbook's words", "formal", item.tq, formalOpts, item.a, function (ok, fb, letter) {
+        if (ok) say(fb, "Correct.", "You just answered it in the textbook's voice.");
+        else say(fb, "Not quite.", "The answer is " + letter + ". Compare it with your plain-English answer above.");
+        bridge.hidden = false;
+      });
+      b2.hidden = true;
+      var b1 = ask("Step 1 · In plain English", "", item.pq, item.po, item.a, function (ok, fb, letter) {
+        if (ok) say(fb, "Correct.", item.why);
+        else say(fb, "Not quite.", "The answer is " + letter + ". " + item.why);
+        b2.hidden = false;
+      });
+      art.appendChild(b1); art.appendChild(b2); art.appendChild(bridge);
+      host.appendChild(art);
+      items.push({ b1: b1, b2: b2, bridge: bridge });
+    });
+    var foot = el("div", "ticket-foot");
+    var retry = el("button", "btn", "Start this set over");
+    retry.type = "button";
+    retry.addEventListener("click", function () {
+      items.forEach(function (x) { x.b1.reset(); x.b2.reset(); x.b2.hidden = true; x.bridge.hidden = true; });
+    });
+    foot.appendChild(retry);
+    host.appendChild(foot);
+  }
+
+  [1, 2, 3, 4].forEach(function (n) {
+    buildPoints(document.querySelector('[data-points="' + n + '"]'), POINTS[n], "s" + n);
+    buildCards(document.querySelector('[data-cards="' + n + '"]'), n);
+    buildQuiz(document.querySelector('[data-quiz="' + n + '"]'), n);
+    buildTalk(document.querySelector('[data-talk="' + n + '"]'), n);
+    buildPractice(document.querySelector('[data-practice="' + n + '"]'), n);
+  });
+  buildPoints(document.getElementById("final-points"), FINAL, "fin");
+})();
+</script>
+
+</body>
+</html>

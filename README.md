@@ -31,6 +31,7 @@ Every module section follows the same six parts:
 | NCCER Core, Module 00108: Basic Employability Skills | `employability-skills.html` |
 | NCCER Electrical Level 1, Module 26110-20: Basic Electrical Construction Documents | `electrical-construction-documents.html` |
 | NCCER Electrical Level 1, Module 26111-20: Residential Wiring | `residential-wiring.html` |
+| NCCER Electrical Level 1, Module 26112-20: Electrical Test Equipment (draft: Module Review answers worked out from the module text, pending the lesson plan key) | `electrical-test-equipment.html` (guided notes and slides in `electrical-test-equipment-materials/`) |
 
 `index.html` is the landing page that links to the finished guides.
 

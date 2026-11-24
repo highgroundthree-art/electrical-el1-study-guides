@@ -1,0 +1,1153 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Conductors and Cables Loved Ones Study Guide</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+/* Layout concept: one long study sheet. Each module section runs the same six parts
+   (read, review points, trade-term tags, ticket out the door, talk it over, practice questions). */
+:root {
+  --bg: #EEF1F3;
+  --surface: #FFFFFF;
+  --ink: #14202B;
+  --ink-soft: #46576A;
+  --line: #C9D2DA;
+  --band: #14202B;
+  --band-ink: #F4F7F9;
+  --accent: #C42B17;
+  --accent-ink: #FFFFFF;
+  --caution: #F2B705;
+  --caution-soft: #FFF3C4;
+  --good: #1E7A3C;
+  --good-soft: #DDF3E4;
+  --bad: #A8321F;
+  --bad-soft: #FBE3DE;
+  --tag-hole: #EEF1F3;
+  --focus: #0B5FFF;
+  --font-display: "Barlow Condensed", "Arial Narrow", Impact, sans-serif;
+  --font-body: "Barlow", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0F171E; --surface: #18232D; --ink: #EAF0F4; --ink-soft: #A5B4C2; --line: #2E3E4C;
+    --band: #0A1016; --band-ink: #F4F7F9; --accent: #FF5A44; --accent-ink: #14202B;
+    --caution: #F2B705; --caution-soft: #3A3210; --good: #6FD08C; --good-soft: #17301F;
+    --bad: #FF8E7C; --bad-soft: #3A1B16; --tag-hole: #0F171E; --focus: #6AA2FF;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0F171E; --surface: #18232D; --ink: #EAF0F4; --ink-soft: #A5B4C2; --line: #2E3E4C;
+  --band: #0A1016; --band-ink: #F4F7F9; --accent: #FF5A44; --accent-ink: #14202B;
+  --caution: #F2B705; --caution-soft: #3A3210; --good: #6FD08C; --good-soft: #17301F;
+  --bad: #FF8E7C; --bad-soft: #3A1B16; --tag-hole: #0F171E; --focus: #6AA2FF;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--font-body); font-size: 17px; line-height: 1.6; }
+[hidden] { display: none !important; }
+:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
+.wrap { max-width: 920px; margin-inline: auto; padding-inline: max(16px, env(safe-area-inset-left, 0px)) max(16px, env(safe-area-inset-right, 0px)); }
+h1, h2, h3, h4 { font-family: var(--font-display); text-transform: uppercase; letter-spacing: 0.03em; line-height: 1.05; margin: 0; text-wrap: balance; }
+.eyebrow { font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-soft); }
+
+.band { background: var(--band); color: var(--band-ink); padding-block: 34px 26px; border-bottom: 8px solid var(--caution); }
+.band .eyebrow { color: var(--caution); }
+.band h1 { font-size: clamp(2.5rem, 9vw, 4.4rem); font-weight: 700; margin-top: 10px; }
+.band .sub { margin: 14px 0 0; font-size: 1.1rem; color: #D5DEE5; max-width: 46ch; }
+.band .byline { margin: 14px 0 0; font-size: 0.95rem; color: #AEBBC7; }
+nav.jump { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 22px; }
+nav.jump a { text-decoration: none; font-weight: 600; font-size: 0.95rem; padding: 8px 14px; border: 2px solid #3B4B5A; border-radius: 3px; color: var(--band-ink); }
+nav.jump a:hover { border-color: var(--caution); }
+
+.intro { margin-top: 28px; display: grid; gap: 22px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 380px), 1fr)); }
+.panel { background: var(--surface); border: 1px solid var(--line); padding: 20px 22px 22px; min-width: 0; }
+.panel h2 { font-size: 1.5rem; font-weight: 700; margin-bottom: 10px; }
+.panel p { margin: 0 0 10px; }
+.panel ol { margin: 8px 0 0; padding-left: 1.3em; display: grid; gap: 6px; }
+.notice { background: var(--caution-soft); border: 2px solid var(--caution); padding: 16px 20px; margin-top: 22px; }
+.notice p { margin: 4px 0 0; }
+.notice h2 { font-size: 1.25rem; }
+
+/* section */
+.sec { margin-top: 56px; }
+.sec-head { border-top: 8px solid var(--ink); padding-top: 18px; }
+.sec-head h2 { font-size: clamp(2rem, 6vw, 3rem); font-weight: 700; margin-top: 6px; }
+.sec-head .obj { margin: 10px 0 0; color: var(--ink-soft); max-width: 62ch; }
+.part { margin-top: 34px; }
+.part-title { display: flex; align-items: baseline; gap: 12px; margin-bottom: 14px; }
+.part-title .letter { font-family: var(--font-mono); font-size: 13px; background: var(--ink); color: var(--bg); padding: 2px 8px; flex: none; }
+.part-title h3 { font-size: 1.7rem; font-weight: 700; }
+.part-title .time { margin-left: auto; font-family: var(--font-mono); font-size: 12px; color: var(--ink-soft); white-space: nowrap; }
+
+.prose { background: var(--surface); border: 1px solid var(--line); padding: 22px 24px; }
+.prose h4 { font-size: 1.25rem; font-weight: 700; margin: 20px 0 6px; color: var(--accent); }
+.prose h4:first-child { margin-top: 0; }
+.prose p { margin: 0 0 10px; max-width: 64ch; }
+.prose ul, .prose ol { margin: 0 0 10px; padding-left: 1.2em; max-width: 64ch; }
+.prose li { margin-bottom: 4px; }
+.prose .big { font-size: 1.12rem; font-weight: 500; border-left: 6px solid var(--caution); padding: 4px 0 4px 14px; margin: 0 0 16px; }
+.prose table { border-collapse: collapse; margin: 8px 0 14px; font-size: 0.95rem; width: 100%; max-width: 620px; }
+.prose th, .prose td { text-align: left; padding: 6px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+.prose th { font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-soft); }
+.prose caption { caption-side: top; text-align: left; font-weight: 600; font-size: 0.95rem; padding: 0 0 8px; color: var(--ink); }
+.scroll { overflow-x: auto; }
+.case { background: var(--bg); border-left: 6px solid var(--accent); padding: 12px 16px; margin: 14px 0 0; max-width: 64ch; }
+.case b { font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.08em; text-transform: uppercase; display: block; color: var(--ink-soft); }
+.case ul { margin: 6px 0 0; }
+
+/* review points */
+.points { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.points li { background: var(--surface); border: 1px solid var(--line); }
+.points label { display: grid; grid-template-columns: 28px minmax(0, 1fr); gap: 12px; padding: 12px 16px; cursor: pointer; align-items: start; }
+.points input { width: 22px; height: 22px; margin: 2px 0 0; accent-color: var(--good); }
+.points li:has(input:checked) { background: var(--good-soft); border-color: var(--good); }
+.points b { font-weight: 600; }
+
+/* cards */
+.deck { display: grid; gap: 22px; grid-template-columns: repeat(auto-fill, minmax(min(100%, 270px), 1fr)); }
+.card { all: unset; box-sizing: border-box; display: block; cursor: pointer; perspective: 1100px; min-width: 0; }
+.card:focus-visible { outline: 3px solid var(--focus); outline-offset: 4px; }
+.card-inner { display: grid; transition: transform 0.5s cubic-bezier(.3,.7,.2,1); transform-style: preserve-3d; position: relative; }
+.card[aria-pressed="true"] .card-inner { transform: rotateY(180deg); }
+.face { grid-area: 1 / 1; backface-visibility: hidden; -webkit-backface-visibility: hidden; display: flex; flex-direction: column; min-height: 250px; border: 2px solid var(--ink); background: var(--surface); position: relative; overflow: hidden; }
+.face::before { content: ""; position: absolute; top: 12px; left: 50%; width: 16px; height: 16px; margin-left: -8px; border-radius: 50%; background: var(--tag-hole); border: 2px solid var(--ink); }
+.front .strip { background: var(--accent); color: var(--accent-ink); padding: 38px 16px 8px; font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.08em; text-transform: uppercase; }
+.front.key .strip { background: var(--ink); color: var(--bg); }
+.front .term { flex: 1; display: flex; align-items: center; padding: 16px 18px; font-family: var(--font-display); text-transform: uppercase; font-weight: 700; font-size: clamp(1.8rem, 7vw, 2.2rem); line-height: 1.02; letter-spacing: 0.02em; overflow-wrap: anywhere; }
+.front .hint { padding: 10px 18px 14px; font-size: 0.8rem; color: var(--ink-soft); border-top: 1px dashed var(--line); font-family: var(--font-mono); letter-spacing: 0.04em; }
+.back { transform: rotateY(180deg); background: var(--caution-soft); }
+.back .strip { background: var(--ink); color: var(--bg); padding: 38px 16px 8px; font-family: var(--font-display); text-transform: uppercase; font-weight: 700; letter-spacing: 0.04em; font-size: 1.1rem; line-height: 1.05; }
+.back .body { padding: 14px 18px 16px; display: grid; gap: 10px; align-content: start; font-size: 0.95rem; line-height: 1.45; }
+.back .label { font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-soft); display: block; margin-bottom: 1px; }
+.back .ask { border-top: 1px dashed var(--ink-soft); padding-top: 10px; font-weight: 500; }
+@media (prefers-reduced-motion: reduce) {
+  .card-inner { transition: none; transform-style: flat; }
+  .card[aria-pressed="true"] .card-inner { transform: none; }
+  .back { transform: none; }
+  .face { backface-visibility: visible; }
+  .card .back { visibility: hidden; }
+  .card[aria-pressed="true"] .back { visibility: visible; }
+  .card[aria-pressed="true"] .front { visibility: hidden; }
+}
+
+/* ticket */
+.ticket { background: var(--surface); border: 2px dashed var(--ink); padding: 8px 20px 18px; position: relative; }
+.ticket-intro { margin: 14px 0 4px; color: var(--ink-soft); font-size: 0.95rem; }
+.q { border: 0; border-top: 1px solid var(--line); margin: 0; padding: 16px 0 14px; min-width: 0; }
+.q:first-of-type { border-top: 0; }
+.q legend { font-weight: 600; padding: 0; margin-bottom: 8px; float: left; width: 100%; }
+.q .opts { clear: both; display: grid; gap: 8px; }
+.opts { display: grid; gap: 8px; }
+.opt { font: inherit; text-align: left; padding: 10px 14px; background: var(--bg); color: var(--ink); border: 2px solid var(--line); border-radius: 3px; cursor: pointer; }
+.opt:hover:not(:disabled) { border-color: var(--ink); }
+.opt:disabled { cursor: default; }
+.opt.right { background: var(--good-soft); border-color: var(--good); }
+.opt.wrong { background: var(--bad-soft); border-color: var(--bad); }
+.fb { margin: 8px 0 0; font-size: 0.93rem; color: var(--ink-soft); }
+.fb b { color: var(--ink); }
+.ticket-foot { margin-top: 10px; display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+.ticket-foot p { margin: 0; font-weight: 500; }
+.btn { font: inherit; font-weight: 600; font-size: 0.92rem; padding: 8px 14px; background: var(--surface); color: var(--ink); border: 2px solid var(--ink); border-radius: 3px; cursor: pointer; }
+.btn:hover { background: var(--ink); color: var(--bg); }
+
+/* talk it over */
+.talk { display: grid; gap: 14px; }
+.talk .qs { background: var(--surface); border: 1px solid var(--line); padding: 16px 22px 16px 40px; margin: 0; display: grid; gap: 8px; }
+details.scn { background: var(--surface); border: 1px solid var(--line); border-left: 6px solid var(--caution); padding: 14px 18px; }
+details.scn summary { cursor: pointer; font-family: var(--font-display); text-transform: uppercase; letter-spacing: 0.03em; font-size: 1.3rem; font-weight: 700; }
+details.scn .setup { margin: 10px 0 8px; }
+details.scn .good { margin: 12px 0 0; padding: 10px 14px; background: var(--good-soft); border-left: 6px solid var(--good); }
+details.scn .good b { font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.08em; text-transform: uppercase; display: block; }
+details.scn .good ul { margin: 6px 0 0; padding-left: 1.1em; }
+.parent { background: var(--caution-soft); border: 2px solid var(--caution); padding: 12px 16px; }
+.parent b { font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.08em; text-transform: uppercase; display: block; }
+.parent p { margin: 4px 0 0; }
+
+/* practice questions */
+.pr-intro { margin: 0 0 14px; color: var(--ink-soft); max-width: 66ch; }
+.pr { background: var(--surface); border: 1px solid var(--line); margin-bottom: 18px; }
+.pr-head { display: flex; flex-wrap: wrap; gap: 6px 14px; justify-content: space-between; align-items: baseline; padding: 10px 18px; background: var(--ink); color: var(--bg); font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.06em; text-transform: uppercase; }
+.ask-block { padding: 14px 18px 16px; }
+.ask-block + .ask-block { border-top: 2px dashed var(--line); }
+.ask-block.formal { background: var(--bg); }
+.step-label { margin: 0 0 6px; font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); }
+.pr-q { margin: 0 0 10px; font-weight: 600; font-size: 1.05rem; max-width: 62ch; }
+.bridge { padding: 14px 18px 16px; border-top: 2px dashed var(--line); background: var(--caution-soft); }
+.bridge .step-label { color: var(--ink); }
+.bridge ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+.bridge li { display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); gap: 10px; align-items: baseline; }
+.bridge .you { font-style: italic; }
+.bridge .arrow { font-family: var(--font-mono); color: var(--ink-soft); }
+.bridge .pub { font-weight: 600; }
+@media (max-width: 520px) { .bridge li { grid-template-columns: minmax(0, 1fr); gap: 0; } .bridge .arrow { display: none; } .bridge .pub::before { content: "Textbook: "; font-weight: 400; font-family: var(--font-mono); font-size: 11px; color: var(--ink-soft); } .bridge .you::before { content: "You say: "; font-style: normal; font-family: var(--font-mono); font-size: 11px; color: var(--ink-soft); } }
+
+/* final checklist */
+.final { margin-top: 56px; border-top: 8px solid var(--ink); padding-top: 18px; }
+.final h2 { font-size: clamp(1.9rem, 5vw, 2.6rem); font-weight: 700; }
+.final .lead { color: var(--ink-soft); max-width: 62ch; margin: 10px 0 16px; }
+.note { margin: 28px 0 0; font-size: 0.9rem; color: var(--ink-soft); max-width: 70ch; }
+footer { margin-top: 48px; background: var(--band); color: #AEBBC7; padding-block: 26px 30px; font-size: 0.92rem; }
+footer strong { color: var(--band-ink); }
+footer p { margin: 0 0 6px; }
+</style>
+</head>
+<body>
+
+<header class="band">
+  <div class="wrap">
+    <span class="eyebrow">EVIT Electrical · Loved Ones Study Guide</span>
+    <h1>Conductors<br>and Cables</h1>
+    <p class="sub">A Loved Ones Study Guide for NCCER Electrical Level 1, Module 26109-20: Conductors and Cables</p>
+    <p class="byline">Mr. Ellis CTE — General Construction &amp; Electrical Teacher · High School &amp; Adult Pre-Apprentice Programs</p>
+    <nav class="jump" aria-label="Sections">
+      <a href="#s1">1 · Conductors</a>
+      <a href="#s2">2 · Installing conductors in conduit</a>
+      <a href="#review">Loved ones review</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<div class="wrap">
+
+  <div class="intro">
+    <div class="panel">
+      <h2>Why this guide exists</h2>
+      <p>You do not need to be an electrician to support an electrical student. Your job is to help your student explain what they are learning, put it in their own words, and know when safety means stop and ask a qualified person.</p>
+      <p>If your student can read it and explain it, they are learning it. That is the whole idea.</p>
+    </div>
+    <div class="panel">
+      <h2>How to use each section</h2>
+      <p>Plan about 15 to 25 minutes per section. The student does most of the talking. You do not need the answers ahead of time.</p>
+      <ol>
+        <li><b>Read it together.</b> Plain-English version of the module section.</li>
+        <li><b>Study review points.</b> The must-know facts. Tick each one when your student can say it back.</li>
+        <li><b>Trade-term cards.</b> Tap a card to flip it.</li>
+        <li><b>Ticket out the door.</b> A quick recall check, just for practice.</li>
+        <li><b>Talk it over.</b> Questions and a real-world scenario.</li>
+        <li><b>Practice questions.</b> Each one comes twice: first in plain English, then in the textbook's words, so your student learns to recognize both.</li>
+      </ol>
+    </div>
+  </div>
+
+  <aside class="notice" aria-labelledby="safe-h">
+    <h2 id="safe-h">Important safety note</h2>
+    <p>This guide is for learning and talking. It is not permission to do electrical work. Never use this guide in place of instructor supervision, employer procedures, required training, or properly rated equipment. Pulling and terminating conductors can involve live circuits, heavy reels and ropes under tension. Only qualified people, following the safety rules, do this work. No student names or grades appear here, and nothing you tick or tap on this page is saved or sent anywhere.</p>
+  </aside>
+
+  <!-- SECTION 1 -->
+  <section class="sec" id="s1" aria-labelledby="s1-h">
+    <div class="sec-head">
+      <span class="eyebrow">Module Section 1 of 2</span>
+      <h2 id="s1-h">Conductors</h2>
+      <p class="obj">By the end of this section your student can sort conductors by wire size, material, insulation and use, read the markings on a cable, and name the common cable types and where each one goes.</p>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">A</span><h3>Read it together</h3><span class="time">about 25 min</span></div>
+      <div class="prose">
+        <p class="big">An electrician has to pick the right wire or cable for every job, then pull it through conduit and terminate it. This section is about the picking: how wire is sized, what it is made of, how the insulation is coded, and which cable goes where.</p>
+
+        <h4>What a conductor is (1.0.0)</h4>
+        <p>The word <b>conductor</b> is used two ways. It can mean the current-carrying part of a wire or cable, or it can mean the whole wire assembly: the current-carrying part plus its outer covering, the <b>insulation</b>. In this module, unless it says otherwise, "conductor" means the whole assembly.</p>
+        <p>Conductors are identified by <b>size</b> and <b>insulation material</b>. Size means the cross-sectional area of the current-carrying part. <b>Ampacity</b> is affected by the conductor material and size, the insulation, and the installation location.</p>
+        <div class="case"><b>Trade term: ampacity</b>The maximum current, in amperes, a conductor can carry continuously under the conditions of use without exceeding its temperature rating.</div>
+
+        <h4>Wire sizes and the AWG system (1.1.0, 1.1.1)</h4>
+        <p>Wire sizes are given in gauge numbers. In the United States the standard system is the <b>American Wire Gauge (AWG)</b>. The rule to remember: <b>the larger the number, the smaller the wire</b>. A bigger cross-section carries more current.</p>
+        <ul>
+          <li>AWG numbers run from 50 up to No. 1, then 0, 00, 000 and 0000. Those four are called one aught (1/0), two aught (2/0), three aught (3/0) and four aught (4/0).</li>
+          <li>Any wire larger than 4/0 is identified by its area in thousands of circular mils, written <b>kcmil</b>.</li>
+          <li>For wire sizes larger than No. 16 AWG, the size is marked on the insulation.</li>
+          <li>NEC Chapter 9, Table 8 gives descriptive information on wire sizes. Wires smaller than No. 6 come solid or stranded. Wire sizes No. 6 or larger are shown only as <b>stranded</b>.</li>
+        </ul>
+
+        <h4>Stranding (1.1.2)</h4>
+        <p>According to NEC Chapter 9, Table 8, wire sizes No. 18 to No. 2 have <b>seven strands</b>. Wire sizes No. 1 to No. 4/0 have <b>19 strands</b>. Sizes from 250 kcmil to 500 kcmil have <b>37 strands</b>.</p>
+        <p>The purpose of stranding is to increase <b>flexibility</b>. A conductor must be flexible and almost round, so the individual strands cannot be too large. Terminating solid wire larger than No. 8 in pull boxes, disconnect switches and panels would be very difficult and could damage equipment and wire insulation. Pulling solid wire in conduit around bends would also be a problem above No. 8. <b>Aluminum conductors</b> are designed with <b>compact (compressed) stranding</b>.</p>
+
+        <h4>Circular mils (1.1.3)</h4>
+        <p>A <b>circular mil</b> is a circle with a diameter of 1 mil. A mil is 0.001 inch, and one kcmil is 1,000 circular mils. A 250 kcmil wire has a current-carrying area equal to 250,000 circles, each 0.001 inch across. It can seem clumsy, but the alternative would be sizing wire in square inches. According to NEC Chapter 9, Table 8, a 250 kcmil conductor has a cross-sectional area of 0.260 square inch. It is easier to say "250 kcmil."</p>
+
+        <h4>Conductor ampacities (1.2.0)</h4>
+        <p>The ampacity of conductors for given conditions is listed in <b>NEC Tables 310.16 through 310.21</b>.</p>
+        <div class="scroll"><table>
+          <caption>Which ampacity table?</caption>
+          <thead><tr><th>Table</th><th>What it covers</th></tr></thead>
+          <tbody>
+            <tr><td><b>310.16</b></td><td>Conductors rated 2,000 volts and below, with not more than three conductors in a raceway or cable or directly buried, at an ambient temperature of 30°C (86°F)</td></tr>
+            <tr><td><b>310.17</b></td><td>Copper, aluminum or copper-clad aluminum conductors 2,000 volts and below, used as single conductors in free air, at 30°C (86°F)</td></tr>
+            <tr><td><b>310.18 and 310.19</b></td><td>Conductors rated 150°C to 250°C (302°F to 482°F), in raceway, cable or free air, at an ambient temperature of 40°C (104°F)</td></tr>
+          </tbody>
+        </table></div>
+        <div class="case"><b>Example</b>Find the ampacity of a No. 8 copper THW conductor in a raceway in a 30°C (86°F) environment. From NEC Table 310.16, the answer is 50 amps.</div>
+
+        <h4>Conductor materials (1.3.0)</h4>
+        <p>The most common conductor material is <b>copper</b>, because of its excellent conductivity (low resistance), ease of use and value. The value of a material for wire depends on four things: <b>conductivity, cost, availability and workability</b>.</p>
+        <ul>
+          <li><b>Conductivity (1.3.1).</b> This is how easily current travels through a conductor. Low resistance means high conductivity. Silver is one of the best conductors. Copper has high conductivity and a lower price than silver. Aluminum also has good conductivity, about <b>two-thirds</b> that of copper.</li>
+          <li><b>Cost (1.3.2).</b> A cheaper material is sometimes chosen even though its properties are not as good. Copper over platinum is an easy choice, because platinum costs far too much. Copper versus aluminum is often harder to decide.</li>
+          <li><b>Availability (1.3.3).</b> The mining industry often controls the supply of raw materials, which can cause shortages and changes the price of finished copper or aluminum wire.</li>
+          <li><b>Workability (1.3.4).</b> Pick a material that needs less expense for tools and is easier to work with. Aluminum is lighter and more flexible than copper of the same size. But terminating aluminum often needs special tools and an <b>anti-oxidation material</b> on the termination surfaces, and it takes more training. Part of the reason is that aluminum expands and contracts with heat more than copper does.</li>
+        </ul>
+        <div class="case"><b>Terminating aluminum wire</b>Use listed connectors. All aluminum connections need an anti-oxidizing compound. Some connectors are precoated, and others need the compound added, so check the connectors before you start.</div>
+
+        <h4>Conductor insulation (1.4.0)</h4>
+        <p>The first attempt to insulate wire came in the early 1800s with the telegraph. That insulation was for physical protection, not electrical protection, because the telegraph ran on low-voltage DC. It was tarred hemp or cotton fiber and shellac, used mainly to weatherproof long-distance lines.</p>
+        <p>Early electrical systems used <b>knob-and-tube</b> wiring: bare wire wrapped around ceramic knobs and pulled through ceramic tubes in drilled framing. Some of it is still working in houses from the early 1900s. Knob-and-tube was revised to use insulated conductors and stayed in use up to 1957 in some areas.</p>
+        <p>The grounded (neutral) conductor in overhead services may be bare, and so may the concentric grounded conductor in Type SE cable when used as service-entrance cable. But <b>all current-carrying conductors, including the grounded conductor, must be insulated</b> when used inside buildings or after the first overcurrent protection device. NEC Table 310.4(A) lists the 600-volt insulated conductors and the letter designation for each type.</p>
+        <div class="case"><b>Think about it (book)</b>What are the functions of conductor insulation? Under what conditions does the NEC allow uninsulated conductors?</div>
+
+        <h4>Thermoplastic (1.4.1)</h4>
+        <p>Thermoplastic is a popular and effective insulation. These are widely used:</p>
+        <ul>
+          <li><b>Polyvinyl chloride (PVC)</b>: the base material for TW and THW insulation.</li>
+          <li><b>Polyethylene (PE)</b>: an excellent weatherproofing material used mainly for control and communications wiring. It is not used for high-voltage conductors (above 5,000 volts).</li>
+          <li><b>Cross-linked polyethylene (XLP)</b>: an improved PE with better heat and moisture resistance. Used for THHN, THWN and THHW wiring and many high-voltage cables.</li>
+          <li><b>Nylon</b>: mainly a jacketing material. THHN building wire has an outer coating of nylon.</li>
+          <li><b>Teflon</b>: a high-temperature insulation, widely used for telephone wiring in a plenum, where other insulated conductors would need conduit.</li>
+        </ul>
+
+        <h4>Thermoset (1.4.2)</h4>
+        <p>Many thermoplastics deform when heated. <b>Thermoset</b> materials keep their form when heated. Thermoset insulations include RHH, RHW, XHH, XHHW and SIS.</p>
+
+        <h4>Letter coding (1.4.3)</h4>
+        <p>Insulation on building wire is coded by letters. The letters usually, but not always, show the type of insulation or its environmental rating. The types covered here are the ones at the top of NEC Table 310.16.</p>
+        <div class="scroll"><table>
+          <caption>Single letters (Table 1, Insulation Coding)</caption>
+          <thead><tr><th>Letter</th><th>Means</th></tr></thead>
+          <tbody>
+            <tr><td><b>B</b></td><td>Braid</td></tr>
+            <tr><td><b>E</b></td><td>Ethylene or Entrance</td></tr>
+            <tr><td><b>F</b></td><td>Fluorinated or Feeder</td></tr>
+            <tr><td><b>H</b></td><td>Heat-Rated or Flame-Retardant</td></tr>
+            <tr><td><b>N</b></td><td>Nylon</td></tr>
+            <tr><td><b>P</b></td><td>Propylene</td></tr>
+            <tr><td><b>R</b></td><td>Rubber</td></tr>
+            <tr><td><b>S</b></td><td>Silicon or Synthetic</td></tr>
+            <tr><td><b>T</b></td><td>Thermoplastic</td></tr>
+            <tr><td><b>U</b></td><td>Underground</td></tr>
+            <tr><td><b>W</b></td><td>Weather-Rated</td></tr>
+            <tr><td><b>X</b></td><td>Cross-Linked Polyethylene</td></tr>
+            <tr><td><b>Z</b></td><td>Modified Ethylene Tetrafluoroethylene</td></tr>
+          </tbody>
+        </table></div>
+        <div class="scroll"><table>
+          <caption>Whole type designations (Table 1)</caption>
+          <thead><tr><th>Type</th><th>Means</th></tr></thead>
+          <tbody>
+            <tr><td><b>TW</b></td><td>Weather-Rated Thermoplastic (60°C/140°F)</td></tr>
+            <tr><td><b>FEP</b></td><td>Fluorinated Ethylene Propylene</td></tr>
+            <tr><td><b>FEPB</b></td><td>Fluorinated Ethylene Propylene with Glass Braid</td></tr>
+            <tr><td><b>MI</b></td><td>Mineral Insulation</td></tr>
+            <tr><td><b>MTW</b></td><td>Moisture, Heat, and Oil-Resistant Thermoplastic</td></tr>
+            <tr><td><b>PFA</b></td><td>Perfluoroalkoxy</td></tr>
+            <tr><td><b>RHH</b></td><td>Flame-Retardant Heat-Rated Rubber</td></tr>
+            <tr><td><b>RHW</b></td><td>Weather-Rated, Heat-Rated Rubber (75°C/167°F)</td></tr>
+            <tr><td><b>SA</b></td><td>Silicon</td></tr>
+            <tr><td><b>SIS</b></td><td>Synthetic Heat-Resistant</td></tr>
+            <tr><td><b>TBS</b></td><td>Thermoplastic Braided Silicon</td></tr>
+            <tr><td><b>TFE</b></td><td>Extended Polytetrafluoroethylene</td></tr>
+            <tr><td><b>THHN</b></td><td>Heat-Resistant Thermoplastic</td></tr>
+            <tr><td><b>THHW</b></td><td>Moisture and Heat-Resistant Thermoplastic</td></tr>
+            <tr><td><b>THW</b></td><td>Moisture and Heat-Resistant Thermoplastic</td></tr>
+            <tr><td><b>THWN</b></td><td>Weather-Rated, Heat-Rated Thermoplastic with Nylon Cover</td></tr>
+            <tr><td><b>UF</b></td><td>Underground Feeder</td></tr>
+            <tr><td><b>USE</b></td><td>Underground Service Entrance</td></tr>
+            <tr><td><b>XHH</b></td><td>Thermoset</td></tr>
+            <tr><td><b>XHHW</b></td><td>Heat-Rated, Flame-Retardant, Weather-Rated Thermoset</td></tr>
+            <tr><td><b>ZW</b></td><td>Weather-Rated Modified Ethylene Tetrafluoroethylene</td></tr>
+          </tbody>
+        </table></div>
+        <div class="case"><b>Insulation types (book exercise)</b>Use NEC Table 310.4(A) to identify two types of insulation that are suitable for use in wet locations.</div>
+
+        <h4>Color coding (1.4.4)</h4>
+        <p>A color code helps identify wires by the color of the insulation, which makes them easier to install and connect correctly. A typical code:</p>
+        <ul>
+          <li><b>Two-conductor cable:</b> one white or gray wire (neutral), one black wire (hot) and a grounding wire (usually bare).</li>
+          <li><b>Three-conductor cable:</b> one white or gray, one black, one red and a grounding wire.</li>
+          <li><b>Four-conductor cable:</b> same as three, plus a fourth wire (blue).</li>
+          <li><b>Five-conductor cable:</b> same as four, plus a fifth wire (yellow).</li>
+        </ul>
+        <p>The grounding conductor may be bare, green, or green with a yellow stripe.</p>
+        <p>The NEC does not require color coding of ungrounded conductors, except where more than one nominal voltage system is present or on branch circuits supplied from direct-current systems [NEC Section 210.5(C)(2)]. Ungrounded conductors may be any color except <b>white, gray or green</b>, but color coding is good practice, and many construction specifications require it.</p>
+        <p>On a four-wire, delta-connected secondary where the midpoint of one phase winding is grounded to supply lighting and similar loads, the phase conductor with the higher voltage to ground must be identified by an <b>orange</b> outer finish, by tagging, or by other effective means. That identification goes at each point where a connection is made if the grounded conductor is also present (NEC Section 110.15). In most cases, orange tape is used at all termination points.</p>
+        <div class="case"><b>Safety</b>Color designations are good indicators, but never trust your life to them. Always protect yourself by testing circuits with a voltmeter.</div>
+        <div class="case"><b>Think about it (book)</b>Although the NEC does not require color-coded ungrounded conductors, why might it be a good idea to use them anyway?</div>
+
+        <h4>Wire ratings (1.4.5)</h4>
+        <p>A critical factor in picking a conductor is its <b>maximum operating temperature</b>. Think about how and where the conductor will be used so its temperature rating is never exceeded. A conductor's operating temperature depends on:</p>
+        <ul>
+          <li>the ambient temperature;</li>
+          <li>current flow in the conductor, including harmonic current;</li>
+          <li>current flow in bundled conductors, which raises the ambient temperature;</li>
+          <li>how fast or slow heat escapes into the surroundings, which the insulation affects.</li>
+        </ul>
+        <p>Where the conductor will be <b>terminated</b> matters too, because the temperature rating of the termination may limit the allowable ampacity. In general, the safe current and the maximum safe temperature depend on conductor size (in circular mils), ambient temperature, the number of conductors in a bundle, and where the conductors are installed (raceways, conduit, ducts, underground and so on).</p>
+        <p>NEC Tables 310.16 and 310.17 assume an ambient temperature of 30°C (86°F). Ampacity is based on that ambient temperature plus the heat (I²R) produced by the current. So the type of insulation is the first thing that sets the maximum permitted ampacity.</p>
+        <div class="case"><b>Example</b>A No. 3/0 THW copper conductor in a raceway has an ampacity of 200A in NEC Table 310.16. At 30°C (86°F) the conductor is already at that temperature with no current. THW insulation is rated 75°C (167°F), which leaves a wide margin for heat from current flow.</div>
+        <p>If the ambient temperature goes <b>above 30°C (86°F)</b>, the maximum load current must be reduced in proportion, per NEC Table 310.15(B)(1), so the total temperature stays within the insulation rating. For the same reason, the allowable ampacity must be reduced when <b>more than three conductors</b> are in a raceway or cable (NEC Section 310.15(C)(1)).</p>
+        <p>When designing a circuit, you choose the conductor type (TW, THW, THWN, RHH, THHN, XHHW and so on). The types are covered in NEC Article 310, and ampacities are in Tables 310.16 through 310.21 for varying conditions: in a raceway, in open air, at normal or higher-than-normal ambient temperatures. Conductors must be used in accordance with the tables and their notes.</p>
+
+        <h4>Fixture wiring (1.5.0)</h4>
+        <p><b>Fixture wire</b> is used for the interior wiring of fixtures and for wiring fixtures to a power source. Guidelines are in <b>NEC Article 402</b>, the approved types are in <b>Table 402.3</b>, and the allowed ampacities are in <b>Table 402.5</b>. Fixture wires are insulated conductors, with or without an outer jacket, in sizes from <b>No. 18 to No. 10 AWG</b>.</p>
+        <p>Which fixture wire to use depends mainly on the operating temperature expected inside the fixture, so it is the insulation that decides. Wire insulated with perfluoroalkoxy (PFA) or extruded polytetrafluoroethylene (PTF) is chosen when the fixture may reach <b>250°C (482°F)</b>, the highest operating temperature allowed for any fixture wire. Fixture wires are suitable for 600 volts unless Table 402.3 says otherwise.</p>
+        <p>The main use is inside fixtures, but several of the wires in Table 402.3 may be used for remote-control, signaling or power-limited circuits under NEC Section 725.49. <b>Fixture wires may never be used as substitutes for branch circuit conductors.</b></p>
+
+        <h4>Cable types and applications (1.6.0)</h4>
+        <p>A <b>cable</b> is two or more insulated wires, and may include a grounding wire, covered by an outer jacket or sheath. Cable is usually classified by its covering: <b>nonmetallic</b> (plastic) or <b>metallic</b>, also called armored cable. It may also be classified by where it can be used (NEC Table 400.4). Water is a good conductor, so moisture can cause power loss or short circuits, and cables are classified for <b>dry, damp or wet</b> locations. They can also be classified for sunlight exposure and rough use.</p>
+        <p>All cables are marked with important information: wire size, number of conductors, cable type and voltage rating, and sometimes a mark for an approved service or application. This is printed on nonmetallic cable. On metallic cable it is usually on a tag. The NEC requires that all cables and fittings be <b>listed</b>.</p>
+        <div class="case"><b>Cable selection</b>Two things decide the cable type for an application: the type of conductor insulation and the cable jacket. Both must be right for the job.</div>
+
+        <h4>Nonmetallic-sheathed cable, Types NM and NMC (1.6.1)</h4>
+        <p>Types NM and NMC are widely used for branch circuits and feeders in homes and commercial buildings. Both are commonly called <b>Romex</b>, though the manufacturer applies that name only to Type NM. The rules are in <b>NEC Article 334</b>. The cable has two or more insulated conductors and one bare conductor inside a nonmetallic sheath. The conductors may be wrapped in paper, and the gaps may be filled with jute, paper or other material to protect the conductors and keep the shape. The sheath is flame-retardant and moisture-resistant. The NMC sheath is also fungus- and corrosion-resistant.</p>
+        <ul>
+          <li>Both may be installed exposed or concealed.</li>
+          <li><b>Type NM</b> is suitable for <b>dry locations only</b>. <b>Type NMC</b> is permitted in dry, moist, damp or corrosive locations.</li>
+          <li>Both may be used in one- and two-family dwellings and certain multifamily dwellings, depending on construction (NEC Section 334.10).</li>
+          <li>Not in ducts or plenums, because toxic gases from burning insulation would spread through the building. Not exposed in the space above suspended ceilings. Not as service-entrance cable, embedded in concrete, or in hazardous locations.</li>
+        </ul>
+        <p>NEC Article 334 has many more rules. Read and understand the applicable sections before installing this type of cable.</p>
+
+        <h4>Type UF cable (1.6.2)</h4>
+        <p>Type UF (underground feeder and branch circuit) cable follows <b>NEC Article 340</b>. It looks and is built a lot like Type NMC, and is used the same way. The main difference: <b>UF is suitable for direct burial, and NMC is not</b>.</p>
+        <p>Permitted uses include underground and direct burial, single-conductor use, wet, dry or corrosive conditions, as nonmetallic-sheathed cable, in solar photovoltaic systems, and in cable trays. Typically it may not be used as service-entrance cable, in commercial garages, in theaters, in hoistways or elevators, or in hazardous locations. It generally cannot be embedded in poured cement, concrete or aggregate, exposed to sunlight (unless designed for that), or used as overhead cable.</p>
+
+        <h4>Type MV cable (1.6.3)</h4>
+        <p>Type MV (medium-voltage) cable is covered in <b>NEC Article 311</b>. It is one or more insulated conductors inside an outer jacket, for voltages from <b>2,001 to 35,000 volts</b>. It may be installed in wet and dry locations and buried directly in the earth.</p>
+
+        <h4>Type MC cable (1.6.4)</h4>
+        <p>Type MC (metal clad) cable has one or more insulated conductors inside a metal tape or metallic sheath. <b>NEC Article 330</b> covers it, and UL 1569 is the standard for metal clad cables. MC is used in a wide range of jobs, from small instrumentation cable to medium-voltage feeders. The conductors have thermoset or thermoplastic insulation, and MC can also combine electrical conductors with optical fiber.</p>
+        <p>Markings typically show the maximum voltage, AWG size (or circular mil area) and insulation type. If the outer covering will not take markings, they are on a tape inside the cable, along its whole length. If they are on the outside, they typically repeat every 24 inches (61 cm).</p>
+        <p>The three types of MC cable are <b>interlocked metal tape, corrugated metal tube and smooth metal tube</b>. The outer covering may be a nonmetallic jacket over the metal sheath. Typical uses: services, feeders and branch circuits; power, lighting, control and signal circuits; indoors or outdoors; exposed or concealed; direct burial (if identified for it); in any raceway; and other uses in Article 330. It may not be used in corrosive or damaging conditions unless the metal cladding protects the conductors or other protection is used. Uses typically not permitted include where the cable is subject to physical damage, direct burial, in concrete, or where it is subject to caustic materials.</p>
+        <p>Armored (AC) and MC cable both make installation easier. The flexible metal sheath protects the conductors and lets them bend around corners without kinking. Because the conductors are already protected, there is no need to pull them into a raceway, no worry about them touching pipes or hard surfaces, and no need for wire pullers, fish tapes or lubricants.</p>
+        <div class="scroll"><table>
+          <caption>AC cable compared with MC cable</caption>
+          <thead><tr><th></th><th>AC (armored)</th><th>MC (metal clad)</th></tr></thead>
+          <tbody>
+            <tr><td><b>Conductors</b></td><td>Maximum of four, plus a grounding conductor</td><td>No limit on the number</td></tr>
+            <tr><td><b>Sizes</b></td><td>14 AWG to 1 AWG</td><td>18 AWG to 2,000 kcmil</td></tr>
+            <tr><td><b>Ground</b></td><td>Bonding strip (16 AWG) in constant contact with the armor forms an equipment ground</td><td>No bonding strip. The cladding is not a ground, though it can supplement the ground</td></tr>
+            <tr><td><b>Wraps</b></td><td>Moisture-resistant, fire-retardant paper wrap on each conductor</td><td>No paper wrap, but a polyester tape on the assembly</td></tr>
+          </tbody>
+        </table></div>
+        <div class="case"><b>Type MC cable (book sidebar)</b>MC cable is widely used in commercial and industrial settings, in many configurations with or without an outer jacket. Special applications include homerun cables, super neutrals, direct burial and fire alarm cable.</div>
+
+        <h4>High-voltage shielded cable (1.6.5)</h4>
+        <p>Shielding on high-voltage cable protects the conductor assembly against surface discharge or burning from <b>corona discharge</b> in ionized air, which can destroy the insulation and jacket. Electrostatic shielding uses both nonmetallic and metallic materials.</p>
+
+        <h4>Channel wire assemblies, Type FC (1.6.6)</h4>
+        <p>Channel wire (Type FC) is an entire wiring system: cable, cable supports, splicers, circuit taps, fixture hangers and fittings. <b>NEC Article 322</b> covers it. Type FC cable is a flat assembly of three or four parallel <b>No. 10</b> special stranded copper conductors, installed in an approved U-channel surface metal raceway with one side open. Tap devices can go in anywhere along the run. Their <b>pin-type contacts</b> penetrate the cable insulation and touch the stranded conductors in a matched phase sequence. The taps can then be wired to lighting fixtures or power outlets.</p>
+        <p>Under NEC Section 322.10 it is suitable for branch circuits that supply only small appliances and lights. It is for <b>exposed wiring only</b> and may not be concealed in the building structure. It is ideal for quick branch circuit wiring at field installations.</p>
+
+        <h4>Flat conductor cable, Type FCC (1.6.7)</h4>
+        <p>Type FCC is an entire branch wiring system, a lot like Type FC. <b>NEC Article 324</b> covers it. FCC cable has <b>three to five flat conductors</b> placed edge-to-edge and separated, inside a moisture-resistant, flame-retardant insulating assembly. Accessories include cable connectors, terminators, power source adapters and receptacles.</p>
+        <p>It was designed to supply floor outlets in office areas and other commercial and institutional interiors. It runs <b>under carpets</b>, so no floor drilling is needed, and it can also be wall mounted. Under NEC Section 324.42(B), telephone and other communications circuits may share the same enclosure as Type FCC cable. Its main advantage is ease of installation, which makes it ideal for remodeling or expanding existing offices.</p>
+
+        <h4>Type TC cable (1.6.8)</h4>
+        <p>Type TC (power and control tray) cable follows <b>NEC Article 336</b>. It is two or more insulated conductors, with or without bare or fully insulated grounding conductors, covered with a nonmetallic jacket. It is listed in sizes from No. 14 AWG to 1,000 kcmil copper, or No. 12 AWG to 1,000 kcmil aluminum or copper-clad aluminum.</p>
+        <p>The T in the name means <b>tray</b>. TC can be used in cable trays and raceways, and may be buried directly if the sheathing is suitable. It is also good in sunlight when its markings say so. Type TC-ER identified as <b>JP (joist pull)</b> may be used in one- and two-family dwellings and pulled through framing members.</p>
+
+        <h4>SE and USE cable (1.6.9)</h4>
+        <p>Types SE (service-entrance) and USE (underground service-entrance) follow <b>NEC Article 338</b>. If the conductor type is marked on the outside of the cable, the cable's temperature rating matches the individual conductor. When that marking does not appear, the cable's temperature rating is <b>75°C (167°F)</b>.</p>
+        <ul>
+          <li><b>Type SE</b> is for <b>aboveground</b> installation only. For ungrounded conductors 10 AWG and smaller installed in thermal insulation, ampacity is figured at the 60°C (140°F) rating. Used as service-entrance cable, it must be installed as NEC Article 230 specifies. It may also be used as feeder and branch circuit cable. See NEC Section 338.10.</li>
+          <li><b>Type USE</b> is for <b>underground</b> installation, including burial directly in the earth. In sizes No. 4/0 AWG and smaller with all conductors insulated, it is suitable for all the underground uses permitted for Type UF. It may be single conductors or a multi-conductor assembly with a moisture-resistant covering, but it is <b>not required to have a flame-retardant covering</b>.</li>
+        </ul>
+        <p>USE cable may have a bare copper conductor cabled with the assembly, and single, parallel or cabled USE assemblies recognized for underground use may have a bare copper concentric conductor. These do not need an outer overall covering. When used as service-entrance cable, USE must be installed as NEC Article 230 specifies, and it may also be used as feeder and branch circuit cable. Take the time to read Article 230.</p>
+
+        <h4>Instrumentation control wiring (1.7.0)</h4>
+        <p>Instrumentation control wiring links the field-sensing, controlling, printout and operating devices that make up an electronic instrumentation control system. The style and size must be matched to the job. It usually has two or more insulated conductors, which may also have a shield and a ground wire, and an outer layer called the <b>jacket</b>. The conductors come in <b>pairs</b>, and a multi-pair cable typically has 12, 24 or 36 pairs. More on applications is in NEC Articles 720, 725 and 727.</p>
+
+        <h4>Shields (1.7.1)</h4>
+        <p>Shields protect the electrical signals in the conductors from electrical interference, or noise. They are usually aluminum foil bonded to a plastic film. If wiring is not properly shielded, noise may cause erratic or wrong control signals, false indications and improper operation of control devices.</p>
+
+        <h4>Shield drain (1.7.2)</h4>
+        <p>A <b>shield drain</b> is a bare copper wire in continuous contact with a specified grounding terminal. It lets all the instruments in a loop connect to one common grounding point. Always check the <b>loop diagram</b> to see whether the shield is to be terminated.</p>
+        <p>Shielding in instrumentation circuits is typically grounded at <b>one end of the conductor only</b>. That drains induced charges to ground but does not give induced current a circulating path. If the ground is not to be connected at the end you are installing, do not remove the ground wire. Fold it back and tape it to the cable. This is called <b>floating the ground</b>.</p>
+
+        <h4>Jackets (1.7.3)</h4>
+        <p>A plastic jacket covers and protects the parts inside the wire. Polyethylene (PE) and polyvinyl chloride (PVC) jackets are the most common. Some jackets have a nylon <b>rip cord</b> that lets you peel the jacket back without a knife or cable cutter, which avoids nicking the conductor insulation when you prepare for termination.</p>
+
+        <div class="scroll"><table>
+          <caption>Cable types at a glance</caption>
+          <thead><tr><th>Cable</th><th>Key facts</th></tr></thead>
+          <tbody>
+            <tr><td>NM / NMC</td><td>Article 334. Homes and commercial branch circuits and feeders. NM dry only. NMC dry, moist, damp, corrosive</td></tr>
+            <tr><td>UF</td><td>Article 340. Like NMC, but suitable for direct burial</td></tr>
+            <tr><td>MV</td><td>Article 311. 2,001 to 35,000 volts</td></tr>
+            <tr><td>MC / AC</td><td>Article 330 (MC). Metal sheath. No pulling into raceway needed</td></tr>
+            <tr><td>FC</td><td>Article 322. Flat No. 10 conductors in a U-channel. Exposed only</td></tr>
+            <tr><td>FCC</td><td>Article 324. Three to five flat conductors under carpet</td></tr>
+            <tr><td>TC</td><td>Article 336. Tray cable. TC-ER with JP can be pulled through framing</td></tr>
+            <tr><td>SE / USE</td><td>Article 338. SE aboveground. USE underground, including direct burial</td></tr>
+          </tbody>
+        </table></div>
+      </div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">B</span><h3>Study review points</h3></div>
+      <ul class="points" data-points="1"></ul>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">C</span><h3>Trade-term cards</h3></div>
+      <div class="deck" data-cards="1"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">D</span><h3>Ticket out the door</h3></div>
+      <div class="ticket" data-quiz="1"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">E</span><h3>Talk it over</h3></div>
+      <div class="talk" data-talk="1"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">F</span><h3>Practice questions</h3><span class="time">about 30 min</span></div>
+      <div data-practice="1"></div>
+    </div>
+  </section>
+
+  <!-- SECTION 2 -->
+  <section class="sec" id="s2" aria-labelledby="s2-h">
+    <div class="sec-head">
+      <span class="eyebrow">Module Section 2 of 2</span>
+      <h2 id="s2-h">Installing Conductors in Conduit Systems</h2>
+      <p class="obj">By the end of this section your student can name the tools used to pull conductors through conduit, and explain the safety rules for pulling.</p>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">A</span><h3>Read it together</h3><span class="time">about 20 min</span></div>
+      <div class="prose">
+        <div class="notice" style="margin:0 0 18px">
+          <h2>Draft note for the instructor</h2>
+          <p>The PDF this section was built from skips printed pages 18 and 19. Those pages hold 2.2.0 Pulling Equipment, 2.2.1 Feeding Conductors into Conduit, 2.2.2 Conductor Lubrication, and Figures 24 and 25. This guide does not describe them, because the text is not here. The two answers that point to 2.2.0 (Section Review Q2 and Module Review Q15) come from the answer keys. Add the missing text before final use.</p>
+        </div>
+        <p class="big">Wire does not pull itself. After the conduit is up, the conductors still have to get through it, around bends, from box to box. This section covers the hand tools, the power tools, and the safety rules that keep people from being hurt while doing it.</p>
+
+        <h4>Installing conductors (2.0.0)</h4>
+        <p>Conductors are installed in all types of conduit by <b>pulling</b> them through, using <b>fish tape, pull lines and pulling equipment</b>. The module's performance task is to install conductors in a raceway system, under the supervision of the instructor.</p>
+        <div class="case"><b>Trade terms in this section</b><ul>
+          <li><b>Capstan:</b> the turning drum of the cable puller on which the rope is wrapped and pulled.</li>
+          <li><b>Fish tape:</b> a hand device used to pull a wire through a conduit run.</li>
+          <li><b>Mouse:</b> a cylinder of foam rubber that fits inside the conduit and is propelled by compressed air or vacuumed through the run, pulling a line or tape.</li>
+          <li><b>Wire grip:</b> a device used to link pulling rope to cable during a pull.</li>
+        </ul></div>
+
+        <h4>Fish tape (2.1.0)</h4>
+        <p><b>Fish tape</b> can be made of flexible steel or nylon. It comes in coils of 25' to 240' (metric sizes between 5 m and 60 m). Keep it on a <b>reel</b> to avoid twisting. It has a hook or loop on one end to attach to the conductors being pulled. Do not use broken or damaged fish tape. To prevent electrical shock, <b>conductive or metallic fish tape must not be used near or in live circuits</b>.</p>
+        <p>The tape is fed through the conduit from its reel, usually entering at one outlet or junction box and coming out at another.</p>
+        <p>Fish tape can get hung up in very long runs. Those jobs call for a rigid fishing tool called a <b>rodder</b>, available in various sizes and in lengths up to 1,000' (300 m).</p>
+        <div class="case"><b>Fish tape selection</b>Metal fish tape generally comes in longer lengths and is the type used most often. Nylon fish tape generally comes in shorter lengths and is more flexible than metal.</div>
+        <div class="case"><b>Straightening a bent fish tape</b>Drive five 16-penny (16d) nails into a 2 x 4, about 1 inch (25 mm) apart, in a straight line. Wind the tape through the nails in a slalom pattern and pull it through. This straightens it.</div>
+
+        <h4>Power conduit fishing systems (2.1.1)</h4>
+        <p>String lines can be installed with different power systems. A power system is much like an industrial vacuum cleaner. It pulls a string or rope, attached to a piston-like plug sometimes called a <b>mouse</b>, through the conduit. When the string comes out the other end, either the conductor or a pull rope is attached and pulled through, by hand or with power tools. The hose connection on these vacuum systems can be reversed, so the system can either <b>suck or blow</b> the mouse through the conduit, depending on which works better. Either way, a fish tape is then attached to the string for retrieving through the conduit.</p>
+
+        <h4>Connecting wire to a string line (2.1.2)</h4>
+        <p>Once the string is in the conduit run, a fish tape is connected to it and pulled back through. The conductors are then attached to the hooked end of the fish tape, or to a <b>basket grip</b>. In most cases, all the required conductors are pulled <b>at one time</b>.</p>
+        <p>A <b>wire grip</b> attaches the cable to the pull tape. One kind is the basket grip (sometimes called Chinese Fingers): a steel mesh basket that slips over the end of a large wire or cable. The fish tape hooks onto the end, and the pull on the fish tape tightens the basket over the conductor.</p>
+
+        <h4>Pull lines (2.1.3)</h4>
+        <p>If a pull will be hard because of bends in the conduit, the size of the conductors or the length of the pull, use a <b>pull line</b> instead of a fish tape. A pull line is usually nylon or another synthetic fiber, made with a factory-spliced eye for easy connection to the fish tape or conductors.</p>
+        <div class="case"><b>Safety</b>When using pull lines, use extreme caution and never stand in a direct line with the pulling rope. If the rope breaks, the line will whip back with great force and can cause serious injury or death.</div>
+
+        <h4>Safety precautions (2.1.4)</h4>
+        <p>These precautions help reduce the chance of being hurt while pulling cable:</p>
+        <ul>
+          <li>To avoid electrical shock, never use fish tape near or in live circuits.</li>
+          <li>Read and understand both the operating and safety instructions for the pull system before pulling cable.</li>
+          <li>When moving reels of cable, use mechanical lifts for longer spools. For smaller spools, lift with your legs, not your back, and ask for help with heavy loads. When pulling wire by hand, spread your legs to keep your balance and do not stretch.</li>
+          <li>Avoid pinch points in the capstans and sheaves.</li>
+          <li>Select a rope with a pulling load rating greater than the estimated forces needed for the pull.</li>
+        </ul>
+
+        <h4>Pulling equipment and feeding conductors (2.2.0 to 2.2.2)</h4>
+        <p>The answer keys tell us two things from this part of the module. <b>Large conductors are likely to require electrically driven power pullers</b> (Section Review 2, Q2 key). And <b>ideally, a pull should be made in one continuous operation</b> (Module Review Q15 key). The module's own text for 2.2.0, 2.2.1 (feeding conductors into conduit) and 2.2.2 (conductor lubrication) is on printed pages 18 and 19, which are missing from the PDF this guide was built from. Figure 25 (a cordless drill with a puller attachment) and Figure 26 (a reel cart) belong to this part of the module.</p>
+
+        <h4>Conductor termination (2.2.3)</h4>
+        <p>The amount of free conductor at each junction or outlet box must meet NEC rules. There must be enough free conductor so bends or terminations inside the box, cabinet or enclosure can be made to the radius the NEC specifies. The NEC specifies a minimum of <b>6" (150 mm)</b> for connections to wiring devices or for splices (NEC Section 300.14). Where conductors pass through junction or pull boxes, leave enough slack for splices later.</p>
+        <p>When a box is used as a <b>pull box</b>, the conductors are not necessarily spliced. They may enter through one conduit run and leave through another. The purpose of a pull box is to make pulling conductors on long runs easier. A <b>junction box</b> also helps with pulling, but it also provides an enclosure for splices.</p>
+        <div class="case"><b>Cleanup</b>A professional always cleans up the work area, removing excess lubricant from boxes, bushings and conductors. It is good business, and it is also an NEC requirement (NEC Section 110.12).</div>
+        <div class="case"><b>Putting it all together (book)</b>Think about the design of conductor installations. How does the location of pull points affect the ease of the pull?</div>
+      </div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">B</span><h3>Study review points</h3></div>
+      <ul class="points" data-points="2"></ul>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">C</span><h3>Trade-term cards</h3></div>
+      <div class="deck" data-cards="2"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">D</span><h3>Ticket out the door</h3></div>
+      <div class="ticket" data-quiz="2"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">E</span><h3>Talk it over</h3></div>
+      <div class="talk" data-talk="2"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">F</span><h3>Practice questions</h3><span class="time">about 10 min</span></div>
+      <div data-practice="2"></div>
+    </div>
+  </section>
+
+  <section class="final" id="review" aria-labelledby="fin-h">
+    <span class="eyebrow">After both sections</span>
+    <h2 id="fin-h">Can your student explain it?</h2>
+    <p class="lead">The goal is not perfect wording. The goal is accurate understanding and good judgment. Tick each one when your student can explain it without looking at the page.</p>
+    <ul class="points" id="final-points"></ul>
+    <p class="note">The module's five official trade terms are spread across the sections where the book introduces them: one in Section 1 (ampacity) and four in Section 2 (capstan, fish tape, mouse, wire grip). Cards marked "Key term" are important words from the module that are not on its official trade-term list. The practice questions come from the handbook's Section Review and Review Questions. The Section Review answers follow the module's own key (Section 1: b b c a c d a; Section 2: d a). The PDF this guide was built from does not print a key for the Review Questions, so those answers were worked out from the module text and are marked on each question, except Q15, which comes from the answer key. Check them against the publisher's lesson plan key before relying on them. The textbook-style versions are written in the book's style and vocabulary, not copied word for word, so check the handbook itself for the exact wording. Printed pages 18 and 19 (2.2.0 to 2.2.2) were not in the PDF used for this draft. This guide is a plain-language companion, not a copy of the textbook. For real work, use the current standards, your employer's procedures and your instructor's directions. Draft for instructor review.</p>
+  </section>
+
+</div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><strong>Mr. Ellis CTE</strong> · East Valley Institute of Technology (EVIT), Mesa, Arizona · Your Future, Your Way</p>
+    <p>Based on NCCER Electrical Level 1 (2020 edition), Module 26109-20, Conductors and Cables.</p>
+    <p>Aim for perfection, take what you get.</p>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var POINTS = {
+    1: [
+      `<b>Conductor</b> can mean the current-carrying part, or the whole wire assembly with its insulation. Conductors are identified by <b>size</b> and <b>insulation material</b>.`,
+      `<b>AWG: the larger the number, the smaller the wire.</b> Sizes run from 50 up to No. 1, then 0, 00, 000 and 0000 (1/0 to 4/0). Anything bigger than 4/0 is given in <b>kcmil</b>.`,
+      `<b>Stranding (Table 8):</b> No. 18 to No. 2 have 7 strands, No. 1 to 4/0 have 19, and 250 to 500 kcmil have 37. Stranding adds flexibility. <b>No. 8</b> is the largest solid wire that should be terminated in pull boxes and disconnects.`,
+      `<b>Aluminum conductors use compact (compressed) stranding.</b> A 250 kcmil conductor has a cross-section of 0.260 square inch.`,
+      `<b>Ampacity</b> is the maximum current a conductor can carry continuously without going past its temperature rating. It is listed in <b>NEC Tables 310.16 through 310.21</b>.`,
+      `<b>Table 310.16</b> is for conductors in a raceway, cable or buried (no more than three), at 30°C (86°F). <b>Table 310.17</b> is for single conductors in free air at 30°C. <b>Tables 310.18 and 310.19</b> are for 150°C to 250°C wire at 40°C.`,
+      `<b>Four things decide a conductor material:</b> conductivity, cost, availability and workability. Low resistance means high conductivity. Aluminum conducts about two-thirds as well as copper.`,
+      `<b>Aluminum</b> is lighter and more flexible, but needs listed connectors, special tools and an <b>anti-oxidizing compound</b> on connections.`,
+      `<b>Thermoplastic insulation:</b> PVC (TW, THW), PE (control and communications wiring), XLP (THHN, THWN, THHW, high-voltage cable), nylon (outer coating on THHN) and Teflon (telephone wiring in a plenum). <b>Thermoset</b> insulation keeps its form when heated: RHH, RHW, XHH, XHHW, SIS.`,
+      `<b>Letter coding:</b> T is thermoplastic, W is weather-rated (wet), H is heat-rated, N is nylon, R is rubber, X is cross-linked polyethylene, U is underground. A <b>W</b> must be in the marking for a wet, outdoor use.`,
+      `<b>Color code:</b> white or gray for the neutral, black for hot, red as the third wire, plus a grounding conductor that may be bare, green, or green with a yellow stripe. Ungrounded conductors can be any color except white, gray or green. Orange marks the high leg of a four-wire delta.`,
+      `<b>Wire ratings:</b> NEC Tables 310.16 and 310.17 assume 30°C (86°F). Above that, or with more than three conductors in a raceway, ampacity must be reduced. The termination's temperature rating can also limit ampacity.`,
+      `<b>Fixture wire</b> is No. 18 to No. 10, covered by Article 402 (Table 402.3 for types, Table 402.5 for ampacity). It can reach 250°C (482°F) and may <b>never</b> replace branch circuit conductors.`,
+      `<b>NM and NMC (Article 334):</b> NM is for dry locations only, NMC for dry, moist, damp or corrosive. Not in ducts or plenums. <b>UF (Article 340)</b> looks like NMC but is suitable for direct burial.`,
+      `<b>MV</b> (Article 311) is 2,001 to 35,000 volts. <b>MC</b> (Article 330) is metal clad: interlocked tape, corrugated tube or smooth tube. <b>AC</b> has a bonding strip and paper wraps. MC has neither.`,
+      `<b>FC</b> (Article 322): flat No. 10 conductors in a U-channel, exposed only. <b>FCC</b> (Article 324): three to five flat conductors under carpet. <b>TC</b> (Article 336): tray cable.`,
+      `<b>SE and USE (Article 338):</b> SE is aboveground. USE is underground, including direct burial. With no marking, the temperature rating is 75°C (167°F). Service use follows Article 230.`,
+      `<b>Instrumentation wiring:</b> conductors in pairs, with a shield and a shield drain. The shield is grounded at <b>one end only</b> to prevent ground loops. If it is not to be grounded at your end, fold the drain back and tape it (floating the ground). Polyethylene is the most common jacket.`
+    ],
+    2: [
+      `<b>Conductors are installed in conduit by pulling</b> with fish tape, pull lines and pulling equipment.`,
+      `<b>Fish tape</b> is flexible steel or nylon, in coils from 25' to 240'. Keep it on a reel. Never use damaged tape. <b>Metal or conductive fish tape must not be used near or in live circuits.</b>`,
+      `<b>A rodder</b> is a rigid fishing tool for long runs, up to 1,000'.`,
+      `<b>A power fishing system</b> works like a vacuum cleaner. It sucks or blows a mouse with a string through the conduit.`,
+      `<b>A wire grip</b> (basket grip, or Chinese Fingers) links the cable to the pull tape. All required conductors are usually pulled at one time.`,
+      `<b>If a pull will be hard,</b> use a pull line instead of fish tape. Pull lines are made of nylon or other synthetic fiber with a factory-spliced eye.`,
+      `<b>Never stand in a direct line with the pulling rope.</b> If it breaks, it whips back with great force.`,
+      `<b>Pull safety:</b> read the system's instructions, lift with your legs, avoid pinch points in capstans and sheaves, and pick a rope rated above the pull's estimated forces.`,
+      `<b>Large conductors</b> are likely to need electrically driven power pullers. Ideally a pull is <b>one continuous operation</b>.`,
+      `<b>Leave enough free conductor</b> in each box. The NEC minimum is <b>6 inches (150 mm)</b> for splices or connections to devices (Section 300.14).`,
+      `<b>A pull box</b> makes long pulls easier and need not hold splices. A <b>junction box</b> also helps with pulling and provides an enclosure for splices.`,
+      `<b>Clean up</b> excess lubricant from boxes, bushings and conductors. It is an NEC requirement (Section 110.12).`
+    ]
+  };
+
+  var CARDS = {
+    1: [
+      { k: "o", t: `Ampacity`, plain: `The most current a wire can carry all the time without getting too hot.`, book: `The current, in amperes, that a conductor can carry continuously under the conditions of use without exceeding its temperature rating.`, ask: `Which NEC tables list ampacity?` },
+      { k: "k", t: `AWG`, plain: `The American system of wire sizes. Bigger number, smaller wire.`, book: `American Wire Gauge. Sizes run from 50 to No. 1, then 0000. Anything larger than 4/0 is given in kcmil.`, ask: `Which is bigger, No. 14 wire or No. 10 wire?` },
+      { k: "k", t: `kcmil`, plain: `A wire size for the big stuff, in thousands of circular mils.`, book: `One thousand circular mils. A 250 kcmil conductor has a cross-section of 0.260 square inch.`, ask: `Why use kcmil instead of square inches?` },
+      { k: "k", t: `Stranding`, plain: `Making a wire from many small strands so it bends easily.`, book: `No. 18 to No. 2 have seven strands, No. 1 to 4/0 have 19, and 250 to 500 kcmil have 37. Solid wire larger than No. 8 is hard to terminate and pull.`, ask: `What is the biggest solid wire to terminate?` },
+      { k: "k", t: `Conductivity`, plain: `How easily current moves through a material.`, book: `Low resistance means high conductivity. Aluminum is about two-thirds as conductive as copper.`, ask: `What are the four things that decide a wire material?` },
+      { k: "k", t: `Thermoplastic`, plain: `Insulation that can soften with heat, like PVC and nylon.`, book: `Popular insulation: PVC, polyethylene, cross-linked polyethylene, nylon and Teflon.`, ask: `Which one is used for telephone wiring in a plenum?` },
+      { k: "k", t: `Thermoset`, plain: `Insulation that keeps its shape when heated.`, book: `Many thermoplastics deform when heated. Thermoset materials, such as RHH, RHW, XHH, XHHW and SIS, hold their form.`, ask: `Name two thermoset insulation types.` },
+      { k: "k", t: `Fixture wire`, plain: `Small wire used inside light fixtures.`, book: `Insulated conductors, No. 18 to No. 10 AWG, for fixture interiors. Never a substitute for branch circuit conductors.`, ask: `What is the highest temperature allowed for fixture wire?` },
+      { k: "k", t: `Plenum`, plain: `Air-handling space in a building, where burning cable would spread toxic fumes.`, book: `NM cable may not be used in ducts or plenums, because toxic gases from burning insulation would spread through the building.`, ask: `Which cable type is not allowed in a plenum?` },
+      { k: "k", t: `Shield drain`, plain: `A bare wire that carries noise to a ground point.`, book: `A bare copper wire in continuous contact with a specified grounding terminal. The shield is grounded at one end only.`, ask: `What does floating the ground mean?` }
+    ],
+    2: [
+      { k: "o", t: `Capstan`, plain: `The turning drum of a cable puller that the rope wraps around.`, book: `On a cable puller, the part on which the pulling rope is wrapped and pulled.`, ask: `Why avoid pinch points at the capstan?` },
+      { k: "o", t: `Fish tape`, plain: `A thin flexible tape you push through conduit to pull wire.`, book: `A manually operated device used to pull a wire through conduit.`, ask: `Why not use metal fish tape near live circuits?` },
+      { k: "o", t: `Mouse`, plain: `A foam plug that blows or gets sucked through conduit with a string.`, book: `Composed of foam rubber, it fits inside conduit and is propelled by compressed air or vacuumed through the run, pulling a line or tape.`, ask: `What does the mouse pull?` },
+      { k: "o", t: `Wire grip`, plain: `A grip that ties the cable to the pulling rope.`, book: `A device used to link pulling rope to cable during a pull. One kind is the basket grip.`, ask: `What does the pull on the grip do to the basket?` },
+      { k: "k", t: `Rodder`, plain: `A stiff fishing tool for very long runs.`, book: `A rigid fishing tool for long runs where fish tape can hang up, in lengths up to 1,000'.`, ask: `When would you grab a rodder instead of fish tape?` },
+      { k: "k", t: `Pull line`, plain: `A strong rope for hard pulls.`, book: `Usually nylon or other synthetic fiber with a factory-spliced eye. Use it when bends, size or length make a pull hard.`, ask: `Where should you never stand during a pull?` },
+      { k: "k", t: `Pull box`, plain: `A box that makes long pulls easier. It may not hold any splices.`, book: `Conductors may enter through one conduit and leave through another. A junction box also encloses splices.`, ask: `What is the difference from a junction box?` }
+    ]
+  };
+
+  var QUIZ = {
+    1: [
+      { q: `Which is the smaller wire?`, o: [`No. 14`, `No. 10`, `They are the same`], a: 0, why: `The larger the AWG number, the smaller the wire.` },
+      { q: `How many strands does No. 1 to 4/0 wire have?`, o: [`7`, `19`, `37`], a: 1, why: `No. 18 to No. 2 have 7, No. 1 to 4/0 have 19, and 250 to 500 kcmil have 37.` },
+      { q: `NEC ampacity tables 310.16 and 310.17 assume an ambient temperature of...`, o: [`20°C (68°F)`, `30°C (86°F)`, `40°C (104°F)`], a: 1, why: `Above that temperature, the ampacity must be reduced.` },
+      { q: `Aluminum conducts about how much as well as copper?`, o: [`Two-thirds`, `Twice`, `The same`], a: 0, why: `Copper is often chosen for its conductivity, ease of use and value.` },
+      { q: `Which of these is a thermoset insulation?`, o: [`THW`, `XHHW`, `PVC`], a: 1, why: `RHH, RHW, XHH, XHHW and SIS are thermoset.` },
+      { q: `What must happen to ampacity if the ambient temperature goes above 30°C (86°F)?`, o: [`It goes up`, `Nothing`, `It is reduced`], a: 2, why: `The load current must be reduced so the total temperature stays within the insulation rating.` },
+      { q: `Type NM cable is suitable for...`, o: [`Dry locations only`, `Direct burial`, `Wet locations`], a: 0, why: `NMC is permitted in dry, moist, damp or corrosive locations. UF is for direct burial.` },
+      { q: `Which cable is suitable for direct burial and looks like NMC?`, o: [`Type FC`, `Type UF`, `Type NM`], a: 1, why: `The main difference: UF is suitable for direct burial, and NMC is not.` },
+      { q: `Instrumentation shielding is typically grounded at...`, o: [`Both ends`, `One end only`, `Neither end`], a: 1, why: `One end drains induced charges without giving induced current a path to circulate.` }
+    ],
+    2: [
+      { q: `Can you use metal fish tape near live circuits?`, o: [`Yes, if you wear gloves`, `No. It must not be used near or in live circuits`, `Yes, if it is short`], a: 1, why: `Conductive or metallic fish tape can cause electrical shock.` },
+      { q: `Which tool is used for very long runs, up to 1,000'?`, o: [`Rodder`, `Mouse`, `Wire grip`], a: 0, why: `A rodder is a rigid fishing tool for long runs where fish tape can hang up.` },
+      { q: `Where should you never stand during a pull?`, o: [`Behind the reel`, `In a direct line with the pulling rope`, `Next to the conduit`], a: 1, why: `If the rope breaks, it whips back with great force.` },
+      { q: `What is the NEC minimum free conductor for splices or connections to devices?`, o: [`3 inches`, `6 inches (150 mm)`, `12 inches`], a: 1, why: `NEC Section 300.14.` },
+      { q: `Which box encloses splices and also helps with pulling?`, o: [`Pull box`, `Junction box`, `Neither`], a: 1, why: `A pull box makes pulling easier, and conductors need not be spliced in it.` }
+    ]
+  };
+
+  var TALK = {
+    1: {
+      qs: [`Why does the AWG system seem backward? Which is bigger, No. 4 or No. 12?`, `Why are conductors made of many strands instead of one solid piece?`, `Why would an electrician pick copper over aluminum for a job? When might aluminum be worth it?`, `Why does a hot attic or a bundle of wires lower how much current a wire can safely carry?`],
+      scn: [{
+        t: `"Which cable goes in the yard?"`,
+        s: `A homeowner wants power run to a shed through the ground. Would you use NM, NMC or UF cable, and why?`,
+        g: [`UF (underground feeder) is suitable for direct burial. NM and NMC are not.`, `NM is for dry locations only, so it cannot be buried.`, `All cables must be listed, and the NEC article for the cable type applies (Article 340 for UF).`]
+      }, {
+        t: `"The shield wire"`,
+        s: `A student is terminating instrumentation cable and finds a bare drain wire. What should they check before connecting it?`,
+        g: [`The loop diagram, to see whether the shield is to be terminated.`, `The shield is typically grounded at one end only.`, `If it is not to be grounded at their end, do not remove it. Fold it back and tape it (floating the ground).`]
+      }],
+      parent: `Ask your student to name three things that decide which wire an electrician picks (size, material and insulation), and what the letters on a wire's marking tell you.`
+    },
+    2: {
+      qs: [`Why is metal fish tape dangerous near live circuits?`, `What does a mouse do in a power fishing system?`, `Why leave extra wire in each box?`, `Why pull all the conductors at one time?`],
+      scn: [{
+        t: `"The pull is going to be hard"`,
+        s: `A run has several bends and is very long. What should your student use, and what safety rule applies?`,
+        g: [`Use a pull line instead of fish tape. A rodder can help in a very long run.`, `Never stand in a direct line with the pulling rope.`, `Pick a rope with a rating greater than the estimated pull forces.`]
+      }, {
+        t: `"Big wire, one person"`,
+        s: `Someone suggests pulling very large conductors by hand to save time. What does the module point toward instead?`,
+        g: [`Large conductors are likely to need electrically driven power pullers (module key).`, `Read the pull system's operating and safety instructions first.`, `Avoid pinch points at the capstan and sheaves, and ask for help with heavy reels.`]
+      }],
+      parent: `Ask your student to explain the difference between a pull box and a junction box, and the NEC rule for free conductor in a box.`
+    }
+  };
+
+  var FINAL = [
+    `I can explain AWG sizes (larger number, smaller wire) and what kcmil means.`,
+    `I can explain why wire is stranded and name the largest solid wire to terminate.`,
+    `I can explain ampacity and tell which NEC tables list it.`,
+    `I can name four things that decide a conductor material and compare copper and aluminum.`,
+    `I can tell thermoplastic from thermoset insulation and read the letter code on a wire.`,
+    `I can say what the color code is and what colors an ungrounded conductor may not be.`,
+    `I can explain why ampacity must be reduced above 30°C or with more than three conductors.`,
+    `I can say what fixture wire is and why it cannot replace branch circuit wire.`,
+    `I can tell NM, NMC, UF, MC, AC, SE and USE cable apart and say where each goes.`,
+    `I can explain why instrumentation cable is shielded and grounded at one end only.`,
+    `I can name the tools for pulling conductors (fish tape, rodder, mouse, pull line, wire grip, capstan).`,
+    `I can state the pulling safety rules and the 6 inch free conductor rule.`
+  ];
+
+  /* Section Review answers follow the module's own key (S1: b b c a c d a; S2: d a).
+     Module Review answers are worked out from the module text (the PDF prints no Module Review key); Q15 is confirmed by the module. */
+  var PRACTICE = {
+    1: [
+      { src: `Section Review · Q1 (1.1.2)`, a: 1,
+        pq: `How many strands does a No. 10 wire have?`,
+        po: [`3 strands`, `7 strands`, `19 strands`, `37 strands`],
+        tq: `According to NEC Chapter 9, Table 8, No. 10 AWG wiring has _____.`,
+        to: [`3 strands`, `7 strands`, `19 strands`, `37 strands`],
+        why: `No. 18 to No. 2 wire has seven strands.`,
+        br: [[`How many strands does ... have`, `wiring has`]] },
+      { src: `Section Review · Q2 (1.2.0)`, a: 1,
+        pq: `How many amps can a No. 6 copper UF cable carry, according to the ampacity table?`,
+        po: [`40 amps`, `55 amps`, `65 amps`, `75 amps`],
+        tq: `Using NEC Table 310.16, the ampacity of a No. 6 AWG, Type UF copper cable is _____.`,
+        to: [`40 amps`, `55 amps`, `65 amps`, `75 amps`],
+        why: `NEC Table 310.16 gives 55 amps for this cable (module key).`,
+        br: [[`How many amps can ... carry`, `the ampacity of`], [`ampacity table`, `NEC Table 310.16`]] },
+      { src: `Section Review · Q3 (1.3.1)`, a: 2,
+        pq: `A wire has low resistance. What does that tell you?`,
+        po: [`It conducts poorly`, `It can't be used in service-entrance cable`, `It conducts well`, `It works only at low temperatures`],
+        tq: `If a conductor has a low resistance, it _____.`,
+        to: [`will conduct poorly`, `cannot be used in service-entrance cable`, `has a high conductivity`, `is suitable only for use in low-temperature applications`],
+        why: `Low resistance means high conductivity.`,
+        br: [[`conducts well`, `has a high conductivity`]] },
+      { src: `Section Review · Q4 (1.4.1)`, a: 0,
+        pq: `What insulation would you expect on telephone wire in a plenum?`,
+        po: [`Teflon`, `PVC`, `PE`, `XLP`],
+        tq: `Telephone wiring in a plenum space is likely to use _____.`,
+        to: [`Teflon® insulation`, `PVC insulation`, `PE insulation`, `XLP insulation`],
+        why: `Teflon is a high-temperature insulation, widely used for telephone wiring in a plenum.`,
+        br: [[`What insulation would you expect`, `is likely to use`], [`telephone wire`, `telephone wiring`]] },
+      { src: `Section Review · Q5 (1.5.0)`, a: 2,
+        pq: `How many amps can No. 14 fixture wire carry?`,
+        po: [`6 amps`, `8 amps`, `17 amps`, `23 amps`],
+        tq: `Using NEC Table 402.5, the allowable ampacity of No. 14 AWG fixture wire is _____.`,
+        to: [`6 amps`, `8 amps`, `17 amps`, `23 amps`],
+        why: `Table 402.5 gives fixture wire ampacities (module key: 17 amps).`,
+        br: [[`How many amps can ... carry`, `the allowable ampacity of`]] },
+      { src: `Section Review · Q6 (1.6.9)`, a: 3,
+        pq: `Service-entrance cable has no temperature marking. What is its temperature rating?`,
+        po: [`25°C (77°F)`, `40°C (104°F)`, `55°C (131°F)`, `75°C (167°F)`],
+        tq: `The temperature rating of service-entrance cable when the cable is not marked otherwise is _____.`,
+        to: [`25°C (77°F)`, `40°C (104°F)`, `55°C (131°F)`, `75°C (167°F)`],
+        why: `With no marking, the cable's temperature rating is 75°C (167°F).`,
+        br: [[`has no temperature marking`, `is not marked otherwise`]] },
+      { src: `Section Review · Q7 (1.7.3)`, a: 0,
+        pq: `Which is the most common kind of jacket?`,
+        po: [`Polyethylene`, `Rubber`, `Fiberglass`, `Silicone`],
+        tq: `Which of the following is the most common type of jacket?`,
+        to: [`Polyethylene`, `Rubber`, `Fiberglass`, `Silicone`],
+        why: `Polyethylene (PE) and PVC jackets are the most common.`,
+        br: [[`kind of jacket`, `type of jacket`]] },
+      { src: `Module Review · Q1 (1.1.2) · answer from module text`, a: 1,
+        pq: `What is the biggest solid wire you should terminate in a pull box or disconnect?`,
+        po: [`No. 6`, `No. 8`, `No. 10`, `No. 12`],
+        tq: `The maximum size solid wire that should be terminated in pull boxes and disconnects is _____.`,
+        to: [`No. 6`, `No. 8`, `No. 10`, `No. 12`],
+        why: `Solid wire larger than No. 8 is hard to terminate and could damage equipment and insulation.`,
+        br: [[`biggest`, `maximum size`]] },
+      { src: `Module Review · Q2 (1.1.2) · answer from module text`, a: 2,
+        pq: `Which kind of conductor uses compact stranding?`,
+        po: [`Conductors in bigger conduit`, `Conductors in an old service`, `Aluminum conductors`, `Conductors in corrosive places`],
+        tq: `Compact stranding is used _____.`,
+        to: [`when installing larger conduit sizes`, `when decreasing the ampacity of an existing service`, `with aluminum conductors`, `in corrosive environments`],
+        why: `Aluminum conductors are designed with compact (compressed) stranding.`,
+        br: [[`Which kind of conductor uses`, `is used`], [`Aluminum conductors`, `with aluminum conductors`]] },
+      { src: `Module Review · Q3 (1.2.0) · answer from module text`, a: 2,
+        pq: `Where do you look up how many amps a conductor can carry?`,
+        po: [`NEC Chapter 1`, `NEC Articles 348 through 352`, `NEC Tables 310.16 through 310.21`, `NEC Chapter 9`],
+        tq: `The ampacity ratings of conductors can be found in _____.`,
+        to: [`NEC Chapter 1`, `NEC Articles 348 through 352`, `NEC Tables 310.16 through 310.21`, `NEC Chapter 9`],
+        why: `Ampacity is listed in NEC Tables 310.16 through 310.21.`,
+        br: [[`Where do you look up how many amps`, `The ampacity ratings can be found in`]] },
+      { src: `Module Review · Q4 (1.2.0) · answer from module text`, a: 1,
+        pq: `Which table gives ampacity for a single conductor in free air at 30°C (86°F)?`,
+        po: [`NEC Table 310.16`, `NEC Table 310.17`, `NEC Table 310.18`, `NEC Table 310.19`],
+        tq: `To determine the ampacity of copper conductors used as a single conductor in free air at ambient temperatures of 30°C (86°F), use _____.`,
+        to: [`NEC Table 310.16`, `NEC Table 310.17`, `NEC Table 310.18`, `NEC Table 310.19`],
+        why: `Table 310.17 covers single conductors in free air. Table 310.16 is for a raceway, cable or direct burial.`,
+        br: [[`Which table gives ampacity`, `To determine the ampacity ... use`], [`single conductor in free air`, `used as a single conductor in free air`]] },
+      { src: `Module Review · Q5 (1.4.1) · answer from module text`, a: 1,
+        pq: `What is polyethylene (PE) insulation mainly used for?`,
+        po: [`Making TW and THW insulation`, `Control and communications wiring`, `High-voltage cables`, `High-temperature insulation`],
+        tq: `Polyethylene (PE) is used primarily for _____.`,
+        to: [`the manufacture of TW and THW insulation`, `insulation of control and communication wiring`, `high-voltage cables`, `high-temperature insulation`],
+        why: `PE is an excellent weatherproofing material, used mainly for control and communications wiring.`,
+        br: [[`mainly used for`, `used primarily for`]] },
+      { src: `Module Review · Q6 (1.4.2) · answer from module text`, a: 0,
+        pq: `Which of these keeps its shape when heated (a thermoset)?`,
+        po: [`RHW`, `THW`, `THHW`, `PVC`],
+        tq: `A type of thermoset insulation is _____.`,
+        to: [`RHW`, `THW`, `THHW`, `PVC`],
+        why: `Thermoset insulations include RHH, RHW, XHH, XHHW and SIS. THW, THHW and PVC are thermoplastics.`,
+        br: [[`keeps its shape when heated`, `thermoset`]] },
+      { src: `Module Review · Q7 (1.4.3) · answer from module text`, a: 3,
+        pq: `Which letter must be in the marking of a wire used outdoors in the wet?`,
+        po: [`D`, `O`, `I`, `W`],
+        tq: `What letter must be included in the marking of a conductor if it is to be used in a wet, outdoor application?`,
+        to: [`D`, `O`, `I`, `W`],
+        why: `W means weather-rated.`,
+        br: [[`outdoors in the wet`, `a wet, outdoor application`]] },
+      { src: `Module Review · Q8 (1.4.4) · answer from module text`, a: 0,
+        pq: `Which wire may be bare, green, or green with a yellow stripe?`,
+        po: [`The grounding conductor`, `The neutral conductor`, `An ungrounded (hot) conductor`, `The high leg of a delta`],
+        tq: `What service conductor may be bare, green, or green with a yellow stripe?`,
+        to: [`The grounding conductor of a multi-conductor cable`, `The neutral conductor of a multi-conductor cable`, `The ungrounded conductor of a multi-conductor cable`, `The high leg of a four-wire, delta-connected secondary`],
+        why: `The grounding conductor may be bare, green, or green with a yellow stripe.`,
+        br: [[`Which wire may be`, `What service conductor may be`]] },
+      { src: `Module Review · Q9 (1.4.4) · answer from module text`, a: 2,
+        pq: `What wires are inside a three-conductor NM cable?`,
+        po: [`One white or gray, one red and one black`, `Two white or gray and one red`, `One white or gray, one red, one black, and a grounding wire`, `One green, one white or gray, one blue and a grounding wire`],
+        tq: `What are the colors of insulation on the conductors for a three-conductor NM cable?`,
+        to: [`One white or gray, one red, and one black`, `Two white or gray and one red`, `One white or gray, one red, one black, and a grounding conductor`, `One green, one white or gray, one blue, and a grounding conductor`],
+        why: `Three-conductor cable has one white or gray, one black, one red, plus a grounding conductor.`,
+        br: [[`wires inside`, `the colors of insulation on the conductors`]] },
+      { src: `Module Review · Q10 (1.5.0) · answer from module text`, a: 1,
+        pq: `Fixture wire may sometimes be used for which of these?`,
+        po: [`240V appliance wiring`, `Signaling wiring`, `Branch circuit wiring`, `SE cable`],
+        tq: `In some cases, fixture wires may be used for _____.`,
+        to: [`240V appliance wiring`, `signaling wiring`, `branch circuit wiring`, `SE cable`],
+        why: `Several Table 402.3 wires may be used for remote-control, signaling or power-limited circuits (Section 725.49). Never as branch circuit conductors.`,
+        br: [[`may sometimes be used for`, `may be used for`]] },
+      { src: `Module Review · Q11 (1.6.4) · answer from module text`, a: 2,
+        pq: `Which is true of AC cable and MC cable?`,
+        po: [`AC has up to four conductors and MC up to six`, `AC has a bonding strip and MC's ground is its cladding`, `AC has paper wraps on each conductor and MC does not`, `AC is 10 AWG to 4/0 and MC is 18 AWG to 2,000 kcmil`],
+        tq: `The difference between AC cable and MC cable is _____.`,
+        to: [`AC cable has a maximum of four conductors; MC has a maximum of six`, `AC cable has a bonding strip; the MC ground is its metal cladding`, `AC cable has fire-retardant paper wraps on individual conductors; MC cable does not`, `AC cable is sized from 10 AWG to 4/0; MC is sized from 18 AWG to 2,000 kcmil`],
+        why: `AC has a paper wrap on each conductor. MC has none. (AC has a maximum of four conductors, MC has no limit, and the cladding is not a ground.)`,
+        br: [[`Which is true of`, `The difference between ... is`]] },
+      { src: `Module Review · Q12 (1.6.9) · answer from module text`, a: 2,
+        pq: `Where can Type USE cable go?`,
+        po: [`Aboveground only`, `Underground in a special PVC pipeline`, `Underground, including direct burial`, `Indoors only`],
+        tq: `Type USE cable can be used for _____.`,
+        to: [`aboveground installation only`, `underground installation within a special PVC pipeline`, `underground installation including direct burial`, `indoor applications only`],
+        why: `USE is for underground installation, including burial directly in the earth.`,
+        br: [[`Where can ... go`, `can be used for`]] },
+      { src: `Module Review · Q13 (1.6.9) · answer from module text`, a: 2,
+        pq: `Where do the rules for installing SE cable as service-entrance cable live?`,
+        po: [`NEC Section 110.12`, `NEC Section 210.5(C)`, `NEC Article 230`, `NEC Section 402.3`],
+        tq: `When used as a service-entrance cable, Type SE cable must be installed as specified in _____.`,
+        to: [`NEC Section 110.12`, `NEC Section 210.5(C)`, `NEC Article 230`, `NEC Section 402.3`],
+        why: `Used as service-entrance cable, SE must be installed as NEC Article 230 specifies.`,
+        br: [[`Where do the rules ... live`, `must be installed as specified in`]] },
+      { src: `Module Review · Q14 (1.7.2) · answer from module text`, a: 0,
+        pq: `How is instrumentation cable shielding grounded to avoid ground loops?`,
+        po: [`Not at both ends. One end only`, `At both ends`, `Floated at both ends`, `Never grounded`],
+        tq: `To prevent unwanted ground loops, instrumentation cable shielding is _____.`,
+        to: [`not grounded at both ends of the wire`, `grounded at both ends of the wire`, `floated on both ends`, `always ungrounded`],
+        why: `Shielding is typically grounded at one end only, so induced current has no path to circulate.`,
+        br: [[`Not at both ends. One end only`, `not grounded at both ends`]] }
+    ],
+    2: [
+      { src: `Section Review · Q1 (2.1.3)`, a: 3,
+        pq: `Which is true when pulling conductors?`,
+        po: [`Pull lines are made of natural cotton`, `Rodders only work in very short runs`, `Always pull conductors one at a time`, `If the pull will be hard, use a pull line instead of fish tape`],
+        tq: `Which of the following is true when pulling conductors?`,
+        to: [`Pull lines are typically made of natural cotton.`, `Rodders can only be used in very short runs.`, `In multiple-conductor installations, always pull conductors one at a time.`, `If a pull is expected to be difficult, a pull line should be used rather than a fish tape.`],
+        why: `Pull lines are nylon or other synthetic fiber. Rodders suit long runs. Usually all conductors are pulled at once.`,
+        br: [[`If the pull will be hard`, `If a pull is expected to be difficult`]] },
+      { src: `Section Review · Q2 (2.2.0) · from the module key`, a: 0,
+        pq: `What are large conductors likely to need?`,
+        po: [`Electrically driven power pullers`, `Hand pulling for extra precision`, `Two or more power pullers`, `Many stops during the pull`],
+        tq: `Large conductors are likely to require the use of _____.`,
+        to: [`electrically driven power pullers`, `hand pulling for additional precision`, `two or more power pullers`, `multiple stops during the pulling operation`],
+        why: `The module's key gives electrically driven power pullers. (The 2.2.0 text is on printed pages 18 and 19, which are missing from the PDF used for this draft.)`,
+        br: [[`likely to need`, `likely to require the use of`]] },
+      { src: `Module Review · Q15 (2.2.0) · confirmed by the module key`, a: 0,
+        pq: `Ideally, how should a pull be made?`,
+        po: [`In one continuous operation`, `In two or more short segments`, `In four or more short segments`, `In six or more short segments`],
+        tq: `Ideally, a pull should be made in _____.`,
+        to: [`one continuous operation`, `two or more short segments`, `four or more short segments`, `six or more short segments`],
+        why: `An ideal pull is one continuous operation.`,
+        br: [[`In one continuous operation`, `one continuous operation`]] }
+    ]
+  };
+
+  function el(tag, cls, text) { var n = document.createElement(tag); if (cls) n.className = cls; if (text != null) n.textContent = text; return n; }
+
+  function buildPoints(ul, list, prefix) {
+    list.forEach(function (html, i) {
+      var li = el("li");
+      var label = el("label");
+      var input = document.createElement("input");
+      input.type = "checkbox";
+      input.id = prefix + "-" + i;
+      var span = el("span");
+      span.innerHTML = html; // static text written in this file
+      label.appendChild(input); label.appendChild(span);
+      li.appendChild(label); ul.appendChild(li);
+    });
+  }
+
+  function field(label, text) {
+    var d = el("span");
+    d.appendChild(el("span", "label", label));
+    d.appendChild(document.createTextNode(text));
+    return d;
+  }
+  function buildCards(host, n) {
+    CARDS[n].forEach(function (item) {
+      var b = el("button", "card");
+      b.type = "button";
+      b.setAttribute("aria-pressed", "false");
+      b.setAttribute("aria-label", item.t + ". Press to flip the card.");
+      var inner = el("span", "card-inner");
+      var f = el("span", "face front" + (item.k === "k" ? " key" : ""));
+      f.appendChild(el("span", "strip", (item.k === "o" ? "NCCER trade term" : "Key term") + " · Section " + n));
+      f.appendChild(el("span", "term", item.t));
+      f.appendChild(el("span", "hint", "TAP TO FLIP"));
+      var k = el("span", "face back");
+      k.appendChild(el("span", "strip", item.t));
+      var body = el("span", "body");
+      body.appendChild(field("In everyday words", item.plain));
+      body.appendChild(field("From the module", item.book));
+      var ask = field("Ask your student", item.ask);
+      ask.className = "ask";
+      body.appendChild(ask);
+      k.appendChild(body);
+      inner.appendChild(f); inner.appendChild(k);
+      b.appendChild(inner);
+      b.addEventListener("click", function () { b.setAttribute("aria-pressed", b.getAttribute("aria-pressed") === "true" ? "false" : "true"); });
+      host.appendChild(b);
+    });
+  }
+
+  function buildQuiz(host, n) {
+    var list = QUIZ[n];
+    var answered = 0;
+    host.appendChild(el("p", "ticket-intro", "Pick the answer. You will see right away if it is correct. Nothing is saved or sent."));
+    var foot = el("div", "ticket-foot");
+    var done = el("p", null, "");
+    done.setAttribute("aria-live", "polite");
+    var retry = el("button", "btn", "Try again");
+    retry.type = "button";
+    retry.hidden = true;
+    foot.appendChild(done); foot.appendChild(retry);
+
+    list.forEach(function (item, qi) {
+      var fs = el("fieldset", "q");
+      fs.appendChild(el("legend", null, (qi + 1) + ". " + item.q));
+      var opts = el("div", "opts");
+      var fb = el("p", "fb");
+      fb.setAttribute("aria-live", "polite");
+      var btns = [];
+      item.o.forEach(function (text, oi) {
+        var b = el("button", "opt", text);
+        b.type = "button";
+        b.addEventListener("click", function () {
+          btns.forEach(function (x) { x.disabled = true; });
+          answered++;
+          fb.textContent = "";
+          if (oi === item.a) {
+            b.classList.add("right");
+            fb.appendChild(el("b", null, "Correct. ")); fb.appendChild(document.createTextNode(item.why));
+          } else {
+            b.classList.add("wrong");
+            btns[item.a].classList.add("right");
+            fb.appendChild(el("b", null, "Not quite. "));
+            fb.appendChild(document.createTextNode("The answer is \"" + item.o[item.a] + "\". " + item.why));
+          }
+          if (answered === list.length) {
+            done.textContent = "Ticket finished. Reread any part of the section that felt shaky, then try again.";
+            retry.hidden = false;
+          }
+        });
+        btns.push(b); opts.appendChild(b);
+      });
+      fs.appendChild(opts); fs.appendChild(fb);
+      host.appendChild(fs);
+      fs._reset = function () { btns.forEach(function (x) { x.disabled = false; x.className = "opt"; }); fb.textContent = ""; };
+    });
+    host.appendChild(foot);
+    retry.addEventListener("click", function () {
+      host.querySelectorAll("fieldset").forEach(function (f) { f._reset(); });
+      answered = 0; done.textContent = ""; retry.hidden = true;
+    });
+  }
+
+  function buildTalk(host, n) {
+    var t = TALK[n];
+    var ol = el("ol", "qs");
+    t.qs.forEach(function (q) { ol.appendChild(el("li", null, q)); });
+    host.appendChild(ol);
+    t.scn.forEach(function (s) {
+      var d = el("details", "scn");
+      d.appendChild(el("summary", null, "Scenario: " + s.t));
+      d.appendChild(el("p", "setup", s.s));
+      var g = el("div", "good");
+      g.appendChild(el("b", null, "A good answer includes"));
+      var ul = el("ul");
+      s.g.forEach(function (x) { ul.appendChild(el("li", null, x)); });
+      g.appendChild(ul); d.appendChild(g);
+      host.appendChild(d);
+    });
+    if (t.parent) {
+      var p = el("div", "parent");
+      p.appendChild(el("b", null, "Talk it over with your loved ones"));
+      p.appendChild(el("p", null, t.parent));
+      host.appendChild(p);
+    }
+  }
+
+  function ask(label, cls, q, opts, correct, onAnswer) {
+    var box = el("div", "ask-block" + (cls ? " " + cls : ""));
+    box.appendChild(el("p", "step-label", label));
+    box.appendChild(el("p", "pr-q", q));
+    var wrap = el("div", "opts");
+    wrap.setAttribute("role", "group");
+    wrap.setAttribute("aria-label", q);
+    var fb = el("p", "fb");
+    fb.setAttribute("aria-live", "polite");
+    var btns = [];
+    opts.forEach(function (text, oi) {
+      var b = el("button", "opt", String.fromCharCode(65 + oi) + ".  " + text);
+      b.type = "button";
+      b.addEventListener("click", function () {
+        btns.forEach(function (x) { x.disabled = true; });
+        var ok = oi === correct;
+        b.classList.add(ok ? "right" : "wrong");
+        if (!ok) btns[correct].classList.add("right");
+        onAnswer(ok, fb, String.fromCharCode(65 + correct));
+      });
+      btns.push(b); wrap.appendChild(b);
+    });
+    box.appendChild(wrap); box.appendChild(fb);
+    box.reset = function () { btns.forEach(function (x) { x.disabled = false; x.className = "opt"; }); fb.textContent = ""; };
+    return box;
+  }
+  function say(fb, lead, text) {
+    fb.textContent = "";
+    fb.appendChild(el("b", null, lead + " "));
+    fb.appendChild(document.createTextNode(text));
+  }
+
+  function buildPractice(host, n) {
+    var list = PRACTICE[n];
+    host.appendChild(el("p", "pr-intro", "Test questions use the textbook's formal words. Answer each question in plain English first, then see the same question the way the book asks it. The \"Words to notice\" box shows how the two fit together. Nothing is saved or sent."));
+    var items = [];
+    list.forEach(function (item, i) {
+      var art = el("article", "pr");
+      var head = el("div", "pr-head");
+      head.appendChild(el("span", null, "Question " + (i + 1) + " of " + list.length));
+      head.appendChild(el("span", null, "Source: " + item.src));
+      art.appendChild(head);
+
+      var bridge = el("div", "bridge");
+      bridge.hidden = true;
+      bridge.appendChild(el("p", "step-label", "Words to notice"));
+      var ul = el("ul");
+      item.br.forEach(function (p) {
+        var li = el("li");
+        li.appendChild(el("span", "you", p[0]));
+        li.appendChild(el("span", "arrow", "→"));
+        li.appendChild(el("span", "pub", p[1]));
+        ul.appendChild(li);
+      });
+      bridge.appendChild(ul);
+
+      var b2 = ask("Step 2 · The same question in the textbook's words", "formal", item.tq, item.to, item.a, function (ok, fb, letter) {
+        if (ok) say(fb, "Correct.", "You just answered it in the textbook's voice.");
+        else say(fb, "Not quite.", "The answer is " + letter + ". Compare it with your plain-English answer above.");
+        bridge.hidden = false;
+      });
+      b2.hidden = true;
+      var b1 = ask("Step 1 · In plain English", "", item.pq, item.po, item.a, function (ok, fb, letter) {
+        if (ok) say(fb, "Correct.", item.why);
+        else say(fb, "Not quite.", "The answer is " + letter + ". " + item.why);
+        b2.hidden = false;
+      });
+      art.appendChild(b1); art.appendChild(b2); art.appendChild(bridge);
+      host.appendChild(art);
+      items.push({ b1: b1, b2: b2, bridge: bridge });
+    });
+    var foot = el("div", "ticket-foot");
+    var retry = el("button", "btn", "Start this set over");
+    retry.type = "button";
+    retry.addEventListener("click", function () {
+      items.forEach(function (x) { x.b1.reset(); x.b2.reset(); x.b2.hidden = true; x.bridge.hidden = true; });
+    });
+    foot.appendChild(retry);
+    host.appendChild(foot);
+  }
+
+  [1, 2].forEach(function (n) {
+    buildPoints(document.querySelector('[data-points="' + n + '"]'), POINTS[n], "s" + n);
+    buildCards(document.querySelector('[data-cards="' + n + '"]'), n);
+    buildQuiz(document.querySelector('[data-quiz="' + n + '"]'), n);
+    buildTalk(document.querySelector('[data-talk="' + n + '"]'), n);
+    buildPractice(document.querySelector('[data-practice="' + n + '"]'), n);
+  });
+  buildPoints(document.getElementById("final-points"), FINAL, "fin");
+})();
+</script>
+
+</body>
+</html>

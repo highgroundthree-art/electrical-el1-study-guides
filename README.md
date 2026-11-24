@@ -25,6 +25,7 @@ Every module section follows the same six parts:
 | NCCER Core, Module 00101: Basic Safety (draft: Module Review answers worked out from the module text) | `basic-safety.html` (guided notes and slides in `basic-safety-materials/`) |
 | NCCER Core, Module 00102: Introduction to Construction Math (draft: Section Review and Module Review answers worked out from the module text; figure-based questions left out) | `introduction-to-construction-math.html` |
 | NCCER Core, Module 00105: Introduction to Construction Drawings | `construction-drawings.html` |
+| NCCER Core, Module 00106: Introduction to Basic Rigging (draft: Section Review and Module Review answers worked out from the module text; answer keys were not in the source PDF) | `introduction-to-basic-rigging.html` |
 | NCCER Electrical Level 1, Module 26103-20: Introduction to Electrical Circuits | `electrical-circuits.html` |
 | NCCER Electrical Level 1, Module 26104-20: Electrical Theory | `electrical-theory.html` |
 | NCCER Electrical Level 1, Module 26105-20: Introduction to the National Electrical Code | `national-electrical-code.html` |

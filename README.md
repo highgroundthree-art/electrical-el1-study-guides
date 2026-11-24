@@ -23,6 +23,7 @@ Every module section follows the same six parts:
 | NCCER Electrical Level 1, Module 26102-20: Safety for Electricians | `electrical-foundations.html` |
 | NCCER Core, Module 00100: Build Your Future in Construction (draft: Section Review and Module Review answers worked out from the module text; answer keys were not in the source PDF) | `build-your-future-in-construction.html` |
 | NCCER Core, Module 00101: Basic Safety (draft: Module Review answers worked out from the module text) | `basic-safety.html` (guided notes and slides in `basic-safety-materials/`) |
+| NCCER Core, Module 00102: Introduction to Construction Math (draft: Section Review and Module Review answers worked out from the module text; figure-based questions left out) | `introduction-to-construction-math.html` |
 | NCCER Core, Module 00105: Introduction to Construction Drawings | `construction-drawings.html` |
 | NCCER Electrical Level 1, Module 26103-20: Introduction to Electrical Circuits | `electrical-circuits.html` |
 | NCCER Electrical Level 1, Module 26104-20: Electrical Theory | `electrical-theory.html` |

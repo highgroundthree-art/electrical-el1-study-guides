@@ -1,0 +1,3498 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Introduction to Construction Math Loved Ones Study Guide</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+
+:root{--bg:#EEF1F3;--surface:#FFF;--ink:#14202B;--ink-soft:#46576A;--line:#C9D2DA;--band:#14202B;--band-ink:#F4F7F9;--accent:#C42B17;--accent-ink:#FFF;--caution:#F2B705;--caution-soft:#FFF3C4;--good:#1E7A3C;--good-soft:#DDF3E4;--bad:#A8321F;--bad-soft:#FBE3DE;--tag-hole:#EEF1F3;--focus:#0B5FFF;--font-display:"Barlow Condensed","Arial Narrow",Impact,sans-serif;--font-body:"Barlow",system-ui,-apple-system,"Segoe UI",sans-serif;--font-mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0F171E;--surface:#18232D;--ink:#EAF0F4;--ink-soft:#A5B4C2;--line:#2E3E4C;--band:#0A1016;--band-ink:#F4F7F9;--accent:#FF5A44;--accent-ink:#14202B;--caution-soft:#3A3210;--good:#6FD08C;--good-soft:#17301F;--bad:#FF8E7C;--bad-soft:#3A1B16;--tag-hole:#0F171E;--focus:#6AA2FF;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0F171E;--surface:#18232D;--ink:#EAF0F4;--ink-soft:#A5B4C2;--line:#2E3E4C;--band:#0A1016;--band-ink:#F4F7F9;--accent:#FF5A44;--accent-ink:#14202B;--caution-soft:#3A3210;--good:#6FD08C;--good-soft:#17301F;--bad:#FF8E7C;--bad-soft:#3A1B16;--tag-hole:#0F171E;--focus:#6AA2FF;color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font-body);font-size:17px;line-height:1.6}
+[hidden]{display:none!important}
+:focus-visible{outline:3px solid var(--focus);outline-offset:2px}
+.wrap{max-width:920px;margin-inline:auto;padding-inline:max(16px,env(safe-area-inset-left,0px)) max(16px,env(safe-area-inset-right,0px))}
+h1,h2,h3,h4{font-family:var(--font-display);text-transform:uppercase;letter-spacing:.03em;line-height:1.05;margin:0;text-wrap:balance}
+.eyebrow{font-family:var(--font-mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-soft)}
+.band{background:var(--band);color:var(--band-ink);padding-block:34px 26px;border-bottom:8px solid var(--caution)}
+.band .eyebrow{color:var(--caution)}
+.band h1{font-size:clamp(2.5rem,9vw,4.4rem);font-weight:700;margin-top:10px}
+.band .sub{margin:14px 0 0;font-size:1.1rem;color:#D5DEE5;max-width:46ch}
+.band .byline{margin:14px 0 0;font-size:.95rem;color:#AEBBC7}
+nav.jump{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
+nav.jump a{text-decoration:none;font-weight:600;font-size:.95rem;padding:8px 14px;border:2px solid #3B4B5A;border-radius:3px;color:var(--band-ink)}
+nav.jump a:hover{border-color:var(--caution)}
+.intro{margin-top:28px;display:grid;gap:22px;grid-template-columns:repeat(auto-fit,minmax(min(100%,380px),1fr))}
+.panel{background:var(--surface);border:1px solid var(--line);padding:20px 22px 22px;min-width:0}
+.panel h2{font-size:1.5rem;font-weight:700;margin-bottom:10px}
+.panel p{margin:0 0 10px}
+.panel ol{margin:8px 0 0;padding-left:1.3em;display:grid;gap:6px}
+.notice{background:var(--caution-soft);border:2px solid var(--caution);padding:16px 20px;margin-top:22px}
+.notice p{margin:4px 0 0}
+.notice h2{font-size:1.25rem}
+.sec{margin-top:56px}
+.sec-head{border-top:8px solid var(--ink);padding-top:18px}
+.sec-head h2{font-size:clamp(2rem,6vw,3rem);font-weight:700;margin-top:6px}
+.sec-head .obj{margin:10px 0 0;color:var(--ink-soft);max-width:62ch}
+.part{margin-top:34px}
+.part-title{display:flex;align-items:baseline;gap:12px;margin-bottom:14px}
+.part-title .letter{font-family:var(--font-mono);font-size:13px;background:var(--ink);color:var(--bg);padding:2px 8px;flex:none}
+.part-title h3{font-size:1.7rem;font-weight:700}
+.part-title .time{margin-left:auto;font-family:var(--font-mono);font-size:12px;color:var(--ink-soft);white-space:nowrap}
+.prose{background:var(--surface);border:1px solid var(--line);padding:22px 24px}
+.prose h4{font-size:1.25rem;font-weight:700;margin:20px 0 6px;color:var(--accent)}
+.prose h4:first-child{margin-top:0}
+.prose p{margin:0 0 10px;max-width:64ch}
+.prose ul,.prose ol{margin:0 0 10px;padding-left:1.2em;max-width:64ch}
+.prose li{margin-bottom:4px}
+.prose .big{font-size:1.12rem;font-weight:500;border-left:6px solid var(--caution);padding:4px 0 4px 14px;margin:0 0 16px}
+.prose table{border-collapse:collapse;margin:8px 0 14px;font-size:.95rem;width:100%;max-width:620px}
+.prose th,.prose td{text-align:left;padding:6px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+.prose th{font-family:var(--font-mono);font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-soft)}
+.prose caption{caption-side:top;text-align:left;font-weight:600;font-size:.95rem;padding:0 0 8px;color:var(--ink)}
+.scroll{overflow-x:auto}
+.case{background:var(--bg);border-left:6px solid var(--accent);padding:12px 16px;margin:14px 0 0;max-width:64ch}
+.case b{font-family:var(--font-mono);font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;display:block;color:var(--ink-soft)}
+.warn{background:var(--bad-soft);border-left:6px solid var(--bad);padding:12px 16px;margin:14px 0 0;max-width:64ch}
+.warn b{font-family:var(--font-mono);font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;display:block;color:var(--bad)}
+.points{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.points li{background:var(--surface);border:1px solid var(--line)}
+.points label{display:grid;grid-template-columns:28px minmax(0,1fr);gap:12px;padding:12px 16px;cursor:pointer;align-items:start}
+.points input{width:22px;height:22px;margin:2px 0 0;accent-color:var(--good)}
+.points li:has(input:checked){background:var(--good-soft);border-color:var(--good)}
+.points b{font-weight:600}
+.deck{display:grid;gap:22px;grid-template-columns:repeat(auto-fill,minmax(min(100%,270px),1fr))}
+.card{all:unset;box-sizing:border-box;display:block;cursor:pointer;perspective:1100px;min-width:0}
+.card:focus-visible{outline:3px solid var(--focus);outline-offset:4px}
+.card-inner{display:grid;transition:transform .5s cubic-bezier(.3,.7,.2,1);transform-style:preserve-3d;position:relative}
+.card[aria-pressed="true"] .card-inner{transform:rotateY(180deg)}
+.face{grid-area:1/1;backface-visibility:hidden;-webkit-backface-visibility:hidden;display:flex;flex-direction:column;min-height:250px;border:2px solid var(--ink);background:var(--surface);position:relative;overflow:hidden}
+.face::before{content:"";position:absolute;top:12px;left:50%;width:16px;height:16px;margin-left:-8px;border-radius:50%;background:var(--tag-hole);border:2px solid var(--ink)}
+.front .strip{background:var(--accent);color:var(--accent-ink);padding:38px 16px 8px;font-family:var(--font-mono);font-size:11.5px;letter-spacing:.08em;text-transform:uppercase}
+.front.key .strip{background:var(--ink);color:var(--bg)}
+.front .term{flex:1;display:flex;align-items:center;padding:16px 18px;font-family:var(--font-display);text-transform:uppercase;font-weight:700;font-size:clamp(1.8rem,7vw,2.2rem);line-height:1.02;letter-spacing:.02em;overflow-wrap:anywhere}
+.front .hint{padding:10px 18px 14px;font-size:.8rem;color:var(--ink-soft);border-top:1px dashed var(--line);font-family:var(--font-mono);letter-spacing:.04em}
+.back{transform:rotateY(180deg);background:var(--caution-soft)}
+.back .strip{background:var(--ink);color:var(--bg);padding:38px 16px 8px;font-family:var(--font-display);text-transform:uppercase;font-weight:700;letter-spacing:.04em;font-size:1.1rem;line-height:1.05}
+.back .body{padding:14px 18px 16px;display:grid;gap:10px;align-content:start;font-size:.95rem;line-height:1.45}
+.back .label{font-family:var(--font-mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-soft);display:block;margin-bottom:1px}
+.back .ask{border-top:1px dashed var(--ink-soft);padding-top:10px;font-weight:500}
+@media (prefers-reduced-motion:reduce){.card-inner{transition:none;transform-style:flat}.card[aria-pressed="true"] .card-inner{transform:none}.back{transform:none}.face{backface-visibility:visible}.card .back{visibility:hidden}.card[aria-pressed="true"] .back{visibility:visible}.card[aria-pressed="true"] .front{visibility:hidden}}
+.ticket{background:var(--surface);border:2px dashed var(--ink);padding:8px 20px 18px;position:relative}
+.ticket-intro{margin:14px 0 4px;color:var(--ink-soft);font-size:.95rem}
+.q{border:0;border-top:1px solid var(--line);margin:0;padding:16px 0 14px;min-width:0}
+.q:first-of-type{border-top:0}
+.q legend{font-weight:600;padding:0;margin-bottom:8px;float:left;width:100%}
+.q .opts{clear:both;display:grid;gap:8px}
+.opts{display:grid;gap:8px}
+.opt{font:inherit;text-align:left;padding:10px 14px;background:var(--bg);color:var(--ink);border:2px solid var(--line);border-radius:3px;cursor:pointer}
+.opt:hover:not(:disabled){border-color:var(--ink)}
+.opt:disabled{cursor:default}
+.opt.right{background:var(--good-soft);border-color:var(--good)}
+.opt.wrong{background:var(--bad-soft);border-color:var(--bad)}
+.fb{margin:8px 0 0;font-size:.93rem;color:var(--ink-soft)}
+.fb b{color:var(--ink)}
+.ticket-foot{margin-top:10px;display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.ticket-foot p{margin:0;font-weight:500}
+.btn{font:inherit;font-weight:600;font-size:.92rem;padding:8px 14px;background:var(--surface);color:var(--ink);border:2px solid var(--ink);border-radius:3px;cursor:pointer}
+.btn:hover{background:var(--ink);color:var(--bg)}
+.talk{display:grid;gap:14px}
+.talk .qs{background:var(--surface);border:1px solid var(--line);padding:16px 22px 16px 40px;margin:0;display:grid;gap:8px}
+details.scn{background:var(--surface);border:1px solid var(--line);border-left:6px solid var(--caution);padding:14px 18px}
+details.scn summary{cursor:pointer;font-family:var(--font-display);text-transform:uppercase;letter-spacing:.03em;font-size:1.3rem;font-weight:700}
+details.scn .setup{margin:10px 0 8px}
+details.scn .good{margin:12px 0 0;padding:10px 14px;background:var(--good-soft);border-left:6px solid var(--good)}
+details.scn .good b{font-family:var(--font-mono);font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;display:block}
+details.scn .good ul{margin:6px 0 0;padding-left:1.1em}
+.parent{background:var(--caution-soft);border:2px solid var(--caution);padding:12px 16px}
+.parent b{font-family:var(--font-mono);font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;display:block}
+.parent p{margin:4px 0 0}
+.pr-intro{margin:0 0 14px;color:var(--ink-soft);max-width:66ch}
+.pr{background:var(--surface);border:1px solid var(--line);margin-bottom:18px}
+.pr-head{display:flex;flex-wrap:wrap;gap:6px 14px;justify-content:space-between;align-items:baseline;padding:10px 18px;background:var(--ink);color:var(--bg);font-family:var(--font-mono);font-size:11.5px;letter-spacing:.06em;text-transform:uppercase}
+.ask-block{padding:14px 18px 16px}
+.ask-block+.ask-block{border-top:2px dashed var(--line)}
+.ask-block.formal{background:var(--bg)}
+.step-label{margin:0 0 6px;font-family:var(--font-mono);font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+.pr-q{margin:0 0 10px;font-weight:600;font-size:1.05rem;max-width:62ch}
+.bridge{padding:14px 18px 16px;border-top:2px dashed var(--line);background:var(--caution-soft)}
+.bridge .step-label{color:var(--ink)}
+.bridge ul{list-style:none;margin:0;padding:0;display:grid;gap:6px}
+.bridge li{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);gap:10px;align-items:baseline}
+.bridge .you{font-style:italic}
+.bridge .arrow{font-family:var(--font-mono);color:var(--ink-soft)}
+.bridge .pub{font-weight:600}
+@media (max-width:520px){.bridge li{grid-template-columns:minmax(0,1fr);gap:0}.bridge .arrow{display:none}.bridge .pub::before{content:"Textbook: ";font-weight:400;font-family:var(--font-mono);font-size:11px;color:var(--ink-soft)}.bridge .you::before{content:"You say: ";font-style:normal;font-family:var(--font-mono);font-size:11px;color:var(--ink-soft)}}
+.final{margin-top:56px;border-top:8px solid var(--ink);padding-top:18px}
+.final h2{font-size:clamp(1.9rem,5vw,2.6rem);font-weight:700}
+.final .lead{color:var(--ink-soft);max-width:62ch;margin:10px 0 16px}
+.note{margin:28px 0 0;font-size:.9rem;color:var(--ink-soft);max-width:70ch}
+footer{margin-top:48px;background:var(--band);color:#AEBBC7;padding-block:26px 30px;font-size:.92rem}
+footer strong{color:var(--band-ink)}
+footer p{margin:0 0 6px}
+
+</style>
+</head>
+<body>
+
+<header class="band">
+  <div class="wrap">
+    <span class="eyebrow">EVIT Electrical · Loved Ones Study Guide</span>
+    <h1>Introduction to<br>Construction Math</h1>
+    <p class="sub">A Loved Ones Study Guide for NCCER Core, Module 00102: Introduction to Construction Math</p>
+    <p class="byline">Mr. Ellis CTE — General Construction &amp; Electrical Teacher · High School &amp; Adult Pre-Apprentice Programs</p>
+    <nav class="jump" aria-label="Sections"><a href="#s1">1 · Whole numbers</a><a href="#s2">2 · Fractions</a><a href="#s3">3 · Decimals</a><a href="#s4">4 · Measuring</a><a href="#s5">5 · Units</a><a href="#s6">6 · Geometry</a><a href="#review">Loved ones review</a></nav>
+  </div>
+</header>
+
+<main>
+<div class="wrap">
+
+  <div class="intro">
+    <div class="panel">
+      <h2>Why this guide exists</h2>
+      <p>You do not need to be good at math to support a construction student. Your job is to help your student explain what they are learning in their own words. Math is the skill every trade leans on, from measuring a board to ordering concrete, and it gets easier when someone listens to the thinking.</p>
+      <p>If your student can read it and explain it, they are learning it. That is the whole idea.</p>
+    </div>
+    <div class="panel">
+      <h2>How to use each section</h2>
+      <p>Plan about 30 to 45 minutes per section. The student does most of the talking. You do not need the answers ahead of time.</p>
+      <ol>
+        <li><b>Read it together.</b> Plain-English version of the module section.</li>
+        <li><b>Study review points.</b> The must-know facts. Tick each one when your student can say it back.</li>
+        <li><b>Trade-term cards.</b> Tap a card to flip it.</li>
+        <li><b>Ticket out the door.</b> A quick recall check, just for practice.</li>
+        <li><b>Talk it over.</b> Questions and a real-world scenario.</li>
+        <li><b>Practice questions.</b> Each one comes twice: first in plain English, then in the textbook's words, so your student learns to recognize both.</li>
+      </ol>
+    </div>
+  </div>
+
+  <aside class="notice" aria-labelledby="safe-h">
+    <h2 id="safe-h">Good to know before you start</h2>
+    <p>Try each problem by hand first, the way the module asks. A calculator is for checking an answer, not for finding it, unless the problem says to use one. This guide explains the math so your student can talk about it. It does not replace class instruction or the textbook. Always follow the rules that apply at your student's school or job site. No student names or grades appear here, and nothing you tick or tap on this page is saved or sent anywhere.</p>
+  </aside>
+
+  <section class="sec" id="s1" aria-labelledby="s1-h">
+    <div class="sec-head">
+      <span class="eyebrow">Module Section 1 of 6</span>
+      <h2 id="s1-h">Whole Numbers</h2>
+      <p class="obj">By the end of this section your student can read and write whole numbers, add, subtract, multiply and divide them by hand, and use the order of operations.</p>
+    </div>
+    <div class="part">
+      <div class="part-title"><span class="letter">A</span><h3>Read it together</h3><span class="time">about 40 min</span></div>
+      <div class="prose">
+<p class="big">Every craft uses whole numbers, and mistakes with numbers waste time, effort and materials. The module says your skill with numbers also reflects on you, because a craft professional's reputation depends on a friendly relationship with math.</p>
+<div class="warn"><b>No calculator</b>Unless the text says otherwise, try every problem by hand first. A calculator is for checking your answer, not for finding it.</div>
+
+<h4>Place values (1.1.0)</h4>
+<p><b>Whole numbers</b> are complete number units with no fraction or decimal part. Each <b>digit</b> (0 to 9) has a <b>place value</b> set by where it sits. In 5,316,247 the 5 is five million and the 2 is two hundred. Read it as "five million, three hundred sixteen thousand, two hundred forty-seven."</p>
+<ul>
+  <li>Numbers above zero are <b>positive</b>. Numbers below zero are <b>negative</b>. Zero is neither.</li>
+  <li>A zero can hold a place: 7,093 is "seven thousand ninety-three," with a zero in the hundreds place.</li>
+  <li>The places, right to left: ones, tens, hundreds, thousands, ten thousands, hundred thousands, millions.</li>
+</ul>
+
+<h4>Adding and subtracting whole numbers (1.2.0)</h4>
+<p>To <b>add</b> means to combine values. The result is the <b>sum</b>.</p>
+<ol>
+  <li>Line up the digits by place value.</li>
+  <li>Start at the right (the ones column) and add each column, moving left.</li>
+  <li>If a column adds to 10 or more, write the ones digit and <b>carry</b> the 1 to the next column on the left.</li>
+</ol>
+<p>Example from the module: 723 + 84. Ones: 3 + 4 = 7. Tens: 2 + 8 = 10, so write 0 and carry 1. Hundreds: 7 + 1 = 8. The sum is 807.</p>
+<p>To <b>subtract</b> means to take away. The result is the <b>difference</b>. Put the larger number on top, then work right to left. When the top digit is too small, <b>borrow</b> 1 from the column to the left, which makes the top digit 10 larger. Negative answers are uncommon in job-site math.</p>
+<div class="case"><b>Check it</b>Add the difference to the number you subtracted. You should get the starting number back. Example: 1,478 - 489 = 989, and 989 + 489 = 1,478.</div>
+
+<h4>Multiplying whole numbers (1.3.0)</h4>
+<p>Multiplication is a fast way to add a number to itself many times. The result is the <b>product</b>. Six people give the crew leader $8 each for lunch: 6 x $8 = $48.</p>
+<p>When the bottom number has more than one digit, you make one row of work for each digit and add the rows. The module works 374 x 26:</p>
+<ol>
+  <li>Multiply 374 by the 6: that is 2,244.</li>
+  <li>Put a zero in the ones column (because the 2 is in the tens place), then multiply 374 by the 2: that is 7,480.</li>
+  <li>Add the two products: 2,244 + 7,480 = <b>9,724</b>.</li>
+</ol>
+<p>There are as many rows to add as there are digits in the bottom number.</p>
+
+<h4>Dividing whole numbers (1.3.0)</h4>
+<p>Division is the opposite of multiplication. The number being divided is the <b>dividend</b>, the number you divide by is the <b>divisor</b>, and the result is the <b>quotient</b>. In 15 / 3 = 5, the dividend is 15, the divisor is 3 and the quotient is 5.</p>
+<p>When the divisor does not fit evenly, the leftover is the <b>remainder</b>. Ten divided by 3 is 3 with a remainder of 1.</p>
+<p>Long division works left to right, and every step is divide, multiply, subtract, bring down. The module divides 2,638 by 24:</p>
+<ol>
+  <li>24 does not go into 2, so use the first two digits. 24 goes into 26 once. Write 1, subtract 24 from 26 to get 2.</li>
+  <li>Bring down the 3 to make 23. 24 does not go into 23, so write 0.</li>
+  <li>Bring down the 8 to make 238. 24 goes into 238 nine times (24 x 9 = 216). Subtract to get 22.</li>
+  <li>The answer is <b>109 remainder 22</b>.</li>
+</ol>
+<div class="case"><b>Sanity check</b>Each digit of a long-division answer is a number from 0 to 9. If you get 10 or more, something went wrong. Check a division by multiplying the quotient by the divisor and adding the remainder: 109 x 24 + 22 = 2,638.</div>
+<div class="case"><b>Construction estimates</b>Contractors must create accurate estimates and stay inside a budget. The estimate adds materials, labor and overhead (the cost of putting the labor on the job, office expenses and company staff), then adds profit. The lowest bid usually gets the job.</div>
+
+<h4>Order of operations (1.3.1)</h4>
+<p>When a problem has more than one operation, the order changes the answer. For simple problems the order is multiplication, division, addition, subtraction (<b>MDAS</b>, "My Dear Aunt Sally"). For harder ones use <b>PEMDAS</b>: parentheses first, then exponents, then the rest.</p>
+<p>Look at 6 + 3 x 5. Adding first gives 45, which is wrong. Multiplying first (3 x 5 = 15) and then adding gives <b>21</b>, which is right.</p>
+<p>An <b>exponent</b> says how many times to multiply a number by itself. 6 squared is 6 x 6 = 36, and 6 cubed is 6 x 6 x 6 = 216.</p>
+<p>Think of a fraction as a division problem: the top number (numerator) is the dividend and the bottom number (denominator) is the divisor. That idea leads straight into Section 2.</p>
+<div class="case"><b>Masons and courses</b>A mason counts block rows as <b>courses</b>. A 15-course wall of 8-inch blocks is 15 x 8 = 120 inches, and 120 / 12 = 10 feet high.</div>
+</div>
+    </div>
+    <div class="part"><div class="part-title"><span class="letter">B</span><h3>Study review points</h3></div><ul class="points" data-points="1"></ul></div>
+    <div class="part"><div class="part-title"><span class="letter">C</span><h3>Trade-term cards</h3></div><div class="deck" data-cards="1"></div></div>
+    <div class="part"><div class="part-title"><span class="letter">D</span><h3>Ticket out the door</h3></div><div class="ticket" data-quiz="1"></div></div>
+    <div class="part"><div class="part-title"><span class="letter">E</span><h3>Talk it over</h3></div><div class="talk" data-talk="1"></div></div>
+    <div class="part"><div class="part-title"><span class="letter">F</span><h3>Practice questions</h3><span class="time">about 15 min</span></div><div data-practice="1"></div></div>
+  </section>
+
+  <section class="sec" id="s2" aria-labelledby="s2-h">
+    <div class="sec-head">
+      <span class="eyebrow">Module Section 2 of 6</span>
+      <h2 id="s2-h">Fractions</h2>
+      <p class="obj">By the end of this section your student can find equivalent fractions, reduce to lowest terms, convert improper fractions, and add, subtract, multiply and divide fractions.</p>
+    </div>
+    <div class="part">
+      <div class="part-title"><span class="letter">A</span><h3>Read it together</h3><span class="time">about 45 min</span></div>
+      <div class="prose">
+<p class="big">A <b>fraction</b> is another way to write a division problem. The top number is the <b>numerator</b> and the bottom number is the <b>denominator</b>. In 1/2 the 1 is divided into 2 equal parts. When the top and bottom numbers match (4/4, 8/8, 16/16) the fraction equals exactly 1.</p>
+<p>Most real measurements are not whole numbers. Craftworkers cut pipe and lumber to lengths like 1/2, 3/16 or 5/64 of an inch, so everyone has to be comfortable with fractions, especially anyone using the inch-pound system. The metric system almost removes the need for fractions in daily work.</p>
+
+<h4>Equivalent fractions (2.1.0 and 2.1.1)</h4>
+<p><b>Equivalent fractions</b> look different but have the same value: 1/2, 2/4 and 4/8 are all the same length of board. To make an equivalent fraction, multiply the top and the bottom by the <b>same</b> number.</p>
+<p>Example: how many sixteenths equal 1/2? What times 2 makes 16? That is 8, so multiply both numbers by 8: 8/16. A job often works best when every measurement uses the same denominator, such as sixteenths.</p>
+
+<h4>Reducing to lowest terms (2.1.2)</h4>
+<p>A measurement of 4/16 inch will get puzzled looks on a job site. Reduce it:</p>
+<ol>
+  <li>Find the largest number that divides evenly into both the top and the bottom. For 4/16 it is 4.</li>
+  <li>Divide both the top and the bottom by that number: 4/16 becomes <b>1/4</b>.</li>
+</ol>
+<p>If nothing but 1 divides into both, the fraction is already in lowest terms. Always divide top and bottom by the <b>same</b> number, and make sure both divide evenly.</p>
+
+<h4>Comparing and finding a common denominator (2.1.3)</h4>
+<p>Which is longer, 3/4" or 5/8"? If the denominators match, just compare the numerators. If they differ, change them to a <b>common denominator</b>.</p>
+<ul>
+  <li><b>Quick way:</b> multiply the two denominators (4 x 8 = 32). Then 3/4 = 24/32 and 5/8 = 20/32, so 3/4 is longer.</li>
+  <li><b>Lowest common denominator:</b> reduce each fraction first. If one denominator is a multiple of the other, change only the smaller one. 8 is a multiple of 4, so 3/4 = 6/8. Compare 6/8 and 5/8: 3/4 is longer.</li>
+  <li>If there are no shared multiples, multiply the denominators together.</li>
+</ul>
+<div class="case"><b>Nominal sizes</b>A so-called 8" x 8" x 16" concrete block really measures 7 5/8" x 7 5/8" x 15 5/8". The mason's name for it is the nominal size, which allows for a 3/8" mortar joint and comes out in whole inches.</div>
+
+<h4>Improper fractions and mixed numbers (2.2.0)</h4>
+<p>An <b>improper fraction</b> has a numerator larger than its denominator (like 7/4 or 67/32). A <b>mixed number</b> is a whole number plus a fraction (like 1 3/4). Since a fraction is a division problem, divide to convert:</p>
+<ol>
+  <li>Divide the numerator by the denominator.</li>
+  <li>The quotient is the whole number. The remainder becomes the new numerator. Keep the original denominator.</li>
+</ol>
+<p>Example: 67/32. 32 goes into 67 two times (64), remainder 3, so 67/32 = <b>2 3/32</b>. Some improper fractions come out as a plain whole number, like 42/6 = 7.</p>
+<p>To go the other way, multiply the denominator by the whole number and add the numerator. 2 1/3 becomes (3 x 2) + 1 = 7, so 7/3.</p>
+
+<h4>Adding and subtracting fractions (2.3.0)</h4>
+<ol>
+  <li>Find a common denominator and change both fractions to match.</li>
+  <li>Add (or subtract) the <b>numerators only</b>. Keep the common denominator.</li>
+  <li>Reduce to lowest terms and change any improper fraction to a mixed number.</li>
+</ol>
+<p>Example from the module: 3/4 + 5/8. Use 8 as the denominator: 6/8 + 5/8 = 11/8 = <b>1 3/8</b>. (Using 32 also works: 24/32 + 20/32 = 44/32, which reduces to the same answer.)</p>
+<p>Subtracting works the same way. A painter has 7/8 liter and gives away 1/4 liter. 1/4 = 2/8, so 7/8 - 2/8 = <b>5/8</b> liter is left.</p>
+<p>To subtract a fraction from a whole number, write the whole number over 1 and change it to the same denominator. 5 - 2/7: 5 = 35/7, so 35/7 - 2/7 = 33/7 = <b>4 5/7</b>.</p>
+<div class="case"><b>Check it</b>Add your answer back. If 5/8 + 1/4 = 7/8, your subtraction is right.</div>
+
+<h4>Multiplying and dividing fractions (2.4.0)</h4>
+<p>You do <b>not</b> need a common denominator to multiply or divide.</p>
+<ul>
+  <li><b>Multiply:</b> top times top, bottom times bottom, then reduce. 3/4 x 7/8 = 21/32. Reducing first makes the numbers smaller and easier.</li>
+  <li><b>Divide:</b> <b>invert</b> (flip) the second fraction, change the division sign to multiplication, then multiply and reduce. 7/16 / 7/8 = 7/16 x 8/7 = 56/112 = <b>1/2</b>.</li>
+  <li><b>Fraction by a whole number:</b> put the whole number over 1 and use the same steps. 1/2 / 4 = 1/2 x 1/4 = 1/8.</li>
+  <li><b>Mixed numbers:</b> change them to improper fractions first.</li>
+</ul>
+<p>Check a division with multiplication: the answer times the divisor should give the original dividend.</p>
+<div class="case"><b>Scale drawings</b>If 1/4" on a drawing stands for 1', then a line 8 1/2" long stands for 8 1/2 / 1/4 = 17/2 x 4 = 34 feet.</div>
+<div class="case"><b>Strips</b>How many 7/8" strips come from a 7" piece? 7 / 7/8 = 7 x 8/7 = 8 strips.</div>
+</div>
+    </div>
+    <div class="part"><div class="part-title"><span class="letter">B</span><h3>Study review points</h3></div><ul class="points" data-points="2"></ul></div>
+    <div class="part"><div class="part-title"><span class="letter">C</span><h3>Trade-term cards</h3></div><div class="deck" data-cards="2"></div></div>
+    <div class="part"><div class="part-title"><span class="letter">D</span><h3>Ticket out the door</h3></div><div class="ticket" data-quiz="2"></div></div>
+    <div class="part"><div class="part-title"><span class="letter">E</span><h3>Talk it over</h3></div><div class="talk" data-talk="2"></div></div>
+    <div class="part"><div class="part-title"><span class="letter">F</span><h3>Practice questions</h3><span class="time">about 15 min</span></div><div data-practice="2"></div></div>
+  </section>
+
+  <section class="sec" id="s3" aria-labelledby="s3-h">
+    <div class="sec-head">
+      <span class="eyebrow">Module Section 3 of 6</span>
+      <h2 id="s3-h">The Decimal System</h2>
+      <p class="obj">By the end of this section your student can read and round decimals, calculate with them, and convert between decimals, fractions and percentages.</p>
+    </div>
+    <div class="part">
+      <div class="part-title"><span class="letter">A</span><h3>Read it together</h3><span class="time">about 45 min</span></div>
+      <div class="prose">
+<p class="big">The number 10 is at the heart of the decimal system. Decimals give simpler calculations and easier fractions, and they match the metric system, which is built on tens.</p>
+
+<h4>Decimals (3.1.0)</h4>
+<p>A <b>decimal</b> has a decimal point (the dot). Digits to the left are a whole number. Digits to the right are part of 1, which is why decimals are also called decimal fractions. If you do not see a decimal point, assume one to the right of the ones place.</p>
+<p>Places to the right of the point: tenths, hundredths, thousandths, ten-thousandths, hundred-thousandths, millionths. Everyday work usually needs two places. Extreme precision may need five.</p>
+<ul>
+  <li>Say the number as written, then name the place of the last digit: 0.56 is "fifty-six hundredths."</li>
+  <li>The word "and" marks the decimal point in a mixed number: 15.7 is "fifteen and seven-tenths."</li>
+  <li>A zero in front of the point (0.56) adds clarity. It is not spoken.</li>
+</ul>
+
+<h4>Rounding decimals (3.1.1)</h4>
+<ol>
+  <li>Underline the place you are rounding to.</li>
+  <li>Look at the digit one place to the right.</li>
+  <li>If that digit is <b>5 or more</b>, add 1 to the underlined digit. If it is <b>4 or less</b>, leave the underlined digit alone.</li>
+  <li>Drop everything to the right.</li>
+</ol>
+<p>Example: tubing costs 3.76 euros per meter and the budget is 800 euros. 800 / 3.76 = 212.7659574. To the nearest tenth, look at the 6 that follows the 7: round up to <b>212.8</b>. A supplier will not sell you 0.7659574 of a meter.</p>
+<div class="case"><b>Standard rules</b>Budgets sometimes follow their own rounding rules to avoid overruns. Unless you are told otherwise, follow the standard rounding rules.</div>
+
+<h4>Comparing decimals (3.1.2)</h4>
+<p>Compare them digit by digit from the left, just like whole numbers. 0.4217 is larger than 0.4214. To order a list, it helps to add zeros so every number has the same number of places: 0.402, 0.420, 0.042, 0.442 becomes smallest to largest <b>0.042, 0.402, 0.420, 0.442</b>.</p>
+
+<h4>Adding, subtracting, multiplying and dividing decimals (3.2.0)</h4>
+<ul>
+  <li><b>Add or subtract:</b> keep the decimal points lined up, and add zeros so the columns match. 4.76 + 0.834 = 5.594, with the answer's point in the same column. Borrowing works the same as with whole numbers.</li>
+  <li><b>Multiply:</b> multiply as if there were no decimal points. Then count the digits to the right of the point in <b>both</b> numbers and put the answer's point that many places from the right. 4.5 x 7 = 31.5 (one place). If the answer has too few digits, add zeros on the left: 0.507 x 0.022 = 0.011154.</li>
+  <li><b>Divide:</b> if the divisor (the number you divide by) has a decimal point, move it all the way to the right and move the dividend's point the <b>same number of places</b>, adding zeros as needed. Then put the answer's point directly above the dividend's point and divide as usual. 44.5 / 0.22 becomes 4,450 / 22 = 202 remainder 6.</li>
+</ul>
+<div class="case"><b>Check it</b>Multiply the quotient by the divisor and add the remainder. You should get the original dividend.</div>
+<p><b>Calculator order:</b> enter the first number, press the operation key, enter the second number, press equals. Clear with the On or C key. CE clears only the last entry. Example: 45.6 x 5.7 = 259.92.</p>
+<div class="case"><b>Dots and commas</b>In the United States the dot is the decimal point and commas separate groups of three digits. Many European, African and South American countries do the opposite, so be alert when you read paperwork from outside the US.</div>
+
+<h4>Converting decimals, fractions and percentages (3.3.0)</h4>
+<p>A <b>percentage</b> is a part of a whole divided into 100 parts. The decimal 0.25, the percentage 25% and the fraction 1/4 all mean the same quantity.</p>
+<ul>
+  <li><b>Decimal to percent (3.3.1):</b> multiply by 100 (move the point two places right) and add a % sign. 0.12 = 12%.</li>
+  <li><b>Percent to decimal (3.3.1):</b> drop the % sign and divide by 100 (move the point two places left). 22% = 0.22.</li>
+  <li><b>Fraction to decimal (3.3.2):</b> divide the numerator by the denominator. 3/4 = 3 / 4 = 0.75, which is 75%.</li>
+  <li><b>Decimal to fraction (3.3.3):</b> say it aloud, write it as a fraction, then reduce. 0.125 is "one hundred twenty-five thousandths," or 125/1000, which reduces to <b>1/8</b>. So a 1/8" drill bit makes a 0.125" hole.</li>
+  <li><b>Inches to decimal feet (3.3.4):</b> put the inches over 12 and divide. 3 inches = 3/12 = 1/4 = 0.25 foot.</li>
+</ul>
+<div class="case"><b>Percent on a calculator</b>Either enter the percent and press the % key, or convert to a decimal first. Never do both. $175,000 x 14% = $175,000 x 0.14 = $24,500.</div>
+<div class="case"><b>Profit example</b>A house sells for $175,000. Overhead 27%, materials 35%, labor 24% = 86% of the price. Profit is the other 14%, or $24,500.</div>
+<div class="case"><b>Direct and indirect costs</b>Direct costs belong to the job (materials, crew labor, subcontractors). Indirect costs, or overhead, keep the company running (insurance, office staff, marketing, property taxes).</div>
+</div>
+    </div>
+    <div class="part"><div class="part-title"><span class="letter">B</span><h3>Study review points</h3></div><ul class="points" data-points="3"></ul></div>
+    <div class="part"><div class="part-title"><span class="letter">C</span><h3>Trade-term cards</h3></div><div class="deck" data-cards="3"></div></div>
+    <div class="part"><div class="part-title"><span class="letter">D</span><h3>Ticket out the door</h3></div><div class="ticket" data-quiz="3"></div></div>
+    <div class="part"><div class="part-title"><span class="letter">E</span><h3>Talk it over</h3></div><div class="talk" data-talk="3"></div></div>
+    <div class="part"><div class="part-title"><span class="letter">F</span><h3>Practice questions</h3><span class="time">about 15 min</span></div><div data-practice="3"></div></div>
+  </section>
+
+  <section class="sec" id="s4" aria-labelledby="s4-h">
+    <div class="sec-head">
+      <span class="eyebrow">Module Section 4 of 6</span>
+      <h2 id="s4-h">Measuring Length</h2>
+      <p class="obj">By the end of this section your student can read English and metric rulers and measuring tapes and use a tape measure correctly.</p>
+    </div>
+    <div class="part">
+      <div class="part-title"><span class="letter">A</span><h3>Read it together</h3><span class="time">about 30 min</span></div>
+      <div class="prose">
+<p class="big">Rulers and tape measures are the most common measuring tools on any job. The module's warning: people who use them only now and then forget what the small marks mean, and a misread ruler means errors, expensive mistakes and wasted material.</p>
+<div class="warn"><b>Start at the mark</b>Many rulers have extra material at the ends in case the ends get damaged. Always start a measurement at the first marked line, not the physical end of the ruler.</div>
+<p><b>Vocabulary note:</b> inch-pound, English and Imperial all name the same measuring system (the one used in the US, Canada and a few other places). This section uses "English" for rulers and tapes.</p>
+
+<h4>The English ruler (4.1.1)</h4>
+<p>English rulers divide each inch into halves, fourths, eighths and sixteenths. Some also show thirty-seconds or sixty-fourths. Everything except the whole-inch marks is a fraction of an inch.</p>
+<ul>
+  <li>On a ruler with 1/16" marks, count the marks past the last whole inch. The mark just after 3/4" is 13/16".</li>
+  <li>The distance between 1/4" and 3/8" is 2/16" (that is, 1/8").</li>
+  <li>Reduce what you read: 4/16" is 1/4" and 8/16" is 1/2".</li>
+</ul>
+
+<h4>The metric ruler (4.1.2)</h4>
+<p>Metric rulers show centimeters (the larger numbered lines) and millimeters (the small lines). Every measurement is built on 10: each millimeter is 1/10 of a centimeter, so <b>10 mm = 1 cm</b>.</p>
+<ul>
+  <li>7 marks after the 2 cm line is 2.7 cm, which is also 27 mm.</li>
+  <li>6 marks <b>before</b> the 1 cm line is 0.4 cm, or 4 mm.</li>
+</ul>
+
+<h4>The measuring tape (4.2.0)</h4>
+<p>Tapes may be English, metric or both. Tapes that carry both systems commonly come in 16 ft (5 m) and 25 ft (8 m) lengths. Site layout uses long tapes. Carpenters and pipefitters usually prefer short, compact ones.</p>
+<div class="scroll"><table>
+  <caption>Special marks on an English tape (4.2.1)</caption>
+  <thead><tr><th>Mark</th><th>What it means</th></tr></thead>
+  <tbody>
+    <tr><td><b>Black background every 24 in</b></td><td>24-inch spacing on center, most common for walls that do not carry a heavy load.</td></tr>
+    <tr><td><b>Red background every 16 in</b></td><td>16-inch spacing on center, most common for <b>loadbearing</b> walls.</td></tr>
+    <tr><td><b>Small black diamond every 19.2 in</b></td><td>An alternate, less common spacing for loadbearing walls and special <b>joists</b>.</td></tr>
+    <tr><td><b>Red foot number with a red inch number</b></td><td>Quick reading. Red 1F with red 2 means 1 foot 2 inches. The black number beneath it (14) is the same distance in inches.</td></tr>
+  </tbody>
+</table></div>
+<p>With the hook against the left side of one <b>stud</b>, the left side of the next stud is 16 inches away, so the studs are on 16-inch centers.</p>
+<div class="case"><b>Nominal and true sizes</b>A 2x4 is not really 2" by 4". After drying and planing it measures 1 1/2" by 3 1/2" (38 x 89 mm). Other examples from the module: a 2x6 is 1 1/2" x 5 1/2", a 2x8 is 1 1/2" x 7 1/4", and a 4x4 is 3 1/2" x 3 1/2".</div>
+<p>Metric tapes look like English ones and also carry framing marks, spaced to fit other building codes. In the US, metric-only tapes are rare and a combination tape is the usual choice.</p>
+
+<h4>Using a tape measure (4.2.3)</h4>
+<ol>
+  <li>Pull the tape straight out of the case with one hand.</li>
+  <li>Hook the metal end on the object (a second worker may need to hold it). The hook is meant to <b>slide slightly</b>: in for inside measurements and out for outside ones. If it binds, the reading could be off by as much as 1/16" (1.6 mm). A bent or damaged hook does the same.</li>
+  <li>Pull the case to extend the tape a little past the measurement point.</li>
+  <li>Slide the thumb lock to hold it (some tapes lock automatically and use a thumb release).</li>
+  <li>Read the measurement at the correct spot on the object.</li>
+</ol>
+<ul>
+  <li>Never let the tape snap back into the case, because the hook can break.</li>
+  <li><b>Inside measurements</b> (like a shelf between two walls): press the hook against one wall and the back of the case against the other. Read where the tape enters the case, then <b>add the length of the case</b>, which is stamped on its side.</li>
+  <li>The curve of the blade keeps it stiff. How far a tape reaches without bending is called its <b>standout</b>.</li>
+</ul>
+<div class="case"><b>Measure twice, cut once</b>Double-check every measurement before you cut.</div>
+</div>
+    </div>
+    <div class="part"><div class="part-title"><span class="letter">B</span><h3>Study review points</h3></div><ul class="points" data-points="4"></ul></div>
+    <div class="part"><div class="part-title"><span class="letter">C</span><h3>Trade-term cards</h3></div><div class="deck" data-cards="4"></div></div>
+    <div class="part"><div class="part-title"><span class="letter">D</span><h3>Ticket out the door</h3></div><div class="ticket" data-quiz="4"></div></div>
+    <div class="part"><div class="part-title"><span class="letter">E</span><h3>Talk it over</h3></div><div class="talk" data-talk="4"></div></div>
+    <div class="part"><div class="part-title"><span class="letter">F</span><h3>Practice questions</h3><span class="time">about 15 min</span></div><div data-practice="4"></div></div>
+  </section>
+
+  <section class="sec" id="s5" aria-labelledby="s5-h">
+    <div class="sec-head">
+      <span class="eyebrow">Module Section 5 of 6</span>
+      <h2 id="s5-h">Metric and Inch-Pound Measurement Systems</h2>
+      <p class="obj">By the end of this section your student can name common length, weight, volume and temperature units in both systems and convert between them.</p>
+    </div>
+    <div class="part">
+      <div class="part-title"><span class="letter">A</span><h3>Read it together</h3><span class="time">about 50 min</span></div>
+      <div class="prose">
+<p class="big">Most of the world uses the metric system, and many manufacturers list sizes, weights, temperatures and pressures in metric units, inch-pound units, or both. Many crafts need workers who can switch between the two. A measurement always needs a <b>unit</b>. A number alone is not a measurement.</p>
+<p>Metric is simpler because scaling up or down always means multiplying or dividing by 10s. Inch-pound needs many different factors (a mile is 5,280 feet, an inch is 1/12 of a foot).</p>
+<div class="scroll"><table>
+  <caption>Metric prefixes (Table 1)</caption>
+  <thead><tr><th>Prefix</th><th>Means</th></tr></thead>
+  <tbody>
+    <tr><td>micro- (u)</td><td>one-millionth (0.000001)</td></tr>
+    <tr><td>milli- (m)</td><td>one-thousandth (0.001)</td></tr>
+    <tr><td>centi- (c)</td><td>one-hundredth (0.01)</td></tr>
+    <tr><td>deci- (d)</td><td>one-tenth (0.1)</td></tr>
+    <tr><td>deka- (da)</td><td>10</td></tr>
+    <tr><td>hecto- (h)</td><td>100</td></tr>
+    <tr><td>kilo- (k)</td><td>1,000</td></tr>
+    <tr><td>mega- (M)</td><td>1,000,000</td></tr>
+    <tr><td>giga- (G)</td><td>1,000,000,000</td></tr>
+  </tbody>
+</table></div>
+
+<h4>Length (5.1.0)</h4>
+<p><b>Inch-pound (5.1.1):</b> 12 inches = 1 foot. 3 feet = 36 inches = 1 yard. 5,280 feet = 1,760 yards = 1 mile. Abbreviations: in or ", ft or ', yd, mi. To change inches to yards, divide by 36.</p>
+<p><b>Metric (5.1.2):</b> 10 mm = 1 cm. 100 cm = 1 m. 1,000 m = 1 km. Abbreviations: mm, cm, m, km. All units relate by 10s, so convert by moving the decimal point.</p>
+<ul>
+  <li><b>Larger to smaller</b> unit: move the point <b>right</b> (you get more of the smaller unit). 0.45 m = 45 cm.</li>
+  <li><b>Smaller to larger</b> unit: move the point <b>left</b>. 72 cm = 0.72 m (two places, because centi- is 0.01).</li>
+</ul>
+<p><b>Between systems (5.1.3):</b> multiply or divide by a conversion factor from a table. Key factors: <b>1 inch = 2.54 cm</b>, 1 cm = 0.3937 in, 1 foot = 0.3048 m, 1 mile = 1.609 km. Example: 13 cm x 0.3937 = 5.1181 in, which you might round to 5.12 or 5.1 depending on the job. A steel plate needs more precision than a mailbox post.</p>
+<div class="case"><b>Picture the metric units</b>1 mm is about the thickness of a dime. 1 cm is about the width of a paper clip. 1 m is about the distance from a door handle to the floor. 1 km is about the length of six city blocks.</div>
+
+<h4>Weight (5.2.0)</h4>
+<p><b>Weight</b> is the force an object puts on a surface because of its mass and the pull of Earth's gravity. <b>Mass</b> is the quantity of matter present.</p>
+<p><b>Inch-pound (5.2.1):</b> 16 ounces (oz) = 1 pound (lb). 2,000 pounds = 1 ton (t).</p>
+<ul>
+  <li><b>Ounces to pounds: divide by 16.</b> 134 oz / 16 = 8.375 lb.</li>
+  <li><b>Pounds to ounces: multiply by 16.</b></li>
+  <li><b>Pounds to tons: divide by 2,000.</b></li>
+</ul>
+<p><b>Metric (5.2.2):</b> 1,000 milligrams (mg) = 1 gram (g). 1,000 grams = 1 kilogram (kg). 1,000 kg = 1 metric ton. To change 6,439 mg to grams, divide by 1,000 (move the point three places left) to get 6.439 g.</p>
+<div class="scroll"><table>
+  <caption>Weight factors between systems (5.2.3, Table 7)</caption>
+  <thead><tr><th>1 of this</th><th>equals</th></tr></thead>
+  <tbody>
+    <tr><td>ounce</td><td>28.35 grams</td></tr>
+    <tr><td>pound</td><td>453.6 grams (0.4536 kg)</td></tr>
+    <tr><td>kilogram</td><td>2.205 pounds</td></tr>
+    <tr><td>ton</td><td>907 kilograms (907,185 g)</td></tr>
+  </tbody>
+</table></div>
+<p>Worked examples:</p>
+<ul>
+  <li>A crane load weighs 1,200 kg. 1,200 x 2.205 = <b>2,646 lb</b>, so the slings must be rated for more than 2,646 lb.</li>
+  <li>Ounces to grams: multiply by 28.35. Grams to ounces: divide by 28.35.</li>
+  <li>50 lb x 0.4536 = 22.68 kg. 50 kg x 2.205 = 110.25 lb.</li>
+</ul>
+<div class="case"><b>Water and the gram</b>One milliliter of pure water weighs exactly one gram. Other liquids weigh different amounts.</div>
+<div class="case"><b>Watch the direction</b>A kilogram is bigger than a pound (1 kg is about 2.2 lb). Ask yourself whether your answer should be larger or smaller before you accept it.</div>
+
+<h4>Volume (5.3.0)</h4>
+<p><b>Volume</b> is the amount of space inside a three-dimensional object. Volume units are length units with the word "cubic" added. A <b>cube</b> has all sides the same length: a cube 1" x 1" x 1" has a volume of 1 cubic inch.</p>
+<p><b>Inch-pound (5.3.1):</b> 1 cubic foot = 1,728 cubic inches. 1 cubic yard = 27 cubic feet. Abbreviations: cu in or in<sup>3</sup>, cu ft or ft<sup>3</sup>, cu yd or yd<sup>3</sup>.</p>
+<p><b>Metric (5.3.2):</b> the cubic centimeter (cm<sup>3</sup>) and cubic meter (m<sup>3</sup>) are the main units. A cubic meter is a cube 100 cm x 100 cm x 100 cm, so <b>1 m<sup>3</sup> = 1,000,000 cm<sup>3</sup></b>.</p>
+<p><b>Between systems (5.3.3):</b> use the conversion chart. Examples: 1,600 cm<sup>3</sup> x 0.061 = 97.6 in<sup>3</sup>, so a 1,600 cm<sup>3</sup> battery fits in a 112 in<sup>3</sup> box. 59 yd<sup>3</sup> x 0.765 = 45.1 m<sup>3</sup>. Normally you convert between units of similar size (cubic yards to cubic meters).</p>
+
+<h4>Temperature (5.4.0)</h4>
+<p>Temperature measures how fast the atoms or molecules in something are moving. Fast means hot. Slow means cold. Degrees have a symbol and a letter naming the scale (&deg;F, &deg;C).</p>
+<div class="scroll"><table>
+  <caption>The four temperature scales (Figure 22)</caption>
+  <thead><tr><th>Scale</th><th>Water freezes</th><th>Water boils</th><th>Range</th></tr></thead>
+  <tbody>
+    <tr><td><b>Fahrenheit</b></td><td>32&deg;F</td><td>212&deg;F</td><td>180&deg;</td></tr>
+    <tr><td><b>Celsius</b></td><td>0&deg;C</td><td>100&deg;C</td><td>100&deg;</td></tr>
+    <tr><td><b>Rankine</b></td><td>491.7&deg;R</td><td>671.7&deg;R</td><td>180&deg;</td></tr>
+    <tr><td><b>Kelvin</b></td><td>273 K</td><td>373 K</td><td>100</td></tr>
+  </tbody>
+</table></div>
+<ul>
+  <li><b>Absolute zero</b> is the coldest possible temperature, where atoms and molecules barely move. Rankine and Kelvin both start there.</li>
+  <li>A Rankine degree is the same size as a Fahrenheit degree. A kelvin is the same size as a Celsius degree. Kelvin has no degree symbol and you do not say "degrees" for it.</li>
+  <li>Fahrenheit and Celsius are the ones most crafts use. Celsius and Kelvin belong to the metric system.</li>
+</ul>
+<p><b>The conversion math.</b> Between freezing and boiling there are 180&deg; on the Fahrenheit scale and 100&deg; on the Celsius scale, a ratio of 9 to 5. That is where the formulas come from:</p>
+<ol>
+  <li><b>Fahrenheit to Celsius:</b> subtract 32, then multiply by 5/9. (C = 5/9 x (F - 32))</li>
+  <li><b>Celsius to Fahrenheit:</b> multiply by 9/5, then add 32. (F = (9/5 x C) + 32)</li>
+</ol>
+<p>Module examples: 77&deg;F to Celsius: 77 - 32 = 45, then 5/9 x 45 = <b>25&deg;C</b>. 90&deg;C to Fahrenheit: 9/5 x 90 = 162, then 162 + 32 = <b>194&deg;F</b>.</p>
+<div class="warn"><b>Order matters</b>Going to Celsius, subtract the 32 <b>first</b>. Going to Fahrenheit, add the 32 <b>last</b>. A quick check: water freezes at 32&deg;F and 0&deg;C, and boils at 212&deg;F and 100&deg;C. If your answer disagrees, recheck your steps.</div>
+<div class="case"><b>Reading thermometers</b>A digital probe and a non-contact infrared thermometer can show both Celsius and Fahrenheit. The infrared kind measures the invisible infrared radiation an object gives off.</div>
+</div>
+    </div>
+    <div class="part"><div class="part-title"><span class="letter">B</span><h3>Study review points</h3></div><ul class="points" data-points="5"></ul></div>
+    <div class="part"><div class="part-title"><span class="letter">C</span><h3>Trade-term cards</h3></div><div class="deck" data-cards="5"></div></div>
+    <div class="part"><div class="part-title"><span class="letter">D</span><h3>Ticket out the door</h3></div><div class="ticket" data-quiz="5"></div></div>
+    <div class="part"><div class="part-title"><span class="letter">E</span><h3>Talk it over</h3></div><div class="talk" data-talk="5"></div></div>
+    <div class="part"><div class="part-title"><span class="letter">F</span><h3>Practice questions</h3><span class="time">about 15 min</span></div><div data-practice="5"></div></div>
+  </section>
+
+  <section class="sec" id="s6" aria-labelledby="s6-h">
+    <div class="sec-head">
+      <span class="eyebrow">Module Section 6 of 6</span>
+      <h2 id="s6-h">Introduction to Geometry</h2>
+      <p class="obj">By the end of this section your student can classify angles, name common shapes, and calculate perimeter, area and volume.</p>
+    </div>
+    <div class="part">
+      <div class="part-title"><span class="letter">A</span><h3>Read it together</h3><span class="time">about 50 min</span></div>
+      <div class="prose">
+<p class="big">Geometry is practical math. It deals with circles, triangles, squares and rectangles, and the construction industry uses it constantly. <b>Plane geometry</b> studies flat, two-dimensional shapes (length and width). <b>Solid geometry</b> studies three-dimensional shapes (length, width and height).</p>
+
+<h4>Angles (6.1.0)</h4>
+<p>An <b>angle</b> is the shape made by two straight lines that meet at a point called the <b>vertex</b>. It is measured in <b>degrees</b> (&deg;) with a protractor. A full circle is 360&deg;.</p>
+<div class="scroll"><table>
+  <caption>Angle types (Figure 24)</caption>
+  <thead><tr><th>Type</th><th>What it means</th></tr></thead>
+  <tbody>
+    <tr><td><b>Acute</b></td><td>More than 0&deg; and less than 90&deg;. Common ones are 30&deg;, 45&deg; and 60&deg;.</td></tr>
+    <tr><td><b>Right</b></td><td>Exactly 90&deg;. The two lines are perpendicular, like the sides of a capital L. Drawings mark it with a small square at the vertex. The crafts use it constantly.</td></tr>
+    <tr><td><b>Obtuse</b></td><td>More than 90&deg; and less than 180&deg;.</td></tr>
+    <tr><td><b>Straight</b></td><td>Exactly 180&deg;, a flat line.</td></tr>
+    <tr><td><b>Adjacent</b></td><td>Two angles that share a vertex and one side.</td></tr>
+    <tr><td><b>Opposite</b></td><td>Angles formed when two straight lines cross. They are always equal.</td></tr>
+  </tbody>
+</table></div>
+<p>An angle of 66&deg; is acute because it is less than 90&deg;.</p>
+
+<h4>Common shapes (6.2.0)</h4>
+<ul>
+  <li><b>Rectangle (6.2.1):</b> four sides and four 90&deg; angles that add to 360&deg;. Opposite sides are parallel and equal. Its two <b>diagonals</b> (corner to opposite corner) are equal, and a diagonal cuts it into two identical right triangles.</li>
+  <li><b>Square (6.2.2):</b> a rectangle with four equal sides. A diagonal cuts it into two right triangles, each with two 45&deg; angles and one 90&deg; angle. (Also, the "square" of a number is the number times itself.)</li>
+  <li><b>Perimeter:</b> the distance around a shape. For a rectangle, add the four sides, or use (2 x length) + (2 x width). A 14' x 12' room has a perimeter of 52', so buy 52' of molding. For a square, multiply one side by 4.</li>
+  <li><b>Triangle (6.2.3):</b> three sides and three angles that always add to <b>180&deg;</b>. A <b>right</b> triangle has one 90&deg; angle. An <b>equilateral</b> triangle has three equal sides and angles (60&deg; each). An <b>isosceles</b> triangle has two equal sides and two equal angles. A <b>scalene</b> triangle has three unequal sides.</li>
+  <li><b>Circle (6.2.4):</b> every point on the curved line is the same distance from the center. The <b>circumference</b> is the distance around it. The <b>diameter</b> crosses the circle through the center (the longest straight line inside). The <b>radius</b> goes from the center to the edge and equals half the diameter. <b>Pi</b> is about 3.14 (or 22/7) and is used for both the area and the circumference.</li>
+</ul>
+<p><b>Circumference = pi x diameter.</b> It applies only to circles, while perimeter applies to every shape.</p>
+<div class="case"><b>Rope stretchers</b>The word geometry comes from Greek words meaning "earth measuring." Ancient Egyptian surveyors, called rope stretchers, used knotted ropes to replace land markers after the Nile flooded each year.</div>
+
+<h4>Calculating area (6.3.0)</h4>
+<p><b>Area</b> is the space inside a flat shape. It is measured in <b>square</b> units: sq in (in<sup>2</sup>), sq ft (ft<sup>2</sup>), sq yd, sq cm, sq m. Carpet layers and painters work out area before ordering material.</p>
+<div class="scroll"><table>
+  <caption>Area formulas</caption>
+  <thead><tr><th>Shape</th><th>Formula</th><th>Module example</th></tr></thead>
+  <tbody>
+    <tr><td><b>Rectangle</b></td><td>length x width</td><td>20 ft x 8 ft wall = 160 ft<sup>2</sup></td></tr>
+    <tr><td><b>Square</b></td><td>side x side</td><td>12 m square room = 144 m<sup>2</sup></td></tr>
+    <tr><td><b>Circle</b></td><td>pi x radius x radius</td><td>radius 20 ft: 3.14 x 400 = 1,256 ft<sup>2</sup></td></tr>
+    <tr><td><b>Triangle</b></td><td>1/2 x base x height</td><td>base 2 ft, height 4 ft = 4 ft<sup>2</sup></td></tr>
+  </tbody>
+</table></div>
+<div class="warn"><b>Radius, not diameter</b>The circle formula uses the radius. If you are given the diameter, cut it in half first. A 14-foot-diameter circle has a 7-foot radius: 3.14 x 7 x 7 = 153.86 ft<sup>2</sup>.</div>
+<div class="case"><b>Check with diagonals</b>Before applying a sheet of sheathing, measure both diagonals. If they match, the sheet is a true rectangle.</div>
+
+<h4>Volume of three-dimensional shapes (6.4.0)</h4>
+<p><b>Volume</b> is the space inside a 3D object, in <b>cubic</b> units. Before you multiply, put every measurement in the <b>same unit</b>. A slab 4 ft x 6 ft x 6 in must use 6 in = 0.5 ft: 4 x 6 x 0.5 = 12 ft<sup>3</sup>.</p>
+<ul>
+  <li><b>Three-dimensional rectangle (6.4.1):</b> length x width x depth. A slab 50' x 40' x 6" thick: area 2,000 ft<sup>2</sup> x 0.5 ft = <b>1,000 ft<sup>3</sup></b>.</li>
+  <li><b>Cube (6.4.2):</b> side x side x side. An 8-foot cube is 512 ft<sup>3</sup>.</li>
+  <li><b>Cylinder (6.4.3):</b> pi x radius x radius x height. A tank 22 ft across (radius 11 ft) and 10 ft high: 3.14 x 121 x 10 = 3,799.4 ft<sup>3</sup>.</li>
+  <li><b>Triangular prism (6.4.4):</b> 1/2 x base x height x depth. A base of 6 cm, height of 12 cm and depth of 2 cm gives 1/2 x 6 x 12 = 36 cm<sup>2</sup>, then x 2 = 72 cm<sup>3</sup>.</li>
+</ul>
+<p>Concrete is sold in cubic yards, so divide cubic feet by 27 to convert. 512 ft<sup>3</sup> / 27 = 18.96 yd<sup>3</sup>.</p>
+<div class="case"><b>The 3-4-5 rule</b>To check that a corner is square, mark 3 units along one side and 4 units along the other. The diagonal between the marks must be exactly 5 units. Multiples work too: 9-12-15, 12-16-20 and 15-20-25.</div>
+</div>
+    </div>
+    <div class="part"><div class="part-title"><span class="letter">B</span><h3>Study review points</h3></div><ul class="points" data-points="6"></ul></div>
+    <div class="part"><div class="part-title"><span class="letter">C</span><h3>Trade-term cards</h3></div><div class="deck" data-cards="6"></div></div>
+    <div class="part"><div class="part-title"><span class="letter">D</span><h3>Ticket out the door</h3></div><div class="ticket" data-quiz="6"></div></div>
+    <div class="part"><div class="part-title"><span class="letter">E</span><h3>Talk it over</h3></div><div class="talk" data-talk="6"></div></div>
+    <div class="part"><div class="part-title"><span class="letter">F</span><h3>Practice questions</h3><span class="time">about 15 min</span></div><div data-practice="6"></div></div>
+  </section>
+
+  <section class="final" id="review" aria-labelledby="fin-h">
+    <span class="eyebrow">After all six sections</span>
+    <h2 id="fin-h">Can your student explain it?</h2>
+    <p class="lead">The goal is not perfect wording. The goal is accurate understanding and good judgment. Tick each one when your student can explain it without looking at the page.</p>
+    <ul class="points" id="final-points"></ul>
+    <p class="note">The practice questions come from the handbook's Section Review and Module Review, plus study problems and a few extra practice questions marked "answer worked from module method." The answer keys are in the textbook's Appendix A, which is not part of the module pages used to build this guide, so every answer here was worked out from the module text and is marked on each question. Check them against the publisher's key before relying on them. Questions that depend on a figure or a printed drawing are left out. The textbook-style versions are written in the book's style and vocabulary, not copied word for word, so check the handbook itself for the exact wording. The module pages were scanned and read by software, so check any number you plan to rely on against the book. Cards marked "Key term" are important words from the module. This guide is a plain-language companion, not a copy of the textbook. Draft for instructor review.</p>
+  </section>
+
+</div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><strong>Mr. Ellis CTE</strong> · East Valley Institute of Technology (EVIT), Mesa, Arizona · Your Future, Your Way</p>
+    <p>Based on NCCER Core, Module 00102, Introduction to Construction Math.</p>
+    <p>Aim for perfection, take what you get.</p>
+  </div>
+</footer>
+
+<script>
+
+(function () {
+  var POINTS = {
+ "1": [
+  "<b>Whole numbers<\/b> have no fraction or decimal part. Each digit has a place value set by its position: in 5,316,247 the 5 is five million.",
+  "<b>Positive<\/b> numbers are above zero, <b>negative<\/b> numbers are below zero, and zero is neither.",
+  "<b>Add<\/b> right to left, lining up place values, and <b>carry<\/b> a 1 when a column reaches 10 or more. The answer is the <b>sum<\/b>.",
+  "<b>Subtract<\/b> right to left and <b>borrow<\/b> 1 from the next column when the top digit is too small. The answer is the <b>difference<\/b>.",
+  "<b>Check subtraction by adding:<\/b> difference + the number subtracted = the starting number. 989 + 489 = 1,478.",
+  "<b>Multiply with partial products:<\/b> one row per digit of the bottom number, a zero placeholder for each place you move left, then add the rows. 374 x 26 = 2,244 + 7,480 = 9,724.",
+  "<b>Divide<\/b> with divide, multiply, subtract, bring down. Dividend / divisor = quotient, plus a remainder if it does not come out even. 2,638 / 24 = 109 remainder 22.",
+  "<b>Check division<\/b> by multiplying the quotient by the divisor and adding the remainder: 109 x 24 + 22 = 2,638.",
+  "<b>Order of operations (MDAS / PEMDAS):<\/b> parentheses, exponents, then multiply and divide, then add and subtract. 6 + 3 x 5 = 21, not 45.",
+  "<b>An exponent<\/b> tells how many times to multiply a number by itself. 6 squared = 36 and 6 cubed = 216.",
+  "<b>An estimate<\/b> adds materials, labor and overhead, then profit. The lowest bid usually wins the job."
+ ],
+ "2": [
+  "<b>A fraction is a division problem.<\/b> The numerator is on top and the denominator is on the bottom. When they match (8/8), the fraction equals 1.",
+  "<b>Equivalent fractions<\/b> have the same value. Make one by multiplying the top and bottom by the <b>same<\/b> number: 1/2 = 8/16.",
+  "<b>Reduce to lowest terms<\/b> by dividing top and bottom by the largest number that divides evenly into both. 4/16 = 1/4.",
+  "<b>Compare fractions<\/b> by changing them to a common denominator. 3/4 = 24/32 and 5/8 = 20/32, so 3/4 is longer.",
+  "<b>Improper fraction<\/b> (top is bigger) converts to a <b>mixed number<\/b> by dividing. 67/32 = 2 3/32.",
+  "<b>Mixed number to improper:<\/b> (denominator x whole number) + numerator, over the same denominator. 2 1/3 = 7/3.",
+  "<b>Add or subtract fractions:<\/b> common denominator, then add or subtract the numerators only. 3/4 + 5/8 = 6/8 + 5/8 = 11/8 = 1 3/8.",
+  "<b>Whole number minus a fraction:<\/b> write the whole number over 1 and change the denominator. 5 - 2/7 = 35/7 - 2/7 = 4 5/7.",
+  "<b>Multiply fractions:<\/b> top times top, bottom times bottom, then reduce. No common denominator needed. 3/4 x 7/8 = 21/32.",
+  "<b>Divide fractions:<\/b> invert the second one and multiply. 7/16 / 7/8 = 7/16 x 8/7 = 1/2.",
+  "<b>Convert mixed numbers<\/b> to improper fractions before multiplying or dividing."
+ ],
+ "3": [
+  "<b>Decimal places<\/b> to the right of the point: tenths, hundredths, thousandths and so on. With no visible point, assume one right of the ones place.",
+  "<b>Rounding:<\/b> look one place to the right. 5 or more rounds up, 4 or less stays. 212.7659574 rounds to 212.8 (nearest tenth).",
+  "<b>Compare decimals<\/b> digit by digit from the left. Add zeros so lists have the same number of places before ordering them.",
+  "<b>Add and subtract decimals<\/b> with the decimal points lined up (add zeros so the columns match).",
+  "<b>Multiply decimals:<\/b> multiply as whole numbers, then count the places to the right of the point in both numbers. 4.5 x 7 = 31.5.",
+  "<b>Divide decimals:<\/b> move the divisor's point all the way right, move the dividend's point the same number of places, and put the answer's point straight above.",
+  "<b>Decimal to percent:<\/b> multiply by 100 (point two places right) and add %. 0.12 = 12%. <b>Percent to decimal:<\/b> divide by 100. 22% = 0.22.",
+  "<b>Fraction to decimal:<\/b> divide top by bottom. 3/4 = 0.75. <b>Decimal to fraction:<\/b> say it, write it, reduce it. 0.125 = 125/1000 = 1/8.",
+  "<b>Inches to decimal feet:<\/b> inches over 12. 3 inches = 3/12 = 0.25 foot.",
+  "<b>Percent on a calculator:<\/b> use the % key or convert to a decimal first, never both. $175,000 x 0.14 = $24,500.",
+  "<b>US vs elsewhere:<\/b> the US uses a dot for the decimal point and commas for thousands. Many other countries do the opposite."
+ ],
+ "4": [
+  "<b>Start at the first marked line,<\/b> not the physical end of the ruler or tape.",
+  "<b>English rulers<\/b> divide an inch into halves, fourths, eighths and sixteenths (some show 32nds or 64ths). Reduce what you read: 4/16 = 1/4.",
+  "<b>Metric rulers:<\/b> 10 mm = 1 cm. 7 marks after the 2 cm line is 2.7 cm, or 27 mm.",
+  "<b>Red on a tape<\/b> marks 16-inch spacing (loadbearing walls). <b>Black<\/b> marks 24-inch spacing. A <b>diamond<\/b> marks 19.2 inches (special joist spacing).",
+  "<b>A 2x4 is really 1 1/2 by 3 1/2 inches.<\/b> Nominal size is the name, true size is smaller.",
+  "<b>The hook is meant to slide a little<\/b> (in for inside measurements, out for outside). It makes up for the thickness of the hook. A bent or stuck hook can cause an error up to 1/16 inch.",
+  "<b>Inside measurement:<\/b> press the case against one side, read the tape, and <b>add the length of the case<\/b>.",
+  "<b>Never let the tape snap back<\/b> into the case. Measure twice, cut once."
+ ],
+ "5": [
+  "<b>Metric works in tens.<\/b> Prefixes: milli = 1/1,000, centi = 1/100, kilo = 1,000, mega = 1,000,000.",
+  "<b>Inch-pound length:<\/b> 12 in = 1 ft, 3 ft = 1 yd, 5,280 ft = 1 mi. <b>Metric length:<\/b> 10 mm = 1 cm, 100 cm = 1 m, 1,000 m = 1 km.",
+  "<b>Metric conversion:<\/b> larger unit to smaller, move the point right. Smaller to larger, move the point left. 0.45 m = 45 cm. 72 cm = 0.72 m.",
+  "<b>Between systems:<\/b> 1 inch = 2.54 cm, 1 cm = 0.3937 in. Multiply or divide by the conversion factor.",
+  "<b>Weight (inch-pound):<\/b> 16 oz = 1 lb, 2,000 lb = 1 ton. Ounces to pounds, divide by 16. 134 oz = 8.375 lb.",
+  "<b>Weight (metric):<\/b> 1,000 mg = 1 g, 1,000 g = 1 kg. <b>Between systems:<\/b> 1 kg = 2.205 lb, 1 lb = 453.6 g, 1 oz = 28.35 g. 1,200 kg = 2,646 lb.",
+  "<b>Weight is not mass.<\/b> Weight is the force an object puts on a surface because of its mass and gravity's pull.",
+  "<b>Volume:<\/b> 1 cu ft = 1,728 cu in, 1 cu yd = 27 cu ft, 1 m<sup>3<\/sup> = 1,000,000 cm<sup>3<\/sup>. 1 cm<sup>3<\/sup> = 0.061 cu in.",
+  "<b>Temperature scales:<\/b> water freezes at 32 F, 0 C, 491.7 R, 273 K. It boils at 212 F, 100 C, 671.7 R, 373 K. Celsius covers 100 degrees between the two, Fahrenheit 180.",
+  "<b>F to C:<\/b> subtract 32, then multiply by 5/9. 77 F = 25 C. <b>C to F:<\/b> multiply by 9/5, then add 32. 90 C = 194 F.",
+  "<b>Sanity check a temperature<\/b> against freezing (32 F / 0 C) and boiling (212 F / 100 C)."
+ ],
+ "6": [
+  "<b>An angle<\/b> is two lines meeting at a vertex, measured in degrees. A full circle is 360 degrees.",
+  "<b>Angle types:<\/b> acute (under 90), right (exactly 90), obtuse (over 90, under 180), straight (180). Opposite angles are equal.",
+  "<b>Rectangle:<\/b> four 90-degree angles that add to 360. <b>Square:<\/b> a rectangle with four equal sides.",
+  "<b>Triangle angles always add to 180 degrees.<\/b> Equilateral = 3 equal sides, isosceles = 2, scalene = none.",
+  "<b>Circle parts:<\/b> circumference (around), diameter (across through the center), radius (half the diameter). Pi is about 3.14.",
+  "<b>Perimeter<\/b> is the distance around any shape. <b>Circumference<\/b> is the distance around a circle only.",
+  "<b>Area<\/b> is in square units. Rectangle = L x W. Circle = pi x r x r. Triangle = 1/2 x base x height.",
+  "<b>The circle formula uses the radius.<\/b> Cut a diameter in half first.",
+  "<b>Volume<\/b> is in cubic units. Rectangle = L x W x depth. Cube = side x side x side. Cylinder = pi x r x r x height. Triangular prism = 1/2 x base x height x depth.",
+  "<b>Convert to the same unit before you multiply.<\/b> A 6-inch slab is 0.5 foot. 50 x 40 x 0.5 = 1,000 cu ft.",
+  "<b>3-4-5 rule:<\/b> a 3-4-5 triangle (or 9-12-15, 12-16-20, 15-20-25) proves a corner is square."
+ ]
+};
+  var CARDS = {
+ "1": [
+  {
+   "k": "k",
+   "t": "Whole number",
+   "plain": "A complete number with no fraction or decimal part.",
+   "book": "A complete number unit with no fraction or decimal part.",
+   "ask": "Is 7 1/2 a whole number?"
+  },
+  {
+   "k": "k",
+   "t": "Place value",
+   "plain": "What a digit is worth because of where it sits.",
+   "book": "The value of a digit set by its position in the number.",
+   "ask": "What is the 5 worth in 5,316,247?"
+  },
+  {
+   "k": "k",
+   "t": "Sum",
+   "plain": "The answer to an addition problem.",
+   "book": "The result of adding values.",
+   "ask": "What is the sum of 723 and 84?"
+  },
+  {
+   "k": "k",
+   "t": "Difference",
+   "plain": "The answer to a subtraction problem.",
+   "book": "The result of subtracting.",
+   "ask": "How can you check a difference?"
+  },
+  {
+   "k": "k",
+   "t": "Product",
+   "plain": "The answer to a multiplication problem.",
+   "book": "The result of multiplying.",
+   "ask": "What is the product of 15 and 26?"
+  },
+  {
+   "k": "k",
+   "t": "Dividend / divisor / quotient",
+   "plain": "The number being split, the number you split by, and the answer.",
+   "book": "In 15 / 3 = 5, the dividend is 15, the divisor is 3 and the quotient is 5.",
+   "ask": "Name each part of 2,638 / 24."
+  },
+  {
+   "k": "k",
+   "t": "Remainder",
+   "plain": "What is left over when a division does not come out even.",
+   "book": "The amount left over when the divisor does not go in evenly.",
+   "ask": "What is the remainder in 10 / 3?"
+  },
+  {
+   "k": "k",
+   "t": "MDAS / PEMDAS",
+   "plain": "The order to work a math problem so everyone gets the same answer.",
+   "book": "Parentheses, exponents, multiply, divide, add, subtract.",
+   "ask": "What is 6 + 3 x 5?"
+  },
+  {
+   "k": "k",
+   "t": "Exponent",
+   "plain": "A small raised number that says how many times to multiply a number by itself.",
+   "book": "6 squared is 6 x 6 = 36.",
+   "ask": "What is 6 cubed?"
+  },
+  {
+   "k": "k",
+   "t": "Course (masonry)",
+   "plain": "One row of block or brick in a wall.",
+   "book": "A row of masonry units. A 15-course wall of 8-inch block is 120 inches tall.",
+   "ask": "How tall is a 10-course wall of 8-inch block?"
+  }
+ ],
+ "2": [
+  {
+   "k": "k",
+   "t": "Numerator and denominator",
+   "plain": "The top and bottom numbers of a fraction.",
+   "book": "The numerator is the top number (the dividend). The denominator is the bottom number (the divisor).",
+   "ask": "Which one is the number of equal parts?"
+  },
+  {
+   "k": "k",
+   "t": "Equivalent fractions",
+   "plain": "Fractions that look different but are the same amount.",
+   "book": "Fractions with different numbers but the same value, such as 1/2, 2/4 and 4/8.",
+   "ask": "How do you make one?"
+  },
+  {
+   "k": "k",
+   "t": "Lowest terms",
+   "plain": "A fraction reduced as far as it can go.",
+   "book": "Top and bottom share no divisor except 1.",
+   "ask": "Reduce 4/16."
+  },
+  {
+   "k": "k",
+   "t": "Common denominator",
+   "plain": "A shared bottom number so fractions can be compared or added.",
+   "book": "A denominator that two or more fractions can both be changed to.",
+   "ask": "What common denominator works for 3/4 and 5/8?"
+  },
+  {
+   "k": "k",
+   "t": "Improper fraction",
+   "plain": "A fraction with a top number larger than the bottom.",
+   "book": "A fraction whose numerator is larger than its denominator, like 67/32.",
+   "ask": "Turn 67/32 into a mixed number."
+  },
+  {
+   "k": "k",
+   "t": "Mixed number",
+   "plain": "A whole number and a fraction together.",
+   "book": "A whole number plus a fraction, like 2 3/32.",
+   "ask": "Turn 2 1/3 into an improper fraction."
+  },
+  {
+   "k": "k",
+   "t": "Invert",
+   "plain": "Flip a fraction upside down.",
+   "book": "Swap the numerator and denominator before multiplying in a division problem.",
+   "ask": "What do you do to 7/8 to divide by it?"
+  },
+  {
+   "k": "k",
+   "t": "Nominal size",
+   "plain": "The name size of lumber or block, not its true size.",
+   "book": "The stated size. A so-called 8 x 8 x 16 block really measures 7 5/8 x 7 5/8 x 15 5/8 inches.",
+   "ask": "Why is a block smaller than its name?"
+  }
+ ],
+ "3": [
+  {
+   "k": "k",
+   "t": "Decimal",
+   "plain": "A number with a decimal point.",
+   "book": "Digits right of the point are parts of 1, so decimals are also called decimal fractions.",
+   "ask": "What does a digit right of the point mean?"
+  },
+  {
+   "k": "k",
+   "t": "Tenths, hundredths, thousandths",
+   "plain": "The first three places right of the decimal point.",
+   "book": "Place values to the right of the point.",
+   "ask": "Say 0.56 aloud."
+  },
+  {
+   "k": "k",
+   "t": "Rounding",
+   "plain": "Trimming a number to a place and picking the closer value.",
+   "book": "If the next digit is 5 or more, round up. If 4 or less, leave it.",
+   "ask": "Round 212.7659574 to the nearest tenth."
+  },
+  {
+   "k": "k",
+   "t": "Percentage",
+   "plain": "A part out of 100.",
+   "book": "A quantity based on 100 parts. 0.25 = 25% = 1/4.",
+   "ask": "What decimal is 22%?"
+  },
+  {
+   "k": "k",
+   "t": "Overhead",
+   "plain": "The cost of keeping the business running.",
+   "book": "Indirect costs: insurance, office staff, marketing, property taxes.",
+   "ask": "Name one overhead cost."
+  },
+  {
+   "k": "k",
+   "t": "Direct cost",
+   "plain": "A cost tied to one specific job.",
+   "book": "Materials, crew labor, subcontractors.",
+   "ask": "Is a crane rental for this job a direct cost?"
+  },
+  {
+   "k": "k",
+   "t": "Profit",
+   "plain": "What is left after all the costs.",
+   "book": "The share of the price left after overhead, materials and labor.",
+   "ask": "If costs are 86%, what is the profit percent?"
+  }
+ ],
+ "4": [
+  {
+   "k": "k",
+   "t": "English ruler",
+   "plain": "A ruler marked in inches and fractions of an inch.",
+   "book": "Divides each inch into halves, fourths, eighths and sixteenths.",
+   "ask": "What is 8/16 reduced?"
+  },
+  {
+   "k": "k",
+   "t": "Metric ruler",
+   "plain": "A ruler marked in centimeters and millimeters.",
+   "book": "10 millimeters make 1 centimeter.",
+   "ask": "How many mm in 2.7 cm?"
+  },
+  {
+   "k": "k",
+   "t": "Loadbearing wall",
+   "plain": "A wall that holds weight above it.",
+   "book": "Studs are most commonly spaced 16 inches on center. The red tape marks show this.",
+   "ask": "What do red marks on a tape show?"
+  },
+  {
+   "k": "k",
+   "t": "Joist",
+   "plain": "A horizontal framing member that supports a floor or ceiling.",
+   "book": "Some special joists use 19.2-inch spacing, marked by a diamond on the tape.",
+   "ask": "What marks 19.2 inches?"
+  },
+  {
+   "k": "k",
+   "t": "Stud",
+   "plain": "A vertical framing member in a wall.",
+   "book": "Studs on 16-inch centers are 16 inches from the same side of one to the next.",
+   "ask": "How far apart are studs on 24-inch centers?"
+  },
+  {
+   "k": "k",
+   "t": "Standout",
+   "plain": "How far a tape reaches before it bends.",
+   "book": "The distance the blade extends without bending.",
+   "ask": "Why does a tape curve?"
+  },
+  {
+   "k": "k",
+   "t": "Hook slide",
+   "plain": "The small play in a tape's end hook.",
+   "book": "It slides slightly to account for the hook's thickness. Binding can cause about a 1/16 inch error.",
+   "ask": "Should you tighten a slightly loose hook?"
+  }
+ ],
+ "5": [
+  {
+   "k": "k",
+   "t": "Unit",
+   "plain": "The name that tells what a number counts.",
+   "book": "A measurement needs a unit. A number alone is not a measurement.",
+   "ask": "Why is '12' not a measurement?"
+  },
+  {
+   "k": "k",
+   "t": "Prefix (metric)",
+   "plain": "A word piece that changes a unit by a power of ten.",
+   "book": "Milli = 0.001, centi = 0.01, kilo = 1,000, mega = 1,000,000.",
+   "ask": "How many meters in a kilometer?"
+  },
+  {
+   "k": "k",
+   "t": "Weight",
+   "plain": "How hard something pushes down because of gravity.",
+   "book": "The force an object puts on a surface due to its mass and the pull of Earth's gravity.",
+   "ask": "Is weight the same as mass?"
+  },
+  {
+   "k": "k",
+   "t": "Mass",
+   "plain": "How much matter something has.",
+   "book": "The quantity of matter present.",
+   "ask": "Does mass change on the moon?"
+  },
+  {
+   "k": "k",
+   "t": "Volume",
+   "plain": "The space inside a 3D object.",
+   "book": "Measured in cubic units.",
+   "ask": "What unit is a cubic yard of concrete?"
+  },
+  {
+   "k": "k",
+   "t": "Cube",
+   "plain": "A shape with all sides the same length.",
+   "book": "A cube 1 inch on each side has a volume of 1 cubic inch.",
+   "ask": "How many cubic inches in a cubic foot?"
+  },
+  {
+   "k": "k",
+   "t": "Absolute zero",
+   "plain": "The coldest possible temperature.",
+   "book": "Where atoms and molecules barely move. Rankine and Kelvin start here.",
+   "ask": "What scales start at absolute zero?"
+  },
+  {
+   "k": "k",
+   "t": "Fahrenheit and Celsius",
+   "plain": "The two temperature scales most crafts use.",
+   "book": "Water freezes at 32 F or 0 C and boils at 212 F or 100 C.",
+   "ask": "Which scale is metric?"
+  },
+  {
+   "k": "k",
+   "t": "Conversion factor",
+   "plain": "A number you multiply or divide by to change units.",
+   "book": "Example: 1 inch = 2.54 cm.",
+   "ask": "Which way do you go to change inches to cm?"
+  }
+ ],
+ "6": [
+  {
+   "k": "k",
+   "t": "Plane geometry",
+   "plain": "The study of flat shapes.",
+   "book": "Two-dimensional shapes with length and width.",
+   "ask": "Is a rectangle plane or solid?"
+  },
+  {
+   "k": "k",
+   "t": "Solid geometry",
+   "plain": "The study of 3D shapes.",
+   "book": "Shapes with length, width and height.",
+   "ask": "Name a solid shape."
+  },
+  {
+   "k": "k",
+   "t": "Vertex",
+   "plain": "The point where two lines of an angle meet.",
+   "book": "The corner point of an angle.",
+   "ask": "How many vertices does a triangle have?"
+  },
+  {
+   "k": "k",
+   "t": "Right angle",
+   "plain": "An exact 90 degree corner.",
+   "book": "Marked with a small square. Two perpendicular lines make one.",
+   "ask": "Where do you use right angles on a job?"
+  },
+  {
+   "k": "k",
+   "t": "Acute / obtuse",
+   "plain": "Smaller than 90 degrees / bigger than 90 degrees.",
+   "book": "Acute is under 90. Obtuse is over 90 and under 180.",
+   "ask": "What kind of angle is 66 degrees?"
+  },
+  {
+   "k": "k",
+   "t": "Diagonal",
+   "plain": "A line from one corner to the opposite corner.",
+   "book": "A rectangle's two diagonals are equal.",
+   "ask": "How does a diagonal check a sheet of plywood?"
+  },
+  {
+   "k": "k",
+   "t": "Circumference",
+   "plain": "The distance around a circle.",
+   "book": "Pi x diameter.",
+   "ask": "Is it the same as perimeter?"
+  },
+  {
+   "k": "k",
+   "t": "Radius and diameter",
+   "plain": "Center to edge, and edge to edge through the center.",
+   "book": "The radius is half the diameter.",
+   "ask": "If the diameter is 14 feet, what is the radius?"
+  },
+  {
+   "k": "k",
+   "t": "Pi",
+   "plain": "The number about 3.14 for every circle.",
+   "book": "The relationship of a circle's circumference to its diameter. It never ends or repeats.",
+   "ask": "What is pi used for?"
+  },
+  {
+   "k": "k",
+   "t": "Area",
+   "plain": "The space inside a flat shape.",
+   "book": "Measured in square units.",
+   "ask": "What is the area of a 20 x 8 wall?"
+  },
+  {
+   "k": "k",
+   "t": "Perimeter",
+   "plain": "The distance around a shape.",
+   "book": "For a rectangle, (2 x length) + (2 x width).",
+   "ask": "How much molding does a 14 x 12 room need?"
+  }
+ ]
+};
+  var QUIZ = {
+ "1": [
+  {
+   "q": "In 5,316,247, what is the 5 worth?",
+   "o": [
+    "Five thousand",
+    "Five million",
+    "Five hundred thousand"
+   ],
+   "a": 1,
+   "why": "It is in the millions place."
+  },
+  {
+   "q": "What is 6 + 3 x 5?",
+   "o": [
+    "45",
+    "21",
+    "30"
+   ],
+   "a": 1,
+   "why": "Multiply first: 3 x 5 = 15, then add 6."
+  },
+  {
+   "q": "When a column adds to 10 or more, you...",
+   "o": [
+    "Carry",
+    "Borrow",
+    "Ignore it"
+   ],
+   "a": 0,
+   "why": "Write the ones digit and carry the 1."
+  },
+  {
+   "q": "374 x 26 equals...",
+   "o": [
+    "2,244",
+    "7,480",
+    "9,724"
+   ],
+   "a": 2,
+   "why": "2,244 + 7,480 = 9,724."
+  },
+  {
+   "q": "2,638 divided by 24 is...",
+   "o": [
+    "109 remainder 22",
+    "110 remainder 2",
+    "90 remainder 478"
+   ],
+   "a": 0,
+   "why": "109 x 24 + 22 = 2,638."
+  },
+  {
+   "q": "How do you check a subtraction?",
+   "o": [
+    "Subtract again",
+    "Add the difference to the number subtracted",
+    "Multiply"
+   ],
+   "a": 1,
+   "why": "You should get the starting number."
+  }
+ ],
+ "2": [
+  {
+   "q": "Which fraction equals 1/2?",
+   "o": [
+    "17/32",
+    "32/64",
+    "3/4"
+   ],
+   "a": 1,
+   "why": "Multiply top and bottom of 1/2 by 32."
+  },
+  {
+   "q": "Reduce 4/16.",
+   "o": [
+    "1/2",
+    "1/4",
+    "2/4"
+   ],
+   "a": 1,
+   "why": "Divide top and bottom by 4."
+  },
+  {
+   "q": "67/32 as a mixed number is...",
+   "o": [
+    "2 3/32",
+    "1 35/32",
+    "3 2/32"
+   ],
+   "a": 0,
+   "why": "32 goes into 67 twice with 3 left."
+  },
+  {
+   "q": "3/4 + 5/8 =",
+   "o": [
+    "8/12",
+    "1 3/8",
+    "8/8"
+   ],
+   "a": 1,
+   "why": "6/8 + 5/8 = 11/8 = 1 3/8."
+  },
+  {
+   "q": "3/4 x 7/8 =",
+   "o": [
+    "21/32",
+    "10/12",
+    "10/32"
+   ],
+   "a": 0,
+   "why": "Top times top, bottom times bottom."
+  },
+  {
+   "q": "To divide by a fraction you...",
+   "o": [
+    "Invert it and multiply",
+    "Add the denominators",
+    "Find a common denominator"
+   ],
+   "a": 0,
+   "why": "Flip the second fraction, then multiply."
+  }
+ ],
+ "3": [
+  {
+   "q": "Round 212.7659574 to the nearest tenth.",
+   "o": [
+    "212.7",
+    "212.8",
+    "213"
+   ],
+   "a": 1,
+   "why": "The next digit is 6, so round up."
+  },
+  {
+   "q": "In 135.792, the 9 is in the...",
+   "o": [
+    "Tenths place",
+    "Hundredths place",
+    "Ones place"
+   ],
+   "a": 0,
+   "why": "First place right of the point."
+  },
+  {
+   "q": "0.12 as a percent is...",
+   "o": [
+    "0.12%",
+    "1.2%",
+    "12%"
+   ],
+   "a": 2,
+   "why": "Move the point two places right."
+  },
+  {
+   "q": "3/4 as a decimal is...",
+   "o": [
+    "0.34",
+    "0.75",
+    "0.43"
+   ],
+   "a": 1,
+   "why": "3 divided by 4."
+  },
+  {
+   "q": "4.5 x 7 =",
+   "o": [
+    "3.15",
+    "31.5",
+    "315"
+   ],
+   "a": 1,
+   "why": "One decimal place in the answer."
+  },
+  {
+   "q": "0.125 as a fraction in lowest terms is...",
+   "o": [
+    "1/8",
+    "1/4",
+    "125/10"
+   ],
+   "a": 0,
+   "why": "125/1000 reduces to 1/8."
+  }
+ ],
+ "4": [
+  {
+   "q": "Where should you start reading a ruler?",
+   "o": [
+    "The physical end",
+    "The first marked line",
+    "The 1 inch mark"
+   ],
+   "a": 1,
+   "why": "Ends can be worn or have extra material."
+  },
+  {
+   "q": "How many millimeters in 1 centimeter?",
+   "o": [
+    "10",
+    "100",
+    "1,000"
+   ],
+   "a": 0,
+   "why": "Metric works in tens."
+  },
+  {
+   "q": "Which tape mark shows 16-inch spacing?",
+   "o": [
+    "Black background",
+    "Red background",
+    "Diamond"
+   ],
+   "a": 1,
+   "why": "Red = 16 inches, black = 24 inches, diamond = 19.2 inches."
+  },
+  {
+   "q": "A 2x4 really measures about...",
+   "o": [
+    "2 by 4",
+    "1 1/2 by 3 1/2",
+    "1 by 3"
+   ],
+   "a": 1,
+   "why": "Nominal size is bigger than true size."
+  },
+  {
+   "q": "For an inside measurement you must...",
+   "o": [
+    "Subtract the case length",
+    "Add the case length",
+    "Ignore the case"
+   ],
+   "a": 1,
+   "why": "The case length is stamped on the tape."
+  },
+  {
+   "q": "A slightly loose tape hook should be...",
+   "o": [
+    "Left alone",
+    "Hammered tight",
+    "Glued"
+   ],
+   "a": 0,
+   "why": "It is designed to slide."
+  }
+ ],
+ "5": [
+  {
+   "q": "How many cubic feet in one cubic yard?",
+   "o": [
+    "9",
+    "27",
+    "36"
+   ],
+   "a": 1,
+   "why": "3 x 3 x 3."
+  },
+  {
+   "q": "134 ounces equals how many pounds?",
+   "o": [
+    "8.375",
+    "12.5",
+    "2,144"
+   ],
+   "a": 0,
+   "why": "Divide by 16."
+  },
+  {
+   "q": "1 inch equals how many centimeters?",
+   "o": [
+    "0.3937",
+    "2.54",
+    "25.4"
+   ],
+   "a": 1,
+   "why": "1 in = 2.54 cm."
+  },
+  {
+   "q": "77 F in Celsius is...",
+   "o": [
+    "45 C",
+    "25 C",
+    "170.6 C"
+   ],
+   "a": 1,
+   "why": "77 - 32 = 45, then x 5/9 = 25."
+  },
+  {
+   "q": "0.45 m in centimeters is...",
+   "o": [
+    "4.5 cm",
+    "45 cm",
+    "450 cm"
+   ],
+   "a": 1,
+   "why": "Meters to centimeters: move the point right two places."
+  },
+  {
+   "q": "The metric system can be called a...",
+   "o": [
+    "Base-10 system",
+    "Base-100 system",
+    "Open-ended system"
+   ],
+   "a": 0,
+   "why": "Everything scales by tens."
+  }
+ ],
+ "6": [
+  {
+   "q": "An angle of 66 degrees is...",
+   "o": [
+    "Right",
+    "Obtuse",
+    "Acute"
+   ],
+   "a": 2,
+   "why": "Under 90 degrees."
+  },
+  {
+   "q": "The angles in a triangle add up to...",
+   "o": [
+    "90",
+    "180",
+    "360"
+   ],
+   "a": 1,
+   "why": "Always 180 degrees."
+  },
+  {
+   "q": "Area of a 20 ft by 8 ft wall?",
+   "o": [
+    "56 sq ft",
+    "160 sq ft",
+    "28 sq ft"
+   ],
+   "a": 1,
+   "why": "Length x width."
+  },
+  {
+   "q": "A circle's area formula uses the...",
+   "o": [
+    "Radius",
+    "Diameter",
+    "Circumference"
+   ],
+   "a": 0,
+   "why": "Pi x radius x radius."
+  },
+  {
+   "q": "A 3-4-5 triangle's long side is...",
+   "o": [
+    "5",
+    "6",
+    "7"
+   ],
+   "a": 0,
+   "why": "3-4-5 gives a right angle."
+  },
+  {
+   "q": "A 50 x 40 ft slab, 6 inches thick, has what volume?",
+   "o": [
+    "1,000 cu ft",
+    "2,000 cu ft",
+    "12,000 cu ft"
+   ],
+   "a": 0,
+   "why": "6 in = 0.5 ft, so 2,000 x 0.5."
+  }
+ ]
+};
+  var TALK = {
+ "1": {
+  "qs": [
+   "Why does the order of operations matter?",
+   "How do you check that a long division answer is right?",
+   "Where might a craftworker use multiplication on the job?",
+   "Why would a contractor care about overhead when making an estimate?"
+  ],
+  "scn": [
+   {
+    "t": "Adding first",
+    "s": "A student works 6 + 3 x 5 and gets 45. What went wrong?",
+    "g": [
+     "They added before multiplying.",
+     "Multiplication comes first: 3 x 5 = 15.",
+     "Then 6 + 15 = 21."
+    ]
+   },
+   {
+    "t": "Scaffolds to sites",
+    "s": "A worker delivers 15 scaffolds to each of 26 sites. How would you work out the total by hand?",
+    "g": [
+     "Multiply 15 by 6, then 15 by 20, and add the rows.",
+     "15 x 26 = 390.",
+     "Estimate to check: 15 x 25 is about 375."
+    ]
+   }
+  ],
+  "parent": "Ask your student to work 374 x 26 on paper and explain each row."
+ },
+ "2": {
+  "qs": [
+   "What makes two fractions equivalent?",
+   "Why must the denominators match to add fractions but not to multiply them?",
+   "How do you convert an improper fraction to a mixed number?",
+   "Where do you see fractions on a tape measure?"
+  ],
+  "scn": [
+   {
+    "t": "Two boards",
+    "s": "One board is 3/4 inch and another is 5/8 inch. Which is thicker, and how do you know?",
+    "g": [
+     "Change to a common denominator: 6/8 and 5/8.",
+     "3/4 is thicker.",
+     "Same denominators let you compare numerators."
+    ]
+   },
+   {
+    "t": "Cutting strips",
+    "s": "How many 7/8 inch strips can be cut from a 7 inch strip?",
+    "g": [
+     "Divide: 7 / 7/8.",
+     "Invert and multiply: 7 x 8/7.",
+     "The answer is 8 strips."
+    ]
+   }
+  ],
+  "parent": "Ask your student to add 3/4 and 5/8 and show every step."
+ },
+ "3": {
+  "qs": [
+   "How do decimals and money relate?",
+   "Why do you line up the decimal points when adding?",
+   "When would you round up and when down?",
+   "How do you change a fraction into a decimal?"
+  ],
+  "scn": [
+   {
+    "t": "Tubing budget",
+    "s": "Tubing costs 3.76 euros per meter and the budget is 800 euros. How much can you buy?",
+    "g": [
+     "800 / 3.76 = 212.7659574.",
+     "Round to the nearest tenth: 212.8 meters.",
+     "The supplier will not sell 0.7659574 of a meter."
+    ]
+   },
+   {
+    "t": "Profit percent",
+    "s": "A $175,000 house has costs of 86 percent. What is the profit?",
+    "g": [
+     "Profit is 14 percent.",
+     "$175,000 x 0.14 = $24,500.",
+     "Use the % key or the decimal, never both."
+    ]
+   }
+  ],
+  "parent": "Ask your student to turn 0.125 into a fraction and explain how."
+ },
+ "4": {
+  "qs": [
+   "Why start at the first line instead of the end of the ruler?",
+   "What do the red marks on a tape measure mean?",
+   "Why is a 2x4 not 2 inches by 4 inches?",
+   "How do you take an inside measurement?"
+  ],
+  "scn": [
+   {
+    "t": "Shelf between walls",
+    "s": "A worker reads 24 3/4 inches on the tape with the case against one wall. The case is 3 inches long. How wide is the space?",
+    "g": [
+     "Add the case length.",
+     "24 3/4 + 3 = 27 3/4 inches.",
+     "Measure twice."
+    ]
+   },
+   {
+    "t": "The loose hook",
+    "s": "A coworker wants to hammer the hook rivets tight. What is the right response?",
+    "g": [
+     "The hook is meant to slide a little.",
+     "A tight hook gives wrong inside and outside readings.",
+     "Replace the tape only if it is bent or damaged."
+    ]
+   }
+  ],
+  "parent": "Ask your student to explain what the red, black and diamond marks on a tape show."
+ },
+ "5": {
+  "qs": [
+   "Why is metric easier to convert than inch-pound?",
+   "What is the difference between weight and mass?",
+   "Which way do you move the decimal to change meters to centimeters?",
+   "How do you keep the 32 straight in a temperature formula?"
+  ],
+  "scn": [
+   {
+    "t": "Crane load",
+    "s": "A crane load weighs 1,200 kg. What rating do the slings need in pounds?",
+    "g": [
+     "1 kg = 2.205 lb.",
+     "1,200 x 2.205 = 2,646 lb.",
+     "Rated above 2,646 lb."
+    ]
+   },
+   {
+    "t": "Hot day",
+    "s": "A thermometer reads 90 C. What is that in Fahrenheit?",
+    "g": [
+     "Multiply by 9/5: 162.",
+     "Add 32: 194 F.",
+     "Check: boiling is 100 C = 212 F, so 90 C should be a bit below it."
+    ]
+   }
+  ],
+  "parent": "Ask your student to convert 77 F to Celsius and explain the order of the steps."
+ },
+ "6": {
+  "qs": [
+   "Why is the circle formula about the radius and not the diameter?",
+   "What is the difference between perimeter and circumference?",
+   "Why convert to the same unit before computing volume?",
+   "How does the 3-4-5 rule prove a corner is square?"
+  ],
+  "scn": [
+   {
+    "t": "Round tank",
+    "s": "A tank is 22 feet across and 10 feet tall. How would you find its volume?",
+    "g": [
+     "Radius is 11 feet.",
+     "Pi x 11 x 11 x 10 = 3,799.4 cu ft.",
+     "Divide by 27 for cubic yards."
+    ]
+   },
+   {
+    "t": "The slab",
+    "s": "A slab is 50 ft by 40 ft and 6 inches thick. How do you find its volume?",
+    "g": [
+     "Change 6 inches to 0.5 foot.",
+     "50 x 40 x 0.5 = 1,000 cu ft.",
+     "Divide by 27 to order concrete in cubic yards."
+    ]
+   }
+  ],
+  "parent": "Ask your student to explain why a circle's area uses the radius, with an example."
+ }
+};
+  var FINAL = [
+ "I can read and write whole numbers and add, subtract, multiply and divide them by hand.",
+ "I can use the order of operations.",
+ "I can find equivalent fractions, reduce fractions and convert improper fractions.",
+ "I can add, subtract, multiply and divide fractions.",
+ "I can read, round and compare decimals.",
+ "I can add, subtract, multiply and divide decimals.",
+ "I can convert between decimals, fractions and percentages.",
+ "I can read English and metric rulers and tape measures.",
+ "I can explain the red, black and diamond marks on a tape.",
+ "I can use a tape measure, including inside measurements.",
+ "I can name common length, weight and volume units in both systems.",
+ "I can convert units by moving the decimal point or using a conversion factor.",
+ "I can convert Fahrenheit and Celsius temperatures.",
+ "I can name angle types and basic shapes.",
+ "I can calculate perimeter and area.",
+ "I can calculate volume, converting units first."
+];
+  var PRACTICE = {
+ "1": [
+  {
+   "src": "Section Review 1.0.0 · Q1 · answer from module text",
+   "a": 3,
+   "pq": "In 92,475, which digit is in the ten-thousands place?",
+   "po": [
+    "2",
+    "4",
+    "7",
+    "9"
+   ],
+   "tq": "Given the number 92,475, which digit is in the ten-thousands place value column?",
+   "to": [
+    "2",
+    "4",
+    "7",
+    "9"
+   ],
+   "why": "Ones 5, tens 7, hundreds 4, thousands 2, ten-thousands 9.",
+   "br": [
+    [
+     "Which digit",
+     "Which digit is in the ... column"
+    ]
+   ]
+  },
+  {
+   "src": "Module Review · Q1 · answer from module text",
+   "a": 1,
+   "pq": "How do you write 'two thousand, six hundred eighty-nine'?",
+   "po": [
+    "2,286",
+    "2,689",
+    "6,289",
+    "20,689"
+   ],
+   "tq": "The number matching the words 'two thousand, six hundred eighty-nine' is _____.",
+   "to": [
+    "2,286",
+    "2,689",
+    "6,289",
+    "20,689"
+   ],
+   "why": "Two thousand = 2,000, six hundred = 600, eighty-nine = 89.",
+   "br": [
+    [
+     "How do you write",
+     "The number matching the words"
+    ]
+   ]
+  },
+  {
+   "src": "Module Review · Q2 · answer from module text",
+   "a": 0,
+   "pq": "A bricklayer lays 649, 632 and 478 bricks over three days. How many in all?",
+   "po": [
+    "1,759",
+    "1,760",
+    "1,769",
+    "1,770"
+   ],
+   "tq": "A bricklayer lays 649 bricks the first day, 632 the second day, and 478 the third day. Without using a calculator, determine how many bricks the worker laid during the three-day period.",
+   "to": [
+    "1,759",
+    "1,760",
+    "1,769",
+    "1,770"
+   ],
+   "why": "649 + 632 = 1,281, and 1,281 + 478 = 1,759.",
+   "br": [
+    [
+     "How many in all",
+     "how many bricks ... during the three-day period"
+    ]
+   ]
+  },
+  {
+   "src": "Module Review · Q3 · answer from module text",
+   "a": 2,
+   "pq": "1,478 feet of cable arrived and 489 feet were installed. How much is left?",
+   "po": [
+    "978",
+    "980",
+    "989",
+    "1,099"
+   ],
+   "tq": "A supplier delivered a total of 1,478 feet of electrical cable for a job. Due to a delay, the electricians installed only 489 feet. Without using a calculator, determine how many feet of cable remain.",
+   "to": [
+    "978",
+    "980",
+    "989",
+    "1,099"
+   ],
+   "why": "1,478 - 489 = 989. Check: 989 + 489 = 1,478.",
+   "br": [
+    [
+     "How much is left",
+     "how many feet of cable remain"
+    ]
+   ]
+  },
+  {
+   "src": "Module Review · Q4 · answer from module text",
+   "a": 3,
+   "pq": "A worker delivers 15 scaffolds to each of 26 sites. How many scaffolds in all?",
+   "po": [
+    "120",
+    "240",
+    "325",
+    "390"
+   ],
+   "tq": "A worker has been asked to deliver 15 scaffolds to each of 26 different sites. Without using a calculator, determine how many scaffolds the worker will deliver.",
+   "to": [
+    "120",
+    "240",
+    "325",
+    "390"
+   ],
+   "why": "15 x 26 = 390.",
+   "br": [
+    [
+     "How many scaffolds in all",
+     "how many scaffolds the worker will deliver"
+    ]
+   ]
+  },
+  {
+   "src": "Module Review · Q5 · answer from module text",
+   "a": 2,
+   "pq": "400 rolls of insulation are split equally among 5 sites. How many go to each?",
+   "po": [
+    "8",
+    "20",
+    "80",
+    "208"
+   ],
+   "tq": "An insulating company has 400 rolls of insulation that must be equally distributed to 5 different job sites. Without using a calculator, determine how many rolls of insulation will go to each site.",
+   "to": [
+    "8",
+    "20",
+    "80",
+    "208"
+   ],
+   "why": "400 / 5 = 80.",
+   "br": [
+    [
+     "split equally",
+     "equally distributed"
+    ]
+   ]
+  },
+  {
+   "src": "Extra practice · 1.3.0 multiplying · answer worked from module method",
+   "a": 2,
+   "pq": "What is 374 x 26?",
+   "po": [
+    "2,244",
+    "7,480",
+    "9,724",
+    "9,744"
+   ],
+   "tq": "Multiply using partial products: 374 x 26 = _____.",
+   "to": [
+    "2,244",
+    "7,480",
+    "9,724",
+    "9,744"
+   ],
+   "why": "374 x 6 = 2,244 and 374 x 20 = 7,480. Add: 9,724.",
+   "br": [
+    [
+     "What is 374 x 26",
+     "Multiply using partial products"
+    ]
+   ]
+  },
+  {
+   "src": "Extra practice · 1.3.0 dividing · answer worked from module method",
+   "a": 0,
+   "pq": "What is 2,638 divided by 24?",
+   "po": [
+    "109 remainder 22",
+    "110 remainder 2",
+    "109 remainder 2",
+    "99 remainder 262"
+   ],
+   "tq": "Perform long division: 2,638 / 24 = _____.",
+   "to": [
+    "109 r 22",
+    "110 r 2",
+    "109 r 2",
+    "99 r 262"
+   ],
+   "why": "24 x 109 = 2,616, and 2,638 - 2,616 = 22.",
+   "br": [
+    [
+     "divided by",
+     "dividend / divisor"
+    ]
+   ]
+  },
+  {
+   "src": "Extra practice · 1.3.1 order of operations · answer worked from module method",
+   "a": 1,
+   "pq": "What is 6 + 3 x 5?",
+   "po": [
+    "45",
+    "21",
+    "33",
+    "18"
+   ],
+   "tq": "Using the order of operations, 6 + 3 x 5 = _____.",
+   "to": [
+    "45",
+    "21",
+    "33",
+    "18"
+   ],
+   "why": "Multiply first (15), then add 6.",
+   "br": [
+    [
+     "What is",
+     "Using the order of operations"
+    ]
+   ]
+  }
+ ],
+ "2": [
+  {
+   "src": "Section Review 2.0.0 · Q1 · answer from module text",
+   "a": 1,
+   "pq": "Which pair of fractions is equal?",
+   "po": [
+    "1/2 and 17/32",
+    "1/2 and 32/64",
+    "1/2 and 3/4",
+    "1/2 and 63/128"
+   ],
+   "tq": "Which of the following fraction pairs are equivalent fractions?",
+   "to": [
+    "1/2 and 17/32",
+    "1/2 and 32/64",
+    "1/2 and 3/4",
+    "1/2 and 63/128"
+   ],
+   "why": "32/64 reduces to 1/2.",
+   "br": [
+    [
+     "equal",
+     "equivalent fractions"
+    ]
+   ]
+  },
+  {
+   "src": "Section Review 2.0.0 · Q2 · answer from module text",
+   "a": 1,
+   "pq": "True or false: 76/64 equals 1 9/32.",
+   "po": [
+    "True",
+    "False"
+   ],
+   "tq": "The improper fraction 76/64 converts to the mixed number 1 9/32.",
+   "to": [
+    "True",
+    "False"
+   ],
+   "why": "76/64 = 1 12/64 = 1 3/16, so the statement is false.",
+   "br": [
+    [
+     "equals",
+     "converts to"
+    ]
+   ]
+  },
+  {
+   "src": "Section Review 2.0.0 · Q3 · answer from module text",
+   "a": 3,
+   "pq": "What is 11/16 + 3/8?",
+   "po": [
+    "9/16",
+    "7/8",
+    "11/16",
+    "1 1/16"
+   ],
+   "tq": "11/16 + 3/8 = _____.",
+   "to": [
+    "9/16",
+    "7/8",
+    "11/16",
+    "1 1/16"
+   ],
+   "why": "3/8 = 6/16. 11/16 + 6/16 = 17/16 = 1 1/16.",
+   "br": [
+    [
+     "What is",
+     "= _____"
+    ]
+   ]
+  },
+  {
+   "src": "Section Review 2.0.0 · Q4 · answer from module text",
+   "a": 3,
+   "pq": "What is 1 1/4 - 7/16?",
+   "po": [
+    "5/16",
+    "5/8",
+    "3/4",
+    "13/16"
+   ],
+   "tq": "1 1/4 - 7/16 = _____.",
+   "to": [
+    "5/16",
+    "5/8",
+    "3/4",
+    "13/16"
+   ],
+   "why": "1 1/4 = 20/16. 20/16 - 7/16 = 13/16.",
+   "br": [
+    [
+     "What is",
+     "= _____"
+    ]
+   ]
+  },
+  {
+   "src": "Section Review 2.0.0 · Q5 · answer from module text",
+   "a": 0,
+   "pq": "What is 1/8 x 1/10?",
+   "po": [
+    "1/80",
+    "1/40",
+    "4/5",
+    "1 1/4"
+   ],
+   "tq": "1/8 x 1/10 = _____.",
+   "to": [
+    "1/80",
+    "1/40",
+    "4/5",
+    "1 1/4"
+   ],
+   "why": "1 x 1 = 1 on top. 8 x 10 = 80 on the bottom.",
+   "br": [
+    [
+     "What is",
+     "= _____"
+    ]
+   ]
+  },
+  {
+   "src": "Section Review 2.0.0 · Q6 · answer from module text",
+   "a": 2,
+   "pq": "What is 7/16 divided by 7/8?",
+   "po": [
+    "49/128",
+    "3/8",
+    "1/2",
+    "2"
+   ],
+   "tq": "7/16 / 7/8 = _____.",
+   "to": [
+    "49/128",
+    "3/8",
+    "1/2",
+    "2"
+   ],
+   "why": "7/16 x 8/7 = 56/112 = 1/2.",
+   "br": [
+    [
+     "divided by",
+     "/ (invert and multiply)"
+    ]
+   ]
+  },
+  {
+   "src": "Study Problem 2.4.1 · Q9 · answer from module text",
+   "a": 0,
+   "pq": "On a drawing 1/4 inch stands for 1 foot. A line 8 1/2 inches long stands for how many feet?",
+   "po": [
+    "34 feet",
+    "36 feet",
+    "38 feet",
+    "40 feet"
+   ],
+   "tq": "If 1/4 inch represents 1 foot, then a line on the drawing measuring 8 1/2 inches represents _____.",
+   "to": [
+    "34'",
+    "36'",
+    "38'",
+    "40'"
+   ],
+   "why": "8 1/2 / 1/4 = 17/2 x 4 = 34.",
+   "br": [
+    [
+     "stands for",
+     "represents"
+    ]
+   ]
+  },
+  {
+   "src": "Study Problem 2.4.1 · Q10 · answer from module text",
+   "a": 3,
+   "pq": "How many 7/8 inch strips come from a 7 inch strip?",
+   "po": [
+    "5",
+    "6",
+    "7",
+    "8"
+   ],
+   "tq": "How many 7/8-inch long strips can be cut from a single 7-inch long strip of material?",
+   "to": [
+    "5",
+    "6",
+    "7",
+    "8"
+   ],
+   "why": "7 / 7/8 = 7 x 8/7 = 8.",
+   "br": [
+    [
+     "come from",
+     "can be cut from"
+    ]
+   ]
+  },
+  {
+   "src": "Extra practice · 2.3.0 whole number minus a fraction · answer worked from module method",
+   "a": 0,
+   "pq": "What is 5 - 2/7?",
+   "po": [
+    "4 5/7",
+    "3 5/7",
+    "4 2/7",
+    "3 2/7"
+   ],
+   "tq": "5 - 2/7 = _____.",
+   "to": [
+    "4 5/7",
+    "3 5/7",
+    "4 2/7",
+    "3 2/7"
+   ],
+   "why": "5 = 35/7. 35/7 - 2/7 = 33/7 = 4 5/7.",
+   "br": [
+    [
+     "What is",
+     "= _____"
+    ]
+   ]
+  },
+  {
+   "src": "Extra practice · 2.3.0 adding · answer worked from module method",
+   "a": 1,
+   "pq": "What is 3/4 + 5/8?",
+   "po": [
+    "8/12",
+    "1 3/8",
+    "1/2",
+    "8/8"
+   ],
+   "tq": "3/4 + 5/8 = _____.",
+   "to": [
+    "8/12",
+    "1 3/8",
+    "1/2",
+    "8/8"
+   ],
+   "why": "3/4 = 6/8. 6/8 + 5/8 = 11/8 = 1 3/8.",
+   "br": [
+    [
+     "What is",
+     "= _____"
+    ]
+   ]
+  },
+  {
+   "src": "Extra practice · 2.4.0 multiplying · answer worked from module method",
+   "a": 0,
+   "pq": "What is 3/4 x 7/8?",
+   "po": [
+    "21/32",
+    "10/12",
+    "10/32",
+    "21/12"
+   ],
+   "tq": "3/4 x 7/8 = _____.",
+   "to": [
+    "21/32",
+    "10/12",
+    "10/32",
+    "21/12"
+   ],
+   "why": "3 x 7 = 21 and 4 x 8 = 32.",
+   "br": [
+    [
+     "What is",
+     "= _____"
+    ]
+   ]
+  }
+ ],
+ "3": [
+  {
+   "src": "Section Review 3.0.0 · Q1 · answer from module text",
+   "a": 1,
+   "pq": "In 135.792, what does the 9 stand for?",
+   "po": [
+    "90",
+    "nine tenths",
+    "nine one-hundredths",
+    "nine one-thousandths"
+   ],
+   "tq": "In the number 135.792, what value does the 9 represent?",
+   "to": [
+    "90",
+    "nine tenths",
+    "nine one-hundredths",
+    "nine one-thousandths"
+   ],
+   "why": "The first digit right of the point is the tenths place.",
+   "br": [
+    [
+     "stand for",
+     "represent"
+    ]
+   ]
+  },
+  {
+   "src": "Section Review 3.0.0 · Q2 · answer from module text",
+   "a": 0,
+   "pq": "True or false: 0.960 is larger than 0.0962.",
+   "po": [
+    "True",
+    "False"
+   ],
+   "tq": "The number 0.960 is larger than the number 0.0962.",
+   "to": [
+    "True",
+    "False"
+   ],
+   "why": "0.9600 is much larger than 0.0962.",
+   "br": [
+    [
+     "larger than",
+     "larger than"
+    ]
+   ]
+  },
+  {
+   "src": "Section Review 3.0.0 · Q3 · answer from module text",
+   "a": 1,
+   "pq": "What is 3.625 + 4.9?",
+   "po": [
+    "7.525",
+    "8.525",
+    "41.15",
+    "52.63"
+   ],
+   "tq": "3.625 + 4.9 = _____.",
+   "to": [
+    "7.525",
+    "8.525",
+    "41.15",
+    "52.63"
+   ],
+   "why": "Line up the points: 3.625 + 4.900 = 8.525.",
+   "br": [
+    [
+     "What is",
+     "= _____"
+    ]
+   ]
+  },
+  {
+   "src": "Section Review 3.0.0 · Q4 · answer from module text",
+   "a": 0,
+   "pq": "What is 42.58 - 7.577?",
+   "po": [
+    "35.003",
+    "35.523",
+    "36.523",
+    "50.157"
+   ],
+   "tq": "42.58 - 7.577 = _____.",
+   "to": [
+    "35.003",
+    "35.523",
+    "36.523",
+    "50.157"
+   ],
+   "why": "42.580 - 7.577 = 35.003.",
+   "br": [
+    [
+     "What is",
+     "= _____"
+    ]
+   ]
+  },
+  {
+   "src": "Section Review 3.0.0 · Q5 · answer from module text",
+   "a": 3,
+   "pq": "What is 9.64 x 12?",
+   "po": [
+    "11.568",
+    "21.64",
+    "115.2",
+    "115.68"
+   ],
+   "tq": "9.64 x 12 = _____.",
+   "to": [
+    "11.568",
+    "21.64",
+    "115.2",
+    "115.68"
+   ],
+   "why": "964 x 12 = 11,568. Two decimal places: 115.68.",
+   "br": [
+    [
+     "What is",
+     "= _____"
+    ]
+   ]
+  },
+  {
+   "src": "Section Review 3.0.0 · Q6 · answer from module text",
+   "a": 0,
+   "pq": "What is 123.82 divided by 6.5?",
+   "po": [
+    "19.04923",
+    "18.76",
+    "1.905",
+    "0.190"
+   ],
+   "tq": "123.82 / 6.5 = _____.",
+   "to": [
+    "19.04923",
+    "18.76",
+    "1.905",
+    "0.190"
+   ],
+   "why": "Move the points one place: 1,238.2 / 65 = 19.049.",
+   "br": [
+    [
+     "divided by",
+     "/"
+    ]
+   ]
+  },
+  {
+   "src": "Section Review 3.0.0 · Q7 · answer from module text",
+   "a": 2,
+   "pq": "How do you write 0.479 as a percentage?",
+   "po": [
+    "0.00479%",
+    "0.479%",
+    "47.9%",
+    "479%"
+   ],
+   "tq": "Express the number 0.479 as a percentage.",
+   "to": [
+    "0.00479%",
+    "0.479%",
+    "47.9%",
+    "479%"
+   ],
+   "why": "Multiply by 100: move the point two places right.",
+   "br": [
+    [
+     "How do you write",
+     "Express ... as"
+    ]
+   ]
+  },
+  {
+   "src": "Section Review 3.0.0 · Q8 · answer from module text",
+   "a": 2,
+   "pq": "What is 7/8 as a decimal?",
+   "po": [
+    "0.0875",
+    "0.75",
+    "0.875",
+    "8.75"
+   ],
+   "tq": "The decimal equivalent of the fraction 7/8 is _____.",
+   "to": [
+    "0.0875",
+    "0.75",
+    "0.875",
+    "8.75"
+   ],
+   "why": "7 divided by 8 = 0.875.",
+   "br": [
+    [
+     "What is ... as a decimal",
+     "The decimal equivalent of the fraction"
+    ]
+   ]
+  },
+  {
+   "src": "Section Review 3.0.0 · Q9 · answer from module text",
+   "a": 0,
+   "pq": "True or false: a fuel tank that is 2/3 full is more than 65% full.",
+   "po": [
+    "True",
+    "False"
+   ],
+   "tq": "If a fuel tank is 2/3 full, then it is more than 65% full.",
+   "to": [
+    "True",
+    "False"
+   ],
+   "why": "2 / 3 = 0.667, or about 66.7%.",
+   "br": [
+    [
+     "is ... full",
+     "is ... full"
+    ]
+   ]
+  },
+  {
+   "src": "Module Review · Q8 · answer from module text",
+   "a": 1,
+   "pq": "Put these in order from smallest to largest: 0.402, 0.420, 0.042, 0.442.",
+   "po": [
+    "0.420, 0.042, 0.442, 0.402",
+    "0.042, 0.402, 0.420, 0.442",
+    "0.442, 0.420, 0.402, 0.042",
+    "0.042, 0.402, 0.442, 0.420"
+   ],
+   "tq": "Put the following decimals in order from smallest to largest: 0.402, 0.420, 0.042, 0.442.",
+   "to": [
+    "0.420, 0.042, 0.442, 0.402",
+    "0.042, 0.402, 0.420, 0.442",
+    "0.442, 0.420, 0.402, 0.042",
+    "0.042, 0.402, 0.442, 0.420"
+   ],
+   "why": "Think 0.042, 0.402, 0.420, 0.442.",
+   "br": [
+    [
+     "Put these in order",
+     "Put the following decimals in order"
+    ]
+   ]
+  },
+  {
+   "src": "Module Review · Q9 · answer from module text",
+   "a": 0,
+   "pq": "Two coatings on a pipe are 51.5 nm and 89.7 nm. How thick together?",
+   "po": [
+    "141.2 nm",
+    "142.12 nm",
+    "144.2 nm",
+    "145.02 nm"
+   ],
+   "tq": "A worker applies two coatings to a pipe. The first coating is 51.5 nanometers thick, and the second is 89.7 nanometers thick. How thick is the combined coating?",
+   "to": [
+    "141.2 nanometers",
+    "142.12 nanometers",
+    "144.2 nanometers",
+    "145.02 nanometers"
+   ],
+   "why": "51.5 + 89.7 = 141.2.",
+   "br": [
+    [
+     "together",
+     "combined"
+    ]
+   ]
+  },
+  {
+   "src": "Module Review · Q10 · answer from module text",
+   "a": 1,
+   "pq": "Painting costs $2.37 per square foot. What does an 864.5 square foot wall cost, to the nearest cent?",
+   "po": [
+    "$204.88",
+    "$2,048.87",
+    "$2,848.88",
+    "$2,888.86"
+   ],
+   "tq": "It costs a painting contractor $2.37 per square foot to paint a wall. What will it cost to paint an 864.5 square foot wall? Round to the nearest cent.",
+   "to": [
+    "$204.88",
+    "$2,048.87",
+    "$2,848.88",
+    "$2,888.86"
+   ],
+   "why": "864.5 x 2.37 = 2,048.865, which rounds up to $2,048.87.",
+   "br": [
+    [
+     "nearest cent",
+     "Round to the nearest cent"
+    ]
+   ]
+  },
+  {
+   "src": "Module Review · Q11 · answer from module text",
+   "a": 0,
+   "pq": "What is 89.435 divided by 0.05?",
+   "po": [
+    "1,788.7",
+    "17.887",
+    "4.47175",
+    "447.175"
+   ],
+   "tq": "89.435 / 0.05 = _____.",
+   "to": [
+    "1788.7",
+    "17.887",
+    "4.47175",
+    "447.175"
+   ],
+   "why": "Move both points two places: 8,943.5 / 5 = 1,788.7.",
+   "br": [
+    [
+     "divided by",
+     "/"
+    ]
+   ]
+  },
+  {
+   "src": "Module Review · Q12 · answer from module text",
+   "a": 2,
+   "pq": "What is 13.9% as a decimal?",
+   "po": [
+    "0.009",
+    "0.013",
+    "0.139",
+    "1.39"
+   ],
+   "tq": "Without using a calculator, determine the decimal equivalent of 13.9%.",
+   "to": [
+    "0.009",
+    "0.013",
+    "0.139",
+    "1.39"
+   ],
+   "why": "Divide by 100: move the point two places left.",
+   "br": [
+    [
+     "as a decimal",
+     "the decimal equivalent of"
+    ]
+   ]
+  },
+  {
+   "src": "Extra practice · 3.3.3 decimal to fraction · answer worked from module method",
+   "a": 2,
+   "pq": "What is 0.125 as a fraction in lowest terms?",
+   "po": [
+    "1/4",
+    "1/5",
+    "1/8",
+    "125/10"
+   ],
+   "tq": "Convert 0.125 to its equivalent fraction in lowest terms.",
+   "to": [
+    "1/4",
+    "1/5",
+    "1/8",
+    "125/10"
+   ],
+   "why": "125/1000 divided by 125 on top and bottom = 1/8.",
+   "br": [
+    [
+     "as a fraction",
+     "equivalent fraction"
+    ]
+   ]
+  },
+  {
+   "src": "Extra practice · 3.3.4 inches to feet · answer worked from module method",
+   "a": 1,
+   "pq": "What is 3 inches in decimal feet?",
+   "po": [
+    "0.3 ft",
+    "0.25 ft",
+    "0.75 ft",
+    "3.12 ft"
+   ],
+   "tq": "Convert 3 inches to feet in decimal form.",
+   "to": [
+    "0.3 ft",
+    "0.25 ft",
+    "0.75 ft",
+    "3.12 ft"
+   ],
+   "why": "3/12 = 1/4 = 0.25.",
+   "br": [
+    [
+     "What is",
+     "Convert"
+    ]
+   ]
+  }
+ ],
+ "4": [
+  {
+   "src": "Section Review 4.0.0 · Q1 · answer from module text",
+   "a": 0,
+   "pq": "What can the metric system be called?",
+   "po": [
+    "A base-10 system",
+    "A base-100 system",
+    "A geometric progression",
+    "An open-ended system"
+   ],
+   "tq": "The metric system can be referred to as a(n) _____.",
+   "to": [
+    "base-10 system",
+    "base-100 system",
+    "geometric progression",
+    "open-ended system"
+   ],
+   "why": "Every metric unit relates to the next by 10.",
+   "br": [
+    [
+     "What can ... be called",
+     "can be referred to as"
+    ]
+   ]
+  },
+  {
+   "src": "Section Review 4.0.0 · Q2 · answer from module text",
+   "a": 1,
+   "pq": "A tape measure hook is slightly loose. What should you do?",
+   "po": [
+    "Pound the rivets tighter with a small hammer",
+    "Nothing, it should be slightly loose",
+    "Replace the tape",
+    "Send it back for repair"
+   ],
+   "tq": "A measuring tape's hook is slightly loose. What is the correct action?",
+   "to": [
+    "Using a small hammer, carefully pound the attaching rivets enough to tighten them and prevent movement.",
+    "Nothing; the hook end should be slightly loose.",
+    "Replace the tape measure.",
+    "Return the tape measure to the manufacturer for repair."
+   ],
+   "why": "The slide is on purpose, so it can read both inside and outside measurements.",
+   "br": [
+    [
+     "slightly loose",
+     "slightly loose"
+    ],
+    [
+     "What should you do",
+     "What is the correct action"
+    ]
+   ]
+  },
+  {
+   "src": "Module Review · Q13 · answer from module text",
+   "a": 2,
+   "pq": "What does the red background around the 32 on a tape show?",
+   "po": [
+    "The tape is metric",
+    "One meter in inches",
+    "Studs 16 inches on center",
+    "Studs 24 inches on center"
+   ],
+   "tq": "The red background around the number 32 in Figure RQ03 identifies _____.",
+   "to": [
+    "that the tape measure is metric",
+    "the inch-pound measurement equivalent to one meter",
+    "the marking for studs placed on 16-inch centers in a wall structure",
+    "the marking for studs placed on 24-inch centers"
+   ],
+   "why": "Red marks appear every 16 inches (16, 32, 48 and so on).",
+   "br": [
+    [
+     "What does ... show",
+     "identifies"
+    ]
+   ]
+  },
+  {
+   "src": "Extra practice · 4.1.2 metric ruler · answer worked from module method",
+   "a": 1,
+   "pq": "A mark sits 7 small lines past 2 cm on a metric ruler. How many millimeters is that?",
+   "po": [
+    "2.7 mm",
+    "27 mm",
+    "207 mm",
+    "270 mm"
+   ],
+   "tq": "Seven millimeter marks past the 2 cm line reads 2.7 cm, which equals _____.",
+   "to": [
+    "2.7 mm",
+    "27 mm",
+    "207 mm",
+    "270 mm"
+   ],
+   "why": "10 mm = 1 cm, so 2.7 cm = 27 mm.",
+   "br": [
+    [
+     "How many millimeters",
+     "equals"
+    ]
+   ]
+  },
+  {
+   "src": "Extra practice · 4.2.3 inside measurement · answer worked from module method",
+   "a": 2,
+   "pq": "The tape reads 24 3/4 inches at the case edge and the case is 3 inches long. How wide is the space?",
+   "po": [
+    "21 3/4 in",
+    "24 3/4 in",
+    "27 3/4 in",
+    "28 3/4 in"
+   ],
+   "tq": "For an inside measurement, the tape reading plus the case length gives the true distance. 24 3/4 + 3 = _____.",
+   "to": [
+    "21 3/4 in",
+    "24 3/4 in",
+    "27 3/4 in",
+    "28 3/4 in"
+   ],
+   "why": "Add the case length: 24 3/4 + 3 = 27 3/4.",
+   "br": [
+    [
+     "How wide is the space",
+     "gives the true distance"
+    ]
+   ]
+  }
+ ],
+ "5": [
+  {
+   "src": "Section Review 5.0.0 · Q1 · answer from module text",
+   "a": 1,
+   "pq": "Changing from a larger metric unit to a smaller one, which way does the decimal point move?",
+   "po": [
+    "Left",
+    "Right",
+    "All the way left",
+    "All the way right"
+   ],
+   "tq": "When converting from a larger metric unit to a smaller one, the decimal point must move _____.",
+   "to": [
+    "to the left",
+    "to the right",
+    "all the way to the left end of the number",
+    "all the way to the right end of the number"
+   ],
+   "why": "You get more of the smaller unit, so the number gets bigger.",
+   "br": [
+    [
+     "which way",
+     "must move"
+    ]
+   ]
+  },
+  {
+   "src": "Section Review 5.0.0 · Q2 · answer from module text",
+   "a": 3,
+   "pq": "Weight is the force an object puts on a surface because of its mass and what?",
+   "po": [
+    "Density",
+    "Volume",
+    "Temperature",
+    "Earth's gravity"
+   ],
+   "tq": "Weight is the force that an object exerts on a surface due to its mass and _____.",
+   "to": [
+    "density",
+    "volume",
+    "the current temperature",
+    "the pull of the Earth's gravity"
+   ],
+   "why": "Weight needs gravity.",
+   "br": [
+    [
+     "because of",
+     "due to"
+    ]
+   ]
+  },
+  {
+   "src": "Section Review 5.0.0 · Q3 · answer from module text",
+   "a": 2,
+   "pq": "A cubic meter is the same as a cube measuring what?",
+   "po": [
+    "10 cm each side",
+    "100 mm each side",
+    "100 cm each side",
+    "10 m each side"
+   ],
+   "tq": "The cubic meter represents a three-dimensional object equivalent to a cube that measures _____.",
+   "to": [
+    "10 cm x 10 cm x 10 cm",
+    "100 mm x 100 mm x 100 mm",
+    "100 cm x 100 cm x 100 cm",
+    "10 m x 10 m x 10 m"
+   ],
+   "why": "1 m = 100 cm, so 100 x 100 x 100 = 1,000,000 cm cubed.",
+   "br": [
+    [
+     "same as a cube",
+     "equivalent to a cube"
+    ]
+   ]
+  },
+  {
+   "src": "Section Review 5.0.0 · Q4 · answer from module text",
+   "a": 1,
+   "pq": "On the Celsius scale, how many degrees separate freezing and boiling water?",
+   "po": [
+    "32",
+    "100",
+    "180",
+    "212"
+   ],
+   "tq": "On the Celsius temperature scale, the difference between the freezing and boiling points of water is _____.",
+   "to": [
+    "32 C",
+    "100 C",
+    "180 C",
+    "212 C"
+   ],
+   "why": "0 C to 100 C. Fahrenheit has 180 degrees between them.",
+   "br": [
+    [
+     "separate",
+     "difference between"
+    ]
+   ]
+  },
+  {
+   "src": "Module Review · Q14 · answer from module text",
+   "a": 1,
+   "pq": "True or false: a centimeter is 1/100 of a meter and a kilometer is 1,000 meters.",
+   "po": [
+    "True",
+    "False"
+   ],
+   "tq": "A centimeter is 1/100 of a meter, while a kilometer is equal to 1,000 meters.",
+   "to": [
+    "True",
+    "False"
+   ],
+   "why": "Both statements are true.",
+   "br": [
+    [
+     "1/100 of a meter",
+     "1/100 of a meter"
+    ]
+   ]
+  },
+  {
+   "src": "Module Review · Q15 · answer from module text",
+   "a": 0,
+   "pq": "To change centimeters to meters, move the decimal point...",
+   "po": [
+    "Two places left",
+    "Three places right",
+    "Three places left",
+    "Four places right"
+   ],
+   "tq": "To convert a measurement in centimeters to meters, move the decimal point _____.",
+   "to": [
+    "two places to the left",
+    "three places to the right",
+    "three places to the left",
+    "four places to the right"
+   ],
+   "why": "100 cm = 1 m, so divide by 100.",
+   "br": [
+    [
+     "change",
+     "convert"
+    ]
+   ]
+  },
+  {
+   "src": "Module Review · Q16 · answer from module text",
+   "a": 2,
+   "pq": "Convert 67 inches to centimeters.",
+   "po": [
+    "1,701 cm",
+    "26.38 cm",
+    "170.18 cm",
+    "263.80 cm"
+   ],
+   "tq": "Convert 67 inches to centimeters.",
+   "to": [
+    "1701 cm",
+    "26.38 cm",
+    "170.18 cm",
+    "263.80 cm"
+   ],
+   "why": "67 x 2.54 = 170.18.",
+   "br": [
+    [
+     "Convert",
+     "Convert"
+    ]
+   ]
+  },
+  {
+   "src": "Module Review · Q17 · answer from module text",
+   "a": 1,
+   "pq": "True or false: a pound of water weighs more than a kilogram of water.",
+   "po": [
+    "True",
+    "False"
+   ],
+   "tq": "A pound of water weighs more than a kilogram of water.",
+   "to": [
+    "True",
+    "False"
+   ],
+   "why": "1 kg is about 2.2 lb, so a kilogram weighs more.",
+   "br": [
+    [
+     "weighs more than",
+     "weighs more than"
+    ]
+   ]
+  },
+  {
+   "src": "Module Review · Q18 · answer from module text",
+   "a": 3,
+   "pq": "Convert 49 ounces to grams.",
+   "po": [
+    "1.73 g",
+    "3.06 g",
+    "747.42 g",
+    "1,389.15 g"
+   ],
+   "tq": "Convert the weight of 49 ounces to grams.",
+   "to": [
+    "1.73 grams",
+    "3.06 grams",
+    "747.42 grams",
+    "1,389.15 grams"
+   ],
+   "why": "49 x 28.35 = 1,389.15.",
+   "br": [
+    [
+     "Convert",
+     "Convert"
+    ]
+   ]
+  },
+  {
+   "src": "Module Review · Q19 · answer from module text",
+   "a": 0,
+   "pq": "Convert 15 F to Celsius.",
+   "po": [
+    "-9.4 C",
+    "9.4 C",
+    "-5 C",
+    "59 C"
+   ],
+   "tq": "Convert 15 F to Celsius.",
+   "to": [
+    "-9.4 C",
+    "9.4 C",
+    "-5 C",
+    "59 C"
+   ],
+   "why": "(15 - 32) x 5/9 = -17 x 5/9 = -9.4. Check: 15 F is below freezing, so the answer is negative.",
+   "br": [
+    [
+     "Convert",
+     "Convert"
+    ]
+   ]
+  },
+  {
+   "src": "Extra practice · 5.2.1 ounces to pounds · answer worked from module method",
+   "a": 2,
+   "pq": "What is 134 ounces in pounds?",
+   "po": [
+    "2,144 lb",
+    "12.5 lb",
+    "8.375 lb",
+    "0.119 lb"
+   ],
+   "tq": "Convert 134 oz to pounds.",
+   "to": [
+    "2,144 lb",
+    "12.5 lb",
+    "8.375 lb",
+    "0.119 lb"
+   ],
+   "why": "Ounces to pounds: divide by 16. 134 / 16 = 8.375.",
+   "br": [
+    [
+     "What is",
+     "Convert"
+    ]
+   ]
+  },
+  {
+   "src": "Extra practice · 5.4.0 Celsius to Fahrenheit · answer worked from module method",
+   "a": 1,
+   "pq": "What is 90 C in Fahrenheit?",
+   "po": [
+    "162 F",
+    "194 F",
+    "130 F",
+    "58 F"
+   ],
+   "tq": "Convert 90 C to Fahrenheit.",
+   "to": [
+    "162 F",
+    "194 F",
+    "130 F",
+    "58 F"
+   ],
+   "why": "(9/5 x 90) + 32 = 162 + 32 = 194.",
+   "br": [
+    [
+     "What is",
+     "Convert"
+    ]
+   ]
+  },
+  {
+   "src": "Extra practice · 5.4.0 Fahrenheit to Celsius · answer worked from module method",
+   "a": 1,
+   "pq": "What is 77 F in Celsius?",
+   "po": [
+    "45 C",
+    "25 C",
+    "170.6 C",
+    "109 C"
+   ],
+   "tq": "Convert 77 F to Celsius.",
+   "to": [
+    "45 C",
+    "25 C",
+    "170.6 C",
+    "109 C"
+   ],
+   "why": "77 - 32 = 45. 45 x 5/9 = 25.",
+   "br": [
+    [
+     "What is",
+     "Convert"
+    ]
+   ]
+  },
+  {
+   "src": "Extra practice · 5.3.2 volume · answer worked from module method",
+   "a": 2,
+   "pq": "How many cubic centimeters are in one cubic meter?",
+   "po": [
+    "1,000",
+    "100,000",
+    "1,000,000",
+    "10,000"
+   ],
+   "tq": "A cubic meter equals how many cubic centimeters?",
+   "to": [
+    "1,000",
+    "100,000",
+    "1,000,000",
+    "10,000"
+   ],
+   "why": "100 x 100 x 100 = 1,000,000.",
+   "br": [
+    [
+     "How many ... are in",
+     "equals how many"
+    ]
+   ]
+  }
+ ],
+ "6": [
+  {
+   "src": "Section Review 6.0.0 · Q1 · answer from module text",
+   "a": 3,
+   "pq": "An angle of 66 degrees is what kind of angle?",
+   "po": [
+    "Right",
+    "Straight",
+    "Obtuse",
+    "Acute"
+   ],
+   "tq": "An angle of 66 degrees is a(n) _____.",
+   "to": [
+    "right angle",
+    "straight angle",
+    "obtuse angle",
+    "acute angle"
+   ],
+   "why": "Under 90 degrees is acute.",
+   "br": [
+    [
+     "what kind of angle",
+     "is a(n)"
+    ]
+   ]
+  },
+  {
+   "src": "Section Review 6.0.0 · Q2 · answer from module text",
+   "a": 1,
+   "pq": "What is the difference between circumference and perimeter?",
+   "po": [
+    "Circumference only for shapes with angles",
+    "Perimeter works for every shape, circumference only for circles",
+    "Perimeter is half the circumference",
+    "Circumference is never larger"
+   ],
+   "tq": "What is the difference between circumference and perimeter?",
+   "to": [
+    "The circumference applies only to shapes with angles, while the perimeter applies only to circles.",
+    "The perimeter applies to all shapes, while the circumference applies only to circles.",
+    "The perimeter represents one-half of the circumference.",
+    "The circumference is never larger than the perimeter."
+   ],
+   "why": "Circumference is the perimeter of a circle.",
+   "br": [
+    [
+     "what is the difference",
+     "What is the difference"
+    ]
+   ]
+  },
+  {
+   "src": "Study Problem 6.4.5 · Q1 · answer from module text",
+   "a": 3,
+   "pq": "A box 5 ft high, 6 ft thick and 13 ft long has what volume?",
+   "po": [
+    "24 cu ft",
+    "43 cu ft",
+    "95 cu ft",
+    "390 cu ft"
+   ],
+   "tq": "A rectangular shape 5 feet high, 6 feet thick and 13 feet long has a volume of _____.",
+   "to": [
+    "24 cu ft",
+    "43 cu ft",
+    "95 cu ft",
+    "390 cu ft"
+   ],
+   "why": "5 x 6 x 13 = 390.",
+   "br": [
+    [
+     "box",
+     "rectangular shape"
+    ]
+   ]
+  },
+  {
+   "src": "Study Problem 6.4.5 · Q2 · answer from module text",
+   "a": 3,
+   "pq": "A cube that is 3 centimeters on each side has what volume?",
+   "po": [
+    "6 cm cubed",
+    "9 cm cubed",
+    "12 cm cubed",
+    "27 cm cubed"
+   ],
+   "tq": "A 3 centimeter cube has a volume of _____.",
+   "to": [
+    "6 cm cubed",
+    "9 cm cubed",
+    "12 cm cubed",
+    "27 cm cubed"
+   ],
+   "why": "3 x 3 x 3 = 27.",
+   "br": [
+    [
+     "on each side",
+     "A 3 centimeter cube"
+    ]
+   ]
+  },
+  {
+   "src": "Study Problem 6.4.5 · Q3 · answer from module text",
+   "a": 1,
+   "pq": "A triangular prism has a 6 inch base, a 2 inch height and a 4 inch depth. What is its volume?",
+   "po": [
+    "12 cu in",
+    "24 cu in",
+    "36 cu in",
+    "48 cu in"
+   ],
+   "tq": "A triangular prism that has a 6 inch base, a 2 inch height and a 4 inch depth has a volume of _____.",
+   "to": [
+    "12 cu in",
+    "24 cu in",
+    "36 cu in",
+    "48 cu in"
+   ],
+   "why": "1/2 x 6 x 2 = 6, and 6 x 4 = 24.",
+   "br": [
+    [
+     "What is its volume",
+     "has a volume of"
+    ]
+   ]
+  },
+  {
+   "src": "Study Problem 6.4.5 · Q4 · answer from module text",
+   "a": 0,
+   "pq": "A cylinder is 6 meters across and 60 centimeters high. What is its volume?",
+   "po": [
+    "16.96 cu m",
+    "18.23 cu m",
+    "1,130.4 cu m",
+    "6,782.4 cu m"
+   ],
+   "tq": "A cylinder that is 6 meters in diameter and 60 centimeters high has a volume of _____.",
+   "to": [
+    "16.96 m cubed",
+    "18.23 m cubed",
+    "1,130.4 m cubed",
+    "6,782.4 m cubed"
+   ],
+   "why": "Radius 3 m, height 0.6 m. 3.14 x 9 x 0.6 = 16.956, about 16.96.",
+   "br": [
+    [
+     "across",
+     "in diameter"
+    ]
+   ]
+  },
+  {
+   "src": "Study Problem 6.4.5 · Q5 · answer from module text",
+   "a": 1,
+   "pq": "Gravel covers a 17 ft by 17 ft area, 6 inches thick. How many cubic yards?",
+   "po": [
+    "3.77 cu yd",
+    "5.35 cu yd",
+    "102 cu yd",
+    "144.5 cu yd"
+   ],
+   "tq": "If a work crew must spread gravel across an area that measures 17 feet square and the gravel layer is to be 6 inches thick, the volume of gravel required is _____.",
+   "to": [
+    "3.77 yd cubed",
+    "5.35 yd cubed",
+    "102 yd cubed",
+    "144.5 yd cubed"
+   ],
+   "why": "17 x 17 x 0.5 = 144.5 cu ft. 144.5 / 27 = 5.35 cu yd.",
+   "br": [
+    [
+     "How many cubic yards",
+     "the volume of gravel required"
+    ]
+   ]
+  },
+  {
+   "src": "Module Review · Q20 · answer from module text",
+   "a": 1,
+   "pq": "True or false: the four angles in a rectangle always add to 180 degrees.",
+   "po": [
+    "True",
+    "False"
+   ],
+   "tq": "The sum of the four angles in a rectangle is always 180 degrees.",
+   "to": [
+    "True",
+    "False"
+   ],
+   "why": "Four right angles add to 360 degrees.",
+   "br": [
+    [
+     "add to",
+     "sum of"
+    ]
+   ]
+  },
+  {
+   "src": "Module Review · Q21 · answer from module text",
+   "a": 0,
+   "pq": "Pi is needed to calculate the area of a...",
+   "po": [
+    "Circle",
+    "Square",
+    "Rectangle",
+    "Cube"
+   ],
+   "tq": "The mathematical constant pi is needed for calculating the area of a _____.",
+   "to": [
+    "circle",
+    "square",
+    "rectangle",
+    "cube"
+   ],
+   "why": "Area of a circle = pi x r x r.",
+   "br": [
+    [
+     "is needed to calculate",
+     "is needed for calculating"
+    ]
+   ]
+  },
+  {
+   "src": "Module Review · Q22 · answer from module text",
+   "a": 3,
+   "pq": "A cylindrical tank is 23 feet high with a 6.25 foot radius. What is its volume, rounded to the nearest cubic foot?",
+   "po": [
+    "1,440 cu ft",
+    "398 cu ft",
+    "903 cu ft",
+    "2,821 cu ft"
+   ],
+   "tq": "Using a calculator, calculate the volume of a cylindrical tank that is 23 feet high with a radius of 6.25 feet. Round to the nearest cubic foot.",
+   "to": [
+    "1,440 cu ft",
+    "398 cu ft",
+    "903 cu ft",
+    "2,821 cu ft"
+   ],
+   "why": "3.14 x 6.25 x 6.25 x 23 = 2,821.",
+   "br": [
+    [
+     "tank",
+     "cylindrical tank"
+    ]
+   ]
+  },
+  {
+   "src": "Module Review · Q23 · answer from module text",
+   "a": 0,
+   "pq": "A triangular prism has a 7 cm base, a 4 cm height and a 30 mm depth. What is its volume?",
+   "po": [
+    "42 cm cubed",
+    "42 mm cubed",
+    "82 mm cubed",
+    "82 cm cubed"
+   ],
+   "tq": "Calculate the volume of a three-dimensional triangular prism that has a 7 centimeter base, a 4 centimeter height and a 30 millimeter depth. Convert all measurements to the same unit.",
+   "to": [
+    "42 cm cubed",
+    "42 mm cubed",
+    "82 mm cubed",
+    "82 cm cubed"
+   ],
+   "why": "30 mm = 3 cm. 1/2 x 7 x 4 = 14, and 14 x 3 = 42.",
+   "br": [
+    [
+     "What is its volume",
+     "Calculate the volume"
+    ]
+   ]
+  },
+  {
+   "src": "Extra practice · 6.3.0 circle area · answer worked from module method",
+   "a": 2,
+   "pq": "A circle has a 14 ft diameter. What is its area, using 3.14?",
+   "po": [
+    "615.44 sq ft",
+    "43.96 sq ft",
+    "153.86 sq ft",
+    "307.72 sq ft"
+   ],
+   "tq": "Using 3.14 for pi, calculate the area of a circle with a diameter of 14 feet.",
+   "to": [
+    "615.44 sq ft",
+    "43.96 sq ft",
+    "153.86 sq ft",
+    "307.72 sq ft"
+   ],
+   "why": "Radius = 7. 3.14 x 7 x 7 = 153.86.",
+   "br": [
+    [
+     "across",
+     "diameter"
+    ]
+   ]
+  },
+  {
+   "src": "Extra practice · 6.4.1 slab volume · answer worked from module method",
+   "a": 0,
+   "pq": "A slab is 50 ft long, 40 ft wide and 6 inches thick. What is its volume?",
+   "po": [
+    "1,000 cu ft",
+    "2,000 cu ft",
+    "12,000 cu ft",
+    "90 cu ft"
+   ],
+   "tq": "Calculate the volume of a 50 ft x 40 ft slab that is 6 inches thick.",
+   "to": [
+    "1,000 cu ft",
+    "2,000 cu ft",
+    "12,000 cu ft",
+    "90 cu ft"
+   ],
+   "why": "6 inches = 0.5 ft. 50 x 40 x 0.5 = 1,000.",
+   "br": [
+    [
+     "thick",
+     "thick"
+    ]
+   ]
+  }
+ ]
+};
+
+  function el(tag, cls, text) { var n = document.createElement(tag); if (cls) n.className = cls; if (text != null) n.textContent = text; return n; }
+  function buildPoints(ul, list, prefix) {
+    list.forEach(function (html, i) {
+      var li = el("li"), label = el("label"), input = document.createElement("input");
+      input.type = "checkbox"; input.id = prefix + "-" + i;
+      var span = el("span"); span.innerHTML = html;
+      label.appendChild(input); label.appendChild(span); li.appendChild(label); ul.appendChild(li);
+    });
+  }
+  function field(label, text) { var d = el("span"); d.appendChild(el("span", "label", label)); d.appendChild(document.createTextNode(text)); return d; }
+  function buildCards(host, n) {
+    CARDS[n].forEach(function (item) {
+      var b = el("button", "card"); b.type = "button"; b.setAttribute("aria-pressed", "false");
+      b.setAttribute("aria-label", item.t + ". Press to flip the card.");
+      var inner = el("span", "card-inner");
+      var f = el("span", "face front" + (item.k === "k" ? " key" : ""));
+      f.appendChild(el("span", "strip", (item.k === "o" ? "NCCER trade term" : "Key term") + " · Section " + n));
+      f.appendChild(el("span", "term", item.t));
+      f.appendChild(el("span", "hint", "TAP TO FLIP"));
+      var k = el("span", "face back");
+      k.appendChild(el("span", "strip", item.t));
+      var body = el("span", "body");
+      body.appendChild(field("In everyday words", item.plain));
+      body.appendChild(field("From the module", item.book));
+      var ask = field("Ask your student", item.ask); ask.className = "ask"; body.appendChild(ask);
+      k.appendChild(body); inner.appendChild(f); inner.appendChild(k); b.appendChild(inner);
+      b.addEventListener("click", function () { b.setAttribute("aria-pressed", b.getAttribute("aria-pressed") === "true" ? "false" : "true"); });
+      host.appendChild(b);
+    });
+  }
+  function buildQuiz(host, n) {
+    var list = QUIZ[n], answered = 0;
+    host.appendChild(el("p", "ticket-intro", "Pick the answer. You will see right away if it is correct. Nothing is saved or sent."));
+    var foot = el("div", "ticket-foot"), done = el("p", null, ""); done.setAttribute("aria-live", "polite");
+    var retry = el("button", "btn", "Try again"); retry.type = "button"; retry.hidden = true;
+    foot.appendChild(done); foot.appendChild(retry);
+    list.forEach(function (item, qi) {
+      var fs = el("fieldset", "q"); fs.appendChild(el("legend", null, (qi + 1) + ". " + item.q));
+      var opts = el("div", "opts"), fb = el("p", "fb"); fb.setAttribute("aria-live", "polite");
+      var btns = [];
+      item.o.forEach(function (text, oi) {
+        var b = el("button", "opt", text); b.type = "button";
+        b.addEventListener("click", function () {
+          btns.forEach(function (x) { x.disabled = true; }); answered++; fb.textContent = "";
+          if (oi === item.a) { b.classList.add("right"); fb.appendChild(el("b", null, "Correct. ")); fb.appendChild(document.createTextNode(item.why)); }
+          else { b.classList.add("wrong"); btns[item.a].classList.add("right"); fb.appendChild(el("b", null, "Not quite. ")); fb.appendChild(document.createTextNode("The answer is \"" + item.o[item.a] + "\". " + item.why)); }
+          if (answered === list.length) { done.textContent = "Ticket finished. Reread any part of the section that felt shaky, then try again."; retry.hidden = false; }
+        });
+        btns.push(b); opts.appendChild(b);
+      });
+      fs.appendChild(opts); fs.appendChild(fb); host.appendChild(fs);
+      fs._reset = function () { btns.forEach(function (x) { x.disabled = false; x.className = "opt"; }); fb.textContent = ""; };
+    });
+    host.appendChild(foot);
+    retry.addEventListener("click", function () { host.querySelectorAll("fieldset").forEach(function (f) { f._reset(); }); answered = 0; done.textContent = ""; retry.hidden = true; });
+  }
+  function buildTalk(host, n) {
+    var t = TALK[n], ol = el("ol", "qs");
+    t.qs.forEach(function (q) { ol.appendChild(el("li", null, q)); }); host.appendChild(ol);
+    t.scn.forEach(function (s) {
+      var d = el("details", "scn"); d.appendChild(el("summary", null, "Scenario: " + s.t)); d.appendChild(el("p", "setup", s.s));
+      var g = el("div", "good"); g.appendChild(el("b", null, "A good answer includes"));
+      var ul = el("ul"); s.g.forEach(function (x) { ul.appendChild(el("li", null, x)); });
+      g.appendChild(ul); d.appendChild(g); host.appendChild(d);
+    });
+    if (t.parent) { var p = el("div", "parent"); p.appendChild(el("b", null, "Talk it over with your loved ones")); p.appendChild(el("p", null, t.parent)); host.appendChild(p); }
+  }
+  function ask(label, cls, q, opts, correct, onAnswer) {
+    var box = el("div", "ask-block" + (cls ? " " + cls : ""));
+    box.appendChild(el("p", "step-label", label)); box.appendChild(el("p", "pr-q", q));
+    var wrap = el("div", "opts"); wrap.setAttribute("role", "group"); wrap.setAttribute("aria-label", q);
+    var fb = el("p", "fb"); fb.setAttribute("aria-live", "polite"); var btns = [];
+    opts.forEach(function (text, oi) {
+      var b = el("button", "opt", String.fromCharCode(65 + oi) + ".  " + text); b.type = "button";
+      b.addEventListener("click", function () {
+        btns.forEach(function (x) { x.disabled = true; });
+        var ok = oi === correct; b.classList.add(ok ? "right" : "wrong"); if (!ok) btns[correct].classList.add("right");
+        onAnswer(ok, fb, String.fromCharCode(65 + correct));
+      });
+      btns.push(b); wrap.appendChild(b);
+    });
+    box.appendChild(wrap); box.appendChild(fb);
+    box.reset = function () { btns.forEach(function (x) { x.disabled = false; x.className = "opt"; }); fb.textContent = ""; };
+    return box;
+  }
+  function say(fb, lead, text) { fb.textContent = ""; fb.appendChild(el("b", null, lead + " ")); fb.appendChild(document.createTextNode(text)); }
+  function buildPractice(host, n) {
+    var list = PRACTICE[n];
+    host.appendChild(el("p", "pr-intro", "Test questions use the textbook's formal words. Answer each question in plain English first, then see the same question the way the book asks it. The \"Words to notice\" box shows how the two fit together. Nothing is saved or sent."));
+    var items = [];
+    list.forEach(function (item, i) {
+      var formalOpts = item.to || item.po;
+      var art = el("article", "pr"), head = el("div", "pr-head");
+      head.appendChild(el("span", null, "Question " + (i + 1) + " of " + list.length));
+      head.appendChild(el("span", null, "Source: " + item.src)); art.appendChild(head);
+      var bridge = el("div", "bridge"); bridge.hidden = true;
+      bridge.appendChild(el("p", "step-label", "Words to notice"));
+      var ul = el("ul");
+      item.br.forEach(function (p) { var li = el("li"); li.appendChild(el("span", "you", p[0])); li.appendChild(el("span", "arrow", "→")); li.appendChild(el("span", "pub", p[1])); ul.appendChild(li); });
+      bridge.appendChild(ul);
+      var b2 = ask("Step 2 · The same question in the textbook's words", "formal", item.tq, formalOpts, item.a, function (ok, fb, letter) {
+        if (ok) say(fb, "Correct.", "You just answered it in the textbook's voice."); else say(fb, "Not quite.", "The answer is " + letter + ". Compare it with your plain-English answer above.");
+        bridge.hidden = false;
+      });
+      b2.hidden = true;
+      var b1 = ask("Step 1 · In plain English", "", item.pq, item.po, item.a, function (ok, fb, letter) {
+        if (ok) say(fb, "Correct.", item.why); else say(fb, "Not quite.", "The answer is " + letter + ". " + item.why);
+        b2.hidden = false;
+      });
+      art.appendChild(b1); art.appendChild(b2); art.appendChild(bridge); host.appendChild(art);
+      items.push({ b1: b1, b2: b2, bridge: bridge });
+    });
+    var foot = el("div", "ticket-foot"), retry = el("button", "btn", "Start this set over"); retry.type = "button";
+    retry.addEventListener("click", function () { items.forEach(function (x) { x.b1.reset(); x.b2.reset(); x.b2.hidden = true; x.bridge.hidden = true; }); });
+    foot.appendChild(retry); host.appendChild(foot);
+  }
+  [1, 2, 3, 4, 5, 6].forEach(function (n) {
+    buildPoints(document.querySelector('[data-points="' + n + '"]'), POINTS[n], "s" + n);
+    buildCards(document.querySelector('[data-cards="' + n + '"]'), n);
+    buildQuiz(document.querySelector('[data-quiz="' + n + '"]'), n);
+    buildTalk(document.querySelector('[data-talk="' + n + '"]'), n);
+    buildPractice(document.querySelector('[data-practice="' + n + '"]'), n);
+  });
+  buildPoints(document.getElementById("final-points"), FINAL, "fin");
+})();
+
+</script>
+
+</body>
+</html>

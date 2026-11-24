@@ -23,8 +23,8 @@ Every module section follows the same six parts:
 | NCCER Electrical Level 1, Module 26102-20: Safety for Electricians | `electrical-foundations.html` |
 | NCCER Core, Module 00100: Build Your Future in Construction (draft: Section Review and Module Review answers worked out from the module text; answer keys were not in the source PDF) | `build-your-future-in-construction.html` |
 | NCCER Core, Module 00101: Basic Safety (draft: Module Review answers worked out from the module text) | `basic-safety.html` (guided notes and slides in `basic-safety-materials/`) |
-| NCCER Core, Module 00102: Introduction to Construction Math (draft: Section Review and Module Review answers worked out from the module text; figure-based questions left out) | `introduction-to-construction-math.html` |
-| NCCER Core, Module 00103: Introduction to Hand Tools (draft: Section Review and Module Review answers worked out from the module text; answer keys were not in the source PDF) | `introduction-to-hand-tools.html` |
+| NCCER Core, Module 00102: Introduction to Construction Math (draft: Section Review and Module Review answers worked out from the module text; figure-based questions left out) | `introduction-to-construction-math.html` (guided notes and slides in `introduction-to-construction-math-materials/`) |
+| NCCER Core, Module 00103: Introduction to Hand Tools (draft: Section Review and Module Review answers worked out from the module text; answer keys were not in the source PDF) | `introduction-to-hand-tools.html` (guided notes and slides in `introduction-to-hand-tools-materials/`) |
 | NCCER Core, Module 00104: Introduction to Power Tools (draft: Section Review and Module Review answers worked out from the module text; answer keys were not in the source PDF) | `introduction-to-power-tools.html` |
 | NCCER Core, Module 00105: Introduction to Construction Drawings | `construction-drawings.html` |
 | NCCER Core, Module 00106: Introduction to Basic Rigging (draft: Section Review and Module Review answers worked out from the module text; answer keys were not in the source PDF) | `introduction-to-basic-rigging.html` |
@@ -35,7 +35,7 @@ Every module section follows the same six parts:
 | NCCER Electrical Level 1, Module 26108-20: Wireways, Raceways, and Fittings (draft: some scanned-page sections not yet covered) | `wireways-raceways-fittings.html` (guided notes and slides in `wireways-raceways-fittings-materials/`) |
 | NCCER Core, Module 00107: Basic Communication Skills | `communication-skills.html` |
 | NCCER Core, Module 00108: Basic Employability Skills | `employability-skills.html` |
-| NCCER Core, Module 00109: Introduction to Material Handling (draft: Section Review and Module Review answers worked out from the module text; answer keys were not in the source PDF; the one figure-based review question left out) | `introduction-to-material-handling.html` |
+| NCCER Core, Module 00109: Introduction to Material Handling (draft: Section Review and Module Review answers worked out from the module text; answer keys were not in the source PDF; the one figure-based review question left out) | `introduction-to-material-handling.html` (guided notes and slides in `introduction-to-material-handling-materials/`) |
 | NCCER Electrical Level 1, Module 26109-20: Conductors and Cables (draft: printed pages 18 and 19 missing from the source PDF; Module Review answers worked out from the module text) | `conductors-and-cables.html` (guided notes and slides in `conductors-and-cables-materials/`) |
 | NCCER Electrical Level 1, Module 26110-20: Basic Electrical Construction Documents | `electrical-construction-documents.html` |
 | NCCER Electrical Level 1, Module 26111-20: Residential Wiring | `residential-wiring.html` |

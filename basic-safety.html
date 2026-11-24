@@ -1,0 +1,1579 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Basic Safety Loved Ones Study Guide</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+/* Layout concept: one long study sheet. Each module section runs the same six parts
+   (read, review points, trade-term tags, ticket out the door, talk it over, practice questions). */
+:root {
+  --bg: #EEF1F3;
+  --surface: #FFFFFF;
+  --ink: #14202B;
+  --ink-soft: #46576A;
+  --line: #C9D2DA;
+  --band: #14202B;
+  --band-ink: #F4F7F9;
+  --accent: #C42B17;
+  --accent-ink: #FFFFFF;
+  --caution: #F2B705;
+  --caution-soft: #FFF3C4;
+  --good: #1E7A3C;
+  --good-soft: #DDF3E4;
+  --bad: #A8321F;
+  --bad-soft: #FBE3DE;
+  --tag-hole: #EEF1F3;
+  --focus: #0B5FFF;
+  --font-display: "Barlow Condensed", "Arial Narrow", Impact, sans-serif;
+  --font-body: "Barlow", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0F171E; --surface: #18232D; --ink: #EAF0F4; --ink-soft: #A5B4C2; --line: #2E3E4C;
+    --band: #0A1016; --band-ink: #F4F7F9; --accent: #FF5A44; --accent-ink: #14202B;
+    --caution: #F2B705; --caution-soft: #3A3210; --good: #6FD08C; --good-soft: #17301F;
+    --bad: #FF8E7C; --bad-soft: #3A1B16; --tag-hole: #0F171E; --focus: #6AA2FF;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0F171E; --surface: #18232D; --ink: #EAF0F4; --ink-soft: #A5B4C2; --line: #2E3E4C;
+  --band: #0A1016; --band-ink: #F4F7F9; --accent: #FF5A44; --accent-ink: #14202B;
+  --caution: #F2B705; --caution-soft: #3A3210; --good: #6FD08C; --good-soft: #17301F;
+  --bad: #FF8E7C; --bad-soft: #3A1B16; --tag-hole: #0F171E; --focus: #6AA2FF;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--font-body); font-size: 17px; line-height: 1.6; }
+[hidden] { display: none !important; }
+:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
+.wrap { max-width: 920px; margin-inline: auto; padding-inline: max(16px, env(safe-area-inset-left, 0px)) max(16px, env(safe-area-inset-right, 0px)); }
+h1, h2, h3, h4 { font-family: var(--font-display); text-transform: uppercase; letter-spacing: 0.03em; line-height: 1.05; margin: 0; text-wrap: balance; }
+.eyebrow { font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-soft); }
+
+.band { background: var(--band); color: var(--band-ink); padding-block: 34px 26px; border-bottom: 8px solid var(--caution); }
+.band .eyebrow { color: var(--caution); }
+.band h1 { font-size: clamp(2.5rem, 9vw, 4.4rem); font-weight: 700; margin-top: 10px; }
+.band .sub { margin: 14px 0 0; font-size: 1.1rem; color: #D5DEE5; max-width: 46ch; }
+.band .byline { margin: 14px 0 0; font-size: 0.95rem; color: #AEBBC7; }
+nav.jump { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 22px; }
+nav.jump a { text-decoration: none; font-weight: 600; font-size: 0.95rem; padding: 8px 14px; border: 2px solid #3B4B5A; border-radius: 3px; color: var(--band-ink); }
+nav.jump a:hover { border-color: var(--caution); }
+
+.intro { margin-top: 28px; display: grid; gap: 22px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 380px), 1fr)); }
+.panel { background: var(--surface); border: 1px solid var(--line); padding: 20px 22px 22px; min-width: 0; }
+.panel h2 { font-size: 1.5rem; font-weight: 700; margin-bottom: 10px; }
+.panel p { margin: 0 0 10px; }
+.panel ol { margin: 8px 0 0; padding-left: 1.3em; display: grid; gap: 6px; }
+.notice { background: var(--caution-soft); border: 2px solid var(--caution); padding: 16px 20px; margin-top: 22px; }
+.notice p { margin: 4px 0 0; }
+.notice h2 { font-size: 1.25rem; }
+
+/* section */
+.sec { margin-top: 56px; }
+.sec-head { border-top: 8px solid var(--ink); padding-top: 18px; }
+.sec-head h2 { font-size: clamp(2rem, 6vw, 3rem); font-weight: 700; margin-top: 6px; }
+.sec-head .obj { margin: 10px 0 0; color: var(--ink-soft); max-width: 62ch; }
+.part { margin-top: 34px; }
+.part-title { display: flex; align-items: baseline; gap: 12px; margin-bottom: 14px; }
+.part-title .letter { font-family: var(--font-mono); font-size: 13px; background: var(--ink); color: var(--bg); padding: 2px 8px; flex: none; }
+.part-title h3 { font-size: 1.7rem; font-weight: 700; }
+.part-title .time { margin-left: auto; font-family: var(--font-mono); font-size: 12px; color: var(--ink-soft); white-space: nowrap; }
+
+.prose { background: var(--surface); border: 1px solid var(--line); padding: 22px 24px; }
+.prose h4 { font-size: 1.25rem; font-weight: 700; margin: 20px 0 6px; color: var(--accent); }
+.prose h4:first-child { margin-top: 0; }
+.prose p { margin: 0 0 10px; max-width: 64ch; }
+.prose ul, .prose ol { margin: 0 0 10px; padding-left: 1.2em; max-width: 64ch; }
+.prose li { margin-bottom: 4px; }
+.prose .big { font-size: 1.12rem; font-weight: 500; border-left: 6px solid var(--caution); padding: 4px 0 4px 14px; margin: 0 0 16px; }
+.prose table { border-collapse: collapse; margin: 8px 0 14px; font-size: 0.95rem; width: 100%; max-width: 620px; }
+.prose th, .prose td { text-align: left; padding: 6px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+.prose th { font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-soft); }
+.prose caption { caption-side: top; text-align: left; font-weight: 600; font-size: 0.95rem; padding: 0 0 8px; color: var(--ink); }
+.scroll { overflow-x: auto; }
+.case { background: var(--bg); border-left: 6px solid var(--accent); padding: 12px 16px; margin: 14px 0 0; max-width: 64ch; }
+.case b { font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.08em; text-transform: uppercase; display: block; color: var(--ink-soft); }
+.case ul { margin: 6px 0 0; }
+.warn { background: var(--bad-soft); border-left: 6px solid var(--bad); padding: 12px 16px; margin: 14px 0 0; max-width: 64ch; }
+.warn b { font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.08em; text-transform: uppercase; display: block; color: var(--bad); }
+
+/* review points */
+.points { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.points li { background: var(--surface); border: 1px solid var(--line); }
+.points label { display: grid; grid-template-columns: 28px minmax(0, 1fr); gap: 12px; padding: 12px 16px; cursor: pointer; align-items: start; }
+.points input { width: 22px; height: 22px; margin: 2px 0 0; accent-color: var(--good); }
+.points li:has(input:checked) { background: var(--good-soft); border-color: var(--good); }
+.points b { font-weight: 600; }
+
+/* cards */
+.deck { display: grid; gap: 22px; grid-template-columns: repeat(auto-fill, minmax(min(100%, 270px), 1fr)); }
+.card { all: unset; box-sizing: border-box; display: block; cursor: pointer; perspective: 1100px; min-width: 0; }
+.card:focus-visible { outline: 3px solid var(--focus); outline-offset: 4px; }
+.card-inner { display: grid; transition: transform 0.5s cubic-bezier(.3,.7,.2,1); transform-style: preserve-3d; position: relative; }
+.card[aria-pressed="true"] .card-inner { transform: rotateY(180deg); }
+.face { grid-area: 1 / 1; backface-visibility: hidden; -webkit-backface-visibility: hidden; display: flex; flex-direction: column; min-height: 250px; border: 2px solid var(--ink); background: var(--surface); position: relative; overflow: hidden; }
+.face::before { content: ""; position: absolute; top: 12px; left: 50%; width: 16px; height: 16px; margin-left: -8px; border-radius: 50%; background: var(--tag-hole); border: 2px solid var(--ink); }
+.front .strip { background: var(--accent); color: var(--accent-ink); padding: 38px 16px 8px; font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.08em; text-transform: uppercase; }
+.front.key .strip { background: var(--ink); color: var(--bg); }
+.front .term { flex: 1; display: flex; align-items: center; padding: 16px 18px; font-family: var(--font-display); text-transform: uppercase; font-weight: 700; font-size: clamp(1.8rem, 7vw, 2.2rem); line-height: 1.02; letter-spacing: 0.02em; overflow-wrap: anywhere; }
+.front .hint { padding: 10px 18px 14px; font-size: 0.8rem; color: var(--ink-soft); border-top: 1px dashed var(--line); font-family: var(--font-mono); letter-spacing: 0.04em; }
+.back { transform: rotateY(180deg); background: var(--caution-soft); }
+.back .strip { background: var(--ink); color: var(--bg); padding: 38px 16px 8px; font-family: var(--font-display); text-transform: uppercase; font-weight: 700; letter-spacing: 0.04em; font-size: 1.1rem; line-height: 1.05; }
+.back .body { padding: 14px 18px 16px; display: grid; gap: 10px; align-content: start; font-size: 0.95rem; line-height: 1.45; }
+.back .label { font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-soft); display: block; margin-bottom: 1px; }
+.back .ask { border-top: 1px dashed var(--ink-soft); padding-top: 10px; font-weight: 500; }
+@media (prefers-reduced-motion: reduce) {
+  .card-inner { transition: none; transform-style: flat; }
+  .card[aria-pressed="true"] .card-inner { transform: none; }
+  .back { transform: none; }
+  .face { backface-visibility: visible; }
+  .card .back { visibility: hidden; }
+  .card[aria-pressed="true"] .back { visibility: visible; }
+  .card[aria-pressed="true"] .front { visibility: hidden; }
+}
+
+/* ticket */
+.ticket { background: var(--surface); border: 2px dashed var(--ink); padding: 8px 20px 18px; position: relative; }
+.ticket-intro { margin: 14px 0 4px; color: var(--ink-soft); font-size: 0.95rem; }
+.q { border: 0; border-top: 1px solid var(--line); margin: 0; padding: 16px 0 14px; min-width: 0; }
+.q:first-of-type { border-top: 0; }
+.q legend { font-weight: 600; padding: 0; margin-bottom: 8px; float: left; width: 100%; }
+.q .opts { clear: both; display: grid; gap: 8px; }
+.opts { display: grid; gap: 8px; }
+.opt { font: inherit; text-align: left; padding: 10px 14px; background: var(--bg); color: var(--ink); border: 2px solid var(--line); border-radius: 3px; cursor: pointer; }
+.opt:hover:not(:disabled) { border-color: var(--ink); }
+.opt:disabled { cursor: default; }
+.opt.right { background: var(--good-soft); border-color: var(--good); }
+.opt.wrong { background: var(--bad-soft); border-color: var(--bad); }
+.fb { margin: 8px 0 0; font-size: 0.93rem; color: var(--ink-soft); }
+.fb b { color: var(--ink); }
+.ticket-foot { margin-top: 10px; display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+.ticket-foot p { margin: 0; font-weight: 500; }
+.btn { font: inherit; font-weight: 600; font-size: 0.92rem; padding: 8px 14px; background: var(--surface); color: var(--ink); border: 2px solid var(--ink); border-radius: 3px; cursor: pointer; }
+.btn:hover { background: var(--ink); color: var(--bg); }
+
+/* talk it over */
+.talk { display: grid; gap: 14px; }
+.talk .qs { background: var(--surface); border: 1px solid var(--line); padding: 16px 22px 16px 40px; margin: 0; display: grid; gap: 8px; }
+details.scn { background: var(--surface); border: 1px solid var(--line); border-left: 6px solid var(--caution); padding: 14px 18px; }
+details.scn summary { cursor: pointer; font-family: var(--font-display); text-transform: uppercase; letter-spacing: 0.03em; font-size: 1.3rem; font-weight: 700; }
+details.scn .setup { margin: 10px 0 8px; }
+details.scn .good { margin: 12px 0 0; padding: 10px 14px; background: var(--good-soft); border-left: 6px solid var(--good); }
+details.scn .good b { font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.08em; text-transform: uppercase; display: block; }
+details.scn .good ul { margin: 6px 0 0; padding-left: 1.1em; }
+.parent { background: var(--caution-soft); border: 2px solid var(--caution); padding: 12px 16px; }
+.parent b { font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.08em; text-transform: uppercase; display: block; }
+.parent p { margin: 4px 0 0; }
+
+/* practice questions */
+.pr-intro { margin: 0 0 14px; color: var(--ink-soft); max-width: 66ch; }
+.pr { background: var(--surface); border: 1px solid var(--line); margin-bottom: 18px; }
+.pr-head { display: flex; flex-wrap: wrap; gap: 6px 14px; justify-content: space-between; align-items: baseline; padding: 10px 18px; background: var(--ink); color: var(--bg); font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.06em; text-transform: uppercase; }
+.ask-block { padding: 14px 18px 16px; }
+.ask-block + .ask-block { border-top: 2px dashed var(--line); }
+.ask-block.formal { background: var(--bg); }
+.step-label { margin: 0 0 6px; font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); }
+.pr-q { margin: 0 0 10px; font-weight: 600; font-size: 1.05rem; max-width: 62ch; }
+.bridge { padding: 14px 18px 16px; border-top: 2px dashed var(--line); background: var(--caution-soft); }
+.bridge .step-label { color: var(--ink); }
+.bridge ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+.bridge li { display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); gap: 10px; align-items: baseline; }
+.bridge .you { font-style: italic; }
+.bridge .arrow { font-family: var(--font-mono); color: var(--ink-soft); }
+.bridge .pub { font-weight: 600; }
+@media (max-width: 520px) { .bridge li { grid-template-columns: minmax(0, 1fr); gap: 0; } .bridge .arrow { display: none; } .bridge .pub::before { content: "Textbook: "; font-weight: 400; font-family: var(--font-mono); font-size: 11px; color: var(--ink-soft); } .bridge .you::before { content: "You say: "; font-style: normal; font-family: var(--font-mono); font-size: 11px; color: var(--ink-soft); } }
+
+/* final checklist */
+.final { margin-top: 56px; border-top: 8px solid var(--ink); padding-top: 18px; }
+.final h2 { font-size: clamp(1.9rem, 5vw, 2.6rem); font-weight: 700; }
+.final .lead { color: var(--ink-soft); max-width: 62ch; margin: 10px 0 16px; }
+.note { margin: 28px 0 0; font-size: 0.9rem; color: var(--ink-soft); max-width: 70ch; }
+footer { margin-top: 48px; background: var(--band); color: #AEBBC7; padding-block: 26px 30px; font-size: 0.92rem; }
+footer strong { color: var(--band-ink); }
+footer p { margin: 0 0 6px; }
+
+</style>
+</head>
+<body>
+
+<header class="band">
+  <div class="wrap">
+    <span class="eyebrow">EVIT Electrical · Loved Ones Study Guide</span>
+    <h1>Basic<br>Safety</h1>
+    <p class="sub">A Loved Ones Study Guide for NCCER Core, Module 00101: Basic Safety</p>
+    <p class="byline">Mr. Ellis CTE — General Construction &amp; Electrical Teacher · High School &amp; Adult Pre-Apprentice Programs</p>
+    <nav class="jump" aria-label="Sections">
+      <a href="#s1">1 · Safety basics</a>
+      <a href="#s2">2 · Falls</a>
+      <a href="#s3">3 · Struck-by</a>
+      <a href="#s4">4 · Energy</a>
+      <a href="#s5">5 · PPE</a>
+      <a href="#s6">6 · Job-site</a>
+      <a href="#review">Loved ones review</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<div class="wrap">
+
+  <div class="intro">
+    <div class="panel">
+      <h2>Why this guide exists</h2>
+      <p>You do not need to work in construction to support a construction student. Your job is to help your student explain what they are learning and put it in their own words. Safety is the one subject where that matters most, because the habits learned here are the ones that bring them home at the end of the day.</p>
+      <p>If your student can read it and explain it, they are learning it. That is the whole idea.</p>
+    </div>
+    <div class="panel">
+      <h2>How to use each section</h2>
+      <p>Plan about 20 to 30 minutes per section. The student does most of the talking. You do not need the answers ahead of time.</p>
+      <ol>
+        <li><b>Read it together.</b> Plain-English version of the module section.</li>
+        <li><b>Study review points.</b> The must-know facts. Tick each one when your student can say it back.</li>
+        <li><b>Trade-term cards.</b> Tap a card to flip it.</li>
+        <li><b>Ticket out the door.</b> A quick recall check, just for practice.</li>
+        <li><b>Talk it over.</b> Questions and a real-world scenario.</li>
+        <li><b>Practice questions.</b> Each one comes twice: first in plain English, then in the textbook's words, so your student learns to recognize both.</li>
+      </ol>
+    </div>
+  </div>
+
+  <aside class="notice" aria-labelledby="safe-h">
+    <h2 id="safe-h">Good to know before you start</h2>
+    <p>This guide explains safety rules so your student can talk about them. It does not replace hands-on training, a supervisor's instructions, the employer's safety program or the manufacturer's directions for any tool or piece of equipment. Distances, ratings and limits come from the textbook. Always follow the rules that apply at your student's school or job site. No student names or grades appear here, and nothing you tick or tap on this page is saved or sent anywhere.</p>
+  </aside>
+
+  <section class="sec" id="s1" aria-labelledby="s1-h">
+    <div class="sec-head">
+      <span class="eyebrow">Module Section 1 of 6</span>
+      <h2 id="s1-h">Safety and Hazard Recognition</h2>
+      <p class="obj">By the end of this section your student can explain why safety is everyone's job, tell an incident from an accident, name the fatal four, and describe how hazards are found, reported and controlled.</p>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">A</span><h3>Read it together</h3><span class="time">about 30 min</span></div>
+      <div class="prose">
+        <p class="big">Safety is a way of working, not a poster on the wall. The module says everyone on a job site shares the job of staying safe, but your own safety is ultimately in your own hands.</p>
+
+        <h4>Safety is everyone's job (1.0.0)</h4>
+        <p>You owe it to your employer, co-workers, loved ones and yourself to work safely, and to make sure anyone you work with is working safely. The module boils this down to three rules:</p>
+        <ul>
+          <li>Follow safe work practices and procedures, both regulatory and corporate.</li>
+          <li>Inspect safety equipment before you use it.</li>
+          <li>Use safety equipment properly.</li>
+        </ul>
+        <p>A <b>safety culture</b> is created when everyone from management to laborers sees the value of a safe work environment and supports it through their actions. Companies with strong safety cultures usually have fewer at-risk behaviors, lower incident and accident rates, less turnover, lower absenteeism and higher productivity. A good safety record also helps a company win more bids, and contractors with poor records can be left out of bidding. Part of a strong culture is encouraging workers to question things and empowering them to <b>stop work</b> when they see a potential hazard.</p>
+
+        <h4>Incidents and accidents (1.1.0)</h4>
+        <p>People often use these words as if they mean the same thing. OSHA defines them this way:</p>
+        <ul>
+          <li>An <b>incident</b> is an unplanned event that does not result in personal injury but may result in property damage or is worth recording.</li>
+          <li>An <b>accident</b> is an unplanned event that results in personal injury and/or property damage.</li>
+        </ul>
+        <p>Either way, both are unwanted events that hurt projects and workers.</p>
+
+        <h4>Categories (1.1.1)</h4>
+        <div class="scroll"><table>
+          <caption>How the module sorts incidents and accidents</caption>
+          <thead><tr><th>Category</th><th>What it means</th></tr></thead>
+          <tbody>
+            <tr><td><b>Near-miss</b></td><td>No one was hurt and nothing was damaged, but either could have happened. Always report it.</td></tr>
+            <tr><td><b>Property damage</b></td><td>Damage to tools, materials or equipment, but no personal injuries.</td></tr>
+            <tr><td><b>Minor injuries</b></td><td>Minor cuts, bruises or strains. The worker is back to full duty on the next regular shift.</td></tr>
+            <tr><td><b>Serious or disabling injuries</b></td><td>Temporary or permanent disability, including lost-time and restricted-duty cases.</td></tr>
+            <tr><td><b>Fatalities</b></td><td>Deaths resulting from unplanned events.</td></tr>
+          </tbody>
+        </table></div>
+        <p>Studies found that for every serious or disabling injury there were 10 less serious injuries and 30 property damage incidents, and about 600 near-misses. That is why near-misses matter.</p>
+        <p>The four leading causes of death in construction are the <b>"fatal four"</b> (also called the "big four" or "focus four"): <b>falls</b>, <b>struck-by hazards</b>, <b>caught-in or caught-between hazards</b> and <b>electrical hazards</b>. Deaths from falls far exceed all the others. In 2018, 1,008 of the 4,779 worker deaths in US private industry (21.1 percent, about one in five) were in construction, and the fatal four caused nearly 3 out of 5 of those construction deaths.</p>
+
+        <h4>Costs (1.1.2)</h4>
+        <p>Incidents and accidents cost billions of dollars a year and cause needless suffering. The National Safety Council estimates the organized safety movement has saved more than 4.2 million lives since 1913. An injury affects the worker, the worker's loved ones, co-workers and the employer. A worker injured while breaking safety rules may have insurance claims denied. A poor safety record can also cost a company future contracts, which can mean layoffs and hiring freezes.</p>
+        <div class="case"><b>Half-measure</b>Most workers who die from falls are wearing harnesses but did not tie off properly. Always follow the manufacturer's instructions.</div>
+
+        <h4>Causes of incidents and accidents (1.2.0)</h4>
+        <div class="scroll"><table>
+          <caption>The ten causes the module lists</caption>
+          <thead><tr><th>Cause</th><th>What the module says</th></tr></thead>
+          <tbody>
+            <tr><td><b>Failure to communicate (1.2.1)</b></td><td>Different people, companies and job sites do things differently. Do not assume. Do not use jargon. Learn the signs: <b>informational</b> (blue), <b>safety</b> (white background, usually a green panel with white letters; exits often white letters on red), <b>caution</b> (yellow), <b>danger</b> (red, black and white) and temporary warning <b>tags</b>. Toolbox talks are 5 to 10 minute safety meetings.</td></tr>
+            <tr><td><b>At-risk work habits (1.2.2)</b></td><td>Procrastination, carelessness and horseplay. Pranks can seriously injure a co-worker.</td></tr>
+            <tr><td><b>Alcohol or drug abuse (1.2.3)</b></td><td>Costs millions of dollars and lives. Some prescription and over-the-counter medicines also affect safe work. Ask the doctor about side effects and follow the company's substance abuse policy.</td></tr>
+            <tr><td><b>Lack of skill (1.2.4)</b></td><td>Never perform a new task alone until a supervisor has checked you out. Never operate a power tool until trained.</td></tr>
+            <tr><td><b>Intentional acts (1.2.5)</b></td><td>Purposely causing damage or injury. Tell your supervisor at once if someone threatens to get even. Stay aware of strangers on the site.</td></tr>
+            <tr><td><b>Unsafe acts (1.2.6)</b></td><td>Changing from the accepted procedure. Examples: not using required PPE, lifting improperly, making a saw guard inoperable, servicing equipment in motion, using defective equipment.</td></tr>
+            <tr><td><b>Rationalizing risk (1.2.7)</b></td><td>Ignoring safety warnings because you think you can justify it, such as not tying off because you only lean over a foot. If you think it is unsafe, it is unsafe: stop and tell your supervisor.</td></tr>
+            <tr><td><b>Unsafe conditions (1.2.8)</b></td><td>A physical state that differs from normal and safe: clutter, defective tools, poor lighting or ventilation, unguarded moving parts, radiation, hazardous atmosphere. All workers should have authority to stop work when they see one.</td></tr>
+            <tr><td><b>Poor housekeeping (1.2.9)</b></td><td>Keep work areas clean and orderly. Clean up spills, remove scrap with protruding nails, keep aisles and exits clear. Oily rags go only in approved, self-closing metal containers.</td></tr>
+            <tr><td><b>Management system failure (1.2.10)</b></td><td>Good companies put safety policies in writing, give them to every employee, review them, enforce them fairly, evaluate equipment and supplies, and provide regular safety training.</td></tr>
+          </tbody>
+        </table></div>
+        <div class="case"><b>Self-care</b>The module says good self-care helps a long construction career. Quality sleep matters most for safety, since sleep loss hurts judgment and raises the risk of being distracted. Healthy eating, exercise and staying hydrated also help.</div>
+
+        <h4>Hazard recognition, evaluation and control (1.3.0)</h4>
+        <p>Spotting hazards early is the foundation of an effective safety program. For any situation or piece of equipment, ask: How can it cause harm? What energy sources are present and how big are they? What could go wrong to release the energy? How can the energy be eliminated or controlled? Will I be exposed to hazardous materials?</p>
+
+        <h4>HAZCOM and hazardous chemicals (1.3.0)</h4>
+        <p>The <b>Hazard Communication (HAZCOM) Standard</b> is also called the Right-To-Know requirement. It requires US contractors to teach employees about the hazardous chemicals they may be exposed to. The module says many people wrongly think few hazardous chemicals are on job sites: solvents, paint, concrete and even wood dust all count. Under HAZCOM you must know where the SDSs are, report hazards to your supervisor, know the hazards of materials on the job and the precautions to take, know what to do in an emergency, and know where your employer's written hazard communication program is.</p>
+
+        <h4>Energy sources and hazard recognition tools (1.3.1 and 1.3.2)</h4>
+        <p>Equipment usually causes an incident through an <b>uncontrolled release of energy</b>. Energy types listed: mechanical, pneumatic, hydraulic, electrical, chemical, thermal, radioactive, gravitational and stored energy.</p>
+        <ul>
+          <li>A <b>job safety analysis (JSA)</b> (also called job hazard analysis, JHA) breaks a task into steps and studies each step for hazards, then recommends fixes.</li>
+          <li>A <b>task safety analysis (TSA)</b> (also called task hazard analysis, THA) is similar but usually uses a pre-printed fill-in-the-blank checklist. The supervisor or team leader reviews it with the crew before work begins, and some companies have workers sign it.</li>
+        </ul>
+
+        <h4>Risk assessment (1.3.3)</h4>
+        <p><b>Risk</b> is a measure of the <b>probability</b> (chance an event occurs), the <b>consequences</b> (the results) and the <b>exposure</b> (how long or how much someone is exposed). A safe operation has an acceptable level of risk. Climbing a ladder is acceptable only if the right ladder is used as intended, set up correctly and in good condition.</p>
+
+        <h4>Reporting (1.3.4)</h4>
+        <p>All incidents and accidents, <b>no matter how minor</b>, must be reported to your supervisor. Small injuries can turn into big problems from infection. US employers with more than 10 employees must keep a log of significant work-related injuries and illnesses on OSHA forms. Reporting helps keep similar events from happening again.</p>
+
+        <h4>Safety Data Sheets (1.3.5)</h4>
+        <p>An <b>SDS</b> is a fact sheet from the chemical manufacturer or importer. Every product used on a construction site must have one. It describes the substance, its hazards, safe handling, first aid and emergency spill procedures. New SDSs follow a standard <b>16-section</b> format (they used to be called MSDSs). The most important things to find are the specific hazards, personal protection, handling procedures and first aid information, and most SDSs list a 24-hour emergency number. In the module's example (a PVC pipe cement), Section 2 shows the product is flammable and an eye and skin irritant. Section 7 says ventilation is needed, Section 8 covers eye and skin protection, Section 4 covers first aid and Section 5 covers fire fighting.</p>
+        <p>SDSs must be kept in the work area and be readily accessible to all workers. Ask your supervisor where they are.</p>
+      </div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">B</span><h3>Study review points</h3></div>
+      <ul class="points" data-points="1"></ul>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">C</span><h3>Trade-term cards</h3></div>
+      <div class="deck" data-cards="1"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">D</span><h3>Ticket out the door</h3></div>
+      <div class="ticket" data-quiz="1"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">E</span><h3>Talk it over</h3></div>
+      <div class="talk" data-talk="1"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">F</span><h3>Practice questions</h3><span class="time">about 20 min</span></div>
+      <div data-practice="1"></div>
+    </div>
+  </section>
+
+  <section class="sec" id="s2" aria-labelledby="s2-h">
+    <div class="sec-head">
+      <span class="eyebrow">Module Section 2 of 6</span>
+      <h2 id="s2-h">Elevated Work and Fall Protection</h2>
+      <p class="obj">By the end of this section your student can describe fall hazards, name the parts of a fall arrest system, and set up ladders and scaffolds the safe way.</p>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">A</span><h3>Read it together</h3><span class="time">about 30 min</span></div>
+      <div class="prose">
+        <p class="big">Falls from elevated areas are the leading cause of workplace fatalities and about one-third of all construction deaths. About 85 percent of injured workers lose time from work, and about 33 percent need hospitalization.</p>
+
+        <h4>Two jobs: prevention and arrest (2.0.0)</h4>
+        <p>Employers must provide both and make sure workers are trained and certified in using fall protection equipment.</p>
+        <ul>
+          <li><b>Fall prevention</b> stops a fall from happening: covered floor openings, climbing aids, barricades and guardrails.</li>
+          <li><b>Fall arrest</b> protects a worker if a fall does happen: body harnesses, lanyards, connecting devices, lifelines and safety nets.</li>
+        </ul>
+
+        <h4>Fall types and hazards (2.1.0)</h4>
+        <p>Falls come in two groups: <b>from an elevation</b> (scaffolds, platforms, decking, concrete forms, ladders, stairs, near excavations) and <b>on the same level</b> (usually tripping or slipping). In the US, fall protection is required at unprotected sides or edges <b>6 feet or more</b> above the ground or level below. This is the <b>six-foot rule</b>. Some countries and companies require protection at lower heights.</p>
+        <p><b>Walking and working surfaces (2.1.1).</b> Slips, trips and falls on these surfaces cause 15 percent of incidental deaths in construction. Keep areas clean, dry and clear. Run cables, cords and hoses overhead or through crossover plates, and never run on scaffolds, platforms, decking or roofs.</p>
+        <p><b>Unprotected sides, wall openings and floor holes (2.1.2).</b> Any opening in a wall or floor is a hazard. It can be <b>guarded</b> or <b>covered</b>. Guard a wall opening if its bottom edge is less than 39 inches above the floor and a person could fall 6 feet or more.</p>
+        <div class="scroll"><table>
+          <caption>Barriers and barricades</caption>
+          <thead><tr><th>Type</th><th>What it does</th></tr></thead>
+          <tbody>
+            <tr><td><b>Railings</b></td><td>Barrier across wall openings or around floor openings.</td></tr>
+            <tr><td><b>Warning barricades</b></td><td>Warn only, no real protection. <b>Red</b> = danger, do not enter. <b>Yellow</b> = caution, enter carefully. <b>Yellow and purple</b> = radiation warning, no entry without authorization, training and PPE.</td></tr>
+            <tr><td><b>Protective barricades</b></td><td>Visual warning plus real protection: wooden posts and rails, posts and chain, or steel cable.</td></tr>
+            <tr><td><b>Blinking lights</b></td><td>Put on barricades so they can be seen at night.</td></tr>
+            <tr><td><b>Hole covers</b></td><td>Secured so they cannot slide, extend past the hole, clearly marked and strong enough for <b>twice the weight</b> that may be put on them. Use 3/4-inch plywood if one side of the opening is under 18 inches, otherwise 2-inch lumber. Never store material on a cover.</td></tr>
+          </tbody>
+        </table></div>
+        <div class="warn"><b>Warning</b>Never remove a barricade unless you are authorized to do so.</div>
+        <p>Guard stairway floor openings (except the entrance) with standard railing and toeboards, and guard open-sided floors and platforms 6 feet or more above the next level.</p>
+
+        <h4>Fall arrest (2.2.0)</h4>
+        <p>A complete <b>personal fall arrest system (PFAS)</b> has three parts: <b>anchor points</b>, a <b>body harness</b> and <b>connecting devices</b> (lanyards and hardware).</p>
+        <ul>
+          <li><b>Anchor points (2.2.1)</b> may be permanent or temporary and must be rated for <b>5,000 pounds</b> per worker (or twice the intended load). Ideally the anchor is directly above the back D-ring to reduce free-fall and swing-zone hazards. Maximum free-fall is 6 feet. Positioning anchor points need only be rated at 3,000 pounds, and positioning lanyards are <b>fall restraints, not fall arrest</b>.</li>
+          <li><b>Harnesses (2.2.2)</b> are sized by height and weight. The <b>back D-ring</b> is the main connection for fall arrest. When climbing a ladder, the front chest D-ring is used. Hip D-rings are for positioning and restraint, and shoulder D-rings are often for rescue. Fit it snug. Never add holes or modify it. The back D-ring sits between the shoulder blades. A suspension trauma strap lets a hanging worker stand and relieve pressure on the legs.</li>
+          <li><b>Inspection (2.2.3).</b> Inspect your harness and lanyard before every use. A competent person inspects the PFAS at least monthly. If in doubt, take it out of service.</li>
+          <li><b>Lanyards (2.2.4).</b> Fall arrest lanyards are shock absorbing or self-retracting (retractable is becoming the favorite). Never field-fabricate one, tie a knot in it or connect two together. Whenever wearing a PFAS, <b>100 percent tie-off</b> is required. A Y-configured lanyard lets you stay connected while moving. If a PFAS stops a fall, a competent person must inspect it before reuse, and it often must be replaced.</li>
+          <li><b>Lifelines (2.2.5).</b> Vertical lifelines hang from one anchor and need a 5,000 pound breaking strength, with a separate line for each worker. Horizontal lifelines run between two anchors, are designed and used under a competent person, and are rated for a maximum number of workers.</li>
+          <li><b>Guardrails (2.2.6)</b> must withstand 200 pounds on the top rail and 150 pounds on the midrail, be 42 inches (plus or minus 3) high and have a toeboard at least 4 inches high.</li>
+          <li><b>Safety nets (2.2.7)</b> are used on bridges and similar projects, no more than 30 feet below the work, inspected at least weekly, and drop-tested after installation, relocation, repair and at least every six months.</li>
+        </ul>
+        <div class="warn"><b>Note from the module</b>This training does not certify anyone to use fall arrest or fall restraint equipment in the field.</div>
+
+        <h4>Ladders and stairs (2.3.0)</h4>
+        <p><b>Overloading</b> means going over a ladder's <b>maximum intended load</b>, the total weight of people, tools and materials. Ladders have duty ratings:</p>
+        <div class="scroll"><table>
+          <caption>Ladder duty ratings (Table 2)</caption>
+          <thead><tr><th>Rating</th><th>Load</th><th>Use</th></tr></thead>
+          <tbody>
+            <tr><td>Type IAA</td><td>375 lbs</td><td>Extra-heavy duty / professional</td></tr>
+            <tr><td>Type IA</td><td>300 lbs</td><td>Extra-heavy duty / professional</td></tr>
+            <tr><td>Type I</td><td>250 lbs</td><td>Heavy duty / industrial</td></tr>
+            <tr><td>Type II</td><td>225 lbs</td><td>Medium duty / commercial</td></tr>
+            <tr><td>Type III</td><td>200 lbs</td><td>Light duty / household</td></tr>
+          </tbody>
+        </table></div>
+        <p>Use <b>three-point contact</b> every time you climb: two feet and one hand, or one foot and two hands.</p>
+        <ul>
+          <li><b>Straight ladders (2.3.1).</b> Metal ladders conduct electricity, so never use them around electrical equipment (a portable metal ladder must be marked "Danger! Do Not Use Around Electrical Installations"). Dry wood and fiberglass are safe around electricity, but even a little water conducts. Check the safety feet. Use the <b>4-to-1 rule</b>: the base is one-fourth of the height the ladder touches (a 16-foot wall means 4 feet out). To step off onto a roof or platform, the ladder must extend at least <b>3 feet</b> above it. Set it on stable, level ground or secure it top and bottom. Face the ladder, keep your weight centered, never move a ladder while on it, and use a hand line for tools.</li>
+          <li><b>Extension ladders (2.3.2).</b> Overlap at least 3 feet (up to 36 ft), 4 feet (36 to 48 ft) or 5 feet (48 to 60 ft). Adjust the movable section from the bottom. Never stand above the <b>fourth rung from the top</b>. Never remove the extension stop. Haul materials up on a line.</li>
+          <li><b>Stepladders (2.3.3).</b> All four feet on a hard, even surface with spreaders locked open. Never stand on the top step or top, never climb the rear braces, and never stand with your knees higher than the top.</li>
+          <li><b>Inspecting (2.3.4).</b> Check before every use for cracks, loose rungs and loose hardware. Do not use a damaged ladder. Do not paint wooden ladders, because paint can hide cracks.</li>
+          <li><b>Stairways (2.3.5).</b> Used where there is a break in elevation of 19 inches or more. Four or more risers (or more than 30 inches of rise) need at least one handrail and a stair railing on unprotected sides. Stair railings are at least 36 inches high. Keep stairs clear, lit and free of stored materials.</li>
+        </ul>
+
+        <h4>Scaffolds (2.4.0)</h4>
+        <p>Scaffolds are <b>elevated platforms</b> for workers and materials. People who assemble them must be certified, and only a <b>competent person</b> supervises setting up, moving or taking down a scaffold and approves its use.</p>
+        <ul>
+          <li><b>Types (2.4.1).</b> The two basic types are <b>self-supporting</b> and <b>suspended</b> scaffolds. Manufactured (including rolling scaffolds with wheel brakes), built-up and swing scaffolds are examples. Never unlock the wheel brakes while anyone is on a rolling scaffold.</li>
+          <li><b>Tags (2.4.2).</b> <b>Green</b> = meets OSHA standards, safe to use. <b>Yellow</b> = does not meet all standards, so you must wear a harness tied to a lanyard. <b>Red</b> = being put up or taken down, never use it. Still inspect it yourself.</li>
+          <li><b>Rules.</b> Know the weight limit. Over 10 feet high: top rails, midrails and toeboards (or use a PFAS). Pin all connections, use cross-bracing, fully plank the walkway, and screen the space if people can walk below.</li>
+          <li><b>Using (2.4.3).</b> Firm footing under each leg. Keep scaffolds at least 3 feet from power lines up to 300 volts and at least 10 feet from lines above 300 volts. Never move a scaffold while someone is on it.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">B</span><h3>Study review points</h3></div>
+      <ul class="points" data-points="2"></ul>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">C</span><h3>Trade-term cards</h3></div>
+      <div class="deck" data-cards="2"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">D</span><h3>Ticket out the door</h3></div>
+      <div class="ticket" data-quiz="2"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">E</span><h3>Talk it over</h3></div>
+      <div class="talk" data-talk="2"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">F</span><h3>Practice questions</h3><span class="time">about 15 min</span></div>
+      <div data-practice="2"></div>
+    </div>
+  </section>
+
+  <section class="sec" id="s3" aria-labelledby="s3-h">
+    <div class="sec-head">
+      <span class="eyebrow">Module Section 3 of 6</span>
+      <h2 id="s3-h">Struck-By and Caught-in-Between Hazards</h2>
+      <p class="obj">By the end of this section your student can tell struck-by from caught-in-between hazards and explain trench, equipment and guarding safety.</p>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">A</span><h3>Read it together</h3><span class="time">about 25 min</span></div>
+      <div class="prose">
+        <p class="big">Two hazard families, one idea. <b>Struck-by</b> means being hit by a moving object. <b>Caught-in-between</b> means being trapped between a moving object and something solid.</p>
+        <div class="case"><b>The module's example</b>A load swings from a crane and hits you: struck-by. The crane backs up and pins you against a wall: caught-in-between.</div>
+
+        <h4>Falling objects (3.1.1)</h4>
+        <ul>
+          <li>Always wear an approved <b>hard hat</b>. Never stand or work under a load or in the fall zone.</li>
+          <li>Barricade areas where rigging is used and post warning signs. Inspect cranes and rigging, and do not exceed the rated load.</li>
+          <li>For overhead work, secure tools and materials. Use toeboards, debris nets, catch platforms or canopies, and tool lanyards.</li>
+          <li>Do not stack materials higher than a <b>4:1 height-to-base ratio</b>. Block and <b>interlock</b> loads (place alternate layers at right angles). Watch for wind.</li>
+        </ul>
+
+        <h4>Flying objects (3.1.2)</h4>
+        <p>Chipping, grinding, brushing and hammering can throw objects into the air, and high-speed tools such as pneumatic and powder-actuated tools can be very dangerous. Injuries range from minor abrasions to concussions, blindness or death. Wear eye protection (safety glasses, goggles or face shields), check that tool guards are in place, get trained on pneumatic and powder-actuated tools, and use shielding such as a welding screen.</p>
+
+        <h4>Vehicles and roadways (3.1.3)</h4>
+        <p>The most common cause of death for equipment operators is <b>equipment rollover</b>. Other dangers are being run over (especially by backing equipment) or struck by swinging backhoes and crane loads. Nearly one in four struck-by vehicle deaths involves construction workers.</p>
+        <ul>
+          <li>Stay alert, keep a safe distance and make eye contact with operators. Never stand in blind spots.</li>
+          <li>Wear reflective or high-visibility vests. Keep off equipment unless authorized.</li>
+          <li>Never stand between pieces of equipment unless they are secured, and never stand under loads or near vehicles being loaded.</li>
+          <li><b>Operators:</b> always wear a seat belt, obey speed limits, sound the horn and look to the rear before backing (use a <b>signaler</b> if your view is blocked), keep a working backup alarm, turn off the engine when fueling, and never use a cell phone while driving.</li>
+        </ul>
+        <div class="warn"><b>Carbon monoxide</b>A vehicle, generator or any internal combustion engine running indoors can sicken or kill without ventilation. You cannot see, smell or taste carbon monoxide.</div>
+
+        <h4>Caught-in hazards and trenches (3.2.0 and 3.2.1)</h4>
+        <p>Trench or excavation collapse, rotating equipment and unguarded parts are the main causes of caught-in-between deaths. An <b>excavation</b> is any man-made cut, cavity, trench or depression made by removing earth. A <b>trench</b> is an excavation deeper than it is wide, usually not wider than 15 feet.</p>
+        <ul>
+          <li><b>Hazards:</b> cave-ins, water accumulation, falling objects, collapse of nearby structures and toxic gases in the soil.</li>
+          <li><b>Cave-ins</b> are the most common and deadly hazard. Most happen in trenches 5 to 15 feet deep, suddenly and with little warning. About 1,000 trench collapses happen each year in the US. Just 2 to 3 feet of soil can keep you from breathing.</li>
+          <li><b>More likely when:</b> weather changes (freezing, thawing, heavy rain), soil is unstable or already disturbed, there is excess vibration or water collects.</li>
+          <li><b>Warning signs:</b> cracks or settling near the edge, flakes, pebbles or clumps of soil falling in, bulges in the wall. Get out immediately and warn others.</li>
+        </ul>
+        <div class="scroll"><table>
+          <caption>Soil types (Table 3)</caption>
+          <thead><tr><th>Soil</th><th>Description</th></tr></thead>
+          <tbody>
+            <tr><td><b>Solid rock</b></td><td>Walls stay vertical as long as the excavation is open. The most stable.</td></tr>
+            <tr><td><b>Type A</b></td><td>Fine-grained, cohesive: clay, hardpan, caliche. Particles too small to see.</td></tr>
+            <tr><td><b>Type B</b></td><td>Angular rock, silt and similar soil.</td></tr>
+            <tr><td><b>Type C</b></td><td>Coarse-grained, granular: sand, gravel, loamy sand. Particles visible. The <b>least stable</b>.</td></tr>
+          </tbody>
+        </table></div>
+        <p>To be safe, <b>treat soil as Type C</b> unless proven otherwise. A <b>competent person</b> must inspect excavations daily: before work starts, as needed during the shift and after every rainstorm or other event that raises hazards. If there are signs of trouble, workers must leave and stay out until it is fixed.</p>
+        <ul>
+          <li><b>Protective systems</b> are required in nearly all excavations. If the excavation is more than 20 feet deep, a registered professional engineer must design the system.</li>
+          <li><b>Sloping</b> cuts the sides back to a safe angle with smooth inclines. <b>Benching</b> cuts them back in steps and <b>cannot be used with Type C soil</b>.</li>
+          <li><b>Shoring</b> supports the trench walls (plating held by expandable braces) and prevents cave-in. <b>Shielding</b> (trench boxes) only protects workers who stay inside the box.</li>
+          <li><b>Spoil</b> (the dirt removed) and equipment must stay at least <b>2 feet</b> from the edge.</li>
+          <li>Trenches deeper than 4 feet need a safe way in and out (ladder, stairway or ramp) within <b>25 feet</b> of workers. A loader bucket or backhoe shovel is not a safe way in or out.</li>
+          <li>Your company must have an emergency action plan. <b>When in doubt, get out.</b></li>
+        </ul>
+        <div class="case"><b>Call before you dig</b>Dial <b>811</b>, the nationwide number, before any digging so utilities can mark buried lines. Hitting a line can cause outages, electrocution, gas leaks and explosions. The Common Ground Alliance's five rules: call, wait for utilities to respond, confirm the markings, respect the markings, and proceed with caution near the marked line (the tolerance zone is 1.5 to 2 feet).</div>
+
+        <h4>Tool, machine and equipment guards (3.2.2)</h4>
+        <p>Guards keep moving parts away from your hands and body. Grinding, shearing, cutting, pressing, punching and rolling tools, and anything with pinch points or sharp edges, must have guards. Only remove a guard to clean, change a blade or service the machine, and only when it is turned off and <b>tagged out</b>. Replace it immediately. Never wedge a guard open, and use only attachments made for that tool.</p>
+
+        <h4>Cranes and heavy equipment (3.2.3)</h4>
+        <p>Workers can be crushed by falling loads, fall from equipment, be electrocuted by power lines or be struck or trapped by vehicles. The <b>swing radius</b> of equipment is a hazard, so barricade the machine's working perimeter. Most heavy equipment has pinch points. In the module's example, a worker approached a backhoe from the operator's blind side and was crushed against a wall.</p>
+      </div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">B</span><h3>Study review points</h3></div>
+      <ul class="points" data-points="3"></ul>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">C</span><h3>Trade-term cards</h3></div>
+      <div class="deck" data-cards="3"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">D</span><h3>Ticket out the door</h3></div>
+      <div class="ticket" data-quiz="3"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">E</span><h3>Talk it over</h3></div>
+      <div class="talk" data-talk="3"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">F</span><h3>Practice questions</h3><span class="time">about 20 min</span></div>
+      <div data-practice="3"></div>
+    </div>
+  </section>
+
+  <section class="sec" id="s4" aria-labelledby="s4-h">
+    <div class="sec-head">
+      <span class="eyebrow">Module Section 4 of 6</span>
+      <h2 id="s4-h">Energy Release Hazards</h2>
+      <p class="obj">By the end of this section your student can explain electrical hazards, GFCIs and the lockout/tagout steps.</p>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">A</span><h3>Read it together</h3><span class="time">about 20 min</span></div>
+      <div class="prose">
+        <p class="big">Energy hazards are the ones you cannot always see. Electricity, stored energy and moving parts can hurt you the instant they are released, so the module's answer is to control the energy before you touch the equipment.</p>
+
+        <h4>Electrical hazards (4.1.0)</h4>
+        <p>Electrical shock is one of the fatal four. <b>Less than 1 amp</b> of current through the body can kill. Shock can also cause burns, falls and fires. Water, wet skin and damaged tools make shock more likely, and a metal ladder, scaffold or pipe can carry current.</p>
+        <ul>
+          <li><b>Ground-fault circuit interrupters (GFCIs)</b> protect people by cutting power when current leaks. A GFCI trips when it senses an imbalance of about <b>5 milliamps</b>. Use one on every temporary power outlet and portable cord set outdoors or in damp places.</li>
+          <li><b>Inspect cords and tools</b> before each use. Take damaged tools out of service and tag them. Never use a cord with a missing ground pin or bare conductors.</li>
+          <li><b>Overhead power lines.</b> Treat every line as energized. Stay at least <b>10 feet</b> away from lines of 50,000 volts or less, and farther for higher voltages. Assume cranes, ladders and scaffolds can reach a line, and call the utility if you are unsure.</li>
+          <li><b>Underground lines.</b> Call <b>811</b> before you dig.</li>
+          <li>Only qualified, authorized people may work on energized equipment. Everyone else treats it as live until it is locked out and tested.</li>
+        </ul>
+
+        <h4>Lockout/Tagout (4.2.0)</h4>
+        <p>Equipment can start up or release stored energy while someone is working on it. <b>Lockout/tagout (LOTO)</b> keeps that from happening. A <b>lockout device</b> (a lock) holds the energy-isolating device in the safe position. A <b>tagout device</b> is a warning tag that says who applied it and why. The tag does not stop the energy by itself.</p>
+        <ol>
+          <li>Notify everyone affected that the equipment will be shut down.</li>
+          <li>Shut down the equipment the normal way.</li>
+          <li>Isolate it from every energy source (disconnect, valve, breaker).</li>
+          <li>Apply your lock and tag.</li>
+          <li>Release or block stored energy: capacitors, springs, pressure, gravity.</li>
+          <li><b>Verify</b> that the equipment is de-energized by trying to start it, then return the controls to off.</li>
+        </ol>
+        <div class="warn"><b>Your lock, your key</b>The person who applied a lock is the only person who removes it, and the key stays with that person. Each worker uses a personal lock. Never remove another worker's lock or tag.</div>
+
+        <h4>Stored and released energy (4.3.0)</h4>
+        <p>Mechanical energy (moving parts), hydraulic and pneumatic pressure, springs, elevated loads, chemical and thermal energy can all release without warning. <b>Compressed air and pressurized fluid</b> can break skin and cause injury or embolism. Never point an air hose at anyone, never use it to clean clothing, and keep it away from your skin. Release pressure and bleed lines before work begins, and block raised loads so they cannot drop.</p>
+
+        <h4>Power tools and machines (4.4.0)</h4>
+        <ul>
+          <li>Use a tool only for what it was made to do, and only if trained.</li>
+          <li>Keep guards on. Unplug or lock out a tool before changing blades or bits.</li>
+          <li>Pick up and carry a tool by the body, never by the cord. Do not leave a running tool unattended.</li>
+          <li>Secure the work with clamps or a vise so both hands are free for the tool.</li>
+          <li>Wear eye protection, and remove loose clothing, jewelry and dangling items. Tie back long hair.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">B</span><h3>Study review points</h3></div>
+      <ul class="points" data-points="4"></ul>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">C</span><h3>Trade-term cards</h3></div>
+      <div class="deck" data-cards="4"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">D</span><h3>Ticket out the door</h3></div>
+      <div class="ticket" data-quiz="4"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">E</span><h3>Talk it over</h3></div>
+      <div class="talk" data-talk="4"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">F</span><h3>Practice questions</h3><span class="time">about 10 min</span></div>
+      <div data-practice="4"></div>
+    </div>
+  </section>
+
+  <section class="sec" id="s5" aria-labelledby="s5-h">
+    <div class="sec-head">
+      <span class="eyebrow">Module Section 5 of 6</span>
+      <h2 id="s5-h">Personal Protective Equipment</h2>
+      <p class="obj">By the end of this section your student can match each kind of PPE to the hazard it guards against, including respirators and harmful dusts.</p>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">A</span><h3>Read it together</h3><span class="time">about 15 min</span></div>
+      <div class="prose">
+        <p class="big">PPE is the <b>last line of defense</b>. First try to remove the hazard, then guard it, and change how people work. When none of that is enough, the gear between you and the hazard is what is left, so it has to fit, be clean and be worn every time.</p>
+
+        <h4>Head protection (5.1.0)</h4>
+        <p>Hard hats protect against falling objects, bumping into things and, for some types, electrical contact. Check the label for its class. The suspension must leave at least <b>1 inch</b> of space between your head and the shell. Replace a hat that has taken a hit, is cracked or is past its date. Never drill holes in the shell or paint it unless the maker approves. Wear it with the bill forward unless it is marked for reverse wear.</p>
+
+        <h4>Eye and face protection (5.2.0)</h4>
+        <p>Choose the protection for the hazard: safety glasses with side shields for flying particles, <b>goggles</b> for dust and splashes, and <b>face shields</b> over glasses for grinding or chemicals. Welding needs a lens of the right shade. Look for the Z87 marking, keep lenses clean, and replace any that are scratched or cracked.</p>
+
+        <h4>Hearing protection (5.3.0)</h4>
+        <p>Noise damage builds slowly and cannot be reversed. A simple test from the module: if you have to <b>raise your voice to be heard by someone within 2 feet</b>, the noise is high enough to need hearing protection. Use earplugs or earmuffs, or both for very loud work, and keep plugs clean and sized to fit.</p>
+
+        <h4>Hand protection (5.4.0)</h4>
+        <p>Match the glove to the hazard: leather for rough material, cut-resistant for sharp edges, chemical-resistant for liquids, and insulated rubber for electrical work. Check for holes and tears. Never wear gloves around rotating machinery where they could be caught.</p>
+
+        <h4>Foot and leg protection (5.5.0)</h4>
+        <p>Wear sturdy, over-the-ankle boots with slip-resistant soles. Use safety-toe boots where objects could fall or roll on your feet, metatarsal guards where heavy items are handled, and puncture-resistant soles where nails are a problem. Boots for electrical work should be rated for it.</p>
+
+        <h4>Respiratory protection (5.6.0)</h4>
+        <p>Respirators are needed when dust, fumes, vapors or low oxygen could harm you and the air cannot be made safe by ventilation. Before wearing one you need <b>medical clearance, training and a fit test</b>. Facial hair that breaks the seal means no seal and no protection.</p>
+        <div class="scroll"><table>
+          <caption>The four respirator types</caption>
+          <thead><tr><th>Type</th><th>How it works</th></tr></thead>
+          <tbody>
+            <tr><td><b>Disposable particulate</b></td><td>Filters dust and particles. Throw it away when it is dirty or hard to breathe through.</td></tr>
+            <tr><td><b>Half-face air-purifying</b></td><td>Reusable mask with cartridges for particles, vapors or gases.</td></tr>
+            <tr><td><b>Full-face air-purifying</b></td><td>Same filters, plus eye and face protection, and a higher level of protection.</td></tr>
+            <tr><td><b>Supplied air / SCBA</b></td><td>Brings clean air from another source. Used where the air is deadly or lacks oxygen.</td></tr>
+          </tbody>
+        </table></div>
+        <p>Match the cartridge to the hazard, and replace it on schedule. An <b>assigned protection factor (APF)</b> tells how much a respirator reduces exposure. A half-face has an APF of 10.</p>
+
+        <h4>Harmful dusts and materials (5.7.0)</h4>
+        <ul>
+          <li><b>Silica</b> dust comes from cutting or grinding concrete, brick and stone. It scars the lungs. Use a <b>wet saw</b> or a <b>HEPA vacuum</b> to control dust, never dry sweep or blow it, and wear a respirator when required.</li>
+          <li><b>Asbestos</b> may be present in buildings built before <b>1980</b> (insulation, floor tile, pipe wrap). Do not disturb suspect material. Stop work and tell your supervisor.</li>
+          <li><b>Lead</b> paint was banned in <b>1978</b>, so older buildings may have it. Dust from sanding or demolition is the danger, so keep it contained and wash up before eating.</li>
+        </ul>
+
+        <h4>Clothing and body (5.8.0)</h4>
+        <p>Wear snug long pants and a shirt with sleeves, and remove jewelry. Use high-visibility clothing near traffic and equipment. Keep long hair tied back, and wear sunscreen for outdoor work. Follow the PPE rules posted for each area, and inspect your gear before every shift.</p>
+      </div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">B</span><h3>Study review points</h3></div>
+      <ul class="points" data-points="5"></ul>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">C</span><h3>Trade-term cards</h3></div>
+      <div class="deck" data-cards="5"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">D</span><h3>Ticket out the door</h3></div>
+      <div class="ticket" data-quiz="5"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">E</span><h3>Talk it over</h3></div>
+      <div class="talk" data-talk="5"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">F</span><h3>Practice questions</h3><span class="time">about 10 min</span></div>
+      <div data-practice="5"></div>
+    </div>
+  </section>
+
+  <section class="sec" id="s6" aria-labelledby="s6-h">
+    <div class="sec-head">
+      <span class="eyebrow">Module Section 6 of 6</span>
+      <h2 id="s6-h">Job-Site Hazards</h2>
+      <p class="obj">By the end of this section your student can describe chemical, heat, cold, welding, fire and confined-space hazards.</p>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">A</span><h3>Read it together</h3><span class="time">about 25 min</span></div>
+      <div class="prose">
+        <p class="big">Job sites can hurt you in ways that do not look dangerous: heat, cold, fumes, flame and tight spaces. The module groups these as chemical, environmental, fire and confined-space hazards.</p>
+
+        <h4>Hazardous chemicals (6.1.0)</h4>
+        <p>A chemical can enter your body three ways: <b>inhalation</b> (breathing it in), <b>ingestion</b> (swallowing it) and <b>absorption</b> (through skin or eyes). A <b>permissible exposure limit (PEL)</b> is the amount of a substance a worker may be exposed to over a set time, set by OSHA. Read the label, read the SDS and wear the PPE it calls for.</p>
+        <p>Under the Globally Harmonized System (GHS), labels use <b>nine pictograms</b> that show the hazard type at a glance, plus a signal word (Danger or Warning), a hazard statement and precautions. OSHA required these labels from 2015. Never put a chemical into an unmarked container, and never mix chemicals unless you know they are safe together.</p>
+
+        <h4>Heat (6.2.1)</h4>
+        <p>Heat illness gets worse in stages: <b>heat cramps</b>, then <b>heat exhaustion</b> (heavy sweating, weakness, dizziness, nausea), then <b>heat stroke</b>, which is a life-threatening emergency (hot dry skin, confusion, collapse). Call for help right away for heat stroke and cool the person while you wait.</p>
+        <ul>
+          <li>Drink water often, before you feel thirsty.</li>
+          <li>Take breaks in the shade, and wear light, loose clothing.</li>
+          <li>Ease into hot work if you are new to it or returning after time off.</li>
+        </ul>
+
+        <h4>Cold (6.2.2)</h4>
+        <p><b>Hypothermia</b> is a dangerously low body temperature (shivering, slurred speech, confusion). <b>Frostbite</b> is freezing of skin and tissue, usually fingers, toes, ears and nose. Dress in layers, keep dry, and take breaks in a warm place. The module notes that the body loses heat up to <b>25 times faster in water</b> than in air.</p>
+
+        <h4>Welding and cutting (6.3.0)</h4>
+        <p>Arc welding runs at roughly <b>1,500 to 3,000 degrees F</b>. The light can cause <b>flash burn</b>, a painful eye injury, so wear a welding helmet with the right lens shade and protective clothing. Fumes need ventilation. Compressed gas cylinders must be kept upright and secured with caps on.</p>
+        <ul>
+          <li>Store oxygen and fuel gas cylinders <b>20 feet apart</b>, or separate them with a barrier at least <b>5 feet</b> high with a fire rating of at least <b>1/2 hour</b>.</li>
+          <li>A <b>hot work permit</b> is required in many places. It lists the area, the work and the precautions. A <b>fire watch</b> stays during the work and afterward to catch smoldering fires.</li>
+        </ul>
+
+        <h4>Fire safety (6.4.0)</h4>
+        <p>Fire needs three things, the <b>fire triangle</b>: fuel, oxygen and heat. Take away any one and the fire goes out. Know where extinguishers and exits are, and keep exits clear. Extinguishers are rated by the type of fire:</p>
+        <div class="scroll"><table>
+          <caption>Extinguisher classes</caption>
+          <thead><tr><th>Class</th><th>Fuel</th></tr></thead>
+          <tbody>
+            <tr><td><b>A</b></td><td>Ordinary combustibles: wood, paper, cloth</td></tr>
+            <tr><td><b>B</b></td><td>Flammable liquids and gases: gasoline, oil, grease</td></tr>
+            <tr><td><b>C</b></td><td>Energized electrical equipment</td></tr>
+            <tr><td><b>D</b></td><td>Combustible metals</td></tr>
+          </tbody>
+        </table></div>
+        <p>Use the <b>PASS</b> method: <b>P</b>ull the pin, <b>A</b>im at the base of the fire, <b>S</b>queeze the handle, <b>S</b>weep side to side. Fight a fire only if it is small, you have the right extinguisher and you have a clear exit behind you. Otherwise get out and call for help.</p>
+
+        <h4>Confined spaces (6.5.0)</h4>
+        <p>A confined space is large enough to enter but has limited ways in or out and is not made for people to stay in (tanks, vaults, trenches, crawl spaces). Hazards include low oxygen, toxic gas, fire and engulfment.</p>
+        <ul>
+          <li>The air must be tested first. Safe oxygen is <b>19.5 to 23.5 percent</b>.</li>
+          <li>A <b>permit-required</b> confined space has a serious hazard, so entry needs a written permit.</li>
+          <li>An <b>attendant</b> stays outside the whole time, keeps count of who is inside and calls for help. The attendant never goes in to attempt a rescue.</li>
+          <li>Ventilate, and have rescue equipment ready before anyone enters.</li>
+        </ul>
+        <div class="warn"><b>Do not rush in</b>Many confined-space deaths are would-be rescuers. Call for trained rescue.</div>
+      </div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">B</span><h3>Study review points</h3></div>
+      <ul class="points" data-points="6"></ul>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">C</span><h3>Trade-term cards</h3></div>
+      <div class="deck" data-cards="6"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">D</span><h3>Ticket out the door</h3></div>
+      <div class="ticket" data-quiz="6"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">E</span><h3>Talk it over</h3></div>
+      <div class="talk" data-talk="6"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">F</span><h3>Practice questions</h3><span class="time">about 20 min</span></div>
+      <div data-practice="6"></div>
+    </div>
+  </section>
+
+  <section class="final" id="review" aria-labelledby="fin-h">
+    <span class="eyebrow">After all six sections</span>
+    <h2 id="fin-h">Can your student explain it?</h2>
+    <p class="lead">The goal is not perfect wording. The goal is accurate understanding and good judgment. Tick each one when your student can explain it without looking at the page.</p>
+    <ul class="points" id="final-points"></ul>
+    <p class="note">The module prints defined terms in its margins. They are spread across the sections where the book introduces them, and the cards marked "NCCER trade term" use them. Cards marked "Key term" are important words from the module that are not defined in its margins. The practice questions come from the handbook's Section Review and Module Review. The answer keys for both are in the textbook's Appendix A, which is not part of the module pages used to build this guide, so every answer here was worked out from the module text and is marked on each question. Check them against the publisher's key before relying on them. The textbook-style versions are written in the book's style and vocabulary, not copied word for word, so check the handbook itself for the exact wording. The module pages were scanned and read by software, so check any number you plan to rely on against the book. This guide is a plain-language companion, not a copy of the textbook. Draft for instructor review.</p>
+  </section>
+
+</div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><strong>Mr. Ellis CTE</strong> · East Valley Institute of Technology (EVIT), Mesa, Arizona · Your Future, Your Way</p>
+    <p>Based on NCCER Core, Module 00101, Basic Safety.</p>
+    <p>Aim for perfection, take what you get.</p>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var POINTS = {
+    1: [
+      `<b>Safety is everyone's job.</b> Follow safe work practices, inspect safety equipment before use, and use it properly. You are the person primarily responsible for your own safety.`,
+      `<b>A safety culture</b> exists when everyone from management to laborers values a safe workplace. Workers should be encouraged to question things and to stop work when they see a hazard.`,
+      `<b>Incident</b> = unplanned event with no injury (maybe property damage). <b>Accident</b> = unplanned event with injury and/or property damage.`,
+      `<b>Near-misses</b> cause no injury or damage but could have. Studies show about 600 near-misses for every serious or disabling injury, so report them.`,
+      `<b>The fatal four:</b> falls, struck-by, caught-in/between and electrical hazards. In 2018 construction had 21.1 percent (1,008 of 4,779) of private-industry worker deaths, and the fatal four caused nearly 3 out of 5 of them.`,
+      `<b>Signs:</b> informational = blue; safety = white with a green panel and white letters; caution = yellow; danger = red, black and white. Tags are temporary warnings. Toolbox talks are 5 to 10 minute meetings.`,
+      `<b>Causes of incidents:</b> failure to communicate, at-risk work habits, alcohol or drug abuse, lack of skill, intentional acts, unsafe acts, rationalizing risk, unsafe conditions, poor housekeeping and management system failure.`,
+      `<b>Housekeeping:</b> keep the area clean, clear aisles and exits, remove scrap with protruding nails, and put oily rags only in an approved, self-closing metal container.`,
+      `<b>HAZCOM (Right-To-Know)</b> requires employers to teach workers about hazardous chemicals. Paint, concrete and even wood dust count. Report any hazard you spot to your supervisor.`,
+      `<b>JSA / TSA:</b> a job safety analysis studies each step of a task for hazards. A task safety analysis is usually a fill-in checklist reviewed with the crew before work.`,
+      `<b>Risk</b> is made of probability, consequences and exposure.`,
+      `<b>Report every</b> incident, accident and injury, no matter how minor. US employers with more than 10 employees must keep an OSHA injury and illness log.`,
+      `<b>An SDS</b> has 16 sections, must exist for every product used on site and must be kept in the work area where workers can get to it.`
+    ],
+    2: [
+      `<b>Fall prevention</b> keeps a fall from happening (covers, guardrails, barricades). <b>Fall arrest</b> catches a worker after a fall begins (harness, lanyard, anchor, nets).`,
+      `<b>Six-foot rule:</b> unprotected sides and edges 6 feet or more above the level below need fall protection.`,
+      `<b>Slips and trips</b> on walking and working surfaces cause 15 percent of incidental construction deaths. Keep areas clean, dry and clear.`,
+      `<b>Wall openings</b> need a guard if the bottom edge is less than 39 inches above the floor and the drop is 6 feet or more.`,
+      `<b>Barricades:</b> red = danger, yellow = caution, yellow and purple = radiation. Never remove one unless you are authorized.`,
+      `<b>Hole covers</b> must hold twice the expected weight, be secured and marked, and never have materials stored on them. Use 3/4-inch plywood if the opening is under 18 inches, otherwise 2-inch lumber.`,
+      `<b>A PFAS</b> has three parts: anchor point, body harness and connecting device. Anchors must be rated for 5,000 pounds per worker (or twice the intended load). Maximum free-fall is 6 feet.`,
+      `<b>Harness:</b> the back D-ring is the main fall-arrest connection (the chest D-ring when climbing a ladder). Inspect before every use; a competent person inspects at least monthly. 100 percent tie-off.`,
+      `<b>Positioning lanyards</b> are for fall restraint only, not fall arrest, and positioning anchors need only 3,000 pounds.`,
+      `<b>Guardrails:</b> top rail withstands 200 lb, midrail 150 lb, height 42 inches plus or minus 3, toeboard at least 4 inches. <b>Safety nets</b> are within 30 feet of the work and inspected weekly.`,
+      `<b>Ladders:</b> three-point contact, 4-to-1 setup, extend 3 feet above the landing, never above the fourth rung from the top of an extension ladder, and check the duty rating (IAA 375, IA 300, I 250, II 225, III 200 lb).`,
+      `<b>Metal ladders</b> never go near electrical equipment. Stairways need a handrail with four or more risers or more than 30 inches of rise; stair railing is at least 36 inches.`,
+      `<b>Scaffold tags:</b> green = safe to use, yellow = harness required, red = do not use. Over 10 feet: rails, midrails and toeboards. Keep 3 feet from power lines up to 300 V and 10 feet above 300 V. The two basic types are self-supporting and suspended.`
+    ],
+    3: [
+      `<b>Struck-by</b> = hit by a moving object. <b>Caught-in-between</b> = trapped between a moving object and something solid.`,
+      `<b>Falling objects:</b> wear a hard hat, stay out of the fall zone, secure tools and materials overhead, and use toeboards, nets or canopies.`,
+      `<b>Stacking:</b> maximum 4:1 height-to-base ratio, and interlock layers by placing them at right angles.`,
+      `<b>Flying objects:</b> chipping, grinding and pneumatic or powder-actuated tools. Wear eye protection and check that guards are on.`,
+      `<b>Equipment rollover</b> is the most common cause of death for equipment operators. Wear the seat belt and use a signaler when your view is blocked.`,
+      `<b>Vehicles:</b> wear high-visibility clothing, stay out of blind spots, make eye contact with the operator, and never stand under a load.`,
+      `<b>Trench cave-ins</b> are sudden. Most happen in trenches 5 to 15 feet deep. About 1,000 collapses occur each year.`,
+      `<b>Soil types:</b> solid rock, A, B, C. Type C is least stable, and you treat soil as Type C unless proven otherwise.`,
+      `<b>A competent person</b> inspects the excavation daily and after every rainstorm or other hazard-raising event.`,
+      `<b>Protective systems:</b> sloping, benching (not allowed in Type C soil), shoring (prevents cave-in) and shielding (protects workers inside). Over 20 feet deep needs a registered professional engineer.`,
+      `<b>Spoil</b> stays at least 2 feet from the edge. Trenches over 4 feet deep need an exit within 25 feet of workers.`,
+      `<b>Call 811</b> before you dig so utilities can mark buried lines.`,
+      `<b>Guards</b> on tools and machines keep workers from being caught in rotating or moving parts. Remove one only when the tool is off and locked or tagged out.`,
+      `<b>Cranes and heavy equipment:</b> barricade the swing radius and stay out of the operator's blind side.`
+    ],
+    4: [
+      `<b>Most energy hazards</b> come from the uncontrolled release of energy: electrical, mechanical, hydraulic, pneumatic, thermal, chemical or stored.`,
+      `<b>Electricity can kill</b> with less than 1 amp of current. It also causes burns, falls and fires.`,
+      `<b>A GFCI</b> cuts power when it detects a leak of about 5 milliamps. Use one on temporary power outlets outdoors or in damp places.`,
+      `<b>Inspect cords and tools</b> before use. Tag damaged equipment and take it out of service. Double insulation protects the user from shock.`,
+      `<b>Overhead lines:</b> treat all as energized and stay at least 10 feet from lines of 50,000 volts or less. The safe distance from exposed conductors depends on the voltage.`,
+      `<b>Proximity work</b> is work done near a hazard but not in contact with it.`,
+      `<b>Lockout/tagout</b> keeps equipment from being started while someone is working on it. Circuit breakers and disconnect switches are energy-isolating devices.`,
+      `<b>LOTO order:</b> notify, shut down, isolate, lock and tag, release stored energy, verify.`,
+      `<b>The key stays with the person who applied the lock.</b> Never remove someone else's lock or tag.`,
+      `<b>Compressed air and pressurized fluid</b> can injure. Never point a hose at a person or use air to clean clothing.`,
+      `<b>Power tools:</b> use only if trained, keep guards on, disconnect before changing bits or blades, carry by the body not the cord, and secure the work.`
+    ],
+    5: [
+      `<b>PPE is the last line of defense.</b> Eliminate or guard the hazard first.`,
+      `<b>Hard hat:</b> at least 1 inch of space between head and shell. Replace after an impact or when cracked. Never alter the shell.`,
+      `<b>Eye protection:</b> safety glasses for particles, goggles for dust and splashes (the best protection from all directions), face shields over glasses, and tinted lenses near arc welding.`,
+      `<b>Hearing protection:</b> if you must raise your voice to be heard by someone within 2 feet, the noise is too loud without it.`,
+      `<b>Gloves:</b> match to the hazard (leather, cut-resistant, chemical, insulated). Never near rotating machinery.`,
+      `<b>Boots:</b> over-the-ankle, slip-resistant, safety toe where objects can fall, puncture-resistant sole near nails.`,
+      `<b>Respirators</b> need medical clearance, training and a fit test. Types: disposable particulate, half-face, full-face and supplied air/SCBA. A half mask has an APF of 10.`,
+      `<b>An SCBA</b> carries its own air supply. A full facepiece mask with canisters guards against brief exposure to gas or fumes.`,
+      `<b>Silica</b> dust (concrete, brick, stone) causes silicosis. Drilling concrete requires a respirator because of silica. Use a wet saw or HEPA vacuum.`,
+      `<b>Asbestos</b> may be in buildings built before 1980; <b>lead</b> paint was banned in 1978. Do not disturb suspect material.`,
+      `<b>Wear snug long clothing</b>, tie back hair, remove jewelry and use high-visibility clothing near traffic.`
+    ],
+    6: [
+      `<b>Routes of exposure:</b> inhalation, ingestion and absorption.`,
+      `<b>PEL</b> (permissible exposure limit) is a worker's maximum exposure limit for a substance.`,
+      `<b>GHS labels</b> use nine pictograms, a signal word, a hazard statement and precautions. Read the label and the SDS.`,
+      `<b>Heat illness stages:</b> heat cramps, heat exhaustion, heat stroke (an emergency). Drink water, rest in the shade.`,
+      `<b>Cold stress</b> can lead to hypothermia (a drop in body temperature) and frostbite. The body loses heat up to 25 times faster in water.`,
+      `<b>Arc welding</b> is roughly 1,500 to 3,000 degrees F. A <b>flash burn</b> is eye damage from ultraviolet light: swollen eyes and a sandy feeling. Wear tinted lenses.`,
+      `<b>Cylinders:</b> store oxygen and fuel cylinders 20 feet apart, or behind a barrier at least 5 feet high with a 1/2-hour fire rating. Grease and oil near oxygen can cause an explosion.`,
+      `<b>Hot work</b> needs a permit and a fire watch.`,
+      `<b>The fire triangle:</b> fuel, oxygen and heat. Remove any one and the fire goes out.`,
+      `<b>Extinguishers:</b> A = ordinary combustibles, B = flammable liquids and gases, C = electrical, D = combustible metals. Remember PASS.`,
+      `<b>Confined spaces</b> have limited access and may have limited ventilation. Oxygen must be 19.5 to 23.5 percent. An attendant stays outside a permit-required space.`
+    ]
+  };
+
+  var CARDS = {
+    1: [
+      { k: "o", t: `Safety culture`, plain: `A workplace where everyone, from the boss to the newest hire, truly values safety.`, book: `The culture created when the whole company sees the value of a safe work environment.`, ask: `What does a safe workplace look like day to day?` },
+      { k: "o", t: `Incident`, plain: `Something unplanned happens, and no one is hurt.`, book: `An unplanned event that does not result in personal injury but may result in property damage or is worthy of recording.`, ask: `Give an example of an incident with no injury.` },
+      { k: "o", t: `Accident`, plain: `Something unplanned happens, and someone is hurt or something is damaged.`, book: `An unplanned event that results in personal injury and/or property damage.`, ask: `How is an accident different from an incident?` },
+      { k: "o", t: `OSHA`, plain: `The government agency and law that set job safety rules.`, book: `Occupational Safety and Health Administration, an agency of the US Department of Labor. Also the Occupational Safety and Health Act of 1970.`, ask: `Why do we have OSHA?` },
+      { k: "o", t: `Management system`, plain: `How a company is organized: who reports to whom and who is responsible.`, book: `The organization of a company's management, including reporting procedures, supervisory responsibility and administration.`, ask: `How can a weak management system cause an accident?` },
+      { k: "o", t: `Safety Data Sheet (SDS)`, plain: `A fact sheet that tells you the dangers of a chemical and how to handle it.`, book: `A document that must accompany any hazardous substance. It identifies the substance, exposure limits, the kind of hazard, precautions and emergency first aid.`, ask: `Where is the SDS kept at your job site?` },
+      { k: "o", t: `HAZCOM Standard`, plain: `The rule that says employers must teach workers about hazardous chemicals.`, book: `The OSHA standard that requires contractors to educate employees about hazardous chemicals on the job site and how to work with them safely.`, ask: `Name a chemical on a job site you might not think of as hazardous.` },
+      { k: "o", t: `Flammable`, plain: `Catches fire easily and burns fast, with a low flash point.`, book: `Capable of easily igniting and rapidly burning; describes a fuel with a flash point below 100°F (38°C).`, ask: `Name a flammable liquid on a job site.` },
+      { k: "o", t: `Combustible`, plain: `Can also burn, but its flash point is 100°F or higher.`, book: `Capable of easily igniting and rapidly burning; describes a fuel with a flash point at or above 100°F (38°C).`, ask: `How is combustible different from flammable?` },
+      { k: "o", t: `Pneumatic`, plain: `Powered by air pressure.`, book: `Powered by air pressure, such as a pneumatic tool.`, ask: `Name a pneumatic tool.` },
+      { k: "o", t: `Hydraulic`, plain: `Powered by pressurized fluid.`, book: `Powered by fluid under pressure.`, ask: `Why is a hydraulic leak dangerous?` },
+      { k: "k", t: `Near-miss`, plain: `It could have hurt someone, but it didn't.`, book: `An event where no one is hurt and nothing is damaged, but either could have been. About 600 occur for every serious injury.`, ask: `Why report a near-miss?` },
+      { k: "k", t: `Fatal four`, plain: `The four biggest killers in construction.`, book: `Falls, struck-by hazards, caught-in or caught-between hazards and electrical hazards.`, ask: `Can you name all four?` },
+      { k: "k", t: `Toolbox talk`, plain: `A short safety meeting before work.`, book: `A 5 to 10 minute safety meeting.`, ask: `What topic would you pick for tomorrow?` }
+    ],
+    2: [
+      { k: "o", t: `Competent person`, plain: `Someone who can spot hazards and has the authority to fix them right away.`, book: `A person capable of identifying existing and predictable hazards in the surroundings and who has authorization to take prompt corrective measures.`, ask: `Who is the competent person on your site?` },
+      { k: "o", t: `Lanyard`, plain: `The strap or rope that connects your harness to an anchor.`, book: `A short section of rope or strap with one end attached to a worker's safety harness and the other to a strong anchor point above the work area.`, ask: `Why must you never tie knots in a lanyard?` },
+      { k: "o", t: `Scaffold`, plain: `A raised platform for people and materials.`, book: `Elevated platforms for workers and materials.`, ask: `Who is allowed to approve a scaffold for use?` },
+      { k: "o", t: `Six-foot rule`, plain: `At 6 feet or higher with an open edge, you need fall protection.`, book: `Platforms or work surfaces with unprotected sides or edges 6 feet or higher than the level below require fall protection.`, ask: `Does this rule apply to a 5 foot edge?` },
+      { k: "o", t: `Guarded`, plain: `Protected by a barrier so no one can reach the danger.`, book: `Enclosed, fenced, covered or otherwise protected by barriers, rails, covers or platforms to prevent dangerous contact.`, ask: `Name two ways to guard a floor hole.` },
+      { k: "o", t: `Toeboard`, plain: `A low barrier at the floor edge so things cannot slide off.`, book: `A vertical barrier at floor level attached along exposed edges of a platform, runway or ramp to prevent materials and people from falling.`, ask: `How high must a toeboard be?` },
+      { k: "o", t: `Midrail`, plain: `The middle bar of a guardrail.`, book: `A mid-level horizontal board placed halfway between the toeboard and top rail on open sides of scaffolds and platforms.`, ask: `What force must a midrail withstand?` },
+      { k: "o", t: `Top rail`, plain: `The highest bar of a guardrail.`, book: `A top-level horizontal board required on all open sides of scaffolds and platforms more than 10 feet above the ground.`, ask: `What force must a top rail withstand?` },
+      { k: "o", t: `Maximum intended load`, plain: `The most weight a ladder can carry at one time.`, book: `The total weight of all people, equipment, tools, materials and loads that a ladder can hold at one time.`, ask: `What rating has a 300 lb limit?` },
+      { k: "o", t: `Hand line`, plain: `A rope used to pull tools up after you climb.`, book: `A line attached to a tool or object so a worker can pull it up after climbing a ladder or scaffold.`, ask: `Why not carry tools up in your hands?` },
+      { k: "o", t: `Cross-bracing`, plain: `Diagonal braces that make a structure stiff.`, book: `Braces, metal or wood, placed diagonally from the bottom of one rail to the top of another to add support.`, ask: `Where do scaffolds need cross-bracing?` },
+      { k: "o", t: `Planked`, plain: `Covered with thick, wide boards for walking and working.`, book: `Having pieces of material at least 2 inches thick and 6 inches wide used as flooring, decking or scaffold decks.`, ask: `Why must a scaffold deck be fully planked?` },
+      { k: "k", t: `Personal fall arrest system (PFAS)`, plain: `The gear that stops a fall: anchor, harness and connector.`, book: `Made up of an anchor point, a body harness and connecting devices.`, ask: `What is the anchor point rated for?` },
+      { k: "k", t: `Three-point contact`, plain: `Always keep three points of your body touching the ladder.`, book: `Two feet and one hand, or one foot and two hands, on the ladder when climbing.`, ask: `Why can you not carry a heavy load up a ladder?` },
+      { k: "k", t: `Fall restraint`, plain: `Gear that keeps you from reaching the edge at all.`, book: `Positioning lanyards are for restraint only and may not be used as fall arrest.`, ask: `How is restraint different from arrest?` }
+    ],
+    3: [
+      { k: "o", t: `Trench`, plain: `A narrow ditch that is deeper than it is wide.`, book: `A narrow excavation below the surface that is generally deeper than it is wide, with a maximum width of 15 feet.`, ask: `How wide can a trench be?` },
+      { k: "o", t: `Excavation`, plain: `Any man-made hole or cut made by removing earth.`, book: `Any man-made cut, cavity, trench or depression in an earth surface formed by removing earth.`, ask: `Is every excavation a trench?` },
+      { k: "o", t: `Signaler`, plain: `The person who guides a driver who cannot see.`, book: `A person responsible for directing a vehicle when the driver's vision is blocked in any way.`, ask: `When do you need a signaler?` },
+      { k: "o", t: `Shoring`, plain: `A support system that holds trench walls up.`, book: `A support system designed to prevent a trench or excavation cave-in.`, ask: `How is shoring different from shielding?` },
+      { k: "o", t: `Shielding`, plain: `A box or shield that protects workers if the walls fail.`, book: `A structure used to protect workers in trenches.`, ask: `Does shielding stop a cave-in?` },
+      { k: "o", t: `Spoil`, plain: `The dirt you dig out.`, book: `Material such as earth removed while digging a trench or excavation.`, ask: `How far from the edge must it be kept?` },
+      { k: "k", t: `Struck-by`, plain: `Hit by something that is moving.`, book: `Being hit by a moving object such as a swinging load.`, ask: `Give a job-site example.` },
+      { k: "k", t: `Caught-in-between`, plain: `Squeezed or crushed between a moving thing and a solid thing.`, book: `Trapped between a moving object and a stationary one, or by a collapsing trench wall.`, ask: `Give a job-site example.` },
+      { k: "k", t: `Benching`, plain: `Cutting trench walls back in steps.`, book: `Cutting trench sides back in a stepped pattern. Not allowed in Type C soil.`, ask: `Why not in Type C soil?` }
+    ],
+    4: [
+      { k: "o", t: `Lockout/tagout (LOTO)`, plain: `Locking and tagging the power so equipment can't start while you work on it.`, book: `A formal procedure for taking equipment out of service and ensuring it cannot be operated until an authorized person removes the lock and/or warning tag.`, ask: `Who is allowed to remove your lock?` },
+      { k: "o", t: `Ground`, plain: `The safe path from electrical equipment to the earth.`, book: `The conducting connection between electrical equipment or an electrical circuit and the earth.`, ask: `What does a ground protect you from?` },
+      { k: "o", t: `Ground fault`, plain: `Current escaping where it should not go.`, book: `Incidental grounding of a conducting electrical wire.`, ask: `What device detects a ground fault?` },
+      { k: "o", t: `Proximity work`, plain: `Working near a hazard without touching it.`, book: `Work done near a hazard but not actually in contact with it.`, ask: `Why does voltage change the safe distance?` },
+      { k: "k", t: `GFCI`, plain: `An outlet or device that shuts power off fast if current leaks.`, book: `Ground-fault circuit interrupter, which trips when it senses an imbalance of about 5 milliamps.`, ask: `Where must you use one?` },
+      { k: "k", t: `Energy-isolating device`, plain: `Something that physically cuts off the energy source.`, book: `Examples are circuit breakers and disconnect switches.`, ask: `Name two.` },
+      { k: "k", t: `Double insulated`, plain: `A tool built with two layers of protection.`, book: `Double insulation protects users from electrical shock.`, ask: `Does it need a three-prong plug?` }
+    ],
+    5: [
+      { k: "o", t: `Respirator`, plain: `A mask that gives you clean air to breathe.`, book: `A device that provides clean, filtered air for breathing, no matter what is in the surrounding air.`, ask: `What three things must you have before wearing one?` },
+      { k: "o", t: `Silicosis`, plain: `A serious lung disease from breathing in crystal silica dust.`, book: `A serious lung disease resulting from the inhalation of crystalline silica particles.`, ask: `What job tasks make silica dust?` },
+      { k: "o", t: `COPD`, plain: `A group of long-lasting lung diseases that make breathing hard.`, book: `Chronic obstructive pulmonary disease: lung diseases that obstruct airflow.`, ask: `How can dust protection help prevent it?` },
+      { k: "o", t: `Clean room`, plain: `A room kept free of dust particles for sensitive work.`, book: `A room or area used for scientific research or specialized processes, such as making pharmaceuticals or semiconductors.`, ask: `Why does a clean room limit particles?` },
+      { k: "k", t: `SCBA`, plain: `A breathing system with its own air tank on your back.`, book: `Self-contained breathing apparatus, used where there is not enough oxygen or dangerous gases or fumes are present.`, ask: `When would you need one?` },
+      { k: "k", t: `Fit test`, plain: `A check that the mask seals to your face.`, book: `Respirators are ineffective unless properly fit-tested to the user.`, ask: `Why does a beard matter?` }
+    ],
+    6: [
+      { k: "o", t: `Confined space`, plain: `A space you have to climb into that is hard to get out of.`, book: `A work area large enough to work in but arranged so a person must physically enter, with limited or restricted entry and exit.`, ask: `Name a confined space.` },
+      { k: "o", t: `Permit-required confined space`, plain: `A confined space with a real hazard that needs written permission to enter.`, book: `A confined space evaluated and found to have actual or potential hazards, such as a toxic atmosphere. Workers need written authorization to enter.`, ask: `Who stays outside?` },
+      { k: "o", t: `Arc welding`, plain: `Joining metal by melting it with an electric arc.`, book: `The joining of metal parts by fusion, with the necessary heat produced by an electric arc.`, ask: `What PPE protects your eyes?` },
+      { k: "o", t: `Welding curtain`, plain: `A screen that protects people near the welding.`, book: `Protective screens set up around a welding operation to safeguard workers not directly involved in it.`, ask: `Who is it protecting?` },
+      { k: "o", t: `Flash burn`, plain: `Eye damage from the bright light of welding.`, book: `Damage to the eyes after even brief exposure to ultraviolet light from arc welding. It requires medical attention.`, ask: `What does it feel like?` },
+      { k: "o", t: `Brazing`, plain: `Joining metal by melting a filler metal, such as on copper pipe.`, book: `A process using heat above 800°F (427°C) to melt a filler metal drawn into a connection, commonly used to join copper pipe.`, ask: `Why does this need a hot work permit?` },
+      { k: "o", t: `Flash point`, plain: `The temperature where a fuel gives off enough vapor to burn.`, book: `The temperature at which fuel gives off enough gases (vapors) to burn.`, ask: `Which is more flammable, a low or high flash point?` },
+      { k: "o", t: `Qualified person`, plain: `Someone whose degree, training or experience proves they can solve the problem.`, book: `A person who, by a recognized degree, certificate or professional standing, or by extensive knowledge, training and experience, has demonstrated the ability to solve or prevent problems.`, ask: `How is this different from a competent person?` },
+      { k: "o", t: `Wind sock`, plain: `A cloth cone that shows wind direction.`, book: `A cloth cone open at both ends mounted in a high place to show which direction the wind is blowing.`, ask: `Why does wind direction matter in a gas release?` },
+      { k: "k", t: `PEL`, plain: `The most of a substance a worker may be exposed to.`, book: `Permissible exposure limit.`, ask: `Where do you find it?` },
+      { k: "k", t: `Hypothermia`, plain: `Body temperature falls dangerously low.`, book: `A condition brought on by prolonged exposure to cold.`, ask: `What are the warning signs?` },
+      { k: "k", t: `Fire triangle`, plain: `Fuel, oxygen and heat. Take one away and the fire stops.`, book: `The three elements that must be present together for a fire.`, ask: `How does an extinguisher break the triangle?` }
+    ]
+  };
+
+  var QUIZ = {
+    1: [
+      { q: `Which of these is NOT one of the fatal four?`, o: [`Falls`, `Struck-by hazards`, `Chemical burns`], a: 2, why: `The fatal four are falls, struck-by, caught-in/between and electrical hazards.` },
+      { q: `What color is a caution sign?`, o: [`Yellow`, `Blue`, `Red, black and white`], a: 0, why: `Informational signs are blue, and danger signs are red, black and white.` },
+      { q: `Where must oily rags go?`, o: [`In a regular dumpster`, `In an approved, self-closing metal container`, `Back into the pile of rags`], a: 1, why: `Oily rags can heat up and ignite on their own.` },
+      { q: `A near-miss should be...`, o: [`Ignored since no one was hurt`, `Reported to your supervisor`, `Only reported if it happens twice`], a: 1, why: `About 600 near-misses occur for each serious injury.` },
+      { q: `Which of these must be reported?`, o: [`Only major injuries`, `All injuries, incidents and accidents`, `Only deaths`], a: 1, why: `Even minor injuries can become serious from infection.` },
+      { q: `How many sections does a standard SDS have?`, o: [`8`, `12`, `16`], a: 2, why: `The standard SDS format has 16 sections.` }
+    ],
+    2: [
+      { q: `Fall protection is required at an unprotected edge of how many feet or more?`, o: [`3 feet`, `6 feet`, `10 feet`], a: 1, why: `This is the six-foot rule.` },
+      { q: `A barrier with yellow and purple markings warns of...`, o: [`Radiation`, `A fall hazard`, `Fire`], a: 0, why: `Red = danger, yellow = caution.` },
+      { q: `A yellow scaffold tag means...`, o: [`Safe to use`, `You must wear a harness`, `Do not use`], a: 1, why: `Green is safe to use, and red means never use it.` },
+      { q: `A straight ladder reaching a 16-foot wall should have its base...`, o: [`4 feet from the wall`, `8 feet from the wall`, `2 feet from the wall`], a: 0, why: `4-to-1 rule: one-fourth of the height.` },
+      { q: `Which D-ring is the main fall-arrest connection?`, o: [`Hip`, `Back`, `Shoulder`], a: 1, why: `The chest D-ring is used when climbing a ladder.` },
+      { q: `A positioning lanyard can be used as a fall arrest device.`, o: [`True`, `False`], a: 1, why: `It is for fall restraint only.` }
+    ],
+    3: [
+      { q: `Being trapped between a moving object and a wall is a...`, o: [`Struck-by hazard`, `Caught-in-between hazard`, `Flying-object hazard`], a: 1, why: `Struck-by means being hit by a moving object.` },
+      { q: `The maximum height-to-base ratio for stacked material is...`, o: [`2:1`, `4:1`, `8:1`], a: 1, why: `Interlock the layers by placing them at right angles.` },
+      { q: `Most common cause of death for equipment operators?`, o: [`Rollover`, `Brake failure`, `Hit and run`], a: 0, why: `Wear your seat belt.` },
+      { q: `Spoil must be kept at least how far from the edge of an excavation?`, o: [`6 inches`, `2 feet`, `10 feet`], a: 1, why: `This keeps the weight off the trench walls.` },
+      { q: `In trenches over 4 feet deep, an exit is needed every...`, o: [`10 feet`, `25 feet`, `50 feet`], a: 1, why: `A bucket is not a safe way in or out.` },
+      { q: `Which number do you dial before digging?`, o: [`411`, `811`, `911`], a: 1, why: `811 connects to your local utility locating service.` }
+    ],
+    4: [
+      { q: `Current of how much can kill?`, o: [`Less than 1 amp`, `More than 100 amps`, `Only over 1,000 amps`], a: 0, why: `Under 1 amp can kill.` },
+      { q: `A GFCI trips at an imbalance of about...`, o: [`5 milliamps`, `5 amps`, `50 amps`], a: 0, why: `It protects people, not equipment.` },
+      { q: `After you lock out a machine, who keeps the key?`, o: [`The foreman`, `The person who applied the lock`, `It stays in the lock`], a: 1, why: `Never remove anyone else's lock.` },
+      { q: `Circuit breakers and disconnect switches are...`, o: [`Energy-isolating devices`, `Lockout tags`, `Ground faults`], a: 0, why: `They are what you lock.` },
+      { q: `Where must you keep at least 10 feet away?`, o: [`Overhead lines of 50,000 volts or less`, `Wall outlets`, `Battery tools`], a: 0, why: `Treat all lines as energized.` }
+    ],
+    5: [
+      { q: `PPE is best described as...`, o: [`The first line of defense`, `The last line of defense`, `Optional`], a: 1, why: `Eliminate or guard the hazard first.` },
+      { q: `A hard hat needs at least how much space above the head?`, o: [`1 inch`, `1/4 inch`, `3 inches`], a: 0, why: `The suspension should leave about 1 inch.` },
+      { q: `You raise your voice to be heard 2 feet away. What do you need?`, o: [`Hearing protection`, `Nothing`, `A hard hat`], a: 0, why: `Noise that loud can damage hearing.` },
+      { q: `Which eye protection is best from all directions?`, o: [`Goggles`, `Strap-on glasses`, `Face shield alone`], a: 0, why: `Goggles seal around the eyes.` },
+      { q: `Which dust is produced when drilling concrete?`, o: [`Asbestos`, `Silica`, `Lead`], a: 1, why: `Silica causes silicosis.` },
+      { q: `Which respirator has its own air supply?`, o: [`Half mask`, `Mechanical filter`, `SCBA`], a: 2, why: `SCBA stands for self-contained breathing apparatus.` }
+    ],
+    6: [
+      { q: `Which is NOT a way chemicals enter the body?`, o: [`Inhalation`, `Absorption`, `Osmosis`], a: 2, why: `The three are inhalation, ingestion and absorption.` },
+      { q: `Which comes first as heat illness gets worse?`, o: [`Heat cramps`, `Heat stroke`, `Heat exhaustion`], a: 0, why: `Cramps, then exhaustion, then stroke.` },
+      { q: `Oxygen and fuel cylinders must be stored...`, o: [`Together`, `20 feet apart (or behind a fire-rated barrier)`, `5 feet apart`], a: 1, why: `The barrier is at least 5 feet high with a 1/2-hour rating.` },
+      { q: `Which three things make a fire?`, o: [`Fuel, oxygen, heat`, `Wood, water, spark`, `Heat, light, wind`], a: 0, why: `Remove one and the fire goes out.` },
+      { q: `Which extinguisher class fights electrical fires?`, o: [`A`, `B`, `C`], a: 2, why: `A is ordinary combustibles and B is flammable liquids.` },
+      { q: `Safe oxygen in a confined space is...`, o: [`19.5 to 23.5 percent`, `10 to 15 percent`, `30 to 40 percent`], a: 0, why: `Test the air before entry.` }
+    ]
+  };
+
+  var TALK = {
+    1: {
+      qs: [`Which of the ten causes of accidents do you think is most common, and why?`, `Why does the module say to report even minor injuries?`, `What would you do if you thought a task was unsafe and your boss said to do it anyway?`, `Why is a safety culture good for the whole company, including its bids?`],
+      scn: [{
+        t: `"I'll only lean over a foot"`,
+        s: `A worker skips tying off because the lean is short. Which cause from the module does this show, and what should happen?`,
+        g: [`This is rationalizing risk, ignoring a warning because you can justify it.`, `If you think it is unsafe, it is unsafe: stop and tell your supervisor.`, `Workers should be empowered to stop work when they see a hazard.`]
+      }, {
+        t: `"What is this chemical?"`,
+        s: `A student finds an unlabeled container of paint thinner. What does HAZCOM say to do?`,
+        g: [`Do not guess. Find the SDS and read the hazards and first aid.`, `Report the hazard to the supervisor.`, `Wear the PPE the SDS calls for.`]
+      }],
+      parent: `Ask your student to explain the difference between an incident and an accident, and to name the fatal four.`
+    },
+    2: {
+      qs: [`Why is prevention better than arrest?`, `What three parts make up a fall arrest system?`, `How would you check a ladder before you climb it?`, `Why does a scaffold tag color matter?`],
+      scn: [{
+        t: `"The ladder just reaches"`,
+        s: `A worker sets a ladder so it only reaches the roof edge. What is wrong?`,
+        g: [`The ladder must extend at least 3 feet above the landing.`, `Use the 4-to-1 rule for the base.`, `Face the ladder and keep three-point contact.`]
+      }, {
+        t: `"The tag is yellow"`,
+        s: `A student is about to climb a scaffold with a yellow tag. What does the tag mean?`,
+        g: [`A yellow tag means the scaffold does not meet every standard, so a harness tied to a lanyard is required.`, `Green means safe, red means do not use.`, `Inspect it yourself anyway.`]
+      }],
+      parent: `Ask your student to explain the 4-to-1 ladder rule and what the six-foot rule means.`
+    },
+    3: {
+      qs: [`How are struck-by and caught-in-between different?`, `Why are trenches so dangerous even when they look stable?`, `What warning signs tell you to get out of a trench?`, `Why call 811 before you dig?`],
+      scn: [{
+        t: `"The backhoe operator can see me"`,
+        s: `A worker walks between the swinging back end of a backhoe and a wall. What went wrong?`,
+        g: [`The worker was in the operator's blind side and swing radius.`, `Barricades should mark the working perimeter.`, `Make eye contact and never stand between equipment and a solid object.`]
+      }, {
+        t: `"It is only a 5-foot trench"`,
+        s: `A crew wants to skip protection in a 5-foot trench. What does the module say?`,
+        g: [`Most cave-ins happen in trenches 5 to 15 feet deep.`, `Protective systems are required in nearly all excavations.`, `A competent person inspects daily and after rain.`]
+      }],
+      parent: `Ask your student to name the four soil types and say which is least stable.`
+    },
+    4: {
+      qs: [`Why can a small amount of current be deadly?`, `What does a GFCI do that a regular breaker does not?`, `Why must you use your own lock and keep the key?`, `What kinds of stored energy might still be in a machine after it is off?`],
+      scn: [{
+        t: `"The cord has a bare spot"`,
+        s: `A power cord has damaged insulation. What should you do?`,
+        g: [`Take it out of service and tag it.`, `Never use a cord with exposed conductors.`, `Tell your supervisor.`]
+      }, {
+        t: `"I will just remove his lock"`,
+        s: `A coworker went home and left a lock on a machine. Can you remove it?`,
+        g: [`No. Only the person who applied a lock removes it.`, `Contact the supervisor, who follows the company procedure.`, `The key stays with the person who applied it.`]
+      }],
+      parent: `Ask your student to walk through the lockout/tagout steps in order.`
+    },
+    5: {
+      qs: [`Why is PPE the last line of defense?`, `What is the difference between safety glasses and goggles?`, `Why do respirators need a fit test and medical clearance?`, `Which jobs make silica dust?`],
+      scn: [{
+        t: `"The hard hat is cracked"`,
+        s: `A student's hard hat is cracked but still on the site. What should they do?`,
+        g: [`Replace it. Cracked or impacted hats lose protection.`, `Never drill holes or modify the shell.`, `Check that there is 1 inch of space inside.`]
+      }, {
+        t: `"Just a little dust"`,
+        s: `A crew is drilling into concrete without protection. What hazard is that?`,
+        g: [`Silica dust, which can cause silicosis.`, `Use wet methods or a HEPA vacuum and a respirator when required.`, `Never dry sweep or blow the dust.`]
+      }],
+      parent: `Ask your student to name five kinds of PPE and the hazard each one protects against.`
+    },
+    6: {
+      qs: [`What are the three routes of exposure to a hazardous chemical?`, `What are the stages of heat illness?`, `Why are oxygen and oil a bad mix?`, `Why does a confined space need an attendant?`],
+      scn: [{
+        t: `"It is a hot day"`,
+        s: `A coworker is sweating heavily, dizzy and weak. What is happening and what should you do?`,
+        g: [`Likely heat exhaustion, which can progress to heat stroke.`, `Move to shade, give water and call for help.`, `Heat stroke is an emergency.`]
+      }, {
+        t: `"I will rescue him"`,
+        s: `A worker collapses in a tank. Should the attendant go in?`,
+        g: [`No. The attendant stays outside and calls for trained rescue.`, `Many confined-space deaths are would-be rescuers.`, `The air must be tested before anyone enters.`]
+      }],
+      parent: `Ask your student to explain the fire triangle and when to use each extinguisher class.`
+    }
+  };
+
+  var FINAL = [
+    `I can explain why safety is everyone's job and what a safety culture looks like.`,
+    `I can define incident, accident and near-miss, and name the fatal four.`,
+    `I can name the sign colors and what each one means.`,
+    `I can name the causes of incidents and describe how to prevent them.`,
+    `I can explain what HAZCOM and an SDS are and where to find an SDS.`,
+    `I can explain the six-foot rule and the difference between fall prevention and fall arrest.`,
+    `I can name the parts of a PFAS and set up and climb a ladder safely.`,
+    `I can read a scaffold tag.`,
+    `I can tell struck-by from caught-in-between and describe how to avoid each.`,
+    `I can describe trench hazards, soil types and protective systems.`,
+    `I can describe electrical hazards, GFCIs and the steps of lockout/tagout.`,
+    `I can match PPE to the hazard it protects against.`,
+    `I can name the routes of exposure and the stages of heat illness.`,
+    `I can explain the fire triangle and the extinguisher classes.`,
+    `I can describe what a confined space is and why an attendant stays outside.`
+  ];
+
+  /* The answer keys (Appendix A) are not in the module pages. Every answer was worked out from the module text. */
+  var TF = [`True`, `False`];
+  function Q(src, a, pq, po, tq, to, why, br) { return { src: src + " · answer from module text", a: a, pq: pq, po: po, tq: tq, to: to, why: why, br: br }; }
+  var PRACTICE = {
+    1: [
+      Q(`Section Review 1.0.0 · Q1`, 2,
+        `Who is mainly responsible for your safety on the job?`, [`Your foreman`, `Your instructor`, `You`, `Your employer`],
+        `The person primarily responsible for your safety is _____.`, [`your foreman`, `your instructor`, `yourself`, `your employer`],
+        `Everyone shares safety, but your own safety is ultimately in your own hands.`, [[`Who is mainly responsible`, `The person primarily responsible`], [`You`, `yourself`]]),
+      Q(`Section Review 1.0.0 · Q2`, 3,
+        `What color are informational signs?`, [`Green`, `Red`, `Yellow`, `Blue`],
+        `The color commonly used for informational signs is _____.`, [`green`, `red`, `yellow`, `blue`],
+        `Informational signs are blue. Caution is yellow and danger is red, black and white.`, [[`What color`, `The color commonly used for`]]),
+      Q(`Section Review 1.0.0 · Q3`, 0,
+        `Where must the SDS for a chemical be kept?`, [`At the job site`, `Online only`, `At the contractor's office`, `At the nearest hospital`],
+        `The SDS for any chemical used at a job site must be available _____.`, [`at the job site`, `online`, `at the contractor's office`, `at the nearest hospital`],
+        `SDSs must be kept in the work area where workers can get to them.`, [[`kept`, `must be available`]]),
+      Q(`Module Review · Q1 (1.1.1)`, 1,
+        `The fatal four are electrical, struck-by, caught-in/between and which other hazard?`, [`Car crashes`, `Falls`, `Radiation`, `Chemical burns`],
+        `The four leading causes of death in construction include electrical, struck-by, caught-in or caught-between hazards and _____.`, [`vehicular incidents`, `falls`, `radiation exposure`, `chemical burns`],
+        `Falls are the fourth of the fatal four, and they cause more deaths than the others.`, [[`fatal four`, `four leading causes of death`], [`Falls`, `falls`]]),
+      Q(`Module Review · Q2 (1.2.1)`, 1,
+        `A white sign with a green panel and white letters is which kind of sign?`, [`General information`, `Safety instruction`, `Caution`, `Danger`],
+        `A sign with a white background and a green panel with white lettering is a(n) _____.`, [`general information sign`, `safety instruction sign`, `caution sign`, `danger sign`],
+        `Safety signs are white with a green panel and white lettering.`, [[`white sign with a green panel`, `white background with a green panel`]]),
+      Q(`Module Review · Q3 (1.2.9)`, 0,
+        `Where do oily rags go?`, [`In a container made for them`, `Washed and reused`, `In an outdoor dumpster`, `Burned at shift end`],
+        `To properly dispose of oily rags, they must be _____.`, [`stored in a container designed for the purpose`, `washed thoroughly and returned to use`, `taken outdoors and thrown into a dumpster`, `burned at the end of the shift`],
+        `Oily rags go in an approved, self-closing metal container.`, [[`go in a container made for them`, `stored in a container designed for the purpose`]]),
+      Q(`Module Review · Q4 (1.2.9)`, 2,
+        `What do we call keeping your work area clean and free of scrap and spills?`, [`Managing`, `Organizing`, `Housekeeping`, `Stacking`],
+        `Keeping your work area clean and free of scraps or spills is referred to as _____.`, [`managing`, `organizing`, `housekeeping`, `stacking and storing`],
+        `Poor housekeeping is one of the ten causes of incidents.`, [[`What do we call`, `is referred to as`]]),
+      Q(`Module Review · Q5 (1.3.0)`, 0,
+        `How does HAZCOM classify paint, concrete and wood dust?`, [`Hazardous materials`, `Common materials`, `Cheap materials`, `Harmless materials`],
+        `HAZCOM classifies all paint, concrete and wood dust as _____.`, [`hazardous materials`, `common materials`, `inexpensive materials`, `nonhazardous materials`],
+        `Many people wrongly believe few hazardous chemicals are on job sites, but these all count.`, [[`How does HAZCOM classify`, `HAZCOM classifies`]]),
+      Q(`Module Review · Q6 (1.3.0)`, 0,
+        `If you spot a hazard, what must you do?`, [`Report it to your supervisor`, `Leave right away`, `Tell co-workers`, `Fix it yourself`],
+        `Under HAZCOM, if you spot a hazard on your job site, you must _____.`, [`report it to your supervisor`, `leave immediately`, `notify your co-workers`, `correct the problem`],
+        `HAZCOM requires you to report hazards to your supervisor.`, [[`spot a hazard`, `spot a hazard on your job site`]]),
+      Q(`Module Review · Q7 (1.3.4)`, 2,
+        `What must be reported to your supervisor?`, [`Only major injuries`, `Only incidents and big injuries`, `All injuries, incidents and accidents`, `Only deaths`],
+        `Which of the following must be reported to your supervisor?`, [`Only major injuries`, `Only incidents and major injuries`, `All injuries, incidents and accidents`, `Only incidents in which a death occurred`],
+        `Report everything, no matter how minor.`, [[`What must be reported`, `Which ... must be reported`]])
+    ],
+    2: [
+      Q(`Section Review 2.0.0 · Q1`, 2,
+        `What does a barrier with yellow and purple markings warn of?`, [`Fire`, `A fall`, `Radiation`, `A confined space`],
+        `A barrier with yellow and purple markings indicates a(n) _____.`, [`fire hazard`, `fall hazard`, `radiation hazard`, `confined space hazard`],
+        `Yellow and purple barricades are a radiation warning.`, [[`warn of`, `indicates a`]]),
+      Q(`Section Review 2.0.0 · Q2`, 0,
+        `True or false: a positioning lanyard is only for fall restraint and cannot be used as fall arrest.`, TF,
+        `Positioning lanyards are used only as fall restraint devices and may not be used as fall arrest devices.`, TF,
+        `Positioning lanyards are restraint, not arrest.`, [[`only for fall restraint`, `used only as fall restraint devices`]]),
+      Q(`Section Review 2.0.0 · Q3`, 1,
+        `How far from the wall should a straight ladder's base be?`, [`4 feet`, `One-fourth of the height it touches`, `The wall height minus 4 feet`, `Half the height it touches`],
+        `When positioning a straight ladder against a wall, how far from the wall should the base be?`, [`4 feet (1.2 m)`, `One-fourth the distance from the ground to the point where the ladder touches the wall`, `The height of the wall minus 4 feet`, `One-half the distance from the ground to the point where the ladder touches the wall`],
+        `This is the 4-to-1 rule.`, [[`How far from the wall`, `how far from the wall should the base ... be`]]),
+      Q(`Section Review 2.0.0 · Q4`, 2,
+        `What does a yellow scaffold tag mean?`, [`One person at a time`, `Condemned, do not use`, `Wear a safety harness`, `Still being built`],
+        `If a scaffold has a yellow tag, it means _____.`, [`the scaffold may only be used by one person at a time`, `the scaffold is condemned and cannot be used`, `a safety harness must be worn when using it`, `the scaffold is under assembly and cannot be used`],
+        `Yellow means a harness tied to a lanyard is required. Red is for under assembly or not usable.`, [[`yellow scaffold tag`, `a scaffold has a yellow tag`]]),
+      Q(`Module Review · Q8 (2.3.1)`, 2,
+        `Where should metal ladders NOT be used?`, [`By stairways`, `By scaffolds`, `Near electrical equipment`, `By windows`],
+        `Metal ladders should NOT be used near _____.`, [`stairways`, `scaffolds`, `electrical equipment`, `windows`],
+        `Metal conducts electricity.`, [[`Where`, `near`]]),
+      Q(`Module Review · Q9 (2.3.1)`, 1,
+        `A straight ladder leans on the top of a 16-foot wall. How far out is the base?`, [`3 feet`, `4 feet`, `5 feet`, `6 feet`],
+        `If you lean a straight ladder against the top of a 16-foot wall, the base of the ladder should be _____.`, [`3 feet from the base of the wall`, `4 feet from the base of the wall`, `5 feet from the base of the wall`, `6 feet from the base of the wall`],
+        `One-fourth of 16 feet is 4 feet.`, [[`How far out`, `should be`]]),
+      Q(`Module Review · Q10 (2.4.1)`, 0,
+        `What are the two basic types of scaffolds?`, [`Self-supporting and suspended`, `Fixed and portable`, `Metal and wooden`, `Assembled and deliverable`],
+        `The two basic types of scaffolds are _____.`, [`self-supporting and suspended scaffolds`, `fixed and portable scaffolds`, `metal and wooden scaffolds`, `assembled and deliverable scaffolds`],
+        `Self-supporting and suspended are the two basic types.`, [[`two basic types`, `two basic types`]])
+    ],
+    3: [
+      Q(`Section Review 3.0.0 · Q1`, 0,
+        `Which activity is most likely to throw flying objects?`, [`Using a chipping hammer`, `Using a screwdriver`, `Painting a wall`, `Climbing a ladder`],
+        `Which of these activities is most likely to produce flying objects?`, [`Using a chipping hammer`, `Using a screwdriver`, `Painting a wall`, `Climbing a ladder`],
+        `Chipping, grinding and hammering throw particles into the air.`, [[`throw flying objects`, `produce flying objects`]]),
+      Q(`Section Review 3.0.0 · Q2`, 3,
+        `Which soil type is most likely to cave in?`, [`Solid rock`, `Type A`, `Type B`, `Type C`],
+        `The type of soil most likely to result in a trench cave-in is _____.`, [`solid rock`, `Type A`, `Type B`, `Type C`],
+        `Type C is coarse and granular, the least stable.`, [[`cave in`, `trench cave-in`]]),
+      Q(`Module Review · Q11 (3.1.1)`, 3,
+        `What does it mean to interlock stacked material?`, [`Chain and padlock it`, `Drive stakes around it`, `Tie it with rope`, `Put layers at right angles`],
+        `Interlocking stacked material is done by _____.`, [`applying a chain and padlock to it`, `driving stakes around the stack`, `securing the objects with rope`, `placing the objects at right angles`],
+        `Alternate layers go at right angles.`, [[`interlock`, `Interlocking stacked material`]]),
+      Q(`Module Review · Q12 (3.1.1)`, 1,
+        `What is the maximum height-to-base ratio of a stack?`, [`2:1`, `4:1`, `8:1`, `10:1`],
+        `To reduce the risk of workers being hurt or killed by falling materials, the maximum height-to-base ratio of a stack of materials should be _____.`, [`2:1`, `4:1`, `8:1`, `10:1`],
+        `Stack no higher than a 4:1 ratio.`, [[`maximum ... of a stack`, `maximum height-to-base ratio of a stack`]]),
+      Q(`Module Review · Q13 (3.1.3)`, 1,
+        `What is the most common cause of death for equipment operators?`, [`Hit and run`, `Equipment rollover`, `Brake failure`, `Head-on crashes`],
+        `The most common cause of death for equipment operators is _____.`, [`hit and run`, `equipment rollover`, `brake malfunction`, `head-on collisions`],
+        `Rollover is the top killer, so wear a seat belt.`, [[`most common cause of death`, `The most common cause of death`]]),
+      Q(`Module Review · Q14 (3.2.1)`, 1,
+        `Most cave-ins happen suddenly in trenches that are 5 feet to how deep?`, [`10 feet`, `15 feet`, `20 feet`, `25 feet`],
+        `Most cave-ins happen suddenly with little or no warning and occur in trenches 5 feet to _____.`, [`10 feet deep`, `15 feet deep`, `20 feet deep`, `25 feet deep`],
+        `Most cave-ins occur in trenches 5 to 15 feet deep.`, [[`happen suddenly`, `happen suddenly with little or no warning`]]),
+      Q(`Module Review · Q15 (3.2.1)`, 3,
+        `In a trench over 4 feet deep, how often must there be an exit?`, [`Every 10 feet`, `Every 12 feet`, `Every 18 feet`, `Every 25 feet`],
+        `In every trench over 4 feet deep, there must be an exit every _____.`, [`10 feet`, `12 feet`, `18 feet`, `25 feet`],
+        `A safe way out must be within 25 feet of workers.`, [[`how often`, `an exit every`]]),
+      Q(`Module Review · Q16 (3.2.1)`, 1,
+        `How far from the edge must a spoil pile be?`, [`6 inches`, `2 feet`, `5 feet`, `100 yards`],
+        `The minimum distance that a spoil pile must be located from the edge of an excavation is _____.`, [`6 inches`, `2 feet`, `5 feet`, `100 yards`],
+        `Keep spoil at least 2 feet from the edge.`, [[`How far from the edge`, `minimum distance ... from the edge`]]),
+      Q(`Module Review · Q17 (3.2.1)`, 3,
+        `Which trench protection is designed to stop cave-ins?`, [`A trench shield`, `A trench box`, `A spoil pile`, `Shoring`],
+        `The type of trench protection designed to prevent trench wall cave-ins is _____.`, [`a trench shield`, `a trench box`, `a spoil pile`, `shoring`],
+        `Shoring prevents cave-ins, while shielding only protects workers inside it.`, [[`stop cave-ins`, `prevent trench wall cave-ins`]]),
+      Q(`Module Review · Q18 (3.2.2)`, 1,
+        `Why do power tools and machines have protective guards?`, [`To keep dirt out`, `To keep workers from being caught in moving parts`, `To keep the tool from being hit`, `To stop unauthorized use`],
+        `Protective guards are provided on power tools and machines in order to keep _____.`, [`dirt out of the tool or machine`, `workers from being caught in rotating or moving parts`, `the tool or machine from being struck by moving equipment`, `unauthorized personnel from using the tool or machine`],
+        `Guards keep your body away from rotating and moving parts.`, [[`Why ... have`, `provided ... in order to keep`]])
+    ],
+    4: [
+      Q(`Section Review 4.0.0 · Q1`, 1,
+        `Why are electric tools double insulated?`, [`So they don't overheat`, `To protect users from shock`, `So they don't get too cold`, `So they fit a three-prong outlet`],
+        `The purpose of double insulating an electrically powered tool is to _____.`, [`prevent the tool from overheating`, `protect users from electrical shock`, `keep the tool from getting too cold`, `allow it to use a three-prong receptacle`],
+        `Double insulation protects the user from shock.`, [[`Why ... double insulated`, `purpose of double insulating`]]),
+      Q(`Section Review 4.0.0 · Q2`, 1,
+        `After a lockout, who holds the key?`, [`It stays in the lock`, `The person who applied the lock`, `The foreman`, `It is hidden nearby`],
+        `When a lockout is performed, the key to the lock is _____.`, [`left in the lock`, `kept by the person who applied the tag`, `given to the foreman for safekeeping`, `hidden in a convenient place`],
+        `Whoever applies the lock keeps the key.`, [[`holds the key`, `the key to the lock is`]]),
+      Q(`Module Review · Q19 (4.1.0)`, 0,
+        `How close can you safely get to exposed electrical conductors?`, [`It depends on the voltage`, `6 inches`, `1 foot`, `As close as you want`],
+        `The minimum safe working distance from exposed electrical conductors _____.`, [`depends on the voltage`, `is 6 inches`, `is 1 foot`, `is unlimited`],
+        `Higher voltage means a greater required distance.`, [[`How close ... safely`, `minimum safe working distance`]]),
+      Q(`Module Review · Q20 (4.1.0)`, 2,
+        `What is work done near a hazard but not touching it called?`, [`Close-call work`, `Near-miss work`, `Proximity work`, `Barricade work`],
+        `Work that is performed near a hazard but not in direct contact with it is called _____.`, [`close-call work`, `near-miss work`, `proximity work`, `barricade work`],
+        `This is the margin term "proximity work."`, [[`near a hazard but not touching`, `near a hazard but not in direct contact`]]),
+      Q(`Module Review · Q21 (4.2.0)`, 0,
+        `What are circuit breakers and disconnect switches examples of?`, [`Energy-isolating devices`, `Energy-removal devices`, `Lockout/tagout devices`, `Multiple lockout devices`],
+        `Circuit breakers and disconnect switches are examples of _____.`, [`energy-isolating devices`, `energy-removal devices`, `lockout/tagout devices`, `multiple lockout devices`],
+        `They isolate the energy source. You lock them with a lockout device.`, [[`examples of`, `are examples of`]])
+    ],
+    5: [
+      Q(`Section Review 5.0.0 · Q1`, 0,
+        `True or false: people working near arc welding must wear tinted eye protection.`, TF,
+        `Personnel working in the vicinity of arc welding work must wear eye protection with tinted lenses.`, TF,
+        `Tinted lenses protect against flash burn.`, [[`near arc welding`, `in the vicinity of arc welding`]]),
+      Q(`Section Review 5.0.0 · Q2`, 3,
+        `Drilling concrete requires a respirator because it makes what?`, [`Asbestos`, `Lead`, `Toxic fumes`, `Silica dust`],
+        `Drilling concrete requires use of a respirator because it produces _____.`, [`asbestos`, `lead`, `toxic fumes`, `silica dust`],
+        `Concrete drilling makes silica dust.`, [[`makes`, `produces`]]),
+      Q(`Module Review · Q22 (5.2.0)`, 2,
+        `Which gives the best eye protection from every direction?`, [`Welding hoods`, `Face shields`, `Safety goggles`, `Strap-on glasses`],
+        `Which of the following provide the best eye protection from all directions?`, [`Welding hoods`, `Face shields`, `Safety goggles`, `Strap-on glasses`],
+        `Goggles seal around the eyes.`, [[`from every direction`, `from all directions`]]),
+      Q(`Module Review · Q23 (5.2.3)`, 2,
+        `Which respirator carries its own clean air supply?`, [`Half mask`, `Mouthpiece with filter`, `SCBA`, `Full facepiece mask`],
+        `The type of respirator that has its own clean air supply is the _____.`, [`half mask`, `mouthpiece with mechanical filter`, `self-contained breathing apparatus`, `full facepiece mask`],
+        `An SCBA carries its own compressed air tank.`, [[`carries its own clean air`, `has its own clean air supply`]])
+    ],
+    6: [
+      Q(`Section Review 6.0.0 · Q1`, 1,
+        `What does PEL mean?`, [`Personal energy level`, `A worker's maximum exposure limit`, `Lead in the blood`, `Product efficiency level`],
+        `The term PEL refers to a worker's _____.`, [`personal energy level`, `maximum exposure limit`, `amount of lead in the bloodstream`, `product efficiency level`],
+        `PEL is the permissible exposure limit.`, [[`What does PEL mean`, `The term PEL refers to`]]),
+      Q(`Section Review 6.0.0 · Q2`, 2,
+        `What is it called when body temperature drops a few degrees below normal?`, [`Heat stress`, `Cold stroke`, `Cold stress`, `Heat exhaustion`],
+        `A condition in which body temperature drops a few degrees below normal is known as _____.`, [`heat stress`, `cold stroke`, `cold stress`, `heat exhaustion`],
+        `The only cold-related choice that is a real condition is cold stress.`, [[`What is it called`, `is known as`]]),
+      Q(`Section Review 6.0.0 · Q3`, 0,
+        `Swollen eyes and a sandy feeling are symptoms of what?`, [`A flash burn`, `Heat stroke`, `Asbestos exposure`, `Frostbite`],
+        `Swollen eyes and a sandy feeling in the eyes are symptoms of _____.`, [`a flash burn`, `heat stroke`, `asbestos exposure`, `frostbite`],
+        `Flash burn is ultraviolet damage from arc welding.`, [[`symptoms of`, `are symptoms of`]]),
+      Q(`Section Review 6.0.0 · Q4`, 1,
+        `True or false: a fire needs only fuel, a combustible liquid and oxygen.`, TF,
+        `The three elements needed for a fire to start are fuel, combustible liquid and oxygen.`, TF,
+        `The three are fuel, oxygen and heat, so this is false.`, [[`a fire needs`, `needed for a fire to start`]]),
+      Q(`Section Review 6.0.0 · Q5`, 1,
+        `A confined space is a space that has what?`, [`Only one door`, `Limited access`, `Hazardous gases`, `Locked doors`],
+        `A confined space is an enclosed space that has _____.`, [`only one door`, `limited access`, `hazardous gases`, `locked doors`],
+        `Confined spaces have limited or restricted entry and exit.`, [[`that has`, `an enclosed space that has`]]),
+      Q(`Module Review · Q24 (6.1.0)`, 1,
+        `Chemicals enter the body by inhalation, ingestion and what?`, [`Osmosis`, `Absorption`, `Radiation`, `Proximity`],
+        `A worker can be exposed to hazardous materials by inhalation, ingestion and _____.`, [`osmosis`, `absorption`, `radiation`, `proximity`],
+        `Absorption is through skin or eyes.`, [[`enter the body`, `be exposed to hazardous materials`]]),
+      Q(`Module Review · Q25 (6.2.2)`, 1,
+        `What brings on hypothermia?`, [`Heavy drinking`, `Long exposure to cold`, `Heavy sweating`, `Long exposure to heat`],
+        `Hypothermia is a condition brought on by _____.`, [`excessive alcohol consumption`, `prolonged exposure to cold`, `excessive sweating`, `prolonged exposure to heat`],
+        `Hypothermia comes from being cold too long.`, [[`brings on`, `brought on by`], [`Long exposure`, `prolonged exposure`]]),
+      Q(`Module Review · Q26 (6.3.0)`, 0,
+        `How far apart must oxygen and fuel cylinders be when stored?`, [`20 feet`, `A metal barrier`, `A 20-foot wall`, `10 feet`],
+        `When in storage, oxygen and fuel cylinders used in oxyfuel cutting must be separated by _____.`, [`20 feet`, `a metal barrier`, `a 20-foot wall`, `10 feet`],
+        `Keep them 20 feet apart or behind a 5-foot, 1/2-hour fire-rated barrier.`, [[`How far apart`, `must be separated by`]]),
+      Q(`Module Review · Q27 (6.3.0)`, 2,
+        `Why keep grease and oil away from oxygen tanks?`, [`Oxygen contaminates oil`, `Oxygen freezes oil`, `They can cause the oxygen to explode`, `Oil contaminates oxygen`],
+        `Grease and oil must be kept away from oxygen tanks because _____.`, [`grease or oil will contaminate the oxygen`, `oxygen causes oil to freeze`, `grease or oil can cause oxygen to explode`, `oxygen will contaminate the oil or grease`],
+        `Oil and oxygen can react explosively.`, [[`Why keep ... away`, `must be kept away because`]]),
+      Q(`Module Review · Q28 (6.4.0)`, 1,
+        `Which things must be together for a fire to start?`, [`Oxygen, carbon dioxide, heat`, `Oxygen, heat, fuel`, `Hydrogen, oxygen, wood`, `Grease, liquid, heat`],
+        `Which of these must be present in the same place at the same time for a fire to occur?`, [`Oxygen, carbon dioxide and heat`, `Oxygen, heat and fuel`, `Hydrogen, oxygen and wood`, `Grease, liquid and heat`],
+        `This is the fire triangle.`, [[`together for a fire`, `present ... for a fire to occur`]]),
+      Q(`Module Review · Q29 (6.4.0)`, 0,
+        `What kind of fire does a C extinguisher fight?`, [`Electrical`, `Magnesium`, `Paper`, `Gasoline`],
+        `A fire extinguisher labeled C would be used to fight a(n) _____.`, [`electrical fire`, `magnesium fire`, `paper fire`, `gasoline fire`],
+        `Class C is for energized electrical equipment.`, [[`kind of fire`, `fire ... labeled C`]]),
+      Q(`Module Review · Q30 (6.5.0)`, 0,
+        `Which is typical of a confined space?`, [`Limited ventilation`, `No way out at all`, `Too small to work in`, `Untrained workers may enter`],
+        `Which of the following characteristics is typical of a confined space?`, [`It has a limited amount of ventilation.`, `There is no means of escape.`, `It is too small to work in.`, `It may be entered by untrained employees.`],
+        `Confined spaces have limited access and may have limited ventilation. Choice A is the closest match, so check it against the publisher's key.`, [[`typical of`, `characteristic is typical of`]])
+    ]
+  };
+
+  function el(tag, cls, text) { var n = document.createElement(tag); if (cls) n.className = cls; if (text != null) n.textContent = text; return n; }
+
+  function buildPoints(ul, list, prefix) {
+    list.forEach(function (html, i) {
+      var li = el("li");
+      var label = el("label");
+      var input = document.createElement("input");
+      input.type = "checkbox";
+      input.id = prefix + "-" + i;
+      var span = el("span");
+      span.innerHTML = html; // static text written in this file
+      label.appendChild(input); label.appendChild(span);
+      li.appendChild(label); ul.appendChild(li);
+    });
+  }
+
+  function field(label, text) {
+    var d = el("span");
+    d.appendChild(el("span", "label", label));
+    d.appendChild(document.createTextNode(text));
+    return d;
+  }
+  function buildCards(host, n) {
+    CARDS[n].forEach(function (item) {
+      var b = el("button", "card");
+      b.type = "button";
+      b.setAttribute("aria-pressed", "false");
+      b.setAttribute("aria-label", item.t + ". Press to flip the card.");
+      var inner = el("span", "card-inner");
+      var f = el("span", "face front" + (item.k === "k" ? " key" : ""));
+      f.appendChild(el("span", "strip", (item.k === "o" ? "NCCER trade term" : "Key term") + " · Section " + n));
+      f.appendChild(el("span", "term", item.t));
+      f.appendChild(el("span", "hint", "TAP TO FLIP"));
+      var k = el("span", "face back");
+      k.appendChild(el("span", "strip", item.t));
+      var body = el("span", "body");
+      body.appendChild(field("In everyday words", item.plain));
+      body.appendChild(field("From the module", item.book));
+      var ask = field("Ask your student", item.ask);
+      ask.className = "ask";
+      body.appendChild(ask);
+      k.appendChild(body);
+      inner.appendChild(f); inner.appendChild(k);
+      b.appendChild(inner);
+      b.addEventListener("click", function () { b.setAttribute("aria-pressed", b.getAttribute("aria-pressed") === "true" ? "false" : "true"); });
+      host.appendChild(b);
+    });
+  }
+
+  function buildQuiz(host, n) {
+    var list = QUIZ[n];
+    var answered = 0;
+    host.appendChild(el("p", "ticket-intro", "Pick the answer. You will see right away if it is correct. Nothing is saved or sent."));
+    var foot = el("div", "ticket-foot");
+    var done = el("p", null, "");
+    done.setAttribute("aria-live", "polite");
+    var retry = el("button", "btn", "Try again");
+    retry.type = "button";
+    retry.hidden = true;
+    foot.appendChild(done); foot.appendChild(retry);
+
+    list.forEach(function (item, qi) {
+      var fs = el("fieldset", "q");
+      fs.appendChild(el("legend", null, (qi + 1) + ". " + item.q));
+      var opts = el("div", "opts");
+      var fb = el("p", "fb");
+      fb.setAttribute("aria-live", "polite");
+      var btns = [];
+      item.o.forEach(function (text, oi) {
+        var b = el("button", "opt", text);
+        b.type = "button";
+        b.addEventListener("click", function () {
+          btns.forEach(function (x) { x.disabled = true; });
+          answered++;
+          fb.textContent = "";
+          if (oi === item.a) {
+            b.classList.add("right");
+            fb.appendChild(el("b", null, "Correct. ")); fb.appendChild(document.createTextNode(item.why));
+          } else {
+            b.classList.add("wrong");
+            btns[item.a].classList.add("right");
+            fb.appendChild(el("b", null, "Not quite. "));
+            fb.appendChild(document.createTextNode("The answer is \"" + item.o[item.a] + "\". " + item.why));
+          }
+          if (answered === list.length) {
+            done.textContent = "Ticket finished. Reread any part of the section that felt shaky, then try again.";
+            retry.hidden = false;
+          }
+        });
+        btns.push(b); opts.appendChild(b);
+      });
+      fs.appendChild(opts); fs.appendChild(fb);
+      host.appendChild(fs);
+      fs._reset = function () { btns.forEach(function (x) { x.disabled = false; x.className = "opt"; }); fb.textContent = ""; };
+    });
+    host.appendChild(foot);
+    retry.addEventListener("click", function () {
+      host.querySelectorAll("fieldset").forEach(function (f) { f._reset(); });
+      answered = 0; done.textContent = ""; retry.hidden = true;
+    });
+  }
+
+  function buildTalk(host, n) {
+    var t = TALK[n];
+    var ol = el("ol", "qs");
+    t.qs.forEach(function (q) { ol.appendChild(el("li", null, q)); });
+    host.appendChild(ol);
+    t.scn.forEach(function (s) {
+      var d = el("details", "scn");
+      d.appendChild(el("summary", null, "Scenario: " + s.t));
+      d.appendChild(el("p", "setup", s.s));
+      var g = el("div", "good");
+      g.appendChild(el("b", null, "A good answer includes"));
+      var ul = el("ul");
+      s.g.forEach(function (x) { ul.appendChild(el("li", null, x)); });
+      g.appendChild(ul); d.appendChild(g);
+      host.appendChild(d);
+    });
+    if (t.parent) {
+      var p = el("div", "parent");
+      p.appendChild(el("b", null, "Talk it over with your loved ones"));
+      p.appendChild(el("p", null, t.parent));
+      host.appendChild(p);
+    }
+  }
+
+  function ask(label, cls, q, opts, correct, onAnswer) {
+    var box = el("div", "ask-block" + (cls ? " " + cls : ""));
+    box.appendChild(el("p", "step-label", label));
+    box.appendChild(el("p", "pr-q", q));
+    var wrap = el("div", "opts");
+    wrap.setAttribute("role", "group");
+    wrap.setAttribute("aria-label", q);
+    var fb = el("p", "fb");
+    fb.setAttribute("aria-live", "polite");
+    var btns = [];
+    opts.forEach(function (text, oi) {
+      var b = el("button", "opt", String.fromCharCode(65 + oi) + ".  " + text);
+      b.type = "button";
+      b.addEventListener("click", function () {
+        btns.forEach(function (x) { x.disabled = true; });
+        var ok = oi === correct;
+        b.classList.add(ok ? "right" : "wrong");
+        if (!ok) btns[correct].classList.add("right");
+        onAnswer(ok, fb, String.fromCharCode(65 + correct));
+      });
+      btns.push(b); wrap.appendChild(b);
+    });
+    box.appendChild(wrap); box.appendChild(fb);
+    box.reset = function () { btns.forEach(function (x) { x.disabled = false; x.className = "opt"; }); fb.textContent = ""; };
+    return box;
+  }
+  function say(fb, lead, text) {
+    fb.textContent = "";
+    fb.appendChild(el("b", null, lead + " "));
+    fb.appendChild(document.createTextNode(text));
+  }
+
+  function buildPractice(host, n) {
+    var list = PRACTICE[n];
+    host.appendChild(el("p", "pr-intro", "Test questions use the textbook's formal words. Answer each question in plain English first, then see the same question the way the book asks it. The \"Words to notice\" box shows how the two fit together. Nothing is saved or sent."));
+    var items = [];
+    list.forEach(function (item, i) {
+      var formalOpts = item.to || item.po;
+      var art = el("article", "pr");
+      var head = el("div", "pr-head");
+      head.appendChild(el("span", null, "Question " + (i + 1) + " of " + list.length));
+      head.appendChild(el("span", null, "Source: " + item.src));
+      art.appendChild(head);
+
+      var bridge = el("div", "bridge");
+      bridge.hidden = true;
+      bridge.appendChild(el("p", "step-label", "Words to notice"));
+      var ul = el("ul");
+      item.br.forEach(function (p) {
+        var li = el("li");
+        li.appendChild(el("span", "you", p[0]));
+        li.appendChild(el("span", "arrow", "→"));
+        li.appendChild(el("span", "pub", p[1]));
+        ul.appendChild(li);
+      });
+      bridge.appendChild(ul);
+
+      var b2 = ask("Step 2 · The same question in the textbook's words", "formal", item.tq, formalOpts, item.a, function (ok, fb, letter) {
+        if (ok) say(fb, "Correct.", "You just answered it in the textbook's voice.");
+        else say(fb, "Not quite.", "The answer is " + letter + ". Compare it with your plain-English answer above.");
+        bridge.hidden = false;
+      });
+      b2.hidden = true;
+      var b1 = ask("Step 1 · In plain English", "", item.pq, item.po, item.a, function (ok, fb, letter) {
+        if (ok) say(fb, "Correct.", item.why);
+        else say(fb, "Not quite.", "The answer is " + letter + ". " + item.why);
+        b2.hidden = false;
+      });
+      art.appendChild(b1); art.appendChild(b2); art.appendChild(bridge);
+      host.appendChild(art);
+      items.push({ b1: b1, b2: b2, bridge: bridge });
+    });
+    var foot = el("div", "ticket-foot");
+    var retry = el("button", "btn", "Start this set over");
+    retry.type = "button";
+    retry.addEventListener("click", function () {
+      items.forEach(function (x) { x.b1.reset(); x.b2.reset(); x.b2.hidden = true; x.bridge.hidden = true; });
+    });
+    foot.appendChild(retry);
+    host.appendChild(foot);
+  }
+
+  [1, 2, 3, 4, 5, 6].forEach(function (n) {
+    buildPoints(document.querySelector('[data-points="' + n + '"]'), POINTS[n], "s" + n);
+    buildCards(document.querySelector('[data-cards="' + n + '"]'), n);
+    buildQuiz(document.querySelector('[data-quiz="' + n + '"]'), n);
+    buildTalk(document.querySelector('[data-talk="' + n + '"]'), n);
+    buildPractice(document.querySelector('[data-practice="' + n + '"]'), n);
+  });
+  buildPoints(document.getElementById("final-points"), FINAL, "fin");
+
+})();
+</script>
+
+</body>
+</html>

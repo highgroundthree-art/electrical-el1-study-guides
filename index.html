@@ -25,6 +25,10 @@ h1,h2,h3{font-family:var(--font-display);text-transform:uppercase;letter-spacing
 .how h2{font-size:1.4rem;margin-bottom:6px}.how p{margin:0 0 8px;max-width:64ch}
 h2.list{font-size:clamp(1.8rem,5vw,2.4rem);margin:40px 0 14px;border-top:8px solid var(--ink);padding-top:16px}
 .grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fill,minmax(min(100%,270px),1fr));list-style:none;margin:0;padding:0}
+.grid.g3{grid-template-columns:repeat(3,1fr)}
+@media(max-width:900px){.grid.g3{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){.grid.g3{grid-template-columns:1fr}}
+h2.list.sub{margin-top:56px}
 .mod{background:var(--surface);border:2px solid var(--ink);display:flex;flex-direction:column;min-height:190px}
 .mod .tag{background:var(--accent);color:#fff;font-family:var(--font-mono);font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;padding:8px 14px}
 .mod.core .tag{background:#1B5FC9;color:#fff}
@@ -83,15 +87,16 @@ footer strong{color:var(--band-ink)}footer p{margin:0 0 6px}
     <p>Plan about 15 to 25 minutes per section. Your student does most of the talking, and you do not need to know the answers ahead of time. If your student can read it and explain it, they are learning it.</p>
   </section>
 
-  <h2 class="list">Modules</h2>
+  <h2 class="list">Core Curriculum</h2>
   <p class="key" aria-label="Color key"><span class="k-core">Core</span><span class="k-el1">Electrical Level 1</span><span class="k-el2">Electrical Level 2 (coming)</span></p>
-  <ul class="grid">
+  <ul class="grid g3">
     <li class="mod core">
       <span class="tag">Core · Ready</span>
       <div class="body">
         <h3>Build Your Future in Construction</h3>
         <p>NCCER Core, Module 00100: Build Your Future in Construction.</p>
         <a class="go" href="build-your-future-in-construction.html">Open the guide</a>
+        <p><a href="https://dashboard.blooket.com/set/6986135559ce2936b5dbf1fb" target="_blank" rel="noopener">Blooket review quiz</a></p>
       </div>
     </li>
     <li class="mod core">
@@ -100,16 +105,8 @@ footer strong{color:var(--band-ink)}footer p{margin:0 0 6px}
         <h3>Basic Safety</h3>
         <p>NCCER Core, Module 00101: Basic Safety.</p>
         <a class="go" href="basic-safety.html">Open the guide</a>
+        <p><a href="https://dashboard.blooket.com/set/6986242e3db3008254e3c4cf" target="_blank" rel="noopener">Blooket review quiz</a></p>
         <p><a href="basic-safety-materials/CM101_Guided_Notes.docx">Guided notes</a> · <a href="basic-safety-materials/CM101_Lecture_Deck_Animated.pptx">Slides (click-to-reveal)</a> · <a href="basic-safety-materials/CM101_Lecture_Deck_Static.pptx">Slides (no animation)</a></p>
-      </div>
-    </li>
-    <li class="mod core">
-      <span class="tag">Core · Draft</span>
-      <div class="body">
-        <h3>Introduction to Hand Tools</h3>
-        <p>NCCER Core, Module 00103: Introduction to Hand Tools.</p>
-        <a class="go" href="introduction-to-hand-tools.html">Open the guide</a>
-        <p><a href="introduction-to-hand-tools-materials/CM103_Guided_Notes.docx">Guided notes</a> · <a href="introduction-to-hand-tools-materials/CM103_Lecture_Deck_Animated.pptx">Slides (click-to-reveal)</a> · <a href="introduction-to-hand-tools-materials/CM103_Lecture_Deck_Static.pptx">Slides (no animation)</a></p>
       </div>
     </li>
     <li class="mod core">
@@ -118,7 +115,24 @@ footer strong{color:var(--band-ink)}footer p{margin:0 0 6px}
         <h3>Introduction to Construction Math</h3>
         <p>NCCER Core, Module 00102: Introduction to Construction Math.</p>
         <a class="go" href="introduction-to-construction-math.html">Open the guide</a>
-        <p><a href="introduction-to-construction-math-materials/CM102_Guided_Notes.docx">Guided notes</a> · <a href="introduction-to-construction-math-materials/CM102_Lecture_Deck_Animated.pptx">Slides (click-to-reveal)</a> · <a href="introduction-to-construction-math-materials/CM102_Lecture_Deck_Static.pptx">Slides (no animation)</a></p>
+      </div>
+    </li>
+    <li class="mod core">
+      <span class="tag">Core · Draft</span>
+      <div class="body">
+        <h3>Introduction to Hand Tools</h3>
+        <p>NCCER Core, Module 00103: Introduction to Hand Tools.</p>
+        <a class="go" href="introduction-to-hand-tools.html">Open the guide</a>
+        <p><a href="https://dashboard.blooket.com/set/69861f4359ce2936b5dbf89a" target="_blank" rel="noopener">Blooket review quiz</a></p>
+      </div>
+    </li>
+    <li class="mod core">
+      <span class="tag">Core · Draft</span>
+      <div class="body">
+        <h3>Introduction to Power Tools</h3>
+        <p>NCCER Core, Module 00104: Introduction to Power Tools.</p>
+        <a class="go" href="introduction-to-power-tools.html">Open the guide</a>
+        <p><a href="https://dashboard.blooket.com/set/698623fa6edfb7b92377fe04" target="_blank" rel="noopener">Blooket review quiz</a></p>
       </div>
     </li>
     <li class="mod core">
@@ -127,6 +141,7 @@ footer strong{color:var(--band-ink)}footer p{margin:0 0 6px}
         <h3>Construction Drawings</h3>
         <p>NCCER Core, Module 00105: Introduction to Construction Drawings.</p>
         <a class="go" href="construction-drawings.html">Open the guide</a>
+        <p><a href="https://dashboard.blooket.com/set/698625723db3008254e3c57a" target="_blank" rel="noopener">Blooket review quiz</a></p>
         <p><a href="construction-drawings-materials/CM105_Guided_Notes.docx">Guided notes</a> · <a href="construction-drawings-materials/CM105_Lecture_Deck_Animated.pptx">Slides (click-to-reveal)</a> · <a href="construction-drawings-materials/CM105_Lecture_Deck_Static.pptx">Slides (no animation)</a></p>
       </div>
     </li>
@@ -136,6 +151,7 @@ footer strong{color:var(--band-ink)}footer p{margin:0 0 6px}
         <h3>Introduction to Basic Rigging</h3>
         <p>NCCER Core, Module 00106: Introduction to Basic Rigging.</p>
         <a class="go" href="introduction-to-basic-rigging.html">Open the guide</a>
+        <p><a href="https://dashboard.blooket.com/set/698b4f855498c29317cdaf83" target="_blank" rel="noopener">Blooket review quiz</a></p>
       </div>
     </li>
     <li class="mod core">
@@ -144,6 +160,7 @@ footer strong{color:var(--band-ink)}footer p{margin:0 0 6px}
         <h3>Basic Communication Skills</h3>
         <p>NCCER Core, Module 00107: Basic Communication Skills.</p>
         <a class="go" href="communication-skills.html">Open the guide</a>
+        <p><a href="https://dashboard.blooket.com/set/69864f22e51b03f46e6a92ad" target="_blank" rel="noopener">Blooket review quiz</a></p>
         <p><a href="communication-skills-materials/CM107_Guided_Notes.docx">Guided notes</a> · <a href="communication-skills-materials/CM107_Lecture_Deck_Animated.pptx">Slides (click-to-reveal)</a> · <a href="communication-skills-materials/CM107_Lecture_Deck_Static.pptx">Slides (no animation)</a></p>
       </div>
     </li>
@@ -153,6 +170,7 @@ footer strong{color:var(--band-ink)}footer p{margin:0 0 6px}
         <h3>Basic Employability Skills</h3>
         <p>NCCER Core, Module 00108: Basic Employability Skills.</p>
         <a class="go" href="employability-skills.html">Open the guide</a>
+        <p><a href="https://dashboard.blooket.com/set/698a03149ee4f2a85fd50dff" target="_blank" rel="noopener">Blooket review quiz</a></p>
         <p><a href="employability-skills-materials/CM108_Guided_Notes.docx">Guided notes</a> · <a href="employability-skills-materials/CM108_Lecture_Deck_Animated.pptx">Slides (click-to-reveal)</a> · <a href="employability-skills-materials/CM108_Lecture_Deck_Static.pptx">Slides (no animation)</a></p>
       </div>
     </li>
@@ -162,16 +180,28 @@ footer strong{color:var(--band-ink)}footer p{margin:0 0 6px}
         <h3>Introduction to Material Handling</h3>
         <p>NCCER Core, Module 00109: Introduction to Material Handling.</p>
         <a class="go" href="introduction-to-material-handling.html">Open the guide</a>
-        <p><a href="introduction-to-material-handling-materials/CM109_Guided_Notes.docx">Guided notes</a> · <a href="introduction-to-material-handling-materials/CM109_Lecture_Deck_Animated.pptx">Slides (click-to-reveal)</a> · <a href="introduction-to-material-handling-materials/CM109_Lecture_Deck_Static.pptx">Slides (no animation)</a></p>
+        <p><a href="https://dashboard.blooket.com/set/698a032afc83c119e11fe123" target="_blank" rel="noopener">Blooket review quiz</a></p>
       </div>
     </li>
+    <li class="mod core">
+      <span class="tag">Core · Review</span>
+      <div class="body">
+        <h3>Core Semester Final Review</h3>
+        <p>Practice for the semester final. Covers all of the Core modules.</p>
+        <p><a href="https://solo.blooket.com/fish?id=6b05b61e89e25bbe572886da" target="_blank" rel="noopener">Blooket semester final review</a></p>
+      </div>
+    </li>
+  </ul>
+
+  <h2 class="list sub">Electrical Level 1</h2>
+  <ul class="grid g3">
     <li class="mod el1">
       <span class="tag">EL1 · Ready</span>
       <div class="body">
         <h3>Occupational Overview</h3>
         <p>NCCER Electrical Level 1, Module 26101-20: Occupational Overview: The Electrical Industry.</p>
         <a class="go" href="occupational-overview.html">Open the guide</a>
-        <p><a href="occupational-overview-materials/EL1-101_Guided_Notes.docx">Guided notes</a> · <a href="occupational-overview-materials/EL1-101_Lecture_Deck_Animated.pptx">Slides (click-to-reveal)</a> · <a href="occupational-overview-materials/EL1-101_Lecture_Deck_Static.pptx">Slides (no animation)</a></p>
+        <p><a href="occupational-overview-materials/EL1-101_Guided_Notes.docx">Guided notes</a> · <a href="occupational-overview-materials/EL1-101_Lecture_Deck_Animated.pptx">Slides (click-to-reveal)</a> · <a href="occupational-overview-materials/EL1-101_Lecture_Deck_Static.pptx">Slides (no animation)</a> · <a href="https://play.blooket.com/host?id=662f2102d8b3c822e679b48c" target="_blank" rel="noopener">Blooket review quiz</a></p>
       </div>
     </li>
     <li class="mod el1">
@@ -180,7 +210,7 @@ footer strong{color:var(--band-ink)}footer p{margin:0 0 6px}
         <h3>Electrical Foundations</h3>
         <p>NCCER Electrical Level 1, Module 26102-20: Safety for Electricians.</p>
         <a class="go" href="electrical-foundations.html">Open the guide</a>
-        <p><a href="electrical-foundations-materials/EL1-102_Guided_Notes.docx">Guided notes</a> · <a href="electrical-foundations-materials/EL1-102_Lecture_Deck_Animated.pptx">Slides (click-to-reveal)</a> · <a href="electrical-foundations-materials/EL1-102_Lecture_Deck_Static.pptx">Slides (no animation)</a></p>
+        <p><a href="electrical-foundations-materials/EL1-102_Guided_Notes.docx">Guided notes</a> · <a href="electrical-foundations-materials/EL1-102_Lecture_Deck_Animated.pptx">Slides (click-to-reveal)</a> · <a href="electrical-foundations-materials/EL1-102_Lecture_Deck_Static.pptx">Slides (no animation)</a> · <a href="https://dashboard.blooket.com/set/663232984f01af53663d2132" target="_blank" rel="noopener">Blooket review quiz</a></p>
       </div>
     </li>
     <li class="mod el1">
@@ -189,7 +219,7 @@ footer strong{color:var(--band-ink)}footer p{margin:0 0 6px}
         <h3>Electrical Circuits</h3>
         <p>NCCER Electrical Level 1, Module 26103-20: Introduction to Electrical Circuits.</p>
         <a class="go" href="electrical-circuits.html">Open the guide</a>
-        <p><a href="electrical-circuits-materials/EL1-103_Guided_Notes.docx">Guided notes</a> · <a href="electrical-circuits-materials/EL1-103_Lecture_Deck_Animated.pptx">Slides (click-to-reveal)</a> · <a href="electrical-circuits-materials/EL1-103_Lecture_Deck_Static.pptx">Slides (no animation)</a></p>
+        <p><a href="electrical-circuits-materials/EL1-103_Guided_Notes.docx">Guided notes</a> · <a href="electrical-circuits-materials/EL1-103_Lecture_Deck_Animated.pptx">Slides (click-to-reveal)</a> · <a href="electrical-circuits-materials/EL1-103_Lecture_Deck_Static.pptx">Slides (no animation)</a> · <a href="https://dashboard.blooket.com/set/6643582e3d9959db3692ec16" target="_blank" rel="noopener">Blooket review quiz</a></p>
       </div>
     </li>
     <li class="mod el1">
@@ -198,7 +228,7 @@ footer strong{color:var(--band-ink)}footer p{margin:0 0 6px}
         <h3>Electrical Theory</h3>
         <p>NCCER Electrical Level 1, Module 26104-20: Electrical Theory.</p>
         <a class="go" href="electrical-theory.html">Open the guide</a>
-        <p><a href="electrical-theory-materials/EL1-104_Guided_Notes.docx">Guided notes</a> · <a href="electrical-theory-materials/EL1-104_Lecture_Deck_Animated.pptx">Slides (click-to-reveal)</a> · <a href="electrical-theory-materials/EL1-104_Lecture_Deck_Static.pptx">Slides (no animation)</a></p>
+        <p><a href="electrical-theory-materials/EL1-104_Guided_Notes.docx">Guided notes</a> · <a href="electrical-theory-materials/EL1-104_Lecture_Deck_Animated.pptx">Slides (click-to-reveal)</a> · <a href="electrical-theory-materials/EL1-104_Lecture_Deck_Static.pptx">Slides (no animation)</a> · <a href="https://dashboard.blooket.com/set/6645f9055aba22f9dac50131" target="_blank" rel="noopener">Blooket review quiz</a></p>
       </div>
     </li>
     <li class="mod el1">
@@ -207,7 +237,7 @@ footer strong{color:var(--band-ink)}footer p{margin:0 0 6px}
         <h3>National Electrical Code</h3>
         <p>NCCER Electrical Level 1, Module 26105-20: Introduction to the National Electrical Code.</p>
         <a class="go" href="national-electrical-code.html">Open the guide</a>
-        <p><a href="national-electrical-code-materials/EL1-105_Guided_Notes.docx">Guided notes</a> · <a href="national-electrical-code-materials/EL1-105_Lecture_Deck_Animated.pptx">Slides (click-to-reveal)</a> · <a href="national-electrical-code-materials/EL1-105_Lecture_Deck_Static.pptx">Slides (no animation)</a></p>
+        <p><a href="national-electrical-code-materials/EL1-105_Guided_Notes.docx">Guided notes</a> · <a href="national-electrical-code-materials/EL1-105_Lecture_Deck_Animated.pptx">Slides (click-to-reveal)</a> · <a href="national-electrical-code-materials/EL1-105_Lecture_Deck_Static.pptx">Slides (no animation)</a> · <a href="https://dashboard.blooket.com/set/665dad4a0cdd8986b65565d6" target="_blank" rel="noopener">Blooket review quiz</a></p>
       </div>
     </li>
     <li class="mod el1">
@@ -234,7 +264,7 @@ footer strong{color:var(--band-ink)}footer p{margin:0 0 6px}
         <h3>Wireways, Raceways, and Fittings</h3>
         <p>NCCER Electrical Level 1, Module 26108-20: Wireways, Raceways, and Fittings.</p>
         <a class="go" href="wireways-raceways-fittings.html">Open the guide</a>
-        <p><a href="wireways-raceways-fittings-materials/EL1-108_Guided_Notes.docx">Guided notes</a> · <a href="wireways-raceways-fittings-materials/EL1-108_Lecture_Deck_Animated.pptx">Slides (click-to-reveal)</a> · <a href="wireways-raceways-fittings-materials/EL1-108_Lecture_Deck_Static.pptx">Slides (no animation)</a></p>
+        <p><a href="wireways-raceways-fittings-materials/EL1-108_Guided_Notes.docx">Guided notes</a> · <a href="wireways-raceways-fittings-materials/EL1-108_Lecture_Deck_Animated.pptx">Slides (click-to-reveal)</a> · <a href="wireways-raceways-fittings-materials/EL1-108_Lecture_Deck_Static.pptx">Slides (no animation)</a> · <a href="https://dashboard.blooket.com/set/6601f9d5979e5f6b2bb53c62" target="_blank" rel="noopener">Blooket review quiz</a></p>
       </div>
     </li>
     <li class="mod el1">
@@ -243,7 +273,7 @@ footer strong{color:var(--band-ink)}footer p{margin:0 0 6px}
         <h3>Conductors and Cables</h3>
         <p>NCCER Electrical Level 1, Module 26109-20: Conductors and Cables.</p>
         <a class="go" href="conductors-and-cables.html">Open the guide</a>
-        <p><a href="conductors-and-cables-materials/EL1-109_Guided_Notes.docx">Guided notes</a> · <a href="conductors-and-cables-materials/EL1-109_Lecture_Deck_Animated.pptx">Slides (click-to-reveal)</a> · <a href="conductors-and-cables-materials/EL1-109_Lecture_Deck_Static.pptx">Slides (no animation)</a></p>
+        <p><a href="conductors-and-cables-materials/EL1-109_Guided_Notes.docx">Guided notes</a> · <a href="conductors-and-cables-materials/EL1-109_Lecture_Deck_Animated.pptx">Slides (click-to-reveal)</a> · <a href="conductors-and-cables-materials/EL1-109_Lecture_Deck_Static.pptx">Slides (no animation)</a> · <a href="https://dashboard.blooket.com/set/660a5c5a7d52ab6f2b8dab31" target="_blank" rel="noopener">Blooket review quiz</a></p>
       </div>
     </li>
     <li class="mod el1">
@@ -261,7 +291,7 @@ footer strong{color:var(--band-ink)}footer p{margin:0 0 6px}
         <h3>Residential Wiring</h3>
         <p>NCCER Electrical Level 1, Module 26111-20: Residential Wiring.</p>
         <a class="go" href="residential-wiring.html">Open the guide</a>
-        <p><a href="residential-wiring-materials/EL1-111_Guided_Notes.docx">Guided notes</a> · <a href="residential-wiring-materials/EL1-111_Lecture_Deck_Animated.pptx">Slides (click-to-reveal)</a> · <a href="residential-wiring-materials/EL1-111_Lecture_Deck_Static.pptx">Slides (no animation)</a></p>
+        <p><a href="residential-wiring-materials/EL1-111_Guided_Notes.docx">Guided notes</a> · <a href="residential-wiring-materials/EL1-111_Lecture_Deck_Animated.pptx">Slides (click-to-reveal)</a> · <a href="residential-wiring-materials/EL1-111_Lecture_Deck_Static.pptx">Slides (no animation)</a> · <a href="https://dashboard.blooket.com/set/66742ed27e066810414f4a31" target="_blank" rel="noopener">Blooket review quiz</a></p>
       </div>
     </li>
     <li class="mod el1">
@@ -270,7 +300,15 @@ footer strong{color:var(--band-ink)}footer p{margin:0 0 6px}
         <h3>Electrical Test Equipment</h3>
         <p>NCCER Electrical Level 1, Module 26112-20: Electrical Test Equipment.</p>
         <a class="go" href="electrical-test-equipment.html">Open the guide</a>
-        <p><a href="electrical-test-equipment-materials/EL1-112_Guided_Notes.docx">Guided notes</a> · <a href="electrical-test-equipment-materials/EL1-112_Lecture_Deck_Animated.pptx">Slides (click-to-reveal)</a> · <a href="electrical-test-equipment-materials/EL1-112_Lecture_Deck_Static.pptx">Slides (no animation)</a></p>
+        <p><a href="electrical-test-equipment-materials/EL1-112_Guided_Notes.docx">Guided notes</a> · <a href="electrical-test-equipment-materials/EL1-112_Lecture_Deck_Animated.pptx">Slides (click-to-reveal)</a> · <a href="electrical-test-equipment-materials/EL1-112_Lecture_Deck_Static.pptx">Slides (no animation)</a> · <a href="https://dashboard.blooket.com/set/663b7232d93c1e441547382d" target="_blank" rel="noopener">Blooket review quiz</a></p>
+      </div>
+    </li>
+    <li class="mod el1">
+      <span class="tag">EL1 · Review</span>
+      <div class="body">
+        <h3>TSA Electrical Prep</h3>
+        <p>End-of-year practice for the Arizona Technical Student Assessment (TSA). 168 questions across six standards.</p>
+        <p><a href="https://dashboard.blooket.com/set/69de96c45ceeb021a4e1a607" target="_blank" rel="noopener">Blooket TSA electrical prep</a></p>
       </div>
     </li>
     <!-- TO ADD A MODULE: copy one of the blocks above, change the title, the description and the href

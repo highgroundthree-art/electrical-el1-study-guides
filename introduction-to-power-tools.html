@@ -1,0 +1,1389 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Introduction to Power Tools Loved Ones Study Guide</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+/* Layout concept: one long study sheet. Each module section runs the same six parts
+   (read, review points, trade-term tags, ticket out the door, talk it over, practice questions). */
+:root {
+  --bg: #EEF1F3;
+  --surface: #FFFFFF;
+  --ink: #14202B;
+  --ink-soft: #46576A;
+  --line: #C9D2DA;
+  --band: #14202B;
+  --band-ink: #F4F7F9;
+  --accent: #C42B17;
+  --accent-ink: #FFFFFF;
+  --caution: #F2B705;
+  --caution-soft: #FFF3C4;
+  --good: #1E7A3C;
+  --good-soft: #DDF3E4;
+  --bad: #A8321F;
+  --bad-soft: #FBE3DE;
+  --tag-hole: #EEF1F3;
+  --focus: #0B5FFF;
+  --font-display: "Barlow Condensed", "Arial Narrow", Impact, sans-serif;
+  --font-body: "Barlow", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0F171E; --surface: #18232D; --ink: #EAF0F4; --ink-soft: #A5B4C2; --line: #2E3E4C;
+    --band: #0A1016; --band-ink: #F4F7F9; --accent: #FF5A44; --accent-ink: #14202B;
+    --caution: #F2B705; --caution-soft: #3A3210; --good: #6FD08C; --good-soft: #17301F;
+    --bad: #FF8E7C; --bad-soft: #3A1B16; --tag-hole: #0F171E; --focus: #6AA2FF;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0F171E; --surface: #18232D; --ink: #EAF0F4; --ink-soft: #A5B4C2; --line: #2E3E4C;
+  --band: #0A1016; --band-ink: #F4F7F9; --accent: #FF5A44; --accent-ink: #14202B;
+  --caution: #F2B705; --caution-soft: #3A3210; --good: #6FD08C; --good-soft: #17301F;
+  --bad: #FF8E7C; --bad-soft: #3A1B16; --tag-hole: #0F171E; --focus: #6AA2FF;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--font-body); font-size: 17px; line-height: 1.6; }
+[hidden] { display: none !important; }
+:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
+.wrap { max-width: 920px; margin-inline: auto; padding-inline: max(16px, env(safe-area-inset-left, 0px)) max(16px, env(safe-area-inset-right, 0px)); }
+h1, h2, h3, h4 { font-family: var(--font-display); text-transform: uppercase; letter-spacing: 0.03em; line-height: 1.05; margin: 0; text-wrap: balance; }
+.eyebrow { font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-soft); }
+
+.band { background: var(--band); color: var(--band-ink); padding-block: 34px 26px; border-bottom: 8px solid var(--caution); }
+.band .eyebrow { color: var(--caution); }
+.band h1 { font-size: clamp(2.5rem, 9vw, 4.4rem); font-weight: 700; margin-top: 10px; }
+.band .sub { margin: 14px 0 0; font-size: 1.1rem; color: #D5DEE5; max-width: 46ch; }
+.band .byline { margin: 14px 0 0; font-size: 0.95rem; color: #AEBBC7; }
+nav.jump { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 22px; }
+nav.jump a { text-decoration: none; font-weight: 600; font-size: 0.95rem; padding: 8px 14px; border: 2px solid #3B4B5A; border-radius: 3px; color: var(--band-ink); }
+nav.jump a:hover { border-color: var(--caution); }
+
+.intro { margin-top: 28px; display: grid; gap: 22px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 380px), 1fr)); }
+.panel { background: var(--surface); border: 1px solid var(--line); padding: 20px 22px 22px; min-width: 0; }
+.panel h2 { font-size: 1.5rem; font-weight: 700; margin-bottom: 10px; }
+.panel p { margin: 0 0 10px; }
+.panel ol { margin: 8px 0 0; padding-left: 1.3em; display: grid; gap: 6px; }
+.notice { background: var(--caution-soft); border: 2px solid var(--caution); padding: 16px 20px; margin-top: 22px; }
+.notice p { margin: 4px 0 0; }
+.notice h2 { font-size: 1.25rem; }
+
+/* section */
+.sec { margin-top: 56px; }
+.sec-head { border-top: 8px solid var(--ink); padding-top: 18px; }
+.sec-head h2 { font-size: clamp(2rem, 6vw, 3rem); font-weight: 700; margin-top: 6px; }
+.sec-head .obj { margin: 10px 0 0; color: var(--ink-soft); max-width: 62ch; }
+.part { margin-top: 34px; }
+.part-title { display: flex; align-items: baseline; gap: 12px; margin-bottom: 14px; }
+.part-title .letter { font-family: var(--font-mono); font-size: 13px; background: var(--ink); color: var(--bg); padding: 2px 8px; flex: none; }
+.part-title h3 { font-size: 1.7rem; font-weight: 700; }
+.part-title .time { margin-left: auto; font-family: var(--font-mono); font-size: 12px; color: var(--ink-soft); white-space: nowrap; }
+
+.prose { background: var(--surface); border: 1px solid var(--line); padding: 22px 24px; }
+.prose h4 { font-size: 1.25rem; font-weight: 700; margin: 20px 0 6px; color: var(--accent); }
+.prose h4:first-child { margin-top: 0; }
+.prose p { margin: 0 0 10px; max-width: 64ch; }
+.prose ul, .prose ol { margin: 0 0 10px; padding-left: 1.2em; max-width: 64ch; }
+.prose li { margin-bottom: 4px; }
+.prose .big { font-size: 1.12rem; font-weight: 500; border-left: 6px solid var(--caution); padding: 4px 0 4px 14px; margin: 0 0 16px; }
+.prose table { border-collapse: collapse; margin: 8px 0 14px; font-size: 0.95rem; width: 100%; max-width: 620px; }
+.prose th, .prose td { text-align: left; padding: 6px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+.prose th { font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-soft); }
+.prose caption { caption-side: top; text-align: left; font-weight: 600; font-size: 0.95rem; padding: 0 0 8px; color: var(--ink); }
+.scroll { overflow-x: auto; }
+.case { background: var(--bg); border-left: 6px solid var(--accent); padding: 12px 16px; margin: 14px 0 0; max-width: 64ch; }
+.case b { font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.08em; text-transform: uppercase; display: block; color: var(--ink-soft); }
+.case ul { margin: 6px 0 0; }
+.warn { background: var(--bad-soft); border-left: 6px solid var(--bad); padding: 12px 16px; margin: 14px 0 0; max-width: 64ch; }
+.warn b { font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.08em; text-transform: uppercase; display: block; color: var(--bad); }
+
+/* review points */
+.points { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.points li { background: var(--surface); border: 1px solid var(--line); }
+.points label { display: grid; grid-template-columns: 28px minmax(0, 1fr); gap: 12px; padding: 12px 16px; cursor: pointer; align-items: start; }
+.points input { width: 22px; height: 22px; margin: 2px 0 0; accent-color: var(--good); }
+.points li:has(input:checked) { background: var(--good-soft); border-color: var(--good); }
+.points b { font-weight: 600; }
+
+/* cards */
+.deck { display: grid; gap: 22px; grid-template-columns: repeat(auto-fill, minmax(min(100%, 270px), 1fr)); }
+.card { all: unset; box-sizing: border-box; display: block; cursor: pointer; perspective: 1100px; min-width: 0; }
+.card:focus-visible { outline: 3px solid var(--focus); outline-offset: 4px; }
+.card-inner { display: grid; transition: transform 0.5s cubic-bezier(.3,.7,.2,1); transform-style: preserve-3d; position: relative; }
+.card[aria-pressed="true"] .card-inner { transform: rotateY(180deg); }
+.face { grid-area: 1 / 1; backface-visibility: hidden; -webkit-backface-visibility: hidden; display: flex; flex-direction: column; min-height: 250px; border: 2px solid var(--ink); background: var(--surface); position: relative; overflow: hidden; }
+.face::before { content: ""; position: absolute; top: 12px; left: 50%; width: 16px; height: 16px; margin-left: -8px; border-radius: 50%; background: var(--tag-hole); border: 2px solid var(--ink); }
+.front .strip { background: var(--accent); color: var(--accent-ink); padding: 38px 16px 8px; font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.08em; text-transform: uppercase; }
+.front.key .strip { background: var(--ink); color: var(--bg); }
+.front .term { flex: 1; display: flex; align-items: center; padding: 16px 18px; font-family: var(--font-display); text-transform: uppercase; font-weight: 700; font-size: clamp(1.8rem, 7vw, 2.2rem); line-height: 1.02; letter-spacing: 0.02em; overflow-wrap: anywhere; }
+.front .hint { padding: 10px 18px 14px; font-size: 0.8rem; color: var(--ink-soft); border-top: 1px dashed var(--line); font-family: var(--font-mono); letter-spacing: 0.04em; }
+.back { transform: rotateY(180deg); background: var(--caution-soft); }
+.back .strip { background: var(--ink); color: var(--bg); padding: 38px 16px 8px; font-family: var(--font-display); text-transform: uppercase; font-weight: 700; letter-spacing: 0.04em; font-size: 1.1rem; line-height: 1.05; }
+.back .body { padding: 14px 18px 16px; display: grid; gap: 10px; align-content: start; font-size: 0.95rem; line-height: 1.45; }
+.back .label { font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-soft); display: block; margin-bottom: 1px; }
+.back .ask { border-top: 1px dashed var(--ink-soft); padding-top: 10px; font-weight: 500; }
+@media (prefers-reduced-motion: reduce) {
+  .card-inner { transition: none; transform-style: flat; }
+  .card[aria-pressed="true"] .card-inner { transform: none; }
+  .back { transform: none; }
+  .face { backface-visibility: visible; }
+  .card .back { visibility: hidden; }
+  .card[aria-pressed="true"] .back { visibility: visible; }
+  .card[aria-pressed="true"] .front { visibility: hidden; }
+}
+
+/* ticket */
+.ticket { background: var(--surface); border: 2px dashed var(--ink); padding: 8px 20px 18px; position: relative; }
+.ticket-intro { margin: 14px 0 4px; color: var(--ink-soft); font-size: 0.95rem; }
+.q { border: 0; border-top: 1px solid var(--line); margin: 0; padding: 16px 0 14px; min-width: 0; }
+.q:first-of-type { border-top: 0; }
+.q legend { font-weight: 600; padding: 0; margin-bottom: 8px; float: left; width: 100%; }
+.q .opts { clear: both; display: grid; gap: 8px; }
+.opts { display: grid; gap: 8px; }
+.opt { font: inherit; text-align: left; padding: 10px 14px; background: var(--bg); color: var(--ink); border: 2px solid var(--line); border-radius: 3px; cursor: pointer; }
+.opt:hover:not(:disabled) { border-color: var(--ink); }
+.opt:disabled { cursor: default; }
+.opt.right { background: var(--good-soft); border-color: var(--good); }
+.opt.wrong { background: var(--bad-soft); border-color: var(--bad); }
+.fb { margin: 8px 0 0; font-size: 0.93rem; color: var(--ink-soft); }
+.fb b { color: var(--ink); }
+.ticket-foot { margin-top: 10px; display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+.ticket-foot p { margin: 0; font-weight: 500; }
+.btn { font: inherit; font-weight: 600; font-size: 0.92rem; padding: 8px 14px; background: var(--surface); color: var(--ink); border: 2px solid var(--ink); border-radius: 3px; cursor: pointer; }
+.btn:hover { background: var(--ink); color: var(--bg); }
+
+/* talk it over */
+.talk { display: grid; gap: 14px; }
+.talk .qs { background: var(--surface); border: 1px solid var(--line); padding: 16px 22px 16px 40px; margin: 0; display: grid; gap: 8px; }
+details.scn { background: var(--surface); border: 1px solid var(--line); border-left: 6px solid var(--caution); padding: 14px 18px; }
+details.scn summary { cursor: pointer; font-family: var(--font-display); text-transform: uppercase; letter-spacing: 0.03em; font-size: 1.3rem; font-weight: 700; }
+details.scn .setup { margin: 10px 0 8px; }
+details.scn .good { margin: 12px 0 0; padding: 10px 14px; background: var(--good-soft); border-left: 6px solid var(--good); }
+details.scn .good b { font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.08em; text-transform: uppercase; display: block; }
+details.scn .good ul { margin: 6px 0 0; padding-left: 1.1em; }
+.parent { background: var(--caution-soft); border: 2px solid var(--caution); padding: 12px 16px; }
+.parent b { font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.08em; text-transform: uppercase; display: block; }
+.parent p { margin: 4px 0 0; }
+
+/* practice questions */
+.pr-intro { margin: 0 0 14px; color: var(--ink-soft); max-width: 66ch; }
+.pr { background: var(--surface); border: 1px solid var(--line); margin-bottom: 18px; }
+.pr-head { display: flex; flex-wrap: wrap; gap: 6px 14px; justify-content: space-between; align-items: baseline; padding: 10px 18px; background: var(--ink); color: var(--bg); font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.06em; text-transform: uppercase; }
+.ask-block { padding: 14px 18px 16px; }
+.ask-block + .ask-block { border-top: 2px dashed var(--line); }
+.ask-block.formal { background: var(--bg); }
+.step-label { margin: 0 0 6px; font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); }
+.pr-q { margin: 0 0 10px; font-weight: 600; font-size: 1.05rem; max-width: 62ch; }
+.bridge { padding: 14px 18px 16px; border-top: 2px dashed var(--line); background: var(--caution-soft); }
+.bridge .step-label { color: var(--ink); }
+.bridge ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+.bridge li { display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); gap: 10px; align-items: baseline; }
+.bridge .you { font-style: italic; }
+.bridge .arrow { font-family: var(--font-mono); color: var(--ink-soft); }
+.bridge .pub { font-weight: 600; }
+@media (max-width: 520px) { .bridge li { grid-template-columns: minmax(0, 1fr); gap: 0; } .bridge .arrow { display: none; } .bridge .pub::before { content: "Textbook: "; font-weight: 400; font-family: var(--font-mono); font-size: 11px; color: var(--ink-soft); } .bridge .you::before { content: "You say: "; font-style: normal; font-family: var(--font-mono); font-size: 11px; color: var(--ink-soft); } }
+
+/* final checklist */
+.final { margin-top: 56px; border-top: 8px solid var(--ink); padding-top: 18px; }
+.final h2 { font-size: clamp(1.9rem, 5vw, 2.6rem); font-weight: 700; }
+.final .lead { color: var(--ink-soft); max-width: 62ch; margin: 10px 0 16px; }
+.note { margin: 28px 0 0; font-size: 0.9rem; color: var(--ink-soft); max-width: 70ch; }
+footer { margin-top: 48px; background: var(--band); color: #AEBBC7; padding-block: 26px 30px; font-size: 0.92rem; }
+footer strong { color: var(--band-ink); }
+footer p { margin: 0 0 6px; }
+
+</style>
+</head>
+<body>
+
+<header class="band">
+  <div class="wrap">
+    <span class="eyebrow">EVIT Electrical · Loved Ones Study Guide</span>
+    <h1>Intro to<br>Power Tools</h1>
+    <p class="sub">A Loved Ones Study Guide for NCCER Core, Module 00104: Introduction to Power Tools</p>
+    <p class="byline">Mr. Ellis CTE — General Construction &amp; Electrical Teacher · High School &amp; Adult Pre-Apprentice Programs</p>
+    <nav class="jump" aria-label="Sections">
+      <a href="#s1">1 · Drills &amp; drivers</a>
+      <a href="#s2">2 · Saws</a>
+      <a href="#s3">3 · Grinders</a>
+      <a href="#s4">4 · Nailers &amp; jacks</a>
+      <a href="#review">Loved ones review</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<div class="wrap">
+
+  <div class="intro">
+    <div class="panel">
+      <h2>Why this guide exists</h2>
+      <p>You do not need to use power tools to support a student who does. Your job is to help your student explain what they are learning and put it in their own words. Power tools do the same work as hand tools, only faster, so the safety habits learned here matter every time one is picked up.</p>
+      <p>If your student can read it and explain it, they are learning it. That is the whole idea.</p>
+    </div>
+    <div class="panel">
+      <h2>How to use each section</h2>
+      <p>Plan about 20 to 30 minutes per section. The student does most of the talking. You do not need the answers ahead of time.</p>
+      <ol>
+        <li><b>Read it together.</b> Plain-English version of the module section.</li>
+        <li><b>Study review points.</b> The must-know facts. Tick each one when your student can say it back.</li>
+        <li><b>Trade-term cards.</b> Tap a card to flip it.</li>
+        <li><b>Ticket out the door.</b> A quick recall check, just for practice.</li>
+        <li><b>Talk it over.</b> Questions and a real-world scenario.</li>
+        <li><b>Practice questions.</b> Each one comes twice: first in plain English, then in the textbook's words, so your student learns to recognize both.</li>
+      </ol>
+    </div>
+  </div>
+
+  <aside class="notice" aria-labelledby="safe-h">
+    <h2 id="safe-h">Good to know before you start</h2>
+    <p>This guide explains power tool safety rules so your student can talk about them. It does not replace hands-on training, a supervisor's instructions, the employer's safety program or the manufacturer's directions for any tool. Sizes, pressures and limits come from the textbook. Always follow the rules that apply at your student's school or job site, and only use a tool you have been trained on. No student names or grades appear here, and nothing you tick or tap on this page is saved or sent anywhere.</p>
+  </aside>
+
+  <section class="sec" id="s1" aria-labelledby="s1-h">
+    <div class="sec-head">
+      <span class="eyebrow">Module Section 1 of 4</span>
+      <h2 id="s1-h">Power Drills and Drivers</h2>
+      <p class="obj">By the end of this section your student can explain the four kinds of power tools, the rules that apply to every power tool, and how drills, hammer drills, impact drivers and pneumatic tools are chosen, loaded and used safely.</p>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">A</span><h3>Read it together</h3><span class="time">about 40 min</span></div>
+      <div class="prose">
+        <p class="big">Power tools do the same jobs as hand tools, only faster, which also means they can hurt you faster. The module starts with the rules that apply to every power tool, then walks through drills and drivers, the most common tools on any job site.</p>
+
+        <h4>Four kinds of power tools (1.0.0)</h4>
+        <p>The module sorts power tools by what powers them:</p>
+        <ul>
+          <li><b>Electric tools.</b> Run on either <b>alternating current (AC)</b>, which plugs into a wall receptacle with a power cord, or <b>direct current (DC)</b> from rechargeable batteries. Battery (cordless) tools make up the vast majority of power tools on today's job sites.</li>
+          <li><b>Pneumatic tools.</b> Powered by air. An electric or gas-powered compressor makes the air pressure. Air hammers and pneumatic nailers are examples.</li>
+          <li><b>Specialty tools.</b> Powder-actuated tools use gunpowder to drive pins and studs into concrete and steel. They need special training and certification.</li>
+          <li><b>Hydraulic tools.</b> Powered by fluid pressure from a hand pump or electric pump. Pipe benders, jackhammers and wrenches are examples.</li>
+        </ul>
+
+        <h4>Rules for every power tool (1.1.0)</h4>
+        <p>Used the wrong way, any power tool can be dangerous. The module says Basic Safety (Module 00101) must be finished before this one, and PPE must be worn by anyone operating a power tool or standing near one.</p>
+        <ul>
+          <li>Read and follow the tool's operating instructions. Never use a power tool without proper instruction and supervision.</li>
+          <li>Confirm you have the right tool for the job.</li>
+          <li>Disconnect the tool from its energy source when it is not in use and before maintenance or changing bits, blades or discs.</li>
+          <li>Inspect tools, cords and hoses regularly and report damage to your supervisor.</li>
+          <li>Wear safety glasses with every power tool, plus a face shield for some. Wear safety shoes. Tight-fitting gloves are required for most tools, since loose gloves are a hazard of their own. No loose clothing.</li>
+          <li>Keep other workers who are not involved at a safe distance.</li>
+          <li>Never use electric tools in wet conditions unless they are approved for it. A three-prong plug goes into a grounded receptacle, and the tool's switch is Off before you plug in.</li>
+          <li>Never carry an electric or pneumatic tool by its cord or hose.</li>
+          <li>If you get distracted or interrupted while using a tool, turn it off.</li>
+        </ul>
+        <div class="warn"><b>Trigger locks</b>If a tool has a trigger lock (a small lever or switch that holds the trigger on without finger pressure), do not use it. Locking a power tool On can be very dangerous, and some employers and job sites prohibit it.</div>
+
+        <h4>Drills and bits (1.2.0 and 1.2.1)</h4>
+        <p>A power drill is most often used to make holes by spinning a bit into wood, metal, plastic or other material. With the right attachment it can also work as a sander, polisher, screwdriver, grinder or countersink. Most drills have a pistol grip and a trigger. On a variable-speed drill, the farther back you pull the trigger, the faster it spins. A reversing switch lets you back out a bit that gets stuck.</p>
+        <div class="scroll"><table>
+          <caption>Drill bits the module describes</caption>
+          <thead><tr><th>Bit</th><th>What it is for</th></tr></thead>
+          <tbody>
+            <tr><td><b>Twist</b></td><td>Wood and plastic at high speed, or metal at a lower speed.</td></tr>
+            <tr><td><b>Forstner</b></td><td>Wood. Drills a flat-bottom hole.</td></tr>
+            <tr><td><b>Paddle or spade</b></td><td>Wood. Sized by the paddle's diameter, generally 1/2 to 1 1/2 inches.</td></tr>
+            <tr><td><b>Masonry</b></td><td>Carbide tip for concrete, stone, slate and ceramic.</td></tr>
+            <tr><td><b>Auger</b></td><td>Turns at low speed. Wood and other soft materials, not metal.</td></tr>
+            <tr><td><b>Self-feed</b></td><td>A lead screw pulls the larger rear portion into the wood, which makes larger holes simple.</td></tr>
+            <tr><td><b>Step</b></td><td>Holes in metal up to 1/4 inch thick. The steps let you cut a hole to the diameter you want.</td></tr>
+          </tbody>
+        </table></div>
+        <p>Bits come in fractional-inch and metric sizes, and the two are <b>not interchangeable</b>. Twist bits run from 1/64 to 1 inch, or 0.5 to 25.0 mm. Number and letter sets (#80 up to #1, then A to Z) are used when the exact hole size matters. For example, a #8 bit is 0.199 inch, or 5.055 mm.</p>
+        <p>The <b>chuck</b> holds the bit. A keyed chuck opens and closes with a <b>chuck key</b>. Keyless chucks are typical on cordless drills. The size of the chuck limits the size of bit a drill can take.</p>
+
+        <h4>Cordless tools and batteries (1.2.2)</h4>
+        <p>Cordless tools are safer (no cord to trip over) and more mobile (they work where there is no power source). Three battery types are in common use: <b>nickel-cadmium (NiCd)</b>, <b>nickel-metal hydride (NiMH)</b> and <b>lithium-ion (Li-ion)</b>. Li-ion gives the most charge cycles and the longest run time on one charge. A <b>charge cycle</b> is one full charge and discharge.</p>
+        <ul>
+          <li><b>Amp hour (Ah)</b> is the most amps a battery can supply continuously for up to 60 minutes. A 4 Ah battery can supply 4 amps for one hour, but drawing 8 amps cuts the run time to 30 minutes.</li>
+          <li><b>Voltage rating</b> measures the tool's power. Higher voltage means more power for the job.</li>
+          <li>Some cordless drills have an adjustable clutch, so the drill works as a power screwdriver without too much force on the screw. Only heavy-duty cordless drills use keyed chucks.</li>
+        </ul>
+        <div class="case"><b>Going green</b>Rechargeable batteries contain heavy metals such as nickel, lithium, cadmium, mercury and lead, which can be toxic if they end up in a landfill. If a battery is rechargeable, it is recyclable. Many cities have hazardous waste collection centers that take them.</div>
+
+        <h4>Drill safety (1.2.3)</h4>
+        <ul>
+          <li>Wear PPE, especially safety glasses. Keep your hands away from the bit and chuck.</li>
+          <li>Disconnect the cord or battery before maintenance or changing bits.</li>
+          <li>Corded drills should be double-insulated with ground fault protection. A <b>ground fault circuit interrupter (GFCI)</b> opens the circuit if it detects a difference between the positive and negative flow. A tool that is not double insulated needs the third (ground) prong. Never use one with a broken ground prong.</li>
+          <li>Make sure the trigger is NOT on before connecting the drill to power.</li>
+          <li>Find out what is inside a wall or on the other side of a surface before drilling. Spaces between studs often hold wiring, plumbing or insulation.</li>
+          <li>Use a sharp, correct bit, tightened securely. Tie a keyed chuck's key to the power cord.</li>
+          <li>Hold the drill with both hands, apply steady pressure, never ram it, stay balanced, and keep it clean.</li>
+          <li>When tools are handed from one worker to another, disconnect them from power, and hand them off by the handle or body, never by the bit.</li>
+        </ul>
+
+        <h4>Loading and using a drill (1.2.4 and 1.2.5)</h4>
+        <p>Pick the right drill. A <b>right-angle drill</b> fits in tight spaces such as between studs and joists. To load a bit, disconnect power first.</p>
+        <ol>
+          <li><b>Keyed chuck:</b> open the chuck by turning it counterclockwise, insert the bit shank, hand-turn the chuck until the jaws grip, then tighten with the key (turn clockwise), in each hole on larger chucks. <b>Remove the key.</b> Otherwise it can fly out when the drill starts.</li>
+          <li><b>Keyless chuck:</b> remove the battery, open the chuck counterclockwise, insert the shank, and tighten the chuck by hand so the bit does not move.</li>
+        </ol>
+        <p>Then, to drill:</p>
+        <ol>
+          <li>Put on PPE and mark the spot. Use a small punch in wood or a center punch in metal.</li>
+          <li>Clamp or support the work. Hold the drill square (at a right angle) to the surface and start slowly. Check that the bit turns clockwise when facing away.</li>
+          <li>Hold the drill with both hands and use moderate pressure. If the sound shows it is slowing a lot, ease off.</li>
+          <li>Reduce pressure as the bit comes out the other side, especially in metal. If the bit sticks, release the trigger, reverse the drill and back it out gently.</li>
+        </ol>
+        <div class="warn"><b>Bit can grab</b>As a bit breaks through the far side, it may grab. With the power on, the drill tends to rotate the operator instead of the bit, so keep a firm grip. Never use the tool's motor to tighten the chuck while you are holding it.</div>
+        <p>When drilling metal, use a small amount of non-combustible cutting oil or tapping fluid on softer metals to cool the bit and leave a smoother hole. Wood does not need it. On deep holes, pull the bit partly out now and then to clear shavings.</p>
+
+        <h4>Mag drill presses (1.2.6)</h4>
+        <p>An electromagnetic (mag) drill press is a portable drill on an electromagnetic base. Once it is on a clean, flat piece of carbon steel and the magnet is turned on, the base holds the drill in place for drilling thick metal. Only trained workers should use one.</p>
+        <ul>
+          <li>Clamp the material securely so it cannot become a flying or spinning object.</li>
+          <li>Keep power on to the magnet. Attach a <b>Do Not Unplug</b> tag to the cord.</li>
+          <li>Use a <b>safety chain</b>, since losing power while the drill is running can make it fall and hurt the operator.</li>
+          <li>Check whether the site requires shields or safety lines.</li>
+        </ul>
+
+        <h4>Hammer drills (1.3.0 to 1.3.2)</h4>
+        <p>A hammer drill pounds lightly while it turns, so it drills concrete, brick or tile faster than a regular drill. With the hammering turned off it can do basic drilling. It needs bits built to take pounding, with very hard <b>carbide</b> tips (tungsten carbide and cobalt, baked on at extreme heat).</p>
+        <p><b>Rotary hammers</b> look similar but do much heavier jobs. They turn slower than hammer drills and strike harder and less often. Most use special bit-holding designs (SDS Plus and SDS Max are two) in a chuck that is not keyed, so the masonry bit must match the chuck.</p>
+        <ul>
+          <li>Wear PPE with safety glasses and hearing protection. Use both hands, and never run one with one hand.</li>
+          <li>Keep away from flammable material, since sparks may ignite it. Clamp small work and never hold it with your body.</li>
+          <li>Use a masonry bit. A regular bit can be damaged or destroyed in concrete.</li>
+          <li>Concrete dust brings the silica rules from Basic Safety.</li>
+          <li>To drill: mark the spot, set the blows per minute, start slow, drill a guide hole about 4 inches deep, bring the speed up to finish, then clean out the hole.</li>
+        </ul>
+
+        <h4>Impact drivers (1.3.3 to 1.3.5)</h4>
+        <p>An impact driver is lighter and more compact than a drill or hammer drill, and it delivers more <b>torque</b> (turning force). That makes it great for driving or loosening many screws, nuts and lag bolts, and for harder materials such as pressure-treated lumber, hardwood or steel. It usually has no variable speed, so it is less suited to delicate work. When the bit meets resistance, it applies greater force. It holds bits in a hexagonal collet instead of a chuck because of the extra torque.</p>
+        <div class="warn"><b>Too much torque</b>An impact driver can split, break or rip through softer or more brittle material. Be extra careful with wood and soft material, and check that the fastener will not be damaged by the torque.</div>
+        <p>To use one: put on PPE, choose the bit, disconnect power, pull the collet forward and insert the bit, reconnect power, set the direction (tighten or loosen), seat the bit or socket squarely on the fastener, and start slowly. Release the trigger when the fastener is attached or removed.</p>
+
+        <h4>Pneumatic drills and impact wrenches (1.4.0)</h4>
+        <p>Pneumatic tools get their power from an air hose connected to a compressor, and they have more power for their weight than similar electric tools. Pneumatic drills are compact (no motor) and are used where there is no electricity or where a high rate of production is needed. Their size, such as 1/4, 3/8 or 1/2 inch, is the largest bit shank the chuck can grip, not the drilling capacity.</p>
+        <p>Impact wrenches (pneumatic, or electric corded and cordless) tighten and loosen nuts and bolts. The electric ones are not as strong as pneumatic wrenches but are easier to maintain, since there are no hoses or compressors to service. Some of the best cordless models reach up to 1,500 ft-lbs of breakaway torque.</p>
+        <ul>
+          <li>Wear PPE including eye, hand and ear protection, and read the manufacturer's instructions.</li>
+          <li>Turn off the air and disconnect the hose before changing attachments or doing maintenance.</li>
+          <li>Secure the hose connection and add a <b>whip check</b> where required. An unsecured air hose can whip around violently.</li>
+          <li>Use only <b>impact sockets</b> made for pneumatic wrenches. Hand sockets can cause damage and injury.</li>
+          <li>Set the compressor regulator to the right pressure, keep the air clean and dry, keep the tool lubricated (many need an oiler), and use a backup wrench when tightening a nut and bolt.</li>
+        </ul>
+        <div class="warn"><b>Air pressure</b>The air pressure that runs a pneumatic drill is higher than OSHA recommends for cleaning a work area. Misusing pressurized air can injure people and damage tools.</div>
+      </div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">B</span><h3>Study review points</h3></div>
+      <ul class="points" data-points="1"></ul>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">C</span><h3>Trade-term cards</h3></div>
+      <div class="deck" data-cards="1"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">D</span><h3>Ticket out the door</h3></div>
+      <div class="ticket" data-quiz="1"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">E</span><h3>Talk it over</h3></div>
+      <div class="talk" data-talk="1"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">F</span><h3>Practice questions</h3><span class="time">about 20 min</span></div>
+      <div data-practice="1"></div>
+    </div>
+  </section>
+
+  <section class="sec" id="s2" aria-labelledby="s2-h">
+    <div class="sec-head">
+      <span class="eyebrow">Module Section 2 of 4</span>
+      <h2 id="s2-h">Power Saws</h2>
+      <p class="obj">By the end of this section your student can name the common power saws, choose the right blade, and explain how to use each one safely, including how to avoid kickback.</p>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">A</span><h3>Read it together</h3><span class="time">about 30 min</span></div>
+      <div class="prose">
+        <p class="big">Using the right saw for the job makes the work much easier, and the right blade for the material matters just as much. This section covers five kinds of power saws: circular, jigsaw and reciprocating, portable band, miter and cutoff, and table saws.</p>
+
+        <h4>Circular saws (2.1.0)</h4>
+        <p>The portable circular saw cuts lumber and boards to size. Many people still call it a Skilsaw, after the company that introduced it. It comes in corded and cordless models. The size is the <b>diameter of the blade</b>. In the US, blades run from 3 3/8 to 16 1/4 inches. The most popular size for corded saws is 7 1/4 inches, and many smaller cordless saws use a 6 1/2 inch blade. The hole in the center of the blade fits on the saw's <b>arbor</b> (shaft), and the most common arbor size is 5/8 inch.</p>
+        <p>Metric saws use blades of 165, 190 or 235 mm, with a 20 mm arbor (some have 25.4 mm). Fractional-inch and metric blades are <b>not interchangeable</b>. A 7 1/4 inch blade with a 5/8 inch hole is not the same as a 190 mm blade with a 20 mm hole.</p>
+        <ul>
+          <li>Most weigh 7 to 14 pounds. The trigger switch is in the handle, and the motor is in a rigid housing. The blade's teeth point in the direction it spins.</li>
+          <li>Two guards protect you. The <b>upper guard</b> shields you from flying debris and the spinning blade. The <b>lower guard</b> is spring-loaded and slides up and under the upper guard as the saw is pushed forward.</li>
+          <li><b>Standard steel blades</b> need regular sharpening. <b>Carbide-tipped blades</b> stay sharp much longer, but you have to pick the right one for the job.</li>
+        </ul>
+        <div class="scroll"><table>
+          <caption>Circular saw blades (Figure 21)</caption>
+          <thead><tr><th>Blade</th><th>What it does</th></tr></thead>
+          <tbody>
+            <tr><td><b>Rip</b></td><td>Cuts with the grain. Square chisel teeth, generally larger than other blades' teeth.</td></tr>
+            <tr><td><b>Crosscut</b></td><td>Cuts across the grain (a 90-degree angle). Finer teeth that cut at an angle.</td></tr>
+            <tr><td><b>Combination</b></td><td>Hard or soft wood, with or across the grain. Both rip and crosscut teeth, with deep gullets between them.</td></tr>
+            <tr><td><b>Nail cutter</b></td><td>Large carbide-tipped teeth for rough cuts through nails that may be in the work.</td></tr>
+            <tr><td><b>Nonferrous metal cutter</b></td><td>Carbide-tipped for aluminum, copper, lead and brass. Lubricate with oil or wax before each use.</td></tr>
+          </tbody>
+        </table></div>
+        <div class="warn"><b>Never remove the guard</b>Never use a saw unless the lower blade guard is properly attached. The blade you pick should have a maximum rpm equal to or higher than the speed of the saw.</div>
+
+        <h4>Circular saw safety and care (2.1.1)</h4>
+        <ul>
+          <li>Wear PPE, especially safety glasses, and always know where the blade is in relation to your hands and body.</li>
+          <li>Before connecting power, make sure the blade is tight and the guard works. Check what is inside a wall or behind a partition before cutting.</li>
+          <li>Keep both hands on the grips. Never force the saw, since that causes binding and overheating. Never reach under the work and never stand directly behind it. Stand to one side.</li>
+          <li>Clamp small pieces. <b>Never hold material with your hands.</b></li>
+          <li>Always know where the power cord is. Cutting through it can cause electrocution.</li>
+          <li>The most important maintenance is at the lower guard. Sawdust builds up and makes it stick, and then a bare blade may still be turning when you set the saw down. Disconnect power, let the saw cool and clean the guard's track. Do not oil or grease it. Keep blades clean and sharp to reduce friction and kickback. Take care with flammable cleaners such as isopropyl alcohol and mineral spirits.</li>
+        </ul>
+
+        <h4>Using a circular saw (2.1.2)</h4>
+        <ol>
+          <li>Put on PPE. Secure and support the material. If it is not heavy enough to stay put, weight it or clamp it.</li>
+          <li>Mark the cut. Unplug or remove the battery, then set the blade depth to the thickness of the wood plus 1/4 inch.</li>
+          <li>Set the front edge of the baseplate on the work, with the guide notch and the blade in line with the mark.</li>
+          <li>Start the saw, let it reach full speed, and then move it slowly forward.</li>
+          <li>Plan for the <b>kerf</b>, the channel the blade leaves, about 1/8 inch (3.2 mm) wide. Line the blade up with the waste side of the line, and mark an X on the waste side so the piece does not end up short.</li>
+          <li>Grip the handles firmly with two hands. When the cut is nearly done, the guide notch moves off the work, so use the blade as the guide. Release the trigger and wait for the blade to stop before setting the saw down.</li>
+        </ol>
+        <p>If the saw wanders off the line, stop, back up slightly and restart. Do not force it.</p>
+        <div class="case"><b>The worm-drive saw</b>A worm-drive saw drives the blade from the rear through two gears. It delivers much more torque, so it can cut a double thickness of lumber, but it is almost twice as heavy as a conventional circular saw and should be used only by an experienced craftworker.</div>
+
+        <h4>Jigsaws and reciprocating saws (2.2.0)</h4>
+        <p>Both saws can make straight and curved cuts, and both have a blade that moves back and forth. <b>Reciprocating</b> means moving backward and forward on a straight line.</p>
+        <ul>
+          <li><b>Jigsaw.</b> Very fine blades, so it suits delicate and intricate work, such as cutting patterns or irregular shapes in wood or thin metal. The blade moves up and down, so it cuts only on the upstroke (about half the time it runs). A wide <b>baseplate</b> keeps the blade lined up and stops the work from vibrating, and many tilt for beveled cuts. Fine-toothed blades are for thin material and smoother cuts, and coarse blades are for faster cuts in thicker material. Low speed is for hard material and high speed is for soft.</li>
+          <li><b>Reciprocating saw.</b> Often called a Sawzall, after a trademark. It was the first saw designed as an electric hacksaw. It is for heavier work than a jigsaw, with longer, tougher blades, so it is great for demolition. It can saw through walls or ceilings and open up space for windows, plumbing lines and more. The low-speed setting is best for metal, and high speed is for wood and other soft materials.</li>
+        </ul>
+        <p>Blades are often labeled for the material or use. As a general rule, metal-cutting blades have more and smaller teeth per inch than wood-cutting blades.</p>
+
+        <h4>Jigsaw and reciprocating saw safety (2.2.3 and 2.2.4)</h4>
+        <ul>
+          <li>Wear PPE with safety glasses. Check what is inside a wall or partition before cutting.</li>
+          <li>Disconnect power before changing a blade or doing maintenance. Seat the blade in the collar as far as it will go before tightening the setscrew, and look for broken pieces of an old blade stuck in the collar.</li>
+          <li>Use a sharp blade made for the material (a metal blade for metal). Never force the blade. Forcing or leaning on it can throw you off balance. Beeswax on the blade helps with tight turns and cuts the chance of breaking it.</li>
+          <li>Clamp the work to sawhorses or in a vise to reduce vibration. To start a cut in the middle of a board, drill a hole large enough for the blade.</li>
+          <li>Start the saw before the blade contacts the work. Do not lift the blade out of the cut while the saw is running. Let the blade stop before taking it out.</li>
+          <li><b>Use both hands</b> on a reciprocating saw, with the baseplate firmly against the work. Otherwise the pull from the blade's grip can jerk the saw out of your hands. If the blade jumps back when it first hits, stay steady. Forcing it in is a common way to break blades.</li>
+        </ul>
+
+        <h4>Portable band saws (2.3.0)</h4>
+        <p>A portable band saw cuts pipe, metal, plastic, wood and irregular shapes, and it is especially good for heavy metal. On the job site it is used almost only for metal. The blade is a thin, flat, <b>one-piece loop</b> that runs in one direction around guides, and it must be the right length for the pulleys. Blade coarseness is rated in teeth per inch (TPI). More teeth per inch gives a smoother cut, and thicker material needs a coarser blade, but a blade that is too coarse can lose teeth. It cuts best at low speed, because high speeds make the teeth rub instead of cut, and the heat shortens blade life.</p>
+        <div class="warn"><b>It cuts toward you</b>A portable band saw always cuts in the direction of the user. Keep hands and fingers out of the blade's path and never use your thumbs to push material toward the blade.</div>
+        <ul>
+          <li>Use only a band saw that has a <b>stop</b>, and set the stop firmly against the work. The blade's motion can pull the saw toward the stop, so a loose stop makes the saw jump when you start it.</li>
+          <li>Disconnect power before maintenance or blade adjustment. Check blade tension and that both blade guides are close to the blade.</li>
+          <li>Before cutting lines or pipes, confirm they do not contain hazardous or combustible material.</li>
+          <li>Let the saw do the cutting. Little or no downward pressure is needed. Turn it off and let the blade stop before backing out of a cut, and plan cuts so you do not have to back out of curves.</li>
+        </ul>
+
+        <h4>Miter saws and abrasive cutoff saws (2.4.0)</h4>
+        <ul>
+          <li><b>Power miter saw.</b> A miter box combined with a circular saw for straight and miter cuts. The blade pivots horizontally and locks to cut angles from 0 to 45 degrees right and left, with preset stops for common angles.</li>
+          <li><b>Compound miter saw.</b> Also tilts the blade vertically, so it can make a <b>compound cut</b> (a bevel and a miter at once).</li>
+          <li><b>Compound-slide miter saw.</b> Has a rail so the blade assembly can slide forward and back, which lets it cut <b>wider material</b>.</li>
+          <li><b>Abrasive cutoff saw</b> (chop saw). Makes straight or angled cuts in angle iron, flat bar and channel. The abrasive blade is 10 to 18 inches (250 to 350 mm) across and spins so fast that the friction is hot enough to burn through the material. Expect streams of sparks.</li>
+        </ul>
+        <ul>
+          <li>Wear PPE with safety glasses. Do not wear a watch or jewelry. Keep other workers away.</li>
+          <li>Lock the blade at the right angle. Keep fingers clear and never adjust the saw while it runs. Check the blade and all guards, and never pull back a guard to see the cut.</li>
+          <li>Keep flammable materials such as chemicals and rags away from sparks. Support the far end of long material.</li>
+          <li>A blade's maximum rpm must meet or beat the saw's spindle speed. Dust from some materials brings the silica rules from Basic Safety.</li>
+          <li>To cut: set the angle, hold the material firmly against the fence, raise the blade arm and start the saw, wait for full speed, then lower the blade into the work. When done, turn off the saw and raise the arm.</li>
+        </ul>
+
+        <h4>Table saws (2.5.0)</h4>
+        <p>A table saw has a circular blade that sticks up through a slot in the table. Saws are sized by blade: 10-inch for most carpentry, 8-inch for smaller material, 12-inch for larger jobs. They are used for <b>ripping</b> (cutting lumber to a width) and <b>crosscutting</b> (cutting to a length). The fence lets you feed lumber into the blade in a controlled way, so table saws make precise cuts. The blade can be raised or lowered, and some tilt up to 45 degrees. Many are now portable, with folding legs, and some are cordless.</p>
+        <ul>
+          <li>Wear PPE, use a blade made for the job, and make sure it is sharp. Check that the guard moves freely before connecting power.</li>
+          <li>Use a <b>push stick</b> or board when your hand would pass near the blade. Keep the bench clear.</li>
+          <li>When crosscutting, do not use the fence without a block between the work and the fence, so the cutoff piece does not get trapped between blade and fence.</li>
+          <li><b>Expect kickback</b> when ripping. Do not stand in line with the blade. Stand to one side. Keep the board flat on the bench and snug against the rip fence so it cannot bind.</li>
+          <li>Disconnect power to adjust the blade or do maintenance.</li>
+          <li>To rip: fit a rip blade, set the blade no more than 1/4 inch above the thickness of the material, set the fence to the width you need, then slowly push the board along the fence. Use a push stick for the last few inches. Turn the saw off when done.</li>
+        </ul>
+        <div class="warn"><b>Wait for full speed</b>Do not push lumber into the blade before it reaches full speed. Contacting it any earlier may cause kickback or serious injury.</div>
+      </div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">B</span><h3>Study review points</h3></div>
+      <ul class="points" data-points="2"></ul>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">C</span><h3>Trade-term cards</h3></div>
+      <div class="deck" data-cards="2"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">D</span><h3>Ticket out the door</h3></div>
+      <div class="ticket" data-quiz="2"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">E</span><h3>Talk it over</h3></div>
+      <div class="talk" data-talk="2"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">F</span><h3>Practice questions</h3><span class="time">about 20 min</span></div>
+      <div data-practice="2"></div>
+    </div>
+  </section>
+
+  <section class="sec" id="s3" aria-labelledby="s3-h">
+    <div class="sec-head">
+      <span class="eyebrow">Module Section 3 of 4</span>
+      <h2 id="s3-h">Grinders and Oscillating Multi-Tools</h2>
+      <p class="obj">By the end of this section your student can name the kinds of grinders, explain the safety rules for grinding and describe what an oscillating multi-tool can do.</p>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">A</span><h3>Read it together</h3><span class="time">about 25 min</span></div>
+      <div class="prose">
+        <p class="big">Grinders and oscillating multi-tools are two of the most useful tools in a tool bag, and grinders throw high-speed sparks and debris. Eye and face protection come first.</p>
+        <div class="warn"><b>Before you grind</b>Wear safety goggles and a face shield. Clear the area of combustibles such as rags and flammable liquids, and keep a fire extinguisher close. Clothes should be snug, with no cuffs at the wrists or ankles.</div>
+
+        <h4>Types of grinders (3.1.0)</h4>
+        <div class="scroll"><table>
+          <caption>Grinders the module describes</caption>
+          <thead><tr><th>Grinder</th><th>What it does</th></tr></thead>
+          <tbody>
+            <tr><td><b>Angle grinder</b></td><td>Also called a side or right-angle grinder. The disc is at a right angle to the motor shaft. Grinds away hard, heavy material and surfaces such as pipes, plates and welds.</td></tr>
+            <tr><td><b>End grinder</b></td><td>Also called a horizontal or pencil grinder. The disc turns in line with the motor shaft. Smaller. Smooths the inside of material such as pipe.</td></tr>
+            <tr><td><b>Detail grinder</b></td><td>Also called a die grinder. Small attachments called <b>points</b> fit on its arbor to smooth and polish intricate metal work. The shaft of a point is called the <b>spindle</b> (1/16 to 1/4 inch, or 3 mm and 6 mm in metric).</td></tr>
+            <tr><td><b>Bench grinder</b></td><td>Stationary, usually with two wheels. Used for grinding, rust removal and metal buffing, and for renewing worn edges and keeping cutting tools sharp, such as smoothing the mushroomed head of a cold chisel.</td></tr>
+          </tbody>
+        </table></div>
+        <p>The main difference between an end grinder and a detail grinder is power. The end grinder has more.</p>
+        <p>Heavy-duty grinder wheels run from 6 3/4 to 10 inches (150 to 250 mm) across, and each wheel has a <b>maximum speed in rpm</b>. Never use a wheel above its rated speed. Its rating must be equal to or faster than the maximum speed of the tool. A bench grinder has an adjustable <b>tool rest</b> that supports the work, set only 1/8 inch (about 3 mm) from the wheel.</p>
+        <div class="warn"><b>Tool rests</b>Never adjust a tool rest when the grinder is on or the wheels are spinning. Disconnect power before adjusting any grinder.</div>
+
+        <h4>Grinder safety (3.1.1)</h4>
+        <p><b>Angle, end and detail grinders</b></p>
+        <ul>
+          <li>Wear PPE, especially gloves and safety glasses. No loose clothing or jewelry. Disconnect power before maintenance. Keep your hands away from the wheel.</li>
+          <li>Use standing screens near walkways, other workers or storage so sparks do not hit others or ignite flammable material. Aim sparks and debris away from coworkers. Use a flame-retardant blanket to catch sparks when grinding on a platform.</li>
+          <li>Never use a grinder without the manufacturer's guard around the wheel. Choose a disc made for the job.</li>
+          <li>A new wheel's maximum rpm must be equal to or greater than the grinder's maximum speed. Check that the wheel is secure and in good condition. <b>Cracked discs can disintegrate instantly</b>, so inspect for cracks.</li>
+          <li>Individual wires can fly off a wire wheel at high speed and cause injury.</li>
+          <li>Have firm footing and a firm grip with both hands. Let the grinder reach full speed before grinding. After shutting off, stay until the disc stops.</li>
+        </ul>
+        <p><b>Bench grinders</b></p>
+        <ul>
+          <li>Wear PPE, especially gloves and safety glasses. Keep the area clean, since grinding metal makes sparks.</li>
+          <li>Keep tool rests within 1/8 inch (about 3 mm) of the wheel, so the work cannot get wedged between rest and wheel. Keep 1/4 inch (about 6 mm) between the wheel and its guard (the spark arrestor).</li>
+          <li>Never use a wheel above its rated speed. Check for chipped edges and cracks before mounting a wheel.</li>
+        </ul>
+        <div class="warn"><b>Do not grind soft metals or wood</b>On a grinding wheel, soft metal or wood wedges between the grit and builds stress that can shatter the wheel. Grinding tungsten carbide tools with ordinary wheels is also a bad idea and most likely damages the wheel.</div>
+
+        <h4>Using a grinder (3.1.2)</h4>
+        <ol>
+          <li>Put on PPE, especially a face shield, and secure the material in a vise or clamp it to the bench.</li>
+          <li><b>Angle grinder:</b> one hand on the handle and one on the trigger. <b>End or detail grinder:</b> grip the handle at the shaft end with one hand and cradle the motor end with the other.</li>
+          <li>Let the grinder reach maximum speed before grinding. Do not force it or overload the motor. Heavy pressure drops the rpm.</li>
+          <li>Turn it off and wait until the wheel stops before putting it down. Finish by removing loose material with a wire brush.</li>
+        </ol>
+        <p><b>Bench grinder:</b> use the tool rest to support the work, check that the grinder is firmly secured, let it reach full speed, and keep the metal cool because too much heat destroys its temper (hardness). Always work on the <b>face</b> of the wheel, not the side.</p>
+
+        <h4>Grinder attachments and accessories (3.2.0)</h4>
+        <p>Beyond grinding, cutting, sanding and polishing, grinders take many attachments. <b>Guards and shields</b> add protection for special discs (diamond discs, flap discs, cup brushes), side handles improve grip, and dust shields can connect to a vacuum hose. <b>Adapters and backing pads</b> go on the arbor so different sanding discs, wheels and buffing pads can be used.</p>
+        <div class="scroll"><table>
+          <caption>Common grinder accessories (Figure 40)</caption>
+          <thead><tr><th>Accessory</th><th>Used for</th></tr></thead>
+          <tbody>
+            <tr><td><b>Wire brush or cup brush</b></td><td>Removing rust, scale and file marks from metal.</td></tr>
+            <tr><td><b>Flap disc</b></td><td>Similar jobs, and it tends to last longer than fiber discs.</td></tr>
+            <tr><td><b>Cutting wheel</b></td><td>Cutting through material. A small, thin version of an abrasive saw blade. It breaks easily under stress, so many companies require permission and documentation before workers use one.</td></tr>
+            <tr><td><b>Cloth buffing wheel</b></td><td>Polishing and buffing metal.</td></tr>
+            <tr><td><b>Coring bit</b></td><td>Cutting holes in stone or composites such as countertops.</td></tr>
+            <tr><td><b>Burr bit</b></td><td>Removing rough edges and burrs from the inside and outside of pipes and other objects.</td></tr>
+          </tbody>
+        </table></div>
+        <p>Burr bits run at high rpm and can catch and make the grinder shift around, so you need steady hands. They also heat up the bit and the work, so work in short bursts. Whatever the attachment, it must fit the grinder, be rated for the right rpm, and be used the way the maker says.</p>
+        <p>An <b>abrasive</b> is a material such as sandpaper that wears material away. <b>Grit</b> is the sand-like material used to make it, graded by texture. The higher the grit number, the finer the abrasive.</p>
+
+        <h4>Oscillating multi-tools (3.3.0 and 3.3.1)</h4>
+        <p>An oscillating multi-tool (OMT) looks like a handheld grinder but does a wider range of jobs because its arbor accepts many attachments. It moves them back and forth at up to <b>21,000 oscillations per minute</b>, so fast that you cannot see the motion. That, plus its small size, makes it perfect for small cutting and sanding jobs, and it can fit into <b>tight, confined places</b>.</p>
+        <ul>
+          <li>Typical jobs: scraping grout, cutting metal and PVC pipe, removing adhesives and paint, sanding and preparing surfaces, undercutting low baseboards, cutting small openings in drywall, and cutting pipe where there is little room for larger tools.</li>
+          <li>Most on job sites today are cordless.</li>
+          <li>Wear PPE, especially gloves and safety glasses. Disconnect power when changing an attachment or doing maintenance. Make sure the attachment is made for the job. Clamp the work. No loose clothing or jewelry. Keep your hands away from the attachment while it is on.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">B</span><h3>Study review points</h3></div>
+      <ul class="points" data-points="3"></ul>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">C</span><h3>Trade-term cards</h3></div>
+      <div class="deck" data-cards="3"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">D</span><h3>Ticket out the door</h3></div>
+      <div class="ticket" data-quiz="3"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">E</span><h3>Talk it over</h3></div>
+      <div class="talk" data-talk="3"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">F</span><h3>Practice questions</h3><span class="time">about 20 min</span></div>
+      <div data-practice="3"></div>
+    </div>
+  </section>
+
+  <section class="sec" id="s4" aria-labelledby="s4-h">
+    <div class="sec-head">
+      <span class="eyebrow">Module Section 4 of 4</span>
+      <h2 id="s4-h">Miscellaneous Power Tools</h2>
+      <p class="obj">By the end of this section your student can describe the hazards of power nailers and powder-actuated tools and explain how hydraulic jacks are used safely.</p>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">A</span><h3>Read it together</h3><span class="time">about 25 min</span></div>
+      <div class="prose">
+        <p class="big">This last section covers two jobs that power tools do on every site: fastening with nailers, and lifting or moving heavy loads with hydraulic jacks. Both use a lot of force, so they call for care.</p>
+
+        <h4>Power nailers (4.1.0)</h4>
+        <p>Power nailers (nail guns) greatly speed up installing wallboard, molding, framing members and shingles. <b>Pneumatic nailers</b> run on compressed air from a compressor through an air line. They are made for specific jobs: roofing, framing, siding, flooring, sheathing, trim and finishing. Each uses a specific type of nail, in coils or strips, loaded into the gun. A key safety feature is that the nailer <b>will not fire unless it is pressed against the material</b> and the trigger is pressed.</p>
+        <div class="warn"><b>Pressure limit</b>Never exceed the maximum operating pressure of a pneumatic nailer. It will damage the nailer and may cause injury.</div>
+        <div class="case"><b>Power screwdrivers</b>Power screwdrivers (battery-powered in the module's example) speed up drywall, floor sheathing, decking, fencing and cement board. A chain of screws feeds automatically into the firing chamber. Most have a back-out feature to drive screws out.</div>
+
+        <h4>Powder-actuated tools</h4>
+        <p>Powder-actuated tools drive steel pins or threaded studs into masonry and steel to anchor static loads to steel and concrete beams, walls and so on. They do not need compressed air. They look and fire like a gun, using a gunpowder load (typically .22, .25 or .27 caliber). How deep the pin or stud goes depends on the density of the base material and the strength of the powder load.</p>
+        <ul>
+          <li>Operators must be <b>trained and certified by the manufacturer</b> of the tool.</li>
+          <li>Do not fire into easily penetrated materials. The fastener can pass through and become a flying missile on the other side.</li>
+          <li>If a powder load fails to fire, wait 10 seconds, remove it from the tool, and dispose of it in a bucket of water or oil.</li>
+          <li>Local codes may prohibit powder-actuated tools because of safety, seismic concerns or because the building is occupied, so check with local authorities.</li>
+          <li>Load the drive pin before the charge. Do not fire close to the edge of the material (especially concrete), since pieces can chip off and hit someone. Never place your hands behind the material being fastened.</li>
+        </ul>
+        <p><b>Cordless electric nailers</b> are an alternative. They are battery operated, strong enough to fasten pins, straps and clips to concrete and steel, with no hose and no need for the training and certification that powder-actuated tools require. They may not match the power of a powder-actuated tool, but they handle most concrete fastening jobs.</p>
+
+        <h4>Power nailer safety (4.1.1)</h4>
+        <ul>
+          <li>Wear PPE, especially safety glasses. Read the manufacturer's manual.</li>
+          <li>Pay close attention to where the gun points. <b>Never point a nail gun at another worker or any part of your body.</b> Treat every nailer as loaded and ready to fire.</li>
+          <li>Pick the right nailer and fastener, and do not load the tool until you are ready to fire.</li>
+          <li>Disconnect power before loading or repairing it. Never leave a pneumatic nailer connected to a compressor hose or power when not in use. Keep it oiled as the manufacturer says.</li>
+          <li>Check for pipes, wiring, vents and other things behind wallboard. Be careful nailing into paneling or thin surfaces, since the fastener may go through and strike another worker.</li>
+        </ul>
+
+        <h4>Using a power nailer (4.1.2)</h4>
+        <ol>
+          <li>Put on PPE. Disconnect a pneumatic nailer from the air hose.</li>
+          <li>Inspect for damage and loose connections. Load the fastener. (For a powder-actuated tool, feed the pin or stud into the piston first, then the cartridge.)</li>
+          <li>Connect a pneumatic nailer to the air hose and set the compressor to the recommended pressure. Most nailers run at 70 to 120 psi (about 480 to 830 kPa).</li>
+          <li>Test it on scrap. If the nail does not go in deep enough, follow the manufacturer's steps to raise the power.</li>
+          <li>Hold a pneumatic or battery nailer firmly against the material and press the trigger. Press a powder-actuated tool firmly against the mounting surface.</li>
+          <li>When done, disconnect the power. Turn off the air and disconnect the hose, remove the battery from cordless nailers, and remove the powder charges from powder-actuated tools.</li>
+        </ol>
+        <div class="warn"><b>Not a toy</b>A nail gun is not a toy. Nails can pierce a hand, leg or eye. Never point one at anyone, and use it only the way the manufacturer says.</div>
+
+        <h4>Hydraulic jacks (4.2.0)</h4>
+        <p>Hydraulic tools are used when a job needs extreme force applied in a controlled way. They do not work fast, but the forces can damage equipment or injure people if the manufacturer's procedures are not followed exactly. Hydraulic jacks are portable. They move or lift heavy equipment and material, position heavy loads precisely, and straighten or bend frames. A hydraulic jack has two basic parts: a <b>pump</b> and a <b>cylinder</b> (also called a ram).</p>
+        <ul>
+          <li><b>Jack with an internal pump.</b> A general-purpose jack in many capacities. Pumping the handle pressurizes the hydraulic fluid, and that pressure moves the cylinder to lift or move the load.</li>
+          <li><b>Lever-operated pump kit.</b> Often called a <b>Porta-Power</b>, after one brand. A kit has a hydraulic hose, a hand pump and attachments for different jobs. It is especially useful for horizontal jacking.</li>
+          <li><b>Cylinder ratings.</b> Rated by the weight they can lift (tons or metric tonnes) and the distance they can move it, called <b>stroke</b>. Cylinders can lift more than 500 tons, and strokes run from 1/4 inch (about 6 mm) to more than 48 inches (about 122 cm).</li>
+        </ul>
+
+        <h4>Hydraulic jack safety (4.2.1)</h4>
+        <ul>
+          <li>Wear PPE, especially safety glasses, and follow the manufacturer's guidelines.</li>
+          <li>Check the area so other workers are clear and the load will clear all obstacles. Stay clear of the object being lifted in case the load slips off.</li>
+          <li>Use the right jack and <b>never exceed its lifting capacity.</b> Check the fluid level before use and watch for leaks. With a Porta-Power, keep the hose from twisting or kinking, and do not move the pump while the hose is under pressure.</li>
+          <li>Put the jack base on a <b>solid, even, level surface</b>, never bare soil or anything that can compact or shift. Center the load over the jack so its weight is spread evenly.</li>
+          <li>If the load could move, chock and restrain it. Never jack metal against metal. Use wood as a buffer.</li>
+          <li>Do not use an extension bar (a cheater) or step on the handle for extra leverage.</li>
+          <li><b>Never leave a jack under a load as a support.</b> Block the load up as you lift, so it falls only a short distance if the jack fails, and add blocking at the final height so the load is supported while the jack comes out.</li>
+          <li>Remove the jack's lever any time you are not pumping, to reduce tripping hazards.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">B</span><h3>Study review points</h3></div>
+      <ul class="points" data-points="4"></ul>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">C</span><h3>Trade-term cards</h3></div>
+      <div class="deck" data-cards="4"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">D</span><h3>Ticket out the door</h3></div>
+      <div class="ticket" data-quiz="4"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">E</span><h3>Talk it over</h3></div>
+      <div class="talk" data-talk="4"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">F</span><h3>Practice questions</h3><span class="time">about 20 min</span></div>
+      <div data-practice="4"></div>
+    </div>
+  </section>
+
+  <section class="final" id="review" aria-labelledby="fin-h">
+    <span class="eyebrow">After all four sections</span>
+    <h2 id="fin-h">Can your student explain it?</h2>
+    <p class="lead">The goal is not perfect wording. The goal is accurate understanding and good judgment. Tick each one when your student can explain it without looking at the page.</p>
+    <ul class="points" id="final-points"></ul>
+    <p class="note">The module prints defined terms in its margins. They are spread across the sections where the book introduces them, and the cards marked "NCCER trade term" use them. Cards marked "Key term" are important words from the module that are not defined in its margins. The practice questions come from the handbook's Section Review and Module Review. The answer keys for both are in the textbook's Appendix A, which is not part of the module pages used to build this guide, so every answer here was worked out from the module text and is marked on each question. Check them against the publisher's key before relying on them. The textbook-style versions are written in the book's style and vocabulary, not copied word for word, so check the handbook itself for the exact wording. The module pages were scanned and read by software, so check any number you plan to rely on against the book. This guide is a plain-language companion, not a copy of the textbook. Draft for instructor review.</p>
+  </section>
+
+</div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><strong>Mr. Ellis CTE</strong> · East Valley Institute of Technology (EVIT), Mesa, Arizona · Your Future, Your Way</p>
+    <p>Based on NCCER Core, Module 00104, Introduction to Power Tools.</p>
+    <p>Aim for perfection, take what you get.</p>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var POINTS = {
+    1: [
+      `<b>Four kinds of power tools:</b> electric (AC corded, DC cordless), pneumatic (air), specialty (powder-actuated) and hydraulic (fluid pressure). Most tools on job sites today are cordless.`,
+      `<b>Basic Safety (Module 00101)</b> must be finished first. Wear PPE with every power tool, safety glasses always, tight-fitting gloves and no loose clothing.`,
+      `<b>Never use a trigger lock.</b> Locking a tool On can be very dangerous. Never carry a tool by its cord or hose. Disconnect power before changing bits, blades or discs.`,
+      `<b>Drill bits:</b> twist (wood, plastic, metal), Forstner (flat-bottom holes in wood), paddle or spade (wood), masonry (carbide tip), auger (low speed, wood and soft material), self-feed (large holes) and step (metal up to 1/4 inch).`,
+      `<b>Inch and metric bits are not interchangeable.</b> Number and letter sizes are used when the exact hole size matters.`,
+      `<b>A reversing switch</b> backs a stuck bit out of the work. On a variable-speed drill, the farther back you pull the trigger, the faster it spins.`,
+      `<b>Batteries:</b> NiCd, NiMH and Li-ion. Li-ion has the most charge cycles and the longest run time. Amp hours show run time, and voltage shows power.`,
+      `<b>Corded drills</b> should be double insulated with a GFCI. A tool that is not double insulated needs the ground prong, and a plug with a broken ground prong must not be used.`,
+      `<b>Before drilling</b> a wall, find out what is on the other side. Use a sharp bit, hold with both hands, and never ram the drill.`,
+      `<b>Keyed chuck:</b> tighten the bit with the key, then take the key out before starting. <b>Keyless chuck:</b> remove the battery and tighten by hand.`,
+      `<b>Drilling metal:</b> use cutting oil or tapping fluid on softer metals. Ease off as the bit breaks through, since it may grab. Pull a deep-hole bit out now and then to clear shavings.`,
+      `<b>Mag drill press:</b> clamp the work, attach a Do Not Unplug tag, use a safety chain, and use only if trained.`,
+      `<b>Hammer drills</b> pound while they turn, for concrete, brick and tile, with carbide-tipped masonry bits. <b>Rotary hammers</b> do heavier jobs, turn slower, hit harder and use special (SDS) bit designs.`,
+      `<b>Impact drivers</b> have more torque, a hexagonal collet and usually no variable speed. They can split or break soft material.`,
+      `<b>Pneumatic drills and wrenches:</b> turn off the air and disconnect the hose before changes, use a whip check, and use only impact sockets made for the tool.`
+    ],
+    2: [
+      `<b>Circular saw size</b> is the blade diameter. The most popular for corded saws is 7 1/4 inches. The most common arbor is 5/8 inch. Inch and metric blades are not interchangeable.`,
+      `<b>Blades:</b> rip (with the grain), crosscut (across the grain), combination (both), nail cutter and nonferrous metal cutter. Carbide-tipped blades stay sharp longer.`,
+      `<b>Never use a saw without the lower guard.</b> Keep the guard track clean of sawdust and do not oil it.`,
+      `<b>Using a circular saw:</b> clamp the work, set the depth to the material plus 1/4 inch, let the saw reach full speed, grip with two hands and stand to one side. Wait for the blade to stop before setting it down.`,
+      `<b>Kerf</b> is the channel the blade cuts, about 1/8 inch. Cut on the waste side of the line.`,
+      `<b>Never hold material</b> with your hands when using a circular saw. Use a clamp.`,
+      `<b>Jigsaws</b> have fine blades for delicate work, curves and thin material. They cut on the upstroke only.`,
+      `<b>Reciprocating saws</b> have longer, tougher blades for heavy work and demolition. Low speed for metal, high speed for wood and soft material. Use both hands.`,
+      `<b>Jigsaw and reciprocating saw:</b> clamp the work to reduce vibration, use a blade made for the material, never force the blade, and let it stop before removing it.`,
+      `<b>Portable band saw:</b> one-piece blade running in one direction around guides, best at low speed, cuts toward you, and must be used with a stop.`,
+      `<b>Miter saws:</b> power miter (0 to 45 degrees), compound (also tilts) and compound-slide (cuts wider material).`,
+      `<b>Abrasive cutoff saws</b> cut angle iron, flat bar and channel. Friction heat burns through the material, and they make streams of sparks.`,
+      `<b>A blade's maximum rpm</b> must be equal to or higher than the saw's speed.`,
+      `<b>Table saws:</b> ripping is cutting to width, crosscutting is cutting to length. Use a push stick, expect kickback and stand to one side.`,
+      `<b>Do not feed lumber into a table saw blade</b> before it reaches full speed. Set the blade no more than 1/4 inch above the material.`
+    ],
+    3: [
+      `<b>Grinders:</b> angle (heavy grinding of pipes, plates and welds), end (smooths the inside of pipe), detail (small points for intricate work) and bench (stationary, two wheels).`,
+      `<b>End grinders</b> have more power than detail grinders.`,
+      `<b>Wear goggles and a face shield</b> with grinders. Keep combustibles away and a fire extinguisher close.`,
+      `<b>Never use a wheel above its rated rpm.</b> A cracked disc can disintegrate instantly. Never use a grinder without its guard.`,
+      `<b>Bench grinder:</b> tool rest within 1/8 inch of the wheel, 1/4 inch between wheel and spark arrestor, work on the face of the wheel and keep the metal cool.`,
+      `<b>Never grind soft metals or wood</b> on a grinding wheel, because they can wedge in the grit and shatter it.`,
+      `<b>Let a grinder reach full speed</b> before grinding, and wait for the wheel to stop before putting it down.`,
+      `<b>Use standing screens</b> near walkways, workers and storage so sparks do not travel. Aim sparks away from coworkers.`,
+      `<b>Accessories:</b> wire and cup brushes (rust, scale), flap discs, cutting wheels (need permission at many companies), buffing wheels and coring bits.`,
+      `<b>Burr bits</b> remove rough edges from pipes and other objects. They can catch and heat the work, so work in short bursts.`,
+      `<b>Grit:</b> the higher the number, the finer the abrasive.`,
+      `<b>Oscillating multi-tools</b> move attachments back and forth up to 21,000 times a minute and fit into tight, confined places.`,
+      `<b>OMT jobs:</b> scraping grout, cutting metal and PVC pipe, removing adhesive and paint, sanding, undercutting baseboards and cutting small openings in drywall.`
+    ],
+    4: [
+      `<b>Pneumatic nailers</b> run on compressed air and will not fire unless pressed against the material. Never exceed the maximum operating pressure.`,
+      `<b>Never point a nail gun</b> at anyone or any part of your body. Treat every nailer as loaded.`,
+      `<b>Disconnect</b> the air or battery before loading or repairing a nailer. Do not leave one connected when not in use.`,
+      `<b>Most nailers</b> run at 70 to 120 psi. Test on scrap before the real job.`,
+      `<b>Check behind wallboard</b> for pipes, wiring and vents before nailing. Thin surfaces let fasteners go through and hurt someone.`,
+      `<b>Powder-actuated tools</b> use gunpowder loads to drive pins and studs into concrete and steel. Operators must be trained and certified by the manufacturer.`,
+      `<b>Misfire:</b> wait 10 seconds, remove the load and drop it in a bucket of water or oil.`,
+      `<b>Cordless electric nailers</b> can fasten to concrete and steel with no hose and without the certification powder-actuated tools need.`,
+      `<b>A hydraulic jack</b> has a pump and a cylinder (ram). Hydraulic tools are for extreme force applied in a controlled way, not for speed.`,
+      `<b>Porta-Power</b> is a lever-operated pump kit, good for horizontal jacking. Cylinders are rated by weight lifted and stroke.`,
+      `<b>Jack on a solid, level surface,</b> never bare soil. Center the load and never exceed the capacity.`,
+      `<b>Never leave a jack under a load as a support.</b> Block the load as you lift it.`,
+      `<b>No cheater bars</b> or stepping on the pump handle. Remove the lever when not pumping.`
+    ]
+  };
+
+  var CARDS = {
+    1: [
+      { k: "o", t: `Alternating current (AC)`, plain: `Wall power, where the current switches direction many times a second.`, book: `The common power supplied to most wired devices, with current that reverses direction many times per second.`, ask: `Which power tools plug into AC?` },
+      { k: "o", t: `Direct current (DC)`, plain: `Power that flows one way only, like a battery.`, book: `An electric power supply where current flows in one direction only, from batteries or from transformer-rectifiers that change AC to DC.`, ask: `Why do cordless tools use DC?` },
+      { k: "o", t: `Trigger lock`, plain: `A switch that holds the trigger on so you do not have to squeeze it.`, book: `A small lever, switch or part that holds a power tool trigger in the operating mode without finger pressure.`, ask: `Why should you never use one?` },
+      { k: "o", t: `Countersink`, plain: `A bit that lets a screw head sit flush with or below the surface.`, book: `A bit or drill used to set the head of a screw at or below the surface of the material.`, ask: `Why would you countersink a screw?` },
+      { k: "o", t: `Forstner bit`, plain: `A wood bit that drills a hole with a flat bottom.`, book: `A bit for wood or similar soft material that drills a flat-bottom blind hole.`, ask: `What does a flat-bottom hole look like?` },
+      { k: "o", t: `Masonry bit`, plain: `A bit with a hard tip for stone, brick and concrete.`, book: `A drill bit with a carbide tip designed to penetrate stone, brick or concrete.`, ask: `What is the tip made of?` },
+      { k: "o", t: `Auger bit`, plain: `A spiral bit for boring holes in wood.`, book: `A drill bit with a spiral cutting edge for boring holes in wood and other materials.`, ask: `Can you use it on metal?` },
+      { k: "o", t: `Self-feed bit`, plain: `A bit that pulls itself into the wood so big holes are easy.`, book: `A drill bit that uses a lead screw to pull the larger rear portion of the bit into the wood.`, ask: `Why is it good for larger holes?` },
+      { k: "o", t: `Step drill bit`, plain: `A bit with steps that cuts a hole in metal to the size you need.`, book: `A bit with steps that enable the user to cut holes in metal to a desired diameter.`, ask: `How thick can the metal be?` },
+      { k: "o", t: `Chuck`, plain: `The part of a drill that grips the bit.`, book: `A clamping device that holds an attachment, such as the drill bit.`, ask: `How does the chuck limit the bit size?` },
+      { k: "o", t: `Chuck key`, plain: `A small T-shaped tool that opens and tightens a keyed chuck.`, book: `A small, T-shaped steel piece used to open and close the chuck on power drills. Cordless drills typically do not have one.`, ask: `What must you do with it before starting the drill?` },
+      { k: "o", t: `Shank`, plain: `The smooth end of a bit that goes into the chuck.`, book: `The smooth part of a drill bit that fits into the chuck.`, ask: `Why must the shank be centered in the chuck?` },
+      { k: "o", t: `Revolutions per minute (rpm)`, plain: `How many times something spins in one minute.`, book: `The rotational speed of a motor or shaft, based on the number of times it rotates each minute.`, ask: `What does it mean if the drill's rpm drops a lot?` },
+      { k: "o", t: `Charge cycles`, plain: `One full charge and drain of a rechargeable battery.`, book: `One complete charge and discharge cycle of a rechargeable battery.`, ask: `Which battery type gives the most?` },
+      { k: "o", t: `Amp hour (Ah)`, plain: `A battery rating that tells you how long it can run.`, book: `A rating of the maximum amps a battery can provide continuously for up to 60 minutes.`, ask: `How long does a 4 Ah battery last at 8 amps?` },
+      { k: "o", t: `Voltage rating`, plain: `How much power the tool can deliver.`, book: `A measurement of the power the tool can deliver.`, ask: `Does higher voltage mean more or less power?` },
+      { k: "o", t: `Ground fault protection`, plain: `A safety device that cuts power the instant it senses current leaking.`, book: `Protection against short circuits. A safety device cuts power off as soon as it senses any imbalance between incoming and outgoing current.`, ask: `Why use it with a corded drill?` },
+      { k: "o", t: `Ground fault circuit interrupter (GFCI)`, plain: `A breaker or outlet that protects people from shock.`, book: `A circuit breaker designed to protect people from electric shock and equipment from damage by interrupting the flow of electricity if a circuit fault occurs.`, ask: `Where have you seen a GFCI outlet?` },
+      { k: "o", t: `Carbide`, plain: `An extremely hard material used on tips of bits and saw blades.`, book: `A very hard material made of tungsten carbide and heavy metals such as cobalt, commonly baked on the tips of masonry bits and the edges of saw blades.`, ask: `Why do masonry bits need it?` },
+      { k: "o", t: `Torque`, plain: `The twisting force a tool puts on the bit.`, book: `The turning force produced by the drill. As the bit's turning speed increases, torque decreases, and vice versa.`, ask: `Which tool has more torque, a drill or an impact driver?` },
+      { k: "o", t: `Whip check`, plain: `A safety strap that stops an air hose from lashing around if it comes loose.`, book: `A safety attachment used to prevent whiplashing in hoses when they are inadvertently uncoupled.`, ask: `What could an unsecured air hose do?` },
+      { k: "k", t: `Hammer drill`, plain: `A drill that also pounds, for concrete, brick and tile.`, book: `Has a light pounding action. The bit rotates and hammers at the same time.`, ask: `What kind of bit does it need?` },
+      { k: "k", t: `Rotary hammer`, plain: `A heavy-duty hammering tool for bigger masonry jobs.`, book: `Slower rotation than a hammer drill, strikes harder and less often, and uses special chuck and bit designs.`, ask: `What does SDS stand for today?` },
+      { k: "k", t: `Impact driver`, plain: `A compact tool that drives screws and bolts with extra turning force.`, book: `Lighter and more compact than a drill, with more torque and a hexagonal collet instead of a chuck.`, ask: `Why can it split soft wood?` },
+      { k: "k", t: `Mag drill press`, plain: `A drill stuck to steel by a magnet, for thick metal.`, book: `A portable drill on an electromagnetic base, designed for drilling holes in thick metal.`, ask: `Why use a Do Not Unplug tag?` },
+      { k: "k", t: `Right-angle drill`, plain: `A drill shaped to fit in tight spaces.`, book: `An electric drill made to be used in tight spaces such as between studs and joists.`, ask: `Where would you use one?` }
+    ],
+    2: [
+      { k: "o", t: `Arbor`, plain: `The shaft on a circular saw that the blade sits on.`, book: `The end of a circular saw shaft where the blade is mounted.`, ask: `What is the most common arbor size?` },
+      { k: "o", t: `Kerf`, plain: `The slot a saw blade cuts, as wide as the blade teeth.`, book: `The channel created by a saw blade passing through the material, equal to the width of the blade teeth.`, ask: `Which side of the line do you cut on?` },
+      { k: "o", t: `Reciprocating`, plain: `Moving back and forth in a straight line.`, book: `Moving backward and forward on a straight line.`, ask: `Name a saw that works this way.` },
+      { k: "k", t: `Rip blade`, plain: `A blade for cutting along the wood grain.`, book: `Cuts with the grain, with square chisel teeth generally larger than other blades.`, ask: `Which cut would you use it for?` },
+      { k: "k", t: `Crosscut blade`, plain: `A blade for cutting across the wood grain.`, book: `Cuts across the grain with finer teeth that cut at an angle.`, ask: `How is it different from a rip blade?` },
+      { k: "k", t: `Combination blade`, plain: `A blade that handles both kinds of cuts.`, book: `Has both rip and crosscut teeth with deep gullets between them.`, ask: `When would one blade for everything be handy?` },
+      { k: "k", t: `Jigsaw`, plain: `A saw with a thin blade for curves and delicate cuts.`, book: `A saw whose fine blade moves up and down, used to cut patterns and irregular shapes in wood or thin metal.`, ask: `Why does it cut only half the time?` },
+      { k: "k", t: `Reciprocating saw`, plain: `A heavy-duty back-and-forth saw, great for demolition.`, book: `A saw with longer, tougher blades than a jigsaw, often called a Sawzall.`, ask: `What speed is best for metal?` },
+      { k: "k", t: `Teeth per inch (TPI)`, plain: `How many teeth fit in one inch of blade.`, book: `The rating of blade coarseness. A higher number produces a smoother cut.`, ask: `What happens if a blade is too coarse?` },
+      { k: "k", t: `Compound miter saw`, plain: `A miter saw whose blade also tilts.`, book: `Its blade can be tilted vertically to make a compound cut (a bevel and miter together).`, ask: `What is a compound cut?` },
+      { k: "k", t: `Abrasive cutoff saw`, plain: `A chop saw that burns through metal with a spinning abrasive disc.`, book: `Cuts angle iron, flat bar and channel. Friction heat is enough to burn through the material.`, ask: `What should you clear from the area?` },
+      { k: "k", t: `Ripping and crosscutting`, plain: `Ripping cuts the width. Crosscutting cuts the length.`, book: `Ripping is cutting lumber to a specific width and crosscutting is cutting it to a specific length.`, ask: `Which blade goes with each?` },
+      { k: "k", t: `Push stick`, plain: `A stick that keeps your fingers away from the blade.`, book: `Used to guide the last few inches of material past the blade when fingers may come within a few inches of it.`, ask: `When do you need one?` },
+      { k: "k", t: `Kickback`, plain: `When the blade throws the board back at you.`, book: `A danger when ripping or when the work binds. Never stand in line with the blade.`, ask: `How can you lower the risk?` }
+    ],
+    3: [
+      { k: "o", t: `Abrasive`, plain: `A material that rubs away other material, like sandpaper.`, book: `A substance, such as sandpaper, that is used to wear away material.`, ask: `Name another abrasive.` },
+      { k: "o", t: `Grit`, plain: `The sand-like stuff on sandpaper. Higher numbers are finer.`, book: `A granular, sand-like material used to make abrasives, graded by texture. The higher the grit number, the finer the abrasive.`, ask: `Which grit makes a smoother finish, 40 or 220?` },
+      { k: "k", t: `Angle grinder`, plain: `A hand grinder with the disc at a right angle, for heavy grinding.`, book: `Grinds away hard, heavy materials and surfaces such as pipes, plates and welds. Also called a side or right-angle grinder.`, ask: `What PPE is needed?` },
+      { k: "k", t: `End grinder`, plain: `A pencil-shaped grinder for smoothing the inside of pipe.`, book: `Also called a horizontal or pencil grinder. The disc rotates in line with the motor shaft.`, ask: `How is it different from a detail grinder?` },
+      { k: "k", t: `Detail grinder`, plain: `A small grinder for fine work, using little attachments called points.`, book: `Also called a die grinder. It smooths and polishes intricate metallic work.`, ask: `What is the shaft of a point called?` },
+      { k: "k", t: `Bench grinder`, plain: `A grinder fixed to a bench, used to sharpen and clean up tools.`, book: `A stationary grinder, usually with two wheels, for grinding, rust removal, metal buffing and renewing worn edges.`, ask: `What is the tool rest for?` },
+      { k: "k", t: `Tool rest`, plain: `The adjustable shelf that supports the work on a bench grinder.`, book: `An adjustable surface to position the material being ground, set about 1/8 inch from the wheel.`, ask: `When may you adjust it?` },
+      { k: "k", t: `Spark arrestor`, plain: `The guard on a bench grinder that catches sparks.`, book: `Also called a wheel guard. Keep a 1/4 inch gap between it and the wheel.`, ask: `Why keep this gap?` },
+      { k: "k", t: `Burr bit`, plain: `A rotary bit that smooths rough edges on pipes and other things.`, book: `Removes rough edges and burrs from the inside and outside of pipes and other objects.`, ask: `Why work in short bursts?` },
+      { k: "k", t: `Backing pad`, plain: `A pad that supports a flexible sanding disc on a grinder.`, book: `Installed on the arbor to provide a stable surface for flexible discs.`, ask: `What does it let a grinder do?` },
+      { k: "k", t: `Oscillating multi-tool (OMT)`, plain: `A small tool that shakes attachments back and forth very fast.`, book: `Moves attachments back and forth at up to 21,000 oscillations per minute and fits in tight places.`, ask: `Name two jobs it does well.` }
+    ],
+    4: [
+      { k: "k", t: `Power nailer`, plain: `A nail gun that fastens quickly.`, book: `Greatly speeds up the installation of wallboard, molding, framing members and shingles.`, ask: `Where must you never point it?` },
+      { k: "k", t: `Pneumatic nailer`, plain: `A nail gun powered by compressed air.`, book: `Driven by compressed air through an air line from a compressor. It will not fire unless pressed against the material.`, ask: `What psi do most nailers use?` },
+      { k: "k", t: `Powder-actuated tool`, plain: `A tool that uses a gunpowder load to drive a pin into concrete or steel.`, book: `Uses the force of a gunpowder load (.22, .25 or .27 caliber) to drive steel pins or studs into masonry and steel.`, ask: `Who is allowed to operate one?` },
+      { k: "k", t: `Cordless electric nailer`, plain: `A battery nailer that can fasten into concrete and steel.`, book: `Battery operated, with enough power to fasten pins, straps and clips to concrete and steel, with no hose.`, ask: `What does it let you skip?` },
+      { k: "k", t: `Hydraulic jack`, plain: `A jack that uses fluid pressure to lift or move heavy loads.`, book: `A portable device with a pump and a cylinder, used to lift or move heavy equipment and straighten or bend frames.`, ask: `Why is speed not its strength?` },
+      { k: "k", t: `Porta-Power`, plain: `A hydraulic kit with a hand pump, hose and cylinder.`, book: `The common name for a lever-operated hydraulic pump kit, especially useful for horizontal jacking.`, ask: `What is in the kit?` },
+      { k: "k", t: `Cylinder (ram)`, plain: `The part of a jack that extends to push or lift the load.`, book: `Rated by the weight it can lift and the distance it can move it.`, ask: `What is the other half of a hydraulic jack?` },
+      { k: "k", t: `Stroke`, plain: `How far a cylinder can move the load.`, book: `The distance a cylinder can move a load, from about 1/4 inch to more than 48 inches.`, ask: `Is stroke about weight or distance?` }
+    ]
+  };
+
+  var QUIZ = {
+    1: [
+      { q: `Which of these is NOT one of the four kinds of power tools in the module?`, o: [`Pneumatic`, `Hydraulic`, `Steam-powered`], a: 2, why: `The four are electric, pneumatic, specialty and hydraulic.` },
+      { q: `What should you do about a trigger lock?`, o: [`Use it to rest your finger`, `Do not use it`, `Use it only on drills`], a: 1, why: `Locking a power tool On can be very dangerous.` },
+      { q: `Which bit drills into concrete?`, o: [`Masonry bit with a carbide tip`, `Auger bit`, `Forstner bit`], a: 0, why: `Auger and Forstner bits are for wood.` },
+      { q: `Before changing a bit, you should...`, o: [`Keep the battery in`, `Disconnect the cord or battery`, `Hold the trigger half down`], a: 1, why: `Disconnect power before changing bits, blades or discs.` },
+      { q: `Which tool applies the most turning force (torque) for driving screws?`, o: [`Impact driver`, `Hand screwdriver`, `Jigsaw`], a: 0, why: `Impact drivers deliver more torque than regular drills.` },
+      { q: `Pneumatic tools are powered by...`, o: [`Air pressure`, `Fluid pressure`, `Gunpowder`], a: 0, why: `Hydraulic tools use fluid pressure.` }
+    ],
+    2: [
+      { q: `Which guard must always be properly attached on a circular saw?`, o: [`The lower blade guard`, `Neither one`, `The cord guard`], a: 0, why: `Never use a saw without the lower guard.` },
+      { q: `A circular saw's blade depth should be set to the material thickness plus...`, o: [`1/4 inch`, `2 inches`, `Nothing`], a: 0, why: `This keeps the blade from poking through more than needed.` },
+      { q: `Which saw is best for delicate work in thin material?`, o: [`Jigsaw`, `Reciprocating saw`, `Abrasive cutoff saw`], a: 0, why: `The reciprocating saw is for heavy-duty jobs.` },
+      { q: `Which saw cuts toward the user?`, o: [`Portable band saw`, `Table saw`, `Miter saw`], a: 0, why: `Keep hands and fingers out of the path of the blade.` },
+      { q: `What kind of miter saw can make a wider cut?`, o: [`Compound-slide miter saw`, `Standard miter saw`, `Table saw`], a: 0, why: `The blade assembly slides on a rail.` },
+      { q: `On a table saw, you push a board into the blade...`, o: [`Right away`, `After it reaches full speed`, `Before turning it on`], a: 1, why: `Contacting the blade early may cause kickback.` }
+    ],
+    3: [
+      { q: `Which grinder is stationary, with two wheels?`, o: [`Bench grinder`, `Angle grinder`, `Detail grinder`], a: 0, why: `Bench grinders are mounted on a bench.` },
+      { q: `On a bench grinder, the tool rest should be about how far from the wheel?`, o: [`1/8 inch`, `1 inch`, `3 inches`], a: 0, why: `This keeps the work from wedging between the rest and wheel.` },
+      { q: `Never grind soft metals or wood on a grinding wheel because...`, o: [`It can shatter the wheel`, `It makes too much dust`, `It wastes electricity`], a: 0, why: `The material wedges in the grit and builds stress.` },
+      { q: `A cracked grinding disc can...`, o: [`Disintegrate instantly`, `Last a few more days`, `Be taped`], a: 0, why: `Always inspect for cracks before use.` },
+      { q: `What is an oscillating multi-tool especially good at?`, o: [`Fitting into tight places`, `Drilling large concrete holes`, `Cutting heavy steel beams`], a: 0, why: `It is small and works in confined spaces.` },
+      { q: `A higher grit number means...`, o: [`A finer abrasive`, `A coarser abrasive`, `A bigger disc`], a: 0, why: `More particles in a given area means a finer abrasive.` }
+    ],
+    4: [
+      { q: `A pneumatic nailer will not fire unless it is...`, o: [`Pressed against the material`, `Tilted up`, `Fully oiled`], a: 0, why: `This is a key safety feature.` },
+      { q: `Where must you never point a nail gun?`, o: [`At another worker or any part of your body`, `At the wall`, `At scrap wood`], a: 0, why: `Treat every nailer as loaded.` },
+      { q: `Who may operate a powder-actuated tool?`, o: [`Anyone on the crew`, `Someone trained and certified by the manufacturer`, `Only the foreman`], a: 1, why: `Training and certification are required.` },
+      { q: `A misfired powder load should wait how long before removal?`, o: [`10 seconds`, `1 second`, `10 minutes`], a: 0, why: `Then drop it in a bucket of water or oil.` },
+      { q: `A hydraulic jack base must be placed on...`, o: [`Bare soil`, `A solid, level surface`, `A slope`], a: 1, why: `Never use ground that could compact or shift.` },
+      { q: `Should you leave a jack under a load as a support?`, o: [`Yes`, `No, block the load instead`], a: 1, why: `Add blocking so the load is supported when the jack comes out.` }
+    ]
+  };
+
+  var TALK = {
+    1: {
+      qs: [`Why does the module say never to use a trigger lock?`, `How is an impact driver different from a drill?`, `What do you check before drilling through a wall?`, `Why do you take the key out of a keyed chuck?`],
+      scn: [{
+        t: `"I'll just leave the key in"`,
+        s: `A student tightens a bit with a chuck key and then starts the drill with the key still in the chuck. What can happen?`,
+        g: [`The key can fly out and injure the student or a coworker.`, `Remove the key right after tightening the chuck.`, `Tie the key to the power cord so it is always available.`]
+      }, {
+        t: `"The bit just stopped in the hole"`,
+        s: `A drill bit gets stuck in the material while drilling. What should the student do?`,
+        g: [`Release the trigger.`, `Use the reversing switch and gently back the bit out.`, `Reduce pressure as the bit gets near the far side, since it may grab.`]
+      }],
+      parent: `Ask your student to name the four kinds of power tools and one safety rule that applies to all of them.`
+    },
+    2: {
+      qs: [`Why must a circular saw's lower guard move freely?`, `How are a jigsaw and a reciprocating saw different?`, `Why does a table saw need a push stick?`, `What does it mean to cut on the waste side of the line?`],
+      scn: [{
+        t: `"I'll hold it with my hand"`,
+        s: `A worker holds a small piece with one hand while cutting with a circular saw. What does the module say?`,
+        g: [`Never hold material with your hands. Use a clamp.`, `Keep both hands on the saw grips.`, `Stand to one side and never reach under the work.`]
+      }, {
+        t: `"The board is stuck against the fence"`,
+        s: `A board binds between the blade and fence on a table saw. What can happen, and how do you prevent it?`,
+        g: [`Kickback can throw the board back at the operator.`, `Keep the board flat and snug against the rip fence.`, `Stand to one side, not in line with the blade.`]
+      }],
+      parent: `Ask your student to explain how to start a cut with a circular saw and why the saw must reach full speed first.`
+    },
+    3: {
+      qs: [`Why do grinders call for a face shield as well as safety glasses?`, `What is the difference between an end grinder and a detail grinder?`, `Why must a grinding wheel's rating match the tool's speed?`, `What jobs would you use an oscillating multi-tool for?`],
+      scn: [{
+        t: `"There's a small crack in the disc"`,
+        s: `A student notices a hairline crack in a grinding disc but wants to finish one more cut. What should happen?`,
+        g: [`Do not use it. Cracked discs can disintegrate instantly.`, `Inspect every disc for cracks before use.`, `Replace it with one rated for the tool's speed.`]
+      }, {
+        t: `"Just a bit of aluminum"`,
+        s: `A worker wants to grind a piece of soft metal on a bench grinder. What is the problem?`,
+        g: [`Soft metals can wedge in the grit and shatter the wheel.`, `Use the right tool or attachment for the material.`, `Keep the tool rest within 1/8 inch of the wheel.`]
+      }],
+      parent: `Ask your student to name the four kinds of grinders and which one is stationary.`
+    },
+    4: {
+      qs: [`Why does a nailer need to be pressed against the work before it fires?`, `Why does the module say a nail gun is not a toy?`, `What do you check behind wallboard before nailing?`, `Why should you never leave a jack under a load?`],
+      scn: [{
+        t: `"It didn't fire"`,
+        s: `A powder-actuated tool misfires. What should the operator do?`,
+        g: [`Wait 10 seconds.`, `Remove the load from the tool.`, `Dispose of it in a bucket of water or oil.`]
+      }, {
+        t: `"The jack is on the dirt"`,
+        s: `A worker sets a hydraulic jack on bare soil to lift a load. What is wrong?`,
+        g: [`Soil can compact or shift under the load.`, `The base needs a solid, even, level surface.`, `Block the load up as you lift.`]
+      }],
+      parent: `Ask your student to explain three safety rules for a nail gun.`
+    }
+  };
+
+  var FINAL = [
+    `I can name the four kinds of power tools and the safety rules that apply to all of them.`,
+    `I can explain why a trigger lock should never be used.`,
+    `I can name common drill bits and what each is used for.`,
+    `I can load a bit in a keyed and a keyless chuck, and drill safely.`,
+    `I can explain the difference between a hammer drill and an impact driver.`,
+    `I can describe how pneumatic drills and impact wrenches are used safely.`,
+    `I can name the parts and safety guards of a circular saw and how to use it.`,
+    `I can tell a jigsaw from a reciprocating saw and a miter saw from a cutoff saw.`,
+    `I can explain how a portable band saw and a table saw are used safely.`,
+    `I can name the types of grinders and the jobs for which they are used.`,
+    `I can name grinder accessories and what each is used for.`,
+    `I can list jobs an oscillating multi-tool can do.`,
+    `I can describe the hazards of power nailers.`,
+    `I can describe jobs done with hydraulic jacks and how to use them safely.`
+  ];
+
+  /* The answer keys (Appendix A) are not in the module pages. Every answer was worked out from the module text. */
+  var TF = [`True`, `False`];
+  function Q(src, a, pq, po, tq, to, why, br) { return { src: src + " · answer from module text", a: a, pq: pq, po: po, tq: tq, to: to, why: why, br: br }; }
+  var PRACTICE = {
+    1: [
+      Q(`Section Review 1.0.0 · Q1`, 0,
+        `True or false: you should never use a trigger lock to hold a power tool's trigger in the On position.`, TF,
+        `The trigger lock on power tools should never be used to lock the trigger in the On position.`, TF,
+        `Locking a tool On can be very dangerous, so the statement is true.`, [[`never use a trigger lock`, `should never be used to lock the trigger in the On position`]]),
+      Q(`Section Review 1.0.0 · Q2`, 1,
+        `What part of a drill lets you back a stuck bit out of the work?`, [`Chuck key`, `Reversing switch`, `Whip check`, `Auger switch`],
+        `The part on a power drill that enables a user to back out a drill bit stuck in the work material is called a(n) _____.`, [`chuck key`, `reversing switch`, `whip check`, `auger switch`],
+        `The reversing switch runs the drill backward so a stuck bit can be backed out.`, [[`back a stuck bit out`, `back out a drill bit stuck in the work material`], [`part of a drill`, `part on a power drill`]]),
+      Q(`Section Review 1.0.0 · Q3`, 3,
+        `What is an important difference between hammer drills and rotary hammers?`, [`Rotary hammers turn faster`, `Hammer drills are made for the heaviest jobs`, `Rotary hammers have keyed chucks`, `Rotary hammers have specially designed chucks`],
+        `An important difference between hammer drills and rotary hammers is that _____.`, [`rotary hammers turn faster`, `hammer drills are designed for heavy duty jobs`, `rotary hammers have keyed chucks`, `rotary hammers have specially designed chucks`],
+        `Rotary hammers turn slower and hit harder, and they use special chuck and bit designs (SDS).`, [[`important difference`, `important difference between`], [`special chucks`, `specially designed chucks`]]),
+      Q(`Section Review 1.0.0 · Q4`, 2,
+        `Which air-powered tool is best for tightening and loosening nuts and bolts?`, [`Cordless screwdriver`, `Hydraulic ratchet`, `Pneumatic impact wrench`, `Right-angle drill`],
+        `A pneumatic power tool that is best suited for fastening, tightening and loosening nuts and bolts is a _____.`, [`cordless screwdriver`, `hydraulic ratchet`, `pneumatic impact wrench`, `right-angle drill`],
+        `Pneumatic means air-powered, and the impact wrench is the air tool for nuts and bolts.`, [[`air-powered`, `pneumatic`], [`tightening and loosening nuts and bolts`, `fastening, tightening and loosening nuts and bolts`]]),
+      Q(`Module Review Q1`, 0,
+        `Where do pneumatic tools get their power?`, [`Air pressure`, `Fluid pressure`, `Hand pumps`, `AC power sources`],
+        `Pneumatic tools get their power from _____.`, [`air pressure`, `fluid pressure`, `hand pumps`, `AC power sources`],
+        `Pneumatic tools run on compressed air. Fluid pressure powers hydraulic tools.`, [[`Where do they get their power`, `get their power from`]]),
+      Q(`Module Review Q2`, 0,
+        `What should you always do when operating a power tool?`, [`Wear the proper PPE`, `Tell a coworker`, `Wear rubber-soled shoes`, `Ask a coworker how it works`],
+        `When operating a power tool, it is important to always _____.`, [`wear the proper PPE`, `notify a coworker`, `wear rubber-soled footwear`, `ask a co-worker how to operate the tool`],
+        `PPE must be worn by anyone operating a power tool or standing near one.`, [[`always do`, `important to always`]]),
+      Q(`Module Review Q3`, 2,
+        `What can happen if you lock a tool's trigger On?`, [`It can raise productivity`, `It makes sure the tool has enough power`, `It can be dangerous and cause injury`, `It keeps your hand from getting tired, which is a great idea`],
+        `Using a trigger lock to lock a tool's trigger in an On position _____.`, [`can increase productivity`, `ensures the tool will have enough power`, `can be dangerous and cause injury`, `is a great way to keep your hand from getting fatigued`],
+        `The module warns that locking a trigger On can be very dangerous.`, [[`lock a tool's trigger On`, `lock a tool's trigger in an On position`], [`dangerous`, `can be dangerous and cause injury`]]),
+      Q(`Module Review Q4`, 2,
+        `What is the most common use of a power drill?`, [`Cutting wood, metal and plastic`, `Driving nails`, `Making holes in wood, metal and plastic`, `Carving letters`],
+        `The most common use of the power drill is to _____.`, [`cut wood, metal, and plastic`, `drive nails into wood, metal, and plastic`, `make holes in wood, metal, and plastic`, `carve letters in wood, metal, and plastic`],
+        `Drills make holes. Different bits let them do it in different materials.`, [[`most common use`, `most common use of the power drill`], [`Making holes`, `make holes`]]),
+      Q(`Module Review Q5`, 3,
+        `Why can a masonry bit drill into concrete?`, [`A countersink shank`, `A ceramic core`, `A whip check`, `A carbide tip`],
+        `A masonry bit is able to drill into concrete and similar material because it has a _____.`, [`countersink shank`, `ceramic core`, `whip check`, `carbide tip`],
+        `Masonry bits have a very hard carbide tip.`, [[`hard tip`, `carbide tip`], [`stone, brick and concrete`, `concrete and similar material`]]),
+      Q(`Module Review Q6`, 1,
+        `Which electric drill is made for tight spaces?`, [`Electromagnetic drill`, `Right-angle drill`, `Hammer drill`, `Keyless chuck drill`],
+        `An example of an electric power drill that is designed to be used in tight spaces is a(n) _____.`, [`electromagnetic drill`, `right-angle drill`, `hammer drill`, `keyless chuck drill`],
+        `A right-angle drill fits in tight spaces such as between studs and joists.`, [[`tight spaces`, `designed to be used in tight spaces`]]),
+      Q(`Module Review Q7`, 2,
+        `What is an electromagnetic (mag) drill?`, [`A handheld drill for wood`, `A cordless drill for masonry and tile`, `A portable drill used on thick metal`, `An air drill that pounds`],
+        `The electromagnetic drill is a _____.`, [`handheld drill used on wood`, `cordless drill used on masonry and tile`, `portable drill used on thick metal`, `pneumatic drill that has a pounding action`],
+        `A mag drill is held to steel by an electromagnetic base and drills thick metal.`, [[`mag drill`, `electromagnetic drill`], [`thick metal`, `portable drill used on thick metal`]]),
+      Q(`Module Review Q8`, 1,
+        `What materials are hammer drills made to drill into?`, [`Wood, metal and plastic`, `Concrete, brick and tile`, `Drywall, fiberglass and wood`, `Shingles, plastic and wood`],
+        `Hammer drills are designed to drill into _____.`, [`wood, metal, and plastic`, `concrete, brick, and tile`, `drywall, fiberglass, and wood`, `roofing shingles, plastic, and wood`],
+        `The pounding action of a hammer drill is for masonry such as concrete, brick and tile.`, [[`made to drill into`, `designed to drill into`]]),
+      Q(`Module Review Q9`, 0,
+        `Compared with a regular drill, what does an impact driver have more of?`, [`Torque`, `Weight`, `Variable speed options`, `Bits for precision drilling`],
+        `Compared to a common drill, an impact driver has _____.`, [`more torque`, `more weight`, `more variable speed options`, `more bits for precision drilling`],
+        `Impact drivers are lighter and more compact, with more torque.`, [[`turning force`, `torque`], [`regular drill`, `common drill`]]),
+      Q(`Module Review Q10`, 0,
+        `What does a pneumatic impact wrench need?`, [`Impact sockets made for that tool`, `An adapter so handheld sockets fit`, `Shear pins between the wrench and socket`, `A trigger lock`],
+        `A pneumatic impact wrench requires the use of _____.`, [`impact sockets that are designed for the applicable tool`, `an adapter so that handheld sockets will fit`, `shear pins between the wrench and the socket`, `a trigger lock to prevent accidental starting`],
+        `Use only impact sockets made for the tool. A trigger lock is never a good idea.`, [[`needs`, `requires the use of`], [`made for that tool`, `designed for the applicable tool`]])
+    ],
+    2: [
+      Q(`Section Review 2.0.0 · Q1`, 0,
+        `What is the proper way to start a cut with a circular saw?`, [`Bring the saw to full speed, then slowly move it into the material`, `Hold the lower guard up to line up the blade`, `Press the blade against the material and set the rpm to low`, `Tilt the front edge of the baseplate up and push`],
+        `The proper way to start cutting material with a circular saw is to _____.`, [`power up the saw to full speed then slowly move it forward into the material`, `hold the lower blade guard up to position the blade on the cut mark`, `press the blade against the material being cut and set the saw rpm to Low`, `tilt the front edge of the baseplate upward and push the saw forward`],
+        `Let the saw reach full speed before it touches the work.`, [[`start a cut`, `start cutting material`], [`full speed`, `power up the saw to full speed`]]),
+      Q(`Section Review 2.0.0 · Q2`, 3,
+        `What is a jigsaw good for?`, [`Drilling holes in concrete`, `Long straight cuts in thick metal`, `Cutting through walls in demolition`, `Delicate work on thin materials`],
+        `A jigsaw is an effective tool for _____.`, [`drilling holes in concrete or pavement`, `making long straight cuts through thick metal`, `cutting through walls in demolition jobs`, `doing delicate work on thin materials`],
+        `Jigsaws have fine blades for curves and delicate work. A reciprocating saw handles demolition.`, [[`good for`, `an effective tool for`]]),
+      Q(`Section Review 2.0.0 · Q3`, 2,
+        `How does the blade on a portable band saw move?`, [`Up and down through a shoeplate`, `Spins in a circle on an arbor`, `Runs in one direction around guides`, `Moves in and out from a guard`],
+        `The blade on a portable band saw _____.`, [`moves up and down through a shoeplate`, `spins in a circular motion on an arbor`, `runs in one direction around guides`, `reciprocates in and out from a guard`],
+        `A band saw blade is one continuous piece running in one direction around guides.`, [[`runs in one direction`, `runs in one direction around guides`]]),
+      Q(`Section Review 2.0.0 · Q4`, 1,
+        `What is the miter saw whose blade tilts and pivots both ways called?`, [`Sliding jigsaw`, `Compound miter saw`, `Reciprocating saw`, `Sliding abrasive saw`],
+        `A type of miter saw in which the blade can be pivoted horizontally and vertically is called a(n) _____.`, [`sliding jigsaw`, `compound miter saw`, `reciprocating saw`, `sliding abrasive saw`],
+        `A compound miter saw makes miter and bevel cuts together.`, [[`tilts and pivots`, `pivoted horizontally and vertically`]]),
+      Q(`Section Review 2.0.0 · Q5`, 2,
+        `What can happen if you push a board into a table saw blade before it reaches full speed?`, [`It is the best way to rip thin boards`, `It is the best way with larger blades`, `It can cause kickback and serious injury`, `It makes the cut faster`],
+        `Pushing a board against a table saw's blade before it reaches full speed _____.`, [`is the desired approach when ripping thin lumber`, `is the best approach when using larger blades`, `can cause kickback and serious injury`, `can increase efficiency and speed`],
+        `Contacting the blade early may cause kickback or serious injury.`, [[`board`, `lumber or material`], [`kickback and serious injury`, `can cause kickback and serious injury`]]),
+      Q(`Module Review Q11`, 1,
+        `How should you grip a circular saw's handles?`, [`With one hand while pulling it toward you`, `Firmly with two hands`, `With one hand`, `With the trigger lock engaged`],
+        `When cutting with a circular saw, grip the saw handles _____.`, [`and pull the saw toward you`, `firmly with two hands`, `firmly with one hand`, `and engage the trigger lock`],
+        `Use both hands, and never use a trigger lock.`, [[`hold`, `grip`], [`two hands`, `firmly with two hands`]]),
+      Q(`Module Review Q12`, 3,
+        `What is the high-speed setting on a reciprocating saw for?`, [`Cutting drywall`, `Metal work`, `Grinding`, `Sawing wood and other soft materials`],
+        `The high speed setting on a reciprocating saw is used for _____.`, [`cutting through drywall`, `metal work`, `grinding surfaces`, `sawing wood and other soft materials`],
+        `High speed is for wood and soft material. Use low speed for metal.`, [[`fast setting`, `high speed setting`]]),
+      Q(`Module Review Q13`, 0,
+        `Before cutting through a wall with a reciprocating saw, what should you always do?`, [`Find out what is on the other side`, `Remove the lower blade guard`, `Raise the rpm`, `Oil the guard`],
+        `Before using a reciprocating saw to cut through a wall or partition, always _____.`, [`find out what is on the other side`, `remove the lower blade guard`, `increase the revolutions per minute`, `lubricate the guard with oil or grease`],
+        `You must know what is behind the wall, such as wires, pipes or people.`, [[`cutting through a wall`, `cut through a wall or partition`], [`what is behind it`, `what is on the other side`]]),
+      Q(`Module Review Q14`, 1,
+        `How can you cut down vibration with a jigsaw?`, [`Run it at low speed`, `Clamp the work in a clamp or vise`, `Put a heavy object on the work`, `Hold the work down with your free hand`],
+        `When using a jigsaw, avoid vibration by _____.`, [`using a low-speed setting`, `using a clamp or vise to hold the workpiece`, `setting a heavy object on the workpiece`, `holding the workpiece down with your free hand`],
+        `Clamping the work reduces vibration and keeps your hands clear.`, [[`the work`, `the workpiece`], [`clamp or vise`, `clamp or vise to hold`]]),
+      Q(`Module Review Q15`, 0,
+        `What should a portable band saw always have?`, [`A stop`, `A breastplate with a broad surface`, `A battery pack`, `A thick, three-piece blade`],
+        `Use only a band saw that has a _____.`, [`stop`, `breastplate with a broad surface`, `battery pack`, `thick, three-piece blade`],
+        `A band saw cuts toward you, so it needs a stop.`, [[`Use only`, `Use only a band saw that has`]]),
+      Q(`Module Review Q16`, 2,
+        `What does the rail on a sliding compound miter saw let it do?`, [`Use thinner blades`, `Make less dust`, `Cut wider material`, `Cut harder material`],
+        `A sliding compound miter saw has a rail that allows the blade to slide forward and backward, which enables the saw to _____.`, [`use much thinner blades than a standard miter saw`, `produce much less dust than a standard miter saw`, `cut wider material than a standard miter saw`, `cut harder material than a standard miter saw`],
+        `Sliding the blade lets the saw cut wider material than a standard miter saw.`, [[`wider boards`, `wider material`]]),
+      Q(`Module Review Q17`, 0,
+        `Why does an abrasive cutoff saw cut metal?`, [`Its blade spins so fast that friction heat burns through the material`, `It can only make straight cuts`, `The abrasive melts into some metals`, `It can never be over eight inches wide`],
+        `The blade of an abrasive cutoff saw spins at such a high speed that _____.`, [`the resulting friction is hot enough to burn through the material`, `it can only be used for straight cuts`, `the abrasive particles will melt into some metals`, `it can never be more than eight inches in diameter`],
+        `Friction heat from the fast-spinning abrasive burns through the metal, and it throws sparks.`, [[`friction heat burns through`, `friction is hot enough to burn through`]])
+    ],
+    3: [
+      Q(`Section Review 3.0.0 · Q1`, 2,
+        `What do you call a stationary grinder with two wheels for grinding, removing rust and buffing metal?`, [`Angle grinder`, `Tandem grinder`, `Bench grinder`, `End grinder`],
+        `A stationary grinder that has two wheels for grinding, removing rust and buffing metal is a(n) _____.`, [`angle grinder`, `tandem grinder`, `bench grinder`, `end grinder`],
+        `A bench grinder is mounted on a bench and usually has two wheels.`, [[`stays in one place`, `stationary`]]),
+      Q(`Section Review 3.0.0 · Q2`, 0,
+        `What are the special bits that remove rough edges from the inside and outside of pipes called?`, [`Burr bits`, `Backing pads`, `Coring bits`, `Buffing wheels`],
+        `Special rotary bits that can be used on grinders to remove rough edges from the inside and outside of pipes and other objects are commonly called _____.`, [`burr bits`, `backing pads`, `coring bits`, `buffing wheels`],
+        `Burr bits remove rough edges and burrs.`, [[`rough edges`, `rough edges and burrs`], [`spinning bits`, `rotary bits`]]),
+      Q(`Section Review 3.0.0 · Q3`, 0,
+        `What makes an oscillating multi-tool so useful?`, [`It fits into tight places`, `It drills large holes in concrete`, `It cuts through heavy steel`, `It handles big carpentry jobs`],
+        `One characteristic that makes an oscillating multi-tool so useful is its ability to _____.`, [`fit into tight places`, `drill large holes in concrete`, `cut through heavy steel`, `handle large carpentry jobs`],
+        `It is small and works in confined spaces.`, [[`so useful`, `One characteristic that makes ... so useful`]]),
+      Q(`Module Review Q18`, 2,
+        `What is an end grinder used for?`, [`Polishing intricate work`, `Grinding surfaces`, `Smoothing the inside of materials such as pipe`, `Smoothing work before painting`],
+        `The end grinder is used to _____.`, [`polish intricate work`, `grind surfaces`, `smooth the inside of materials, such as pipe`, `smooth the work before painting`],
+        `An end grinder, also called a pencil grinder, smooths the inside of pipe. Intricate work is for a detail grinder.`, [[`pencil grinder`, `end grinder`]]),
+      Q(`Module Review Q19`, 0,
+        `What are the attachments a detail grinder uses called?`, [`Points`, `Rollers`, `Pins`, `Studs`],
+        `A detail grinder smoothes and polishes intricate metallic work by using attachments called _____.`, [`points`, `rollers`, `pins`, `studs`],
+        `Detail grinders use small attachments called points.`, [[`small attachments`, `attachments called`]])
+    ],
+    4: [
+      Q(`Section Review 4.0.0 · Q1`, 3,
+        `When is a pneumatic nailer designed to fire safely?`, [`When filled with a charge of compressed air`, `When pressurized with hydraulic fluid`, `When connected to its battery pack`, `When pressed against the material being fastened`],
+        `Pneumatic nailers are designed to safely fire when the trigger is squeezed and the tool is _____.`, [`filled with a charge of compressed air`, `pressurized with hydraulic fluid`, `connected to its battery pack`, `pressed against the material being fastened`],
+        `A pneumatic nailer will not fire unless it is pressed against the material.`, [[`when it is safe to fire`, `designed to safely fire`]]),
+      Q(`Section Review 4.0.0 · Q2`, 3,
+        `What should you do when using a portable hydraulic jack?`, [`Avoid twisting or kinking the air lines`, `Leave the jack under the load as a support`, `Use an extension bar on the pump handle`, `Place the base on a solid, level surface`],
+        `When using a portable hydraulic jack, be sure to _____.`, [`avoid twisting or kinking the air lines`, `leave the jack under the load as a support`, `use an extension bar on the pump handle`, `place the base of the jack on a solid, level surface`],
+        `The base must sit on a solid, even, level surface. Hydraulic hoses carry fluid, not air, and cheater bars are never used.`, [[`solid, level ground`, `solid, level surface`]]),
+      Q(`Module Review Q20`, 1,
+        `What are powder-actuated fastening systems used for?`, [`Penetrating drywall and treated wood`, `Anchoring static loads to concrete`, `Hammering nails into metal`, `Removing nails`],
+        `Powder-actuated fastening systems are used to _____.`, [`penetrate drywall and treated wood`, `anchor static loads to concrete`, `hammer nails into metal`, `remove nails`],
+        `They drive pins and studs into concrete and steel with a gunpowder load.`, [[`used for`, `used to`], [`fasten into concrete`, `anchor static loads to concrete`]]),
+      Q(`Module Review Q21`, 2,
+        `Porta-Power cylinders are rated by how much weight they can lift and by what?`, [`Their torque`, `The amount of electromagnetic material`, `The distance they can move the weight`, `How much they weigh`],
+        `Porta-Power cylinders are rated by how much weight they can lift and by _____.`, [`their torque`, `the amount of electromagnetic material they have`, `the distance they can move the weight`, `how much they weigh`],
+        `Cylinders are rated by weight lifted and by stroke, which is the distance they can move the load.`, [[`how far`, `the distance`], [`stroke`, `the distance they can move the weight`]]),
+      Q(`Module Review Q22`, 2,
+        `When are hydraulic jacks the right choice?`, [`For high speed`, `For quiet operation`, `When extreme force is needed`, `For manually assisted lifting`],
+        `Hydraulic jacks are used when the application calls for _____.`, [`operation at high speed`, `quiet operation`, `extreme force to be applied`, `manually assisted lifting`],
+        `Hydraulic tools are for extreme force applied in a controlled way, not for speed.`, [[`used when you need`, `used when the application calls for`], [`a lot of force`, `extreme force to be applied`]])
+    ]
+  };
+
+  function el(tag, cls, text) { var n = document.createElement(tag); if (cls) n.className = cls; if (text != null) n.textContent = text; return n; }
+
+  function buildPoints(ul, list, prefix) {
+    list.forEach(function (html, i) {
+      var li = el("li");
+      var label = el("label");
+      var input = document.createElement("input");
+      input.type = "checkbox";
+      input.id = prefix + "-" + i;
+      var span = el("span");
+      span.innerHTML = html; // static text written in this file
+      label.appendChild(input); label.appendChild(span);
+      li.appendChild(label); ul.appendChild(li);
+    });
+  }
+
+  function field(label, text) {
+    var d = el("span");
+    d.appendChild(el("span", "label", label));
+    d.appendChild(document.createTextNode(text));
+    return d;
+  }
+  function buildCards(host, n) {
+    CARDS[n].forEach(function (item) {
+      var b = el("button", "card");
+      b.type = "button";
+      b.setAttribute("aria-pressed", "false");
+      b.setAttribute("aria-label", item.t + ". Press to flip the card.");
+      var inner = el("span", "card-inner");
+      var f = el("span", "face front" + (item.k === "k" ? " key" : ""));
+      f.appendChild(el("span", "strip", (item.k === "o" ? "NCCER trade term" : "Key term") + " · Section " + n));
+      f.appendChild(el("span", "term", item.t));
+      f.appendChild(el("span", "hint", "TAP TO FLIP"));
+      var k = el("span", "face back");
+      k.appendChild(el("span", "strip", item.t));
+      var body = el("span", "body");
+      body.appendChild(field("In everyday words", item.plain));
+      body.appendChild(field("From the module", item.book));
+      var ask = field("Ask your student", item.ask);
+      ask.className = "ask";
+      body.appendChild(ask);
+      k.appendChild(body);
+      inner.appendChild(f); inner.appendChild(k);
+      b.appendChild(inner);
+      b.addEventListener("click", function () { b.setAttribute("aria-pressed", b.getAttribute("aria-pressed") === "true" ? "false" : "true"); });
+      host.appendChild(b);
+    });
+  }
+
+  function buildQuiz(host, n) {
+    var list = QUIZ[n];
+    var answered = 0;
+    host.appendChild(el("p", "ticket-intro", "Pick the answer. You will see right away if it is correct. Nothing is saved or sent."));
+    var foot = el("div", "ticket-foot");
+    var done = el("p", null, "");
+    done.setAttribute("aria-live", "polite");
+    var retry = el("button", "btn", "Try again");
+    retry.type = "button";
+    retry.hidden = true;
+    foot.appendChild(done); foot.appendChild(retry);
+
+    list.forEach(function (item, qi) {
+      var fs = el("fieldset", "q");
+      fs.appendChild(el("legend", null, (qi + 1) + ". " + item.q));
+      var opts = el("div", "opts");
+      var fb = el("p", "fb");
+      fb.setAttribute("aria-live", "polite");
+      var btns = [];
+      item.o.forEach(function (text, oi) {
+        var b = el("button", "opt", text);
+        b.type = "button";
+        b.addEventListener("click", function () {
+          btns.forEach(function (x) { x.disabled = true; });
+          answered++;
+          fb.textContent = "";
+          if (oi === item.a) {
+            b.classList.add("right");
+            fb.appendChild(el("b", null, "Correct. ")); fb.appendChild(document.createTextNode(item.why));
+          } else {
+            b.classList.add("wrong");
+            btns[item.a].classList.add("right");
+            fb.appendChild(el("b", null, "Not quite. "));
+            fb.appendChild(document.createTextNode("The answer is \"" + item.o[item.a] + "\". " + item.why));
+          }
+          if (answered === list.length) {
+            done.textContent = "Ticket finished. Reread any part of the section that felt shaky, then try again.";
+            retry.hidden = false;
+          }
+        });
+        btns.push(b); opts.appendChild(b);
+      });
+      fs.appendChild(opts); fs.appendChild(fb);
+      host.appendChild(fs);
+      fs._reset = function () { btns.forEach(function (x) { x.disabled = false; x.className = "opt"; }); fb.textContent = ""; };
+    });
+    host.appendChild(foot);
+    retry.addEventListener("click", function () {
+      host.querySelectorAll("fieldset").forEach(function (f) { f._reset(); });
+      answered = 0; done.textContent = ""; retry.hidden = true;
+    });
+  }
+
+  function buildTalk(host, n) {
+    var t = TALK[n];
+    var ol = el("ol", "qs");
+    t.qs.forEach(function (q) { ol.appendChild(el("li", null, q)); });
+    host.appendChild(ol);
+    t.scn.forEach(function (s) {
+      var d = el("details", "scn");
+      d.appendChild(el("summary", null, "Scenario: " + s.t));
+      d.appendChild(el("p", "setup", s.s));
+      var g = el("div", "good");
+      g.appendChild(el("b", null, "A good answer includes"));
+      var ul = el("ul");
+      s.g.forEach(function (x) { ul.appendChild(el("li", null, x)); });
+      g.appendChild(ul); d.appendChild(g);
+      host.appendChild(d);
+    });
+    if (t.parent) {
+      var p = el("div", "parent");
+      p.appendChild(el("b", null, "Talk it over with your loved ones"));
+      p.appendChild(el("p", null, t.parent));
+      host.appendChild(p);
+    }
+  }
+
+  function ask(label, cls, q, opts, correct, onAnswer) {
+    var box = el("div", "ask-block" + (cls ? " " + cls : ""));
+    box.appendChild(el("p", "step-label", label));
+    box.appendChild(el("p", "pr-q", q));
+    var wrap = el("div", "opts");
+    wrap.setAttribute("role", "group");
+    wrap.setAttribute("aria-label", q);
+    var fb = el("p", "fb");
+    fb.setAttribute("aria-live", "polite");
+    var btns = [];
+    opts.forEach(function (text, oi) {
+      var b = el("button", "opt", String.fromCharCode(65 + oi) + ".  " + text);
+      b.type = "button";
+      b.addEventListener("click", function () {
+        btns.forEach(function (x) { x.disabled = true; });
+        var ok = oi === correct;
+        b.classList.add(ok ? "right" : "wrong");
+        if (!ok) btns[correct].classList.add("right");
+        onAnswer(ok, fb, String.fromCharCode(65 + correct));
+      });
+      btns.push(b); wrap.appendChild(b);
+    });
+    box.appendChild(wrap); box.appendChild(fb);
+    box.reset = function () { btns.forEach(function (x) { x.disabled = false; x.className = "opt"; }); fb.textContent = ""; };
+    return box;
+  }
+  function say(fb, lead, text) {
+    fb.textContent = "";
+    fb.appendChild(el("b", null, lead + " "));
+    fb.appendChild(document.createTextNode(text));
+  }
+
+  function buildPractice(host, n) {
+    var list = PRACTICE[n];
+    host.appendChild(el("p", "pr-intro", "Test questions use the textbook's formal words. Answer each question in plain English first, then see the same question the way the book asks it. The \"Words to notice\" box shows how the two fit together. Nothing is saved or sent."));
+    var items = [];
+    list.forEach(function (item, i) {
+      var formalOpts = item.to || item.po;
+      var art = el("article", "pr");
+      var head = el("div", "pr-head");
+      head.appendChild(el("span", null, "Question " + (i + 1) + " of " + list.length));
+      head.appendChild(el("span", null, "Source: " + item.src));
+      art.appendChild(head);
+
+      var bridge = el("div", "bridge");
+      bridge.hidden = true;
+      bridge.appendChild(el("p", "step-label", "Words to notice"));
+      var ul = el("ul");
+      item.br.forEach(function (p) {
+        var li = el("li");
+        li.appendChild(el("span", "you", p[0]));
+        li.appendChild(el("span", "arrow", "→"));
+        li.appendChild(el("span", "pub", p[1]));
+        ul.appendChild(li);
+      });
+      bridge.appendChild(ul);
+
+      var b2 = ask("Step 2 · The same question in the textbook's words", "formal", item.tq, formalOpts, item.a, function (ok, fb, letter) {
+        if (ok) say(fb, "Correct.", "You just answered it in the textbook's voice.");
+        else say(fb, "Not quite.", "The answer is " + letter + ". Compare it with your plain-English answer above.");
+        bridge.hidden = false;
+      });
+      b2.hidden = true;
+      var b1 = ask("Step 1 · In plain English", "", item.pq, item.po, item.a, function (ok, fb, letter) {
+        if (ok) say(fb, "Correct.", item.why);
+        else say(fb, "Not quite.", "The answer is " + letter + ". " + item.why);
+        b2.hidden = false;
+      });
+      art.appendChild(b1); art.appendChild(b2); art.appendChild(bridge);
+      host.appendChild(art);
+      items.push({ b1: b1, b2: b2, bridge: bridge });
+    });
+    var foot = el("div", "ticket-foot");
+    var retry = el("button", "btn", "Start this set over");
+    retry.type = "button";
+    retry.addEventListener("click", function () {
+      items.forEach(function (x) { x.b1.reset(); x.b2.reset(); x.b2.hidden = true; x.bridge.hidden = true; });
+    });
+    foot.appendChild(retry);
+    host.appendChild(foot);
+  }
+
+  [1, 2, 3, 4].forEach(function (n) {
+    buildPoints(document.querySelector('[data-points="' + n + '"]'), POINTS[n], "s" + n);
+    buildCards(document.querySelector('[data-cards="' + n + '"]'), n);
+    buildQuiz(document.querySelector('[data-quiz="' + n + '"]'), n);
+    buildTalk(document.querySelector('[data-talk="' + n + '"]'), n);
+    buildPractice(document.querySelector('[data-practice="' + n + '"]'), n);
+  });
+  buildPoints(document.getElementById("final-points"), FINAL, "fin");
+
+})();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,994 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Electrical Test Equipment Loved Ones Study Guide</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+/* Layout concept: one long study sheet. Each module section runs the same six parts
+   (read, review points, trade-term tags, ticket out the door, talk it over, practice questions). */
+:root {
+  --bg: #EEF1F3;
+  --surface: #FFFFFF;
+  --ink: #14202B;
+  --ink-soft: #46576A;
+  --line: #C9D2DA;
+  --band: #14202B;
+  --band-ink: #F4F7F9;
+  --accent: #C42B17;
+  --accent-ink: #FFFFFF;
+  --caution: #F2B705;
+  --caution-soft: #FFF3C4;
+  --good: #1E7A3C;
+  --good-soft: #DDF3E4;
+  --bad: #A8321F;
+  --bad-soft: #FBE3DE;
+  --tag-hole: #EEF1F3;
+  --focus: #0B5FFF;
+  --font-display: "Barlow Condensed", "Arial Narrow", Impact, sans-serif;
+  --font-body: "Barlow", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0F171E; --surface: #18232D; --ink: #EAF0F4; --ink-soft: #A5B4C2; --line: #2E3E4C;
+    --band: #0A1016; --band-ink: #F4F7F9; --accent: #FF5A44; --accent-ink: #14202B;
+    --caution: #F2B705; --caution-soft: #3A3210; --good: #6FD08C; --good-soft: #17301F;
+    --bad: #FF8E7C; --bad-soft: #3A1B16; --tag-hole: #0F171E; --focus: #6AA2FF;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0F171E; --surface: #18232D; --ink: #EAF0F4; --ink-soft: #A5B4C2; --line: #2E3E4C;
+  --band: #0A1016; --band-ink: #F4F7F9; --accent: #FF5A44; --accent-ink: #14202B;
+  --caution: #F2B705; --caution-soft: #3A3210; --good: #6FD08C; --good-soft: #17301F;
+  --bad: #FF8E7C; --bad-soft: #3A1B16; --tag-hole: #0F171E; --focus: #6AA2FF;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--font-body); font-size: 17px; line-height: 1.6; }
+[hidden] { display: none !important; }
+:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
+.wrap { max-width: 920px; margin-inline: auto; padding-inline: max(16px, env(safe-area-inset-left, 0px)) max(16px, env(safe-area-inset-right, 0px)); }
+h1, h2, h3, h4 { font-family: var(--font-display); text-transform: uppercase; letter-spacing: 0.03em; line-height: 1.05; margin: 0; text-wrap: balance; }
+.eyebrow { font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-soft); }
+
+.band { background: var(--band); color: var(--band-ink); padding-block: 34px 26px; border-bottom: 8px solid var(--caution); }
+.band .eyebrow { color: var(--caution); }
+.band h1 { font-size: clamp(2.5rem, 9vw, 4.4rem); font-weight: 700; margin-top: 10px; }
+.band .sub { margin: 14px 0 0; font-size: 1.1rem; color: #D5DEE5; max-width: 46ch; }
+.band .byline { margin: 14px 0 0; font-size: 0.95rem; color: #AEBBC7; }
+nav.jump { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 22px; }
+nav.jump a { text-decoration: none; font-weight: 600; font-size: 0.95rem; padding: 8px 14px; border: 2px solid #3B4B5A; border-radius: 3px; color: var(--band-ink); }
+nav.jump a:hover { border-color: var(--caution); }
+
+.intro { margin-top: 28px; display: grid; gap: 22px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 380px), 1fr)); }
+.panel { background: var(--surface); border: 1px solid var(--line); padding: 20px 22px 22px; min-width: 0; }
+.panel h2 { font-size: 1.5rem; font-weight: 700; margin-bottom: 10px; }
+.panel p { margin: 0 0 10px; }
+.panel ol { margin: 8px 0 0; padding-left: 1.3em; display: grid; gap: 6px; }
+.notice { background: var(--caution-soft); border: 2px solid var(--caution); padding: 16px 20px; margin-top: 22px; }
+.notice p { margin: 4px 0 0; }
+.notice h2 { font-size: 1.25rem; }
+
+/* section */
+.sec { margin-top: 56px; }
+.sec-head { border-top: 8px solid var(--ink); padding-top: 18px; }
+.sec-head h2 { font-size: clamp(2rem, 6vw, 3rem); font-weight: 700; margin-top: 6px; }
+.sec-head .obj { margin: 10px 0 0; color: var(--ink-soft); max-width: 62ch; }
+.part { margin-top: 34px; }
+.part-title { display: flex; align-items: baseline; gap: 12px; margin-bottom: 14px; }
+.part-title .letter { font-family: var(--font-mono); font-size: 13px; background: var(--ink); color: var(--bg); padding: 2px 8px; flex: none; }
+.part-title h3 { font-size: 1.7rem; font-weight: 700; }
+.part-title .time { margin-left: auto; font-family: var(--font-mono); font-size: 12px; color: var(--ink-soft); white-space: nowrap; }
+
+.prose { background: var(--surface); border: 1px solid var(--line); padding: 22px 24px; }
+.prose h4 { font-size: 1.25rem; font-weight: 700; margin: 20px 0 6px; color: var(--accent); }
+.prose h4:first-child { margin-top: 0; }
+.prose p { margin: 0 0 10px; max-width: 64ch; }
+.prose ul, .prose ol { margin: 0 0 10px; padding-left: 1.2em; max-width: 64ch; }
+.prose li { margin-bottom: 4px; }
+.prose .big { font-size: 1.12rem; font-weight: 500; border-left: 6px solid var(--caution); padding: 4px 0 4px 14px; margin: 0 0 16px; }
+.prose table { border-collapse: collapse; margin: 8px 0 14px; font-size: 0.95rem; width: 100%; max-width: 620px; }
+.prose th, .prose td { text-align: left; padding: 6px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+.prose th { font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-soft); }
+.prose caption { caption-side: top; text-align: left; font-weight: 600; font-size: 0.95rem; padding: 0 0 8px; color: var(--ink); }
+.scroll { overflow-x: auto; }
+.case { background: var(--bg); border-left: 6px solid var(--accent); padding: 12px 16px; margin: 14px 0 0; max-width: 64ch; }
+.case b { font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.08em; text-transform: uppercase; display: block; color: var(--ink-soft); }
+.case ul { margin: 6px 0 0; }
+
+/* review points */
+.points { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.points li { background: var(--surface); border: 1px solid var(--line); }
+.points label { display: grid; grid-template-columns: 28px minmax(0, 1fr); gap: 12px; padding: 12px 16px; cursor: pointer; align-items: start; }
+.points input { width: 22px; height: 22px; margin: 2px 0 0; accent-color: var(--good); }
+.points li:has(input:checked) { background: var(--good-soft); border-color: var(--good); }
+.points b { font-weight: 600; }
+
+/* cards */
+.deck { display: grid; gap: 22px; grid-template-columns: repeat(auto-fill, minmax(min(100%, 270px), 1fr)); }
+.card { all: unset; box-sizing: border-box; display: block; cursor: pointer; perspective: 1100px; min-width: 0; }
+.card:focus-visible { outline: 3px solid var(--focus); outline-offset: 4px; }
+.card-inner { display: grid; transition: transform 0.5s cubic-bezier(.3,.7,.2,1); transform-style: preserve-3d; position: relative; }
+.card[aria-pressed="true"] .card-inner { transform: rotateY(180deg); }
+.face { grid-area: 1 / 1; backface-visibility: hidden; -webkit-backface-visibility: hidden; display: flex; flex-direction: column; min-height: 250px; border: 2px solid var(--ink); background: var(--surface); position: relative; overflow: hidden; }
+.face::before { content: ""; position: absolute; top: 12px; left: 50%; width: 16px; height: 16px; margin-left: -8px; border-radius: 50%; background: var(--tag-hole); border: 2px solid var(--ink); }
+.front .strip { background: var(--accent); color: var(--accent-ink); padding: 38px 16px 8px; font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.08em; text-transform: uppercase; }
+.front.key .strip { background: var(--ink); color: var(--bg); }
+.front .term { flex: 1; display: flex; align-items: center; padding: 16px 18px; font-family: var(--font-display); text-transform: uppercase; font-weight: 700; font-size: clamp(1.8rem, 7vw, 2.2rem); line-height: 1.02; letter-spacing: 0.02em; overflow-wrap: anywhere; }
+.front .hint { padding: 10px 18px 14px; font-size: 0.8rem; color: var(--ink-soft); border-top: 1px dashed var(--line); font-family: var(--font-mono); letter-spacing: 0.04em; }
+.back { transform: rotateY(180deg); background: var(--caution-soft); }
+.back .strip { background: var(--ink); color: var(--bg); padding: 38px 16px 8px; font-family: var(--font-display); text-transform: uppercase; font-weight: 700; letter-spacing: 0.04em; font-size: 1.1rem; line-height: 1.05; }
+.back .body { padding: 14px 18px 16px; display: grid; gap: 10px; align-content: start; font-size: 0.95rem; line-height: 1.45; }
+.back .label { font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-soft); display: block; margin-bottom: 1px; }
+.back .ask { border-top: 1px dashed var(--ink-soft); padding-top: 10px; font-weight: 500; }
+@media (prefers-reduced-motion: reduce) {
+  .card-inner { transition: none; transform-style: flat; }
+  .card[aria-pressed="true"] .card-inner { transform: none; }
+  .back { transform: none; }
+  .face { backface-visibility: visible; }
+  .card .back { visibility: hidden; }
+  .card[aria-pressed="true"] .back { visibility: visible; }
+  .card[aria-pressed="true"] .front { visibility: hidden; }
+}
+
+/* ticket */
+.ticket { background: var(--surface); border: 2px dashed var(--ink); padding: 8px 20px 18px; position: relative; }
+.ticket-intro { margin: 14px 0 4px; color: var(--ink-soft); font-size: 0.95rem; }
+.q { border: 0; border-top: 1px solid var(--line); margin: 0; padding: 16px 0 14px; min-width: 0; }
+.q:first-of-type { border-top: 0; }
+.q legend { font-weight: 600; padding: 0; margin-bottom: 8px; float: left; width: 100%; }
+.q .opts { clear: both; display: grid; gap: 8px; }
+.opts { display: grid; gap: 8px; }
+.opt { font: inherit; text-align: left; padding: 10px 14px; background: var(--bg); color: var(--ink); border: 2px solid var(--line); border-radius: 3px; cursor: pointer; }
+.opt:hover:not(:disabled) { border-color: var(--ink); }
+.opt:disabled { cursor: default; }
+.opt.right { background: var(--good-soft); border-color: var(--good); }
+.opt.wrong { background: var(--bad-soft); border-color: var(--bad); }
+.fb { margin: 8px 0 0; font-size: 0.93rem; color: var(--ink-soft); }
+.fb b { color: var(--ink); }
+.ticket-foot { margin-top: 10px; display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+.ticket-foot p { margin: 0; font-weight: 500; }
+.btn { font: inherit; font-weight: 600; font-size: 0.92rem; padding: 8px 14px; background: var(--surface); color: var(--ink); border: 2px solid var(--ink); border-radius: 3px; cursor: pointer; }
+.btn:hover { background: var(--ink); color: var(--bg); }
+
+/* talk it over */
+.talk { display: grid; gap: 14px; }
+.talk .qs { background: var(--surface); border: 1px solid var(--line); padding: 16px 22px 16px 40px; margin: 0; display: grid; gap: 8px; }
+details.scn { background: var(--surface); border: 1px solid var(--line); border-left: 6px solid var(--caution); padding: 14px 18px; }
+details.scn summary { cursor: pointer; font-family: var(--font-display); text-transform: uppercase; letter-spacing: 0.03em; font-size: 1.3rem; font-weight: 700; }
+details.scn .setup { margin: 10px 0 8px; }
+details.scn .good { margin: 12px 0 0; padding: 10px 14px; background: var(--good-soft); border-left: 6px solid var(--good); }
+details.scn .good b { font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.08em; text-transform: uppercase; display: block; }
+details.scn .good ul { margin: 6px 0 0; padding-left: 1.1em; }
+.parent { background: var(--caution-soft); border: 2px solid var(--caution); padding: 12px 16px; }
+.parent b { font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.08em; text-transform: uppercase; display: block; }
+.parent p { margin: 4px 0 0; }
+
+/* practice questions */
+.pr-intro { margin: 0 0 14px; color: var(--ink-soft); max-width: 66ch; }
+.pr { background: var(--surface); border: 1px solid var(--line); margin-bottom: 18px; }
+.pr-head { display: flex; flex-wrap: wrap; gap: 6px 14px; justify-content: space-between; align-items: baseline; padding: 10px 18px; background: var(--ink); color: var(--bg); font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.06em; text-transform: uppercase; }
+.ask-block { padding: 14px 18px 16px; }
+.ask-block + .ask-block { border-top: 2px dashed var(--line); }
+.ask-block.formal { background: var(--bg); }
+.step-label { margin: 0 0 6px; font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); }
+.pr-q { margin: 0 0 10px; font-weight: 600; font-size: 1.05rem; max-width: 62ch; }
+.bridge { padding: 14px 18px 16px; border-top: 2px dashed var(--line); background: var(--caution-soft); }
+.bridge .step-label { color: var(--ink); }
+.bridge ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+.bridge li { display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); gap: 10px; align-items: baseline; }
+.bridge .you { font-style: italic; }
+.bridge .arrow { font-family: var(--font-mono); color: var(--ink-soft); }
+.bridge .pub { font-weight: 600; }
+@media (max-width: 520px) { .bridge li { grid-template-columns: minmax(0, 1fr); gap: 0; } .bridge .arrow { display: none; } .bridge .pub::before { content: "Textbook: "; font-weight: 400; font-family: var(--font-mono); font-size: 11px; color: var(--ink-soft); } .bridge .you::before { content: "You say: "; font-style: normal; font-family: var(--font-mono); font-size: 11px; color: var(--ink-soft); } }
+
+/* final checklist */
+.final { margin-top: 56px; border-top: 8px solid var(--ink); padding-top: 18px; }
+.final h2 { font-size: clamp(1.9rem, 5vw, 2.6rem); font-weight: 700; }
+.final .lead { color: var(--ink-soft); max-width: 62ch; margin: 10px 0 16px; }
+.note { margin: 28px 0 0; font-size: 0.9rem; color: var(--ink-soft); max-width: 70ch; }
+footer { margin-top: 48px; background: var(--band); color: #AEBBC7; padding-block: 26px 30px; font-size: 0.92rem; }
+footer strong { color: var(--band-ink); }
+footer p { margin: 0 0 6px; }
+</style>
+</head>
+<body>
+
+<header class="band">
+  <div class="wrap">
+    <span class="eyebrow">EVIT Electrical · Loved Ones Study Guide</span>
+    <h1>Electrical<br>Test Equipment</h1>
+    <p class="sub">A Loved Ones Study Guide for NCCER Electrical Level 1, Module 26112-20: Electrical Test Equipment</p>
+    <p class="byline">Mr. Ellis CTE — General Construction &amp; Electrical Teacher · High School &amp; Adult Pre-Apprentice Programs</p>
+    <nav class="jump" aria-label="Sections">
+      <a href="#s1">1 · Identifying meters</a>
+      <a href="#s2">2 · Category ratings &amp; safety</a>
+      <a href="#review">Loved ones review</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<div class="wrap">
+
+  <div class="intro">
+    <div class="panel">
+      <h2>Why this guide exists</h2>
+      <p>You do not need to be an electrician to support an electrical student. Your job is to help your student explain what they are learning, put it in their own words, and know when safety means stop and ask a qualified person.</p>
+      <p>If your student can read it and explain it, they are learning it. That is the whole idea.</p>
+    </div>
+    <div class="panel">
+      <h2>How to use each section</h2>
+      <p>Plan about 15 to 25 minutes per section. The student does most of the talking. You do not need the answers ahead of time.</p>
+      <ol>
+        <li><b>Read it together.</b> Plain-English version of the module section.</li>
+        <li><b>Study review points.</b> The must-know facts. Tick each one when your student can say it back.</li>
+        <li><b>Trade-term cards.</b> Tap a card to flip it.</li>
+        <li><b>Ticket out the door.</b> A quick recall check, just for practice.</li>
+        <li><b>Talk it over.</b> Questions and a real-world scenario.</li>
+        <li><b>Practice questions.</b> Each one comes twice: first in plain English, then in the textbook's words, so your student learns to recognize both.</li>
+      </ol>
+    </div>
+  </div>
+
+  <aside class="notice" aria-labelledby="safe-h">
+    <h2 id="safe-h">Important safety note</h2>
+    <p>This guide is for learning and talking. It is not permission to do electrical work. Never use this guide in place of instructor supervision, employer procedures, required training, or properly rated equipment. Test equipment is used on circuits that can hurt or kill. Only qualified people, following the safety rules, use meters on energized systems. No student names or grades appear here, and nothing you tick or tap on this page is saved or sent anywhere.</p>
+  </aside>
+
+  <!-- SECTION 1 -->
+  <section class="sec" id="s1" aria-labelledby="s1-h">
+    <div class="sec-head">
+      <span class="eyebrow">Module Section 1 of 2</span>
+      <h2 id="s1-h">Identifying Meters</h2>
+      <p class="obj">By the end of this section your student can name the main kinds of electrical test equipment, say what each one measures, and explain how to use the common ones safely.</p>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">A</span><h3>Read it together</h3><span class="time">about 25 min</span></div>
+      <div class="prose">
+        <p class="big">Electricians use meters to find out what is going on inside a circuit, since you cannot see electricity. Which meter you pick depends on what you are measuring and how accurate the reading needs to be. This section walks through the meters electricians reach for most.</p>
+
+        <h4>What meters are for (1.0.0)</h4>
+        <p>Test instruments and meters have two main jobs: <b>troubleshooting</b> circuits and equipment, and <b>verifying</b> that circuits and parts work the way they should.</p>
+        <p>The oldest idea behind meters goes back to 1882, when a Frenchman named Arsene d'Arsonval invented the galvanometer. His design used a stationary permanent magnet and a <b>coil</b> that moves. The <b>d'Arsonval meter movement</b> is still the basis for analog (needle) meters.</p>
+        <p>Here is how a moving-coil meter works. A coil of very fine wire is wound on a light aluminum frame that can pivot freely between the poles of a permanent magnet. When current flows through the coil, it becomes magnetized and is pushed by the magnet's field. The coil turns against a spring, and a pointer attached to the frame shows how far it moved on a calibrated scale. The more current, the farther it turns.</p>
+        <div class="scroll"><table>
+          <caption>Stretching a meter's range</caption>
+          <thead><tr><th>Part</th><th>Job</th></tr></thead>
+          <tbody>
+            <tr><td><b>Multiplier resistors</b></td><td>Extend the range of the movement for <b>voltage</b> readings</td></tr>
+            <tr><td><b>Shunt resistors</b></td><td>Extend the range of the movement for <b>current</b> readings</td></tr>
+          </tbody>
+        </table></div>
+        <p>Most meters today are <b>digital</b>. They use solid-state parts, have no moving parts, and are easier to read. Analog meters still have a place: testing certain unique systems, working below 50V, checking transformer polarity, and any job that needs a fast response. A digital meter gives one instant value, but a moving needle shows you how the reading is changing, which gives a fuller picture.</p>
+
+        <h4>Voltmeter (1.1.0)</h4>
+        <p>A voltmeter measures <b>voltage</b>, which is also called potential difference or electromotive force (emf). It is connected <b>in parallel</b> with the circuit or part being measured. An analog voltmeter uses the d'Arsonval movement with internal switched resistors for the different ranges. A digital voltmeter uses an analog-to-digital converter chip to turn what it senses into a number or graphic.</p>
+        <p>Many digital meters are <b>autoranging</b>, which means the meter finds the right scale on its own. If your meter is <b>not</b> autoranging, start on the <b>highest</b> voltage range and work down until the reading sits between <b>half and three-quarter scale</b>. That gives a more accurate reading and protects the meter.</p>
+        <p>On many meters, DC is shown as a straight line with three dashes under it, and AC is shown as a sine wave.</p>
+        <div class="case"><b>Phantom readings</b>A digital meter is so sensitive that it can show a small "ghost" reading caused by induction from the electric field around nearby energized conductors. The voltage is not really there.</div>
+        <div class="case"><b>Safety</b>Measuring more than 50V can expose you to life-threatening hazards. Follow NFPA 70E, OSHA rules and your employer's policies.</div>
+
+        <h4>Voltage tester (1.1.1)</h4>
+        <p>A voltmeter gives an exact number. Often an electrician only needs to know whether voltage is <b>present</b> and roughly how much: is it 120V, 240V or 480V? For that, a <b>voltage tester</b> is quicker. The range and type of current (AC, DC or both) it can read are printed on its scale. Some advanced testers add a digital readout, a GFCI test, and a switch between contact and noncontact detection.</p>
+        <p>Check a voltage tester <b>before every use</b>:</p>
+        <ul>
+          <li>Inspect the insulation on the leads for cracks or frays. Faulty leads are a hazard and must be replaced.</li>
+          <li>Touch the probes to a <b>known energized source</b>. The tester should show the source's voltage. No reading, or the wrong reading, means it must be repaired or replaced.</li>
+        </ul>
+        <p>Do not leave the probes on a source longer than needed, because some testers are built for quick readings and can be damaged. Electricians use a voltage tester to confirm power is there when it should be, and to confirm power is off when it should be.</p>
+        <p>A simple <b>noncontact (proximity) voltage detector</b> glows when it senses voltage in its rated range (the example in the book works from 50V to 1,000V). It does not tell you which value, but it is handy for scanning junction boxes and termination cabinets, and even for tracing circuits through walls.</p>
+        <div class="case"><b>Live-dead-live test</b>When you check that a circuit is de-energized for lockout: <ol>
+          <li><b>Live:</b> test your meter on a known energized source to prove it works.</li>
+          <li><b>Dead:</b> de-energize and test the target circuit to confirm it reads dead.</li>
+          <li><b>Live:</b> test the known energized source again before touching the circuit.</li></ol>
+          This is an OSHA requirement for systems above 600V, and it is good practice at every voltage.</div>
+
+        <h4>Proving unit (1.1.2)</h4>
+        <p>A <b>proving unit</b> is a safe electronic voltage source used to confirm a meter works before you use it on a real circuit. Connect the meter's leads to the unit's positive and negative terminals and check that the meter shows the expected value. The unit shown in the book supplies a 240V AC or DC test point. Proving units also serve as the safe known "live" source in a live-dead-live test.</p>
+
+        <h4>Ohmmeter (1.2.0)</h4>
+        <p>An ohmmeter measures <b>resistance</b>. It can also find <b>open</b> circuits and <b>shorted</b> circuits. Inside, it has a DC current meter movement, a low-voltage DC source (usually a battery) and current-limiting resistors, all in series.</p>
+        <ul>
+          <li><b>Zero it first.</b> Touch the leads together to cancel the leads' own resistance. On analog meters, turn the zero-adjust knob until the needle reads zero ohms, and repeat it every time you change range.</li>
+          <li><b>Autoranging digital ohmmeters</b> pick the scale and show ohms, K-ohms or M-ohms. Analog ones make you choose.</li>
+          <li><b>Continuity test.</b> Most digital meters beep when the resistance is very low or zero. That means a <b>closed</b> (complete) circuit, which is why the meter doubles as a continuity tester.</li>
+          <li>You can test a part without fully removing it. Often disconnecting just <b>one lead</b> isolates it, though that can be slow.</li>
+        </ul>
+        <div class="case"><b>Safety</b>Before using an ohmmeter, use a voltmeter to confirm <b>both sides</b> of the circuit are de-energized. Voltage on the circuit can push current through the meter, damaging the meter and the circuit and injuring you.</div>
+        <p>Try this: pinch a resistor between the leads with your fingers and watch the reading change. Your body adds a second path (it is in parallel), so the meter reads lower than the true value. A resistor held in clips reads correctly.</p>
+
+        <h4>Clamp-on ammeter (1.3.0)</h4>
+        <p>A <b>clamp-on ammeter</b> (clamp meter) measures <b>current</b> without touching any bare wire. It works by sensing the electromagnetic field around the conductor, using simple transformer action: the conductor being measured acts as the primary, and the meter's jaws act as the secondary. With a 1,000-to-1 ratio, 1 amp in the conductor puts 0.001 amp (1 mA) into the meter.</p>
+        <ul>
+          <li>Open the jaws, close them around the conductor, make sure the jaws are <b>clean and fully closed</b>, then read the display.</li>
+          <li><b>Hold</b> freezes the reading so you can remove the meter from a tight spot and read it later.</li>
+          <li><b>Min/Max (Peak)</b> catches the highest value, such as the inrush when a motor starts.</li>
+          <li>Pick a range <b>at least as high</b> as the current. A digital meter shows <b>OL</b> (overload) when the current is too high. An analog needle will peg past the scale, which can damage it.</li>
+        </ul>
+        <div class="case"><b>Think about it</b>What happens if you loop the conductor so the jaws surround two turns? The meter counts the same current twice, so the reading is doubled.</div>
+        <div class="case"><b>Safety</b>A clamp meter can put you near energized equipment. Use it only if you are qualified and following NFPA, OSHA and your employer's procedures.</div>
+
+        <h4>Multimeter (1.4.0)</h4>
+        <p>The <b>multimeter</b>, also called a <b>volt-ohm-milliammeter (VOM)</b>, combines the three meters above in one instrument. On an analog VOM you choose the voltage type (DC or AC), the function (volts, amps or ohms) and the range. On a digital VOM you choose the voltage type, and most autorange for size. Using a VOM is the same as using the separate voltmeter, ohmmeter and ammeter. Before use, check it on a known source such as a proving unit, and always follow the maker's instructions.</p>
+        <ul>
+          <li><b>Current clamps</b> plug into most multimeters to read AC and DC current above the milliamp level. They come in ranges from 50A to several thousand amps, with round, rectangular or flexible jaws.</li>
+          <li>Some multimeters read <b>frequency</b>, which helps diagnose harmonic problems.</li>
+          <li><b>Min/Max memory</b> records the lowest and highest readings over a set time.</li>
+          <li>Other features: capacitance, diode and transistor tests, temperature, and <b>true RMS</b> for accurate readings at different frequencies.</li>
+          <li><b>Clamp-on multimeters</b> have both a clamp and test leads, so they read current, voltage, resistance and more.</li>
+        </ul>
+
+        <h4>Specialty meters (1.5.0)</h4>
+        <p>Beyond the common meters, there are special ones for special jobs: megohmmeters, motor and phase rotation testers, circuit testers, irradiance meters, recording instruments and remote readout meters.</p>
+
+        <h4>Megohmmeter (1.5.1)</h4>
+        <p>A regular ohmmeter cannot read resistances of millions of ohms, such as the insulation on conductors or between the windings of a motor or transformer. For that you use a <b>megohmmeter</b>, also called a <b>Megger</b> or <b>insulation resistance tester</b>. Some run on AC, some on a battery, and some are hand-cranked. The reading should fall within the range in the manufacturer's specifications.</p>
+        <div class="case"><b>Megohmmeter safety</b><ul>
+          <li>It makes <b>high voltage</b>. On a 600V class system, typical test voltages are 500V and 1,000V. Only qualified people may use it, with the right PPE.</li>
+          <li>De-energize and <b>verify</b> before connecting, and make sure capacitors are discharged.</li>
+          <li>Disconnect the item under test from the rest of the circuit if possible.</li>
+          <li>Do not exceed the maker's recommended test voltage. It can depend on the age of the cable or equipment.</li>
+          <li><b>Never touch the leads</b> while the meter is powered.</li>
+          <li>After the test, <b>discharge</b> the circuit by grounding the conductor or equipment for as long as the test lasted.</li>
+          <li>If exposed parts are far from where you are testing, secure or barricade them so no one touches the test voltage.</li>
+          <li>When testing switchgear, disconnect all electronics first, since the test voltage can damage them.</li>
+        </ul></div>
+
+        <h4>Motor and phase rotation testers (1.5.2)</h4>
+        <p>Before wiring a three-phase motor, the motor's leads (T1, T2, T3) have to be matched to the circuit's phases (L1, L2, L3) so the motor turns the right way. Wrong connections can damage the motor and the machine it drives.</p>
+        <ul>
+          <li>A <b>motor rotation tester</b> identifies the <b>motor's legs</b>. Connect the three motor wires to the tester's T1, T2 and T3 leads, turn the shaft about a half turn while pressing Test, and see which LED lights (clockwise or counterclockwise). If the direction is wrong, swap a pair of leads and retest. Then tag the wires.</li>
+          <li>A <b>phase rotation tester</b> (phase sequence indicator) identifies the <b>phase sequence</b> of the circuit. De-energize and lock out, connect the three leads, safely energize and read the LEDs, and note the lead colors with the sequence shown. De-energize and lock out again before disconnecting.</li>
+        </ul>
+        <div class="case"><b>Safety</b>Never connect a motor rotation tester to energized equipment. Phase rotation testers are for qualified people only, with PPE. Putting phase tape on the tester's leads that matches the circuit's color code helps prevent mix-ups. Noncontact phase rotation testers also exist.</div>
+
+        <h4>Circuit tester (1.5.3)</h4>
+        <p>A <b>circuit tester</b> plugs into a grounded outlet. Its lights show the circuit's condition: <b>open ground</b>, <b>open neutral</b>, <b>open hot</b>, <b>reversed polarity</b> or a <b>good circuit</b>. GFCI circuit testers are also available.</p>
+
+        <h4>Irradiance meter (1.5.4)</h4>
+        <p>An <b>irradiance meter</b> is used when installing and testing <b>solar PV systems</b>. It measures solar radiation energy on a surface, usually in watts per square meter. Some also measure roof pitch and orientation, air and module temperature, and log data wirelessly.</p>
+
+        <h4>Recording instruments (1.5.5)</h4>
+        <p>A <b>recording instrument</b> keeps a permanent record of a measurement over time, on paper strip or in electronic memory. The electronic kind are called <b>data loggers</b>. They record things like voltage, current, power, resistance and frequency, and some non-electrical values such as temperature. Set them to take readings at chosen intervals, then review later to find peak loads and voltage swings. Some upload to a PC for live graphs.</p>
+
+        <h4>Remote readout meters (1.5.6)</h4>
+        <p>Some newer meters have a <b>removable screen</b> so you can read them from a safe distance. Others pair with a <b>smartphone app by Bluetooth</b>, which is handy for sharing readings with engineers or maintenance staff who are somewhere else.</p>
+
+        <div class="scroll"><table>
+          <caption>Which meter for which job</caption>
+          <thead><tr><th>Meter</th><th>What it does</th></tr></thead>
+          <tbody>
+            <tr><td>Voltmeter</td><td>Exact voltage, connected in parallel</td></tr>
+            <tr><td>Voltage tester</td><td>Is voltage present, and about how much</td></tr>
+            <tr><td>Ohmmeter</td><td>Resistance, continuity, opens and shorts (circuit de-energized)</td></tr>
+            <tr><td>Clamp-on ammeter</td><td>Current, without touching bare wire</td></tr>
+            <tr><td>Multimeter (VOM)</td><td>Volts, ohms and milliamps in one meter</td></tr>
+            <tr><td>Megohmmeter</td><td>Very high resistance, such as insulation</td></tr>
+            <tr><td>Motor rotation tester</td><td>Identifies the motor's legs</td></tr>
+            <tr><td>Phase rotation tester</td><td>Identifies the circuit's phase sequence</td></tr>
+            <tr><td>Circuit tester</td><td>Checks an outlet for wiring faults</td></tr>
+          </tbody>
+        </table></div>
+      </div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">B</span><h3>Study review points</h3></div>
+      <ul class="points" data-points="1"></ul>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">C</span><h3>Trade-term cards</h3></div>
+      <div class="deck" data-cards="1"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">D</span><h3>Ticket out the door</h3></div>
+      <div class="ticket" data-quiz="1"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">E</span><h3>Talk it over</h3></div>
+      <div class="talk" data-talk="1"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">F</span><h3>Practice questions</h3><span class="time">about 15 min</span></div>
+      <div data-practice="1"></div>
+    </div>
+  </section>
+
+  <!-- SECTION 2 -->
+  <section class="sec" id="s2" aria-labelledby="s2-h">
+    <div class="sec-head">
+      <span class="eyebrow">Module Section 2 of 2</span>
+      <h2 id="s2-h">Category Ratings and Safety Requirements</h2>
+      <p class="obj">By the end of this section your student can pick a meter with the right category rating for a job and name the main safety hazards of using electrical test equipment.</p>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">A</span><h3>Read it together</h3><span class="time">about 20 min</span></div>
+      <div class="prose">
+        <p class="big">A meter is only safe if it is the right meter for the job. Picking one means checking its category rating, and using it means following the safety rules every time. This section covers both.</p>
+
+        <h4>Why meters have ratings (2.0.0)</h4>
+        <p>Picking the correct meter, and using it safely and by the manufacturer's instructions, prevents injury and equipment damage. One of the most important things to check is the meter's <b>category rating</b>.</p>
+
+        <h4>Meter category ratings (2.1.0)</h4>
+        <p>Short bursts of extra voltage, called <b>transients</b> or power spikes, are a serious hazard. Systems and loads are getting more complex, which raises the risk. Lightning strikes on outdoor transmission lines and switching surges from normal switching can make dangerous high-energy transients. Motors, capacitors, variable speed drives and power conversion equipment can make spikes too.</p>
+        <p>To protect electricians, test equipment has safety built in. The International Electrotechnical Commission (<b>IEC</b>) wrote a safety standard for test equipment (IEC 1010), which was adapted in the US as <b>UL 3111-1</b>. It defines four <b>overvoltage installation categories</b>: <b>CAT I, CAT II, CAT III and CAT IV</b>. The <b>higher the number, the greater the risk</b>, because those places have more power available and higher-energy transients.</p>
+        <div class="scroll"><table>
+          <caption>Overvoltage installation categories (Table 1)</caption>
+          <thead><tr><th>Category</th><th>Where you find it</th></tr></thead>
+          <tbody>
+            <tr><td><b>CAT I</b></td><td>Electronic equipment and circuitry (lowest risk)</td></tr>
+            <tr><td><b>CAT II</b></td><td>Single-phase loads such as small appliances and tools, and outlets more than 30 feet from a CAT III source or 60 feet from a CAT IV source</td></tr>
+            <tr><td><b>CAT III</b></td><td>Three-phase motors, single-phase commercial and industrial lighting, switchgear, and busduct and feeders in industrial plants</td></tr>
+            <tr><td><b>CAT IV</b></td><td>Three-phase power at the meter, service entrance or utility connection, and any outdoor conductors (signs, pumps, solar or wind generation) (highest risk)</td></tr>
+          </tbody>
+        </table></div>
+
+        <h4>Selecting a meter (2.1.1)</h4>
+        <p>The closer you get to the <b>utility power source</b>, the greater the danger from transients. The more short-circuit current available, the greater the risk and the higher the category.</p>
+        <ul>
+          <li>One installation can have areas with different ratings. Always pick a meter rated for the <b>highest category</b> you will work in.</li>
+          <li>Then match the <b>voltage level, amperage and frequency</b> to the job.</li>
+          <li>Make sure the <b>test leads are rated as high as the meter</b>.</li>
+          <li>Choose meters independently tested and certified by <b>UL, CSA</b> or another recognized lab. The category rating is marked on the meter's housing.</li>
+        </ul>
+        <div class="case"><b>Safety</b>Use a meter with the right category rating for where you are working. Before each use, check the test leads for wear, cracks in the insulation or other damage.</div>
+
+        <h4>Meter calibration (2.1.2)</h4>
+        <p>All meters must be <b>calibrated</b> following the manufacturer's instructions.</p>
+        <ul>
+          <li>The <b>calibrating standard</b> must be more accurate than the instrument being tested, typically <b>ten times</b> more accurate.</li>
+          <li>ANSI says field and laboratory instruments must be calibrated at least <b>once a year</b>.</li>
+          <li>A <b>dated calibration label</b> must be visible on all test equipment, and <b>written records</b> of the dates and results must be kept.</li>
+        </ul>
+
+        <h4>Electrical test equipment safety hazards (2.2.0)</h4>
+        <p>Safety is the first responsibility of everyone on a job site. Safe installation, maintenance and operation take strict attention to local and national codes, safety standards and company policy. Carelessness can cause serious injury or death from shock, burns, falls and flying objects. After an accident, investigators almost always find that simple precautions would have prevented it. It is your personal responsibility to spot and fix unsafe conditions and unsafe acts.</p>
+        <div class="case"><b>Backfeed</b>Opening the main supply switch does not necessarily de-energize every circuit in a piece of equipment. A source people often miss is <b>backfeed</b>, power coming in from another source, such as a generator during an outage or a solar PV system. Rescuing someone shocked by backfeed is slowed by the time it takes to find the source and shut it off. Turn off <b>all</b> power inputs, lock out and tag out, then check with a working voltage tester that the equipment is safe.</div>
+        <div class="case"><b>Other energy</b>Lockout/tagout also covers other forms of energy that may be present, such as water pressure, steam, springs and gravity.</div>
+        <p>Always follow these precautions:</p>
+        <ul>
+          <li>The common <b>120V</b> supply is not "low and harmless." It has caused more deaths than any other voltage.</li>
+          <li><b>Inspect all test equipment before each use.</b> Look for broken leads or knobs, damaged plugs and frayed cords. Do not use equipment that is wet or damaged.</li>
+          <li>Make sure the rating of leads and accessories <b>meets or exceeds</b> the meter's rating.</li>
+          <li>Do not work on energized equipment unless you are <b>qualified and approved</b> by your supervisor.</li>
+          <li>Never shortcut safety. Follow all energized work policies and procedures.</li>
+          <li>When testing circuits, <b>test at higher ranges first</b>, then work down to lower ranges.</li>
+          <li>Always have a <b>standby person</b> during hot work, who knows whom to call in an emergency and how to disconnect the power.</li>
+        </ul>
+
+        <h4>Putting it all together</h4>
+        <p>The book asks which instrument fits each job. The jobs and the sort of meter that fits:</p>
+        <ul>
+          <li>Find a short circuit in house wiring: an <b>ohmmeter</b> (de-energized, checking continuity).</li>
+          <li>Measure the secondary voltage of an AC transformer: a <b>voltmeter</b>.</li>
+          <li>Find a blown fuse: an <b>ohmmeter</b> continuity check.</li>
+          <li>Identify the contact layout of a three-way switch or multi-pole relay: an <b>ohmmeter</b> continuity check.</li>
+        </ul>
+        <div class="case"><b>Hands-on tasks (with your instructor)</b>Your student will measure voltage in the classroom from line to neutral and from neutral to ground, and use an ohmmeter to measure the value of different resistors. These are done only under the instructor's supervision.</div>
+      </div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">B</span><h3>Study review points</h3></div>
+      <ul class="points" data-points="2"></ul>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">C</span><h3>Trade-term cards</h3></div>
+      <div class="deck" data-cards="2"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">D</span><h3>Ticket out the door</h3></div>
+      <div class="ticket" data-quiz="2"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">E</span><h3>Talk it over</h3></div>
+      <div class="talk" data-talk="2"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">F</span><h3>Practice questions</h3><span class="time">about 10 min</span></div>
+      <div data-practice="2"></div>
+    </div>
+  </section>
+
+  <section class="final" id="review" aria-labelledby="fin-h">
+    <span class="eyebrow">After both sections</span>
+    <h2 id="fin-h">Can your student explain it?</h2>
+    <p class="lead">The goal is not perfect wording. The goal is accurate understanding and good judgment. Tick each one when your student can explain it without looking at the page.</p>
+    <ul class="points" id="final-points"></ul>
+    <p class="note">The module's five official trade terms are spread across the sections where the book introduces them: four in Section 1 and one in Section 2. Cards marked "Key term" are important words from the module that are not on its official trade-term list. The practice questions come from the handbook's Section Review and Module Review. The Section Review answers follow the module's own key. The module does not print a Module Review key, so the Module Review answers here were worked out from the module text and are marked on each question. Check them against the publisher's lesson plan key before relying on them. The textbook-style versions are written in the book's style and vocabulary, not copied word for word, so check the handbook itself for the exact wording. This guide is a plain-language companion, not a copy of the textbook. For real work, use the current standards, your employer's procedures and your instructor's directions. Draft for instructor review.</p>
+  </section>
+
+</div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><strong>Mr. Ellis CTE</strong> · East Valley Institute of Technology (EVIT), Mesa, Arizona · Your Future, Your Way</p>
+    <p>Based on NCCER Electrical Level 1 (2020 edition), Module 26112-20, Electrical Test Equipment.</p>
+    <p>Aim for perfection, take what you get.</p>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var POINTS = {
+    1: [
+      `<b>Meters have two main jobs:</b> troubleshooting circuits and equipment, and verifying that circuits and parts work correctly.`,
+      `<b>The d'Arsonval meter movement</b> (a coil that moves in a permanent magnet's field, with a pointer on a scale) is the basis for analog meters. <b>Multiplier resistors</b> extend the voltage range. <b>Shunt resistors</b> extend the current range.`,
+      `<b>Digital meters</b> are solid-state and easier to read. <b>Analog meters</b> still help below 50V, for transformer polarity, when you need a fast response, and to see readings change.`,
+      `<b>A voltmeter</b> measures voltage (potential difference, or emf) and is connected <b>in parallel</b>. If it is not autoranging, start on the highest range and work down to between half and three-quarter scale.`,
+      `<b>A voltage tester</b> shows whether voltage is present and about how much. Check it on a known energized source before every use and inspect the leads. A <b>noncontact detector</b> only senses that voltage is there.`,
+      `<b>Live-dead-live:</b> prove the meter on a live source, test the target circuit dead, then prove the meter on the live source again. A <b>proving unit</b> is a safe known source.`,
+      `<b>An ohmmeter</b> measures resistance and finds open and shorted circuits. Zero it first by touching the leads together. A beep means a closed circuit (continuity). Make sure both sides of the circuit are de-energized first.`,
+      `<b>A clamp-on ammeter</b> reads current without touching bare wire by sensing the electromagnetic field (transformer action). Keep the jaws clean and closed, and use a range at least as high as the current. OL means overload.`,
+      `<b>A multimeter (VOM)</b> combines the voltmeter, ohmmeter and milliammeter. Current clamps add AC and DC current readings above the milliamp level. Check it on a known source before use.`,
+      `<b>A megohmmeter</b> (Megger, insulation resistance tester) reads resistance of millions of ohms, such as insulation. It makes high voltage (often 500V or 1,000V), so de-energize, discharge, and never touch the leads while it is powered.`,
+      `<b>A motor rotation tester</b> identifies the motor's legs (T1, T2, T3). <b>A phase rotation tester</b> identifies the circuit's phase sequence (L1, L2, L3). Wrong connections can damage the motor and its equipment.`,
+      `<b>Other special meters:</b> circuit testers (check outlets), irradiance meters (solar PV), recording instruments and data loggers (readings over time) and remote readout meters (removable screen or Bluetooth app).`
+    ],
+    2: [
+      `<b>Transients</b> (power spikes) come from lightning, switching surges, and motors, capacitors, drives and power conversion equipment.`,
+      `<b>IEC wrote the safety standard</b> for test equipment that defines <b>CAT I, II, III and IV</b>, adapted in the US as UL 3111-1.`,
+      `<b>The higher the CAT number, the greater the risk</b>, because there is more power available and higher-energy transients. CAT I is electronic circuits. CAT IV is the service entrance and outdoor conductors.`,
+      `<b>Danger from transients goes up</b> the closer you get to the utility source and the more short-circuit current is available.`,
+      `<b>Always choose a meter rated for the highest category in the area you will work in.</b> Then match voltage, amperage and frequency, and make sure the test leads are rated as high as the meter.`,
+      `<b>Buy meters tested and certified</b> by UL, CSA or another recognized lab. The rating is marked on the meter's housing.`,
+      `<b>Calibration:</b> follow the maker's instructions, use a standard about ten times more accurate, calibrate at least once a year, show a dated label and keep written records.`,
+      `<b>Opening the main supply switch does not always de-energize everything.</b> Watch for backfeed. Lock out and tag out, then confirm with a working voltage tester.`,
+      `<b>Backfeed</b> is power flowing backward into a system from an outside source, such as a generator or solar PV system.`,
+      `<b>The 120V supply has caused more deaths than any other voltage.</b> It is not harmless.`,
+      `<b>Inspect all test equipment before each use.</b> Do not use anything wet or damaged. Leads and accessories must be rated at or above the meter.`,
+      `<b>Only qualified, approved people</b> work on energized equipment. Test at higher ranges first, then lower. Keep a standby person present during hot work.`
+    ]
+  };
+
+  var CARDS = {
+    1: [
+      { k: "o", t: `Coil`, plain: `Turns of wire wound up so they create a magnetic effect or provide resistance.`, book: `A number of turns of wire, especially in a spiral, used for electromagnetic effects or to provide electrical resistance.`, ask: `What does the coil do inside a d'Arsonval meter?` },
+      { k: "o", t: `Continuity`, plain: `An unbroken path that lets current flow.`, book: `A complete (unbroken) circuit that is able to conduct current. Such a circuit is also called closed.`, ask: `What does an ohmmeter's beep tell you?` },
+      { k: "o", t: `d'Arsonval meter movement`, plain: `The needle mechanism inside an analog meter: a moving coil in a magnet's field.`, book: `A meter movement that uses a permanent magnet and a moving coil to move a pointer across a scale.`, ask: `What two parts push against each other to move the pointer?` },
+      { k: "o", t: `Frequency`, plain: `How many AC cycles happen each second, measured in hertz.`, book: `The number of cycles completed each second by a given AC voltage, usually expressed in hertz. One hertz equals one cycle per second.`, ask: `Which kind of meter feature can read frequency?` },
+      { k: "k", t: `Autoranging`, plain: `The meter picks the right scale by itself.`, book: `Many digital meters automatically search for the correct scale. If a voltmeter is not autoranging, start on the highest range and work down.`, ask: `Where in the scale should a good reading sit?` },
+      { k: "k", t: `Phantom reading`, plain: `A small "ghost" voltage reading that is not really there.`, book: `A low reading a sensitive digital meter can show because of induction from the electric field around nearby energized conductors.`, ask: `Why might a digital meter show a ghost reading?` },
+      { k: "k", t: `Live-dead-live test`, plain: `A three-step check: prove the meter, test the circuit dead, prove the meter again.`, book: `Verify the meter on a known live source, test the de-energized target, then test the known live source again before touching the circuit.`, ask: `What is a proving unit used for in this test?` },
+      { k: "k", t: `Proving unit`, plain: `A safe built-in voltage source to check that a meter works.`, book: `An electronic voltage source used to confirm a meter operates properly before use. Also a safe known live source for live-dead-live tests.`, ask: `Why prove your meter before you trust a dead reading?` },
+      { k: "k", t: `Megohmmeter`, plain: `The meter for reading insulation, which has millions of ohms of resistance.`, book: `Also called a Megger or insulation resistance tester. It measures very high resistances that an ordinary ohmmeter cannot.`, ask: `What voltages might it apply on a 600V class system?` },
+      { k: "k", t: `Phase rotation tester`, plain: `A tester that shows the order of the three phases.`, book: `Also called a phase sequence indicator. It shows the rotation of the voltages on a three-phase system as clockwise or counterclockwise.`, ask: `Why use tape on the tester's leads?` },
+      { k: "k", t: `Data logger`, plain: `A meter that records readings over time into memory.`, book: `A recording instrument that stores measured quantities in electronic memory at set intervals for later review.`, ask: `What problem could a data logger help you spot?` }
+    ],
+    2: [
+      { k: "o", t: `Backfeed`, plain: `Power flowing backward into a system from an outside source.`, book: `The reverse flow of power in a distribution system caused by power from outside sources, such as a generator during an outage or a solar PV system. Equipment overloads can also cause it.`, ask: `Why is backfeed a danger even after the main switch is open?` },
+      { k: "k", t: `Transient`, plain: `A brief spike of extra voltage.`, book: `A short burst of high-energy voltage, often called a power spike, from sources like lightning, switching surges, motors and drives.`, ask: `Name two things that can cause a transient.` },
+      { k: "k", t: `CAT rating`, plain: `A label saying how much transient danger a meter can safely handle.`, book: `Overvoltage installation category (CAT I to CAT IV). A higher number means higher power available and higher-energy transients.`, ask: `Which CAT rating belongs to the service entrance?` },
+      { k: "k", t: `Calibration`, plain: `Checking and adjusting a meter so its readings are accurate.`, book: `Done per the maker's instructions, against a standard typically ten times more accurate, at least once a year, with dated labels and records.`, ask: `What two things must be visible or kept for calibration?` },
+      { k: "k", t: `Lockout/tagout`, plain: `Locking and tagging power sources off so equipment cannot be started.`, book: `Turn off all power inputs, lock out and tag, remember other energy forms (water pressure, steam, springs, gravity), then check with an operating voltage tester.`, ask: `What other kinds of energy might still be present?` }
+    ]
+  };
+
+  var QUIZ = {
+    1: [
+      { q: `How is a voltmeter connected to the circuit or part being measured?`, o: [`In series`, `In parallel`, `It never touches the circuit`], a: 1, why: `A voltmeter is connected in parallel.` },
+      { q: `A voltmeter that is not autoranging should be started on...`, o: [`The lowest range`, `The highest range, then work down`, `Any range`], a: 1, why: `Work down until the reading sits between half and three-quarter scale.` },
+      { q: `How do you check a voltage tester before using it?`, o: [`Touch it to a known energized source`, `Read the label`, `Touch both probes to a wire in a dead box`], a: 0, why: `It should show the source's voltage. No reading, or the wrong one, means repair or replace.` },
+      { q: `Before using an ohmmeter on a circuit, you should first...`, o: [`Make sure the circuit is de-energized`, `Make sure the circuit is energized`, `Change the meter's battery`], a: 0, why: `Use a voltmeter to confirm both sides are de-energized.` },
+      { q: `A digital clamp meter shows OL. What does that mean?`, o: [`Overload: the current is above the meter's range`, `Open loop in the wire`, `Low battery`], a: 0, why: `Choose a range at least as high as the current you are measuring.` },
+      { q: `Which meter reads insulation resistance in the millions of ohms?`, o: [`Voltage tester`, `Megohmmeter`, `Circuit tester`], a: 1, why: `A regular ohmmeter cannot read resistances this high.` },
+      { q: `A circuit tester plugged into an outlet can show...`, o: [`Open ground, open neutral, open hot or reversed polarity`, `How many amps the outlet can deliver`, `Which way a motor will turn`], a: 0, why: `Its lights show the outlet wiring's condition.` }
+    ],
+    2: [
+      { q: `As the CAT number goes up, the risk...`, o: [`Goes up`, `Goes down`, `Stays the same`], a: 0, why: `A higher category means higher power available and higher-energy transients.` },
+      { q: `Where is the danger from transients greatest?`, o: [`Closest to the utility power source`, `At a small appliance outlet far from the panel`, `Inside a battery-powered device`], a: 0, why: `Danger increases as you get closer to the utility source.` },
+      { q: `One site has areas with different category ratings. Which meter do you choose?`, o: [`One rated for the lowest area`, `One rated for the highest category you will work in`, `One rated for the average`], a: 1, why: `Always choose a meter rated for the highest category in the work area.` },
+      { q: `At minimum, how often must field and laboratory instruments be calibrated, per ANSI?`, o: [`Once a month`, `Once a year`, `Once every five years`], a: 1, why: `Dated labels and written records are required too.` },
+      { q: `The calibrating standard should be about how much more accurate than the instrument tested?`, o: [`Equal`, `Ten times`, `Two times`], a: 1, why: `The standard must be more accurate than the instrument, typically ten times.` },
+      { q: `Is opening the main supply switch always enough to make sure every circuit is dead?`, o: [`Yes`, `No. Other sources, such as a backfeed, may still be feeding it`, `Only at 120V`], a: 1, why: `Turn off all power inputs, lock out and tag out, then check with an operating voltage tester.` },
+      { q: `Which supply voltage has caused more deaths than any other?`, o: [`120V`, `480V`, `13,800V`], a: 0, why: `The common 120V supply is not harmless.` }
+    ]
+  };
+
+  var TALK = {
+    1: {
+      qs: [`Why would an electrician choose a voltage tester instead of a voltmeter in some cases?`, `Why must you check that a circuit is de-energized before using an ohmmeter?`, `What is the difference between a motor rotation tester and a phase rotation tester?`, `What would you use a data logger for, and why?`],
+      scn: [{
+        t: `"The tester shows nothing"`,
+        s: `Your student checks a circuit with a voltage tester and it shows no voltage. How do they know the circuit is really dead and not that the tester is broken?`,
+        g: [`Use a live-dead-live test: prove the tester on a known live source first.`, `Then test the target circuit, and prove the tester on the live source again.`, `A proving unit can be the safe known live source.`]
+      }, {
+        t: `"A ghost reading"`,
+        s: `A digital meter shows a small voltage on a wire that should be dead, but the reading looks odd. What could be going on?`,
+        g: [`It may be a phantom (ghost) reading caused by induction from nearby energized conductors.`, `Digital meters are very sensitive, so they can pick this up.`, `Do not assume it is safe. Verify with the proper procedure and a properly rated meter.`]
+      }],
+      parent: `Ask your student to name the three things a basic multimeter can measure and the one meter they would grab to check insulation.`
+    },
+    2: {
+      qs: [`Why does the category rating go up the closer you get to the utility?`, `Why must the test leads have a rating as high as the meter?`, `Why is the 120V supply dangerous even though it is "only" 120 volts?`, `Why does a hot work job need a standby person?`],
+      scn: [{
+        t: `"Which meter for the service panel?"`,
+        s: `A student is picking a meter to use at a building's service entrance. Which category should it carry, and what else should they check?`,
+        g: [`CAT IV covers power at the service entrance and utility connection.`, `They should match voltage, amperage and frequency to the job.`, `The test leads must be rated as high as the meter, and checked for damage before use.`]
+      }, {
+        t: `"The main switch is off"`,
+        s: `Someone says the equipment is safe because the main switch is open, but a generator is connected to the building. What is the concern?`,
+        g: [`Backfeed: power from the generator can flow backward into the system.`, `All power inputs must be turned off, then locked out and tagged out.`, `Finish by checking with an operating voltage tester that the equipment is safe.`]
+      }],
+      parent: `Ask your student what the four CAT ratings are and which one is the riskiest.`
+    }
+  };
+
+  var FINAL = [
+    `I can name the main kinds of test equipment and say what each measures.`,
+    `I can explain how a d'Arsonval meter movement works in simple terms.`,
+    `I can explain why a voltmeter goes in parallel and what to do if it is not autoranging.`,
+    `I can describe a live-dead-live test and what a proving unit is for.`,
+    `I can explain why an ohmmeter needs a de-energized circuit and what a continuity beep means.`,
+    `I can explain how a clamp-on ammeter reads current without touching the wire.`,
+    `I can say when to use a megohmmeter and name its main safety rules.`,
+    `I can tell a motor rotation tester from a phase rotation tester.`,
+    `I can name CAT I through CAT IV and say which is the highest risk.`,
+    `I can explain how to pick a meter with the correct category rating.`,
+    `I can explain calibration (ten times more accurate, once a year, labels and records).`,
+    `I can explain backfeed and why lockout/tagout is needed, and list the main meter safety rules.`
+  ];
+
+  /* Section Review answers follow the module's own key (S1: c a a b d; S2: a d).
+     Module Review answers are worked out from the module text (the PDF prints no Module Review key). */
+  var PRACTICE = {
+    1: [
+      { src: `Section Review · Q1 (1.1.0)`, a: 2,
+        pq: `A voltmeter reads which of these?`,
+        po: [`The magnetic field around a wire`, `How much a part resists current`, `The push of the circuit: its voltage`, `How much current is flowing`],
+        tq: `A voltmeter is used to measure the value of a circuit's _____.`,
+        to: [`electromagnetic field`, `resistance`, `electromotive force`, `current`],
+        why: `Voltage is also called potential difference or electromotive force (emf).`,
+        br: [[`the push of the circuit`, `electromotive force`], [`reads`, `is used to measure the value of`]] },
+      { src: `Section Review · Q2 (1.2.0)`, a: 0,
+        pq: `What does an ohmmeter show when the circuit is complete and closed?`,
+        po: [`Zero ohms`, `Infinite resistance`, `An error message`, `Ten ohms`],
+        tq: `A closed circuit is indicated by an ohmmeter reading of _____.`,
+        to: [`zero`, `infinity`, `ERR`, `ten`],
+        why: `A closed circuit has continuity, so the resistance reads at or near zero and many digital meters beep.`,
+        br: [[`complete and closed`, `a closed circuit`], [`shows`, `is indicated by a reading of`]] },
+      { src: `Section Review · Q3 (1.3.0)`, a: 0,
+        pq: `Which meter reads current by sensing the magnetic field around a wire?`,
+        po: [`Clamp-on ammeter`, `Megohmmeter`, `Motor rotation tester`, `Ohmmeter`],
+        tq: `A meter that operates by sensing the strength of the electromagnetic field around the wire is a(n) _____.`,
+        to: [`clamp-on ammeter`, `megohmmeter`, `motor rotation tester`, `ohmmeter`],
+        why: `The clamp-on ammeter uses transformer action: the conductor is the primary and the jaws are the secondary.`,
+        br: [[`magnetic field`, `electromagnetic field`], [`reads current by sensing`, `operates by sensing the strength of`]] },
+      { src: `Section Review · Q4 (1.4.0)`, a: 1,
+        pq: `Which meter would you normally use to read small currents in milliamps?`,
+        po: [`Clamp-on ammeter`, `Multimeter (VOM)`, `Megohmmeter`, `Insulation resistance tester`],
+        tq: `Current measurements in milliamps are typically read using a(n) _____.`,
+        to: [`clamp-on ammeter`, `VOM`, `megohmmeter`, `insulation resistance tester`],
+        why: `VOM stands for volt-ohm-milliammeter. Current clamps on a multimeter are for currents above the milliamp level.`,
+        br: [[`multimeter`, `VOM`], [`small currents in milliamps`, `current measurements in milliamps`]] },
+      { src: `Section Review · Q5 (1.5.1)`, a: 3,
+        pq: `Which meter would you use to measure something around a million ohms, like insulation?`,
+        po: [`Recording instrument`, `Clamp-on ammeter`, `Multimeter`, `Megohmmeter`],
+        tq: `An expected resistance of 1,000,000 ohms would be measured using a _____.`,
+        to: [`recording instrument`, `clamp-on ammeter`, `multimeter`, `megohmmeter`],
+        why: `A regular ohmmeter cannot read resistances of millions of ohms. A megohmmeter (Megger) can.`,
+        br: [[`around a million ohms`, `1,000,000 ohms`], [`Which meter would you use`, `would be measured using a`]] },
+      { src: `Module Review · Q1 (1.0.0) · answer from module text`, a: 2,
+        pq: `What do analog meters use inside to move the needle?`,
+        po: [`Solid-state chips`, `A digital readout`, `A moving coil and a magnet`, `An autoranging switch`],
+        tq: `Analog meters rely on _____.`,
+        to: [`solid-state circuitry`, `a digital display`, `a moving-coil meter movement`, `an autoranging setting`],
+        why: `The d'Arsonval moving-coil movement is the basis for analog meters. Digital meters are solid-state.`,
+        br: [[`a moving coil and a magnet`, `a moving-coil meter movement`], [`use inside to move the needle`, `rely on`]] },
+      { src: `Module Review · Q2 (1.1.0) · answer from module text`, a: 0,
+        pq: `A voltmeter is the tool for reading which of these?`,
+        po: [`Exact voltage values`, `Only a general voltage range`, `Power in watts`, `The shape of a sine wave`],
+        tq: `A voltmeter is used to test _____.`,
+        to: [`exact voltages`, `voltage ranges`, `power`, `sine waves`],
+        why: `A voltmeter gives the exact value. A voltage tester tells you if voltage is present and its general range.`,
+        br: [[`exact voltage values`, `exact voltages`], [`general voltage range`, `voltage ranges`]] },
+      { src: `Module Review · Q4 (1.3.0) · answer from module text`, a: 0,
+        pq: `What does an ammeter measure?`,
+        po: [`Current`, `Voltage`, `Resistance`, `Insulation quality`],
+        tq: `An ammeter is used to measure _____.`,
+        to: [`current`, `voltage`, `resistance`, `insulation value`],
+        why: `Ammeters, including clamp-on ammeters, measure current.`,
+        br: [[`quality of insulation`, `insulation value`], [`What does ... measure`, `is used to measure`]] },
+      { src: `Module Review · Q5 (1.3.0) · answer from module text`, a: 1,
+        pq: `How does a clamp-on ammeter know how much current is in a wire?`,
+        po: [`It uses a needle and magnet movement that touches the wire`, `It senses the magnetic field around the wire`, `It measures the high-resistance side of a transformer`, `It uses a shunt resistor`],
+        tq: `Clamp-on ammeters work by _____.`,
+        to: [`d'Arsonval meter movement`, `sensing the electromagnetic field around the conductor`, `reading the high-resistance end of a power transformer`, `a resistive shunt`],
+        why: `It senses the electromagnetic field around the conductor, using transformer action. It never touches bare wire.`,
+        br: [[`senses the magnetic field`, `sensing the electromagnetic field`], [`know how much current`, `work by`]] },
+      { src: `Module Review · Q6 (1.5.1) · answer from module text`, a: 0,
+        pq: `Which meter puts 500V or 1,000V on a circuit to test it?`,
+        po: [`Megohmmeter`, `Ammeter`, `Multimeter`, `Continuity tester`],
+        tq: `A meter with applied voltages of 500V or 1,000V is a(n) _____.`,
+        to: [`megohmmeter`, `ammeter`, `multimeter`, `continuity tester`],
+        why: `On 600V class systems, a megohmmeter typically applies 500V or 1,000V to test insulation.`,
+        br: [[`puts ... on a circuit to test it`, `applied voltages of`]] },
+      { src: `Module Review · Q7 (1.5.2) · answer from module text`, a: 2,
+        pq: `What is a motor rotation tester for?`,
+        po: [`Testing a motor that is running on live power`, `Connecting to the motor's supply wires`, `Identifying the motor's leads (legs)`, `Working only for clockwise rotation`],
+        tq: `A motor rotation tester _____.`,
+        to: [`is used on an energized motor`, `connects to the motor supply conductors`, `is used to identify the motor legs`, `works in only one direction of rotation`],
+        why: `It identifies the motor legs (T1, T2, T3). Never connect it to energized equipment.`,
+        br: [[`motor's leads (legs)`, `motor legs`], [`is ... for`, `is used to`]] }
+    ],
+    2: [
+      { src: `Section Review · Q1 (2.1.0, Table 1)`, a: 0,
+        pq: `Which category is for the lowest-risk installations?`,
+        po: [`CAT I`, `CAT II`, `CAT III`, `CAT IV`],
+        tq: `Which category rating covers installations that present the lowest risk?`,
+        to: [`CAT I`, `CAT II`, `CAT III`, `CAT IV`],
+        why: `CAT I covers electronic equipment and circuitry. The higher the number, the greater the risk.`,
+        br: [[`lowest-risk installations`, `installations that present the lowest risk`]] },
+      { src: `Section Review · Q2 (2.2.0)`, a: 3,
+        pq: `Which of these is a true meter safety rule?`,
+        po: [`120V is fairly harmless`, `Every test lead has the same category rating`, `Begin at the lowest range and work upward`, `Inspect all test equipment before every use`],
+        tq: `Which of the following is true with regard to meter safety?`,
+        to: [`120V power is relatively harmless.`, `All test leads carry the same category rating.`, `When testing circuits, begin at the lowest range and work upward.`, `All test equipment should be thoroughly inspected before each use.`],
+        why: `Checking equipment before every use is the true rule. 120V is dangerous, leads have their own ratings, and you start at higher ranges.`,
+        br: [[`Inspect ... before every use`, `thoroughly inspected before each use`]] },
+      { src: `Module Review · Q3 (1.1.0, 2.2.0) · answer from module text`, a: 3,
+        pq: `You are about to measure a voltage you expect to be low. For safety, what should you check first?`,
+        po: [`Resistance`, `Current`, `Vibration`, `The higher voltage ranges`],
+        tq: `To ensure safety, before measuring low voltages you should first test for _____.`,
+        to: [`resistance`, `current`, `vibration`, `higher voltages`],
+        why: `When testing circuits, test at higher ranges first, then work down to lower ranges.`,
+        br: [[`check first`, `first test for`], [`a voltage you expect to be low`, `low voltages`]] },
+      { src: `Module Review · Q8 (2.1.0) · answer from module text`, a: 3,
+        pq: `Which category rating gives the highest level of protection?`,
+        po: [`CAT I`, `CAT II`, `CAT III`, `CAT IV`],
+        tq: `The highest level of protection is provided by instruments rated as _____.`,
+        to: [`CAT I`, `CAT II`, `CAT III`, `CAT IV`],
+        why: `CAT IV meters are for the highest-risk places, such as the service entrance and outdoor conductors.`,
+        br: [[`gives the highest level of protection`, `is provided by instruments rated as`]] },
+      { src: `Module Review · Q9 (2.1.0) · answer from module text`, a: 2,
+        pq: `What is the IEC's category standard written for?`,
+        po: [`Wiring`, `Electrical equipment in general`, `Test equipment`, `Signaling circuits`],
+        tq: `The IEC developed a safety standard with overvoltage installation categories CAT I to CAT IV for _____.`,
+        to: [`wiring`, `electrical equipment`, `test equipment`, `signaling circuits`],
+        why: `IEC 1010, adapted as UL 3111-1, sets the four categories for test equipment.`,
+        br: [[`written for`, `developed ... for`]] },
+      { src: `Module Review · Q10 (2.1.0, Table 1) · answer from module text`, a: 1,
+        pq: `You need a meter for small appliances. What is the lowest category rating you can use?`,
+        po: [`CAT I`, `CAT II`, `CAT III`, `CAT IV`],
+        tq: `What is the lowest acceptable overvoltage category rating for a multimeter used to test small appliances?`,
+        to: [`CAT I`, `CAT II`, `CAT III`, `CAT IV`],
+        why: `Table 1 lists single-phase loads such as small appliances and tools under CAT II.`,
+        br: [[`lowest category rating you can use`, `lowest acceptable overvoltage category rating`]] }
+    ]
+  };
+
+  function el(tag, cls, text) { var n = document.createElement(tag); if (cls) n.className = cls; if (text != null) n.textContent = text; return n; }
+
+  function buildPoints(ul, list, prefix) {
+    list.forEach(function (html, i) {
+      var li = el("li");
+      var label = el("label");
+      var input = document.createElement("input");
+      input.type = "checkbox";
+      input.id = prefix + "-" + i;
+      var span = el("span");
+      span.innerHTML = html; // static text written in this file
+      label.appendChild(input); label.appendChild(span);
+      li.appendChild(label); ul.appendChild(li);
+    });
+  }
+
+  function field(label, text) {
+    var d = el("span");
+    d.appendChild(el("span", "label", label));
+    d.appendChild(document.createTextNode(text));
+    return d;
+  }
+  function buildCards(host, n) {
+    CARDS[n].forEach(function (item) {
+      var b = el("button", "card");
+      b.type = "button";
+      b.setAttribute("aria-pressed", "false");
+      b.setAttribute("aria-label", item.t + ". Press to flip the card.");
+      var inner = el("span", "card-inner");
+      var f = el("span", "face front" + (item.k === "k" ? " key" : ""));
+      f.appendChild(el("span", "strip", (item.k === "o" ? "NCCER trade term" : "Key term") + " · Section " + n));
+      f.appendChild(el("span", "term", item.t));
+      f.appendChild(el("span", "hint", "TAP TO FLIP"));
+      var k = el("span", "face back");
+      k.appendChild(el("span", "strip", item.t));
+      var body = el("span", "body");
+      body.appendChild(field("In everyday words", item.plain));
+      body.appendChild(field("From the module", item.book));
+      var ask = field("Ask your student", item.ask);
+      ask.className = "ask";
+      body.appendChild(ask);
+      k.appendChild(body);
+      inner.appendChild(f); inner.appendChild(k);
+      b.appendChild(inner);
+      b.addEventListener("click", function () { b.setAttribute("aria-pressed", b.getAttribute("aria-pressed") === "true" ? "false" : "true"); });
+      host.appendChild(b);
+    });
+  }
+
+  function buildQuiz(host, n) {
+    var list = QUIZ[n];
+    var answered = 0;
+    host.appendChild(el("p", "ticket-intro", "Pick the answer. You will see right away if it is correct. Nothing is saved or sent."));
+    var foot = el("div", "ticket-foot");
+    var done = el("p", null, "");
+    done.setAttribute("aria-live", "polite");
+    var retry = el("button", "btn", "Try again");
+    retry.type = "button";
+    retry.hidden = true;
+    foot.appendChild(done); foot.appendChild(retry);
+
+    list.forEach(function (item, qi) {
+      var fs = el("fieldset", "q");
+      fs.appendChild(el("legend", null, (qi + 1) + ". " + item.q));
+      var opts = el("div", "opts");
+      var fb = el("p", "fb");
+      fb.setAttribute("aria-live", "polite");
+      var btns = [];
+      item.o.forEach(function (text, oi) {
+        var b = el("button", "opt", text);
+        b.type = "button";
+        b.addEventListener("click", function () {
+          btns.forEach(function (x) { x.disabled = true; });
+          answered++;
+          fb.textContent = "";
+          if (oi === item.a) {
+            b.classList.add("right");
+            fb.appendChild(el("b", null, "Correct. ")); fb.appendChild(document.createTextNode(item.why));
+          } else {
+            b.classList.add("wrong");
+            btns[item.a].classList.add("right");
+            fb.appendChild(el("b", null, "Not quite. "));
+            fb.appendChild(document.createTextNode("The answer is \"" + item.o[item.a] + "\". " + item.why));
+          }
+          if (answered === list.length) {
+            done.textContent = "Ticket finished. Reread any part of the section that felt shaky, then try again.";
+            retry.hidden = false;
+          }
+        });
+        btns.push(b); opts.appendChild(b);
+      });
+      fs.appendChild(opts); fs.appendChild(fb);
+      host.appendChild(fs);
+      fs._reset = function () { btns.forEach(function (x) { x.disabled = false; x.className = "opt"; }); fb.textContent = ""; };
+    });
+    host.appendChild(foot);
+    retry.addEventListener("click", function () {
+      host.querySelectorAll("fieldset").forEach(function (f) { f._reset(); });
+      answered = 0; done.textContent = ""; retry.hidden = true;
+    });
+  }
+
+  function buildTalk(host, n) {
+    var t = TALK[n];
+    var ol = el("ol", "qs");
+    t.qs.forEach(function (q) { ol.appendChild(el("li", null, q)); });
+    host.appendChild(ol);
+    t.scn.forEach(function (s) {
+      var d = el("details", "scn");
+      d.appendChild(el("summary", null, "Scenario: " + s.t));
+      d.appendChild(el("p", "setup", s.s));
+      var g = el("div", "good");
+      g.appendChild(el("b", null, "A good answer includes"));
+      var ul = el("ul");
+      s.g.forEach(function (x) { ul.appendChild(el("li", null, x)); });
+      g.appendChild(ul); d.appendChild(g);
+      host.appendChild(d);
+    });
+    if (t.parent) {
+      var p = el("div", "parent");
+      p.appendChild(el("b", null, "Talk it over with your loved ones"));
+      p.appendChild(el("p", null, t.parent));
+      host.appendChild(p);
+    }
+  }
+
+  function ask(label, cls, q, opts, correct, onAnswer) {
+    var box = el("div", "ask-block" + (cls ? " " + cls : ""));
+    box.appendChild(el("p", "step-label", label));
+    box.appendChild(el("p", "pr-q", q));
+    var wrap = el("div", "opts");
+    wrap.setAttribute("role", "group");
+    wrap.setAttribute("aria-label", q);
+    var fb = el("p", "fb");
+    fb.setAttribute("aria-live", "polite");
+    var btns = [];
+    opts.forEach(function (text, oi) {
+      var b = el("button", "opt", String.fromCharCode(65 + oi) + ".  " + text);
+      b.type = "button";
+      b.addEventListener("click", function () {
+        btns.forEach(function (x) { x.disabled = true; });
+        var ok = oi === correct;
+        b.classList.add(ok ? "right" : "wrong");
+        if (!ok) btns[correct].classList.add("right");
+        onAnswer(ok, fb, String.fromCharCode(65 + correct));
+      });
+      btns.push(b); wrap.appendChild(b);
+    });
+    box.appendChild(wrap); box.appendChild(fb);
+    box.reset = function () { btns.forEach(function (x) { x.disabled = false; x.className = "opt"; }); fb.textContent = ""; };
+    return box;
+  }
+  function say(fb, lead, text) {
+    fb.textContent = "";
+    fb.appendChild(el("b", null, lead + " "));
+    fb.appendChild(document.createTextNode(text));
+  }
+
+  function buildPractice(host, n) {
+    var list = PRACTICE[n];
+    host.appendChild(el("p", "pr-intro", "Test questions use the textbook's formal words. Answer each question in plain English first, then see the same question the way the book asks it. The \"Words to notice\" box shows how the two fit together. Nothing is saved or sent."));
+    var items = [];
+    list.forEach(function (item, i) {
+      var art = el("article", "pr");
+      var head = el("div", "pr-head");
+      head.appendChild(el("span", null, "Question " + (i + 1) + " of " + list.length));
+      head.appendChild(el("span", null, "Source: " + item.src));
+      art.appendChild(head);
+
+      var bridge = el("div", "bridge");
+      bridge.hidden = true;
+      bridge.appendChild(el("p", "step-label", "Words to notice"));
+      var ul = el("ul");
+      item.br.forEach(function (p) {
+        var li = el("li");
+        li.appendChild(el("span", "you", p[0]));
+        li.appendChild(el("span", "arrow", "→"));
+        li.appendChild(el("span", "pub", p[1]));
+        ul.appendChild(li);
+      });
+      bridge.appendChild(ul);
+
+      var b2 = ask("Step 2 · The same question in the textbook's words", "formal", item.tq, item.to, item.a, function (ok, fb, letter) {
+        if (ok) say(fb, "Correct.", "You just answered it in the textbook's voice.");
+        else say(fb, "Not quite.", "The answer is " + letter + ". Compare it with your plain-English answer above.");
+        bridge.hidden = false;
+      });
+      b2.hidden = true;
+      var b1 = ask("Step 1 · In plain English", "", item.pq, item.po, item.a, function (ok, fb, letter) {
+        if (ok) say(fb, "Correct.", item.why);
+        else say(fb, "Not quite.", "The answer is " + letter + ". " + item.why);
+        b2.hidden = false;
+      });
+      art.appendChild(b1); art.appendChild(b2); art.appendChild(bridge);
+      host.appendChild(art);
+      items.push({ b1: b1, b2: b2, bridge: bridge });
+    });
+    var foot = el("div", "ticket-foot");
+    var retry = el("button", "btn", "Start this set over");
+    retry.type = "button";
+    retry.addEventListener("click", function () {
+      items.forEach(function (x) { x.b1.reset(); x.b2.reset(); x.b2.hidden = true; x.bridge.hidden = true; });
+    });
+    foot.appendChild(retry);
+    host.appendChild(foot);
+  }
+
+  [1, 2].forEach(function (n) {
+    buildPoints(document.querySelector('[data-points="' + n + '"]'), POINTS[n], "s" + n);
+    buildCards(document.querySelector('[data-cards="' + n + '"]'), n);
+    buildQuiz(document.querySelector('[data-quiz="' + n + '"]'), n);
+    buildTalk(document.querySelector('[data-talk="' + n + '"]'), n);
+    buildPractice(document.querySelector('[data-practice="' + n + '"]'), n);
+  });
+  buildPoints(document.getElementById("final-points"), FINAL, "fin");
+})();
+</script>
+
+</body>
+</html>

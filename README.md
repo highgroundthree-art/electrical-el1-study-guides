@@ -34,6 +34,7 @@ Every module section follows the same six parts:
 | NCCER Electrical Level 1, Module 26108-20: Wireways, Raceways, and Fittings (draft: some scanned-page sections not yet covered) | `wireways-raceways-fittings.html` (guided notes and slides in `wireways-raceways-fittings-materials/`) |
 | NCCER Core, Module 00107: Basic Communication Skills | `communication-skills.html` |
 | NCCER Core, Module 00108: Basic Employability Skills | `employability-skills.html` |
+| NCCER Core, Module 00109: Introduction to Material Handling (draft: Section Review and Module Review answers worked out from the module text; answer keys were not in the source PDF; the one figure-based review question left out) | `introduction-to-material-handling.html` |
 | NCCER Electrical Level 1, Module 26109-20: Conductors and Cables (draft: printed pages 18 and 19 missing from the source PDF; Module Review answers worked out from the module text) | `conductors-and-cables.html` (guided notes and slides in `conductors-and-cables-materials/`) |
 | NCCER Electrical Level 1, Module 26110-20: Basic Electrical Construction Documents | `electrical-construction-documents.html` |
 | NCCER Electrical Level 1, Module 26111-20: Residential Wiring | `residential-wiring.html` |

@@ -1,0 +1,1313 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Introduction to Material Handling Loved Ones Study Guide</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+/* Layout concept: one long study sheet. Each module part runs the same six parts
+   (read, review points, trade-term tags, ticket out the door, talk it over, practice questions). */
+:root {
+  --bg: #EEF1F3;
+  --surface: #FFFFFF;
+  --ink: #14202B;
+  --ink-soft: #46576A;
+  --line: #C9D2DA;
+  --band: #14202B;
+  --band-ink: #F4F7F9;
+  --accent: #C42B17;
+  --accent-ink: #FFFFFF;
+  --caution: #F2B705;
+  --caution-soft: #FFF3C4;
+  --good: #1E7A3C;
+  --good-soft: #DDF3E4;
+  --bad: #A8321F;
+  --bad-soft: #FBE3DE;
+  --tag-hole: #EEF1F3;
+  --focus: #0B5FFF;
+  --font-display: "Barlow Condensed", "Arial Narrow", Impact, sans-serif;
+  --font-body: "Barlow", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0F171E; --surface: #18232D; --ink: #EAF0F4; --ink-soft: #A5B4C2; --line: #2E3E4C;
+    --band: #0A1016; --band-ink: #F4F7F9; --accent: #FF5A44; --accent-ink: #14202B;
+    --caution: #F2B705; --caution-soft: #3A3210; --good: #6FD08C; --good-soft: #17301F;
+    --bad: #FF8E7C; --bad-soft: #3A1B16; --tag-hole: #0F171E; --focus: #6AA2FF;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0F171E; --surface: #18232D; --ink: #EAF0F4; --ink-soft: #A5B4C2; --line: #2E3E4C;
+  --band: #0A1016; --band-ink: #F4F7F9; --accent: #FF5A44; --accent-ink: #14202B;
+  --caution: #F2B705; --caution-soft: #3A3210; --good: #6FD08C; --good-soft: #17301F;
+  --bad: #FF8E7C; --bad-soft: #3A1B16; --tag-hole: #0F171E; --focus: #6AA2FF;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--font-body); font-size: 17px; line-height: 1.6; }
+[hidden] { display: none !important; }
+:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
+.wrap { max-width: 920px; margin-inline: auto; padding-inline: max(16px, env(safe-area-inset-left, 0px)) max(16px, env(safe-area-inset-right, 0px)); }
+h1, h2, h3, h4 { font-family: var(--font-display); text-transform: uppercase; letter-spacing: 0.03em; line-height: 1.05; margin: 0; text-wrap: balance; }
+.eyebrow { font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-soft); }
+
+.band { background: var(--band); color: var(--band-ink); padding-block: 34px 26px; border-bottom: 8px solid var(--caution); }
+.band .eyebrow { color: var(--caution); }
+.band h1 { font-size: clamp(2.5rem, 9vw, 4.4rem); font-weight: 700; margin-top: 10px; }
+.band .sub { margin: 14px 0 0; font-size: 1.1rem; color: #D5DEE5; max-width: 46ch; }
+.band .byline { margin: 14px 0 0; font-size: 0.95rem; color: #AEBBC7; }
+nav.jump { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 22px; }
+nav.jump a { text-decoration: none; font-weight: 600; font-size: 0.95rem; padding: 8px 14px; border: 2px solid #3B4B5A; border-radius: 3px; color: var(--band-ink); }
+nav.jump a:hover { border-color: var(--caution); }
+
+.intro { margin-top: 28px; display: grid; gap: 22px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 380px), 1fr)); }
+.panel { background: var(--surface); border: 1px solid var(--line); padding: 20px 22px 22px; min-width: 0; }
+.panel h2 { font-size: 1.5rem; font-weight: 700; margin-bottom: 10px; }
+.panel p { margin: 0 0 10px; }
+.panel ol { margin: 8px 0 0; padding-left: 1.3em; display: grid; gap: 6px; }
+.notice { background: var(--caution-soft); border: 2px solid var(--caution); padding: 16px 20px; margin-top: 22px; }
+.notice p { margin: 4px 0 0; }
+.notice h2 { font-size: 1.25rem; }
+
+/* section */
+.sec { margin-top: 56px; }
+.sec-head { border-top: 8px solid var(--ink); padding-top: 18px; }
+.sec-head h2 { font-size: clamp(2rem, 6vw, 3rem); font-weight: 700; margin-top: 6px; }
+.sec-head .obj { margin: 10px 0 0; color: var(--ink-soft); max-width: 62ch; }
+.part { margin-top: 34px; }
+.part-title { display: flex; align-items: baseline; gap: 12px; margin-bottom: 14px; }
+.part-title .letter { font-family: var(--font-mono); font-size: 13px; background: var(--ink); color: var(--bg); padding: 2px 8px; flex: none; }
+.part-title h3 { font-size: 1.7rem; font-weight: 700; }
+.part-title .time { margin-left: auto; font-family: var(--font-mono); font-size: 12px; color: var(--ink-soft); white-space: nowrap; }
+
+.prose { background: var(--surface); border: 1px solid var(--line); padding: 22px 24px; }
+.prose h4 { font-size: 1.25rem; font-weight: 700; margin: 20px 0 6px; color: var(--accent); }
+.prose h4:first-child { margin-top: 0; }
+.prose p { margin: 0 0 10px; max-width: 64ch; }
+.prose ul, .prose ol { margin: 0 0 10px; padding-left: 1.2em; max-width: 64ch; }
+.prose li { margin-bottom: 4px; }
+.prose .big { font-size: 1.12rem; font-weight: 500; border-left: 6px solid var(--caution); padding: 4px 0 4px 14px; margin: 0 0 16px; }
+.prose table { border-collapse: collapse; margin: 8px 0 14px; font-size: 0.95rem; width: 100%; max-width: 620px; }
+.prose th, .prose td { text-align: left; padding: 6px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+.prose th { font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-soft); }
+.prose caption { caption-side: top; text-align: left; font-weight: 600; font-size: 0.95rem; padding: 0 0 8px; color: var(--ink); }
+.scroll { overflow-x: auto; }
+.case { background: var(--bg); border-left: 6px solid var(--accent); padding: 12px 16px; margin: 14px 0 0; max-width: 64ch; }
+.case b { font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.08em; text-transform: uppercase; display: block; color: var(--ink-soft); }
+.case ul { margin: 6px 0 0; }
+.warn { background: var(--bad-soft); border-left: 6px solid var(--bad); padding: 12px 16px; margin: 14px 0 0; max-width: 64ch; }
+.warn b { font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.08em; text-transform: uppercase; display: block; color: var(--bad); }
+
+/* review points */
+.points { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.points li { background: var(--surface); border: 1px solid var(--line); }
+.points label { display: grid; grid-template-columns: 28px minmax(0, 1fr); gap: 12px; padding: 12px 16px; cursor: pointer; align-items: start; }
+.points input { width: 22px; height: 22px; margin: 2px 0 0; accent-color: var(--good); }
+.points li:has(input:checked) { background: var(--good-soft); border-color: var(--good); }
+.points b { font-weight: 600; }
+
+/* cards */
+.deck { display: grid; gap: 22px; grid-template-columns: repeat(auto-fill, minmax(min(100%, 270px), 1fr)); }
+.card { all: unset; box-sizing: border-box; display: block; cursor: pointer; perspective: 1100px; min-width: 0; }
+.card:focus-visible { outline: 3px solid var(--focus); outline-offset: 4px; }
+.card-inner { display: grid; transition: transform 0.5s cubic-bezier(.3,.7,.2,1); transform-style: preserve-3d; position: relative; }
+.card[aria-pressed="true"] .card-inner { transform: rotateY(180deg); }
+.face { grid-area: 1 / 1; backface-visibility: hidden; -webkit-backface-visibility: hidden; display: flex; flex-direction: column; min-height: 250px; border: 2px solid var(--ink); background: var(--surface); position: relative; overflow: hidden; }
+.face::before { content: ""; position: absolute; top: 12px; left: 50%; width: 16px; height: 16px; margin-left: -8px; border-radius: 50%; background: var(--tag-hole); border: 2px solid var(--ink); }
+.front .strip { background: var(--accent); color: var(--accent-ink); padding: 38px 16px 8px; font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.08em; text-transform: uppercase; }
+.front.key .strip { background: var(--ink); color: var(--bg); }
+.front .term { flex: 1; display: flex; align-items: center; padding: 16px 18px; font-family: var(--font-display); text-transform: uppercase; font-weight: 700; font-size: clamp(1.8rem, 7vw, 2.2rem); line-height: 1.02; letter-spacing: 0.02em; overflow-wrap: anywhere; }
+.front .hint { padding: 10px 18px 14px; font-size: 0.8rem; color: var(--ink-soft); border-top: 1px dashed var(--line); font-family: var(--font-mono); letter-spacing: 0.04em; }
+.back { transform: rotateY(180deg); background: var(--caution-soft); }
+.back .strip { background: var(--ink); color: var(--bg); padding: 38px 16px 8px; font-family: var(--font-display); text-transform: uppercase; font-weight: 700; letter-spacing: 0.04em; font-size: 1.1rem; line-height: 1.05; }
+.back .body { padding: 14px 18px 16px; display: grid; gap: 10px; align-content: start; font-size: 0.95rem; line-height: 1.45; }
+.back .label { font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-soft); display: block; margin-bottom: 1px; }
+.back .ask { border-top: 1px dashed var(--ink-soft); padding-top: 10px; font-weight: 500; }
+@media (prefers-reduced-motion: reduce) {
+  .card-inner { transition: none; transform-style: flat; }
+  .card[aria-pressed="true"] .card-inner { transform: none; }
+  .back { transform: none; }
+  .face { backface-visibility: visible; }
+  .card .back { visibility: hidden; }
+  .card[aria-pressed="true"] .back { visibility: visible; }
+  .card[aria-pressed="true"] .front { visibility: hidden; }
+}
+
+/* ticket */
+.ticket { background: var(--surface); border: 2px dashed var(--ink); padding: 8px 20px 18px; position: relative; }
+.ticket-intro { margin: 14px 0 4px; color: var(--ink-soft); font-size: 0.95rem; }
+.q { border: 0; border-top: 1px solid var(--line); margin: 0; padding: 16px 0 14px; min-width: 0; }
+.q:first-of-type { border-top: 0; }
+.q legend { font-weight: 600; padding: 0; margin-bottom: 8px; float: left; width: 100%; }
+.q .opts { clear: both; display: grid; gap: 8px; }
+.opts { display: grid; gap: 8px; }
+.opt { font: inherit; text-align: left; padding: 10px 14px; background: var(--bg); color: var(--ink); border: 2px solid var(--line); border-radius: 3px; cursor: pointer; }
+.opt:hover:not(:disabled) { border-color: var(--ink); }
+.opt:disabled { cursor: default; }
+.opt.right { background: var(--good-soft); border-color: var(--good); }
+.opt.wrong { background: var(--bad-soft); border-color: var(--bad); }
+.fb { margin: 8px 0 0; font-size: 0.93rem; color: var(--ink-soft); }
+.fb b { color: var(--ink); }
+.ticket-foot { margin-top: 10px; display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+.ticket-foot p { margin: 0; font-weight: 500; }
+.btn { font: inherit; font-weight: 600; font-size: 0.92rem; padding: 8px 14px; background: var(--surface); color: var(--ink); border: 2px solid var(--ink); border-radius: 3px; cursor: pointer; }
+.btn:hover { background: var(--ink); color: var(--bg); }
+
+/* talk it over */
+.talk { display: grid; gap: 14px; }
+.talk .qs { background: var(--surface); border: 1px solid var(--line); padding: 16px 22px 16px 40px; margin: 0; display: grid; gap: 8px; }
+details.scn { background: var(--surface); border: 1px solid var(--line); border-left: 6px solid var(--caution); padding: 14px 18px; }
+details.scn summary { cursor: pointer; font-family: var(--font-display); text-transform: uppercase; letter-spacing: 0.03em; font-size: 1.3rem; font-weight: 700; }
+details.scn .setup { margin: 10px 0 8px; }
+details.scn .good { margin: 12px 0 0; padding: 10px 14px; background: var(--good-soft); border-left: 6px solid var(--good); }
+details.scn .good b { font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.08em; text-transform: uppercase; display: block; }
+details.scn .good ul { margin: 6px 0 0; padding-left: 1.1em; }
+.parent { background: var(--caution-soft); border: 2px solid var(--caution); padding: 12px 16px; }
+.parent b { font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.08em; text-transform: uppercase; display: block; }
+.parent p { margin: 4px 0 0; }
+
+/* practice questions */
+.pr-intro { margin: 0 0 14px; color: var(--ink-soft); max-width: 66ch; }
+.pr { background: var(--surface); border: 1px solid var(--line); margin-bottom: 18px; }
+.pr-head { display: flex; flex-wrap: wrap; gap: 6px 14px; justify-content: space-between; align-items: baseline; padding: 10px 18px; background: var(--ink); color: var(--bg); font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.06em; text-transform: uppercase; }
+.ask-block { padding: 14px 18px 16px; }
+.ask-block + .ask-block { border-top: 2px dashed var(--line); }
+.ask-block.formal { background: var(--bg); }
+.step-label { margin: 0 0 6px; font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); }
+.pr-q { margin: 0 0 10px; font-weight: 600; font-size: 1.05rem; max-width: 62ch; }
+.bridge { padding: 14px 18px 16px; border-top: 2px dashed var(--line); background: var(--caution-soft); }
+.bridge .step-label { color: var(--ink); }
+.bridge ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+.bridge li { display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); gap: 10px; align-items: baseline; }
+.bridge .you { font-style: italic; }
+.bridge .arrow { font-family: var(--font-mono); color: var(--ink-soft); }
+.bridge .pub { font-weight: 600; }
+@media (max-width: 520px) { .bridge li { grid-template-columns: minmax(0, 1fr); gap: 0; } .bridge .arrow { display: none; } .bridge .pub::before { content: "Textbook: "; font-weight: 400; font-family: var(--font-mono); font-size: 11px; color: var(--ink-soft); } .bridge .you::before { content: "You say: "; font-style: normal; font-family: var(--font-mono); font-size: 11px; color: var(--ink-soft); } }
+
+/* final checklist */
+.final { margin-top: 56px; border-top: 8px solid var(--ink); padding-top: 18px; }
+.final h2 { font-size: clamp(1.9rem, 5vw, 2.6rem); font-weight: 700; }
+.final .lead { color: var(--ink-soft); max-width: 62ch; margin: 10px 0 16px; }
+.note { margin: 28px 0 0; font-size: 0.9rem; color: var(--ink-soft); max-width: 70ch; }
+footer { margin-top: 48px; background: var(--band); color: #AEBBC7; padding-block: 26px 30px; font-size: 0.92rem; }
+footer strong { color: var(--band-ink); }
+footer p { margin: 0 0 6px; }
+</style>
+
+</head>
+<body>
+
+<header class="band">
+  <div class="wrap">
+    <span class="eyebrow">EVIT Electrical · Loved Ones Study Guide</span>
+    <h1>Introduction to<br>Material Handling</h1>
+    <p class="sub">A Loved Ones Study Guide for NCCER Core, Module 00109: Introduction to Material Handling</p>
+    <p class="byline">Mr. Ellis CTE — General Construction &amp; Electrical Teacher · High School &amp; Adult Pre-Apprentice Programs</p>
+    <nav class="jump" aria-label="Sections">
+      <a href="#s1">1 · Basics and lifting</a>
+      <a href="#s2">2 · Stacking and heights</a>
+      <a href="#s3">3 · Knots</a>
+      <a href="#s4">4 · Manual equipment</a>
+      <a href="#s5">5 · Motorized equipment</a>
+      <a href="#review">Loved ones review</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<div class="wrap">
+
+  <div class="intro">
+    <div class="panel">
+      <h2>Why this guide exists</h2>
+      <p>You do not need to work in construction to support a construction student. Your job is to help your student explain what they are learning and put it in their own words. Material handling is about moving things without hurting anyone, so the habit worth building is stopping to think, dressing for the job and asking for help before a lift or a move goes wrong.</p>
+      <p>If your student can read it and explain it, they are learning it. That is the whole idea.</p>
+    </div>
+    <div class="panel">
+      <h2>How to use each section</h2>
+      <p>Plan about 20 to 30 minutes per section. The student does most of the talking. You do not need the answers ahead of time.</p>
+      <ol>
+        <li><b>Read it together.</b> Plain-English version of the module section.</li>
+        <li><b>Study review points.</b> The must-know facts. Tick each one when your student can say it back.</li>
+        <li><b>Trade-term cards.</b> Tap a card to flip it.</li>
+        <li><b>Ticket out the door.</b> A quick recall check, just for practice.</li>
+        <li><b>Talk it over.</b> Questions and a real-world scenario.</li>
+        <li><b>Practice questions.</b> Each one comes twice: first in plain English, then in the textbook's words, so your student learns to recognize both.</li>
+      </ol>
+    </div>
+  </div>
+
+  <aside class="notice" aria-labelledby="safe-h">
+    <h2 id="safe-h">Good to know before you start</h2>
+    <p>This guide explains material handling so your student can talk about it. It does not train or certify anyone to operate equipment. The module says operators of motorized material handling equipment must be trained, certified and authorized for each type of equipment they use. Weights, heights and limits come from the textbook. Always follow the rules that apply at your student's school or job site, and the manufacturer's instructions for each piece of equipment. No student names or grades appear here, and nothing you tick or tap on this page is saved or sent anywhere.</p>
+  </aside>
+
+  <!-- SECTION 1 -->
+  <section class="sec" id="s1" aria-labelledby="s1-h">
+    <div class="sec-head">
+      <span class="eyebrow">Module Part 1 of 5 · Sections 1.0.0 to 1.1.3</span>
+      <h2 id="s1-h">Material Handling Basics</h2>
+      <p class="obj">By the end of this section your student can explain why manual handling is a leading cause of injury, plan a task before touching the load, dress safely for it, and describe a safe lift and a safe lowering.</p>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">A</span><h3>Read it together</h3><span class="time">about 30 min</span></div>
+      <div class="prose">
+        <p class="big">Lifting, stacking, carrying and unloading are routine on a job site. Most of the harm comes from skipping the thinking part. The habit this section builds is simple: plan first, dress right, then lift with your legs.</p>
+
+        <h4>Why it matters (1.0.0)</h4>
+        <p>Manual material handling is on almost every construction site, and it is one of the leading causes of non-fatal injuries in the industry. The module cites the Bureau of Labor Statistics: each year more than one million workers suffer back injuries, and about one of every five workplace injuries or illnesses involves the back.</p>
+        <p>A <b>load</b> is the quantity of material a person, machine, vehicle or piece of equipment carries, transports or relocates at one time. Wood, brick, lumber and pipe are all loads. Whenever you handle material there is a risk of injury, so stay aware of what you are doing and follow the basic rules.</p>
+
+        <h4>Pre-task planning (1.1.1)</h4>
+        <p>Being mentally fit matters as much as being physically fit. Most handling accidents happen to workers who are new and inexperienced, or to very experienced workers who think an accident cannot happen to them. Before you lift anything, assess the situation:</p>
+        <ul>
+          <li>Check that the load is not too big, too heavy or too hard to grasp.</li>
+          <li>Look for protruding nails, wires or sharp edges.</li>
+          <li>Make sure it is something you can lift by yourself. If not, ask a co-worker.</li>
+          <li>Inspect the path of travel for slip, trip and fall hazards. Move them or go around them.</li>
+          <li>Read any warning labels or instructions on the material, so you know the dangers of mishandling that product.</li>
+        </ul>
+
+        <h4>Personal protective equipment (1.1.2)</h4>
+        <ul>
+          <li>No loose clothing that can catch on moving or protruding parts. Button sleeves and tuck in shirt tails.</li>
+          <li>Remove rings and jewelry. Tie long hair back and keep it under the hard hat.</li>
+          <li>If you wear a wristwatch, make it one that breaks away easily if it gets caught in machinery.</li>
+          <li><b>Gloves</b> whenever cuts, splinters, blisters or other hand injuries are possible. They must fit properly: gloves that are too tight add hand fatigue, but loose gloves reduce grip strength and can catch on moving objects. They should be snug with reasonable dexterity.</li>
+          <li>Take gloves <b>off</b> around rotating machinery and equipment with exposed moving parts.</li>
+          <li>Follow your employer's policies and the job site's policies.</li>
+        </ul>
+
+        <h4>Proper lifting and lowering (1.1.3)</h4>
+        <p>Find the weight of the load first and plan the lift. Know where it is going and clear slip and trip hazards from the path. Know your limits. If the load is too heavy alone, ask for help.</p>
+        <ol>
+          <li>Get firm footing, space your feet for balance, bend your knees and get a good grip.</li>
+          <li><b>Lift with your legs.</b> Keep your back straight and your head up.</li>
+          <li><b>Keep the load close to your body.</b> Do not reach out with it.</li>
+          <li>Never turn or twist until you are standing straight. Then pivot your feet and body.</li>
+          <li>To set a load down, use your leg muscles. Move your fingers out of the way so they do not get pinched or crushed. Where possible, attach handles to the load.</li>
+        </ol>
+        <div class="scroll"><table>
+          <caption>Ask a co-worker for help when</caption>
+          <thead><tr><th>Situation</th><th>Examples from the module</th></tr></thead>
+          <tbody>
+            <tr><td><b>Too heavy</b></td><td>Weighing 50 pounds or more for one person to carry alone.</td></tr>
+            <tr><td><b>Too long</b></td><td>Objects longer than 10 feet, such as lumber, conduit, pipe and scaffolding poles.</td></tr>
+            <tr><td><b>Wind can grab it</b></td><td>Plywood and tarps, which wind gusts can push around.</td></tr>
+          </tbody>
+        </table></div>
+        <p>Sometimes the trouble is the shape of the load, not its weight. Secure long or cumbersome objects. Tie floppy rods, pipe or lumber together in several places before carrying, and never carry more pieces than you can control. When you turn with a long object, watch for people and things it could strike, and never swing around quickly. Never pass material to another worker unless that person is looking directly at you and expecting it.</p>
+
+        <h4>Lowering heavy loads from overhead (1.1.3)</h4>
+        <p>Reaching and lowering from overhead is very dangerous. When lifting you can always stop and put the load down if it is too heavy. Lowering from overhead, it is usually too late by the time you realize it. Reaching above shoulder height also stresses the shoulders and back and forces awkward hand and wrist positions.</p>
+        <ul>
+          <li><b>Size up the load.</b> If it looks too heavy to have been lifted there by one person, it is probably too heavy for one person to take down. Ask yourself how it got up there. The way it went up is probably the best way to bring it down.</li>
+          <li>Lower it the way you would lift it: knees bent, back straight. To place it to one side, move your feet instead of twisting.</li>
+          <li>Treat the area below as a <b>fall zone</b>. Do not let anyone enter while the load is coming down.</li>
+        </ul>
+        <div class="case"><b>Protect your back</b>Exercise, good posture, a healthy weight and diet can help prevent back injuries, and a doctor can advise on muscle-strengthening for the back.</div>
+
+      </div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">B</span><h3>Study review points</h3></div>
+      <ul class="points" data-points="1"></ul>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">C</span><h3>Trade-term cards</h3></div>
+      <div class="deck" data-cards="1"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">D</span><h3>Ticket out the door</h3></div>
+      <div class="ticket" data-quiz="1"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">E</span><h3>Talk it over</h3></div>
+      <div class="talk" data-talk="1"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">F</span><h3>Practice questions</h3><span class="time">about 15 min</span></div>
+      <div data-practice="1"></div>
+    </div>
+  </section>
+
+  <!-- SECTION 2 -->
+  <section class="sec" id="s2" aria-labelledby="s2-h">
+    <div class="sec-head">
+      <span class="eyebrow">Module Part 2 of 5 · Sections 1.2.0 to 1.2.2</span>
+      <h2 id="s2-h">Stacking, Storing and Working from Heights</h2>
+      <p class="obj">By the end of this section your student can explain why materials are stacked and stored properly, give the stacking rules for common materials, and describe how to get tools and material to a higher level safely.</p>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">A</span><h3>Read it together</h3><span class="time">about 25 min</span></div>
+      <div class="prose">
+        <p class="big">Everyone on the site, and everything on it, should be safe from unexpected movement such as falling, slipping, tipping, rolling or blowing over. Good stacking and storing is how that happens.</p>
+
+        <h4>Why stacking and storing matter (1.2.1)</h4>
+        <p>Stacked materials stay out of the way of other work, are better organized and easier to reach, make safe storage and free up room. Store materials and equipment properly when they are not in use, and learn your company and site rules and the guidelines of the US Occupational Safety and Health Administration (OSHA). Poor storage can lead to accidents, injuries, wasted material, higher job costs and project delays.</p>
+        <p>The module's examples: lumber stored with the nails still in can puncture workers who pull it out again. Materials stacked on the ground that belong on a pallet have to be moved again and can be damaged. Tools left out make an untidy site that invites accidents and lost tools. If you are unsure how to store something, ask your supervisor.</p>
+
+        <div class="scroll"><table>
+          <caption>Stacking and storing rules</caption>
+          <thead><tr><th>Material</th><th>Rule</th></tr></thead>
+          <tbody>
+            <tr><td><b>Aisles</b></td><td>Keep aisles and passageways in the storage area clear.</td></tr>
+            <tr><td><b>Cartons</b></td><td>Keep them away from rain and moisture. Never stack them higher than the height listed on the carton.</td></tr>
+            <tr><td><b>Lumber</b></td><td>Stack on level, solidly supported surfaces. Remove all nails.</td></tr>
+            <tr><td><b>Pipe</b></td><td>Stack neatly, chocked so it cannot roll. Stack pipe and fittings by size so nobody has to dig for the piece they need.</td></tr>
+            <tr><td><b>Drums, tanks, reels, trailers, wagons</b></td><td>Chock all material and equipment as needed to stop shifting or rolling. The chock size and shape must suit the material.</td></tr>
+            <tr><td><b>Light, large-surface material</b></td><td>Tie down or band anything the wind might move.</td></tr>
+            <tr><td><b>Bagged material</b></td><td>Do not stack the same width to the top. Step the layers back and cross-key the bags at least every 10 bags high.</td></tr>
+            <tr><td><b>Bricks</b></td><td>No higher than 7 feet. Taper the stack back 2 inches for every foot above 4 feet.</td></tr>
+            <tr><td><b>Masonry blocks</b></td><td>Taper back one-half block per tier above 6 feet.</td></tr>
+            <tr><td><b>Flammables such as gasoline</b></td><td>Store in a well-ventilated area away from ignition, or in an approved flammable storage cabinet.</td></tr>
+          </tbody>
+        </table></div>
+
+        <h4>Working from heights (1.2.2)</h4>
+        <p>Moving material to a higher location takes good planning and safety awareness.</p>
+        <ul>
+          <li>Use a <b>safety harness with a fall-arrest lanyard</b> connected to an appropriate anchor point when working from heights over <b>six feet</b>. A positioning belt with a lanyard can be added if required.</li>
+          <li><b>Never throw</b> tools or materials up to a worker on a higher level or down to a worker on a lower level. Use a <b>rope</b> to raise and lower them. Once the material is up, tie off the rope and secure the material so it cannot fall.</li>
+          <li>Before climbing a ladder, check your pockets and tool belt so nothing falls out or snags. Keep your hands free. Never carry tools or material by hand up a ladder. Put objects in a <b>bucket</b> to send them up and down.</li>
+          <li>Never stack or store materials on scaffolds or runways. It raises the chance of falling-object hazards, especially in high-traffic areas.</li>
+        </ul>
+        <div class="case"><b>Going green</b>When cleaning up around the site, check whether materials can be reused or recycled before throwing them in the trash.</div>
+
+      </div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">B</span><h3>Study review points</h3></div>
+      <ul class="points" data-points="2"></ul>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">C</span><h3>Trade-term cards</h3></div>
+      <div class="deck" data-cards="2"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">D</span><h3>Ticket out the door</h3></div>
+      <div class="ticket" data-quiz="2"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">E</span><h3>Talk it over</h3></div>
+      <div class="talk" data-talk="2"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">F</span><h3>Practice questions</h3><span class="time">about 10 min</span></div>
+      <div data-practice="2"></div>
+    </div>
+  </section>
+
+  <!-- SECTION 3 -->
+  <section class="sec" id="s3" aria-labelledby="s3-h">
+    <div class="sec-head">
+      <span class="eyebrow">Module Part 3 of 5 · Sections 1.3.0 to 1.3.4</span>
+      <h2 id="s3-h">Knots for Material Handling</h2>
+      <p class="obj">By the end of this section your student can use the knot-tying vocabulary, and say what the square knot, bowline, half hitch and clove hitch are used for and where each is weak.</p>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">A</span><h3>Read it together</h3><span class="time">about 30 min</span></div>
+      <div class="prose">
+        <p class="big">Knots and hitches fasten ropes to each other or to an object such as a beam or container. On a job site they secure loads, steady scaffolding, and raise and lower tools and supplies. Using the right knot for the job is critical.</p>
+
+        <h4>Knot basics (1.3.0)</h4>
+        <p>Most knots are permanent. They have to be untied to come apart. The ones called <b>hitches</b> are not permanent: pull the ropes in the reverse of the direction they hold and they undo. This section covers four knots: the square knot, the bowline, the half hitch and the clove hitch.</p>
+        <div class="scroll"><table>
+          <caption>Knot-tying words</caption>
+          <thead><tr><th>Term</th><th>Meaning</th></tr></thead>
+          <tbody>
+            <tr><td><b>Standing end</b></td><td>The long end of the rope, the end not being knotted.</td></tr>
+            <tr><td><b>Working end</b></td><td>The short end, the end being used to tie the knot.</td></tr>
+            <tr><td><b>Standing part</b></td><td>The portion of rope between the standing end and the working end.</td></tr>
+            <tr><td><b>Capsize</b></td><td>To change the form and rearrange the parts of a knot, usually by pulling on certain ends. It can be done on purpose to undo a hitch. A knot used wrongly can capsize on its own, and that is a serious hazard.</td></tr>
+          </tbody>
+        </table></div>
+        <p>Two more points: many knots can be tied more than one way, but if the technique is followed correctly the finished knot is the same. And knots can be tied right-handed or left-handed. A left-handed knot is the mirror image of the right-handed one. A few knots have both a right-handed and a left-handed element, so keep both or you will tie the wrong knot.</p>
+
+        <h4>The square knot (1.3.1)</h4>
+        <p>Also called a <b>reef knot</b>. It is made of two reverse half-knots. Use it to tie the ends of a rope around an object such as a parcel or the neck of a sack, or to join two lengths of rope in <b>low-strain</b> jobs. The two ropes should be about the same diameter, or the knot is more likely to slip.</p>
+        <div class="warn"><b>Never for critical loads</b>Square knots can capsize easily. Extra half knots are often added for security.</div>
+        <p><b>To tie it:</b> bring the two working ends together, one pointing left and one right. Cross left over right, then pass the left one under the right. That is one half knot. Repeat the over-and-under, but right over left this time. The end that started on top must stay on top when you switch direction. Pull the ends tight for a neat, symmetrical knot.</p>
+        <div class="case"><b>The granny knot</b>The most common mistake is tying the second half knot in the wrong direction. That makes a granny knot, which is highly insecure.</div>
+
+        <h4>The bowline (1.3.2)</h4>
+        <p>The bowline makes a <b>secure loop in the end of a rope</b> that neither slips nor jams. It is nicknamed the <b>rescue knot</b> and the <b>king of knots</b>, because it is reliable enough for rescue work (usually backed up with a stopper knot, or tied twice as a double bowline). It is handy for hoisting a sack of material or a bucket of tools up to a platform. Two bowlines linked together can join two ropes when the strain is more than a square knot can handle.</p>
+        <ul>
+          <li>It does not slip or bind under load and is easy to untie when there is no load.</li>
+          <li>It cannot be tied or untied with a load on the standing end, so avoid it if the rope may need to be released under load.</li>
+          <li>It can reduce the strength of the rope it is tied in by as much as <b>40 percent</b>.</li>
+          <li>It needs a <b>long tail</b> for safety. The module's rarely practiced rule of thumb is a tail as long as 12 times the rope's circumference, which is more than 18 inches for a half-inch rope.</li>
+        </ul>
+        <p><b>To tie it:</b> form a small loop in the rope, leaving enough tail for the size of main loop you want. Pass the tail through the small loop, then under the standing end, then back down through the small loop. Adjust the main loop, tighten, and keep a long enough tail. A memory trick from the module: the rabbit comes out of the hole, goes around the tree, and goes back into the hole.</p>
+
+        <h4>The half hitch (1.3.3)</h4>
+        <p>A half hitch ties a rope around an object such as a rail, bar, post or ring. It is used to hang items from overhead beams and to carry light loads that must come off easily. It is also a building block in other knots, such as the clove hitch. On its own it is <b>not very stable</b>, so it is not suitable for heavy loads or any task where safety is paramount. It is often used to back up another knot that is already tied.</p>
+        <p><b>To tie it:</b> form a loop around the object. Pass the tail around the standing part and through the loop. Tighten by pulling the working end and the standing part at the same time.</p>
+
+        <h4>The clove hitch (1.3.4)</h4>
+        <p>Also called a <b>builder's hitch</b>. It is one of the most widely used general hitches, and it is made of <b>two half hitches in opposite directions</b>. It makes a quick, secure tension knot on a fixed anchor such as a post, pole or beam, and it can be the first knot when lashing items together. Because it is a tension knot, it comes loose as soon as the tension is removed. It can also bind. For these reasons, do not use it by itself. Extra half hitches can make it more secure.</p>
+        <ul>
+          <li><b>Threading the end:</b> pass the working end over the object, back over the standing part and over the object again (first half hitch), then thread it back under itself and up through the loop (second half hitch). Pull both ends evenly.</li>
+          <li><b>Stacked loops:</b> make two identical loops, one in each hand, cross them one above the other, drop the knot over a stake or post and pull both ends. It can be tied anywhere in a rope, not only at an end.</li>
+          <li><b>Two half hitches on a post:</b> form a loop and put it over the post, form a second identical loop and put it over the post too, then tighten.</li>
+        </ul>
+        <div class="case"><b>Did you know?</b>The module says records of the clove hitch go back at least 10,000 years.</div>
+        <p>The module's performance task: demonstrate how to tie <b>two</b> of the four knots (square knot, bowline, half hitch, clove hitch) under supervision.</p>
+
+      </div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">B</span><h3>Study review points</h3></div>
+      <ul class="points" data-points="3"></ul>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">C</span><h3>Trade-term cards</h3></div>
+      <div class="deck" data-cards="3"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">D</span><h3>Ticket out the door</h3></div>
+      <div class="ticket" data-quiz="3"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">E</span><h3>Talk it over</h3></div>
+      <div class="talk" data-talk="3"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">F</span><h3>Practice questions</h3><span class="time">about 10 min</span></div>
+      <div data-practice="3"></div>
+    </div>
+  </section>
+
+  <!-- SECTION 4 -->
+  <section class="sec" id="s4" aria-labelledby="s4-h">
+    <div class="sec-head">
+      <span class="eyebrow">Module Part 4 of 5 · Sections 2.0.0 to 2.1.9</span>
+      <h2 id="s4-h">Non-Motorized Material Handling Equipment</h2>
+      <p class="obj">By the end of this section your student can name the manual equipment in the module, say what each is used for, and give the main safety rule for each one.</p>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">A</span><h3>Read it together</h3><span class="time">about 30 min</span></div>
+      <div class="prose">
+        <p class="big">Instead of lifting heavy loads by hand, use a material handling device when one is available. These devices ease the strain on muscles and joints, raise productivity and lower the chance of dropping and damaging equipment or supplies. With non-motorized (manual) equipment, your own body supplies the force to move it.</p>
+
+        <h4>The list (2.1.0)</h4>
+        <p>Material carts, hand trucks, cylinder carts, drum dollies, drum carts, roller skids, wheelbarrows, pipe mules, pipe transports and pallet jacks.</p>
+
+        <h4>Material carts (2.1.1)</h4>
+        <p>Also called platform trucks: a platform or board laid flat on four caster wheels, used to move material around a job site.</p>
+        <ul>
+          <li>Check that casters roll and swivel freely. With pneumatic tires, check air pressure. Replace tires that will not hold air or have flat spots.</li>
+          <li>Check the surface has enough traction to avoid slips. Keep your hands away from the edges of the handles to avoid pinching, crushing or cutting them.</li>
+          <li>Center and secure the load so it cannot roll or fall off.</li>
+          <li>If material sticks out in front, have a <b>spotter</b> walk ahead to help you avoid objects and other workers.</li>
+          <li>Be careful on inclines and declines and never go over the labeled weight capacity, which must be marked in plain view. On a decline a too-heavy load can drag you down with it, and on an incline it can back over you.</li>
+        </ul>
+
+        <h4>Hand trucks (2.1.2)</h4>
+        <p>Also called <b>dollies</b>. Two-wheeled, vertical carts with a metal blade at the bottom that slides under a large, heavy load such as an appliance or a stack of heavy boxes. Many have ratchet straps.</p>
+        <ul>
+          <li>Before use, inspect the framework for <b>stress fractures</b> and check the tires.</li>
+          <li>To load: tilt the object forward, slide the blade under it, hold it against the frame and tilt back onto the wheels.</li>
+          <li>Secure it with a <b>ratchet strap</b>, buckled around the load and tightened snug. Rubber or bungee-style cords may not hold if the weight shifts.</li>
+        </ul>
+
+        <h4>Cylinder carts (2.1.3)</h4>
+        <p>High-pressure gas cylinders must go on carts designed for compressed gases. Even an inert (not chemically reactive) gas under pressure can pose an explosion risk.</p>
+        <ul>
+          <li>Check the label to identify the gas and confirm the cylinder is approved for transport.</li>
+          <li>Never move a cylinder without the <b>safety cap screwed all the way down</b>. Never lift it by the cap. Never move it with the <b>regulator attached</b>.</li>
+          <li>Secure the cylinder upright with chains or straps. Many sites require a partition between the two bottles. Wear the right PPE.</li>
+        </ul>
+        <div class="warn"><b>Deadly projectile</b>If a compressed gas cylinder ruptures or cracks in transport, it can become a deadly projectile or explode into fragments of shrapnel.</div>
+
+        <h4>Drum dollies and drum carts (2.1.4)</h4>
+        <p>Chemicals, lubricants and other materials are often kept in 55-gallon drums, which are heavy and unwieldy when full. A <b>drum dolly</b> moves relatively light drums: a flat wheeled platform the drum sits on, sometimes with a strap or a pull handle. A <b>drum cart</b> moves heavier drums such as sealed oil drums. A common type is the rotating drum cart, with prongs, handles, wheels and heavy-duty casters.</p>
+        <p><b>Rotating drum cart:</b> with the cart held vertically, slide the prongs under the drum. Let the cart roll back to horizontal onto its wheels and casters. With the drum resting in the well, use the handles to steer it. At the destination, tip the cart vertical so the drum can be unloaded.</p>
+
+        <h4>Roller skids (2.1.5)</h4>
+        <p>A table surface on two, three or four roller skids. You put the material on the table and push. Heavy-equipment skids use steel or steel-chain rollers, and lighter-duty ones may use polyurethane or nylon. Inspect before use and respect the capacity. The floor must be fairly smooth, since small rocks or hardware can stop the rollers, so sweep the route first.</p>
+
+        <h4>Wheelbarrows (2.1.6)</h4>
+        <p>One- or two-wheeled with handles at the rear, for small loads. Use <b>two-wheeled</b> wheelbarrows on job sites because they are more stable with heavy loads. Check the air pressure in both tires and the body for cracks, breaks or punctures. Use proper lifting technique.</p>
+
+        <h4>Pipe mules and pipe transports (2.1.7 and 2.1.8)</h4>
+        <p>A <b>pipe mule</b> is a two-wheeled device for medium-length pipe, tubing or scaffolding. It is also called a tunnel buggy, a V-cart, or by a brand name, a grasshopper. To load, one worker lifts one end of the load while another rolls the mule underneath, with the wheels under the center of the load. Use a spotter with any long load.</p>
+        <p>A <b>pipe transport</b> is similar but moves larger pipe, slung under a frame on two rubber wheels. It takes <b>two people</b> to operate.</p>
+        <div class="warn"><b>Pinch points</b>When securing chains around the pipe on a pipe transport, watch for pinch points. Do not overload it, follow the manufacturer's recommendations and keep both hands on the handle to stay in control.</div>
+
+        <h4>Pallet jacks (2.1.9)</h4>
+        <p>Also called a <b>pallet truck</b>. It typically uses hydraulics to lift and move heavy or stacked pallets. Motorized versions exist and are sometimes called walkies.</p>
+        <ul>
+          <li>Plan and review the route. Be very careful on uneven surfaces or ramps.</li>
+          <li>Inspect before use for malfunctions and missing parts. Check hydraulic fittings and hoses for oil leaks and repair leaks before using it.</li>
+          <li>Never exceed the rated capacity posted on the jack.</li>
+          <li>Check the wood pallet is in good condition and the load is centered between the forks.</li>
+        </ul>
+
+      </div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">B</span><h3>Study review points</h3></div>
+      <ul class="points" data-points="4"></ul>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">C</span><h3>Trade-term cards</h3></div>
+      <div class="deck" data-cards="4"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">D</span><h3>Ticket out the door</h3></div>
+      <div class="ticket" data-quiz="4"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">E</span><h3>Talk it over</h3></div>
+      <div class="talk" data-talk="4"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">F</span><h3>Practice questions</h3><span class="time">about 20 min</span></div>
+      <div data-practice="4"></div>
+    </div>
+  </section>
+
+  <!-- SECTION 5 -->
+  <section class="sec" id="s5" aria-labelledby="s5-h">
+    <div class="sec-head">
+      <span class="eyebrow">Module Part 5 of 5 · Sections 2.2.0 to 2.2.6</span>
+      <h2 id="s5-h">Motorized Equipment and Hand Signals</h2>
+      <p class="obj">By the end of this section your student can name the motorized equipment in the module, say who may operate it, describe safety around forklifts, and show why hand signals are used.</p>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">A</span><h3>Read it together</h3><span class="time">about 30 min</span></div>
+      <div class="prose">
+        <p class="big">Motorized material handling equipment runs on gasoline or electric motors. It can move far more than a person can, so the rules about who may run it and how it is checked are strict.</p>
+
+        <h4>Operators and general rules (2.2.0)</h4>
+        <p>Operators must be <b>trained, certified and authorized</b>. Training combines formal instruction, hands-on training and an evaluation of the operator's performance in the workplace, for each type of equipment, and it must be done by a person with the knowledge, training and experience. Certification is required for many, though not all, types.</p>
+        <p>When handling material with a machine such as a pallet jack or forklift, always:</p>
+        <ul>
+          <li>Know the weight of the object.</li>
+          <li>Know the capacity of the device and never exceed it.</li>
+          <li>Make sure the equipment is in good working order and free of damage.</li>
+          <li>Secure the load, and watch for obstructions such as people or equipment in the path.</li>
+        </ul>
+        <div class="case"><b>Nameplates</b>A nameplate must be posted on each material handling device showing its capacity, its approximate weight and any instructions.</div>
+
+        <h4>Powered wheelbarrow (2.2.1)</h4>
+        <p>Also called a <b>power buggy</b>. Like a manual wheelbarrow, but powered by an electric or gas motor. Before use, inspect it: brakes and linkages, tires and wheels (damage and pressure), directional, dumping and speed controls, and the safety labels and decals, which must be visible and readable.</p>
+        <ul>
+          <li>Avoid pinch points on the dumping mechanism.</li>
+          <li>Keep the dump bucket securely down except when dumping. Do not move the buggy with the bucket in the dumping position.</li>
+          <li>Do not mount or dismount while it is moving. No riders.</li>
+          <li>Avoid slopes that could tip it. Do not exceed load limits in weight or height.</li>
+          <li>When finished, shut off the engine and lock the parking brake.</li>
+        </ul>
+
+        <h4>Concrete mule (2.2.2)</h4>
+        <p>Also called a <b>Georgia buggy</b>. It is used when a concrete pour is somewhere a delivery truck or pump cannot reach. It carries concrete, sand, gravel or similar material, and should not carry undesignated materials.</p>
+        <ul>
+          <li>Inspect the tires, fluids, mechanical hinges and joints, and the throttle cables and steering.</li>
+          <li><b>Refueling:</b> the engine must be off and cooled down. Use only the fuel and oil the manufacturer specifies. This applies to any gas-powered handling machine.</li>
+          <li>When discharging near an open pit, use a tire stop board or chocks so the mule cannot roll forward into the pit.</li>
+          <li>Keep obstacles and people out of the turning radius of the rear platform. Look behind you before reversing. Only the operator rides.</li>
+        </ul>
+
+        <h4>Freight elevator (2.2.3)</h4>
+        <p>On multi-level sites, a freight elevator moves materials from floor to floor. Its doors usually close from the top and bottom at the same time, and unlike a passenger elevator they have no safety bumpers. The top door is pulled down by a strap or handle while the bottom door rises to meet it, with metal hitting metal. Keep arms, hands, fingers, tool belts, body harnesses and materials clear of the door, and check the weight capacity on the elevator wall before loading.</p>
+
+        <h4>Industrial forklift (2.2.4)</h4>
+        <p>A vehicle with a power-operated, pronged platform that is raised and lowered to go under a load. It lifts, lowers and moves large or heavy loads where the ground is smooth, such as warehouses and shops.</p>
+        <p><b>Working around one:</b></p>
+        <ul>
+          <li>Stay a safe distance from the <b>work zone</b>, the area where the machine may contact objects or people with its rear end or its forks.</li>
+          <li>Stay clear of the <b>fall zone</b>: directly under a load, and anywhere a suspended load could fall.</li>
+          <li>Use designated walkways, make eye contact with the operator and stay out of the driver's blind spot.</li>
+          <li>Forklifts pivot on the front wheels and steer with the back wheels, which creates a <b>pinch point</b>.</li>
+          <li>Plan an escape route. Never get trapped in a corner or against the side of a truck.</li>
+        </ul>
+        <p><b>Operating one (trained and certified operators only):</b> wear proper PPE and <b>fasten the seat belt</b>. Without it, a tip-over can pitch you under the forklift or drop part of the load on you. Wear a hard hat for falling objects. No baggy clothes. Never play on a forklift or drive recklessly.</p>
+        <div class="scroll"><table>
+          <caption>Daily forklift inspection</caption>
+          <thead><tr><th>Check</th></tr></thead>
+          <tbody>
+            <tr><td>Tires · fluid levels · battery or fuel level · fire extinguisher · brakes · deadman control · warning lights · horn · backup alarm</td></tr>
+          </tbody>
+        </table></div>
+        <p>Use a checklist if there is one and report any defect to your supervisor. The safest operators drive with slow deliberation. Forklifts are top-heavy and can tip on a curve, go off a dock edge or fail to stop in time. Drive at a speed that suits the location and surface, take extra care on hills, corners and ramps, keep right on roads and in wide aisles, stop at stop signs, and start and stop smoothly so loads do not shift. Keep arms, hands and legs inside the cage. <b>Pedestrians have the right-of-way.</b> Electric models are quiet, so people may not know you are there. Reversing is especially dangerous when you are watching the load in front.</p>
+        <div class="warn"><b>Never modify a forklift</b>Workers sometimes modify forklifts to move heavier or wider loads. That risks broken masts or forks, dropped loads and tip-overs. Never modify one without consent from the manufacturer or a mechanical engineer who knows the equipment.</div>
+
+        <h4>Rough terrain forklift (2.2.5)</h4>
+        <p>Built for irregular surfaces and jobs with no paved ground. It has large pneumatic tires with deep treads. Apply the same safety guidelines as for industrial forklifts. <b>Tip-overs</b> are one of the most common accidents, because the ground is uneven. To prevent them:</p>
+        <ul>
+          <li>Study the load charts and stay within the stability limits.</li>
+          <li>Before placing a load: apply the brakes, shift to neutral, level the frame and engage the stabilizers if equipped.</li>
+          <li>Carry the load low, and avoid driving with it raised except for short distances.</li>
+          <li>Be careful on slopes and stay within grade limits.</li>
+          <li>Retract the boom and lower the forks before moving.</li>
+        </ul>
+
+        <h4>Hand signals (2.2.6)</h4>
+        <p>Equipment noise and the distance between workers make talking difficult, so standard hand signals let workers and the operator lift, load, move and unload in a controlled way. There is no globally accepted standard. The ones in the module are common, and your employer may use a slightly different set. Before the task, the operator and the other workers must agree on the signals and what each one means. Keep eye contact with the operator at all times.</p>
+        <div class="scroll"><table>
+          <caption>Common forklift hand signals (Figure 33)</caption>
+          <thead><tr><th>Signal</th><th>How it is made</th></tr></thead>
+          <tbody>
+            <tr><td><b>Raise the tines</b></td><td>Forearm vertical, forefinger pointing up, hand moving in a small horizontal circle.</td></tr>
+            <tr><td><b>Lower the tines</b></td><td>Arm extended, palm down, arm lowered vertically.</td></tr>
+            <tr><td><b>Tilt mast back</b></td><td>Forearm vertical, thumb extended, thumb jerked over the shoulder.</td></tr>
+            <tr><td><b>Tilt mast forward</b></td><td>Arm extended, fingers closed, thumb pointing down, arm lowered vertically.</td></tr>
+            <tr><td><b>Move tines in direction finger points</b></td><td>Arm extended, palm down, forefinger pointing the way to move.</td></tr>
+            <tr><td><b>Dog (pause) everything</b></td><td>Hands clasped in front of the body.</td></tr>
+            <tr><td><b>Stop</b></td><td>Both arms extended, palms down.</td></tr>
+          </tbody>
+        </table></div>
+        <p>The <b>tines</b> are the L-shaped parts that support the load. <b>Dog everything</b> means pause. Use it when a risky situation comes up, such as rain starting, a load that does not fit the planned space or a bystander who gets too close.</p>
+        <div class="case"><b>Sidebars in the module</b>Tugs are battery-powered carts that push and pull loads, and their operators are not required to have the special training and certification a forklift operator needs. Hydrogen fuel cells are replacing lead-acid batteries in some forklifts, and they refuel in minutes. Biodiesel, a plant-oil-based fuel, can be mixed with regular diesel at any ratio. Automated forklifts are suited to repetitive horizontal travel along the same route.</div>
+
+      </div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">B</span><h3>Study review points</h3></div>
+      <ul class="points" data-points="5"></ul>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">C</span><h3>Trade-term cards</h3></div>
+      <div class="deck" data-cards="5"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">D</span><h3>Ticket out the door</h3></div>
+      <div class="ticket" data-quiz="5"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">E</span><h3>Talk it over</h3></div>
+      <div class="talk" data-talk="5"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">F</span><h3>Practice questions</h3><span class="time">about 20 min</span></div>
+      <div data-practice="5"></div>
+    </div>
+  </section>
+
+  <section class="final" id="review" aria-labelledby="fin-h">
+    <span class="eyebrow">After all five sections</span>
+    <h2 id="fin-h">Can your student explain it?</h2>
+    <p class="lead">The goal is not perfect wording. The goal is accurate understanding and good judgment. Tick each one when your student can explain it without looking at the page.</p>
+    <ul class="points" id="final-points"></ul>
+    <p class="note">The module prints 25 defined terms in its margins. They are spread across the sections where the book introduces them: none in Sections 1 and 2, eight in Section 3, 11 in Section 4 and six in Section 5. Cards marked "Key term" are important words from the module that are not defined in its margins. The practice questions come from the handbook's two Section Reviews (5 questions) and its Module Review (14 of its 15 questions; the one that depends on a picture of a knot is left out here). The answer keys are in the textbook's Appendix A, which is not part of the module pages used to build this guide, so every answer here was worked out from the module text and is marked on each question. Check them against the publisher's key before relying on them. The textbook-style versions are written in the book's style and vocabulary, not copied word for word, so check the handbook itself for the exact wording. This guide is a plain-language companion, not a copy of the textbook, and it does not train or certify anyone to operate equipment. Draft for instructor review.</p>
+  </section>
+
+</div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><strong>Mr. Ellis CTE</strong> · East Valley Institute of Technology (EVIT), Mesa, Arizona · Your Future, Your Way</p>
+    <p>Based on NCCER Core, Module 00109, Introduction to Material Handling.</p>
+    <p>Aim for perfection, take what you get.</p>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var POINTS = {
+    1: [
+      `<b>Manual handling</b> is one of the leading causes of non-fatal injuries in construction. More than one million workers a year suffer back injuries.`,
+      `<b>A load</b> is the quantity of material a person, machine, vehicle or equipment carries, transports or relocates at one time.`,
+      `<b>Plan before you lift:</b> is the load too big, heavy or hard to grasp? Any nails, wires or sharp edges? Can you lift it alone? Is the path clear? Read the warning labels.`,
+      `<b>Dress for it:</b> no loose clothing, no rings or jewelry, hair tied back under the hard hat, a break-away watch if any.`,
+      `<b>Gloves</b> go on when cuts or splinters are possible and must fit snug. Loose gloves reduce grip strength. Take them off around rotating machinery.`,
+      `<b>Lift with your legs,</b> back straight, head up, knees bent, firm footing, load close to your body.`,
+      `<b>Never turn or twist</b> with a load. Stand straight, then pivot your feet and body.`,
+      `<b>Ask for help</b> for loads of 50 pounds or more, objects longer than 10 feet, and anything the wind can catch, such as plywood and tarps.`,
+      `<b>Tie floppy rods, pipe or lumber</b> together in several places. Never carry more pieces than you can control.`,
+      `<b>Never pass material</b> to a worker unless that person is looking at you and expecting it.`,
+      `<b>Lowering from overhead</b> is dangerous. Size up the load, lower it the way you would lift it, and move your feet instead of twisting.`,
+      `<b>Treat the area below</b> a load being lowered as a fall zone and keep people out.`
+    ],
+    2: [
+      `<b>Stacking and storing</b> keeps materials organized, out of the way and safe, and avoids accidents, wasted material and delays.`,
+      `<b>Keep aisles and passageways clear.</b> Keep cartons away from rain and never stack them higher than the carton says.`,
+      `<b>Lumber:</b> level, solidly supported surface, all nails removed.`,
+      `<b>Pipe:</b> stacked neatly, by size, and chocked so it cannot roll. Chock any material or equipment that could shift or roll.`,
+      `<b>Tie down or band</b> light, large-surface-area materials that the wind could move.`,
+      `<b>Bagged material:</b> step the layers back and cross-key at least every 10 bags high.`,
+      `<b>Bricks:</b> no higher than 7 feet, tapered back 2 inches per foot above 4 feet. <b>Masonry blocks:</b> taper back one-half block per tier above 6 feet.`,
+      `<b>Flammables</b> go in a well-ventilated area away from ignition, or in an approved flammable cabinet.`,
+      `<b>Harness with fall-arrest lanyard</b> when working over six feet.`,
+      `<b>Never throw</b> tools or material up or down. Use a rope, then tie off and secure the material.`,
+      `<b>On a ladder,</b> keep your hands free, check your pockets and tool belt, and send items up in a bucket.`,
+      `<b>Never stack or store</b> materials on scaffolds or runways.`
+    ],
+    3: [
+      `<b>Hitches</b> are knots that are not permanent. Pull the ropes the opposite way and they come undone.`,
+      `<b>Standing end</b> is the long end not being knotted. <b>Working end</b> is the short end used to tie. <b>Standing part</b> is the rope between them.`,
+      `<b>Capsize</b> means the knot changes form and comes apart. A wrongly used knot can do it by itself.`,
+      `<b>Square knot (reef knot):</b> two reverse half knots that join two ropes of similar size in low-strain jobs or tie around a parcel or sack. <b>Never for critical loads.</b>`,
+      `<b>Granny knot</b> is the square knot tied wrong (the second half knot in the wrong direction). It is highly insecure.`,
+      `<b>Bowline:</b> a secure loop that does not slip or jam. Nicknamed the rescue knot and the king of knots. Good for hoisting a sack or tool bucket.`,
+      `<b>Bowline cautions:</b> it can cut rope strength by as much as 40 percent, it needs a long tail, and it cannot be tied or untied under load on the standing end.`,
+      `<b>Half hitch:</b> ties a rope around a rail, bar, post or ring for light loads. Not stable alone and never for heavy loads or safety-critical jobs. Used to back up other knots.`,
+      `<b>Clove hitch (builder's hitch):</b> two half hitches in opposite directions on a post, pole or beam. Quick and secure under tension, but it loosens when tension is removed and can bind.`,
+      `<b>Do not use a clove hitch alone.</b> Add half hitches to make it more secure.`,
+      `<b>Performance task:</b> demonstrate how to tie two of the four knots under supervision.`
+    ],
+    4: [
+      `<b>Material handling devices</b> reduce back injury risk, ease stress on muscles and joints, raise productivity and cut drops and damage.`,
+      `<b>Material cart (platform truck):</b> four caster wheels. Check casters and tires, center and secure the load, use a spotter for protruding loads, never exceed the labeled capacity.`,
+      `<b>On slopes,</b> a too-heavy cart can drag you down a decline or back over you on an incline.`,
+      `<b>Hand truck (dolly):</b> two wheels and a blade. Check the frame for stress fractures and the tires. Secure the load with a ratchet strap, not bungee cords.`,
+      `<b>Cylinder carts</b> carry compressed gas cylinders upright, chained or strapped, with the safety cap screwed down. Never lift by the cap or move with the regulator attached.`,
+      `<b>Drum dolly</b> moves lighter 55-gallon drums. <b>Drum cart</b> moves heavier drums using prongs, wheels and casters.`,
+      `<b>Roller skids</b> need a smooth, swept route and must be used only within their capacity. Heavy ones use steel rollers.`,
+      `<b>Wheelbarrow:</b> two-wheeled is recommended on job sites. Check both tires and the body, and lift properly.`,
+      `<b>Pipe mule</b> carries medium-length pipe, tubing or scaffolding with the wheels under the center of the load. Use a spotter.`,
+      `<b>Pipe transport</b> moves larger pipe and takes two people. Watch for pinch points and keep both hands on the handle.`,
+      `<b>Pallet jack (pallet truck):</b> plan the route, inspect it, check for hydraulic leaks, never exceed the posted capacity, center the load between the forks.`
+    ],
+    5: [
+      `<b>Motorized equipment</b> is operated only by operators who are trained, certified and authorized for that equipment.`,
+      `<b>Know the weight</b> of the load and the capacity of the device, never exceed it, and make sure the equipment is in good working order.`,
+      `<b>Nameplates</b> show capacity, approximate weight and instructions.`,
+      `<b>Powered wheelbarrow (power buggy):</b> inspect brakes, tires, controls and labels. Bucket down when not dumping. No riders. Engine off and parking brake on when done.`,
+      `<b>Concrete mule (Georgia buggy):</b> reaches where trucks and pumps cannot. Engine off and cooled before refueling. Chock near a pit. Look behind before reversing.`,
+      `<b>Freight elevator:</b> its doors have no safety bumpers and close metal against metal. Keep body parts and gear clear and check the capacity.`,
+      `<b>Forklift work zone and fall zone:</b> keep clear of both, make eye contact with the operator, avoid blind spots and plan an escape route.`,
+      `<b>Forklift pinch point:</b> it pivots on the front wheels and steers with the back wheels.`,
+      `<b>Forklift operators</b> wear the seat belt and a hard hat, inspect daily, drive slowly, and give pedestrians the right-of-way.`,
+      `<b>Never modify a forklift</b> without approval from the manufacturer or a mechanical engineer.`,
+      `<b>Rough terrain forklift:</b> tip-overs are common. Study load charts, carry the load low, level the frame before placing, respect grade limits.`,
+      `<b>Hand signals</b> help when noise or distance makes talking hard. Agree on the signals before the task and keep eye contact with the operator.`,
+      `<b>Dog everything</b> means pause: hands clasped in front of the body.`
+    ]
+  };
+
+  var CARDS = {
+    1: [
+      { k: "k", t: `Load`, plain: `Whatever is being carried, moved or relocated at one time.`, book: `The quantity of material that can be carried, transported or relocated at one time by a machine, vehicle, piece of equipment or person.`, ask: `Name three loads you might handle on a job site.` },
+      { k: "k", t: `Pre-task planning`, plain: `Thinking before you lift.`, book: `Assess the load and the path of travel, read warning labels and decide whether you can lift it alone, before handling any material.`, ask: `What four things do you check before lifting?` },
+      { k: "k", t: `PPE`, plain: `The protective gear you wear for the job.`, book: `Personal protective equipment. For handling, it includes properly fitting gloves, a hard hat and clothing that cannot catch on moving parts.`, ask: `Why can loose gloves be a problem?` },
+      { k: "k", t: `Grip strength`, plain: `How firmly you can hold something.`, book: `Gloves that are too loose reduce grip strength and may get caught on moving objects or machinery.`, ask: `What should gloves feel like?` },
+      { k: "k", t: `Firm footing`, plain: `Standing steady with a balanced base.`, book: `As you lift, make sure you have firm footing, with your feet spaced far enough apart to keep balance and control of the load.`, ask: `Where should the load be, compared to your body?` },
+      { k: "k", t: `Pivot`, plain: `Turning by moving your feet, not by twisting your back.`, book: `Never turn or twist until you are standing straight. Then pivot your feet and body.`, ask: `Why not twist with a load in your hands?` },
+      { k: "k", t: `Fall zone`, plain: `The area where a load could land if it dropped.`, book: `The area a load is being lowered into. Do not allow people to enter while the load is being lowered.`, ask: `What do you do about people below you?` },
+      { k: "k", t: `Cumbersome load`, plain: `Awkward to carry even if it is not very heavy.`, book: `Sometimes it is the configuration, not the weight, that is troublesome. Secure long or cumbersome objects, and never carry more pieces than you can control.`, ask: `How do you handle floppy pipe or lumber?` }
+    ],
+    2: [
+      { k: "k", t: `Chock`, plain: `A wedge that keeps something from rolling.`, book: `Pipe, drums, tanks, reels, trailers and wagons are chocked as necessary to prevent shifting or rolling. The chock size and shape must suit the material.`, ask: `Name two things that should be chocked.` },
+      { k: "k", t: `Cross-keying`, plain: `Turning bag layers so they lock together.`, book: `Bagged material is stacked by stepping the layers back and cross-keying the bags at least every 10 bags high.`, ask: `Why not stack bags the same width to the top?` },
+      { k: "k", t: `Taper`, plain: `Making a stack narrower as it gets taller.`, book: `Bricks are tapered back two inches for every foot above four feet. Masonry blocks are tapered back one-half block per tier above six feet.`, ask: `What is the highest a brick stack may go?` },
+      { k: "k", t: `OSHA`, plain: `The US agency that sets workplace safety rules.`, book: `The US Occupational Safety and Health Administration. Learn its guidelines, and your company and site rules, for storing materials.`, ask: `Who do you ask if you are not sure how to store something?` },
+      { k: "k", t: `Fall-arrest lanyard`, plain: `A line that connects a safety harness to an anchor to stop a fall.`, book: `Use a safety harness with a fall-arrest lanyard connected to an appropriate anchor point when working from heights over six feet.`, ask: `At what height is it required?` },
+      { k: "k", t: `Anchor point`, plain: `A strong spot the safety line connects to.`, book: `The appropriate point to which the fall-arrest lanyard is connected.`, ask: `What does the lanyard attach the harness to?` },
+      { k: "k", t: `Tie off`, plain: `Fasten a rope so it cannot slip or let go.`, book: `Once material is lifted to an elevated level, tie off the rope and secure the material to keep it from falling.`, ask: `Why use a rope instead of throwing tools up?` }
+    ],
+    3: [
+      { k: "o", t: `Square knot`, plain: `A flat knot for joining two ropes of the same size in light jobs.`, book: `A knot made of two reverse half-knots and typically used to join the ends of two ropes of similar diameters; also called a reef knot.`, ask: `Why should it never be used for critical loads?` },
+      { k: "o", t: `Bowline`, plain: `A knot that makes a loop that will not slip or jam.`, book: `A knot used to form a loop that neither slips nor jams; sometimes referred to as a rescue knot or the king of knots.`, ask: `How much can it weaken the rope?` },
+      { k: "o", t: `Half hitch`, plain: `One turn around an object and back through, used alone for light jobs or as a building block.`, book: `A knot tied by passing the working end of a rope around an object, across the standing part of the rope, and then through the resulting loop; often used as an element in forming other knots or added to make other knots more secure.`, ask: `Why is it not enough on its own for heavy loads?` },
+      { k: "o", t: `Clove hitch`, plain: `Two opposite half hitches that grip a post under tension.`, book: `A knot that consists of two half hitches made in opposite directions; used to temporarily secure a rope to an object.`, ask: `What happens when the tension is removed?` },
+      { k: "o", t: `Standing end`, plain: `The long end of the rope, not part of the knot.`, book: `The end of a rope that is not being knotted.`, ask: `Which end do you tie with?` },
+      { k: "o", t: `Working end`, plain: `The short end you use to tie the knot.`, book: `The end of a rope that is being used to tie a knot.`, ask: `How is it different from the standing end?` },
+      { k: "o", t: `Standing part`, plain: `The rope between the two ends.`, book: `The portion of a rope that is between the standing end and the working end.`, ask: `Where does the half hitch pass the tail around?` },
+      { k: "o", t: `Capsize`, plain: `When a knot loses its shape and comes apart.`, book: `To change the form and rearrange the parts of a knot, usually by pulling on specific ends of the knot.`, ask: `Why can capsizing be a hazard?` },
+      { k: "k", t: `Hitch`, plain: `A knot you can undo by pulling the ropes the other way.`, book: `Knots that are not permanent are generally referred to as hitches. They can be undone by pulling the ropes in the reverse direction.`, ask: `Name one hitch from this module.` },
+      { k: "k", t: `Granny knot`, plain: `A square knot tied wrong.`, book: `Produced when the second half knot is tied in the wrong direction. It is highly insecure.`, ask: `What went wrong in the second half knot?` }
+    ],
+    4: [
+      { k: "o", t: `Material carts`, plain: `Flat four-wheeled carts for moving material around the site.`, book: `Four-wheeled devices used to transport materials around a job site.`, ask: `What are they also called?` },
+      { k: "o", t: `Hand trucks`, plain: `Two-wheeled upright carts that tip back to move heavy loads.`, book: `Two-wheeled carts that are used to transport large, heavy loads; also known as a dolly.`, ask: `What should you use to secure the load?` },
+      { k: "o", t: `Cylinder carts`, plain: `Carts made to move gas cylinders upright.`, book: `Two-wheeled carts that are used to transport cylinders, or bottles, of compressed gases.`, ask: `What two things must be done to the cylinder first?` },
+      { k: "o", t: `Drum dollies`, plain: `Wheeled platforms for lighter barrels.`, book: `Wheeled circular platforms or caddies with a handle that are used to transport lighter-weight 55-gallon drums/barrels.`, ask: `Why is a drum cart used for heavier drums?` },
+      { k: "o", t: `Drum carts`, plain: `Carts with prongs that move heavier barrels.`, book: `Wheeled carts that are used to transport heavier-weight 55-gallon drums/barrels.`, ask: `How do you pick up the drum?` },
+      { k: "o", t: `Roller skids`, plain: `A table on rollers to push heavy gear along.`, book: `Devices that include a surface table and two, three, or four roller skids. Materials that are to be moved are placed on the table surface and then pushed on the skids.`, ask: `Why sweep the route first?` },
+      { k: "o", t: `Wheelbarrows`, plain: `Handled carts for small loads, best with two wheels.`, book: `One- or two-wheeled vehicles with handles at the rear that are used to carry small loads.`, ask: `Why use a two-wheeled one on a job site?` },
+      { k: "o", t: `Pipe mules`, plain: `A two-wheeled carrier for medium-length pipe.`, book: `Two-wheeled devices used to transport medium-length pieces of pipe, tubing, or scaffolding; sometimes referred to as a tunnel buggy.`, ask: `Where do the wheels go on the load?` },
+      { k: "o", t: `Pipe transports`, plain: `A bigger carrier for large pipe that takes two people.`, book: `Wheeled devices similar to a pipe mule, but used to move larger pieces of pipe.`, ask: `What pinch point should you watch for?` },
+      { k: "o", t: `Pallet jacks`, plain: `A hydraulic lifter that moves loaded pallets.`, book: `Devices used to lift and move heavy or stacked pallets; also known as a pallet truck.`, ask: `What do you check for on the hydraulic parts?` },
+      { k: "o", t: `Spotter`, plain: `A helper who walks ahead to watch the path.`, book: `A person who walks in front of another worker who is carrying or transporting a long load to ensure there is a clear, unobstructed path.`, ask: `When do you need one?` },
+      { k: "k", t: `Ratchet strap`, plain: `A strap that tightens to hold a load on a hand truck.`, book: `Used to secure the load on a hand truck. Rubber or bungee-style cords may not hold the load if the weight shifts.`, ask: `Why not use a bungee cord?` }
+    ],
+    5: [
+      { k: "o", t: `Powered wheelbarrow`, plain: `A motor-driven wheelbarrow, also called a power buggy.`, book: `A vehicle similar to a manual wheelbarrow, but powered by an electric or gas motor; also known as a power buggy.`, ask: `What should the dump bucket be doing when you are not dumping?` },
+      { k: "o", t: `Concrete mule`, plain: `A Georgia buggy that hauls concrete where trucks cannot reach.`, book: `A wheeled device used when a concrete pour is in a location that a concrete delivery truck or pump cannot reach; sometimes referred to as a Georgia buggy.`, ask: `What must be true before you refuel it?` },
+      { k: "o", t: `Freight elevator`, plain: `An elevator for moving materials between floors.`, book: `An elevator used to transport materials from floor to floor.`, ask: `Why do its doors need extra care?` },
+      { k: "o", t: `Industrial forklift`, plain: `A powered lift with forks that goes under a load.`, book: `A vehicle with a power-operated pronged platform that can be raised and lowered for insertion under a load to be lifted and moved.`, ask: `Where is it typically used?` },
+      { k: "o", t: `Rough terrain forklift`, plain: `A forklift with big treaded tires for uneven ground.`, book: `Similar to an industrial forklift, but designed to be used on rough surfaces. Characterized by large pneumatic tires, usually with deep treads.`, ask: `What is one of the most common accidents with it?` },
+      { k: "o", t: `Work zone`, plain: `The danger area around a moving forklift.`, book: `The area in which a forklift may come in contact with objects or people, either with the rear end or the front forks.`, ask: `How is it different from a fall zone?` },
+      { k: "k", t: `Fall zone`, plain: `The area under or near a load where it could land.`, book: `The area directly beneath a load, plus any part of the area that suspended materials could possibly fall into. Stay clear of it.`, ask: `Why stay out of it?` },
+      { k: "k", t: `Tines`, plain: `The forks on a forklift.`, book: `The L-shaped parts that support the material load on a forklift.`, ask: `Show the signal for raising them.` },
+      { k: "k", t: `Deadman control`, plain: `A control that stops the machine if the operator lets go.`, book: `One of the items to inspect on a forklift before operating it each day.`, ask: `What else is on the daily inspection list?` },
+      { k: "k", t: `Dog everything`, plain: `The hand signal to pause everything.`, book: `Clasp hands in front of the body. It means pause, for risky situations such as rain starting, a load that does not fit, or a bystander getting too close.`, ask: `When would you use it?` }
+    ]
+  };
+
+  var QUIZ = {
+    1: [
+      { q: `Most material handling accidents happen to...`, o: [`Only new, inexperienced workers`, `New workers and very experienced workers who think it cannot happen to them`, `Workers who lift under 20 pounds`], a: 1, why: `Being mentally fit matters as much as being physically fit.` },
+      { q: `Which should you do when you lift?`, o: [`Keep your back straight and lift with your legs`, `Twist while you stand up`, `Hold the load away from your body`], a: 0, why: `Keep the load close, then pivot your feet and body instead of twisting.` },
+      { q: `Loose gloves can...`, o: [`Improve your grip`, `Reduce grip strength and catch on moving objects`, `Protect better than snug ones`], a: 1, why: `Gloves should be snug, with reasonable dexterity.` },
+      { q: `A load of 50 pounds or more...`, o: [`Is always safe alone`, `Calls for help from a co-worker`, `Should be thrown to a helper`], a: 1, why: `Also ask for help with objects over 10 feet long and anything wind can catch.` },
+      { q: `The area where a load is being lowered should be treated as a...`, o: [`Fall zone`, `Break area`, `Storage area`], a: 0, why: `Do not let people enter while the load is being lowered.` },
+      { q: `You may pass material to another worker...`, o: [`Any time you are done with it`, `Only when that person is looking at you and expecting it`, `If you say their name`], a: 1, why: `Never pass material without eye contact and expectation.` }
+    ],
+    2: [
+      { q: `Bricks may be stacked no higher than...`, o: [`4 feet`, `7 feet`, `12 feet`], a: 1, why: `Taper the stack back 2 inches for every foot above 4 feet.` },
+      { q: `How should pipe be stored so it cannot roll?`, o: [`Chocked`, `Stacked on the pipe's side with no support`, `Laid in the walkway`], a: 0, why: `Stack it neatly and chock it.` },
+      { q: `Light, large-surface materials the wind could move should be...`, o: [`Stacked as high as possible`, `Tied down or banded`, `Left loose`], a: 1, why: `Plywood and tarps are examples.` },
+      { q: `Above what height do you need a harness and fall-arrest lanyard?`, o: [`Over six feet`, `Over 20 feet`, `Only on scaffolds`], a: 0, why: `Connect the lanyard to an appropriate anchor point.` },
+      { q: `How should tools get to a worker on a higher level?`, o: [`Tossed up carefully`, `Raised with a rope`, `Carried in one hand up a ladder`], a: 1, why: `A bucket and rope keep your hands free and the tools safe.` },
+      { q: `Can you stack materials on a scaffold or runway?`, o: [`Yes, if they are light`, `No, never`, `Yes, in high-traffic areas only`], a: 1, why: `It raises falling-object hazards.` }
+    ],
+    3: [
+      { q: `Which knot joins two ropes of similar size in a low-strain job?`, o: [`Square knot`, `Bowline`, `Clove hitch`], a: 0, why: `It is also called a reef knot.` },
+      { q: `Which knot makes a loop that neither slips nor jams?`, o: [`Granny knot`, `Bowline`, `Half hitch`], a: 1, why: `It is called the rescue knot and the king of knots.` },
+      { q: `A clove hitch is made of...`, o: [`Two half hitches in opposite directions`, `Two bowlines`, `One square knot`], a: 0, why: `It is a tension knot and loosens when tension is removed.` },
+      { q: `A knot that is not meant to be permanent is called a...`, o: [`Hitch`, `Splice`, `Reef`], a: 0, why: `Pull the ropes the opposite way and it comes undone.` },
+      { q: `Which knot is often used to back up another knot?`, o: [`Half hitch`, `Bowline`, `Square knot`], a: 0, why: `By itself it is not very stable.` },
+      { q: `The granny knot is a...`, o: [`Square knot tied with the second half in the wrong direction`, `Type of bowline`, `Hitch for heavy loads`], a: 0, why: `It is highly insecure.` }
+    ],
+    4: [
+      { q: `What secures a load on a hand truck?`, o: [`Ratchet strap`, `Bungee cord`, `Duct tape`], a: 0, why: `Bungee-style cords may not hold if the weight shifts.` },
+      { q: `Who walks ahead of a long load to check the path?`, o: [`A spotter`, `A supervisor`, `A mule driver`], a: 0, why: `A spotter makes sure the path is clear.` },
+      { q: `A gas cylinder should never be moved...`, o: [`With the safety cap on`, `With the regulator attached`, `Upright on a cart`], a: 1, why: `Never lift it by the cap, either.` },
+      { q: `Why are two-wheeled wheelbarrows recommended?`, o: [`They are more stable with heavy loads`, `They are lighter`, `They need no tires`], a: 0, why: `Check the air pressure in both tires.` },
+      { q: `Which device needs two people to operate?`, o: [`Pipe transport`, `Wheelbarrow`, `Drum dolly`], a: 0, why: `Watch for pinch points when securing chains around the pipe.` },
+      { q: `Before using a hydraulic pallet jack, check for...`, o: [`Oil leaks`, `Loose chocks`, `A seat belt`], a: 0, why: `Repair leaks before the jack is put into service.` }
+    ],
+    5: [
+      { q: `Who may operate motorized material handling equipment?`, o: [`Anyone who is careful`, `Trained, certified and authorized operators`, `Whoever is closest`], a: 1, why: `Training includes instruction, hands-on practice and an evaluation.` },
+      { q: `Before refueling a concrete mule, the engine must be...`, o: [`Idling`, `Off and cooled down`, `Hot`], a: 1, why: `Use only the fuel and oil the manufacturer specifies.` },
+      { q: `Why is the forklift a pinch point?`, o: [`It pivots on the front wheels and steers with the back wheels`, `It has no brakes`, `It runs on gas`], a: 0, why: `Stay out of the work zone and the driver's blind spot.` },
+      { q: `Who has the right-of-way around a forklift?`, o: [`The forklift`, `Pedestrians`, `Whoever is first`], a: 1, why: `Electric forklifts are quiet, so people may not hear them.` },
+      { q: `What does the Dog everything signal mean?`, o: [`Pause`, `Raise the tines`, `Drive faster`], a: 0, why: `Hands are clasped in front of the body.` },
+      { q: `On a rough terrain forklift, you should carry the load...`, o: [`High, for visibility`, `Low`, `Tilted forward`], a: 1, why: `Tip-overs are common on uneven ground.` }
+    ]
+  };
+
+  var TALK = {
+    1: {
+      qs: [`Why does the module say being mentally fit is as important as being physically fit?`, `What do you check before lifting something?`, `Why is lowering a load from overhead more dangerous than lifting it?`, `Why should you tie a bundle of pipe together before carrying it?`],
+      scn: [{
+        t: `"It is only a little heavy"`,
+        s: `A student finds a 10-foot-plus length of conduit on the floor and plans to carry it alone and swing around quickly at the corner. What is wrong?`,
+        g: [`Objects longer than 10 feet are a reason to ask a co-worker for help.`, `Never swing around quickly. Watch for people and things the long end could strike.`, `Secure floppy long objects and never carry more than you can control.`]
+      }, {
+        t: `"Just grab it from the top shelf"`,
+        s: `A box is on a high shelf and looks heavy. A worker plans to reach up and pull it down by themself. What does the module say?`,
+        g: [`Size up the load. If it looks too heavy for one person to have lifted up there, it is too heavy to take down alone.`, `Ask how it got up there and lower it the same way.`, `Treat the area below as a fall zone and keep people out.`]
+      }],
+      parent: `Ask your student to show you how to lift something safely, and to say the steps out loud while doing it.`
+    },
+    2: {
+      qs: [`Why do stacking and storing matter besides neatness?`, `Why should nails be removed from reusable lumber before it is stored?`, `Why do you step back and cross-key bagged material?`, `Why is throwing tools up to a higher level unsafe?`],
+      scn: [{
+        t: `"Just stack it higher"`,
+        s: `A worker wants to build a brick stack taller than seven feet to save floor space. What does the module say?`,
+        g: [`Bricks should be stacked no higher than seven feet.`, `Taper the stack back 2 inches per foot above four feet.`, `A taller, straighter stack risks falling.`]
+      }, {
+        t: `"My hands are full"`,
+        s: `A student wants to carry a toolbox in one hand and climb a ladder to a platform. What should they do instead?`,
+        g: [`Keep hands free when climbing. Never carry tools by hand up a ladder.`, `Put the tools in a bucket and raise them with a rope.`, `Check pockets and tool belt so nothing falls.`]
+      }],
+      parent: `Ask your student to explain two stacking rules and why each one keeps people safe.`
+    },
+    3: {
+      qs: [`Which of the four knots is not permanent, and how do you undo it?`, `Why should a square knot never be used on a critical load?`, `Why do you need a long tail on a bowline?`, `Why is a clove hitch not enough by itself?`],
+      scn: [{
+        t: `"They look alike"`,
+        s: `A student ties a square knot but the second half knot goes the same direction as the first. What did they make, and is it safe?`,
+        g: [`A granny knot, which is highly insecure.`, `The end that starts on top must stay on top when you switch direction.`, `Re-tie it correctly and do not rely on it for a critical load.`]
+      }, {
+        t: `"Hoist the bucket"`,
+        s: `A crew needs to raise a bucket of tools to a platform. Which knot would you choose, and why?`,
+        g: [`A bowline, since it makes a secure loop that does not slip or jam.`, `Keep a long tail on it.`, `It is easy to untie once the load is off.`]
+      }],
+      parent: `Ask your student to tie two of the four knots for you and name what each is used for.`
+    },
+    4: {
+      qs: [`What is the main safety rule for a hand truck?`, `Why must a gas cylinder never be moved with its regulator attached?`, `How do you load a rotating drum cart?`, `Why would you use a spotter with a long load?`],
+      scn: [{
+        t: `"Bungee cords are fine"`,
+        s: `A worker straps a stack of heavy boxes to a hand truck with a bungee cord. What does the module say?`,
+        g: [`Use a ratchet strap, buckled around the load and tightened snug.`, `Bungee-style cords may not hold the load if the weight shifts.`, `Check the frame for stress fractures and the tires before use.`]
+      }, {
+        t: `"It rolls fine downhill"`,
+        s: `A student pushes a heavily loaded cart down a ramp and loses control. What went wrong?`,
+        g: [`A too-heavy load on a decline can drag you down with it.`, `Never load a cart past its labeled capacity.`, `Use extra caution on inclines and declines.`]
+      }],
+      parent: `Ask your student to name five pieces of manual equipment and what each moves.`
+    },
+    5: {
+      qs: [`Why must motorized equipment operators be trained, certified and authorized?`, `What do you do before refueling a concrete mule?`, `What should you do when you walk near a forklift?`, `Why is it important to agree on hand signals before the task?`],
+      scn: [{
+        t: `"I'll just hop on"`,
+        s: `A worker wants to ride on a concrete mule or powered wheelbarrow to save a walk. What does the module say?`,
+        g: [`Do not allow riders. Only the operator rides a concrete mule.`, `Do not mount or dismount a buggy while it is moving.`, `Follow the manufacturer's and site rules.`]
+      }, {
+        t: `"Something is not right"`,
+        s: `During a forklift move, rain starts and the load does not fit the planned space. Which signal could a worker give?`,
+        g: [`Dog everything: clasp hands in front of the body.`, `It means pause, for risky situations like rain, a load that does not fit or a bystander too close.`, `Keep eye contact with the operator.`]
+      }],
+      parent: `Ask your student to show you two forklift hand signals and explain what each one means.`
+    }
+  };
+
+  var FINAL = [
+    `I can explain why manual material handling is dangerous and how to plan a task before lifting.`,
+    `I can describe the safe way to lift and lower a load, including overhead lowering.`,
+    `I can say when to ask a co-worker for help.`,
+    `I can give stacking rules for lumber, pipe, bagged material, bricks and blocks.`,
+    `I can explain how to work from heights and get tools up without throwing them.`,
+    `I can use standing end, working end, standing part and capsize correctly.`,
+    `I can say what the square knot, bowline, half hitch and clove hitch are used for and where each is weak.`,
+    `I can tie two of the four knots.`,
+    `I can name the manual equipment and give a safety rule for each.`,
+    `I can explain how to move a gas cylinder safely.`,
+    `I can say who may operate motorized equipment and what the daily forklift inspection covers.`,
+    `I can explain work zone, fall zone and pinch point around a forklift.`,
+    `I can show at least two forklift hand signals and say when to use Dog everything.`
+  ];
+
+  /* The answer keys (Appendix A) are not in the module pages. Every answer was worked out from the module text. */
+  function Q(src, a, pq, po, tq, to, why, br) { return { src: src + " · answer from module text", a: a, pq: pq, po: po, tq: tq, to: to, why: why, br: br }; }
+  var PRACTICE = {
+    1: [
+      Q(`Section Review 1.0.0 · Q1 (1.1.1)`, 0,
+        `For material handling tasks, what is as important as being physically fit?`, [`Being mentally fit`, `Being tough`, `Being watched by a supervisor`, `Being heavy`],
+        `For material handling tasks, it is just as important to be mentally fit as it is to be _____.`, [`physically fit`, `physically aggressive`, `closely supervised`, `over 200 pounds`],
+        `Being mentally fit means thinking before you lift. Being physically fit is the other half.`, [[`as important as being`, `just as important ... as it is to be`], [`mentally fit`, `physically fit`]]),
+      Q(`Module Review · Q1 (1.1.2)`, 3,
+        `What does a loose glove reduce?`, [`Your reach`, `Your speed`, `The heat on your hand`, `Your grip strength`],
+        `Loose gloves may get caught on moving objects, and they reduce _____.`, [`positive friction`, `worker mobility`, `manual torque`, `grip strength`],
+        `Gloves that are too loose reduce grip strength and can catch on machinery.`, [[`reduce`, `they reduce`]]),
+      Q(`Module Review · Q2 (1.1.3)`, 2,
+        `Where should you keep a load while you lift it?`, [`At shoulder height`, `Out at arm's length`, `Close to your body`, `Resting on your hips`],
+        `When lifting a load, keep the load _____.`, [`at shoulder height`, `at arm's length`, `close to your body`, `balanced at your hips`],
+        `Keep the load close to your body, and do not reach out with it.`, [[`Where should you keep`, `keep the load`]]),
+      Q(`Module Review · Q3 (1.1.3)`, 1,
+        `How should you treat the area a load is being lowered into?`, [`As a break area`, `As a fall zone`, `As the main walkway`, `As a drop-off point`],
+        `The area into which a load is being lowered should be treated as a(n) _____.`, [`hot work location`, `fall zone`, `primary access route`, `aerial drop spot`],
+        `Keep people out of the area below a load being lowered.`, [[`treat the area`, `should be treated as a(n)`]])
+    ],
+    2: [
+      Q(`Section Review 1.0.0 · Q2 (1.2.1)`, 2,
+        `What should you do with light, large materials that wind could move?`, [`Keep the stack under four feet`, `Weight the top with clamps`, `Tie them down or band them`, `Lock them in a flameproof cabinet`],
+        `When stacking or storing light materials that have a large surface area and could easily be moved by the wind, _____.`, [`keep the stack height less than four feet`, `weight the top of the stack with clamps`, `tie down or band the materials`, `secure the materials in a flameproof cabinet`],
+        `Tie down or band light, large-surface-area materials that the wind might move.`, [[`What should you do`, `When stacking or storing ... ,`], [`wind could move`, `easily be moved by the wind`]]),
+      Q(`Module Review · Q4 (1.2.1)`, 0,
+        `How many inches do you taper stacked bricks back for every foot above four feet?`, [`Two`, `Four`, `Six`, `Twelve`],
+        `How many inches should stacked bricks be tapered for every foot above four feet in the stack?`, [`Two`, `Four`, `Six`, `Twelve`],
+        `Taper the stack back two inches for every foot above four feet, and do not go higher than seven feet.`, [[`taper ... back`, `tapered`], [`above four feet`, `above four feet in the stack`]]),
+      Q(`Module Review · Q5 (1.2.2)`, 3,
+        `What is the proper way to get tools to a worker on a higher level?`, [`Toss them up carefully`, `Carry them by hand up a ladder`, `Climb up with them in your pocket`, `Hoist them up with a rope and bucket`],
+        `The proper way to get tools to a worker on a higher level is to _____.`, [`toss them up carefully`, `carry them by hand up a ladder`, `climb up with them in your pocket`, `hoist them up with a rope and bucket`],
+        `Use a rope to raise and lower tools and material, and put objects in a bucket for a ladder.`, [[`proper way to get tools`, `proper way to get tools to a worker on a higher level is to`]])
+    ],
+    3: [
+      Q(`Section Review 1.0.0 · Q3 (1.3.1)`, 3,
+        `Which knot often joins the ends of two ropes in non-critical, low-strain jobs?`, [`Bowline`, `Clove hitch`, `Half hitch`, `Square knot`],
+        `Which of the following is a type of knot that is often used to join the ends of two ropes in non-critical, low-strain applications?`, [`Bowline`, `Clove hitch`, `Half hitch`, `Square knot`],
+        `The square knot, or reef knot, joins two ropes of similar size in low-strain jobs. It can capsize easily and should never be used for critical loads.`, [[`joins`, `join the ends of two ropes`], [`low-strain jobs`, `non-critical, low-strain applications`]]),
+      Q(`Module Review · Q6 (1.3.0)`, 0,
+        `What is a knot called when it is not meant to be permanent?`, [`A hitch`, `A slip`, `A runner`, `A bypass`],
+        `A knot that is NOT meant to be permanent is generally referred to as a _____.`, [`hitch`, `slip`, `runner`, `bypass`],
+        `Hitches can be undone by pulling the ropes in the reverse direction.`, [[`not meant to be permanent`, `NOT meant to be permanent`], [`What is ... called`, `generally referred to as a`]])
+    ],
+    4: [
+      Q(`Section Review 2.0.0 · Q1 (2.1.2)`, 3,
+        `What is often used to secure a load on a hand truck?`, [`Dolly spotters`, `Bungee cords`, `Wheel chocks`, `Ratchet straps`],
+        `Which of the following are often used to secure loads on hand trucks?`, [`Dolly spotters`, `Bungee cords`, `Wheel chocks`, `Ratchet straps`],
+        `Use a ratchet strap. Rubber or bungee-style cords may not hold if the weight shifts.`, [[`often used to secure a load`, `often used to secure loads`]]),
+      Q(`Module Review · Q8 (2.1.1)`, 1,
+        `What helps make sure the path is clear when your view is blocked?`, [`A mirror`, `A spotter`, `A tow rope`, `A stepladder`],
+        `To help make sure the path is clear when your view is obstructed while handling materials, use a _____.`, [`mirror`, `spotter`, `tow rope`, `step ladder`],
+        `A spotter walks ahead of the worker carrying a long load to make sure the path is clear.`, [[`view is blocked`, `view is obstructed`], [`helps make sure the path is clear`, `to help make sure the path is clear`]]),
+      Q(`Module Review · Q9 (2.1.2)`, 2,
+        `Before using a hand truck, what do you inspect the framework for?`, [`Oil residue`, `Popped nails`, `Stress fractures`, `Seal leaks`],
+        `Before using a hand truck, inspect the framework for _____.`, [`oil residue`, `popped nails`, `stress fractures`, `seal leaks`],
+        `Inspect the framework for stress fractures and check the tires.`, [[`what do you inspect`, `inspect the framework for`]]),
+      Q(`Module Review · Q10 (2.1.5)`, 3,
+        `What are the rollers made of on roller skids that move heavy equipment?`, [`Aluminum`, `Brass`, `Polyurethane`, `Steel`],
+        `Roller skids for moving heavy equipment use rollers made of _____.`, [`aluminum`, `brass`, `polyurethane`, `steel`],
+        `Heavy-equipment skids use steel or steel chain rollers. Lighter ones may use polyurethane or nylon.`, [[`made of`, `use rollers made of`]]),
+      Q(`Module Review · Q11 (2.1.8)`, 3,
+        `Which device needs two people to operate it?`, [`Roller skids`, `Rotating drum cart`, `Powered wheelbarrow`, `Pipe transport`],
+        `Which of these devices requires two people to operate it?`, [`Roller skids`, `Rotating drum cart`, `Powered wheelbarrow`, `Pipe transport`],
+        `A pipe transport slings larger pipe under a frame and requires two people.`, [[`needs two people`, `requires two people to operate it`]])
+    ],
+    5: [
+      Q(`Section Review 2.0.0 · Q2 (2.2.2)`, 2,
+        `When you refuel a concrete mule, what must be true?`, [`The work zone is twice the load height`, `The dump bucket is in the dumping position`, `The engine is off and has cooled down`, `The boom is fully retracted`],
+        `When refueling a concrete mule, always be sure the _____.`, [`work zone is at least twice the load height`, `dump bucket is in the dumping position`, `engine is turned off and has cooled down`, `boom is in the fully retracted position`],
+        `The engine must be off and cooled before refueling any gas-powered handling machine.`, [[`When you refuel ... what must be true`, `When refueling ... always be sure the`]]),
+      Q(`Module Review · Q12 (2.2.0)`, 2,
+        `Before moving a load with a motorized device, what must the worker consider?`, [`The moisture content of the load`, `The fall zone for the load`, `The maximum capacity of the device`, `The universal hand signals`],
+        `Before a worker uses a motorized material handling device to move a load, the worker must consider the _____.`, [`moisture content of the load`, `fall zone for the load`, `maximum capacity of the device`, `universal transport hand signals`],
+        `Know the capacity of the device and never exceed it.`, [[`what must the worker consider`, `must consider the`]]),
+      Q(`Module Review · Q13 (2.2.2)`, 0,
+        `Which of these is a motorized material handling device?`, [`Concrete mule`, `Roller skid`, `Porta-Power`, `Pipe mule`],
+        `Which of the following is a motorized material handling device?`, [`Concrete mule`, `Roller skid`, `Porta-Power®`, `Pipe mule`],
+        `The concrete mule is motorized. Roller skids and pipe mules are manual, and the module does not list a Porta-Power.`, [[`motorized`, `motorized material handling device`]]),
+      Q(`Module Review · Q14 (2.2.4)`, 1,
+        `A forklift pivots on the front wheels and steers with the back wheels. What does that create?`, [`A gravity shift`, `A pinch point`, `A rollover`, `A fall zone`],
+        `An industrial forklift pivots on the front wheels and turns with the back wheels, which could cause a _____.`, [`gravity shift`, `pinch point`, `rollover`, `fall zone`],
+        `Forklifts pivot on the front wheels and turn with the back wheels, which creates a potential pinch point.`, [[`steers with`, `turns with`], [`What does that create`, `which could cause a`]]),
+      Q(`Module Review · Q15 (2.2.6)`, 2,
+        `What should workers use when equipment noise makes talking difficult?`, [`Written notes`, `Shouted commands`, `Hand signals`, `A relay person`],
+        `When the sound of motorized lifting equipment makes verbal communication difficult, workers should use _____.`, [`written notes`, `shouted commands`, `hand signals`, `a relay person`],
+        `Standard hand signals allow workers and the operator to work in a controlled way.`, [[`equipment noise makes talking difficult`, `the sound of motorized lifting equipment makes verbal communication difficult`]])
+    ]
+  };
+
+  function el(tag, cls, text) { var n = document.createElement(tag); if (cls) n.className = cls; if (text != null) n.textContent = text; return n; }
+
+  function buildPoints(ul, list, prefix) {
+    list.forEach(function (html, i) {
+      var li = el("li");
+      var label = el("label");
+      var input = document.createElement("input");
+      input.type = "checkbox";
+      input.id = prefix + "-" + i;
+      var span = el("span");
+      span.innerHTML = html; // static text written in this file
+      label.appendChild(input); label.appendChild(span);
+      li.appendChild(label); ul.appendChild(li);
+    });
+  }
+
+  function field(label, text) {
+    var d = el("span");
+    d.appendChild(el("span", "label", label));
+    d.appendChild(document.createTextNode(text));
+    return d;
+  }
+  function buildCards(host, n) {
+    CARDS[n].forEach(function (item) {
+      var b = el("button", "card");
+      b.type = "button";
+      b.setAttribute("aria-pressed", "false");
+      b.setAttribute("aria-label", item.t + ". Press to flip the card.");
+      var inner = el("span", "card-inner");
+      var f = el("span", "face front" + (item.k === "k" ? " key" : ""));
+      f.appendChild(el("span", "strip", (item.k === "o" ? "NCCER trade term" : "Key term") + " · Section " + n));
+      f.appendChild(el("span", "term", item.t));
+      f.appendChild(el("span", "hint", "TAP TO FLIP"));
+      var k = el("span", "face back");
+      k.appendChild(el("span", "strip", item.t));
+      var body = el("span", "body");
+      body.appendChild(field("In everyday words", item.plain));
+      body.appendChild(field("From the module", item.book));
+      var ask = field("Ask your student", item.ask);
+      ask.className = "ask";
+      body.appendChild(ask);
+      k.appendChild(body);
+      inner.appendChild(f); inner.appendChild(k);
+      b.appendChild(inner);
+      b.addEventListener("click", function () { b.setAttribute("aria-pressed", b.getAttribute("aria-pressed") === "true" ? "false" : "true"); });
+      host.appendChild(b);
+    });
+  }
+
+  function buildQuiz(host, n) {
+    var list = QUIZ[n];
+    var answered = 0;
+    host.appendChild(el("p", "ticket-intro", "Pick the answer. You will see right away if it is correct. Nothing is saved or sent."));
+    var foot = el("div", "ticket-foot");
+    var done = el("p", null, "");
+    done.setAttribute("aria-live", "polite");
+    var retry = el("button", "btn", "Try again");
+    retry.type = "button";
+    retry.hidden = true;
+    foot.appendChild(done); foot.appendChild(retry);
+
+    list.forEach(function (item, qi) {
+      var fs = el("fieldset", "q");
+      fs.appendChild(el("legend", null, (qi + 1) + ". " + item.q));
+      var opts = el("div", "opts");
+      var fb = el("p", "fb");
+      fb.setAttribute("aria-live", "polite");
+      var btns = [];
+      item.o.forEach(function (text, oi) {
+        var b = el("button", "opt", text);
+        b.type = "button";
+        b.addEventListener("click", function () {
+          btns.forEach(function (x) { x.disabled = true; });
+          answered++;
+          fb.textContent = "";
+          if (oi === item.a) {
+            b.classList.add("right");
+            fb.appendChild(el("b", null, "Correct. ")); fb.appendChild(document.createTextNode(item.why));
+          } else {
+            b.classList.add("wrong");
+            btns[item.a].classList.add("right");
+            fb.appendChild(el("b", null, "Not quite. "));
+            fb.appendChild(document.createTextNode("The answer is \"" + item.o[item.a] + "\". " + item.why));
+          }
+          if (answered === list.length) {
+            done.textContent = "Ticket finished. Reread any part of the section that felt shaky, then try again.";
+            retry.hidden = false;
+          }
+        });
+        btns.push(b); opts.appendChild(b);
+      });
+      fs.appendChild(opts); fs.appendChild(fb);
+      host.appendChild(fs);
+      fs._reset = function () { btns.forEach(function (x) { x.disabled = false; x.className = "opt"; }); fb.textContent = ""; };
+    });
+    host.appendChild(foot);
+    retry.addEventListener("click", function () {
+      host.querySelectorAll("fieldset").forEach(function (f) { f._reset(); });
+      answered = 0; done.textContent = ""; retry.hidden = true;
+    });
+  }
+
+  function buildTalk(host, n) {
+    var t = TALK[n];
+    var ol = el("ol", "qs");
+    t.qs.forEach(function (q) { ol.appendChild(el("li", null, q)); });
+    host.appendChild(ol);
+    t.scn.forEach(function (s) {
+      var d = el("details", "scn");
+      d.appendChild(el("summary", null, "Scenario: " + s.t));
+      d.appendChild(el("p", "setup", s.s));
+      var g = el("div", "good");
+      g.appendChild(el("b", null, "A good answer includes"));
+      var ul = el("ul");
+      s.g.forEach(function (x) { ul.appendChild(el("li", null, x)); });
+      g.appendChild(ul); d.appendChild(g);
+      host.appendChild(d);
+    });
+    if (t.parent) {
+      var p = el("div", "parent");
+      p.appendChild(el("b", null, "Talk it over with your loved ones"));
+      p.appendChild(el("p", null, t.parent));
+      host.appendChild(p);
+    }
+  }
+
+  function ask(label, cls, q, opts, correct, onAnswer) {
+    var box = el("div", "ask-block" + (cls ? " " + cls : ""));
+    box.appendChild(el("p", "step-label", label));
+    box.appendChild(el("p", "pr-q", q));
+    var wrap = el("div", "opts");
+    wrap.setAttribute("role", "group");
+    wrap.setAttribute("aria-label", q);
+    var fb = el("p", "fb");
+    fb.setAttribute("aria-live", "polite");
+    var btns = [];
+    opts.forEach(function (text, oi) {
+      var b = el("button", "opt", String.fromCharCode(65 + oi) + ".  " + text);
+      b.type = "button";
+      b.addEventListener("click", function () {
+        btns.forEach(function (x) { x.disabled = true; });
+        var ok = oi === correct;
+        b.classList.add(ok ? "right" : "wrong");
+        if (!ok) btns[correct].classList.add("right");
+        onAnswer(ok, fb, String.fromCharCode(65 + correct));
+      });
+      btns.push(b); wrap.appendChild(b);
+    });
+    box.appendChild(wrap); box.appendChild(fb);
+    box.reset = function () { btns.forEach(function (x) { x.disabled = false; x.className = "opt"; }); fb.textContent = ""; };
+    return box;
+  }
+  function say(fb, lead, text) {
+    fb.textContent = "";
+    fb.appendChild(el("b", null, lead + " "));
+    fb.appendChild(document.createTextNode(text));
+  }
+
+  function buildPractice(host, n) {
+    var list = PRACTICE[n];
+    host.appendChild(el("p", "pr-intro", "Test questions use the textbook's formal words. Answer each question in plain English first, then see the same question the way the book asks it. The \"Words to notice\" box shows how the two fit together. Nothing is saved or sent."));
+    var items = [];
+    list.forEach(function (item, i) {
+      var formalOpts = item.to || item.po;
+      var art = el("article", "pr");
+      var head = el("div", "pr-head");
+      head.appendChild(el("span", null, "Question " + (i + 1) + " of " + list.length));
+      head.appendChild(el("span", null, "Source: " + item.src));
+      art.appendChild(head);
+
+      var bridge = el("div", "bridge");
+      bridge.hidden = true;
+      bridge.appendChild(el("p", "step-label", "Words to notice"));
+      var ul = el("ul");
+      item.br.forEach(function (p) {
+        var li = el("li");
+        li.appendChild(el("span", "you", p[0]));
+        li.appendChild(el("span", "arrow", "→"));
+        li.appendChild(el("span", "pub", p[1]));
+        ul.appendChild(li);
+      });
+      bridge.appendChild(ul);
+
+      var b2 = ask("Step 2 · The same question in the textbook's words", "formal", item.tq, formalOpts, item.a, function (ok, fb, letter) {
+        if (ok) say(fb, "Correct.", "You just answered it in the textbook's voice.");
+        else say(fb, "Not quite.", "The answer is " + letter + ". Compare it with your plain-English answer above.");
+        bridge.hidden = false;
+      });
+      b2.hidden = true;
+      var b1 = ask("Step 1 · In plain English", "", item.pq, item.po, item.a, function (ok, fb, letter) {
+        if (ok) say(fb, "Correct.", item.why);
+        else say(fb, "Not quite.", "The answer is " + letter + ". " + item.why);
+        b2.hidden = false;
+      });
+      art.appendChild(b1); art.appendChild(b2); art.appendChild(bridge);
+      host.appendChild(art);
+      items.push({ b1: b1, b2: b2, bridge: bridge });
+    });
+    var foot = el("div", "ticket-foot");
+    var retry = el("button", "btn", "Start this set over");
+    retry.type = "button";
+    retry.addEventListener("click", function () {
+      items.forEach(function (x) { x.b1.reset(); x.b2.reset(); x.b2.hidden = true; x.bridge.hidden = true; });
+    });
+    foot.appendChild(retry);
+    host.appendChild(foot);
+  }
+
+  [1, 2, 3, 4, 5].forEach(function (n) {
+    buildPoints(document.querySelector('[data-points="' + n + '"]'), POINTS[n], "s" + n);
+    buildCards(document.querySelector('[data-cards="' + n + '"]'), n);
+    buildQuiz(document.querySelector('[data-quiz="' + n + '"]'), n);
+    buildTalk(document.querySelector('[data-talk="' + n + '"]'), n);
+    buildPractice(document.querySelector('[data-practice="' + n + '"]'), n);
+  });
+  buildPoints(document.getElementById("final-points"), FINAL, "fin");
+})();
+</script>
+
+</body>
+</html>

@@ -24,6 +24,7 @@ Every module section follows the same six parts:
 | NCCER Core, Module 00100: Build Your Future in Construction (draft: Section Review and Module Review answers worked out from the module text; answer keys were not in the source PDF) | `build-your-future-in-construction.html` |
 | NCCER Core, Module 00101: Basic Safety (draft: Module Review answers worked out from the module text) | `basic-safety.html` (guided notes and slides in `basic-safety-materials/`) |
 | NCCER Core, Module 00102: Introduction to Construction Math (draft: Section Review and Module Review answers worked out from the module text; figure-based questions left out) | `introduction-to-construction-math.html` |
+| NCCER Core, Module 00103: Introduction to Hand Tools (draft: Section Review and Module Review answers worked out from the module text; answer keys were not in the source PDF) | `introduction-to-hand-tools.html` |
 | NCCER Core, Module 00105: Introduction to Construction Drawings | `construction-drawings.html` |
 | NCCER Core, Module 00106: Introduction to Basic Rigging (draft: Section Review and Module Review answers worked out from the module text; answer keys were not in the source PDF) | `introduction-to-basic-rigging.html` |
 | NCCER Electrical Level 1, Module 26103-20: Introduction to Electrical Circuits | `electrical-circuits.html` |

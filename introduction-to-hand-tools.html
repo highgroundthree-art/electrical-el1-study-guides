@@ -1,0 +1,1281 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Introduction to Hand Tools Loved Ones Study Guide</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+/* Layout concept: one long study sheet. Each module section runs the same six parts
+   (read, review points, trade-term tags, ticket out the door, talk it over, practice questions). */
+:root {
+  --bg: #EEF1F3;
+  --surface: #FFFFFF;
+  --ink: #14202B;
+  --ink-soft: #46576A;
+  --line: #C9D2DA;
+  --band: #14202B;
+  --band-ink: #F4F7F9;
+  --accent: #C42B17;
+  --accent-ink: #FFFFFF;
+  --caution: #F2B705;
+  --caution-soft: #FFF3C4;
+  --good: #1E7A3C;
+  --good-soft: #DDF3E4;
+  --bad: #A8321F;
+  --bad-soft: #FBE3DE;
+  --tag-hole: #EEF1F3;
+  --focus: #0B5FFF;
+  --font-display: "Barlow Condensed", "Arial Narrow", Impact, sans-serif;
+  --font-body: "Barlow", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0F171E; --surface: #18232D; --ink: #EAF0F4; --ink-soft: #A5B4C2; --line: #2E3E4C;
+    --band: #0A1016; --band-ink: #F4F7F9; --accent: #FF5A44; --accent-ink: #14202B;
+    --caution: #F2B705; --caution-soft: #3A3210; --good: #6FD08C; --good-soft: #17301F;
+    --bad: #FF8E7C; --bad-soft: #3A1B16; --tag-hole: #0F171E; --focus: #6AA2FF;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0F171E; --surface: #18232D; --ink: #EAF0F4; --ink-soft: #A5B4C2; --line: #2E3E4C;
+  --band: #0A1016; --band-ink: #F4F7F9; --accent: #FF5A44; --accent-ink: #14202B;
+  --caution: #F2B705; --caution-soft: #3A3210; --good: #6FD08C; --good-soft: #17301F;
+  --bad: #FF8E7C; --bad-soft: #3A1B16; --tag-hole: #0F171E; --focus: #6AA2FF;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--font-body); font-size: 17px; line-height: 1.6; }
+[hidden] { display: none !important; }
+:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
+.wrap { max-width: 920px; margin-inline: auto; padding-inline: max(16px, env(safe-area-inset-left, 0px)) max(16px, env(safe-area-inset-right, 0px)); }
+h1, h2, h3, h4 { font-family: var(--font-display); text-transform: uppercase; letter-spacing: 0.03em; line-height: 1.05; margin: 0; text-wrap: balance; }
+.eyebrow { font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-soft); }
+
+.band { background: var(--band); color: var(--band-ink); padding-block: 34px 26px; border-bottom: 8px solid var(--caution); }
+.band .eyebrow { color: var(--caution); }
+.band h1 { font-size: clamp(2.5rem, 9vw, 4.4rem); font-weight: 700; margin-top: 10px; }
+.band .sub { margin: 14px 0 0; font-size: 1.1rem; color: #D5DEE5; max-width: 46ch; }
+.band .byline { margin: 14px 0 0; font-size: 0.95rem; color: #AEBBC7; }
+nav.jump { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 22px; }
+nav.jump a { text-decoration: none; font-weight: 600; font-size: 0.95rem; padding: 8px 14px; border: 2px solid #3B4B5A; border-radius: 3px; color: var(--band-ink); }
+nav.jump a:hover { border-color: var(--caution); }
+
+.intro { margin-top: 28px; display: grid; gap: 22px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 380px), 1fr)); }
+.panel { background: var(--surface); border: 1px solid var(--line); padding: 20px 22px 22px; min-width: 0; }
+.panel h2 { font-size: 1.5rem; font-weight: 700; margin-bottom: 10px; }
+.panel p { margin: 0 0 10px; }
+.panel ol { margin: 8px 0 0; padding-left: 1.3em; display: grid; gap: 6px; }
+.notice { background: var(--caution-soft); border: 2px solid var(--caution); padding: 16px 20px; margin-top: 22px; }
+.notice p { margin: 4px 0 0; }
+.notice h2 { font-size: 1.25rem; }
+
+/* section */
+.sec { margin-top: 56px; }
+.sec-head { border-top: 8px solid var(--ink); padding-top: 18px; }
+.sec-head h2 { font-size: clamp(2rem, 6vw, 3rem); font-weight: 700; margin-top: 6px; }
+.sec-head .obj { margin: 10px 0 0; color: var(--ink-soft); max-width: 62ch; }
+.part { margin-top: 34px; }
+.part-title { display: flex; align-items: baseline; gap: 12px; margin-bottom: 14px; }
+.part-title .letter { font-family: var(--font-mono); font-size: 13px; background: var(--ink); color: var(--bg); padding: 2px 8px; flex: none; }
+.part-title h3 { font-size: 1.7rem; font-weight: 700; }
+.part-title .time { margin-left: auto; font-family: var(--font-mono); font-size: 12px; color: var(--ink-soft); white-space: nowrap; }
+
+.prose { background: var(--surface); border: 1px solid var(--line); padding: 22px 24px; }
+.prose h4 { font-size: 1.25rem; font-weight: 700; margin: 20px 0 6px; color: var(--accent); }
+.prose h4:first-child { margin-top: 0; }
+.prose p { margin: 0 0 10px; max-width: 64ch; }
+.prose ul, .prose ol { margin: 0 0 10px; padding-left: 1.2em; max-width: 64ch; }
+.prose li { margin-bottom: 4px; }
+.prose .big { font-size: 1.12rem; font-weight: 500; border-left: 6px solid var(--caution); padding: 4px 0 4px 14px; margin: 0 0 16px; }
+.prose table { border-collapse: collapse; margin: 8px 0 14px; font-size: 0.95rem; width: 100%; max-width: 620px; }
+.prose th, .prose td { text-align: left; padding: 6px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+.prose th { font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-soft); }
+.prose caption { caption-side: top; text-align: left; font-weight: 600; font-size: 0.95rem; padding: 0 0 8px; color: var(--ink); }
+.scroll { overflow-x: auto; }
+.case { background: var(--bg); border-left: 6px solid var(--accent); padding: 12px 16px; margin: 14px 0 0; max-width: 64ch; }
+.case b { font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.08em; text-transform: uppercase; display: block; color: var(--ink-soft); }
+.case ul { margin: 6px 0 0; }
+.warn { background: var(--bad-soft); border-left: 6px solid var(--bad); padding: 12px 16px; margin: 14px 0 0; max-width: 64ch; }
+.warn b { font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.08em; text-transform: uppercase; display: block; color: var(--bad); }
+
+/* review points */
+.points { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.points li { background: var(--surface); border: 1px solid var(--line); }
+.points label { display: grid; grid-template-columns: 28px minmax(0, 1fr); gap: 12px; padding: 12px 16px; cursor: pointer; align-items: start; }
+.points input { width: 22px; height: 22px; margin: 2px 0 0; accent-color: var(--good); }
+.points li:has(input:checked) { background: var(--good-soft); border-color: var(--good); }
+.points b { font-weight: 600; }
+
+/* cards */
+.deck { display: grid; gap: 22px; grid-template-columns: repeat(auto-fill, minmax(min(100%, 270px), 1fr)); }
+.card { all: unset; box-sizing: border-box; display: block; cursor: pointer; perspective: 1100px; min-width: 0; }
+.card:focus-visible { outline: 3px solid var(--focus); outline-offset: 4px; }
+.card-inner { display: grid; transition: transform 0.5s cubic-bezier(.3,.7,.2,1); transform-style: preserve-3d; position: relative; }
+.card[aria-pressed="true"] .card-inner { transform: rotateY(180deg); }
+.face { grid-area: 1 / 1; backface-visibility: hidden; -webkit-backface-visibility: hidden; display: flex; flex-direction: column; min-height: 250px; border: 2px solid var(--ink); background: var(--surface); position: relative; overflow: hidden; }
+.face::before { content: ""; position: absolute; top: 12px; left: 50%; width: 16px; height: 16px; margin-left: -8px; border-radius: 50%; background: var(--tag-hole); border: 2px solid var(--ink); }
+.front .strip { background: var(--accent); color: var(--accent-ink); padding: 38px 16px 8px; font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.08em; text-transform: uppercase; }
+.front.key .strip { background: var(--ink); color: var(--bg); }
+.front .term { flex: 1; display: flex; align-items: center; padding: 16px 18px; font-family: var(--font-display); text-transform: uppercase; font-weight: 700; font-size: clamp(1.8rem, 7vw, 2.2rem); line-height: 1.02; letter-spacing: 0.02em; overflow-wrap: anywhere; }
+.front .hint { padding: 10px 18px 14px; font-size: 0.8rem; color: var(--ink-soft); border-top: 1px dashed var(--line); font-family: var(--font-mono); letter-spacing: 0.04em; }
+.back { transform: rotateY(180deg); background: var(--caution-soft); }
+.back .strip { background: var(--ink); color: var(--bg); padding: 38px 16px 8px; font-family: var(--font-display); text-transform: uppercase; font-weight: 700; letter-spacing: 0.04em; font-size: 1.1rem; line-height: 1.05; }
+.back .body { padding: 14px 18px 16px; display: grid; gap: 10px; align-content: start; font-size: 0.95rem; line-height: 1.45; }
+.back .label { font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-soft); display: block; margin-bottom: 1px; }
+.back .ask { border-top: 1px dashed var(--ink-soft); padding-top: 10px; font-weight: 500; }
+@media (prefers-reduced-motion: reduce) {
+  .card-inner { transition: none; transform-style: flat; }
+  .card[aria-pressed="true"] .card-inner { transform: none; }
+  .back { transform: none; }
+  .face { backface-visibility: visible; }
+  .card .back { visibility: hidden; }
+  .card[aria-pressed="true"] .back { visibility: visible; }
+  .card[aria-pressed="true"] .front { visibility: hidden; }
+}
+
+/* ticket */
+.ticket { background: var(--surface); border: 2px dashed var(--ink); padding: 8px 20px 18px; position: relative; }
+.ticket-intro { margin: 14px 0 4px; color: var(--ink-soft); font-size: 0.95rem; }
+.q { border: 0; border-top: 1px solid var(--line); margin: 0; padding: 16px 0 14px; min-width: 0; }
+.q:first-of-type { border-top: 0; }
+.q legend { font-weight: 600; padding: 0; margin-bottom: 8px; float: left; width: 100%; }
+.q .opts { clear: both; display: grid; gap: 8px; }
+.opts { display: grid; gap: 8px; }
+.opt { font: inherit; text-align: left; padding: 10px 14px; background: var(--bg); color: var(--ink); border: 2px solid var(--line); border-radius: 3px; cursor: pointer; }
+.opt:hover:not(:disabled) { border-color: var(--ink); }
+.opt:disabled { cursor: default; }
+.opt.right { background: var(--good-soft); border-color: var(--good); }
+.opt.wrong { background: var(--bad-soft); border-color: var(--bad); }
+.fb { margin: 8px 0 0; font-size: 0.93rem; color: var(--ink-soft); }
+.fb b { color: var(--ink); }
+.ticket-foot { margin-top: 10px; display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+.ticket-foot p { margin: 0; font-weight: 500; }
+.btn { font: inherit; font-weight: 600; font-size: 0.92rem; padding: 8px 14px; background: var(--surface); color: var(--ink); border: 2px solid var(--ink); border-radius: 3px; cursor: pointer; }
+.btn:hover { background: var(--ink); color: var(--bg); }
+
+/* talk it over */
+.talk { display: grid; gap: 14px; }
+.talk .qs { background: var(--surface); border: 1px solid var(--line); padding: 16px 22px 16px 40px; margin: 0; display: grid; gap: 8px; }
+details.scn { background: var(--surface); border: 1px solid var(--line); border-left: 6px solid var(--caution); padding: 14px 18px; }
+details.scn summary { cursor: pointer; font-family: var(--font-display); text-transform: uppercase; letter-spacing: 0.03em; font-size: 1.3rem; font-weight: 700; }
+details.scn .setup { margin: 10px 0 8px; }
+details.scn .good { margin: 12px 0 0; padding: 10px 14px; background: var(--good-soft); border-left: 6px solid var(--good); }
+details.scn .good b { font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.08em; text-transform: uppercase; display: block; }
+details.scn .good ul { margin: 6px 0 0; padding-left: 1.1em; }
+.parent { background: var(--caution-soft); border: 2px solid var(--caution); padding: 12px 16px; }
+.parent b { font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.08em; text-transform: uppercase; display: block; }
+.parent p { margin: 4px 0 0; }
+
+/* practice questions */
+.pr-intro { margin: 0 0 14px; color: var(--ink-soft); max-width: 66ch; }
+.pr { background: var(--surface); border: 1px solid var(--line); margin-bottom: 18px; }
+.pr-head { display: flex; flex-wrap: wrap; gap: 6px 14px; justify-content: space-between; align-items: baseline; padding: 10px 18px; background: var(--ink); color: var(--bg); font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.06em; text-transform: uppercase; }
+.ask-block { padding: 14px 18px 16px; }
+.ask-block + .ask-block { border-top: 2px dashed var(--line); }
+.ask-block.formal { background: var(--bg); }
+.step-label { margin: 0 0 6px; font-family: var(--font-mono); font-size: 11.5px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); }
+.pr-q { margin: 0 0 10px; font-weight: 600; font-size: 1.05rem; max-width: 62ch; }
+.bridge { padding: 14px 18px 16px; border-top: 2px dashed var(--line); background: var(--caution-soft); }
+.bridge .step-label { color: var(--ink); }
+.bridge ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+.bridge li { display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); gap: 10px; align-items: baseline; }
+.bridge .you { font-style: italic; }
+.bridge .arrow { font-family: var(--font-mono); color: var(--ink-soft); }
+.bridge .pub { font-weight: 600; }
+@media (max-width: 520px) { .bridge li { grid-template-columns: minmax(0, 1fr); gap: 0; } .bridge .arrow { display: none; } .bridge .pub::before { content: "Textbook: "; font-weight: 400; font-family: var(--font-mono); font-size: 11px; color: var(--ink-soft); } .bridge .you::before { content: "You say: "; font-style: normal; font-family: var(--font-mono); font-size: 11px; color: var(--ink-soft); } }
+
+/* final checklist */
+.final { margin-top: 56px; border-top: 8px solid var(--ink); padding-top: 18px; }
+.final h2 { font-size: clamp(1.9rem, 5vw, 2.6rem); font-weight: 700; }
+.final .lead { color: var(--ink-soft); max-width: 62ch; margin: 10px 0 16px; }
+.note { margin: 28px 0 0; font-size: 0.9rem; color: var(--ink-soft); max-width: 70ch; }
+footer { margin-top: 48px; background: var(--band); color: #AEBBC7; padding-block: 26px 30px; font-size: 0.92rem; }
+footer strong { color: var(--band-ink); }
+footer p { margin: 0 0 6px; }
+
+</style>
+</head>
+<body>
+
+<header class="band">
+  <div class="wrap">
+    <span class="eyebrow">EVIT Electrical · Loved Ones Study Guide</span>
+    <h1>Introduction<br>to Hand Tools</h1>
+    <p class="sub">A Loved Ones Study Guide for NCCER Core, Module 00103: Introduction to Hand Tools</p>
+    <p class="byline">Mr. Ellis CTE — General Construction &amp; Electrical Teacher · High School &amp; Adult Pre-Apprentice Programs</p>
+    <nav class="jump" aria-label="Sections">
+      <a href="#s1">1 · Common hand tools</a>
+      <a href="#s2">2 · Measuring &amp; layout</a>
+      <a href="#s3">3 · Other hand tools</a>
+      <a href="#review">Loved ones review</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<div class="wrap">
+
+  <div class="intro">
+    <div class="panel">
+      <h2>Why this guide exists</h2>
+      <p>You do not need to own a toolbox to support a student who is learning the trades. Your job is to help your student explain what they are learning and put it in their own words. Hand tools are a great subject for that, because every tool has a name, a job, and a right and wrong way to use it.</p>
+      <p>If your student can read it and explain it, they are learning it. That is the whole idea.</p>
+    </div>
+    <div class="panel">
+      <h2>How to use each section</h2>
+      <p>Plan about 20 to 30 minutes per section. The student does most of the talking. You do not need the answers ahead of time.</p>
+      <ol>
+        <li><b>Read it together.</b> Plain-English version of the module section.</li>
+        <li><b>Study review points.</b> The must-know facts. Tick each one when your student can say it back.</li>
+        <li><b>Trade-term cards.</b> Tap a card to flip it.</li>
+        <li><b>Ticket out the door.</b> A quick recall check, just for practice.</li>
+        <li><b>Talk it over.</b> Questions and a real-world scenario.</li>
+        <li><b>Practice questions.</b> Each one comes twice: first in plain English, then in the textbook's words, so your student learns to recognize both.</li>
+      </ol>
+    </div>
+  </div>
+
+  <aside class="notice" aria-labelledby="safe-h">
+    <h2 id="safe-h">Good to know before you start</h2>
+    <p>This guide explains hand tools so your student can talk about them. It does not replace hands-on training, an instructor's or supervisor's directions, the employer's safety program or the manufacturer's instructions for any tool. Sizes, angles and ratings come from the textbook. Always follow the rules that apply at your student's school or job site, and wear the protective gear the job calls for. No student names or grades appear here, and nothing you tick or tap on this page is saved or sent anywhere.</p>
+  </aside>
+
+  <!-- ===================== SECTION 1 ===================== -->
+  <section class="sec" id="s1" aria-labelledby="s1-h">
+    <div class="sec-head">
+      <span class="eyebrow">Module Section 1 of 3</span>
+      <h2 id="s1-h">Common Hand Tools</h2>
+      <p class="obj">By the end of this section your student can name common hammers, demolition tools, chisels, punches, screwdrivers, wrenches and pliers, say what each one is for, and use them the safe way.</p>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">A</span><h3>Read it together</h3><span class="time">about 45 min</span></div>
+      <div class="prose">
+        <p class="big">Every craft has its tools, and how a worker handles and cares for theirs shows their skill and their respect for the craft. A quality hand tool costs more at first, but if it is used and kept properly it can last for years.</p>
+
+        <h4>Gear and working at height (1.0.0)</h4>
+        <p>Some protective gear is worn all the time on a job site: safety glasses, safety shoes, a hard hat and gloves. When someone is working up high, every tool has to be handled with care so it cannot fall and hurt a person below. A tool should be tied to a tool belt with a <b>lanyard</b>.</p>
+
+        <h4>Hammers (1.1.0)</h4>
+        <p>Hammers come in different sizes and weights for different kinds of work. The safest ones have heads made of special alloys or <b>drop-forged steel</b>. Titanium hammers are light and strong. A hammer with a <b>cast head</b> (poured into a mold) is brittle and can chip or break, so it does not belong in construction work.</p>
+        <div class="scroll"><table>
+          <caption>The hammers in this module</caption>
+          <thead><tr><th>Hammer</th><th>What it is for</th></tr></thead>
+          <tbody>
+            <tr><td><b>Claw hammer (1.1.1)</b></td><td>Drives nails with the face and pulls them with the claw. <b>Finish hammers</b> are lighter (about 16 to 20 oz, and as light as 7 oz for brads). <b>Framing hammers</b> are heavier (up to about 28 oz), with a longer handle and often a milled face.</td></tr>
+            <tr><td><b>Drywall hammer (1.1.2)</b></td><td>Light (12 to 14 oz) with a rounded face so it does not dent drywall. The hatchet-shaped end cuts small pieces and helps grab and carry sheets.</td></tr>
+            <tr><td><b>Ball peen hammer (1.1.3)</b></td><td>Metalworking. A flat face for striking and a rounded end for peening metal or rivet heads. Weighs 4 oz to 2 lb. Used to strike chisels and punches.</td></tr>
+            <tr><td><b>Sledgehammer (1.1.4)</b></td><td>Heavy duty: driving posts, demolition, breaking cast iron or concrete. High-carbon steel head of 2 to 20 lb, on a long or short handle.</td></tr>
+          </tbody>
+        </table></div>
+        <p><b>Claw hammer faces and claws.</b> A slightly rounded (convex) face lets a skilled worker drive a nail flush without seriously damaging the surface. A milled (waffled) face is mostly for framing, where the marks get hidden behind finish work. A <b>curved claw</b> gives extra leverage for pulling nails. A <b>rip claw</b> is flatter and is best for ripping boards and woodwork apart.</p>
+        <p><b>Driving a nail.</b> Put on safety glasses. Rest the hammer face on the nail to find your starting spot, draw back and tap it to start the nail, then move your fingers away. Swing with your wrist, elbow and shoulder and strike the nail squarely with the center of the face. Hold the handle near the end, even with the lower edge of your palm, because holding closer to the head means you have to swing harder.</p>
+        <p><b>Pulling a nail.</b> Slip the claw under the nail head and pry until the handle is nearly vertical. For a tight nail, slide a small block of wood under the hammer head for more leverage. The block also keeps the claw from scarring the workpiece.</p>
+        <div class="warn"><b>Never</b>Never use a ball peen hammer to drive nails. Its head is made of milder steel, and pounding nails can damage the face. Ball peen and woodworking hammers are not interchangeable.</div>
+
+        <h4>Using a sledgehammer (1.1.4)</h4>
+        <ol>
+          <li>Wear gloves, eye protection and safety shoes, and inspect the sledgehammer for defects.</li>
+          <li>Make sure no one is close enough to be hit on the backswing.</li>
+          <li>Hold it with both hands apart, one hand over the other, and stand directly in front of the target.</li>
+          <li>Lift it straight up above the target and set the head on the target.</li>
+          <li>Start with short blows and slowly make the swing longer and stronger.</li>
+        </ol>
+        <div class="warn"><b>Warning</b>Do not swing a sledgehammer past vertical and over your head. It can hurt your back and you lose control. Never hold an object with your hands while someone else swings. Crushed or broken bones can result.</div>
+
+        <h4>Nail pullers and demolition tools (1.1.5)</h4>
+        <p>Taking apart a wooden structure takes the right tool. The module covers three:</p>
+        <div class="scroll"><table>
+          <caption>Nail pullers and wrecking bars</caption>
+          <thead><tr><th>Tool</th><th>What to know</th></tr></thead>
+          <tbody>
+            <tr><td><b>Cat's paw</b></td><td>A straight steel rod with a curved claw. Pulls nails driven flush or a little below the surface, lifting the head so another tool can finish. Its tight curve may not give enough leverage for long nails.</td></tr>
+            <tr><td><b>Chisel bar</b></td><td>A claw at one end and a broad, chisel-like beveled end at the other. The chisel end can be driven into wood joints or under a nail head.</td></tr>
+            <tr><td><b>Wrecking bar</b></td><td>Also called a ripping bar or wonder bar. Has a nail slot, a wedge-shaped end for prying and a claw. Typically 12 to 42 inches long, and longer means more leverage.</td></tr>
+          </tbody>
+        </table></div>
+        <div class="warn"><b>Warning</b>Wear a hard hat, safety glasses and gloves. Never pull a bar toward your face. Pull it toward your shoulder. Do not push hard away from your body, because you can lose your balance. Always be ready for the sudden release of resistance.</div>
+        <div class="case"><b>Did you know</b>Some demolition tools combine jobs. The module's example, the Stanley Fubar, joins a pry bar and a hammer, with three striking surfaces and a chopping edge for softer materials like drywall.</div>
+
+        <h4>Hammer care and safety (1.1.6)</h4>
+        <ul>
+          <li>Check that the handle is set tightly in the head and replace cracked or broken handles.</li>
+          <li>Keep the face clean. Do not use a hammer with a chipped or damaged head, or a cast head.</li>
+          <li>Hold it near the end of the handle and hit the nail squarely. Do not strike with the cheek or side unless the hammer was made for that.</li>
+          <li>Never strike two hammer heads together.</li>
+          <li>For sledgehammers: use the right amount of force, keep your hands away from the object, and look behind you for people and objects before swinging.</li>
+          <li>For ripping and nail pulling: use two hands, and make sure the wood holding the nail is braced. Many accidents happen when a pry bar slips and the worker falls.</li>
+        </ul>
+
+        <h4>Chisels (1.2.1)</h4>
+        <p>A <b>chisel</b> is a metal tool with a sharpened, beveled edge, made from heat-treated steel. <b>Wood chisels</b> are used only on wood. <b>Cold chisels</b> are used on metal and stone. The name comes from working with cold metal rather than metal heated by a torch.</p>
+        <div class="scroll"><table>
+          <caption>Chisels in the module</caption>
+          <thead><tr><th>Chisel</th><th>What to know</th></tr></thead>
+          <tbody>
+            <tr><td><b>Flat cold chisel</b></td><td>Most common cold chisel. Tip ground to 60 degrees. Cuts through rusted or damaged bolts and hardware that wrenches cannot remove.</td></tr>
+            <tr><td><b>Cape chisel</b></td><td>The cutting tip is slightly wider than the body, so it does not bind in the cut. Cuts single grooves or a series of parallel grooves.</td></tr>
+            <tr><td><b>Round nose chisel</b></td><td>Specialized work like forming flutes and channels.</td></tr>
+            <tr><td><b>Diamond-pointed chisel</b></td><td>Square tip with a single bevel. Cleans up the inside angles of channels and chips through thin plate.</td></tr>
+            <tr><td><b>Bevel-edged wood chisel</b></td><td>Slightly angled edges that push easily into corners, such as when finishing dovetail joints.</td></tr>
+            <tr><td><b>Paring chisel</b></td><td>Longer and thinner. Reaches deep into long joints for a precise fit. Most are for hand use only and are never struck with a hammer. If the handle has no metal striking surface, do not strike it.</td></tr>
+          </tbody>
+        </table></div>
+        <p><b>Using a cold chisel.</b> Wear eye protection, secure the work in a vise, set the blade where the cut will go, and strike with a ball peen hammer. Repeat as needed.</p>
+        <p><b>Using a wood chisel.</b> Outline the area. Set the chisel at one end of the outline with the edge on the cross-grain line and the bevel facing the recess. Tap lightly with a mallet, then do the other end. Make a series of cuts about 1/4 inch apart. Then pare the notched wood away, bevel side down, slicing inward from the end.</p>
+
+        <h4>Punches (1.2.2)</h4>
+        <p>A <b>punch</b> uses a hammer's impact to indent metal, start a drill bit, drive pins or line up holes. Punches are made of hardened and tempered steel. To use one, hold it straight with one hand and strike it squarely.</p>
+        <ul>
+          <li><b>Center punch:</b> heavier, with a 60-degree tip. Its wide dent is best for marking a spot to drill.</li>
+          <li><b>Prick punch:</b> shallower angle and smaller dent. Best for general layout on sheet metal.</li>
+          <li><b>Tapered (straight) punch:</b> blunt end, used to drive out pins and align holes in mating parts.</li>
+        </ul>
+        <h4>Chisel and punch care (1.2.3)</h4>
+        <ul>
+          <li>Wear gloves and safety goggles.</li>
+          <li>Keep a wood chisel's bevel at 25 degrees and a cold chisel's at 60 degrees. Sharpen on an oilstone, and sharpen punches on a bench grinder.</li>
+          <li>Do not use a chisel, punch or hammer with a <b>mushroomed</b> (flattened, spread-out) head.</li>
+        </ul>
+        <div class="warn"><b>Warning</b>Striking a mushroomed chisel or punch can break off metal chips that cause serious eye injuries. Pull it out of service until it is repaired or replaced under company policy.</div>
+
+        <h4>Screwdrivers (1.3.0)</h4>
+        <p>Screwdrivers are named for the screw they fit. The most common are slotted and Phillips. The module also covers four specialized types. Torx, Robertson and Allen give the most grip and can take more <b>torque</b> without stripping the head.</p>
+        <div class="scroll"><table>
+          <caption>Screwdriver and screw head types</caption>
+          <thead><tr><th>Type</th><th>What to know</th></tr></thead>
+          <tbody>
+            <tr><td><b>Slotted</b></td><td>Also called straight, flat or standard tip. Very common but gives the least grip, so it limits torque.</td></tr>
+            <tr><td><b>Phillips</b></td><td>The most common crosshead. Better grip than slotted.</td></tr>
+            <tr><td><b>Clutch-drive</b></td><td>Hourglass-shaped head with good grip. Common where vandal resistance matters.</td></tr>
+            <tr><td><b>Torx</b></td><td>Star-shaped tip. Used in mechanical assembly and repair and in residential construction.</td></tr>
+            <tr><td><b>Robertson (square)</b></td><td>Square drive for extra grip and torque. Also popular in residential construction, inside and out.</td></tr>
+            <tr><td><b>Allen (hex)</b></td><td>For socket-head screws with a six-sided recess. The L-shaped steel bars are generally called wrenches.</td></tr>
+          </tbody>
+        </table></div>
+        <p><b>Parts.</b> The <b>handle</b> gives you a grip, the <b>shank</b> is the metal between the handle and the blade, and the <b>blade</b> is the formed end that fits the screw head. Good ones are made of tempered steel and have the shank running through the whole handle.</p>
+        <p><b>Fit and use.</b> The blade should fit the screw head snugly and not be too wide, too narrow, too thick, too thin or loose. The wrong size can damage the tool or the screw. Even a Reed and Prince screw, which looks like a Phillips, will slip and get damaged with a Phillips driver. Wear gloves, hold the shank square (at a right angle) to the work, press firmly and steadily, and turn clockwise to tighten and counterclockwise to loosen. Do not let the bit spin inside the head.</p>
+        <div class="case"><b>Screws versus nails</b>Screws hold better than nails in most situations because their threads grip the material. Self-tapping screws cut their own threads, but in woodworking a small starter hole helps keep the wood from splitting.</div>
+        <h4>Screwdriver care (1.3.1)</h4>
+        <ul>
+          <li>Keep screwdrivers free of dirt, grease and grit so they do not slip.</li>
+          <li>Inspect before use. Repair or replace one with a worn handle or a tip that is not straight and smooth.</li>
+          <li>Never use a screwdriver as a punch, chisel or pry bar.</li>
+          <li>Do not use or lay one near energized conductors, and do not expose the handle to excessive heat.</li>
+          <li>Carry screwdrivers with the tip down.</li>
+        </ul>
+
+        <h4>Wrenches (1.4.0)</h4>
+        <p>Wrenches hold and turn nuts, bolts, pipes and anything that needs leverage to turn. They fall into two groups: <b>non-adjustable</b> (fits one size) and <b>adjustable</b>. Wrenches and hardware come in both Imperial and metric sizes, and the two are not interchangeable.</p>
+        <div class="scroll"><table>
+          <caption>Non-adjustable wrenches (1.4.1)</caption>
+          <thead><tr><th>Wrench</th><th>What to know</th></tr></thead>
+          <tbody>
+            <tr><td><b>Open-end</b></td><td>Easy to slip around a fastener but grips less. Most have two sizes, one at each end.</td></tr>
+            <tr><td><b>Box-end</b></td><td>Wraps all the way around the head, so it grips firmer and slips less. Has 6 or 12 flats. Most have two sizes.</td></tr>
+            <tr><td><b>Ratcheting box-end</b></td><td>Popular for assembly, but shorter, so less leverage. Not the best for freeing corroded or tight hardware.</td></tr>
+            <tr><td><b>Combination</b></td><td>One open end and one box end, both the same size.</td></tr>
+          </tbody>
+        </table></div>
+        <p><b>Sizing.</b> The wrench size is the distance between the flats of the wrench opening, and it has to match the distance across the fastener head. A 1/2-inch bolt head needs a 1/2-inch wrench. Bolts are sized by the thread diameter, not the head, so a 5/16-inch bolt usually has a 1/2-inch head and a 3/8-inch bolt a 9/16-inch head. Six flats are less likely to round off a bolt. Twelve flats give twelve positions to settle onto the fastener instead of six, which helps in tight spots.</p>
+        <p><b>Use.</b> Always use the right size, snug on the fastener. Pull the wrench toward your body to turn it. Pushing away is more likely to cause an injury.</p>
+
+        <div class="scroll"><table>
+          <caption>Adjustable wrenches (1.4.2)</caption>
+          <thead><tr><th>Wrench</th><th>What to know</th></tr></thead>
+          <tbody>
+            <tr><td><b>Adjustable (Crescent)</b></td><td>One fixed jaw, one movable jaw, and an adjusting nut that moves the jaw. Lengths from 4 to 30 inches. Flexible, but a fixed-jaw wrench is usually better and safer. The two are often used together.</td></tr>
+            <tr><td><b>Pipe wrench</b></td><td>Serrated teeth on both jaws grip smooth pipe. The spring-loaded jaw lets you reposition without readjusting.</td></tr>
+            <tr><td><b>Spud wrench</b></td><td>Smooth jaws that do not grip round pipe. Used on large nuts in plumbing and piping.</td></tr>
+          </tbody>
+        </table></div>
+        <p>Set the jaws close to the size, apply the pressure on the <b>fixed jaw</b> and not the movable jaw, then tighten the jaws fully (a light shake while you turn the adjusting nut helps). Pull toward your body. Most hardware has <b>right-hand threads</b>: clockwise tightens, counterclockwise loosens. It is easy to turn a fastener the wrong way when trying to remove it, which only makes it tighter.</p>
+        <div class="warn"><b>Warning</b>Badly adjusted jaws can slip, and you can lose your balance. If you must push on a wrench, brace yourself with your free hand. Wear gloves.</div>
+
+        <h4>Socket wrenches (1.4.3)</h4>
+        <p>A socket wrench uses a <b>ratchet</b>: the socket turns the fastener one way and spins freely the other way, so you do not have to remove and refit the wrench after every turn. The square shaft that holds the socket has a <b>drive size</b>, usually 1/4, 3/8 or 1/2 inch (up to 2-1/2 inches for heavy industrial work). That size describes the drive, not the hardware, and there are no metric drive sizes even though metric sockets are common.</p>
+        <ul>
+          <li>Most sockets have 6 or 12 flats, and 6 flats grip better.</li>
+          <li><b>Deep sockets</b> fit a bolt that sticks out past the nut. <b>Extensions</b> come in many lengths and reach into tight spaces.</li>
+          <li>The knob or lever on the ratchet head reverses the free-spinning direction. Longer handles give more leverage.</li>
+          <li>A hinged handle, or <b>breaker bar</b>, is for breaking a stubborn fastener loose when no ratcheting is needed.</li>
+          <li>A <b>torque wrench</b> applies a set amount of torque. Torque is distance times force (inch-pounds, foot-pounds, or newton-meters; 1 inch-pound is 0.113 newton-meter).</li>
+        </ul>
+        <h4>Wrench care and safety (1.4.4)</h4>
+        <ul>
+          <li>Pull the wrench toward your body, never toward your face or away from you.</li>
+          <li>Check the handle and jaw surfaces before use. Keep adjustable wrenches clean so mud and grease do not clog the adjusting screw.</li>
+          <li>Do not use a wrench as a hammer. Never go beyond its capacity, and never slip a <b>cheater bar</b> or pipe over it, because it can snap the tool or break the bolt head off.</li>
+          <li>Clean sockets and ratchets after every use.</li>
+        </ul>
+        <div class="case"><b>Tool lanyards</b>A dropped tool at height can seriously injure or kill someone, and it can destroy the tool. Tethering tools to the belt or wrist prevents injuries, protects the tools and saves the time spent retrieving them.</div>
+
+        <h4>Pliers and wire cutters (1.5.0)</h4>
+        <p>Pliers are hinged tools that hold, cut and bend wire and soft metals. They should <b>not</b> be used to tighten or loosen nuts and bolts, because they round off the corners and then wrenches no longer fit. Good pliers are hardened tool steel.</p>
+        <div class="scroll"><table>
+          <caption>Common pliers</caption>
+          <thead><tr><th>Pliers</th><th>What to know</th></tr></thead>
+          <tbody>
+            <tr><td><b>Slip-joint (1.5.1)</b></td><td>Hold and bend wire and grip parts during assembly. Adjustable jaws with two or three positions.</td></tr>
+            <tr><td><b>Long-nose (1.5.2)</b></td><td>Also called needle-nose. Reach into tight places, grip small parts and bend angles or loops in electrical wire. Most have wire-cutting jaws near the pivot.</td></tr>
+            <tr><td><b>Lineman's (1.5.3)</b></td><td>Also called side cutters. Wider, heavier jaws. Cut electrical wire and hold workpieces. To cut, point the loose end down and squeeze at a right angle to the wire.</td></tr>
+            <tr><td><b>Tongue-and-groove (1.5.4)</b></td><td>Serrated teeth grip flat, square, round or hex objects. The jaw sets in several positions. Large ones are used on pipe. Jaws can be straight, smooth, V-shaped or curved.</td></tr>
+            <tr><td><b>Locking (1.5.5)</b></td><td>Clamp onto an object like a vise. Often called Vise-Grips (a brand name). Good for holding metal together for welding and for gripping a damaged nut or bolt. A knob adjusts the jaw, and a lever releases the lock.</td></tr>
+          </tbody>
+        </table></div>
+        <h4>Plier safety (1.5.6)</h4>
+        <ul>
+          <li>Wear protective gear, especially when cutting wire. Hold the scrap end of cut wire to stop flying metal bits.</li>
+          <li>Hold the pliers near the end of the handles to avoid pinching your fingers in the hinge. Do not lengthen the handles for more leverage. Use a larger pair.</li>
+          <li>Cut at right angles. Do not rock the pliers side to side or bend the wire back and forth against the blades.</li>
+          <li>Never use pliers on energized circuits, even with plastic-coated handles, because they are not always rated for shock.</li>
+          <li>Keep them lubricated, away from excess heat, and never use them as a hammer.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">B</span><h3>Study review points</h3></div>
+      <ul class="points" data-points="1"></ul>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">C</span><h3>Trade-term cards</h3></div>
+      <div class="deck" data-cards="1"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">D</span><h3>Ticket out the door</h3></div>
+      <div class="ticket" data-quiz="1"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">E</span><h3>Talk it over</h3></div>
+      <div class="talk" data-talk="1"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">F</span><h3>Practice questions</h3><span class="time">about 25 min</span></div>
+      <div data-practice="1"></div>
+    </div>
+  </section>
+
+  <!-- ===================== SECTION 2 ===================== -->
+  <section class="sec" id="s2" aria-labelledby="s2-h">
+    <div class="sec-head">
+      <span class="eyebrow">Module Section 2 of 3</span>
+      <h2 id="s2-h">Measurement and Layout Tools</h2>
+      <p class="obj">By the end of this section your student can choose and read a measuring tool, tell level from plumb, and use levels, squares, a plumb bob and a chalk line.</p>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">A</span><h3>Read it together</h3><span class="time">about 30 min</span></div>
+      <div class="prose">
+        <p class="big">Good work starts with good measurements. Wrong measurements and crooked parts cause problems on the job, so craftworkers learn to take precise measurements and to set things <b>plumb</b> (perfectly vertical) and <b>level</b>.</p>
+
+        <h4>Four measuring tools (2.1.0)</h4>
+        <p>The module says to weigh accuracy, ease of use, durability and readability, and to make sure the tool suits the length being measured.</p>
+        <div class="scroll"><table>
+          <caption>Rules and measuring tools</caption>
+          <thead><tr><th>Tool</th><th>What to know</th></tr></thead>
+          <tbody>
+            <tr><td><b>Flat steel rule (2.1.1)</b></td><td>Usually 6 or 12 inches (15 or 30 cm). Longer shop versions are 1 yard or 1 meter. Accurate, and also used as a straightedge for layout. Thin and flexible, or thicker and rigid.</td></tr>
+            <tr><td><b>Tape measure (2.1.2)</b></td><td>Marked in 1/16 inch or 1 mm. The blade curves (<b>concave</b>) to stay rigid when extended. The hook slides slightly to allow for its own thickness on inside and outside measurements. For an inside measurement, add the width stamped on the case. Replace the tape if the hook is damaged.</td></tr>
+            <tr><td><b>Wooden folding rule (2.1.3)</b></td><td>Marked in sixteenths. Imperial versions come in 6 and 8 foot lengths (1 and 2 meters in metric). Rigid, so better than a tape for things like vertical measurement. May show wall-framing marks at 16, 19.2 and 24 inches.</td></tr>
+            <tr><td><b>Laser measuring tool (2.1.4)</b></td><td>Battery-powered. Point it, press a button, and the beam's travel time gives the distance. Reports in Imperial and metric and can store measurements.</td></tr>
+          </tbody>
+        </table></div>
+        <p><b>Laser tool pros.</b> Long vertical measurements from the ground. Longer distances (some to 600 feet, sometimes with a target plate). Built-in area and add-or-subtract functions. Stored readings and Bluetooth. Some have built-in levels.</p>
+        <p><b>Laser tool cons.</b> Accuracy can suffer at long distances, and some workers simply do not trust electronic readings. Very hot or smoky air scatters the beam. A shiny target can interfere, so stick a piece of matte tape on it.</p>
+        <h4>Care of measuring tools (2.1.5)</h4>
+        <ul>
+          <li>Put a few drops of lubricant on the spring joints of a folding rule and steel tape from time to time.</li>
+          <li>Wipe moisture off steel tapes to prevent rust where the coating is worn.</li>
+          <li>Do not kink or twist steel tapes. The damage is permanent.</li>
+          <li>Do not use a steel measuring device near energized electrical parts.</li>
+          <li>Keep laser tools away from water and excess heat.</li>
+        </ul>
+        <div class="case"><b>Precision tools</b>Micrometers and calipers measure machined parts down to 0.0001 inch. A standard micrometer's smallest division is 0.001 inch, and digital ones can read as small as 0.00005 inch.</div>
+
+        <h4>Levels (2.2.0 and 2.2.1 to 2.2.4)</h4>
+        <p>A <b>level</b> shows how close a surface is to true horizontal (level) or true vertical (plumb).</p>
+        <ul>
+          <li><b>Spirit level.</b> The most common leveling tool. The vials hold colored ethanol (alcohol is called "spirits") because it does not freeze like water and moves more freely. Most have three vials: the <b>center vial</b> checks level and the <b>two end vials</b> check plumb. When the bubble is centered between the lines, the surface is level or plumb. Clear debris off the surface first.</li>
+          <li><b>Torpedo level.</b> A short spirit level that also shows a true 45-degree angle. Often has a magnetic or V-shaped base, so it is handy for pipefitting.</li>
+          <li><b>Post level.</b> Straps to a post so you can see plumb in two directions at once. Many have magnets for steel posts.</li>
+          <li><b>Digital level.</b> A digital readout of slope in degrees plus rate of rise, for laying out stairs and roofs or checking the fall of a drain line.</li>
+          <li><b>Laser level.</b> Lets one worker establish plumb, level or square. Used for foundation elevations, drainage slopes, square framing, lining up plumbing and electrical lines, and hanging suspended ceilings. Works over distances well beyond a regular level.</li>
+        </ul>
+        <div class="warn"><b>Warning</b>Never look directly into a laser beam or its source. It can permanently damage your eyes.</div>
+        <ul>
+          <li>Replace a level if a vial cracks or looks loose. Keep levels clean and dry. Do not bend them, drop them or throw them.</li>
+        </ul>
+
+        <h4>Squares (2.2.5 and 2.2.6)</h4>
+        <p>A <b>square</b> is used to mark, to measure and to check that a joint is square. The kind you use depends on the job and your preference.</p>
+        <div class="scroll"><table>
+          <caption>Types of squares</caption>
+          <thead><tr><th>Square</th><th>What to know</th></tr></thead>
+          <tbody>
+            <tr><td><b>Carpenter's (framing) square</b></td><td>L-shaped, with a 24-inch blade and 16-inch tongue (600 mm and 400 mm in metric). Squares up baseplates and walls, and marks square lines on wide lumber. Tables and formulas are printed on the blade. A pipefitter's square looks the same but carries pipefitting formulas.</td></tr>
+            <tr><td><b>Rafter angle (speed) square</b></td><td>Cast aluminum or tough plastic. Combines a protractor, try square and framing square, with degree marks for quick rafter layout. Small and easy to carry.</td></tr>
+            <tr><td><b>Try square</b></td><td>A fixed 90-degree angle, mostly for woodworking. Lays out 90-degree lines and checks joints, and checks lumber for warps or cups.</td></tr>
+            <tr><td><b>Combination square</b></td><td>A ruled blade that slides in a head with 45- and 90-degree faces. Many have a small spirit level and a scribe for metal. The most versatile layout square.</td></tr>
+          </tbody>
+        </table></div>
+        <p><b>Marking with a combination square.</b> For 90 degrees: set the blade long enough to cross the material, hold the front edge of the head firmly against the material, and draw along the blade. For 45 degrees: hold the back of the head against the edge and draw along the blade at an angle.</p>
+        <p><b>Care.</b> Do not pry or hammer with a square, and protect the edges and blades. Keep it dry with a light coat of silicone spray. Do not drop it, since the angle can change (a try square is easier to damage than a carpenter's square). To check a square, scribe a line on straight lumber, flip the square over and scribe in the same place. The two lines should match.</p>
+        <div class="case"><b>Did you know</b>Some combination square sets can be set to any angle with a rotating protractor head, and a centering head finds the center of round stock. Basic geometry like this shows up every day in the crafts.</div>
+
+        <h4>Plumb bob (2.2.7)</h4>
+        <p>A pointed weight on a string. Gravity pulls the string perfectly vertical. Common weights are 20, 16, 12 and 8 oz, and heavier ones hold steady better on long drops.</p>
+        <ol>
+          <li>Make sure the line is attached at the exact top center of the bob.</li>
+          <li>Hang it from a horizontal member (a door jamb, joist or beam). Do not drop it on its point.</li>
+          <li>When it hangs free and stops swinging, the string is plumb. Outdoors, wind can swing it.</li>
+          <li>Mark the point directly below the tip. It is straight below the point of attachment.</li>
+        </ol>
+        <p>Use it to check a wall or door jamb or to find the spot on a floor directly under a beam that needs a support post.</p>
+
+        <h4>Chalk lines (2.2.8)</h4>
+        <p>A reel of string coated with chalk, used to mark long straight lines on smooth surfaces. Pull the line out (it chalks itself), secure one end, pull it tight between the two points, then pull the string straight up and let go to snap a line. Spray the chalk with clear lacquer so it does not wash away or get scuffed, and store the chalk in a dry place because wet chalk is unusable. Some chalk lines can double as a lightweight plumb bob.</p>
+        <div class="case"><b>Did you know</b>Bricklayers use a straight level and a plumb line to keep each course of bricks level and the wall straight. An uneven wall is weak as well as unattractive. People have used bricks in construction for more than 10,000 years.</div>
+      </div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">B</span><h3>Study review points</h3></div>
+      <ul class="points" data-points="2"></ul>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">C</span><h3>Trade-term cards</h3></div>
+      <div class="deck" data-cards="2"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">D</span><h3>Ticket out the door</h3></div>
+      <div class="ticket" data-quiz="2"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">E</span><h3>Talk it over</h3></div>
+      <div class="talk" data-talk="2"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">F</span><h3>Practice questions</h3><span class="time">about 10 min</span></div>
+      <div data-practice="2"></div>
+    </div>
+  </section>
+
+  <!-- ===================== SECTION 3 ===================== -->
+  <section class="sec" id="s3" aria-labelledby="s3-h">
+    <div class="sec-head">
+      <span class="eyebrow">Module Section 3 of 3</span>
+      <h2 id="s3-h">Other Common Hand Tools</h2>
+      <p class="obj">By the end of this section your student can match a saw, clamp, file, knife or shovel to the job it does best and use each one safely.</p>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">A</span><h3>Read it together</h3><span class="time">about 35 min</span></div>
+      <div class="prose">
+        <p class="big">Handsaws have been used since before 1500 BC, and clamps and vises are still things a power tool cannot replace. Power tools do much of the old handwork now, but these hand tools remain on the job site every day.</p>
+
+        <h4>Saws (3.1.0)</h4>
+        <p>Every saw has cutting teeth. The shape and size of the teeth set how smooth the cut is and how fast it goes. <b>Fewer teeth per inch (tpi)</b> means a coarser, faster cut. <b>More teeth per inch</b> means smaller teeth and a slower, smoother cut.</p>
+        <div class="scroll"><table>
+          <caption>Common saws (Figure 42)</caption>
+          <thead><tr><th>Saw</th><th>What to know</th></tr></thead>
+          <tbody>
+            <tr><td><b>Backsaw</b></td><td>8 to 14 inch blade, 11 to 14 tpi. Broad, flat blade with a reinforced back that keeps it straight. Smooth cuts for finish lumber and <b>miter joints</b>.</td></tr>
+            <tr><td><b>Keyhole saw</b></td><td>12 to 14 inch blade, 7 to 8 tpi. Cuts curves quickly in wood, plywood or wallboard. Cuts holes for large pipes, vents and electrical boxes. Named for cutting keyholes in doors.</td></tr>
+            <tr><td><b>Coping saw</b></td><td>Narrow, flexible blade in a U-shaped frame, 10 to 20 tpi. Tight curves and circles in finish carpentry. Usually mounted to cut on the pull stroke.</td></tr>
+            <tr><td><b>Drywall saw</b></td><td>Long, narrow, sharp-pointed, for quick cuts in soft building materials. The blade can be fixed or retractable.</td></tr>
+            <tr><td><b>Handsaw</b></td><td>26 inch blade. <b>Crosscut</b> saws have 8 to 14 tpi and cut across the grain. <b>Ripsaws</b> have 5 to 9 tpi and cut with the grain.</td></tr>
+            <tr><td><b>Hacksaw</b></td><td>8 to 16 inch blade, 14 to 32 tpi. Cuts metal such as bolts and pipe. The blade goes on with the teeth facing away from the handle, and it cuts on the push stroke.</td></tr>
+          </tbody>
+        </table></div>
+        <div class="warn"><b>Warning</b>Saw teeth are very sharp. Use gloves, do not handle teeth bare-handed, and keep your fingers clear of the teeth while cutting.</div>
+
+        <h4>Handsaws and how to use them (3.1.1)</h4>
+        <p>A handsaw blade is tempered steel so it stays sharp and does not buckle. The teeth are set (angled) alternately to each side so the cut, called the <b>kerf</b>, is a little wider than the blade. A crosscut saw cuts slower than a ripsaw but leaves a smoother surface. A 24 or 26 inch blade is a good general choice, since longer strokes make a better, more consistent cut.</p>
+        <ol>
+          <li>Put on safety glasses and work gloves. Mark the cut with a square, and put an X on the scrap side of the line. The kerf should always come out of the scrap side.</li>
+          <li>Support the work on a sawhorse and clamp it. Plan to support the scrap end too, so it does not break off as the blade nears the end of the cut.</li>
+          <li>Set the teeth on the edge of the wood farthest from you, just outside the mark on the scrap side.</li>
+          <li>Start by pulling the blade toward you, near the handle end, with the saw at about 45 degrees to the wood, to make a small kerf.</li>
+          <li>Then push to cut. Start slowly and lengthen the strokes as the kerf deepens. The push stroke does the cutting, so it is the more forceful one.</li>
+          <li>Guide the saw with the thumb of your free hand so the blade stays perpendicular to the work.</li>
+          <li>Do not force the saw. Let its weight set the pace. If it wanders, work it back toward the line. If it binds, put a wooden wedge in the kerf.</li>
+        </ol>
+        <p>A ripsaw is started the same way but, once the cut is going, it is held at a steeper 60 degrees.</p>
+        <h4>Saw care (3.1.2)</h4>
+        <ul>
+          <li>Brace yourself so you are not thrown off balance when the scrap separates. Clamp the work.</li>
+          <li>Clean blades with fine emery cloth or steel wool, and use silicone lubricant if rust starts.</li>
+          <li>Lay a saw down gently. A bent or buckled blade cannot be repaired.</li>
+          <li>Do not saw into stone, concrete or metal with a handsaw. It ruins the teeth.</li>
+        </ul>
+
+        <h4>Clamps (3.2.0)</h4>
+        <p>Clamps are sized by the largest opening of the jaws. The <b>throat</b> (depth) decides how far from the edge you can clamp.</p>
+        <div class="scroll"><table>
+          <caption>Types of clamps (Figure 44)</caption>
+          <thead><tr><th>Clamp</th><th>What to know</th></tr></thead>
+          <tbody>
+            <tr><td><b>C-clamp</b></td><td>Multipurpose, with a C-shaped frame and a screw with a metal shoe, tightened with a sliding T-bar handle. Strong and durable, usually cast iron or steel.</td></tr>
+            <tr><td><b>Locking C-clamp pliers</b></td><td>Pliers that also work as a clamp. A knob in the handle sets jaw width and tension. Close the handles to lock, press the lever to release.</td></tr>
+            <tr><td><b>Spring clamp</b></td><td>Spring-operated. Jaws are usually cushioned to protect the work.</td></tr>
+            <tr><td><b>Bar clamp</b></td><td>A steel or aluminum bar with a fixed jaw and a sliding jaw. Padded jaws, quick release trigger, and the jaw can be flipped to work as a spreader.</td></tr>
+            <tr><td><b>Pipe clamp</b></td><td>Uses any length of pipe as the spine, with a fixed jaw and a movable jaw. Popular for large and wide clamping jobs.</td></tr>
+            <tr><td><b>Hand-screw clamp</b></td><td>Broad <b>wooden jaws</b> spread pressure over a wide area. The two jaws work independently on two threaded rods and can be angled or kept parallel.</td></tr>
+            <tr><td><b>Web (cargo, band) strap</b></td><td>Not technically a clamp. A canvas or nylon strap with a ratcheting head that applies even pressure around a bundle or secures a load.</td></tr>
+          </tbody>
+        </table></div>
+        <p>When clamping soft material, put rubber pads or thin wood blocks between the jaws and the work. Protect the corners of finish lumber when strapping it.</p>
+        <h4>Clamp care (3.2.1)</h4>
+        <ul>
+          <li>Store clamps lightly clamped to a rack. Throw away clamps with bent frames or spines (a pipe clamp spine is easy to replace).</li>
+          <li>Clean and lightly lubricate the moving parts, but not too much, since oil collects dirt and dust.</li>
+          <li>Never use any of these clamps to hoist work, and never add leverage with a pipe or other tool.</li>
+        </ul>
+
+        <h4>Files, rasps and utility knives (3.3.0)</h4>
+        <p>Files and rasps shape wood and metal, remove burrs and smooth rough spots. Utility knives are general purpose and common to all the crafts, but they also cause many injuries. Many companies have rules for them, and some job sites require self-retracting blades and ban the rest.</p>
+        <div class="warn"><b>Warning</b>Files and knives have sharp points and edges. Never use a file or rasp without a handle on it.</div>
+        <h4>Files and rasps (3.3.1)</h4>
+        <ul>
+          <li><b>Files</b> have slanting, parallel rows of teeth and are used on metal. <b>Rasps</b> and wood shavers have deeper, individual teeth and are for wood and similar soft materials. A wood shaver has an open, grater-like design that lets debris pass through.</li>
+          <li>A file is sized by the length of its body, not the handle. The sharp point that fits into the handle is the <b>tang</b>. Lengths run from 4 to 16 inches.</li>
+          <li>Choose a profile that fits the area: half-round for large concave or flat surfaces, round (tapered) for small curves and enlarging holes, and triangular for angles and inside corners. Others include flat, square, mill and hand.</li>
+          <li>Files for soft material have wider-spaced teeth, and files for hard material have closer teeth. A soft-material file on metal chips and dulls. A metal file on wood clogs.</li>
+          <li><b>Single-cut</b> files have one direction of teeth. <b>Double-cut</b> files have crisscrossing rows in a diamond pattern.</li>
+          <li>Textures from roughest to smoothest: rough, coarse, bastard, second cut (medium), smooth, dead smooth. Smoother files leave the smoothest finish but remove the least material per stroke.</li>
+        </ul>
+        <p><b>Using a file.</b> Put on gloves and safety glasses, and check that the handle is tight. Hold the work in a vise or clamp at about elbow height. Stand back with your feet about 24 inches apart (dominant-side foot ahead) and do not lean over the work. Hold the handle in one hand and steady the tip with the other. Press only on the <b>forward stroke</b>, lift slightly on the back stroke, and keep the file flat on the work.</p>
+        <h4>Utility knives (3.3.2)</h4>
+        <p>A utility knife has a thin, replaceable, razor-sharp blade and cuts roofing felt, shingles, vinyl or linoleum floor tile, fiberboard and drywall. It also trims insulation and opens cartons. Some retract the blade when you let go of the blade control. The <b>carpet knife</b> blade has two sharpened edges, so it can be turned around to last longer, because carpet is hard on blades. Wear appropriate gloves (Kevlar offers more protection).</p>
+        <p><b>Using one.</b> Put a protective barrier, like scrap wood, under the cut. Put on gloves and push the blade out. Cut away from your body or across it, never toward it, and keep your free hand out of the line of the cut. Retract and lock the blade when done.</p>
+        <h4>File and knife care (3.3.3)</h4>
+        <ul>
+          <li>Use the right file for the material and always put a handle on it. Brush filings out of the teeth with a file card or wire brush, along the teeth.</li>
+          <li>Store files dry and separate so they do not chip each other. Do not let the work vibrate in the vise.</li>
+          <li>Replace utility knife blades when they stop cutting and start tearing, since sharp blades are safer than dull ones. Keep the blade closed and locked when not in use. Blades are brittle and can snap, leaving a jagged edge.</li>
+        </ul>
+
+        <h4>Shovels and picks (3.4.0)</h4>
+        <div class="scroll"><table>
+          <caption>Shovels and digging tools</caption>
+          <thead><tr><th>Tool</th><th>Best use</th></tr></thead>
+          <tbody>
+            <tr><td><b>Round shovel</b></td><td>Digging holes and moving soil.</td></tr>
+            <tr><td><b>Square shovel</b></td><td>Moving gravel, sand and cleaning up construction debris on a hard surface.</td></tr>
+            <tr><td><b>Spade</b></td><td>Shaping trenches or holes with smooth, straight sides. Flatter, with no curved sides.</td></tr>
+            <tr><td><b>Pick</b></td><td>Breaking hard or rocky soil, loosening soil, leveling stones and pavers, and breaking up stone and concrete. Wooden handle 36 to 45 inches, forged steel head 2 to 3 lb.</td></tr>
+            <tr><td><b>Mattock</b></td><td>Breaking hard soil and digging trenches. Much better than a pick for clearing tree roots. One wide blade, and the other side is a pick or a second blade turned 90 degrees. Handles rarely longer than 36 inches.</td></tr>
+          </tbody>
+        </table></div>
+        <p>Round shovels and spades work best on fresh earth: place the tip, put a foot on the step at the top of the blade and press down. Handles are usually 47 to 48 inches (long) or 27 inches (short, often with a D-ring). A shovel is not a lever, so clear roots and obstructions with other tools first.</p>
+        <p>For a pick or mattock, choose a length to suit your size and the job. Wear gloves and steel-toe boots or shoes. Hold one hand at the end of the handle and the other about two thirds of the way up. Raise it, bend your knees, and let the weight of the head and the leverage of the handle deliver the blow.</p>
+        <div class="warn"><b>Warning</b>Do not swing a pick or mattock past vertical and over your head. It can hurt your back and you lose control.</div>
+        <h4>Shovel and pick safety (3.4.1)</h4>
+        <ul>
+          <li>Check that the blade or head is fixed firmly to the handle, with no cracks or splits.</li>
+          <li>Wear eye protection, gloves and safety shoes or boots. Brush or rinse the blade clean after use.</li>
+          <li>Make sure no one is in the swing path, use a pick of the right length and weight for your size, and use maximum swings only when necessary.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">B</span><h3>Study review points</h3></div>
+      <ul class="points" data-points="3"></ul>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">C</span><h3>Trade-term cards</h3></div>
+      <div class="deck" data-cards="3"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">D</span><h3>Ticket out the door</h3></div>
+      <div class="ticket" data-quiz="3"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">E</span><h3>Talk it over</h3></div>
+      <div class="talk" data-talk="3"></div>
+    </div>
+
+    <div class="part">
+      <div class="part-title"><span class="letter">F</span><h3>Practice questions</h3><span class="time">about 15 min</span></div>
+      <div data-practice="3"></div>
+    </div>
+  </section>
+
+  <section class="final" id="review" aria-labelledby="fin-h">
+    <span class="eyebrow">After all three sections</span>
+    <h2 id="fin-h">Can your student explain it?</h2>
+    <p class="lead">The goal is not perfect wording. The goal is accurate understanding and good judgment. Tick each one when your student can explain it without looking at the page. Remember that the module's performance tasks are done under supervision with real tools, so the last items are for hands-on class time.</p>
+    <ul class="points" id="final-points"></ul>
+    <p class="note">The module prints defined terms in its margins. They are spread across the sections where the book introduces them, and the cards marked "NCCER trade term" use them. Cards marked "Key term" are important words from the module that are not defined in its margins. The practice questions come from the handbook's Section Review and Module Review. The answer keys for both are in the textbook's Appendix A, which is not part of the module pages used to build this guide, so every answer here was worked out from the module text and is marked on each question. Four questions depend on a picture (the screw head in Section Review 1, and Figures RQ01 to RQ04 in the Module Review): each is described in words on the question, and the answers were worked out by comparing the review figures with the matching figures in the module. Check all of the answers against the publisher's key before relying on them. The textbook-style versions are written in the book's style and vocabulary, not copied word for word, so check the handbook itself for the exact wording. The module pages were read by software, so check any number you plan to rely on against the book. This guide is a plain-language companion, not a copy of the textbook. Draft for instructor review.</p>
+  </section>
+
+</div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><strong>Mr. Ellis CTE</strong> · East Valley Institute of Technology (EVIT), Mesa, Arizona · Your Future, Your Way</p>
+    <p>Based on NCCER Core, Module 00103, Introduction to Hand Tools.</p>
+    <p>Aim for perfection, take what you get.</p>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var POINTS = {
+    1: [
+      `<b>PPE on every job site:</b> safety glasses, safety shoes, hard hat and gloves. At height, tie tools to your belt with a <b>lanyard</b> so they cannot fall on anyone below.`,
+      `<b>Safest hammers</b> have heads of special alloys or drop-forged steel. <b>Cast-head</b> hammers are brittle and can chip or break, so do not use them in construction.`,
+      `<b>Claw hammers:</b> finish hammers are lighter (about 16 to 20 oz). Framing hammers are heavier (up to about 28 oz) with a longer handle and often a milled face. A <b>curved claw</b> is best for pulling nails. A <b>rip claw</b> is flatter, for ripping boards apart.`,
+      `<b>A slightly rounded (convex) hammer face</b> drives nails flush without seriously damaging the surface. Hold the hammer near the end of the handle.`,
+      `<b>Drywall hammer:</b> 12 to 14 oz with a rounded face and a hatchet end. <b>Ball peen hammer:</b> for metalwork and for striking chisels and punches. Never use it to drive nails.`,
+      `<b>Sledgehammer:</b> head of 2 to 20 lb. Wear PPE, check behind you, hold with both hands, and never swing it past vertical over your head. Never hold an object while someone else swings.`,
+      `<b>Nail pullers:</b> the cat's paw pulls nails driven flush. The chisel bar has a claw and a chisel end. The wrecking bar (12 to 42 inches) has a nail slot and a wedge end. Pull a bar toward your shoulder, never your face.`,
+      `<b>Cold chisels</b> are for metal and stone, with a 60-degree flat tip. <b>Wood chisels</b> are for wood only, with a 25-degree bevel. The <b>cape chisel</b> has a tip wider than its body so it does not bind when cutting grooves.`,
+      `<b>Paring chisels</b> are for hand use only and are not struck with a hammer. Wood chisel technique: bevel facing the recess, cuts about 1/4 inch apart, pare with the bevel down.`,
+      `<b>Punches:</b> the center punch (60-degree tip) marks a spot for drilling, the prick punch is for layout on sheet metal, and the tapered punch drives out pins and aligns holes.`,
+      `<b>Mushroomed heads</b> on chisels, punches and hammers can throw off metal chips that injure eyes. Take the tool out of service until it is repaired or replaced.`,
+      `<b>Screwdrivers:</b> slotted (least grip), Phillips (most common crosshead), clutch-drive, Torx (star), Robertson (square) and Allen (hex). The blade must fit the screw head snugly. Never use a screwdriver as a chisel, punch or pry bar.`,
+      `<b>Open-end and box-end wrenches</b> usually fit two sizes. A <b>combination wrench</b> has one size on both ends. Box-end (6 or 12 flats) grips better and is safer than open-end.`,
+      `<b>Adjustable wrench:</b> put the pressure on the <b>fixed jaw</b>. Pull the wrench toward your body. Right-hand threads tighten clockwise and loosen counterclockwise.`,
+      `<b>Sockets:</b> drive sizes are 1/4, 3/8 and 1/2 inch (no metric drive sizes). Most sockets have 6 or 12 flats. A breaker bar breaks stubborn fasteners loose. Never use a cheater bar.`,
+      `<b>Pliers:</b> slip-joint, long-nose (needle-nose), lineman's (side cutters), tongue-and-groove and locking pliers (Vise-Grips). Do not use pliers to turn nuts and bolts, never use them around energized circuits, and never use them as a hammer.`
+    ],
+    2: [
+      `<b>Four measuring tools:</b> flat steel rule (6 or 12 inches), tape measure, wooden folding rule (6 and 8 foot Imperial lengths) and laser measuring tool.`,
+      `<b>Tape measure:</b> the blade is concave to stay rigid. The hook slides to allow for its own thickness. For inside measurements, add the width stamped on the case.`,
+      `<b>Laser measuring tools</b> can measure up to about 600 feet and store readings. Drawbacks: possible loss of accuracy at long range, and hot or smoky air, or a shiny target, can disturb the beam.`,
+      `<b>Care:</b> do not kink steel tapes, wipe off moisture, and keep steel tools away from energized electrical parts.`,
+      `<b>Level</b> checks horizontal. <b>Plumb</b> checks vertical. In a spirit level the center vial checks level and the end vials check plumb, and the bubble must be centered between the lines.`,
+      `<b>Torpedo level</b> is short and shows 45 degrees too, often with a magnetic base. A <b>post level</b> reads two planes at once. A <b>digital level</b> shows degrees and rate of rise. A <b>laser level</b> works over long distances.`,
+      `<b>Never look directly into a laser beam.</b> Replace a level with a cracked or loose vial, and never drop or bend one.`,
+      `<b>Carpenter's (framing) square:</b> 24-inch blade and 16-inch tongue. <b>Rafter angle (speed) square:</b> protractor, try square and framing square in one. <b>Try square:</b> fixed 90 degrees. <b>Combination square:</b> sliding blade with 45- and 90-degree head.`,
+      `<b>To check a square,</b> scribe a line, flip the square and scribe again. The two lines should match.`,
+      `<b>Plumb bob:</b> a pointed weight on a string. When it hangs still, the string is plumb. Common weights are 20, 16, 12 and 8 oz.`,
+      `<b>Chalk line:</b> pull it tight between two points, pull it straight up and let go to snap a line. Keep the chalk dry.`
+    ],
+    3: [
+      `<b>Teeth per inch:</b> fewer teeth means a coarser, faster cut. More teeth means a slower, smoother cut.`,
+      `<b>Backsaw:</b> reinforced back, smooth cuts, finish lumber and miter joints. <b>Keyhole saw:</b> curves and holes. <b>Coping saw:</b> tight curves. <b>Drywall saw:</b> soft materials.`,
+      `<b>Crosscut saw</b> (8 to 14 tpi) cuts across the grain. <b>Ripsaw</b> (5 to 9 tpi) cuts with the grain.`,
+      `<b>Hacksaw</b> cuts metal. The teeth face away from the handle and it cuts on the push stroke.`,
+      `<b>Sawing a line:</b> the kerf comes out of the scrap side. Start with a pull stroke at about 45 degrees. The push stroke cuts. A ripsaw is held at about 60 degrees once the cut is started.`,
+      `<b>Clamps are sized by jaw opening.</b> Pad the jaws on soft materials. Use a <b>pipe clamp</b> for very wide jobs. A <b>hand-screw clamp</b> has wooden jaws. Never use a clamp for hoisting.`,
+      `<b>Files cut on the forward stroke.</b> Lift on the back stroke. Always put a handle on a file. Brush filings out with a file card.`,
+      `<b>Rasps</b> have deeper, individual teeth for wood. Files have slanting parallel rows for metal. File textures from roughest to smoothest: rough, coarse, bastard, second cut, smooth, dead smooth.`,
+      `<b>Utility knives:</b> use a barrier under the cut, cut away from your body, and keep the free hand clear. Replace the blade when it starts to tear. A carpet knife blade has two sharpened edges.`,
+      `<b>Shovels:</b> round for digging holes and moving soil, square for gravel and debris, spade for trenches and holes with straight sides.`,
+      `<b>Pick and mattock:</b> a pick breaks hard soil and concrete. A mattock is better for clearing roots. Never swing either one past vertical over your head.`
+    ]
+  };
+
+  var CARDS = {
+    1: [
+      { k: "o", t: `Lanyard`, plain: `A cord or strap that ties a tool to you so it cannot fall.`, book: `A rope, cord or strap that limits how far two connected objects can move apart.`, ask: `Why tie a tool to your belt when you work up high?` },
+      { k: "o", t: `Dowel`, plain: `A round pin or rod that fits into a hole to line up or hold two pieces together.`, book: `A usually round pin or rod that fits into a matching hole to join or align two workpieces.`, ask: `Where have you seen a dowel used?` },
+      { k: "o", t: `Flush`, plain: `Even with the surface. A nail is flush when its head is level with the wood.`, book: `Even with, or at the same level as, another object. A fully seated nail has its head flush with or slightly beyond the wood.`, ask: `How does a rounded hammer face help you drive a nail flush?` },
+      { k: "o", t: `Overstriking`, plain: `Missing the nail head so the hammer handle hits it instead.`, book: `When the hammer misses the nail head and the handle strikes it. A common cause of hammer damage.`, ask: `How can you avoid overstriking?` },
+      { k: "o", t: `Level`, plain: `Flat and even, like the horizon.`, book: `Used as an adjective: flat or even with another surface or with the Earth's horizon.`, ask: `How is level different from plumb?` },
+      { k: "o", t: `Drywall`, plain: `Big flat panels used to cover walls. Also called sheetrock or wallboard.`, book: `A large flat board of fiberboard and gypsum layers, usually made in 4 foot by 8 foot panels, used to build and finish walls and ready for paint.`, ask: `Which hammer is made for drywall?` },
+      { k: "o", t: `Lath`, plain: `A thin flat strip of wood behind wall plaster.`, book: `A thin, flat strip of wood used to make latticework or a base for wall plaster.`, ask: `What was the drywall hammer's hatchet end first used for?` },
+      { k: "o", t: `Peening`, plain: `Shaping or bending metal by hitting it.`, book: `Bending, shaping or cutting metal by striking it with a tool.`, ask: `Which hammer is for peening?` },
+      { k: "o", t: `Welding`, plain: `Melting pieces of metal together so they fuse into a very strong joint.`, book: `Heating two or more metal workpieces until liquid and fusing them to make a very strong joint.`, ask: `How does peening a weld help it?` },
+      { k: "o", t: `Joint`, plain: `The place where two pieces meet and are connected.`, book: `Where workpiece parts meet and a physical connection is made. Often named for its style, such as butt joint or miter joint.`, ask: `Name a joint you know.` },
+      { k: "o", t: `Bevel`, plain: `A slanted edge. Also, to cut an edge at an angle.`, book: `A surface that meets another at less than 90 degrees. As a verb, to cut or trim an edge to an angle.`, ask: `Why does a chisel have a beveled edge?` },
+      { k: "o", t: `Tempered`, plain: `Steel that was heat treated to make it hard.`, book: `Heat treated to bring out or restore the hardness of steel.`, ask: `Why are punches made from tempered steel?` },
+      { k: "o", t: `Mushroomed`, plain: `A struck tool head that has spread out wide, like a mushroom.`, book: `Describes the struck end of a tool that has become wider and distorted like a mushroom cap.`, ask: `Why is a mushroomed chisel dangerous to strike?` },
+      { k: "o", t: `Torque`, plain: `Twisting force.`, book: `The rotating or twisting force applied to something such as a fastener or a motor shaft.`, ask: `Which screwdriver types take the most torque?` },
+      { k: "o", t: `Stripping`, plain: `Damaging a screw or bolt head or its threads so a tool cannot grip it.`, book: `Damaging or distorting the head or the threads of a fastener.`, ask: `How can you avoid stripping a screw?` },
+      { k: "o", t: `Flats`, plain: `The straight flat sides of a wrench opening or of a nut or bolt head.`, book: `The straight sides of a wrench opening, and also the sides of a nut or bolt head.`, ask: `How many flats does a box-end wrench have?` },
+      { k: "o", t: `Cheater bar`, plain: `A pipe slipped over a wrench handle for extra leverage. Never do this.`, book: `A length of pipe or rod added to a wrench to increase leverage. It often goes past what the tool can take and damages the tool and the work.`, ask: `What can happen if you use one?` },
+      { k: "k", t: `Cat's paw`, plain: `A steel rod with a curved claw that pulls nails driven flush.`, book: `A nail puller: a straight steel rod with a curved claw at one end.`, ask: `Why might it not pull a long nail?` },
+      { k: "k", t: `Wrecking bar`, plain: `A long steel bar for prying and pulling nails.`, book: `Also called a ripping bar or wonder bar, with a nail slot and a wedge-shaped prying end.`, ask: `Which way do you pull it?` },
+      { k: "k", t: `Drive size`, plain: `The size of the square shaft on a ratchet that holds the socket.`, book: `The size of the ratchet's square shaft, usually 1/4, 3/8 or 1/2 inch. It does not tell you the hardware size.`, ask: `Are there metric drive sizes?` },
+      { k: "k", t: `Breaker bar`, plain: `A long hinged socket handle for breaking stubborn fasteners loose.`, book: `A hinged socket handle used when ratcheting is not needed, longer and stronger than a ratchet.`, ask: `Why not just use a cheater bar?` },
+      { k: "k", t: `Right-hand thread`, plain: `Turn clockwise to tighten and counterclockwise to loosen.`, book: `Most hardware. Clockwise tightens and counterclockwise loosens.`, ask: `What happens if you turn it the wrong way?` }
+    ],
+    2: [
+      { k: "o", t: `Plumb`, plain: `Perfectly straight up and down.`, book: `Perfectly vertical, at a right angle to the horizon or to the surface used for comparison.`, ask: `What tool shows plumb?` },
+      { k: "o", t: `Concave`, plain: `Curved inward, like the inside of a bowl.`, book: `Having a shape that curves inward. Convex curves outward.`, ask: `Why is a tape measure blade concave?` },
+      { k: "o", t: `Square`, plain: `Two parts meeting at an exact 90-degree corner.`, book: `As an adjective, having parts at precise 90-degree angles to each other.`, ask: `How can you check if a square is still true?` },
+      { k: "o", t: `Rafter`, plain: `A sloped beam that holds up the roof.`, book: `One of a series of beams running from the edge of a building to the high point of the roof, supporting the roof above.`, ask: `Which square is made for rafter layout?` },
+      { k: "k", t: `Spirit level`, plain: `The standard bubble level. The vial holds colored alcohol.`, book: `The most common leveling instrument. Three vials: the center checks level, the ends check plumb.`, ask: `Why use alcohol and not water?` },
+      { k: "k", t: `Torpedo level`, plain: `A short bubble level that also shows 45 degrees.`, book: `A short spirit level with a 45-degree vial, often with a magnetic or V-shaped base.`, ask: `Why is it handy for pipe work?` },
+      { k: "k", t: `Plumb bob`, plain: `A pointed weight on a string that shows true vertical.`, book: `A pointed weight on a line. Gravity makes the line hang plumb.`, ask: `How do you use one to find the spot under a beam?` },
+      { k: "k", t: `Chalk line`, plain: `A chalked string snapped to leave a long straight line.`, book: `A string coated with chalk, stretched taut and snapped to mark a straight line on a smooth surface.`, ask: `Why spray it with lacquer?` },
+      { k: "k", t: `Combination square`, plain: `A square with a sliding ruler and a head with 45- and 90-degree faces.`, book: `One of the most versatile layout squares. Many have a spirit level and a scribe.`, ask: `How do you mark 45 degrees?` }
+    ],
+    3: [
+      { k: "o", t: `Miter joint`, plain: `A joint where two pieces are cut at matching angles and meet in a corner.`, book: `A joint made by fastening parts with their ends cut at matching angles, typically to make a 90-degree corner.`, ask: `Which saw cuts smooth miters?` },
+      { k: "o", t: `Kerf`, plain: `The slot a saw blade cuts, as wide as the teeth.`, book: `The cut taken by a saw, as wide as the blade teeth, which are set to each side.`, ask: `Which side of the line does the kerf come out of?` },
+      { k: "o", t: `Emery cloth`, plain: `Cloth with rough grit stuck to it, used to clean and scrub rust.`, book: `A thin cloth backing coated with a tightly bonded abrasive, sold in sheets or narrow rolls.`, ask: `How can you use it on a saw blade?` },
+      { k: "o", t: `Tang`, plain: `The pointed end of a file that fits into the handle.`, book: `The tapered, pointed end of a file that is made to go into a file handle.`, ask: `Why must a file always have a handle?` },
+      { k: "k", t: `Teeth per inch (tpi)`, plain: `How many saw teeth fit in an inch. Fewer is rougher and faster.`, book: `The number of teeth per inch of blade. Fewer teeth cut coarser and faster. More teeth cut smoother and slower.`, ask: `Which has more tpi, a ripsaw or a hacksaw?` },
+      { k: "k", t: `Crosscut saw`, plain: `A saw for cutting across the grain.`, book: `A handsaw with 8 to 14 tpi that cuts across the grain and leaves a smoother surface.`, ask: `What is the ripsaw for?` },
+      { k: "k", t: `Hacksaw`, plain: `The saw for cutting metal.`, book: `A saw with 14 to 32 tpi for bolts and pipe, with the teeth facing away from the handle, cutting on the push stroke.`, ask: `Which way do the teeth face?` },
+      { k: "k", t: `Rasp`, plain: `A coarse file with deeper, separate teeth, made for wood.`, book: `A single piece of hardened steel with deeper, individual teeth, much like an aggressive file.`, ask: `How is a rasp different from a file?` },
+      { k: "k", t: `File card`, plain: `A stiff wire brush that cleans filings out of file teeth.`, book: `A tool with short, stiff, tightly spaced wires that clears material from between the teeth of a file.`, ask: `Which direction should you brush?` },
+      { k: "k", t: `Mattock`, plain: `A digging tool with a wide blade. Better than a pick for roots.`, book: `Like a pick but with one wide cutting blade. The other side is a pick or a second blade turned 90 degrees.`, ask: `When would you pick a mattock over a pick?` }
+    ]
+  };
+
+  var QUIZ = {
+    1: [
+      { q: `Which hammer is the best choice for pulling nails?`, o: [`Curved claw hammer`, `Ball peen hammer`, `Drywall hammer`], a: 0, why: `The curved claw gives extra leverage. A rip claw is flatter and better for ripping boards apart.` },
+      { q: `Which hammer should never be used to drive nails?`, o: [`Framing hammer`, `Ball peen hammer`, `Claw hammer`], a: 1, why: `Its head is milder steel, and nails can damage the face.` },
+      { q: `Which way do you pull a pry bar or wrench?`, o: [`Toward your body (or shoulder)`, `Away from your body`, `Toward your face`], a: 0, why: `Pushing away can make you lose your balance if it slips.` },
+      { q: `A chisel or punch has a mushroomed head. What do you do?`, o: [`Use it carefully`, `Take it out of service until it is repaired or replaced`, `Strike it harder`], a: 1, why: `Metal chips can break off and injure eyes.` },
+      { q: `On an adjustable wrench, where does the pressure go?`, o: [`The movable jaw`, `The fixed jaw`, `The adjusting nut`], a: 1, why: `The fixed jaw is the strong side. Pull toward your body.` },
+      { q: `Pliers should not be used to...`, o: [`Bend wire`, `Cut wire`, `Turn nuts and bolts`], a: 2, why: `They round off the corners, and wrenches no longer fit.` }
+    ],
+    2: [
+      { q: `In a spirit level, which vial checks for level?`, o: [`The center vial`, `The end vials`, `Both end vials together`], a: 0, why: `The two end vials check plumb.` },
+      { q: `Which tool is strapped to a post to check plumb in two directions?`, o: [`Torpedo level`, `Post level`, `Chalk line`], a: 1, why: `Many post levels also have magnets for steel posts.` },
+      { q: `What is a plumb bob?`, o: [`A pointed weight on a string`, `A chalk reel`, `A measuring tape`], a: 0, why: `Gravity makes the string hang plumb.` },
+      { q: `Which is NOT a laser measuring tool drawback?`, o: [`Hot or smoky air can disturb the beam`, `It can measure up to 600 feet`, `A shiny target can interfere`], a: 1, why: `Long range is an advantage. Tape on a shiny target helps.` },
+      { q: `A try square makes a fixed angle of...`, o: [`45 degrees`, `90 degrees`, `180 degrees`], a: 1, why: `It lays out 90-degree lines and checks that a joint is square.` },
+      { q: `What must you never do with a laser level?`, o: [`Mount it on a tripod`, `Look directly into the beam`, `Use it outdoors`], a: 1, why: `It can permanently damage your eyes.` }
+    ],
+    3: [
+      { q: `Which saw cuts metal pipe?`, o: [`Hacksaw`, `Crosscut saw`, `Coping saw`], a: 0, why: `A hacksaw has fine teeth, 14 to 32 tpi.` },
+      { q: `Which has more teeth per inch?`, o: [`A ripsaw`, `A crosscut saw`, `They are the same`], a: 1, why: `A crosscut has 8 to 14 tpi, and a ripsaw has 5 to 9.` },
+      { q: `Which side of the line does the kerf come out of?`, o: [`The good side`, `The scrap side`, `Either side`], a: 1, why: `That keeps the length of the good piece accurate.` },
+      { q: `Which clamp suits a very wide job (like 8 feet)?`, o: [`C-clamp`, `Spring clamp`, `Pipe clamp`], a: 2, why: `The spine can be any length of pipe.` },
+      { q: `Which stroke does a file cut on?`, o: [`Forward stroke`, `Back stroke`, `Both equally`], a: 0, why: `Lift the file slightly on the back stroke.` },
+      { q: `Which shovel is best for moving gravel?`, o: [`Round shovel`, `Square shovel`, `Spade`], a: 1, why: `A spade is for trenches with straight sides.` }
+    ]
+  };
+
+  var TALK = {
+    1: {
+      qs: [`Why does the module say not to use a cast-head hammer?`, `Why is a box-end wrench safer than an open-end wrench?`, `Why should pliers never be used on nuts and bolts?`, `How can you tell a tool is not safe to use anymore?`],
+      scn: [{
+        t: `"This chisel is worn at the top"`,
+        s: `A student's cold chisel has a flattened, spread-out head. What should happen?`,
+        g: [`It is mushroomed, so it should be taken out of service.`, `Chips can break off and cause serious eye injuries.`, `It can be repaired or replaced under company policy.`]
+      }, {
+        t: `"I will use a pipe for leverage"`,
+        s: `A wrench will not break a bolt loose, so someone wants to slip a pipe over the handle. What does the module say?`,
+        g: [`That is a cheater bar, and the module says never to use one.`, `It can snap the tool or break the bolt head off.`, `A breaker bar or a larger, stronger wrench is the tool for the job.`]
+      }],
+      parent: `Ask your student to name three kinds of hammer and say what each one is for.`
+    },
+    2: {
+      qs: [`Why might a worker prefer a wooden folding rule to a tape for a vertical measurement?`, `What is the difference between level and plumb?`, `How would you test whether a square is still square?`, `Why is it a good idea to take a measurement twice?`],
+      scn: [{
+        t: `"The bubble is almost in the middle"`,
+        s: `A student is setting a post. How can they be sure it is plumb in both directions?`,
+        g: [`Use a post level strapped to the post.`, `Check both planes, and make sure the bubble sits between the lines.`, `Clear any debris from the surface first.`]
+      }, {
+        t: `"I looked into the laser to see if it was on"`,
+        s: `What is wrong with this, and what does the module say?`,
+        g: [`Never look directly into a laser beam or its source.`, `It can cause serious, permanent eye damage.`, `Handle laser levels carefully and follow the maker's directions.`]
+      }],
+      parent: `Ask your student to explain how to read the vials on a spirit level.`
+    },
+    3: {
+      qs: [`Why does a hacksaw have more teeth per inch than a handsaw?`, `Why should you clamp the work when you saw or file?`, `Why does a file need a handle?`, `Why do many job sites require self-retracting utility knives?`],
+      scn: [{
+        t: `"I will start the cut on the push stroke"`,
+        s: `A student starts a crosscut by shoving the saw forward. How should the cut be started?`,
+        g: [`Pull the blade toward you first, near the handle, at about 45 degrees.`, `Then push to cut. The push stroke does the cutting.`, `Guide the blade with the thumb of your free hand and let the saw weight do the work.`]
+      }, {
+        t: `"The knife is dull, so I will press harder"`,
+        s: `A utility knife is tearing the material. What should be done?`,
+        g: [`Replace the blade. Sharp blades are safer than dull ones.`, `Cut away from your body with your free hand out of the line of the cut.`, `Retract and lock the blade when done.`]
+      }],
+      parent: `Ask your student to name the saw, clamp or file they would pick for a job at home and why.`
+    }
+  };
+
+  var FINAL = [
+    `I can name the main hammers and nail pullers and explain what each one is for.`,
+    `I can explain how to swing a sledgehammer safely and why a mushroomed tool must be taken out of service.`,
+    `I can tell a cold chisel from a wood chisel and a center punch from a prick punch and a tapered punch.`,
+    `I can match each screwdriver type to its screw head.`,
+    `I can tell non-adjustable, adjustable and socket wrenches apart, and I know which way to pull and which jaw takes the pressure.`,
+    `I can describe the common pliers and say what pliers should never be used for.`,
+    `I can name the measuring tools and read the advantages and drawbacks of a laser measuring tool.`,
+    `I can tell level from plumb and name the types of levels.`,
+    `I can name the squares, and say how to use a plumb bob and a chalk line.`,
+    `I can match a saw to the job and describe how to start a crosscut.`,
+    `I can name the common clamps and say when to pad the jaws.`,
+    `I can explain how to use a file and a utility knife safely.`,
+    `I can match shovels, picks and mattocks to their jobs.`,
+    `With my instructor, I can inspect and safely demonstrate the hand tools in the module's performance tasks.`
+  ];
+
+  /* The answer keys (Appendix A) are not in the module pages. Every answer was worked out from the module text. */
+  var TF = [`True`, `False`];
+  function Q(src, a, pq, po, tq, to, why, br) { return { src: src + " · answer from module text", a: a, pq: pq, po: po, tq: tq, to: to, why: why, br: br }; }
+  var PRACTICE = {
+    1: [
+      Q(`Section Review 1.0.0 · Q1`, 2,
+        `Which hammer is the best choice for pulling a nail?`, [`Rip claw hammer`, `Drywall hammer`, `Curved claw hammer`, `Ball peen hammer`],
+        `The type of hammer that is the best choice for pulling a nail is the _____.`, [`rip claw hammer`, `drywall hammer`, `curved claw hammer`, `ball peen hammer`],
+        `A curved claw gives extra leverage for pulling nails. A rip claw is flatter and is best for ripping boards apart.`, [[`Which hammer is the best choice`, `The type of hammer that is the best choice`]]),
+      Q(`Section Review 1.0.0 · Q2`, 0,
+        `Why is the cutting tip of a cape chisel wider than its body?`, [`So it does not bind when cutting grooves`, `So it can cut layers of wood`, `So it can drive dowels`, `So it can be used without a hammer`],
+        `The cape chisel is made with the cutting edge wider than the body, so it does not bind when chiseling _____.`, [`deep grooves`, `layers of wood`, `dowels`, `without a hammer`],
+        `The wider tip keeps it from binding in the cut when chiseling grooves.`, [[`does not bind when cutting grooves`, `does not bind when chiseling deep grooves`]]),
+      Q(`Section Review 1.0.0 · Q3 (figure: round head with a square recess)`, 1,
+        `A screw head has a square-shaped recess in the center. What type is it?`, [`Torx`, `Robertson`, `Phillips`, `Clutch-drive`],
+        `The type of screw head shown here (a round head with a square recess) is the _____.`, [`Torx®`, `Robertson®`, `Phillips`, `clutch-drive`],
+        `A square drive is a Robertson. Torx is star-shaped, Phillips is a cross and clutch-drive is hourglass-shaped.`, [[`square-shaped recess`, `shown here`]]),
+      Q(`Section Review 1.0.0 · Q4`, 2,
+        `When you use an adjustable wrench, where should the pressure go?`, [`Clockwise`, `Counterclockwise`, `On the fixed jaw`, `On the adjustable jaw`],
+        `When using an adjustable wrench, pressure to tighten or loosen should always be applied _____.`, [`clockwise`, `counterclockwise`, `to the fixed jaw`, `to the adjustable jaw`],
+        `Apply pressure to the fixed jaw, not the movable jaw.`, [[`where should the pressure go`, `pressure ... should always be applied`], [`fixed jaw`, `to the fixed jaw`]]),
+      Q(`Section Review 1.0.0 · Q5`, 3,
+        `What brand name do people often use for locking pliers?`, [`Tongue-and-groove`, `Clutch grips`, `Robertsons`, `Vise-Grips`],
+        `Locking pliers are also commonly referred to as _____.`, [`tongue-and-groove pliers`, `clutch grips`, `Robertsons®`, `Vise-Grips®`],
+        `Locking pliers are often called Vise-Grips because of brand recognition.`, [[`What brand name`, `commonly referred to as`]]),
+      Q(`Module Review · Q1 (1.1.1)`, 3,
+        `Why does a slightly rounded hammer face help when you drive nails?`, [`It hits harder`, `It prevents overstriking`, `Only drywall hammers have it`, `It avoids serious damage to the material`],
+        `A slightly rounded face on a hammer _____.`, [`helps deliver a harder blow`, `prevents overstriking`, `is only found on drywall hammers`, `helps avoid significant damage to the material when nailing`],
+        `A convex face lets you drive the nail flush without seriously damaging the surface.`, [[`Why does ... help`, `A slightly rounded face ... helps`], [`serious damage to the material`, `significant damage to the material`]]),
+      Q(`Module Review · Q2 (1.1.1) (figure: hammer with a nearly straight claw)`, 1,
+        `A hammer has a nearly straight, flatter claw that is best for ripping boards apart. Which hammer is it?`, [`Curved claw hammer`, `Rip claw hammer`, `Drywall hammer`, `Ball peen hammer`],
+        `What type of hammer is shown in Figure RQ01 (a framing-style hammer with a nearly straight claw)?`, [`Curved claw hammer`, `Rip claw hammer`, `Drywall hammer`, `Ball peen hammer`],
+        `Figure RQ01 is the same picture as the module's Figure 4B, the rip claw hammer.`, [[`nearly straight, flatter claw`, `shown in Figure RQ01`]]),
+      Q(`Module Review · Q3 (1.1.5) (figure: rod with a curved claw)`, 0,
+        `A steel rod with a tight, curved claw at one end is used to pull nails driven flush. What is it?`, [`Cat's paw`, `Wrecking bar`, `Wood chisel`, `Cape chisel`],
+        `The tool shown in Figure RQ02 (a rod with a curved claw at one end and a grip at the other) is a _____.`, [`cat's paw`, `wrecking bar`, `wood chisel`, `cape chisel`],
+        `Figure RQ02 matches the module's Figure 8A, the cat's paw.`, [[`tight, curved claw`, `shown in Figure RQ02`]]),
+      Q(`Module Review · Q4 (1.2.1)`, 2,
+        `What is a cape chisel best for?`, [`Shaving a broad area of wood`, `Cutting off sections of rod`, `Cutting grooves in metal`, `Cutting off rusted hardware`],
+        `The cape chisel is best for _____.`, [`shaving a broad area of wood`, `cutting off sections of rod`, `cutting grooves in metal`, `cutting off rusted hardware`],
+        `A cape chisel cuts single grooves or a series of parallel grooves. The flat cold chisel is the one for rusted hardware.`, [[`What is ... best for`, `is best for`]]),
+      Q(`Module Review · Q5 (1.2.1)`, 1,
+        `Which chisel is made to be pushed by hand and not struck with a hammer?`, [`Cold chisel`, `Paring chisel`, `Cape chisel`, `Diamond-pointed chisel`],
+        `Which type of chisel is typically designed to be used without a hammer?`, [`Cold chisel`, `Paring chisel`, `Cape chisel`, `Diamond-pointed chisel`],
+        `Most paring chisels are for hand use only and must be kept very sharp.`, [[`pushed by hand and not struck`, `used without a hammer`]]),
+      Q(`Module Review · Q6 (1.2.2)`, 0,
+        `Which punch is best for marking a spot to start a drill bit?`, [`Center punch`, `Tapered punch`, `Prick punch`, `Angle punch`],
+        `The best punch used to mark a spot for drilling a hole is the _____.`, [`center punch`, `tapered punch`, `prick punch`, `angle punch`],
+        `The center punch's wider dent is best for drilling marks. The prick punch is for layout on sheet metal.`, [[`marking a spot to start a drill bit`, `mark a spot for drilling a hole`]]),
+      Q(`Module Review · Q7 (1.3.0)`, 3,
+        `What is the most common crosshead screwdriver?`, [`Robertson`, `Torx`, `Slotted`, `Phillips`],
+        `The most common type of crosshead screwdriver is the _____.`, [`Robertson® screwdriver`, `Torx® screwdriver`, `slotted screwdriver`, `Phillips screwdriver`],
+        `Phillips is the most common crosshead. Slotted is not a crosshead.`, [[`What is the most common`, `The most common type of`]]),
+      Q(`Module Review · Q8 (1.4.1)`, 2,
+        `Which wrench is most likely to fit only one size of hardware?`, [`Open-end wrench`, `Box-end wrench`, `Combination wrench`, `Adjustable wrench`],
+        `The wrench that is most likely to fit only one size of hardware is the _____.`, [`open-end wrench`, `box-end wrench`, `combination wrench`, `adjustable wrench`],
+        `Open-end and box-end wrenches usually fit two sizes. A combination wrench has the same size on both ends.`, [[`fit only one size`, `fit only one size of hardware`]]),
+      Q(`Module Review · Q9 (1.4.2) (figure: adjustable wrench with a FORCE arrow)`, 1,
+        `True or false: when a right-hand fastener is turned counterclockwise, it is being tightened.`, TF,
+        `In Figure RQ03, the fastener is likely being tightened. (Figure RQ03 is the same photo as the module's Figure 19, captioned "Loosening a fastener with an adjustable wrench.")`, TF,
+        `Right-hand threads tighten clockwise and loosen counterclockwise. The photo shows loosening, so the statement is false.`, [[`turned counterclockwise`, `Figure RQ03`], [`being tightened`, `likely being tightened`]]),
+      Q(`Module Review · Q10 (1.4.3)`, 2,
+        `Which statement about ratchets and sockets is correct?`, [`Drive size is the size of the hardware the ratchet fits`, `Common metric drive sizes are 1 cm, 1.5 cm and 2 cm`, `Most sockets have 6 or 12 gripping flats`, `Extensions come in only one length for each drive size`],
+        `Which of the following statements about ratchets and sockets is correct?`, [`The drive size refers to the size of the hardware a ratchet handle fits.`, `Common metric drive sizes are 1 cm, 1.5 cm, and 2 cm.`, `Most sockets have either 6 or 12 gripping flats.`, `Socket extensions are available in only one length for each drive size.`],
+        `Drive size is the size of the square shaft, there are no metric drive sizes, and extensions come in many lengths.`, [[`Which statement ... is correct`, `Which of the following statements ... is correct`]]),
+      Q(`Module Review · Q11 (1.5.0)`, 0,
+        `Which job should pliers NOT be used for?`, [`Tightening or loosening hardware`, `Cutting wire`, `Bending wire`, `Gripping pipe`],
+        `Pliers should not be used to _____.`, [`tighten or loosen hardware`, `cut wire`, `bend wire`, `grip pipe`],
+        `Pliers round off the corners of nuts and bolts, and wrenches no longer fit.`, [[`should NOT be used for`, `should not be used to`]])
+    ],
+    2: [
+      Q(`Section Review 2.0.0 · Q1`, 3,
+        `What lengths do folding rules with Imperial markings come in?`, [`2 and 4 feet`, `2 and 6 feet`, `3 and 8 feet`, `6 and 8 feet`],
+        `Folding rules with Imperial markings come in _____.`, [`2' and 4' lengths`, `2' and 6' lengths`, `3' and 8' lengths`, `6' and 8' lengths`],
+        `Imperial wooden folding rules come in 6 and 8 foot lengths. Metric versions are 1 and 2 meters.`, [[`What lengths`, `come in`]]),
+      Q(`Section Review 2.0.0 · Q2`, 0,
+        `What is another name for a carpenter's square?`, [`Framing square`, `Speed square`, `Try square`, `Combination square`],
+        `The carpenter's square is also called a _____.`, [`framing square`, `speed square`, `try square`, `combination square`],
+        `The carpenter's square is also called the framing square.`, [[`another name`, `also called`]]),
+      Q(`Module Review · Q12 (2.1.4)`, 1,
+        `What is a drawback of a laser measuring tool?`, [`It can only measure up to about 100 feet`, `It does not work well in smoky conditions`, `It needs a drop cord for power`, `It takes several minutes to measure`],
+        `A disadvantage of a laser measuring tool is that it _____.`, [`can only measure up to about 100' (30 m)`, `does not work well in smoky conditions`, `must be powered with a drop cord`, `requires several minutes to complete a measurement`],
+        `Smoke and hot air scatter the beam. Some lasers measure up to 600 feet, they run on batteries and they measure quickly.`, [[`A drawback`, `A disadvantage`]]),
+      Q(`Module Review · Q13 (2.0.0)`, 0,
+        `What does it mean when something is plumb?`, [`Perfectly vertical`, `Level with the horizon`, `Parallel to the ground`, `At some angle other than 90 degrees`],
+        `When something is plumb, it is _____.`, [`precisely vertical`, `level to the horizon`, `parallel to the ground`, `at some angle other than 90 degrees`],
+        `Plumb means perfectly vertical. Level means flat and even with the horizon.`, [[`What does it mean when`, `When something is plumb, it is`], [`Perfectly vertical`, `precisely vertical`]]),
+      Q(`Module Review · Q14 (2.2.1) (figure: short yellow level with vials)`, 2,
+        `A short spirit level that also shows 45 degrees, often with a magnetic base, is called what?`, [`Plumb level`, `Post level`, `Torpedo level`, `Laser level`],
+        `The tool shown in Figure RQ04 (a short spirit level with several vials) is called a _____.`, [`plumb level`, `post level`, `torpedo level`, `laser level`],
+        `A short level with a 45-degree vial is a torpedo level.`, [[`short spirit level`, `shown in Figure RQ04`]]),
+      Q(`Module Review · Q15 (2.2.5)`, 1,
+        `What angle is a try square made at?`, [`45 degrees`, `90 degrees`, `180 degrees`, `360 degrees`],
+        `The try square is made at a fixed _____.`, [`45-degree angle`, `90-degree angle`, `180-degree angle`, `360-degree angle`],
+        `A try square has a fixed 90-degree angle.`, [[`What angle`, `made at a fixed`]])
+    ],
+    3: [
+      Q(`Section Review 3.0.0 · Q1`, 3,
+        `Which saw do you use to cut through a metal pipe?`, [`Coping saw`, `Crosscut saw`, `Drywall saw`, `Hacksaw`],
+        `To cut through a metal pipe, the correct saw to use is a _____.`, [`coping saw`, `crosscut saw`, `drywall saw`, `hacksaw`],
+        `A hacksaw is for metals like bolts and pipe.`, [[`Which saw do you use`, `the correct saw to use is a`]]),
+      Q(`Section Review 3.0.0 · Q2`, 3,
+        `Which clamp is best for a very wide clamping job, like an 8-foot span?`, [`C-clamp`, `Bar clamp`, `Spring clamp`, `Pipe clamp`],
+        `Which type of clamp is best suited for a very wide clamping application, such as an 8' span across the jaws?`, [`C-clamp`, `Bar clamp`, `Spring clamp`, `Pipe clamp`],
+        `A pipe clamp's spine can be any length of pipe, so it suits large and wide jobs.`, [[`very wide clamping job`, `very wide clamping application`]]),
+      Q(`Section Review 3.0.0 · Q3`, 2,
+        `Which file would leave the smoothest finish?`, [`Bastard`, `Coarse`, `Second cut`, `Rough`],
+        `Which of the following file types would leave the smoothest finish?`, [`Bastard`, `Coarse`, `Second cut`, `Rough`],
+        `From roughest to smoothest: rough, coarse, bastard, second cut, smooth, dead smooth. Of the choices, second cut is the smoothest.`, [[`smoothest finish`, `smoothest finish`]]),
+      Q(`Section Review 3.0.0 · Q4`, 0,
+        `Which tool is best for moving gravel?`, [`Square shovel`, `Round shovel`, `Mattock`, `Spade`],
+        `Which tool is best for moving gravel?`, [`Square shovel`, `Round shovel`, `Mattock`, `Spade`],
+        `A square shovel moves gravel and construction debris. A round shovel digs, and a spade shapes trenches.`, [[`best for moving gravel`, `best for moving gravel`]]),
+      Q(`Module Review · Q16 (3.1.0)`, 3,
+        `Which saw cuts accurate, smooth miter joints in wood?`, [`Keyhole saw`, `Hacksaw`, `Drywall saw`, `Backsaw`],
+        `Accurate and smooth miter joints in wood can be cut with a _____.`, [`keyhole saw`, `hacksaw`, `drywall saw`, `backsaw`],
+        `A backsaw has a reinforced back that keeps the blade straight for smooth finish cuts.`, [[`cuts accurate, smooth miter joints`, `Accurate and smooth miter joints ... can be cut with a`]]),
+      Q(`Module Review · Q17 (3.2.0)`, 2,
+        `What are the jaws of a hand-screw clamp made of?`, [`Metal`, `Nylon`, `Wood`, `Fiberglass`],
+        `A hand-screw clamp has _____.`, [`metal jaws`, `nylon jaws`, `wooden jaws`, `fiberglass jaws`],
+        `Its broad wooden jaws spread the pressure over a wide area.`, [[`made of`, `has`]]),
+      Q(`Module Review · Q18 (3.3.1)`, 1,
+        `How is a rasp different from a file?`, [`It is almost smooth`, `It has deeper, individual teeth`, `It has an open cutting surface`, `Its teeth cut on the back stroke`],
+        `While files have slanting parallel rows of teeth, a rasp _____.`, [`is almost smooth`, `has deeper, individual teeth`, `has an open cutting surface`, `has teeth designed for cutting on the backstroke`],
+        `Rasps have deeper individual teeth. A wood shaver is the one with the open, grater-like surface.`, [[`How is a rasp different`, `While files have ... a rasp`]]),
+      Q(`Module Review · Q19 (3.3.2)`, 1,
+        `How is a carpet knife different from a common utility knife?`, [`The blade has a single sharpened edge`, `The blade has two sharpened edges`, `It is much longer`, `It has a serrated blade`],
+        `How is a carpet knife different from a common utility knife?`, [`The blade has a single sharpened edge.`, `The blade has two sharpened edges.`, `A carpet knife is much longer than a utility knife.`, `A carpet knife has a serrated blade.`],
+        `A carpet knife blade has two sharpened edges, so it can be reversed to last longer.`, [[`two sharpened edges`, `two sharpened edges`]]),
+      Q(`Module Review · Q20 (3.4.0)`, 3,
+        `What is a spade used for?`, [`Clearing tree roots`, `Moving gravel or cleaning up debris`, `Moving large amounts of soil`, `Shaping trenches and holes with straight sides`],
+        `A spade is used to _____.`, [`clear tree roots`, `move gravel or clean up construction debris`, `move large volumes of soil`, `shape trenches and holes requiring straight sides`],
+        `A spade is flatter than other shovels and shapes smooth, straight sides. A mattock clears roots.`, [[`What is a spade used for`, `A spade is used to`]])
+    ]
+  };
+
+  function el(tag, cls, text) { var n = document.createElement(tag); if (cls) n.className = cls; if (text != null) n.textContent = text; return n; }
+
+  function buildPoints(ul, list, prefix) {
+    list.forEach(function (html, i) {
+      var li = el("li");
+      var label = el("label");
+      var input = document.createElement("input");
+      input.type = "checkbox";
+      input.id = prefix + "-" + i;
+      var span = el("span");
+      span.innerHTML = html; // static text written in this file
+      label.appendChild(input); label.appendChild(span);
+      li.appendChild(label); ul.appendChild(li);
+    });
+  }
+
+  function field(label, text) {
+    var d = el("span");
+    d.appendChild(el("span", "label", label));
+    d.appendChild(document.createTextNode(text));
+    return d;
+  }
+  function buildCards(host, n) {
+    CARDS[n].forEach(function (item) {
+      var b = el("button", "card");
+      b.type = "button";
+      b.setAttribute("aria-pressed", "false");
+      b.setAttribute("aria-label", item.t + ". Press to flip the card.");
+      var inner = el("span", "card-inner");
+      var f = el("span", "face front" + (item.k === "k" ? " key" : ""));
+      f.appendChild(el("span", "strip", (item.k === "o" ? "NCCER trade term" : "Key term") + " · Section " + n));
+      f.appendChild(el("span", "term", item.t));
+      f.appendChild(el("span", "hint", "TAP TO FLIP"));
+      var k = el("span", "face back");
+      k.appendChild(el("span", "strip", item.t));
+      var body = el("span", "body");
+      body.appendChild(field("In everyday words", item.plain));
+      body.appendChild(field("From the module", item.book));
+      var ask = field("Ask your student", item.ask);
+      ask.className = "ask";
+      body.appendChild(ask);
+      k.appendChild(body);
+      inner.appendChild(f); inner.appendChild(k);
+      b.appendChild(inner);
+      b.addEventListener("click", function () { b.setAttribute("aria-pressed", b.getAttribute("aria-pressed") === "true" ? "false" : "true"); });
+      host.appendChild(b);
+    });
+  }
+
+  function buildQuiz(host, n) {
+    var list = QUIZ[n];
+    var answered = 0;
+    host.appendChild(el("p", "ticket-intro", "Pick the answer. You will see right away if it is correct. Nothing is saved or sent."));
+    var foot = el("div", "ticket-foot");
+    var done = el("p", null, "");
+    done.setAttribute("aria-live", "polite");
+    var retry = el("button", "btn", "Try again");
+    retry.type = "button";
+    retry.hidden = true;
+    foot.appendChild(done); foot.appendChild(retry);
+
+    list.forEach(function (item, qi) {
+      var fs = el("fieldset", "q");
+      fs.appendChild(el("legend", null, (qi + 1) + ". " + item.q));
+      var opts = el("div", "opts");
+      var fb = el("p", "fb");
+      fb.setAttribute("aria-live", "polite");
+      var btns = [];
+      item.o.forEach(function (text, oi) {
+        var b = el("button", "opt", text);
+        b.type = "button";
+        b.addEventListener("click", function () {
+          btns.forEach(function (x) { x.disabled = true; });
+          answered++;
+          fb.textContent = "";
+          if (oi === item.a) {
+            b.classList.add("right");
+            fb.appendChild(el("b", null, "Correct. ")); fb.appendChild(document.createTextNode(item.why));
+          } else {
+            b.classList.add("wrong");
+            btns[item.a].classList.add("right");
+            fb.appendChild(el("b", null, "Not quite. "));
+            fb.appendChild(document.createTextNode("The answer is \"" + item.o[item.a] + "\". " + item.why));
+          }
+          if (answered === list.length) {
+            done.textContent = "Ticket finished. Reread any part of the section that felt shaky, then try again.";
+            retry.hidden = false;
+          }
+        });
+        btns.push(b); opts.appendChild(b);
+      });
+      fs.appendChild(opts); fs.appendChild(fb);
+      host.appendChild(fs);
+      fs._reset = function () { btns.forEach(function (x) { x.disabled = false; x.className = "opt"; }); fb.textContent = ""; };
+    });
+    host.appendChild(foot);
+    retry.addEventListener("click", function () {
+      host.querySelectorAll("fieldset").forEach(function (f) { f._reset(); });
+      answered = 0; done.textContent = ""; retry.hidden = true;
+    });
+  }
+
+  function buildTalk(host, n) {
+    var t = TALK[n];
+    var ol = el("ol", "qs");
+    t.qs.forEach(function (q) { ol.appendChild(el("li", null, q)); });
+    host.appendChild(ol);
+    t.scn.forEach(function (s) {
+      var d = el("details", "scn");
+      d.appendChild(el("summary", null, "Scenario: " + s.t));
+      d.appendChild(el("p", "setup", s.s));
+      var g = el("div", "good");
+      g.appendChild(el("b", null, "A good answer includes"));
+      var ul = el("ul");
+      s.g.forEach(function (x) { ul.appendChild(el("li", null, x)); });
+      g.appendChild(ul); d.appendChild(g);
+      host.appendChild(d);
+    });
+    if (t.parent) {
+      var p = el("div", "parent");
+      p.appendChild(el("b", null, "Talk it over with your loved ones"));
+      p.appendChild(el("p", null, t.parent));
+      host.appendChild(p);
+    }
+  }
+
+  function ask(label, cls, q, opts, correct, onAnswer) {
+    var box = el("div", "ask-block" + (cls ? " " + cls : ""));
+    box.appendChild(el("p", "step-label", label));
+    box.appendChild(el("p", "pr-q", q));
+    var wrap = el("div", "opts");
+    wrap.setAttribute("role", "group");
+    wrap.setAttribute("aria-label", q);
+    var fb = el("p", "fb");
+    fb.setAttribute("aria-live", "polite");
+    var btns = [];
+    opts.forEach(function (text, oi) {
+      var b = el("button", "opt", String.fromCharCode(65 + oi) + ".  " + text);
+      b.type = "button";
+      b.addEventListener("click", function () {
+        btns.forEach(function (x) { x.disabled = true; });
+        var ok = oi === correct;
+        b.classList.add(ok ? "right" : "wrong");
+        if (!ok) btns[correct].classList.add("right");
+        onAnswer(ok, fb, String.fromCharCode(65 + correct));
+      });
+      btns.push(b); wrap.appendChild(b);
+    });
+    box.appendChild(wrap); box.appendChild(fb);
+    box.reset = function () { btns.forEach(function (x) { x.disabled = false; x.className = "opt"; }); fb.textContent = ""; };
+    return box;
+  }
+  function say(fb, lead, text) {
+    fb.textContent = "";
+    fb.appendChild(el("b", null, lead + " "));
+    fb.appendChild(document.createTextNode(text));
+  }
+
+  function buildPractice(host, n) {
+    var list = PRACTICE[n];
+    host.appendChild(el("p", "pr-intro", "Test questions use the textbook's formal words. Answer each question in plain English first, then see the same question the way the book asks it. The \"Words to notice\" box shows how the two fit together. Nothing is saved or sent."));
+    var items = [];
+    list.forEach(function (item, i) {
+      var formalOpts = item.to || item.po;
+      var art = el("article", "pr");
+      var head = el("div", "pr-head");
+      head.appendChild(el("span", null, "Question " + (i + 1) + " of " + list.length));
+      head.appendChild(el("span", null, "Source: " + item.src));
+      art.appendChild(head);
+
+      var bridge = el("div", "bridge");
+      bridge.hidden = true;
+      bridge.appendChild(el("p", "step-label", "Words to notice"));
+      var ul = el("ul");
+      item.br.forEach(function (p) {
+        var li = el("li");
+        li.appendChild(el("span", "you", p[0]));
+        li.appendChild(el("span", "arrow", "→"));
+        li.appendChild(el("span", "pub", p[1]));
+        ul.appendChild(li);
+      });
+      bridge.appendChild(ul);
+
+      var b2 = ask("Step 2 · The same question in the textbook's words", "formal", item.tq, formalOpts, item.a, function (ok, fb, letter) {
+        if (ok) say(fb, "Correct.", "You just answered it in the textbook's voice.");
+        else say(fb, "Not quite.", "The answer is " + letter + ". Compare it with your plain-English answer above.");
+        bridge.hidden = false;
+      });
+      b2.hidden = true;
+      var b1 = ask("Step 1 · In plain English", "", item.pq, item.po, item.a, function (ok, fb, letter) {
+        if (ok) say(fb, "Correct.", item.why);
+        else say(fb, "Not quite.", "The answer is " + letter + ". " + item.why);
+        b2.hidden = false;
+      });
+      art.appendChild(b1); art.appendChild(b2); art.appendChild(bridge);
+      host.appendChild(art);
+      items.push({ b1: b1, b2: b2, bridge: bridge });
+    });
+    var foot = el("div", "ticket-foot");
+    var retry = el("button", "btn", "Start this set over");
+    retry.type = "button";
+    retry.addEventListener("click", function () {
+      items.forEach(function (x) { x.b1.reset(); x.b2.reset(); x.b2.hidden = true; x.bridge.hidden = true; });
+    });
+    foot.appendChild(retry);
+    host.appendChild(foot);
+  }
+
+  [1, 2, 3].forEach(function (n) {
+    buildPoints(document.querySelector('[data-points="' + n + '"]'), POINTS[n], "s" + n);
+    buildCards(document.querySelector('[data-cards="' + n + '"]'), n);
+    buildQuiz(document.querySelector('[data-quiz="' + n + '"]'), n);
+    buildTalk(document.querySelector('[data-talk="' + n + '"]'), n);
+    buildPractice(document.querySelector('[data-practice="' + n + '"]'), n);
+  });
+  buildPoints(document.getElementById("final-points"), FINAL, "fin");
+
+})();
+</script>
+
+</body>
+</html>

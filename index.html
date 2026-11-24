@@ -25,6 +25,10 @@ h1,h2,h3{font-family:var(--font-display);text-transform:uppercase;letter-spacing
 .how h2{font-size:1.4rem;margin-bottom:6px}.how p{margin:0 0 8px;max-width:64ch}
 h2.list{font-size:clamp(1.8rem,5vw,2.4rem);margin:40px 0 14px;border-top:8px solid var(--ink);padding-top:16px}
 .grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fill,minmax(min(100%,270px),1fr));list-style:none;margin:0;padding:0}
+.grid.g3{grid-template-columns:repeat(3,1fr)}
+@media(max-width:900px){.grid.g3{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){.grid.g3{grid-template-columns:1fr}}
+h2.list.sub{margin-top:56px}
 .mod{background:var(--surface);border:2px solid var(--ink);display:flex;flex-direction:column;min-height:190px}
 .mod .tag{background:var(--accent);color:#fff;font-family:var(--font-mono);font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;padding:8px 14px}
 .mod.core .tag{background:#1B5FC9;color:#fff}
@@ -83,9 +87,9 @@ footer strong{color:var(--band-ink)}footer p{margin:0 0 6px}
     <p>Plan about 15 to 25 minutes per section. Your student does most of the talking, and you do not need to know the answers ahead of time. If your student can read it and explain it, they are learning it.</p>
   </section>
 
-  <h2 class="list">Modules</h2>
+  <h2 class="list">Core Curriculum</h2>
   <p class="key" aria-label="Color key"><span class="k-core">Core</span><span class="k-el1">Electrical Level 1</span><span class="k-el2">Electrical Level 2 (coming)</span></p>
-  <ul class="grid">
+  <ul class="grid g3">
     <li class="mod core">
       <span class="tag">Core · Ready</span>
       <div class="body">
@@ -117,6 +121,14 @@ footer strong{color:var(--band-ink)}footer p{margin:0 0 6px}
         <h3>Introduction to Hand Tools</h3>
         <p>NCCER Core, Module 00103: Introduction to Hand Tools.</p>
         <a class="go" href="introduction-to-hand-tools.html">Open the guide</a>
+      </div>
+    </li>
+    <li class="mod core">
+      <span class="tag">Core · Draft</span>
+      <div class="body">
+        <h3>Introduction to Power Tools</h3>
+        <p>NCCER Core, Module 00104: Introduction to Power Tools.</p>
+        <a class="go" href="introduction-to-power-tools.html">Open the guide</a>
       </div>
     </li>
     <li class="mod core">
@@ -162,6 +174,10 @@ footer strong{color:var(--band-ink)}footer p{margin:0 0 6px}
         <a class="go" href="introduction-to-material-handling.html">Open the guide</a>
       </div>
     </li>
+  </ul>
+
+  <h2 class="list sub">Electrical Level 1</h2>
+  <ul class="grid g3">
     <li class="mod el1">
       <span class="tag">EL1 · Ready</span>
       <div class="body">
